@@ -4,12 +4,45 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-27T05:29:44Z</updated>
+  <updated>2026-05-28T05:23:51Z</updated>
   <subtitle>Latest multimodal papers (last 7 days) — 28 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Long Live the Librarian! A Persistent Search Sub-Agent for Energy-Efficient Multi-Agent Software Engineering Systems</title>
+    <link href="http://arxiv.org/abs/2605.27787v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.27787v1</id>
+    <published>2026-05-27T00:00:00Z</published>
+    <updated>2026-05-27T00:00:00Z</updated>
+    <author>
+      <name>Seunghyuk Cho</name>
+    </author>
+    <author>
+      <name>Sunghyun Choi</name>
+    </author>
+    <author>
+      <name>Jaeseung Heo</name>
+    </author>
+    <author>
+      <name>Youngbin Choi</name>
+    </author>
+    <author>
+      <name>Saemi Moon</name>
+    </author>
+    <author>
+      <name>MoonJeong Park</name>
+    </author>
+    <author>
+      <name>Dongwoo Kim</name>
+    </author>
+    <summary type="text">Multi-agent systems (MAS) have substantially advanced autonomous software engineering (SWE), but their growing inference energy demands raise sustainability concerns. In this paper, we demonstrate that this cost is concentrated in an overlooked source: redundant output tokens generated across agents. Two empirical findings ground this claim. First, our per-token energy attribution for MAS reveals a sharp asymmetry: an output token consumes 30 to 1,000 times more energy than an input or cached token. Second, MAS inflate per-episode output because agents repeatedly re-explore overlapping repository regions. To address this inefficiency, we propose Librarian, a persistent search sub-agent that tracks repository-search history and suppresses redundant exploration actions across agents. By returning short references to file regions instead of full file excerpts, Librarian further reduces output-token volume. On SWE-Bench Verified, Librarian reduces per-episode GPU energy consumption of existing multi-agent SWE systems by up to 25% while preserving task performance.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 19 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL" />
+  </entry>
   <entry>
     <title>Cost of Structural Learning Under Censored Feedback: A Threshold-Bandit Approach</title>
     <link href="http://arxiv.org/abs/2605.27076v1" rel="alternate" type="text/html" />
@@ -77,6 +110,121 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="cs.GT; Neural and Evolutionary Computing" />
+  </entry>
+  <entry>
+    <title>Decoupled Intelligence: A Multi-Agent LLM Framework for Controllable Traffic Scenario Generation in SUMO</title>
+    <link href="http://arxiv.org/abs/2605.27685v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.27685v1</id>
+    <published>2026-05-26T00:00:00Z</published>
+    <updated>2026-05-26T00:00:00Z</updated>
+    <author>
+      <name>Shuyang Li</name>
+    </author>
+    <author>
+      <name>Ruimin Ke</name>
+    </author>
+    <summary type="text">The integration of Large Language Models (LLMs) with microscopic traffic simulation offers a promising path toward autonomous urban planning and intelligent transportation analysis. However, existing monolithic agent architectures often struggle with the complexity of end-to-end simulation workflows, leading to reasoning failures, parameter inconsistency, and a lack of systematic state management. This paper proposes a novel multi-agent collaborative framework designed to automate the entire lifecycle of traffic simulation in SUMO (Simulation of Urban Mobility). Our approach decouples the simulation pipeline into specialized roles, including Planner, Builder, Demand, Runner, and Analyst, coordinated by a high-level reasoning engine. We introduce a state-persistent Orchestrator leveraging the Model Context Protocol (MCP) to ensure seamless data handover and environmental consistency across distributed agent actions. This architecture enables a robust closed-loop refinement process, where simulation outcomes are iteratively analyzed and optimized to satisfy user-defined Key Performance Indicators (KPIs). Experimental results through role ablation studies demonstrate that the proposed multi-agent framework significantly enhances task success rates and parameter accuracy compared to single-agent baselines. Furthermore, case studies on real-world network extraction and traffic optimization highlight the system's capability to bridge the gap between high-level natural language intent and low-level simulation execution.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.HC" />
+  </entry>
+  <entry>
+    <title>Agents that Matter: Optimizing Multi-Agent LLMs via Removal-Based Attribution</title>
+    <link href="http://arxiv.org/abs/2605.27621v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.27621v1</id>
+    <published>2026-05-26T00:00:00Z</published>
+    <updated>2026-05-26T00:00:00Z</updated>
+    <author>
+      <name>Mingyu Lu</name>
+    </author>
+    <author>
+      <name>Yushan Huang</name>
+    </author>
+    <author>
+      <name>Chris Lin</name>
+    </author>
+    <author>
+      <name>Su-In Lee</name>
+    </author>
+    <summary type="text">As multi-agent systems (MAS) become increasingly complex, identifying the contributions of individual agents is critical for system optimization. However, existing approaches lack a rigorous, unified framework for credit assignment. In this work, we formalize agent attribution as a cooperative game, parameterized by the coalition distribution, removal protocol, and target metric. Using this framework, we show that Leave-One-Out (LOO) identifies bottleneck agents as effectively as combinatorial methods, but at a fraction of the computational cost. We also demonstrate that removal protocols induce distinct games: Agent ablation isolates structural bottlenecks, whereas introspective LLM judges fail to faithfully approximate this behavior. Furthermore, to evaluate the utility of specific agent backbones, we introduce attribution via model replacement. By substituting underlying models of low-contribution agents, we improve task performance by up to 17% while reducing cost by up to 35% across three benchmarks. Finally, we apply our framework to audit a medical MAS, revealing that agent contributions to diagnostic accuracy and ethical behavior are often decoupled. By intervening on counterproductive roles, we observe an increase in ethics alignment while maintaining diagnostic accuracy. Overall, this work provides a principled approach for cost-effective MAS attribution and intervention.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL" />
+  </entry>
+  <entry>
+    <title>You Only Align Once: Propagating Cooperative Behaviors in Multi-Agent Systems through Seed Agents</title>
+    <link href="http://arxiv.org/abs/2605.27586v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.27586v1</id>
+    <published>2026-05-26T00:00:00Z</published>
+    <updated>2026-05-26T00:00:00Z</updated>
+    <author>
+      <name>Nicole Hsing</name>
+    </author>
+    <author>
+      <name>Asuka Yuxi Zheng</name>
+    </author>
+    <author>
+      <name>Yi Zhao</name>
+    </author>
+    <author>
+      <name>Haoqin Tu</name>
+    </author>
+    <author>
+      <name>Jen-Tse Huang</name>
+    </author>
+    <summary type="text">Ensuring agent behaviors in distributed open multi-agent systems remains challenging, especially as populations grow and unaligned agents may exist. We show that a single aligned agent can propagate cooperative behaviors to untrained agents purely through natural language interaction, a phenomenon we term Alignment Propagation. We study this in the Red-Black Game, a team-based iterated Prisoner's Dilemma in which teammates deliberate and vote to determine their team's collective action. By distilling the cooperative reasoning and persuasive dialogues of a teacher model into a Qwen-3-14B, we obtain a seed agent that, when placed among four untrained teammates, doubles the cooperation rate from 24.8% to 62.2%, outperforming the teacher model and a vanilla Gemini-3.1-Pro. Remarkably, a seed trained exclusively on the RedBlack Game transfers zero-shot to Sugarscape, a spatially grounded survival simulation with pairwise trading, achieving a 91.5% trade success rate versus a 21.6% baseline. Our results reframe multi-agent alignment from an exhaustive per-agent training problem to a scalable social capability that can be engineered through strategic seed placement.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL" />
+  </entry>
+  <entry>
+    <title>Detection Without Correction: A Two-Parameter Decomposition of Multi-Stage LLM Pipelines</title>
+    <link href="http://arxiv.org/abs/2605.27559v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.27559v1</id>
+    <published>2026-05-26T00:00:00Z</published>
+    <updated>2026-05-26T00:00:00Z</updated>
+    <author>
+      <name>Prashanti Nilayam</name>
+    </author>
+    <author>
+      <name>Kiran Ramanna</name>
+    </author>
+    <author>
+      <name>Prashil Tumbade</name>
+    </author>
+    <summary type="text">Multi-stage LLM pipelines that perform multi-agent debate, intrinsic self-correction, or retrieval-augmented verification exhibit puzzling aggregate behaviors: accuracy plateaus and reversals across rounds, non-replication of debate gains on contemporary frontier models, intrinsic self-correction degradation, and qualitative cross-provider divergence in debate dynamics. Downstream agent response can be operationalized as two coupled decisions: detection (whether to treat upstream content as authoritative) and conditional generation (what to produce if not). This decomposition yields four observable response regimes, of which detection-without-correction is the load-bearing failure mode. Across a nine-cell empirical grid spanning four model families, four benchmarks (GSM8K, MATH-500, GPQA-Diamond, AIME), and two methods (multi-agent debate, intrinsic self-correction), we find that the conditional miscorrection rate is consistently dominant (53-94% across cohorts) while detection rate varies contextually by more than an order of magnitude. The framework unifies the four phenomena above as signatures of a common mechanism and characterizes detection threshold as a stable model/protocol-level regularity that persists across methods at matched benchmark difficulty.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>From Task Allocation to Risk Clearing: A Unifying Interface for Mixed Human-Agent Societies</title>
+    <link href="http://arxiv.org/abs/2605.27547v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.27547v1</id>
+    <published>2026-05-26T00:00:00Z</published>
+    <updated>2026-05-26T00:00:00Z</updated>
+    <author>
+      <name>Vassilis Vassiliades</name>
+    </author>
+    <summary type="text">As humans, robots, and software agents increasingly share safety-critical environments, coordination must move from static task allocation to managing uncertain commitments. Existing frameworks fall short: they either assume rigid, static teams or learn opaque joint policies that are hard to adapt and difficult to integrate with human decision-makers. To overcome these limitations, we propose Risk-Aware Option Clearing (ROC), a unifying coordination mechanism in which agents expose options (temporally extended skills) paired with risk summaries that predict outcome distributions. A central clearinghouse then assigns tasks by optimizing risk-adjusted mission utility under deadlines and safety constraints. ROC is a family of mechanisms, ranging from deployments where the clearinghouse learns outcome models from data to ones that consume full distributional predictions from agents. By treating risk-aware options as the basic coordination unit, ROC sketches a scalable, transparent infrastructure for integrating heterogeneous agents into future mixed human--agent societies and outlines a research agenda for such risk-aware clearing layers.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Presented at EMAS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>AgensFlow: A Coordination-Policy Substrate for Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2605.27466v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.27466v1</id>
+    <published>2026-05-26T00:00:00Z</published>
+    <updated>2026-05-26T00:00:00Z</updated>
+    <author>
+      <name>Nicole Koenigstein</name>
+    </author>
+    <summary type="text">Multi-agent systems built on large language models (LLMs) require many coordination choices that are difficult to fix a priori: which skill protocol to invoke, which agent role should perform a subtask, which model to bind to each role, how roles should interact, when to use retrieval or verification, and when to omit a step entirely. These choices interact with task regime and operational constraints, so static pipelines and one-off model comparisons provide only a limited view of the design space. This paper introduces AgensFlow, an open-source framework that treats multi-agent coordination as an online policy-learning problem under partial observability. The framework makes coordination decisions observable and learnable from repeated trajectories, rather than treating skill, role, model, topology, and evaluation choices as fixed pipeline design.   AgensFlow is evaluated on two corpora: distributed-systems incident tasks and security-advisory tasks. The evaluation shows three main results: learned routing reaches a higher-quality operating point than a fixed pipeline baseline on coordination-heavy classes; skip:X isolates topology compression as a meaningful part of the substrate; and warm-started policy graphs can reduce exploration cost while preserving plateau quality. Overall, the results support that learned, auditable routing can improve coordination-heavy multi-agent workflows over static wiring.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 7 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; Machine Learning; Machine Learning (Statistics)" />
   </entry>
   <entry>
     <title>Multi-Agent Systems are Mixtures of Experts: Who Becomes an Influencer?</title>
@@ -502,189 +650,32 @@
     <category term="Multiagent Systems" />
   </entry>
   <entry>
-    <title>Self-Evolving Multi-Agent Systems via Decentralized Memory</title>
-    <link href="http://arxiv.org/abs/2605.22721v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.22721v1</id>
-    <published>2026-05-21T00:00:00Z</published>
-    <updated>2026-05-21T00:00:00Z</updated>
+    <title>Heterogeneous Multi-Agent Modeling for Measurement and Network Analysis of the Data Service Market</title>
+    <link href="http://arxiv.org/abs/2605.27433v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.27433v1</id>
+    <published>2026-05-22T00:00:00Z</published>
+    <updated>2026-05-22T00:00:00Z</updated>
     <author>
-      <name>Guangya Hao</name>
+      <name>Deyu Zhou</name>
     </author>
     <author>
-      <name>Yunbo Long</name>
+      <name>Yuwei Guo</name>
     </author>
     <author>
-      <name>Zhuokai Zhao</name>
-    </author>
-    <summary type="text">Self-evolving multi-agent systems (MAS) have emerged as a promising route to LLM agents that continually improve from experience, with persistent memory at their foundation. However, existing designs almost exclusively adopt a centralized repository shared across agents, incurring communication and coordination overhead, raising privacy concerns, and collapsing agent diversity. We propose DecentMem, a decentralized memory framework in which each agent maintains its own dual-pool memory -- an exploitation pool of consolidated past trajectories and an exploration pool of LLM-generated candidates for unseen contexts. The two pools are reweighted online based on stage-wise feedback from an LLM-as-a-judge. Theoretically, we prove that this design guarantees global reachability of the solution space and achieves $O(\log T)$ cumulative regret, matching the stochastic bandit lower bound up to constants. In practice, across three MAS frameworks (AutoGen, DyLAN, AgentNet), three Qwen3 backbones (4B/8B/14B), two Gemma4 backbones (E2B/E4B) and five benchmarks spanning math, code, QA, and embodied tasks, DecentMem improves average accuracy by up to 23.8% over the strongest centralized memory baseline and by up to 52.5% over the no-memory baseline, while reducing token usage by up to 49%.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>A Generalized Nash Equilibrium-Seeking Scheme for Trauma Resuscitation</title>
-    <link href="http://arxiv.org/abs/2605.22661v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.22661v1</id>
-    <published>2026-05-21T00:00:00Z</published>
-    <updated>2026-05-21T00:00:00Z</updated>
-    <author>
-      <name>Promise Ekpo</name>
+      <name>Xudong Lu</name>
     </author>
     <author>
-      <name>Angelique Taylor</name>
+      <name>Linhao Zhang</name>
     </author>
     <author>
-      <name>Lekan Molu</name>
-    </author>
-    <summary type="text">Trauma resuscitation is a clinical process for treating life-threatening physiological disorders in safety-critical environments, driven by the experience of healthcare workers (HCWs). Designing and optimizing quantifiable metrics that accurately capture HCW decisions may augment current resuscitation procedures with the potential to improve patient outcomes. This motivates our socio-technical formulation of trauma resuscitation as a distributed generalized Nash equilibrium (GNE)-seeking game with coupled inequality constraints. This method is optimized over a time-varying communication graph. We introduce novel insights from clinical experience to model HCWs behavior. This work facilitates the best possible resuscitation outcome given HCWs workloads, schedules, competencies, and limited resources.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.DC; cs.GT; eess.SY" />
-  </entry>
-  <entry>
-    <title>Sibyl-AutoResearch: Autonomous Research Needs Self-Evolving Trial-and-Error Harnesses, Not Paper Generators</title>
-    <link href="http://arxiv.org/abs/2605.22343v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.22343v1</id>
-    <published>2026-05-21T00:00:00Z</published>
-    <updated>2026-05-21T00:00:00Z</updated>
-    <author>
-      <name>Chengcheng Wang</name>
+      <name>Wei Guo</name>
     </author>
     <author>
-      <name>Qinhua Xie</name>
+      <name>Lizhen Cui</name>
     </author>
-    <author>
-      <name>Wei He</name>
-    </author>
-    <author>
-      <name>Jianyuan Guo</name>
-    </author>
-    <author>
-      <name>Shiqi Wang</name>
-    </author>
-    <author>
-      <name>Chang Xu</name>
-    </author>
-    <summary type="text">Autonomous research systems increasingly make the scientific workflow executable: agents can propose ideas, run code, inspect results, and draft papers. But executable workflows do not by themselves produce research judgment. We analyze where current systems lose trial experience: weak evidence becomes prose, pilot signals become broad claims, memory remains textual, and recurring process failures do not change later behavior. We introduce Sibyl-AutoResearch, a self-evolving AutoResearch framework built around Scientific Trial-and-Error Harnesses. A harness lets agents run bounded trials, preserve positive and negative outcomes, and route lessons into later planning, validation, claim scope, scheduling, critique, writing, and harness repair. We formalize this through two auditable conversion units: trial-to-behavior conversion, which links trial signals to later research actions, and trial-to-harness-behavior conversion, which links recurring process failures to system updates. We implement the framework in SIBYL, a file-backed autonomous research system that exposes the state, roles, memory, gates, and artifact traces needed to inspect these conversion paths. A retrospective audit identifies eight high-confidence conversion events, with a median latency of one iteration and a maximum latency of three iterations. A recovered-failure registry further shows how five naturally occurring failure classes, including duplicate results, stale numbers, and unsupported statistics, were blocked, downgraded, or routed into later repair. These traces do not establish a comparative performance claim; they show that the proposed conversion units are recoverable from realistic autonomous-research workspaces. The SIBYL framework and system are available at https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem"&gt;https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.SE" />
-  </entry>
-  <entry>
-    <title>ACCoRD: Actor-Critic Conflict Resolution with Deep learning for O-RAN xApps</title>
-    <link href="http://arxiv.org/abs/2605.22306v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.22306v1</id>
-    <published>2026-05-21T00:00:00Z</published>
-    <updated>2026-05-21T00:00:00Z</updated>
-    <author>
-      <name>Cezary Adamczyk</name>
-    </author>
-    <author>
-      <name>Adrian Kliks</name>
-    </author>
-    <summary type="text">Conflict Mitigation (ConMit) is a crucial part of intelligent network control in Open Radio Access Networks (O-RAN). In this paper, we propose a method named ACCoRD to resolve detected control conflicts in Near-Real Time RAN Intelligent Controller using a Conflict Resolution (CR) Agent with an Artificial Neural Network (ANN) trained with a reinforcement learning algorithm PPO-Clip. The implemented ANN analyzes data about the network and conflicting control decisions to infer optimal CR actions. The CR Agent gathers feedback from the network after each resolved conflict to assess its efficiency and adjust the ANN's weights during batch training. The evaluation of the proposed approach is based on simulation data. A new methodology for evaluating CR solutions is proposed. Results show that the proposed ANN-based method improves on the efficiency of rule-based approaches by significantly reducing negative network events caused by conflicting control decisions in medium and high traffic scenarios.</summary>
+    <summary type="text">With the increasing complexity of collaboration among various social entities and user demands, the factors affecting the stable development of the data service market are also growing. These factors include the widespread dissemination of information enhancing subjective consciousness, the continuous improvement in intelligence, and the complexification of structural relationships. To achieve effective governance and regulation of the data service market, it is crucial to conduct simulation experiments before making regulatory decisions. However, current research and analysis of the data service market primarily focus on data-level performance, proving inadequate when it comes to measurement and analysis of multiple heterogeneous entities and the integration of various social elements within the data service market. Based on this, this paper innovatively proposes a data service market measurement and network analysis method based on heterogeneous multi-agent modeling. By introducing the service ecosystem theory, we clarify the participants and external factors of the data service market and conduct utility measurements for three-level entities based on value creation. Furthermore, an analytical methodology is devised to precisely assess the influence of heterogeneous networks on utility. Finally, the paper verifies the effectiveness of the proposed method through the analysis of experimental results.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Emergence of agriculture in an artificial society of reinforcement learning agents</title>
-    <link href="http://arxiv.org/abs/2605.22256v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.22256v1</id>
-    <published>2026-05-21T00:00:00Z</published>
-    <updated>2026-05-21T00:00:00Z</updated>
-    <author>
-      <name>Gautier Hamon</name>
-    </author>
-    <author>
-      <name>Martí Sánchez-Fibla</name>
-    </author>
-    <author>
-      <name>Clément Moulin-Frier</name>
-    </author>
-    <author>
-      <name>Ricard Solé</name>
-    </author>
-    <summary type="text">The origin of agriculture represents a major evolutionary transition and a paradigmatic example of how complex collective behaviors emerge from simple interactions. Here we introduce an artificial society of reinforcement learning agents embedded in a dynamic ecological environment to identify general principles underlying this transition. Within this system, agricultural practices emerge spontaneously - without explicit instruction - through the coupled dynamics of learning and environmental modification. We show that this transition is governed by four key ingredients: individual planning through the valuation of delayed rewards, social vulnerability to cheaters, stabilization via social learning, and an emergent lock-in effect that renders agriculture effectively irreversible once established. In particular, we demonstrate that social learning acts as a "firewall" that suppresses cheater invasion and enables the propagation of successful strategies, leading to sustained population growth and nonlinear amplification of domesticated resources. Together, these results reveal universal mechanisms linking individual decision-making, social interactions, and ecological feedbacks. More broadly, they highlight the potential of artificial societies as experimental platforms to study the emergence of cultural innovations and major evolutionary transitions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>SVR-MAD: A Bayesian-Inspired Framework for Posterior-Guided Multi-Agent Debate</title>
-    <link href="http://arxiv.org/abs/2605.23099v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.23099v1</id>
-    <published>2026-05-21T00:00:00Z</published>
-    <updated>2026-05-21T00:00:00Z</updated>
-    <author>
-      <name>Weifan Jiang</name>
-    </author>
-    <author>
-      <name>Rana Shahout</name>
-    </author>
-    <author>
-      <name>Minghao Li</name>
-    </author>
-    <author>
-      <name>Zhenting Qi</name>
-    </author>
-    <author>
-      <name>Yilun Du</name>
-    </author>
-    <author>
-      <name>Michael Mitzenmacher</name>
-    </author>
-    <author>
-      <name>Minlan Yu</name>
-    </author>
-    <summary type="text">Multi-Agent Debate (MAD) improves LLM-agent accuracy but suffers from rapid context growth, limiting scalability in larger multi-agent settings. Existing methods prune low-utility communications using prior signals, such as token-level log-likelihoods or LLM self-reported confidence. However, these signals become unreliable under hallucination, degrading the accuracy of MAD methods that rely on them. We propose SVR-MAD, a Bayesian-inspired MAD framework that treats pre-debate signals as priors and debate outcomes as posterior-style evidence for estimating agent correctness. SVR-MAD uses this evidence to incrementally construct the communication graph, prioritizing agents whose answers survive peer challenges. Experiments across multiple LLMs and benchmarks show that SVR-MAD reduces token cost by up to 61% while matching or improving accuracy relative to the most accurate competing MAD baseline.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>How to Steer Your Multi-Agent System: Human-LLM Collaborative Planning</title>
-    <link href="http://arxiv.org/abs/2605.23023v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.23023v1</id>
-    <published>2026-05-21T00:00:00Z</published>
-    <updated>2026-05-21T00:00:00Z</updated>
-    <author>
-      <name>Zeyu He</name>
-    </author>
-    <author>
-      <name>Hannah Kim</name>
-    </author>
-    <author>
-      <name>Dan Zhang</name>
-    </author>
-    <author>
-      <name>Estevam Hruschka</name>
-    </author>
-    <summary type="text">In orchestrated multi-agent systems, humans often struggle to manage plans due to their complexity and limited transparency. Existing approaches rely on outcome-level supervision, where users verify only final outputs without visibility into intermediate reasoning. We formalize a design space for human-LLM co-planning interactions along three axes: mode (semantic vs. structural), scope (global vs. targeted), and level (low vs. high-level edits). We realize it in AMBIPOM, a prototype supporting process-level supervision through both semantic and structural interactions. Through a user study, we characterize how users navigate this space, revealing hybrid workflows and effort-control-risk trade-offs; through a controlled benchmark, we analyze how LLMs revise plans under varying scope and revision strategies. Our findings yield design insights for more transparent, controllable, and effective human-AI co-planning. We release code and data at https://github.com/megagonlabs/ambipom.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/megagonlabs/ambipom"&gt;https://github.com/megagonlabs/ambipom&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ACM Conference on AI and Agentic Systems (CAIS) 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.HC" />
-  </entry>
-  <entry>
-    <title>Emergence of agriculture in an artificial society of reinforcement learning agents</title>
-    <link href="http://arxiv.org/abs/2605.22256v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.22256v2</id>
-    <published>2026-05-21T00:00:00Z</published>
-    <updated>2026-05-21T00:00:00Z</updated>
-    <author>
-      <name>Gautier Hamon</name>
-    </author>
-    <author>
-      <name>Martí Sánchez-Fibla</name>
-    </author>
-    <author>
-      <name>Clément Moulin-Frier</name>
-    </author>
-    <author>
-      <name>Ricard Solé</name>
-    </author>
-    <summary type="text">The origin of agriculture represents a major evolutionary transition and a paradigmatic example of how complex collective behaviors emerge from simple interactions. Here we introduce an artificial society of reinforcement learning agents embedded in a dynamic ecological environment to identify general principles underlying this transition. Within this system, agricultural practices emerge spontaneously - without explicit instruction - through the coupled dynamics of learning and environmental modification. We show that this transition is governed by four key ingredients: individual planning through the valuation of delayed rewards, social vulnerability to cheaters, stabilization via social learning, and an emergent lock-in effect that renders agriculture effectively irreversible once established. In particular, we demonstrate that social learning acts as a "firewall" that suppresses cheater invasion and enables the propagation of successful strategies, leading to sustained population growth and nonlinear amplification of domesticated resources. Together, these results reveal universal mechanisms linking individual decision-making, social interactions, and ecological feedbacks. More broadly, they highlight the potential of artificial societies as experimental platforms to study the emergence of cultural innovations and major evolutionary transitions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
   </entry>
 </feed>
