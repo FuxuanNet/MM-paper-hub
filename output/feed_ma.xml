@@ -4,12 +4,312 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-05-28T05:23:51Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 28 entries</subtitle>
+  <updated>2026-05-29T05:10:35Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 33 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>SpecBench: Evaluating Specification-Level Reasoning for Software Engineering LLM Agents</title>
+    <link href="http://arxiv.org/abs/2605.30314v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.30314v1</id>
+    <published>2026-05-28T00:00:00Z</published>
+    <updated>2026-05-28T00:00:00Z</updated>
+    <author>
+      <name>Grant Hamblin</name>
+    </author>
+    <author>
+      <name>Kevin Song</name>
+    </author>
+    <author>
+      <name>Zhanda Zhu</name>
+    </author>
+    <author>
+      <name>Anand Jayarajan</name>
+    </author>
+    <author>
+      <name>Sihang Liu</name>
+    </author>
+    <author>
+      <name>Nandita Vijaykumar</name>
+    </author>
+    <author>
+      <name>Gennady Pekhimenko</name>
+    </author>
+    <summary type="text">Software engineering (SWE) agents are transitioning from code generation to full software development lifecycle automation. A critical phase in this lifecycle is specification design: transforming initial proposals into carefully considered requirements through expert review. Existing benchmarks such as SWE-Bench are implementation-focused by measuring the agent's ability to generate code given fixed, precise design requirements. This formulation assumes specifications are correct and complete. In real-world complex and critical software systems, initial specifications are often incomplete and flawed, requiring extensive expert reviews and revisions before being accepted for implementation. To fill this gap, we introduce SpecBench to evaluate specification-level reasoning: the ability to generate complete, unambiguous, consistent, and correct system specifications. SpecBench tasks are derived from the Request for Comments (RFC) process used by mature open-source projects. For each task, an agent is given an initial design proposal, the project codebase, and all past project RFC discussions. The agent is tasked with identifying specification deficiencies: omissions, ambiguities, inconsistencies, or incorrect assumptions in the initial proposal. We evaluate predictions against critiques raised by expert maintainers during historical RFC reviews. SpecBench contains tasks from 5 diverse repositories: Kubernetes, React, Rust, TVM, and vLLM. We evaluate state-of-the-art SWE agents on SpecBench, analyzing their capacity to reason about system design without execution feedback. The best performing agent, GPT-5.4, achieves 44.4% accuracy.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations</title>
+    <link href="http://arxiv.org/abs/2605.30258v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.30258v1</id>
+    <published>2026-05-28T00:00:00Z</published>
+    <updated>2026-05-28T00:00:00Z</updated>
+    <author>
+      <name>Sneheel Sarangi</name>
+    </author>
+    <author>
+      <name>Maximilian Puelma Touzel</name>
+    </author>
+    <author>
+      <name>Aurélien Bück-Kaeffer</name>
+    </author>
+    <author>
+      <name>Zachary Yang</name>
+    </author>
+    <author>
+      <name>Jean-François Godbout</name>
+    </author>
+    <author>
+      <name>Reihaneh Rabbany</name>
+    </author>
+    <summary type="text">LLMs are increasingly deployed to simulate social interactions, yet many of the existing simulators remain ad hoc and monolithic. This lack of architectural standardization prevents reproducible research and complicates downstream evaluation. We advance a rigorous science of LLM-based multi-agent simulation by modularizing core components into Environments, Agents, Simulation engines, and Evaluation metrics (EASE). We demonstrate the utility of EASE configuration by wrapping it in an experimental study schema for orchestrating workflows centered around answering explicit research questions in generated scenarios. We contribute SiliSocS, an open-source, research-ready Silicon Society Sandbox implementing a study-structured EASE configuration to enable highly configurable and reproducible LLM-based social simulations. Using SiliSocS and EASE, we present three case studies, showcasing the system's comprehensive assessment of existing questions, ability to dive deeper into complex questions, and elaboration of existing studies, respectively. Together, these case studies highlight the limitations of current modeling approaches and isolate the impacts of design choices on key results.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Unifying Temporal and Structural Credit Assignment in LLM-Based Multi-Agent Prompt Optimization</title>
+    <link href="http://arxiv.org/abs/2605.30227v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.30227v1</id>
+    <published>2026-05-28T00:00:00Z</published>
+    <updated>2026-05-28T00:00:00Z</updated>
+    <author>
+      <name>Wenwu Li</name>
+    </author>
+    <author>
+      <name>Yuran Song</name>
+    </author>
+    <author>
+      <name>Mingze Zhao</name>
+    </author>
+    <author>
+      <name>Bo Jin</name>
+    </author>
+    <author>
+      <name>Wenhao Li</name>
+    </author>
+    <summary type="text">While Multi-Agent Systems (MAS) empower Large Language Models to tackle complex reasoning tasks through collaborative interaction, optimizing their dynamics remains a formidable challenge due to the discrete, non-differentiable nature of the computation graph and the sparsity of global supervisory signals. Existing black-box optimizers struggle to attribute trajectory-level failure to specific local components, resulting in inefficient, high-variance exploration. We argue that tractable MAS optimization needs structural inductive biases to disentangle error signals. We propose temporal and structural credit assignment, which decomposes the objective along two axes: (i) temporal credit, using state-space bottlenecks to identify critical rounds, and (ii) structural credit, using stationary role policies to isolate agent contributions. Leveraging these decomposed signals, we introduce a discrete, verbalized block coordinate descent algorithm for iterative refinement. Rather than indiscriminate global updates, it alternates between optimizing role prompts and aggregation protocols, using LLM-generated "proxy gradients" to target only the identified weak links. Across diverse reasoning benchmarks, our approach substantially reduces query complexity while improving performance, providing a principled and interpretable path toward self-improving MAS.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>When Cloud Agents Meet Device Agents: Lessons from Hybrid Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2605.30102v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.30102v1</id>
+    <published>2026-05-28T00:00:00Z</published>
+    <updated>2026-05-28T00:00:00Z</updated>
+    <author>
+      <name>Corrado Rainone</name>
+    </author>
+    <author>
+      <name>Davide Belli</name>
+    </author>
+    <author>
+      <name>Bence Major</name>
+    </author>
+    <author>
+      <name>Arash Behboodi</name>
+    </author>
+    <summary type="text">The design space of agentic AI inference spans two extremes: frontier large language models (LLMs), typically hosted in the cloud and offering strong performance across a wide range of tasks at substantially high cost, and more cost-efficient small language models (SLMs), which are amenable to on-device inference. Hybrid multi-agent systems (MASs) combining on-device and cloud models offer a promising middle ground, but they also introduce a complex and poorly understood design space in which task accuracy, monetary cost, and edge energy consumption are tightly coupled; in the absence of general design principles, hybrid components, although not the most prevalent choice, are typically introduced through ad hoc decisions tailored to specific domains. In this work, we examine this design space more systematically. We adapt two representative MAS architectures to support hybrid inference and study how individual design choices shift the operating point along the Pareto frontier of power, cost, and performance. Our findings paint a nuanced picture of hybrid MAS design: while SLMs can effectively benefit from LLM assistance, the optimal architecture is highly task-dependent, and greater frontier-level compute does not consistently translate to better performance.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICML 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Discovering Cooperative Pipelines: Autoresearch for Sequential Social Dilemmas</title>
+    <link href="http://arxiv.org/abs/2605.30003v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.30003v1</id>
+    <published>2026-05-28T00:00:00Z</published>
+    <updated>2026-05-28T00:00:00Z</updated>
+    <author>
+      <name>Víctor Gallego</name>
+    </author>
+    <summary type="text">We study two-level autoresearch for cooperation: an outer-loop AI agent autonomously redesigns the inner-loop pipeline of an LLM policy-synthesis system for multi-agent Sequential Social Dilemmas (SSDs). A researcher agent $\mathcal{R}$ (run as a coding agent) reads the inner-loop source code, edits system prompts, feedback functions, helper libraries, and iteration logic, runs evaluations, and decides what to keep, following the autoresearch paradigm. Across two games (Cleanup and Gathering), two policy-synthesizer LLMs, and two welfare objectives (utilitarian efficiency and Rawlsian maximin), the researcher reliably exceeds hand-designed baselines, sharply tightens run-to-run variance, and outperforms prompt-only optimization. The discovered pipelines are objective-dependent: only under maximin does the researcher inject an explicit fairness mechanism into synthesizer pipelines, a class of mechanism that is absent from its own objective-agnostic system prompt and from every efficiency-optimized pipeline. This supports an information-design reading in which the researcher chooses what to reveal to the boundedly rational synthesizer as a function of the welfare objective. Code at https://github.com/vicgalle/autoresearch-social-dilemmas.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/vicgalle/autoresearch-social-dilemmas"&gt;https://github.com/vicgalle/autoresearch-social-dilemmas&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to the AI Agents for Discovery in the Wild (AID-Wild) Workshop at ACM CAIS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Evolutionary Dynamics of Cooperation in Next-Generation LLM Agent Systems: A Cross-Provider Empirical Extension</title>
+    <link href="http://arxiv.org/abs/2605.29874v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.29874v1</id>
+    <published>2026-05-28T00:00:00Z</published>
+    <updated>2026-05-28T00:00:00Z</updated>
+    <author>
+      <name>Francisco León Zúñiga Bolívar</name>
+    </author>
+    <summary type="text">Do next-generation LLM agents inherit the cooperative biases documented in their predecessors, or does scale and provider diversity reshape equilibrium behaviour in competitive multi-agent settings? Willis et al. established a benchmark for this question using evolutionary game theory and the Iterated Prisoner's Dilemma (IPD), finding consistent cooperative biases in ChatGPT-4o and Claude 3.5 Sonnet. We extend this benchmark to four frontier models released in 2025-2026 - Claude Sonnet 4.6, Gemini 2.5 Flash, Gemini 3.1 Pro, and GPT-5.4 Mini - applying the identical protocol across three prompting styles (Default, Prose, Self-Refine) and four population compositions (balanced and biased, with and without noise). Cooperative bias persists across providers (H1): nine of twelve model-prompt combinations favour cooperative equilibria in balanced noiseless conditions. Cross-provider divergence is substantial (H3): Gemini 2.5 Flash reaches up to 77% aggressive equilibria under biased conditions, while GPT-5.4 Mini reaches 70% cooperative equilibria under Self-Refine. Support for aggressive capability parity is partial (H2): Self-Refine raises ICD in all models and Claude Sonnet 4.6 Refine achieves the highest ICD in the dataset (0.913), but Default and Prose prompts show no systematic narrowing. Evidence on noise robustness is directionally positive but not robustly confirmed (H4): with n=500 Moran iterations per condition, average noise sensitivity is approximately 6 percentage points for Claude Sonnet 4.6 versus 13 pp for Claude 3.5 Sonnet, but this cross-study gap is not statistically significant once the predecessor's unreported sampling error is propagated. Provider identity, rather than model generation, is the strongest correlate of equilibrium outcomes; noise remains a universal challenge regardless of model size or vintage.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.GT" />
+  </entry>
+  <entry>
+    <title>Evolve as a Team: Collaborative Self-Evolution for LLM-based Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2605.29790v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.29790v1</id>
+    <published>2026-05-28T00:00:00Z</published>
+    <updated>2026-05-28T00:00:00Z</updated>
+    <author>
+      <name>Zhezheng Hao</name>
+    </author>
+    <author>
+      <name>Tianfu Wang</name>
+    </author>
+    <author>
+      <name>Huanshuo Dong</name>
+    </author>
+    <author>
+      <name>Ziyan Liu</name>
+    </author>
+    <author>
+      <name>Hong Wang</name>
+    </author>
+    <author>
+      <name>Xiankun Lin</name>
+    </author>
+    <author>
+      <name>Qiang Lin</name>
+    </author>
+    <author>
+      <name>Can Wang</name>
+    </author>
+    <author>
+      <name>Hande Dong</name>
+    </author>
+    <author>
+      <name>Jiawei Chen</name>
+    </author>
+    <summary type="text">LLM-based multi-agent systems (MAS) have emerged as an effective paradigm for complex and long-horizon tasks. However, in real-world tasks, MAS often exhibit various failures during execution and such failures are difficult to eliminate during design. This motivates experience-driven MAS evolution, where a system improves based on its own execution experience. Yet such evolution is challenging because MAS experience is prolonged and intricate, interleaving multiple agents' execution chains and communication messages, which makes it difficult to identify what should be improved. To address this challenge, we propose Meta-Team, an experience-driven MAS evolution framework based on collaborative self-evolution. Meta-Team preserves the execution context of each agent and coordinates post-task communication, enabling agents to exchange distributed evidence for evolution. Building on this design, Meta-Team conducts multi-scale self-evolution, transforming execution experience into reusable improvements to agent behaviors, inter-agent coordination, and team-level organization. Across six long-horizon agent benchmarks, Meta-Team consistently outperforms single-agent systems, hand-crafted MAS, and prior MAS evolution methods; further analyses demonstrate that Meta-Team enables more reliable and scalable MAS self-evolution.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>AgentCVR: Active Multi-Agent Cross-Video Reasoning via Script-Simulated Reinforcement Learning</title>
+    <link href="http://arxiv.org/abs/2605.29643v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.29643v1</id>
+    <published>2026-05-28T00:00:00Z</published>
+    <updated>2026-05-28T00:00:00Z</updated>
+    <author>
+      <name>Yilun Qiu</name>
+    </author>
+    <author>
+      <name>Jiahe Wang</name>
+    </author>
+    <author>
+      <name>Cilin Yan</name>
+    </author>
+    <author>
+      <name>Jiayin Cai</name>
+    </author>
+    <author>
+      <name>Xiaolong Jiang</name>
+    </author>
+    <author>
+      <name>Yao Hu</name>
+    </author>
+    <author>
+      <name>Chun Yuan</name>
+    </author>
+    <summary type="text">Cross-Video Reasoning (CVR) has emerged as a critical frontier in multimodal intelligence, requiring models to retrieve, align, and aggregate evidence distributed across multiple videos. Current Multimodal Large Language Models (MLLMs) often struggle with CVR, as simple single-pass strategies encode multiple videos into a shared compressed context, potentially obscuring rare but critical evidence. In this paper, we propose AgentCVR, a multi-agent framework that treats CVR as an active evidence-acquisition task. AgentCVR employs a Master Agent to iteratively coordinate specialized Visual and Audio Agents for targeted evidence extraction. To ensure efficient training, we introduce Script-Simulated RL, which optimizes the agent's policy with LLM-generated semantic scripts and a lightweight text-based simulator, bypassing costly multimodal inference during online exploration. Experimental results on a comprehensive CVR benchmark show that AgentCVR outperforms single-pass baselines and achieves comparable performance to state-of-the-art closed-source systems, particularly in complex cross-video alignment and localization. To ensure reproducibility, our code is available at https://github.com/wang-jh24/AgentCVR.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/wang-jh24/AgentCVR"&gt;https://github.com/wang-jh24/AgentCVR&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>CONCAT: Consensus- and Confidence-Driven Ad Hoc Teaming for Efficient LLM-Based Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2605.29612v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.29612v1</id>
+    <published>2026-05-28T00:00:00Z</published>
+    <updated>2026-05-28T00:00:00Z</updated>
+    <author>
+      <name>Ziyang Ma</name>
+    </author>
+    <author>
+      <name>Dingyi Zhang</name>
+    </author>
+    <author>
+      <name>Sichu Liang</name>
+    </author>
+    <author>
+      <name>Jiajia Chu</name>
+    </author>
+    <author>
+      <name>Pengfei Xia</name>
+    </author>
+    <author>
+      <name>Hui Zang</name>
+    </author>
+    <author>
+      <name>Deyu Zhou</name>
+    </author>
+    <summary type="text">Although large language model (LLM) based multi-agent systems (MAS) show their capability to solve complex tasks and achieve higher performance over single agent systems, they lead to huge computational overheads because of heavy communication between agents. Previous research has made efforts to train a sparse multi-agent graph or fine-tune a planner to orchestrate the workflow better. However, such extra training processes introduce computational costs and limit MAS to specific domains, therefore compromising their generalizability. In this paper, we propose CONCAT, a training-free multi-agent collaboration framework based on CONsensus and Confidence-driven Ad hoc Teaming to efficiently organize agent interactions. Specifically, agents are clustered based on their initial answers, and leaders of each cluster are selected based on the agents' confidence. Then, a heuristic function based on the Theory of Mind is designed to predict the collaboration benefits between every two leaders according to their answers and confidence. Finally, an ad hoc multi-agent network is organized after evicting a percentage of communications based on the predicted benefits. Experiments across three LLMs and three benchmarks show that CONCAT achieves up to 2.02x higher efficiency (accuracy/latency ratio) than LLM-Debate and outperforms training-aware methods such as AgentDropout, while reducing average latency by 50.1% on Qwen2.5-14B-Instruct, without any task-specific training.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL" />
+  </entry>
+  <entry>
+    <title>DynaGraph: Lightweight Multi-Model Interaction Framework via Dynamic Topological Reconfiguration</title>
+    <link href="http://arxiv.org/abs/2605.29511v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.29511v1</id>
+    <published>2026-05-28T00:00:00Z</published>
+    <updated>2026-05-28T00:00:00Z</updated>
+    <author>
+      <name>Yanxing Guo</name>
+    </author>
+    <author>
+      <name>Zihao Zheng</name>
+    </author>
+    <author>
+      <name>Fangzhou Wu</name>
+    </author>
+    <author>
+      <name>Ling Liang</name>
+    </author>
+    <author>
+      <name>Lin Bao</name>
+    </author>
+    <author>
+      <name>Zongwei Wang</name>
+    </author>
+    <author>
+      <name>Yimao Cai</name>
+    </author>
+    <summary type="text">Tackling complex reasoning tasks typically relies on massive monolithic LLMs, which suffer from severe computational redundancy. While task decomposition through structured pipelines or multi-agent collaborations offers an alternative, these approaches inevitably fall into a critical dilemma: predefined static topologies are highly vulnerable to cascading errors, whereas unconstrained dynamic agents suffer from trajectory divergence and unpredictable memory bloat. To address this, we present DynaGraph, a lightweight multi-model framework driven by dynamic topological reconfiguration. At the execution level, DynaGraph multiplexes time-division PEFT adapters over a shared base model, enabling both full system training and inference deployment on a single consumer-grade GPU. At the routing level, the Evaluator continuously monitors execution confidence to trigger hierarchical self-healing: Fine-grained Patching for localized data gaps and Subgraph Reconstruction for severe logical ruptures. Experiments on StrategyQA, MATH, and FinQA demonstrate our 8B model closely approximates the reasoning capabilities of a 72B monolithic model (e.g., 87.6% on StrategyQA, 82.7% on MATH). Furthermore, it reduces latency by up to 68.1% and token consumption by 68.6% compared to unconstrained dynamic architectures.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL; Machine Learning" />
+  </entry>
+  <entry>
+    <title>LLM-ALSO: LLM-Driven Adaptive Learning-Signal Optimization for Multi-Agent Reinforcement Learning</title>
+    <link href="http://arxiv.org/abs/2605.29293v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.29293v1</id>
+    <published>2026-05-28T00:00:00Z</published>
+    <updated>2026-05-28T00:00:00Z</updated>
+    <author>
+      <name>Xiaoguang Wu</name>
+    </author>
+    <author>
+      <name>Zhi Zheng</name>
+    </author>
+    <author>
+      <name>Hui Xiong</name>
+    </author>
+    <summary type="text">Effective training-time guidance is central to multi-agent reinforcement learning (MARL), yet remains difficult in sparse-reward settings where weak supervision limits coordination and policy improvement, and existing methods often require substantial domain expertise or manual design effort. Large language models (LLMs) provide a promising alternative for flexible learning-signal design, yet existing LLM-based methods remain largely single-agent-oriented, one-shot, or weakly validated for the evolving training dynamics of cooperative MARL. To address these limitations, we propose LLM-ALSO, an iterative LLM-driven adaptive learning-signal optimization framework for MARL. Rather than directly deploying LLM-generated rewards, LLM-ALSO decomposes adaptation into iterative diagnosis, proposal, and validation: a Critic LLM diagnoses stage-specific learning and coordination failures from sparse-return metrics and compact behavior evidence, a Generator LLM proposes candidate reward-shaping configurations conditioned on the diagnosis, and branch-validation feedback refines candidates before they affect the main training trajectory. Through short-horizon validation and stage-aware adaptation, LLM-ALSO promotes only validated updates into training, reducing the risk of unreliable LLM-generated modifications. Experiments on sparse-reward cooperative MARL tasks show that LLM-ALSO improves sparse-evaluation performance and learning efficiency.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>Long Live the Librarian! A Persistent Search Sub-Agent for Energy-Efficient Multi-Agent Software Engineering Systems</title>
     <link href="http://arxiv.org/abs/2605.27787v1" rel="alternate" type="text/html" />
@@ -42,6 +342,23 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="cs.CL" />
+  </entry>
+  <entry>
+    <title>The incremental voter model: mean-field analysis and convergence to equilibrium</title>
+    <link href="http://arxiv.org/abs/2605.28984v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2605.28984v1</id>
+    <published>2026-05-27T00:00:00Z</published>
+    <updated>2026-05-27T00:00:00Z</updated>
+    <author>
+      <name>Fei Cao</name>
+    </author>
+    <author>
+      <name>Xiaoqian Gong</name>
+    </author>
+    <summary type="text">We introduce the incremental voter model (IVM), a discrete-opinion multi-agent system where agents undergo step-wise transitions biased by the opinion of a randomly selected persuader. Our incremental voter model comprises a large population of interacting agents, each holding an opinion represented by an element of the discrete set $\{-k,\ldots,0,\ldots,k\}, k \in \mathbb{N}_{+}$. At each update step as time progresses, a pair of distinct agents are selected independently and uniformly at random from the population, and the first agent (viewed as the ``listener'') updates its opinion based on that of the second (viewed as the ``persuader''), adopting a new opinion that differs from its current one by at most one unit. By deriving the mean-field system of nonlinear ordinary differential equations (ODEs) that governs the large-population limit of the agent-based model, we develop a rigorous mathematical framework to study the asymptotic behavior of the opinion distribution in the mean-field limit. These results contribute to a deeper understanding of social influence processes in complex systems, particularly in modeling opinion polarization, and may guide the formulation of more advanced models in future research.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
   </entry>
   <entry>
     <title>Cost of Structural Learning Under Censored Feedback: A Threshold-Bandit Approach</title>
@@ -527,155 +844,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Machine Learning; Robotics" />
-  </entry>
-  <entry>
-    <title>PhotoFlow: Agentic 3D Virtual Photography Missions</title>
-    <link href="http://arxiv.org/abs/2605.23771v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.23771v1</id>
-    <published>2026-05-22T00:00:00Z</published>
-    <updated>2026-05-22T00:00:00Z</updated>
-    <author>
-      <name>Jiarui Guo</name>
-    </author>
-    <author>
-      <name>Haojia Wei</name>
-    </author>
-    <author>
-      <name>Yiming Zhang</name>
-    </author>
-    <author>
-      <name>Yifei Liu</name>
-    </author>
-    <author>
-      <name>Yuning Gong</name>
-    </author>
-    <author>
-      <name>Hongjie Zhang</name>
-    </author>
-    <author>
-      <name>Xue Yang</name>
-    </author>
-    <author>
-      <name>Zhihang Zhong</name>
-    </author>
-    <summary type="text">Virtual photography asks an agent to enter a prepared 3D scene with no preselected camera pose or reference image, infer a suitable shot from scene information and a language intent, choose executable camera parameters, and render the final photograph. Recent progress in vision-language models makes this kind of spatial agent increasingly plausible, but the task stresses two capabilities that remain hard to evaluate together: complex 3D spatial understanding and abstract aesthetic judgment. We introduce PhotoFlow, a Director-Reviewer-Reflector agent for closed-loop camera search. The Director builds a soft photographic blueprint and proposes diverse candidate cameras; the Reviewer combines rule checks, visual critique, and pairwise incumbent selection; and the Reflector converts failures into region memory, dead-zone suppression, and high-explore relocation. We also introduce VPhotoBench, a benchmark of 47 open-license Blender scenes and 141 language-conditioned photography missions spanning subject placement, relational composition, and atmosphere/style. On held-out experiments, PhotoFlow achieves the strongest external quality-alignment composite and success rate among one-shot prediction, single-chain reflection, anchor-bank selection, and random search under a six-round rendering budget. To our knowledge, this is the first work to make language-conditioned virtual photography in arbitrary Blender scenes an executable agent task, and our results show that an LLM-centered spatial agent can already produce strong photographs in a setting designed to challenge both 3D reasoning and aesthetic choice.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>The Communication Complexity of Instant-Runoff Voting</title>
-    <link href="http://arxiv.org/abs/2605.23743v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.23743v1</id>
-    <published>2026-05-22T00:00:00Z</published>
-    <updated>2026-05-22T00:00:00Z</updated>
-    <author>
-      <name>Élie de Panafieu</name>
-    </author>
-    <author>
-      <name>François Durand</name>
-    </author>
-    <author>
-      <name>Jérôme Lang</name>
-    </author>
-    <summary type="text">The communication complexity of a voting rule is the worst-case number of bits that n voters must transmit to a central authority under the most efficient elicitation protocol in an election with m candidates. We study the communication complexity of Instant-Runoff Voting (IRV). Conitzer and Sandholm [2005] established an upper bound of O(n (log m)${}^2$), but did not provide a matching lower bound beyond $Ω$(n log m). We resolve this open problem by raising the lower bound to $Ω$(n (log m)${}^2$) using the fooling set technique, thereby showing that the communication complexity of IRV is $Θ$(n (log m)${}^2$). We further show that this complexity drops to $Θ$(n log m) under the single-peakedness restriction, and that both the IRV-Average variant and Single Transferable Vote (STV), the multiwinner extension of IRV, have the same asymptotic communication complexity as IRV.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Safety, Liveness, and Fairness in Quantitative Argumentation Dialogues</title>
-    <link href="http://arxiv.org/abs/2605.23578v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.23578v1</id>
-    <published>2026-05-22T00:00:00Z</published>
-    <updated>2026-05-22T00:00:00Z</updated>
-    <author>
-      <name>Arunavo Ganguly</name>
-    </author>
-    <author>
-      <name>Julian Alfredo Mendez</name>
-    </author>
-    <author>
-      <name>Timotheus Kampik</name>
-    </author>
-    <summary type="text">We introduce notions of safety, liveness, and fairness, as commonly used in temporal reasoning, to quantitative (bipolar) argumentation dialogues where repeated inferences are drawn from argumentation graphs with weighted nodes. Between inferences, these graphs undergo updates. Strong and weak safety capture that arguments' (final) strengths remain above a specific threshold of justification and always reach the threshold eventually, respectively. Liveness requires that arguments' strengths fluctuate across the threshold of justification. Fairness notions assess how safe arguments are spread within a sequence of argumentation graphs. We formally show how these notions are related, and discuss some analytical challenges with respect to providing general guarantees for our properties.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>ARMS: Automatic Reward Shaping for Sparse-Reward Multi-Agent Reinforcement Learning</title>
-    <link href="http://arxiv.org/abs/2605.23562v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.23562v1</id>
-    <published>2026-05-22T00:00:00Z</published>
-    <updated>2026-05-22T00:00:00Z</updated>
-    <author>
-      <name>Elie Abboud</name>
-    </author>
-    <author>
-      <name>Oren Gal</name>
-    </author>
-    <summary type="text">Sparse rewards are a major bottleneck in multi-agent reinforcement learning (MARL), where simultaneous learning induces non-stationarity and makes reward design especially delicate. Reward shaping can accelerate learning, but in the multi-agent setting it must preserve the strategic structure of the problem rather than merely improve short-term optimization. We propose Automatic Reward-shaping in Multi-agent Systems (ARMS), a self-supervised reward shaping framework for MARL that learns dense shaping signals from sparse environmental rewards through trajectory ranking. Since single-agent trajectory-ranking guarantees do not directly transfer to MARL, we reformulate policy invariance through conditional best-response reasoning, and show that if certain conditions hold, then using shaping rewards preserves each agent's best-response set under fixed opponent policies, and consequently preserve the set of Nash equilibria. Guided by this perspective, ARMS alternates between policy learning and reward learning while sharing shaping parameters across agents for efficiency. Experiments in a partially observable multi-agent pathfinding domain show that ARMS improves sampling efficiency under increasing reward sparsity and agent count, generalizes to unseen environments, and reveals a MARL-specific failure mode in which limited exploration and coupled policy--reward dynamics induce oscillatory behavior. Increasing exploration mitigates this effect and stabilizes learning. To the best of our knowledge, ARMS is the first automatic reward shaping framework for MARL whose design is motivated by a game-theoretic equilibrium-preservation result.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Self-Refining Topology Optimization via an LLM-Based Multi-Agent Framework</title>
-    <link href="http://arxiv.org/abs/2605.23273v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.23273v1</id>
-    <published>2026-05-22T00:00:00Z</published>
-    <updated>2026-05-22T00:00:00Z</updated>
-    <author>
-      <name>Hyunjee Park</name>
-    </author>
-    <author>
-      <name>Hayoung Chung</name>
-    </author>
-    <summary type="text">Topology optimization is a widely used design method that produces optimized material distributions for prescribed objectives and constraints through well-established numerical algorithms. Throughout the workflow, engineers make a series of decisions ranging from setting and adjusting numerical parameters to assessing whether the converged design meets considerations beyond those explicitly included in the optimization problem, such as physical feasibility. These decisions, which draw on domain expertise, interfere with the autonomous design process. To address this difficulty, this study presents TopOptAgents, a multi-agent system for automating not only the design process but also decision-making during the key stages of the topology optimization process. TopOptAgents consists of six LLM-based agents collaborating through iterative self-refinement cycles spanning problem formulation, validation, code generation and execution, and quality assessment of the optimized structure. This process enables error correction and progressive improvement of both the optimization setup and resulting design. The framework is demonstrated on optimization problems selected to cover a range of settings that differ in their literature coverage and numerical characteristics The benefits of iterative self-refinement are found to be particularly pronounced for problem classes where the pretrained language model has limited prior exposure, such as formulations whose literature and open-source implementations are comparatively sparse. In such cases, the proposed framework reliably produces converged designs where a single state-of-the-art LLM struggles, suggesting that self-refinement broadens the range of topology optimization problems that LLM-based automation can reliably address.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 28 pages, 17 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>ProofAgent Harness: Open Infrastructure for Adversarial Evaluation of AI Agents</title>
-    <link href="http://arxiv.org/abs/2605.24134v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.24134v1</id>
-    <published>2026-05-22T00:00:00Z</published>
-    <updated>2026-05-22T00:00:00Z</updated>
-    <author>
-      <name>Fouad Bousetouane</name>
-    </author>
-    <summary type="text">AI agents are entering high-risk production settings, where they use tools, retain context, follow policies, handle private data, and interact with users over multiple turns. Yet many evaluation methods still judge isolated outputs or static tasks, missing failures that emerge through trajectory, pressure, and adversarial interaction. We introduce ProofAgent Harness, open infrastructure for scalable, auditable, and adversarial AI agent evaluation. The harness provides evaluation infrastructure around an agent: it curates evaluation intelligence, runs adversarial multi-turn trials, captures behavioral traces, applies post-hoc multi-juror scoring, resolves disagreement, and produces evidence-linked reports. Its open design allows developers and researchers to extend domains, traps, metrics, juror personas, scoring rules, and reporting formats. At its core is Adversarial Multi-Juror Scoring with Turn-Level Audit, which evaluates completed agent behavior under pressure using calibrated juror personas, consensus checks, and turn-level evidence. Experiments across customer support, medical triage, privacy and security, and code generation agents show that strong agents fail selectively through weak metrics, fragile turns, unsafe reframing, and manipulation paths. We also find that a small quantized local Harness LLM can challenge production agents powered by best-in-class large LLMs, suggesting that evaluation capability emerges from the full harness pipeline rather than model scale alone. ProofAgent Harness turns AI agent evaluation from a static score into scalable adversarial evaluation infrastructure: repeatable, evidence-backed, extensible, and actionable before deployment.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 48 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Heterogeneous Multi-Agent Modeling for Measurement and Network Analysis of the Data Service Market</title>
-    <link href="http://arxiv.org/abs/2605.27433v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2605.27433v1</id>
-    <published>2026-05-22T00:00:00Z</published>
-    <updated>2026-05-22T00:00:00Z</updated>
-    <author>
-      <name>Deyu Zhou</name>
-    </author>
-    <author>
-      <name>Yuwei Guo</name>
-    </author>
-    <author>
-      <name>Xudong Lu</name>
-    </author>
-    <author>
-      <name>Linhao Zhang</name>
-    </author>
-    <author>
-      <name>Wei Guo</name>
-    </author>
-    <author>
-      <name>Lizhen Cui</name>
-    </author>
-    <summary type="text">With the increasing complexity of collaboration among various social entities and user demands, the factors affecting the stable development of the data service market are also growing. These factors include the widespread dissemination of information enhancing subjective consciousness, the continuous improvement in intelligence, and the complexification of structural relationships. To achieve effective governance and regulation of the data service market, it is crucial to conduct simulation experiments before making regulatory decisions. However, current research and analysis of the data service market primarily focus on data-level performance, proving inadequate when it comes to measurement and analysis of multiple heterogeneous entities and the integration of various social elements within the data service market. Based on this, this paper innovatively proposes a data service market measurement and network analysis method based on heterogeneous multi-agent modeling. By introducing the service ecosystem theory, we clarify the participants and external factors of the data service market and conduct utility measurements for three-level entities based on value creation. Furthermore, an analytical methodology is devised to precisely assess the influence of heterogeneous networks on utility. Finally, the paper verifies the effectiveness of the proposed method through the analysis of experimental results.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
