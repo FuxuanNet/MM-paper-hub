@@ -4,12 +4,108 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-05T05:07:31Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 33 entries</subtitle>
+  <updated>2026-06-08T05:44:45Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 21 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Modelling Opinion Dynamics at Scale with Deep MARL</title>
+    <link href="http://arxiv.org/abs/2606.07487v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.07487v1</id>
+    <published>2026-06-05T00:00:00Z</published>
+    <updated>2026-06-05T00:00:00Z</updated>
+    <author>
+      <name>Lukas Seier</name>
+    </author>
+    <author>
+      <name>Brandon Kaplowitz</name>
+    </author>
+    <author>
+      <name>Sebastian Towers</name>
+    </author>
+    <author>
+      <name>Richard Bailey</name>
+    </author>
+    <author>
+      <name>Jakob Foerster</name>
+    </author>
+    <summary type="text">Modelling opinion dynamics typically relies on hand-crafted local interaction rules to study emergent macroscopic phenomena such as consensus and polarisation. In contrast, multi-agent reinforcement learning (MARL) enables agents to learn such behaviours directly by optimising simple rewards. To explore the potential of MARL for opinion dynamics, we introduce a GPU-accelerated consensus and truth-finding game that scales to populations of up to 1000 agents, comparable to many real-world social sub-networks. To prevent unrealistic conventions, we extend other-play to general-sum social interactions. We next validate our model on a subset of the Bluesky network by recovering agent importance structures from graph topology alone via a learned attention layer, finding that highly conforming populations most closely match human data. In large social media networks such high levels of conformity significantly reduce collective accuracy and promote dishonest agents that lie to fit in. By contrast, small, dynamic hunter-gatherer networks are less affected; here, conformity can even improve collective agreement. This suggests a mismatch between evolved human conformity heuristics and modern social media environments as a potential contributor to misinformation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 35 pages, 28 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.GT; cs.SI" />
+  </entry>
+  <entry>
+    <title>Hierarchical Certified Semantic Commitment for Byzantine-Resilient LLM-Agent Collaboration</title>
+    <link href="http://arxiv.org/abs/2606.07316v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.07316v1</id>
+    <published>2026-06-05T00:00:00Z</published>
+    <updated>2026-06-05T00:00:00Z</updated>
+    <author>
+      <name>Haoran Xu</name>
+    </author>
+    <author>
+      <name>Lei Zhang</name>
+    </author>
+    <author>
+      <name>Iadh Ounis</name>
+    </author>
+    <author>
+      <name>Xianbin Wang</name>
+    </author>
+    <summary type="text">Byzantine collaboration among large-language-model agents requires a finality-control primitive: given delivered stochastic, structured natural-language proposals, the protocol must decide whether the round supports a commit, what kind of commit, or a typed safe abort. Naive aggregation hides this choice behind a single verdict; classical Byzantine fault tolerance hides it behind byte-identity that LLM proposals do not satisfy. We introduce Hierarchical Certified Semantic Commitment (H-CSC), a BFT-inspired protocol that converts embedding-derived finality signals over verdict-conditioned proposal groups into one of three typed outcomes: a semantic_commit (a 2f+1 within-verdict semantic core backs the verdict, emitting a parameter-bound digest over the quantised aggregate), a verdict_commit (strong verdict margin but dispersed semantic rationale, emitting a verdict-level certificate without claiming a semantic aggregate), or an explicit abort with a typed reason. The contribution is typed finality, not raw commit accuracy. On a controlled semantic-poisoning diagnostic (BCS_v1, 120 episodes), H-CSC commits with low angular deviation on BFT-feasible buckets (0.31 to 2.04 degrees) and aborts 100% of beyond-BFT rounds (n&lt;3f+1) as intended. On a real LLM-agent claim-verification benchmark (MVR-50, 50 tasks) under paired static and rushing Byzantine attacks, H-CSC commits 0.90/0.92 with honest-reference-invalid rates of 0.02/0.00, statistically matching a strong certificate-emitting verdict-only baseline. Unlike that baseline, H-CSC also emits an embedding-backed semantic_commit digest on 74%/72% of rounds, supplying typed provenance. A strict-semantic ablation commits only 0.54/0.48, showing the verdict-level fallback is necessary for coverage (+0.36/+0.44) at the same &lt;=0.04 safety floor; a 100-task cross-model check across four LLMs preserves invalid_hmaj within 0.00 to 0.03.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 27 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.DC" />
+  </entry>
+  <entry>
+    <title>Learning Multi-Agent Communication Protocol: Study on Information Entropy Efficiency in MARL</title>
+    <link href="http://arxiv.org/abs/2606.07200v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.07200v1</id>
+    <published>2026-06-05T00:00:00Z</published>
+    <updated>2026-06-05T00:00:00Z</updated>
+    <author>
+      <name>Xinren Zhang</name>
+    </author>
+    <author>
+      <name>Zixin Zhong</name>
+    </author>
+    <author>
+      <name>Jiadong Yu</name>
+    </author>
+    <summary type="text">Multi-Agent Systems (MAS) have emerged as a fundamental paradigm for distributed problem-solving, where autonomous agents collaborate to achieve complex objectives. Within this framework, Multi-Agent Reinforcement Learning (MARL) with communication has demonstrated remarkable success in cooperative tasks. However, existing approaches predominantly pursue performance gains through increasingly complex architectures and expanding communication overhead, lacking principled metrics to evaluate the efficiency of information exchange. In this paper, we focus on enabling agents to learn efficient multi-agent communication protocols that balance performance and information compactness. We propose the Information Entropy Efficiency Index (IEI), a novel metric that quantifies the ratio between message entropy and task performance in learned communication protocols. A lower IEI indicates more compact and efficient message representations. By incorporating IEI into training loss functions, we encourage agents to develop communication protocols that achieve high performance with improved communication efficiency. Extensive experiments across diverse MARL algorithms demonstrate that our approach achieves equivalent or superior task performance compared to baseline methods while improving communication efficiency. These findings challenge the prevailing assumption that performance improvements require complex architectures or increased communication overhead and highlight the potential of improving both task success and communication efficiency to enable scalable MAS.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Modeling U.S. Attitudes Toward China via an Event-Steered Multi-Agent Simulator</title>
+    <link href="http://arxiv.org/abs/2606.06971v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.06971v1</id>
+    <published>2026-06-05T00:00:00Z</published>
+    <updated>2026-06-05T00:00:00Z</updated>
+    <author>
+      <name>Chenxu Zhu</name>
+    </author>
+    <author>
+      <name>Hantao Yao</name>
+    </author>
+    <author>
+      <name>Wu Liu</name>
+    </author>
+    <author>
+      <name>Junbo Guo</name>
+    </author>
+    <author>
+      <name>Yongdong Zhang</name>
+    </author>
+    <summary type="text">Understanding the dynamic evolution of opinions, such as U.S. public attitudes toward China, is essential for assessing geopolitical risks. However, existing LLM-based multiagent simulators predominantly rely on static rules and fixed datasets, limiting their ability to capture the dynamic, event-driven nature of macro-level opinion shifts in real-world settings. To address this limitation, we propose an Event-Steered Multi-Agent Simulator (ES-MAS), in which significant events and daily news continuously drive opinion evolution through dynamic interactions among agents. We first construct the China-U.S. Relation Evolution (CURE) dataset, covering 20 quarters from 2021 to 2025, including 258 major events and over 14,000 daily news articles, and providing a comprehensive temporal foundation for modeling opinion dynamics. Building upon the CURE dataset, we propose a Dual-Stream Data Integration Engine (DSDIE) that aligns simulations with historical timelines via macro-level events while enabling personalized information exposure based on individual agent profiles and contextual signals. Furthermore, we design a News-Driven Dynamic Interaction (NDDI) module, which adaptively groups agents with shared news interests into localized interaction contexts, facilitating bottom-up consensus formation while mitigating the risk of isolated information cocoons. Experimental results on the CURE dataset demonstrate that ES-MAS substantially outperforms existing simulators in reproducing real-world historical trends, offering a scalable and effective framework for modeling dynamic opinion evolution.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.SI" />
+  </entry>
   <entry>
     <title>A Swarm Approach to Public Transit Using On-demand Routing in a Slime-Mold-Inspired Framework</title>
     <link href="http://arxiv.org/abs/2606.06189v1" rel="alternate" type="text/html" />
@@ -52,6 +148,30 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="cs.GT" />
+  </entry>
+  <entry>
+    <title>MADRAG: Multi-Agent Debate with Retrieval-Augmented Generation for Training-Free Analytic Essay Scoring</title>
+    <link href="http://arxiv.org/abs/2606.06754v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.06754v1</id>
+    <published>2026-06-04T00:00:00Z</published>
+    <updated>2026-06-04T00:00:00Z</updated>
+    <author>
+      <name>Ali Keramati</name>
+    </author>
+    <author>
+      <name>Shiyuan Zhou</name>
+    </author>
+    <author>
+      <name>Sharad Mehrotra</name>
+    </author>
+    <author>
+      <name>Mark Warschauer</name>
+    </author>
+    <summary type="text">We present MADRAG, a training-free framework for analytic essay scoring that combines multi-agent reasoning with retrieval-augmented grounding. Unlike standard LLM-as-judge approaches, which are prone to bias and unstable scoring, MADRAG decomposes evaluation into an interactive process: an Advocate identifies strengths, a Skeptic critiques weaknesses, and a Judge aggregates their arguments into a final score. Crucially, the Judge is augmented with rubric-aligned exemplar retrieval, enabling calibration through comparison with scored examples. Our results show that MADRAG significantly outperforms prompt-based baselines while approaching the performance of supervised systems without requiring task-specific training. Ablation studies demonstrate that retrieval drives calibration gains, while debate improves reasoning on higher-level traits. Our findings highlight the complementary roles of structured interaction and external memory in reliable LLM-based evaluation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL" />
   </entry>
   <entry>
     <title>Channel Fracture: Architectural Blind Spots in Scheduled Cross-Agent Memory Injection for Multi-Agent Orchestration Systems</title>
@@ -287,521 +407,31 @@
     <category term="Artificial Intelligence" />
   </entry>
   <entry>
-    <title>A Game-Theoretic Decision Framework for Optimal Selection of Coordination Detection Methods in Multi-UAV Fleet Operations</title>
-    <link href="http://arxiv.org/abs/2606.02383v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.02383v1</id>
-    <published>2026-06-01T00:00:00Z</published>
-    <updated>2026-06-01T00:00:00Z</updated>
+    <title>OpenAgenet / OAN Yellow Paper: Technical Architecture for Trust-Governed Resource Identity and Discovery</title>
+    <link href="http://arxiv.org/abs/2606.03163v3" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.03163v3</id>
+    <published>2026-06-02T00:00:00Z</published>
+    <updated>2026-06-02T00:00:00Z</updated>
     <author>
-      <name>Christian Manasseh</name>
+      <name>Jinliang Xu</name>
     </author>
-    <summary type="text">Detecting coordination among unmanned aerial vehicle (UAV) fleets operating in shared airspace and identifying the route-lead aircraft whose navigation decisions govern fleet behavior presents a fundamental speed--accuracy trade-off: fast methods enable real-time traffic management but sacrifice detection fidelity, while accurate methods may exceed the time budget for actionable airspace deconfliction. This paper presents a game-theoretic decision framework that resolves this trade-off by formulating method selection as a two-player zero-sum game between a Monitor (selecting computational methods and parameters) and Nature (selecting the unknown traffic scenario). We construct an end-to-end pipeline from trajectory surveillance data through eight candidate detection algorithms, a Monte Carlo sensitivity analysis characterizing their stochastic performance, and finally a multi-objective optimization layer that identifies Pareto-optimal method portfolios. The minimax solution provides a robust mixed strategy with a probability distribution over methods that guarantees worst-case performance regardless of scenario uncertainty. Experimental evaluation across 200 randomized configurations spanning 5--50 aircraft demonstrates that the framework recommends distinct method portfolios depending on operational priority: Koopman Phase dominates balanced (70.6%) and speed-priority (79.7%) profiles, while CRQA emerges as primary (47.4%) when route-lead identification is prioritized. The framework achieves a guaranteed game value of 0.29--0.53 (normalized utility) across all tested preference profiles, providing the first principled, scenario-adaptive methodology for computational method selection in UTM fleet monitoring operations.</summary>
+    <summary type="text">This yellow paper describes the technical architecture of OpenAgenet / OAN. OAN is a protocol-neutral trust layer for open Agent interconnection and discoverable AI resource products. It specifies the role architecture, \texttt{did:oan} identity objects, registration workflow, governance-backed Root lifecycle enforcement, Root-verified package model, authorization-aware Discovery, Root-issued infrastructure authorization VCs, signed trusted invocation, verification requirements, state transitions, security properties, implementation boundaries, and deployment considerations. The design is intended to support heterogeneous Agent frameworks and interaction protocols, including MCP, A2A, ANP-like systems, domain-specific Agent protocols, Skills, MCP Servers, and Tool/API resources. OAN does not define the entire business conversation among Agents or the native protocol of every resource; it defines how resource identities become admissible, discoverable, verifiable, and safe to approach before protocol-specific interaction begins.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
-    <category term="cs.GT; eess.SY" />
+    <category term="Artificial Intelligence; cs.DC" />
   </entry>
   <entry>
-    <title>Agentic-J: An AI Agent for Biological Microscopy Image Analysis</title>
-    <link href="http://arxiv.org/abs/2606.02080v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.02080v1</id>
-    <published>2026-06-01T00:00:00Z</published>
-    <updated>2026-06-01T00:00:00Z</updated>
+    <title>OpenAgenet / OAN White Paper: Open Infrastructure for Trusted Agent Interconnection</title>
+    <link href="http://arxiv.org/abs/2606.03161v3" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.03161v3</id>
+    <published>2026-06-02T00:00:00Z</published>
+    <updated>2026-06-02T00:00:00Z</updated>
     <author>
-      <name>Lukas Johanns</name>
+      <name>Jinliang Xu</name>
     </author>
-    <author>
-      <name>Marilin Moor</name>
-    </author>
-    <author>
-      <name>Davide Panzeri</name>
-    </author>
-    <author>
-      <name>Yu Zhou</name>
-    </author>
-    <author>
-      <name>Xinyi Chen</name>
-    </author>
-    <author>
-      <name>Nora F. K. Pauly</name>
-    </author>
-    <author>
-      <name>Zixuan Pan</name>
-    </author>
-    <author>
-      <name>Matthias Gunzer</name>
-    </author>
-    <author>
-      <name>Andreas Müller</name>
-    </author>
-    <author>
-      <name>Yiyu Shi</name>
-    </author>
-    <author>
-      <name>Hedi Peterson</name>
-    </author>
-    <author>
-      <name>Jianxu Chen</name>
-    </author>
-    <summary type="text">Biological image analysis increasingly demands integration across heterogeneous tools, programming environments, and domain knowledge that few researchers can command simultaneously. We present Agentic-J, a containerised, multi-agent AI assistant, primarily for ImageJ/Fiji that enables biologists to specify analysis tasks in natural language, from nuclei segmentation and cell tracking to multi-condition quantification. The agent generates executable scripts organised into a documented project structure, so every analysis decision is traceable and the workflow can be reproduced or shared. The specialised sub-agents handle plugin management, code generation, debugging, quality assurance, and statistical reporting. In this paper we introduce the system's design, demonstrate real biological microscopy image analysis workflows, and detailed the technical implementation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Presented at Cell Biology at Scale 2026 (Poster). The Agentic-J project is available at https://mmv-lab.github.io/Agentic-J/&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; Computer Vision" />
-  </entry>
-  <entry>
-    <title>A Simple Hierarchical Causality Primer</title>
-    <link href="http://arxiv.org/abs/2606.01979v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.01979v1</id>
-    <published>2026-06-01T00:00:00Z</published>
-    <updated>2026-06-01T00:00:00Z</updated>
-    <author>
-      <name>Tim Gebbie</name>
-    </author>
-    <summary type="text">We provide a brief primer for the idea behind formalising hierarchical causality in the context of complex systems. Here actors are not simply agents. Actors instantiate causation classes. Agents implement local dynamics in given levels or organisation in a given system. Hierarchical causality then describes how actor-level roles constrain, select, and organise agent-level behaviour across levels. The system then necessarily requires three additional structures. First, causation classes to abstract a given form of causal influence that an actor instantiates. Second, aggregation operators to move across the levels. Third, discrete event-time maps are required because the system comprises events, and the relation between local event counts and any global clock must be specified. Our formulation here is purposefully simple and discrete.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 1 figure&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="math.OC; q-fin.CP" />
-  </entry>
-  <entry>
-    <title>QoEReasoner: An Agentic Reasoning Framework for Automated and Explainable QoE Diagnosis in RANs</title>
-    <link href="http://arxiv.org/abs/2606.01925v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.01925v1</id>
-    <published>2026-06-01T00:00:00Z</published>
-    <updated>2026-06-01T00:00:00Z</updated>
-    <author>
-      <name>Qizhe Li</name>
-    </author>
-    <author>
-      <name>Haolong Chen</name>
-    </author>
-    <author>
-      <name>Shan Dai</name>
-    </author>
-    <author>
-      <name>Zhuo Li</name>
-    </author>
-    <author>
-      <name>Zhiwei Hu</name>
-    </author>
-    <author>
-      <name>Xuan Li</name>
-    </author>
-    <author>
-      <name>Guangxu Zhu</name>
-    </author>
-    <author>
-      <name>Qingjiang Shi</name>
-    </author>
-    <summary type="text">Diagnosing Quality-of-Experience (QoE) degradations in operational Radio Access Networks (RANs) is a critical but notoriously complex task, traditionally requiring labor-intensive expert analysis over high-dimensional, cross-layer telemetry. While Large Language Models (LLMs) offer unprecedented reasoning capabilities, they are fundamentally unsuited for raw RANs troubleshooting: they fail at numeric time-series analysis, hallucinate protocol-violating causal links, and lack the stateful rigor required for multi-step fault localization. To bridge this gap, we present QoEReasoner, an end-to-end, LLM-driven agentic system designed for automated and explainable QoE diagnosis. QoEReasoner tames the inherent unpredictability of LLMs by grounding their reasoning in the physical realities of the network. It employs deterministic tools to reliably translate raw numeric KPIs into structured evidence, enforces protocol-consistent fault propagation through a domain-specific Knowledge Base, and leverages a Historical Bank of expert-validated cases to guide hypothesis generation. A stateful central planner orchestrates this closed-loop process across anomaly detection, causal tracing, and root-cause localization. Evaluations on real-world operational RANs datasets demonstrate that QoEReasoner outperforms strong baselines by 18\%-40\% in accuracy across multiple diagnostic tasks. Furthermore, it reduces diagnostic time from approximately 30 minutes of manual expert analysis to just 3 minutes per session, delivering highly interpretable, expert-grade reports while remaining robust across diverse LLM backbones.</summary>
+    <summary type="text">OpenAgenet, abbreviated as OAN, is an open infrastructure project for trusted Agent interconnection. It addresses a problem that becomes visible when Agents move from isolated applications into open, multi-operator networks: before an Agent can safely discover, select, and invoke another Agent, it needs a way to verify identity provenance, governance state, discovery authorization, freshness, and pre-connection trust evidence. OAN is designed as a protocol-neutral trust layer. It does not replace Agent interaction protocols, tool protocols, model orchestration frameworks, or application-level workflows. Instead, it provides \texttt{did:oan}-based resource identity, governance-backed admission, Registrar-assisted onboarding, Root-verified package publication, authorization-aware Discovery, Root-issued infrastructure authorization VCs, and signed trusted invocation. The architectural center of OAN is the combination of federated governance, resource identity, and trusted Discovery, rather than a single directory or naming service. This white paper explains the motivation, architecture, roles, governance model, relationship with MCP, A2A, and ANP, deployment patterns, cooperation model, on-chain governance layer, prototype status, performance profile, and roadmap of OAN.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>RadioMaster: Multi-Agent System for Autonomous Radio Signal Generation</title>
-    <link href="http://arxiv.org/abs/2606.01862v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.01862v1</id>
-    <published>2026-06-01T00:00:00Z</published>
-    <updated>2026-06-01T00:00:00Z</updated>
-    <author>
-      <name>Jiazhen Lei</name>
-    </author>
-    <author>
-      <name>Tianze Cao</name>
-    </author>
-    <author>
-      <name>Yuxin Sha</name>
-    </author>
-    <author>
-      <name>Sihan Wang</name>
-    </author>
-    <author>
-      <name>Bingbing Wang</name>
-    </author>
-    <author>
-      <name>Fengyuan Zhu</name>
-    </author>
-    <author>
-      <name>Zeming Yang</name>
-    </author>
-    <author>
-      <name>Xiaohua Tian</name>
-    </author>
-    <summary type="text">Translating user intents into physical radio signals represents the critical yet notoriously tedious final step in wireless prototyping, as it requires intricate knowledge of physical layer details and presents immense implementation challenges. Large Language Models (LLMs) and multi-agent systems have revolutionized conventional software engineering, raising the compelling question of whether they can resolve these formidable difficulties. However, our investigations reveal that current models experience significant limitations and fail to accomplish this task when applied to radio signal generation. This performance degradation primarily stems from severe domain ignorance and a fundamental insensitivity to physical hardware constraints. To bridge this gap, we introduce RadioMaster, a fully autonomous multi-agent framework designed to seamlessly translate user input into real-world wireless emissions. RadioMaster operates on three synergistic pillars: RadioWiki for domain-specific knowledge retrieval, RadioAgent for collaborative I/Q sample generation alongside hardware configuration, and RadioEmulator for closed-loop physical layer verification. Furthermore, we construct RadioBench, the first comprehensive benchmark tailored specifically for the radio signal generation domain. Extensive real-world evaluations demonstrate that RadioMaster significantly outperforms state-of-the-art (SOTA) baselines regarding configuration viability and signal fidelity.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.NI" />
-  </entry>
-  <entry>
-    <title>From Global Policies to Local Strategies: Multi-Objective Optimization of Resource-Specific Handover Policies</title>
-    <link href="http://arxiv.org/abs/2606.01857v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.01857v1</id>
-    <published>2026-06-01T00:00:00Z</published>
-    <updated>2026-06-01T00:00:00Z</updated>
-    <author>
-      <name>Lukas Kirchdorfer</name>
-    </author>
-    <author>
-      <name>Artemis Doumeni</name>
-    </author>
-    <author>
-      <name>Han van der Aa</name>
-    </author>
-    <author>
-      <name>Hugo A. López</name>
-    </author>
-    <summary type="text">Efficient resource allocation is a key challenge in business process management, with direct implications for cost, throughput time, and utilization. While recent Reinforcement Learning (RL) approaches have shown promise in deriving adaptive allocation policies, they typically neglect inter-resource collaboration patterns that can strongly influence real-world task handovers. Recognizing this, this paper introduces the first approach for multi-objective optimization of resource-level decision-making, enabling the recommendation of person-specific handover policies. To achieve this, our work combines an existing Multi-Agent System-based process simulator with a multi-objective evolutionary algorithm. The resulting approach produces Pareto-optimal, resource-specific policies that optimize the process across multiple objectives. Experimental results on synthetic and real-world datasets show that our approach reduces costs by an average of 37% and waiting time by 58%, consistently outperforming heuristic baselines and demonstrating the potential of leveraging collaboration-aware optimization to improve process performance.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Dynamic Trust-Aware Sparse Communication Topology for LLM-Based Multi-Agent Consensus</title>
-    <link href="http://arxiv.org/abs/2606.01828v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.01828v1</id>
-    <published>2026-06-01T00:00:00Z</published>
-    <updated>2026-06-01T00:00:00Z</updated>
-    <author>
-      <name>Wanshuang Gou</name>
-    </author>
-    <author>
-      <name>Zihan Liu</name>
-    </author>
-    <summary type="text">Large language model-driven multi-agent systems enhance the reliability of complex reasoning tasks through multi-round deliberation, role specialization, and cross-validation. However, existing multi-agent debate and collaboration frameworks typically adopt fully connected communication, causing the number of messages, token costs, and end-to-end latency to grow approximately quadratically with the number of agents; although fixed sparse topologies reduce overhead, they cannot adapt communication relationships to different task instances or intermediate reasoning states, making them prone either to preserving low-value interactions or to losing critical error-correction information. To address this problem, this paper proposes DySCo (Dynamic Sparse Consensus), a dynamic trust-aware sparse consensus mechanism. In each round of reasoning, DySCo estimates the value of communication edges based on agent reliability, answer divergence, and task relevance, and selects a small number of high-value edges for message exchange under budget constraints; it then aggregates the answers of different agents through dynamic trust weights and terminates the discussion early once consensus stabilizes. This mechanism replaces universal broadcasting with on-demand communication, thereby reducing communication overhead while preserving essential cross-validation information. We further present analyses of communication complexity and consensus stability, and evaluate the performance of DySCo on mathematical reasoning, logical reasoning, and factual question-answering tasks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 11 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>MetaForge: A Self-Evolving Multimodal Agent that Retrieves, Adapts, and Forges Tools On Demand</title>
-    <link href="http://arxiv.org/abs/2606.01801v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.01801v1</id>
-    <published>2026-06-01T00:00:00Z</published>
-    <updated>2026-06-01T00:00:00Z</updated>
-    <author>
-      <name>Shouang Wei</name>
-    </author>
-    <author>
-      <name>Houcheng Min</name>
-    </author>
-    <author>
-      <name>Xinpeng Dong</name>
-    </author>
-    <author>
-      <name>Xin Lin</name>
-    </author>
-    <author>
-      <name>Sen Cui</name>
-    </author>
-    <author>
-      <name>Bo Jiang</name>
-    </author>
-    <author>
-      <name>Zhongxiang Dai</name>
-    </author>
-    <author>
-      <name>Kun Kuang</name>
-    </author>
-    <author>
-      <name>Guandong Xu</name>
-    </author>
-    <author>
-      <name>Fei Wu</name>
-    </author>
-    <author>
-      <name>Min Zhang</name>
-    </author>
-    <summary type="text">Multimodal agents have achieved notable progress on complex reasoning tasks through tool use, yet remain limited by two issues: statically predefined tool inventories fail to generalize to unseen scenarios, and indiscriminate tool invocation incurs redundant cost and noise-induced errors. We propose MetaForge, a multimodal agent framework that learns when to invoke tools and how to evolve its toolset on demand. MetaForge factorizes agentic behavior into four coupled stages: Decide (judging whether tool use is warranted), Retrieve (selecting suitable tools), Adapt (grounding tool parameters in task context), and Forge (synthesizing new skills online and recycling them into the tool library for reuse), forming a closed judge-retrieve-adapt-forge-recycle loop. A unified orchestration policy enables the agent to choose among answering directly, reusing existing tools, or forging new ones. We jointly optimize invocation necessity, retrieval accuracy, execution effectiveness, and forged-skill reusability via reinforcement learning, with an explicit invocation-cost penalty discouraging redundant calls. Across 12 benchmarks, MetaForge consistently surpasses 16 baselines in accuracy, efficiency, and generalization, validating a paradigm shift from static tool inventories to on-demand self-evolution.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; MAG;TAP&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Agent System Operations: Categorization, Challenges, and Future Directions</title>
-    <link href="http://arxiv.org/abs/2606.01581v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.01581v1</id>
-    <published>2026-06-01T00:00:00Z</published>
-    <updated>2026-06-01T00:00:00Z</updated>
-    <author>
-      <name>Zexin Wang</name>
-    </author>
-    <author>
-      <name>Changhua Pei</name>
-    </author>
-    <author>
-      <name>Yuanhao Liu</name>
-    </author>
-    <author>
-      <name>Jingjing Li</name>
-    </author>
-    <author>
-      <name>Yintong Huo</name>
-    </author>
-    <author>
-      <name>Quan Zhou</name>
-    </author>
-    <author>
-      <name>Haotian Si</name>
-    </author>
-    <author>
-      <name>Hang Cui</name>
-    </author>
-    <author>
-      <name>Zihan Liu</name>
-    </author>
-    <author>
-      <name>Gaogang Xie</name>
-    </author>
-    <author>
-      <name>Fei Sun</name>
-    </author>
-    <author>
-      <name>Dan Pei</name>
-    </author>
-    <author>
-      <name>David Lo</name>
-    </author>
-    <summary type="text">As the reasoning capabilities of Large Language Models (LLMs) continue to advance, LLM-based agent systems offer advantages in flexibility and interpretability over traditional systems, garnering increasing attention. However, despite the widespread research interest and industrial application of agent systems, these systems, like their traditional counterparts, frequently encounter anomalies. These anomalies lead to instability and insecurity, hindering their further development. Therefore, a comprehensive and systematic approach to the operation and maintenance of agent systems is urgently needed. Unfortunately, current research on the operations of agent systems is sparse. To address this gap, we have undertaken a survey on agent system operations with the aim of establishing a clear framework for the field, defining the challenges, and facilitating further development. Specifically, this paper begins by systematically defining anomalies within agent systems, categorizing them into intra-agent anomalies and inter-agent anomalies. Next, we introduce a novel and comprehensive operational framework for agent systems, dubbed Agent System Operations (AgentOps). We provide detailed definitions and explanations of its four key stages: monitoring, anomaly detection, root cause localization, and resolution.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Multi-Agent Computer Use</title>
-    <link href="http://arxiv.org/abs/2606.01533v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.01533v1</id>
-    <published>2026-06-01T00:00:00Z</published>
-    <updated>2026-06-01T00:00:00Z</updated>
-    <author>
-      <name>Jing Yu Koh</name>
-    </author>
-    <author>
-      <name>Ruslan Salakhutdinov</name>
-    </author>
-    <author>
-      <name>Daniel Fried</name>
-    </author>
-    <summary type="text">Computer use agents (CUAs) today are primarily deployed as single serial agents. This setup is suboptimal for complex long-horizon tasks that benefit from task decomposition, parallel execution, and consistent re-planning based on new information. In this paper, we argue that we should instead move towards evaluating and building multi-agent computer use (MACU) systems. These systems, which emphasize planning and parallel execution, alleviate many of the shortcomings of single-agent CUAs. We propose a general multi-agent setup in which a manager model decomposes computer use tasks as a directed acyclic graph (DAG), encoding relevant dependencies and goals for subagents. At each iteration, the manager dispatches parallel CUA subagents to carry out nodes on the ready frontier of the DAG, and continuously revises the DAG (adding, canceling, or rewriting nodes) as new findings arrive from subagents. This design treats the partially observable environment of computer use as a first class challenge: information that downstream agents may not be able to re-observe are retained and passed forward through the manager and DAG structure. We demonstrate that MACU consistently improves over strong single-agent baselines by $3.4-25.5\%$ on desktop (OSWorld) and web navigation (Online-Mind2Web, WebTailBench, Odysseys) benchmarks, exhibits more favorable test-time scaling, and solves complex long-horizon tasks where single-agent CUAs get stuck. On Odysseys, a long-horizon web navigation benchmark, MACU improves average task completion wall-clock time by ${\sim} 1.5 \times$, demonstrating its efficacy in speeding up traditionally slow CUA pipelines. Our findings highlight that multi-agent coordination is a promising axis for scaling computer use agents to work productively for longer and more effectively. We release all code and interactive visualizations at https://jykoh.com/multi-agent-computer-use.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.CL; Machine Learning" />
-  </entry>
-  <entry>
-    <title>The Epi-LLM Framework: probing LLM behavioral priors through epidemiological agent-based models</title>
-    <link href="http://arxiv.org/abs/2606.02867v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.02867v1</id>
-    <published>2026-06-01T00:00:00Z</published>
-    <updated>2026-06-01T00:00:00Z</updated>
-    <author>
-      <name>Petra Ferenz</name>
-    </author>
-    <author>
-      <name>Ava Keeling</name>
-    </author>
-    <author>
-      <name>Tobias O'Keefe</name>
-    </author>
-    <author>
-      <name>Lorenzo Stigliano</name>
-    </author>
-    <author>
-      <name>Francesco Di Lauro</name>
-    </author>
-    <author>
-      <name>Andres Colubri</name>
-    </author>
-    <author>
-      <name>Jasmina Panovska-Griffiths</name>
-    </author>
-    <summary type="text">Human behaviour during epidemics affects infectious disease dynamics, but quantifying this remains deeply challenging. Here we introduce the Epi-LLM framework: a novel integration of agent-based modelling, real-life epigames, and large language models (LLMs) in which a synthetic society of agents reasons and adapts dynamically over an outbreak contact network. Comparing synthetic agent behaviour against a no-intervention SEIR baseline and human participant data from the AUIB epigame study, we find that LLM agents across four different architectures reduced peak active infections, with quarantine compliance peaking at 58-65% on day six of the 15-day simulation. A binomial generalised linear model showed that perceived health severity was the strongest predictor of quarantine behaviour ($β= 0.33, p = 0.002$), yielding a pseudo-$R^2$ of 0.055, comparable to the 0.072 observed in the human trial. LLM architecture is a key determinant of epidemic dynamics: low-variance architectures offer greater internal validity for testing behavioural rules, while high-variance models may better represent real-world decision-making. Geographic labels alone do not induce culturally differentiated behaviour; explicit attitudinal parameterisation is required. This proof-of-principle work lays the groundwork for deploying the Epi-LLM framework as a scalable, risk-free simulation environment for pandemic preparedness research.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to American Journal of Epidemiology&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; q-bio.PE" />
-  </entry>
-  <entry>
-    <title>QoEReasoner: An Agentic Reasoning Framework for Automated and Explainable QoE Diagnosis in RANs</title>
-    <link href="http://arxiv.org/abs/2606.01925v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.01925v2</id>
-    <published>2026-06-01T00:00:00Z</published>
-    <updated>2026-06-01T00:00:00Z</updated>
-    <author>
-      <name>Qizhe Li</name>
-    </author>
-    <author>
-      <name>Haolong Chen</name>
-    </author>
-    <author>
-      <name>Shan Dai</name>
-    </author>
-    <author>
-      <name>Zhuo Li</name>
-    </author>
-    <author>
-      <name>Zhiwei Hu</name>
-    </author>
-    <author>
-      <name>Xuan Li</name>
-    </author>
-    <author>
-      <name>Guangxu Zhu</name>
-    </author>
-    <author>
-      <name>Qingjiang Shi</name>
-    </author>
-    <summary type="text">Diagnosing Quality-of-Experience (QoE) degradations in operational Radio Access Networks (RANs) is a critical but notoriously complex task, traditionally requiring labor-intensive expert analysis over high-dimensional, cross-layer telemetry. While Large Language Models (LLMs) offer unprecedented reasoning capabilities, they are fundamentally unsuited for raw RANs troubleshooting: they fail at numeric time-series analysis, hallucinate protocol-violating causal links, and lack the stateful rigor required for multi-step fault localization. To bridge this gap, we present QoEReasoner, an end-to-end, LLM-driven agentic system designed for automated and explainable QoE diagnosis. QoEReasoner tames the inherent unpredictability of LLMs by grounding their reasoning in the physical realities of the network. It employs deterministic tools to reliably translate raw numeric KPIs into structured evidence, enforces protocol-consistent fault propagation through a domain-specific Knowledge Base, and leverages a Historical Bank of expert-validated cases to guide hypothesis generation. A stateful central planner orchestrates this closed-loop process across anomaly detection, causal tracing, and root-cause localization. Evaluations on real-world operational RANs datasets demonstrate that QoEReasoner outperforms strong baselines by 18\%-40\% in accuracy across multiple diagnostic tasks. Furthermore, it reduces diagnostic time from approximately 30 minutes of manual expert analysis to just 3 minutes per session, delivering highly interpretable, expert-grade reports while remaining robust across diverse LLM backbones.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>A Simple Hierarchical Causality Primer</title>
-    <link href="http://arxiv.org/abs/2606.01979v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.01979v2</id>
-    <published>2026-06-01T00:00:00Z</published>
-    <updated>2026-06-01T00:00:00Z</updated>
-    <author>
-      <name>Tim Gebbie</name>
-    </author>
-    <summary type="text">We provide a brief primer for the idea behind formalising hierarchical causality in the context of complex systems. Here actors are not simply agents. Actors instantiate causation classes. Agents implement local dynamics in given levels or organisation in a given system. Hierarchical causality then describes how actor-level roles constrain, select, and organise agent-level behaviour across levels. The system then necessarily requires three additional structures. First, causation classes to abstract a given form of causal influence that an actor instantiates. Second, aggregation operators to move across the levels. Third, discrete event-time maps are required because the system comprises events, and the relation between local event counts and any global clock must be specified. Our formulation here is purposefully simple and discrete.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 1 figure&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="math.OC; q-fin.CP" />
-  </entry>
-  <entry>
-    <title>Coordinating Task Switching in a Robotics Multi-Agent System Using Behavior Trees</title>
-    <link href="http://arxiv.org/abs/2606.01170v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.01170v1</id>
-    <published>2026-05-31T00:00:00Z</published>
-    <updated>2026-05-31T00:00:00Z</updated>
-    <author>
-      <name>Lucas Haug</name>
-    </author>
-    <author>
-      <name>Anarosa Alves Franco Brandão</name>
-    </author>
-    <author>
-      <name>Arthur Casals</name>
-    </author>
-    <summary type="text">The application of multi-agent systems in robotics is a very challenging field. Several competitions involving such systems are proposed to foster research and development of strategies and mechanisms using games as the underlying domain. Among them are the ones from the \textit{IEEE Very Small Soccer (VSSS)} category, which is the case study described in this paper. In VSSS, two teams of three robots each compete in a very dynamic environment of a soccer game. Thus, coordination of robots' behavior during the game is crucial to win it. In this paper, we present a Behavior-Tree-based approach to support multi-robot coordination within the VSSS team of the ThundeRatz robotics team from the Universidade de S$\tilde{a}$o Paulo. Moreover, a comparison between the proposed approach and the previous one, which was based on a Finite State Machine (FSM), was conducted using the FIRASim simulator. Besides that, the performance of this new strategy was further evaluated in an academic robotics competition.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 7 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Robotics" />
-  </entry>
-  <entry>
-    <title>FinCom: A Financial Multi-Agent Demo with Disagree-or-Commit Deliberation</title>
-    <link href="http://arxiv.org/abs/2606.00939v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.00939v1</id>
-    <published>2026-05-31T00:00:00Z</published>
-    <updated>2026-05-31T00:00:00Z</updated>
-    <author>
-      <name>Chao Peter Yang</name>
-    </author>
-    <author>
-      <name>Zixiao Tan</name>
-    </author>
-    <author>
-      <name>Kaisen Yao</name>
-    </author>
-    <author>
-      <name>Ziyu Zhou</name>
-    </author>
-    <author>
-      <name>Eleanor Jiang</name>
-    </author>
-    <author>
-      <name>Michael Wu</name>
-    </author>
-    <summary type="text">Multi-agent systems powered by large language models (LLMs) are increasingly used for financial analysis and decision support. However, existing coordination schemes, especially those emphasizing consensus or debate, are vulnerable to sycophancy: agents conform to peer reasoning instead of evidence, leading to premature agreement and degraded outcomes. We introduce FinCom (Financial Committee), a governed multi-agent framework and interactive system that operationalizes the Disagree-or-Commit (DoC) protocol to embed structured dissent into financial AI committees. A central Supervisor orchestrates three ReAct-enabled specialist agents: Research, Quantitative, and Risk. Each agent is equipped with role-specific tools for retrieval, computation, and stress testing. During deliberation, agents must either explicitly critique or commit to their peers' reasoning before converging on a unified recommendation.   This demonstration showcases how FinCom supports committee-style financial analysis through coordinated multi-agent interaction, including structured report generation and interactive decision support. Evaluated across the most recent financial agent benchmark, in addition to 90 internal handcrafted financial tasks using an LLM-as-a-Judge protocol, DoC improves reasoning accuracy and risk awareness significantly over a consensus-seeking baseline on both an in-house and external evaluation set. By reframing disagreement as a governance primitive rather than noise, FinCom offers a lightweight, prompt-only recipe for improving accountability, transparency, and epistemic robustness in agentic financial systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>SuperMemory-VQA: An Egocentric Visual Question-Answering Benchmark for Long-Horizon Memory</title>
-    <link href="http://arxiv.org/abs/2606.00825v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.00825v1</id>
-    <published>2026-05-30T00:00:00Z</published>
-    <updated>2026-05-30T00:00:00Z</updated>
-    <author>
-      <name>Samiul Alam</name>
-    </author>
-    <author>
-      <name>Shakhrul Iman Siam</name>
-    </author>
-    <author>
-      <name>Michael J. Proulx</name>
-    </author>
-    <author>
-      <name>James Fort</name>
-    </author>
-    <author>
-      <name>Richard Newcombe</name>
-    </author>
-    <author>
-      <name>Hyo Jin Kim</name>
-    </author>
-    <author>
-      <name>Mi Zhang</name>
-    </author>
-    <summary type="text">AI glasses present a compelling platform for AI agents to serve as personalized memory assistants. To be genuinely useful, such systems must move beyond short-term video comprehension and address memory gaps that humans experience for practical, personal, or social purposes over longitudinal egocentric video streams. However, existing egocentric datasets predominantly focus on action recognition or generic QAs from short clips, measuring perceptual capabilities rather than realistic human memory needs. We introduce SuperMemory-VQA, an egocentric visual question answering (VQA) dataset for evaluating AI assistants on practical, long-horizon memory tasks. It contains 52.9 hours of everyday activities recorded with AI glasses, including synchronized RGB video, audio transcription, eye gaze, IMU, and SLAM trajectories. Through a human-verified annotation pipeline, we construct grounded 4,853 question-answer pairs that span object and location memory, intent recall, visual scene recall, timeline reconstruction, conversational memory, and in-context retrieval. Each question is posed as multiple-choice with an explicit "unanswerable" option to test hallucination robustness. Benchmarking leading agentic frameworks and LLM backbones reveals that existing systems remain far from reliable on real-world memory tasks, highlighting the need for new architectures for grounded AI memory that can answer only when evidence is sufficient. A participant survey further supports that our questions are realistic, useful, and aligned with everyday memory needs.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 34 pages, 21 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="cs.ET; cs.HC; Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Dynamic Coordination Strategy Selection for Enterprise Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2606.00804v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.00804v1</id>
-    <published>2026-05-30T00:00:00Z</published>
-    <updated>2026-05-30T00:00:00Z</updated>
-    <author>
-      <name>Thanh Luong Tuan</name>
-    </author>
-    <summary type="text">Enterprise multi-agent systems increasingly expose multiple coordination patterns, but deployments often lack evidence for when to use consensus, debate, synthesis, or a simpler single-agent workflow. This paper evaluates whether coordination strategy should be selected dynamically by problem class rather than fixed globally. We run a frozen matrix of 30 enterprise tasks spanning six industries, five problem classes, four execution conditions, three replications per cell, and four model arms: qwen_local, sonnet, gemma_openrouter, and an auxiliary openai cloud-validation arm. All 1,440 generated outputs are judged by a fixed Sonnet rubric.   The main finding is bounded and operationally useful, but it is not the original strict H1. The pre-registered exact-winner/CI criterion is not supported: exact winner identity is unstable across model arms, and several predicted strategies are close to, but not above, the best observed alternative. A weaker near-best routing claim is strongly supported. In every pre-registered model arm and problem class, and again in the auxiliary OpenAI validation arm, the predicted strategy is within 0.10 quality-score points of the best observed condition. Structured compliance verification is the clearest exception to the original mapping: all arms favor single_agent rather than consensus. A pre-registered Kendall's W test finds no reliable difference between Vietnamese-domain and English-domain tasks in how consistently the four coordination conditions are ranked (mean W of 0.20 in both strata; signed-rank p = .85), so H2 is not supported. We conclude that enterprise coordination policy should use dynamic routing as a calibrated default, not as a deterministic winner-selection law.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 4 appendix&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.CL" />
-  </entry>
-  <entry>
-    <title>Scaling Behavior of Single LLM-Driven Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2606.00655v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.00655v1</id>
-    <published>2026-05-30T00:00:00Z</published>
-    <updated>2026-05-30T00:00:00Z</updated>
-    <author>
-      <name>Jialing Li</name>
-    </author>
-    <author>
-      <name>Zhouhong Gu</name>
-    </author>
-    <author>
-      <name>Yin Cai</name>
-    </author>
-    <author>
-      <name>Hongwei Feng</name>
-    </author>
-    <summary type="text">The burgeoning field of LLM-based Multi-Agent Systems (MAS) promises to tackle complex tasks through collaborative intelligence, yet fundamental questions regarding their scaling behavior and intrinsic collective dynamics remain underexplored. This paper systematically investigates how the performance of a homogeneous MAS evolves as the number of agents increases, isolating the variable of collaboration from model or knowledge heterogeneity. We propose the Sequential Iterative Multi-Agent System (SIMAS) framework, a minimalist architecture centered on sequential inter-agent communication, to clearly observe scaling effects. Through extensive experiments across diverse tasks and model scales, we establish that MAS performance does not scale monotonically with agent count but follows a pattern of diminishing returns, governed by a trade-off between collaborative synergy and coordination overhead. Our findings reveal that effective MAS requires a sufficiently capable base LLM, that task type critically modulates the optimal agent count, and that collective intelligence is an emergent property contingent on strategic interaction design rather than a guaranteed outcome of agent plurality. The performance degradation stems coordination overhead rather than merely long-context failure, and the scaling tendency generalizes across interaction architectures like structured debate topologies. This work provides a foundational understanding of MAS scaling laws, offering practical guidance for designing efficient collaborative systems and challenging the prevailing assumption that more agents invariably lead to better performance.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.CY" />
-  </entry>
-  <entry>
-    <title>State Machine Guided Multi-Relational Synthetic Data from Logs for Anomaly Detection</title>
-    <link href="http://arxiv.org/abs/2606.00531v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.00531v1</id>
-    <published>2026-05-30T00:00:00Z</published>
-    <updated>2026-05-30T00:00:00Z</updated>
-    <author>
-      <name>Aja Khanal</name>
-    </author>
-    <author>
-      <name>Apurva Narayan</name>
-    </author>
-    <summary type="text">Software systems generate massive unstructured logs that record execution behavior, failures, and interactions across components, yet existing log anomaly detection methods treat these logs primarily as flat sequences of templates, overlooking the relational execution structure that governs how events co-occur and evolve over time. We propose a framework that discovers this hidden structure by recovering an execution state machine directly from logs and inducing a corresponding multi-table relational schema connecting traces, events, states, transitions, and parameters. This discovered state machine serves as a generative prior to produce realistic multi-relational synthetic data that preserves structural, temporal, and process constraints while amplifying rare but valid execution behaviors. We assess the fidelity of the generated data through constraint validation, distributional similarity, and process-level metrics, and demonstrate its usefulness by showing that augmenting real logs with the synthetic relational data significantly improves anomaly and bug detection on held-out real datasets compared to sequence-based baselines and naive oversampling. Our results show that execution logs implicitly encode a relational database governed by a latent state machine, and that recovering this structure enables principled synthetic data generation for robust and interpretable anomaly detection.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
   </entry>
 </feed>
