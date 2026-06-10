@@ -4,12 +4,85 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-09T05:17:42Z</updated>
+  <updated>2026-06-10T05:29:43Z</updated>
   <subtitle>Latest multimodal papers (last 7 days) — 22 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>LLM-Mediated Demand Response Coordination in Smart Microgrids</title>
+    <link href="http://arxiv.org/abs/2606.11050v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.11050v1</id>
+    <published>2026-06-09T00:00:00Z</published>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <author>
+      <name>J. de Curtò</name>
+    </author>
+    <author>
+      <name>I. de Zarzà</name>
+    </author>
+    <summary type="text">Effective demand response in smart microgrids requires prosumers to cooperate voluntarily under strategic self-interest, a coordination problem structurally equivalent to a repeated Prisoner's Dilemma on a social network. This paper presents a multi-agent simulation in which a Large Language Model (LLM) Influence Compiler issues structured demand-response directives to a population of heterogeneous prosumer agents, each governed by a hybrid decision architecture combining game-theoretic base probability (derived from payoff history, neighbour imitation, and exploitation memory) with LLM narrative evaluation of incoming coordination signals. The hybrid architecture resolves a key methodological challenge: LLMs aligned via Reinforcement Learning from Human Feedback (RLHF) exhibit strong cooperation bias when used as direct decision-makers, producing flat dynamics regardless of grid conditions. By separating strategic reasoning from grounded narrative evaluation, the model generates realistic prosumer behaviour across six personality archetypes, with baseline cooperation near 50% and clear differentiation under influence. Compiled structured directives achieve 33.3% demand-curtailment cooperation versus 27.0% for unstructured messaging and 28.0% for a no-intervention baseline ($Δ_\mathrm{comp} = +0.063$), with the advantage preserved across both grounded and idealized agent substrates ($Δ= +0.083$) and across all resistance levels ($R = 0.1$ to $0.7$). Hub-targeted dissemination via high-centrality network nodes outperforms peripheral or random targeting, confirming that grid topology provides mechanistic amplification independent of message content. These results suggest that structured LLM compilation, grounded agent reasoning, and network-aware targeting are complementary design principles for scalable, interpretable demand-response coordination in smart-city energy systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Springer Nature proceedings (KES Smart Innovation Systems and Technologies)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.GT; eess.SY" />
+  </entry>
+  <entry>
+    <title>Decentralized Multi-Agent Systems with Shared Context</title>
+    <link href="http://arxiv.org/abs/2606.10662v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.10662v1</id>
+    <published>2026-06-09T00:00:00Z</published>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <author>
+      <name>Yuzhen Mao</name>
+    </author>
+    <author>
+      <name>Azalia Mirhoseini</name>
+    </author>
+    <summary type="text">Multi-agent systems (MAS) can scale large language model reasoning at test time by decomposing complex problems into parallel subtasks. However, most existing MAS rely on centralized orchestration, where a main agent assigns work, collects outputs, and merges results. As the number of subtasks grows, this controller becomes a communication and integration bottleneck. We propose Decentralized Language Models (DeLM), a MAS framework that decentralizes coordination through parallel agents, a shared verified context, and a task queue. Agents asynchronously claim subtasks, read accumulated progress, perform local reasoning, and write back compact verified updates. The shared context acts as a common communication substrate, enabling agents to build on one another's verified progress without routing every update through a central controller. Empirically, DeLM improves both software-engineering test-time scaling and long-context reasoning. On SWE-bench Verified, DeLM achieves the best performance across Avg.@1, Pass@2, and Pass@4, with gains of up to 10.5 percentage points over the strongest baseline, while reducing cost per task by roughly 50%. On LongBench-v2 Multi-Doc QA, DeLM achieves the highest average accuracy across four frontier model families, improving over the strongest baseline by up to 5.7 percentage points. The code is available on our project website at https://yuzhenmao.github.io/DeLM/.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>SkillAxe: Sharpening LLM-Authored Agent Skills Through Evaluation-Guided Self-Refinement</title>
+    <link href="http://arxiv.org/abs/2606.10546v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.10546v1</id>
+    <published>2026-06-09T00:00:00Z</published>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <author>
+      <name>Srishti Gautam</name>
+    </author>
+    <author>
+      <name>Arjun Radhakrishna</name>
+    </author>
+    <author>
+      <name>Sumit Gulwani</name>
+    </author>
+    <summary type="text">Skill documents, structured natural-language instructions that guide Large Language Model (LLM) agents, are critical to modern agent frameworks, yet LLMs struggle to write skills that actually work. On SkillsBench, human-authored skills improve pass rates by 16.2 percentage points, while LLM-authored skills provide no measurable gain. We introduce SkillAxe, a fully unsupervised framework that enables LLMs to iteratively diagnose and refine their own skills. SkillAxe decomposes skill quality into four interpretable dimensions (quality impact, trigger precision, instruction compliance with fault attribution, and solution-path coverage), producing structured improvement briefs that require no ground-truth labels, test suites, or environment rewards. On SkillsBench, SkillAxe improves pass rates by 28\% relative over unimproved LLM skills and closes 47--67\% of the gap to human-authored skills. We validate the approach as a continuous improvement engine in the wild on SpreadsheetBench, where a SkillAxe-built skill library learns from past agent trajectories and raises pass rate from 16.0\% to 52.0\% using only 22 skills.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, under review&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Decoupling Thought from Speech: Knowledge-Grounded Counterfactual Reasoning for Resilient Multi-Agent Argumentation</title>
+    <link href="http://arxiv.org/abs/2606.10475v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.10475v1</id>
+    <published>2026-06-09T00:00:00Z</published>
+    <updated>2026-06-09T00:00:00Z</updated>
+    <author>
+      <name>Jakub Masłowski</name>
+    </author>
+    <author>
+      <name>Jarosław A. Chudziak</name>
+    </author>
+    <summary type="text">Multi-agent debate frameworks have been shown to improve large language model performance in convergent tasks, but they are currently optimized in a way that heavily favors final output accuracy rather than stability of the process. During long-horizon exchanges reactive systems under sustained perturbations often experience logic degradation, argument repetition, and role drift. To structurally prevent the identity loss and maintain the process fidelity, we introduce Knowledge-Grounded Counterfactual Reasoning (KG-CFR), a dual-stage architecture that enforces a strict separation of concerns between a private, retrieval-augmented planning buffer, and a public execution layer. We assess this system in Dynamic Resource Allocation under Uncertainty (DRAU), a dedicated 1v1v1 environment, introducing diversity as distinct from standard debate settings. Over 270 completely factorial crisis simulation trajectories with stochastic environmental shocks, KG-CFR prevents judge-detected critical post-shock degradation (defined as a quality shift, $Δ\le -0.20$) in more than 95% of perturbed runs, increasing the overall argument quality from 0.694 to 0.822. Our primary contribution is the demonstration of architectural decoupling being an important factor of systemic resilience enhancement under sustained pressure without quality loss. Furthermore, we introduce custom vector metrics for discourse divergence and plan-execution alignment that provide strong, directionally consistent evidence of operational stability. Our ablation experiments suggest that the proper doctrinal grounding can be an equally important factor for argument quality, as the prospective planning. KG-CFR, according to our initial metric evaluations, reduces semantic looping, by preserving the agent's consistency with the original plan.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for publication in the Proceedings of the 30th International Conference on Knowledge-Based and Intelligent Information &amp; Engineering Systems (KES 2026)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CL" />
+  </entry>
   <entry>
     <title>Performance Evaluation of Social Learning</title>
     <link href="http://arxiv.org/abs/2606.09176v1" rel="alternate" type="text/html" />
@@ -312,6 +385,32 @@
     <category term="Machine Learning" />
   </entry>
   <entry>
+    <title>Modeling U.S. Attitudes Toward China via an Event-Steered Multi-Agent Simulator</title>
+    <link href="http://arxiv.org/abs/2606.06971v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.06971v2</id>
+    <published>2026-06-05T00:00:00Z</published>
+    <updated>2026-06-05T00:00:00Z</updated>
+    <author>
+      <name>Chenxu Zhu</name>
+    </author>
+    <author>
+      <name>Hantao Yao</name>
+    </author>
+    <author>
+      <name>Wu Liu</name>
+    </author>
+    <author>
+      <name>Junbo Guo</name>
+    </author>
+    <author>
+      <name>Yongdong Zhang</name>
+    </author>
+    <summary type="text">Understanding the dynamic evolution of opinions, such as U.S. public attitudes toward China, is essential for assessing geopolitical risks. However, existing LLM-based multiagent simulators predominantly rely on static rules and fixed datasets, limiting their ability to capture the dynamic, event-driven nature of macro-level opinion shifts in real-world settings. To address this limitation, we propose an Event-Steered Multi-Agent Simulator (ES-MAS), in which significant events and daily news continuously drive opinion evolution through dynamic interactions among agents. We first construct the China-U.S. Relation Evolution (CURE) dataset, covering 20 quarters from 2021 to 2025, including 258 major events and over 14,000 daily news articles, and providing a comprehensive temporal foundation for modeling opinion dynamics. Building upon the CURE dataset, we propose a Dual-Stream Data Integration Engine (DSDIE) that aligns simulations with historical timelines via macro-level events while enabling personalized information exposure based on individual agent profiles and contextual signals. Furthermore, we design a News-Driven Dynamic Interaction (NDDI) module, which adaptively groups agents with shared news interests into localized interaction contexts, facilitating bottom-up consensus formation while mitigating the risk of isolated information cocoons. Experimental results on the CURE dataset demonstrate that ES-MAS substantially outperforms existing simulators in reproducing real-world historical trends, offering a scalable and effective framework for modeling dynamic opinion evolution.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.SI" />
+  </entry>
+  <entry>
     <title>A Swarm Approach to Public Transit Using On-demand Routing in a Slime-Mold-Inspired Framework</title>
     <link href="http://arxiv.org/abs/2606.06189v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2606.06189v1</id>
@@ -377,106 +476,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="cs.CL" />
-  </entry>
-  <entry>
-    <title>Channel Fracture: Architectural Blind Spots in Scheduled Cross-Agent Memory Injection for Multi-Agent Orchestration Systems</title>
-    <link href="http://arxiv.org/abs/2606.04896v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.04896v1</id>
-    <published>2026-06-03T00:00:00Z</published>
-    <updated>2026-06-03T00:00:00Z</updated>
-    <author>
-      <name>Levent Liu</name>
-    </author>
-    <summary type="text">Multi-agent AI orchestration systems increasingly rely on persistent memory to maintain context across sessions, agents, and tasks. When one agent must inject knowledge into another agent's memory -- a common requirement in hierarchical team architectures -- the delivery mechanism must be architecturally sound. We report the discovery of a systematic failure mode we term channel fracture: a condition where scheduled (cron) agents in orchestration frameworks are silently unable to write to the target agent's persistent memory due to hardcoded memory isolation guards. Through experiments on a production Hermes Agent deployment with five specialized profiles, we tested three injection channels: (A) direct SQLite database writes, (B) target-agent self-writes via memory tools, and (C) cron-delegated writes. Channel C failed completely due to two architectural constraints: skip_memory=True hardcoded at the scheduler layer and dynamic registration of memory tools contingent on _memory_manager initialization, which is bypassed in cron execution contexts. We propose CADVP (Cross-Agent Delivery Verification Protocol) v1.1, a 13-dimension verification framework with a veto-level channel confirmation check (CC-0) that prevents false-positive delivery assurance. We articulate two design principles: the inverse verification principle and the channel matching principle.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 0 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Organizational Control Layer: Governance Infrastructure at the Execution Boundary of LLM Agent Systems</title>
-    <link href="http://arxiv.org/abs/2606.04306v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.04306v1</id>
-    <published>2026-06-03T00:00:00Z</published>
-    <updated>2026-06-03T00:00:00Z</updated>
-    <author>
-      <name>Tianyu Shi</name>
-    </author>
-    <author>
-      <name>Yang Mo</name>
-    </author>
-    <author>
-      <name>Yiou Liu</name>
-    </author>
-    <author>
-      <name>Zhuonan Hao</name>
-    </author>
-    <author>
-      <name>Yin Wang</name>
-    </author>
-    <author>
-      <name>Wenzhuo Hu</name>
-    </author>
-    <author>
-      <name>Nan Yu</name>
-    </author>
-    <author>
-      <name>Meng Zhou</name>
-    </author>
-    <author>
-      <name>Jiangbo Yu</name>
-    </author>
-    <summary type="text">LLM-based agents are increasingly deployed in workflows where generated outputs may directly trigger state-changing actions. This creates an execution-boundary problem: proposed actions must be governed before they are executed. We study this problem through economically consequential multi-agent interactions and argue that deployment-grade agent systems should separate proposal generation from environment-facing execution. To operationalize this principle, we introduce the Organizational Control Layer (OCL), a model-agnostic governance infrastructure that intercepts generated actions before execution through policy enforcement and escalation, without modifying the underlying LLM generator. We evaluate OCL on adversarial buyer--seller negotiation environments adapted from AgenticPay. Across multiple frontier LLM backends, OCL reduces unsafe executions from 88% to near-zero while increasing valid success from 12% to 96%. Results further reveal a safety--utility tradeoff: strict governance improves compliance and reliability against policy and constraint violations, but can reduce flexibility in tightly constrained markets. These findings suggest that deployment-grade LLM agent systems require explicit governance at the boundary between language generation and executable actions. The source code is available at: https://github.com/SHITIANYU-hue/amai_ocl</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/SHITIANYU-hue/amai_ocl"&gt;https://github.com/SHITIANYU-hue/amai_ocl&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 2 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Ahoy: LLMs Enacting Multiagent Interaction Protocols</title>
-    <link href="http://arxiv.org/abs/2606.05390v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.05390v1</id>
-    <published>2026-06-03T00:00:00Z</published>
-    <updated>2026-06-03T00:00:00Z</updated>
-    <author>
-      <name>Omkar Joshi</name>
-    </author>
-    <author>
-      <name>Munindar P. Singh</name>
-    </author>
-    <author>
-      <name>Amit K. Chopra</name>
-    </author>
-    <summary type="text">An interaction protocol formalizes how the agents in a multiagent system interact, which facilitates implementing agents. Existing approaches yield agent implementations specific to the selected protocols. How can we engineer intelligent agents that can enact protocols but are programming-free? Our contribution, Ahoy, addresses this question by creating LLM agents that dynamically select and enact declarative protocols to achieve user goals. We demonstrate that an \ahoy agent can correctly and intelligently enact multiple protocols - concurrently if appropriate to the user goal - without specialized training. Ahoy's significance lies in that it brings together declarative protocols and LLMs, both approaches that promise improved knowledge engineering for agents.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Presented at EMAS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Channel Fracture: Architectural Blind Spots in Scheduled Cross-Agent Memory Injection for Multi-Agent Orchestration Systems</title>
-    <link href="http://arxiv.org/abs/2606.04896v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.04896v2</id>
-    <published>2026-06-03T00:00:00Z</published>
-    <updated>2026-06-03T00:00:00Z</updated>
-    <author>
-      <name>Dexing Liu</name>
-    </author>
-    <summary type="text">Multi-agent AI orchestration systems increasingly rely on persistent memory to maintain context across sessions, agents, and tasks. When one agent must inject knowledge into another agent's memory -- a common requirement in hierarchical team architectures -- the delivery mechanism must be architecturally sound. We report the discovery of a systematic failure mode we term channel fracture: a condition where scheduled (cron) agents in orchestration frameworks are silently unable to write to the target agent's persistent memory due to hardcoded memory isolation guards. Through experiments on a production Hermes Agent deployment with five specialized profiles, we tested three injection channels: (A) direct SQLite database writes, (B) target-agent self-writes via memory tools, and (C) cron-delegated writes. Channel C failed completely due to two architectural constraints: skip_memory=True hardcoded at the scheduler layer and dynamic registration of memory tools contingent on _memory_manager initialization, which is bypassed in cron execution contexts. We propose CADVP (Cross-Agent Delivery Verification Protocol) v1.1, a 13-dimension verification framework with a veto-level channel confirmation check (CC-0) that prevents false-positive delivery assurance. We articulate two design principles: the inverse verification principle and the channel matching principle.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Channel Fracture: Three Instances of Cross-Boundary Silent Delivery Reliability Failures in Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2606.04896v3" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.04896v3</id>
-    <published>2026-06-03T00:00:00Z</published>
-    <updated>2026-06-03T00:00:00Z</updated>
-    <author>
-      <name>Dexing Liu</name>
-    </author>
-    <summary type="text">We report the discovery of channel fracture, a silent architectural failure in multi-agent systems where information routed across agent boundaries is silently blocked by invisible constraints. We present three instances in a production Hermes Agent deployment: (1) cron memory injection blocked by scheduler barriers; (2) cross-profile skill routing fractured by recursive directory traversal; (3) WebSocket delivery confirmation fallback fracture causing message duplication. We propose CADVP v1.1, a 13-dimension verification protocol with a veto-level confirmation check. Through 30,012 trials, zero failure rates under protocol versus 69 to 98 percent without. Real-world validation (10,008 trials) confirms quality elevation from 0.90 to 1.00. Three design principles: inverse verification, channel matching, and PIP protection.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 39 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
   </entry>
 </feed>
