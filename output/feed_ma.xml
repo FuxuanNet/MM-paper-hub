@@ -4,12 +4,138 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-11T05:40:00Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 23 entries</subtitle>
+  <updated>2026-06-12T05:47:53Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 24 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Tuning Agent-Based Predator-Prey Models Toward Lotka-Volterra Dynamics</title>
+    <link href="http://arxiv.org/abs/2606.13639v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.13639v1</id>
+    <published>2026-06-11T00:00:00Z</published>
+    <updated>2026-06-11T00:00:00Z</updated>
+    <author>
+      <name>Corinna Mandl</name>
+    </author>
+    <author>
+      <name>Siddharth Chaturvedi</name>
+    </author>
+    <author>
+      <name>Marcel van Gerven</name>
+    </author>
+    <summary type="text">Recent growth in compute power has made it increasingly feasible to use large-scale agent-based models to simulate complex adaptive systems. A central difficulty is that such models contain many local rules and parameters, where small changes can lead to runaway behaviour, population collapse, or saturation at artificial bounds. We study this problem in a continuous predator-prey system where sheep and wolves are active agents with local sensing, internal energy, and recurrent neural network-based controllers. We ask whether environmental and demographic parameters can be tuned so that the resulting population dynamics resemble classical Lotka-Volterra cycles. We optimise these parameters with a feature-based loss that rewards sustained oscillations, phase lag, bounded populations, and long-term persistence, first for random controllers and then for evolved controllers in a more naturalistic setting. The model is implemented in ABMax, a JAX-based agent-based modelling framework that enables efficient batched simulation on hardware accelerators.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>See What I See, Know What I Think: Dense Latent Communication Across Heterogeneous Agents</title>
+    <link href="http://arxiv.org/abs/2606.13594v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.13594v1</id>
+    <published>2026-06-11T00:00:00Z</published>
+    <updated>2026-06-11T00:00:00Z</updated>
+    <author>
+      <name>Siyi Chen</name>
+    </author>
+    <author>
+      <name>Xiaoyan Zhang</name>
+    </author>
+    <author>
+      <name>Meng Wu</name>
+    </author>
+    <author>
+      <name>Jonathan Tremblay</name>
+    </author>
+    <author>
+      <name>Valts Blukis</name>
+    </author>
+    <author>
+      <name>Stan Birchfield</name>
+    </author>
+    <author>
+      <name>Rene Vidal</name>
+    </author>
+    <author>
+      <name>Alvaro Velasquez</name>
+    </author>
+    <author>
+      <name>Sijia Liu</name>
+    </author>
+    <author>
+      <name>Qing Qu</name>
+    </author>
+    <summary type="text">Multi-agent systems communicate mostly through text, paying a lossy and expensive decode and re-encode cost. KV-cache communication is a promising alternative, yet most prior work is homogeneous, using duplicate copies of the same model, and avoids the central challenge of cross-model latent alignment; existing heterogeneous methods are also restrictive, typically assuming shared input and using transferred caches mainly for steering. We study a more fundamental question: can heterogeneous agents be aligned well enough to perform real "mind reading" and transfer both what one agent sees and how it thinks? Our information-structure analysis reveals a duality: context-aware transfer is driven by sparse reasoning signals, while context-unaware transfer, where the receiver sees no input, requires dense contextual knowledge preservation. Motivated by this, we propose dense alignment for heterogeneous KV-cache communication via a lightweight cross-model cache transformation and two-phase training: reconstruction followed by generation. Across all six directions of {Qwen3-4B, 8B, 14B} and six in-domain and out-of-domain benchmarks, our method outperforms prior heterogeneous baselines, matches or exceeds text communication in context-aware settings at roughly 2 to 3 times lower compute, and remains effective in context-unaware transfer where prior methods collapse.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>$α$-fair heterogeneous agent reinforcement learning</title>
+    <link href="http://arxiv.org/abs/2606.13076v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.13076v1</id>
+    <published>2026-06-11T00:00:00Z</published>
+    <updated>2026-06-11T00:00:00Z</updated>
+    <author>
+      <name>Yao-hua Franck Xu</name>
+    </author>
+    <author>
+      <name>Tayeb Lemlouma</name>
+    </author>
+    <author>
+      <name>Jean-Marie Bonnin</name>
+    </author>
+    <author>
+      <name>Arnaud Braud</name>
+    </author>
+    <summary type="text">Cooperation in multi-agent systems is typically optimized through utilitarian objectives that maximize overall efficiency but fail to account for reward distribution, often resulting in inequitable "leader-follower" dynamics. While fairness-based approaches encourage pro-social behaviors where every agent benefits from cooperation, many current algorithms - including those utilizing reward shaping - break the stationarity of Markov Games or lack rigorous theoretical guarantees. This creates a critical gap between fair objective methods and theoretically safe learning frameworks. We propose a novel framework that bridges $α$-fairness with Heterogeneous-Agent Trust Region Learning (HATRL), ensuring monotonic improvement and convergence toward Nash Equilibria. Our approach leverages a fair advantage function that dynamically weights agent utilities based on their expected returns, allowing the global objective to transition from purely utilitarian efficiency to $α$-fairness welfare based on the parameter $α$. We introduce two practical algorithms, $α$-fair HATRPO and $α$-fair HAPPO, and demonstrate through experiments in sequential social dilemmas like CleanUp and CommonHarvest that they perform better than HATRL's algorithms from a utilitarian point of view while achieving socially higher outcomes.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.GT; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Effects of Social Interactions in Self-Organising Railway Traffic Management</title>
+    <link href="http://arxiv.org/abs/2606.13068v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.13068v1</id>
+    <published>2026-06-11T00:00:00Z</published>
+    <updated>2026-06-11T00:00:00Z</updated>
+    <author>
+      <name>Fabio Oddi</name>
+    </author>
+    <author>
+      <name>Federico Naldini</name>
+    </author>
+    <author>
+      <name>Leo D'Amato</name>
+    </author>
+    <author>
+      <name>Grégory Marlière</name>
+    </author>
+    <author>
+      <name>Paola Pellegrini</name>
+    </author>
+    <author>
+      <name>Vito Trianni</name>
+    </author>
+    <summary type="text">Recent research is exploring self-organised traffic management as a solution for scaling to complex real-world networks. In such a system, trains predict their neighbourhood, produce traffic plan hypotheses, and agree via consensus with neighbours on a future traffic plan to be implemented. This paper investigates a structural parameter within this pipeline: the predictive neighbourhood horizon. The horizon is used by trains to identify future potential conflicts with neighbours, and to establish the local interaction topology, that is, the subset of trains to negotiate with. As the primary design variable, the horizon directly determines the size and density of the social interaction graph, whereas its impact on the complexity of local sub-problems and the distributed consensus dynamics represents a trade-off to be explored. Through a closed-loop simulation framework the study evaluates how variations of the horizon impact the overall decentralised coordination process, from initial conflict detection to distributed schedule consensus. The analysis focuses on investigating the potential trade-off introduced by the horizon choice: balancing local tractability and computational responsiveness with the need for global schedule coherence and feasibility in safety-critical environments. Contrary to intuition, our empirical results indicate that the short time horizons suffice, while long values compromise local tractability and computational responsiveness with no gain in global schedule optimality.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Robotics" />
+  </entry>
+  <entry>
+    <title>The Internet of Agentic AI: Communication, Coordination, and Collective Intelligence at Scale</title>
+    <link href="http://arxiv.org/abs/2606.12835v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.12835v1</id>
+    <published>2026-06-11T00:00:00Z</published>
+    <updated>2026-06-11T00:00:00Z</updated>
+    <author>
+      <name>Quanyan Zhu</name>
+    </author>
+    <summary type="text">The rapid emergence of autonomous AI agents is transforming artificial intelligence from isolated model inference into distributed systems of reasoning, communication, and action. This paper develops the vision of the Internet of Agentic AI (IoAI): an open ecosystem in which heterogeneous agents discover one another, negotiate responsibilities, exchange context, invoke tools, and execute workflows across cloud, edge, device, organizational, and cyber-physical environments. We synthesize foundations from single-agent agentic AI, multi-agent systems, distributed computing, communication networks, game theory, and security engineering to characterize the architectures and mechanisms required for scalable agent ecosystems. The paper examines agent deployment models, workflow lifecycles, communication protocols, interoperability layers, resource-management challenges, and trust architectures, with case studies in adaptive manufacturing and distributed operational coordination. The resulting framework highlights the central research challenges of controlled emergence, semantic interoperability, secure identity, incentive-compatible coordination, resource-aware orchestration, and governance for large-scale networks of autonomous agents.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CY; cs.NI" />
+  </entry>
   <entry>
     <title>CCKS: Consensus-based Communication and Knowledge Sharing</title>
     <link href="http://arxiv.org/abs/2606.12281v1" rel="alternate" type="text/html" />
@@ -45,6 +171,62 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Smarter Saboteurs, Better Fixers: Scaling &amp; Security in Linear Multi-Agent Workflows</title>
+    <link href="http://arxiv.org/abs/2606.12709v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.12709v1</id>
+    <published>2026-06-10T00:00:00Z</published>
+    <updated>2026-06-10T00:00:00Z</updated>
+    <author>
+      <name>Timothy McAllister</name>
+    </author>
+    <author>
+      <name>Sina Abdidizaji</name>
+    </author>
+    <author>
+      <name>Ivan Garibay</name>
+    </author>
+    <author>
+      <name>Ozlem Ozmen Garibay</name>
+    </author>
+    <summary type="text">As LLM-based multi-agent systems (MAS) are deployed in the wild, the resilience of their collaboration structures against adversarial compromise becomes a critical safety concern. Attackers may leverage prompt-injection or jailbreaking to sabotage individual agents within MAS workflows, but the interaction between model scaling and system-level resilience remains poorly understood. This paper investigates how model scale affects the security of linear multi-agent workflows. Our experiments across scales of two open-weight model families on the HumanEval benchmark reveal a compliance-correction symmetry: larger models are far more likely to faithfully execute malicious instructions, with the control-to-malicious performance drop reaching 53.7pp at 27B in uncorrected pipelines. However, appending a lightweight terminal Fixer stage collapses this to 0.6pp and restores statistical parity with control-level performance, demonstrating that strictly linear collaboration structures can be viable and resilient to adversaries at this scale, and suggesting that the brittleness previously attributed to linear topology may stem from a lack of correction.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICML 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CR; Machine Learning" />
+  </entry>
+  <entry>
+    <title>SAIGuard: Communication-State Simulation for Proactive Defense of LLM Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2606.12474v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.12474v1</id>
+    <published>2026-06-10T00:00:00Z</published>
+    <updated>2026-06-10T00:00:00Z</updated>
+    <author>
+      <name>Ruxue Shi</name>
+    </author>
+    <author>
+      <name>Yili Wang</name>
+    </author>
+    <author>
+      <name>Mengnan Du</name>
+    </author>
+    <author>
+      <name>Qinggang Zhang</name>
+    </author>
+    <author>
+      <name>Rui Miao</name>
+    </author>
+    <author>
+      <name>Yixin Liu</name>
+    </author>
+    <author>
+      <name>Xin Wang</name>
+    </author>
+    <summary type="text">LLM-based multi-agent systems (MAS) solve complex tasks through inter-agent collaboration, but their communication-driven nature also allows security risks to spread across agents and trigger system-wide failures. Existing MAS defenses mainly follow a reactive paradigm after execution by detecting and isolating harmful agents, which may cause irreversible damage and degrade collaborative utility. To address this, we propose a proactive defense framework for MAS security, namely a Simulation-aware Interception Guard (SAIGuard). SAIGuard performs communication-state simulation over the MAS interaction graph, estimates the impact of incoming messages on local agent states and the global MAS state, and detects risky messages via reconstruction deviations from benign communication patterns. Instead of isolating agents, SAIGuard sanitizes or regenerates suspicious messages before it propagation into system. Experiments across diverse topologies and attack scenarios show that SAIGuard reduces attack success rates while maintaining MAS utility, outperforming reactive defenses.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CR" />
   </entry>
   <entry>
     <title>LLM-Mediated Demand Response Coordination in Smart Microgrids</title>
@@ -369,145 +551,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="cs.CY" />
-  </entry>
-  <entry>
-    <title>Modelling Opinion Dynamics at Scale with Deep MARL</title>
-    <link href="http://arxiv.org/abs/2606.07487v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.07487v1</id>
-    <published>2026-06-05T00:00:00Z</published>
-    <updated>2026-06-05T00:00:00Z</updated>
-    <author>
-      <name>Lukas Seier</name>
-    </author>
-    <author>
-      <name>Brandon Kaplowitz</name>
-    </author>
-    <author>
-      <name>Sebastian Towers</name>
-    </author>
-    <author>
-      <name>Richard Bailey</name>
-    </author>
-    <author>
-      <name>Jakob Foerster</name>
-    </author>
-    <summary type="text">Modelling opinion dynamics typically relies on hand-crafted local interaction rules to study emergent macroscopic phenomena such as consensus and polarisation. In contrast, multi-agent reinforcement learning (MARL) enables agents to learn such behaviours directly by optimising simple rewards. To explore the potential of MARL for opinion dynamics, we introduce a GPU-accelerated consensus and truth-finding game that scales to populations of up to 1000 agents, comparable to many real-world social sub-networks. To prevent unrealistic conventions, we extend other-play to general-sum social interactions. We next validate our model on a subset of the Bluesky network by recovering agent importance structures from graph topology alone via a learned attention layer, finding that highly conforming populations most closely match human data. In large social media networks such high levels of conformity significantly reduce collective accuracy and promote dishonest agents that lie to fit in. By contrast, small, dynamic hunter-gatherer networks are less affected; here, conformity can even improve collective agreement. This suggests a mismatch between evolved human conformity heuristics and modern social media environments as a potential contributor to misinformation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 35 pages, 28 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.GT; cs.SI" />
-  </entry>
-  <entry>
-    <title>Hierarchical Certified Semantic Commitment for Byzantine-Resilient LLM-Agent Collaboration</title>
-    <link href="http://arxiv.org/abs/2606.07316v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.07316v1</id>
-    <published>2026-06-05T00:00:00Z</published>
-    <updated>2026-06-05T00:00:00Z</updated>
-    <author>
-      <name>Haoran Xu</name>
-    </author>
-    <author>
-      <name>Lei Zhang</name>
-    </author>
-    <author>
-      <name>Iadh Ounis</name>
-    </author>
-    <author>
-      <name>Xianbin Wang</name>
-    </author>
-    <summary type="text">Byzantine collaboration among large-language-model agents requires a finality-control primitive: given delivered stochastic, structured natural-language proposals, the protocol must decide whether the round supports a commit, what kind of commit, or a typed safe abort. Naive aggregation hides this choice behind a single verdict; classical Byzantine fault tolerance hides it behind byte-identity that LLM proposals do not satisfy. We introduce Hierarchical Certified Semantic Commitment (H-CSC), a BFT-inspired protocol that converts embedding-derived finality signals over verdict-conditioned proposal groups into one of three typed outcomes: a semantic_commit (a 2f+1 within-verdict semantic core backs the verdict, emitting a parameter-bound digest over the quantised aggregate), a verdict_commit (strong verdict margin but dispersed semantic rationale, emitting a verdict-level certificate without claiming a semantic aggregate), or an explicit abort with a typed reason. The contribution is typed finality, not raw commit accuracy. On a controlled semantic-poisoning diagnostic (BCS_v1, 120 episodes), H-CSC commits with low angular deviation on BFT-feasible buckets (0.31 to 2.04 degrees) and aborts 100% of beyond-BFT rounds (n&lt;3f+1) as intended. On a real LLM-agent claim-verification benchmark (MVR-50, 50 tasks) under paired static and rushing Byzantine attacks, H-CSC commits 0.90/0.92 with honest-reference-invalid rates of 0.02/0.00, statistically matching a strong certificate-emitting verdict-only baseline. Unlike that baseline, H-CSC also emits an embedding-backed semantic_commit digest on 74%/72% of rounds, supplying typed provenance. A strict-semantic ablation commits only 0.54/0.48, showing the verdict-level fallback is necessary for coverage (+0.36/+0.44) at the same &lt;=0.04 safety floor; a 100-task cross-model check across four LLMs preserves invalid_hmaj within 0.00 to 0.03.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 27 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.DC" />
-  </entry>
-  <entry>
-    <title>Learning Multi-Agent Communication Protocol: Study on Information Entropy Efficiency in MARL</title>
-    <link href="http://arxiv.org/abs/2606.07200v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.07200v1</id>
-    <published>2026-06-05T00:00:00Z</published>
-    <updated>2026-06-05T00:00:00Z</updated>
-    <author>
-      <name>Xinren Zhang</name>
-    </author>
-    <author>
-      <name>Zixin Zhong</name>
-    </author>
-    <author>
-      <name>Jiadong Yu</name>
-    </author>
-    <summary type="text">Multi-Agent Systems (MAS) have emerged as a fundamental paradigm for distributed problem-solving, where autonomous agents collaborate to achieve complex objectives. Within this framework, Multi-Agent Reinforcement Learning (MARL) with communication has demonstrated remarkable success in cooperative tasks. However, existing approaches predominantly pursue performance gains through increasingly complex architectures and expanding communication overhead, lacking principled metrics to evaluate the efficiency of information exchange. In this paper, we focus on enabling agents to learn efficient multi-agent communication protocols that balance performance and information compactness. We propose the Information Entropy Efficiency Index (IEI), a novel metric that quantifies the ratio between message entropy and task performance in learned communication protocols. A lower IEI indicates more compact and efficient message representations. By incorporating IEI into training loss functions, we encourage agents to develop communication protocols that achieve high performance with improved communication efficiency. Extensive experiments across diverse MARL algorithms demonstrate that our approach achieves equivalent or superior task performance compared to baseline methods while improving communication efficiency. These findings challenge the prevailing assumption that performance improvements require complex architectures or increased communication overhead and highlight the potential of improving both task success and communication efficiency to enable scalable MAS.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Modeling U.S. Attitudes Toward China via an Event-Steered Multi-Agent Simulator</title>
-    <link href="http://arxiv.org/abs/2606.06971v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.06971v1</id>
-    <published>2026-06-05T00:00:00Z</published>
-    <updated>2026-06-05T00:00:00Z</updated>
-    <author>
-      <name>Chenxu Zhu</name>
-    </author>
-    <author>
-      <name>Hantao Yao</name>
-    </author>
-    <author>
-      <name>Wu Liu</name>
-    </author>
-    <author>
-      <name>Junbo Guo</name>
-    </author>
-    <author>
-      <name>Yongdong Zhang</name>
-    </author>
-    <summary type="text">Understanding the dynamic evolution of opinions, such as U.S. public attitudes toward China, is essential for assessing geopolitical risks. However, existing LLM-based multiagent simulators predominantly rely on static rules and fixed datasets, limiting their ability to capture the dynamic, event-driven nature of macro-level opinion shifts in real-world settings. To address this limitation, we propose an Event-Steered Multi-Agent Simulator (ES-MAS), in which significant events and daily news continuously drive opinion evolution through dynamic interactions among agents. We first construct the China-U.S. Relation Evolution (CURE) dataset, covering 20 quarters from 2021 to 2025, including 258 major events and over 14,000 daily news articles, and providing a comprehensive temporal foundation for modeling opinion dynamics. Building upon the CURE dataset, we propose a Dual-Stream Data Integration Engine (DSDIE) that aligns simulations with historical timelines via macro-level events while enabling personalized information exposure based on individual agent profiles and contextual signals. Furthermore, we design a News-Driven Dynamic Interaction (NDDI) module, which adaptively groups agents with shared news interests into localized interaction contexts, facilitating bottom-up consensus formation while mitigating the risk of isolated information cocoons. Experimental results on the CURE dataset demonstrate that ES-MAS substantially outperforms existing simulators in reproducing real-world historical trends, offering a scalable and effective framework for modeling dynamic opinion evolution.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.SI" />
-  </entry>
-  <entry>
-    <title>GRPO Does Not Close the Multi-Agent Coordination Gap</title>
-    <link href="http://arxiv.org/abs/2606.07845v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.07845v1</id>
-    <published>2026-06-05T00:00:00Z</published>
-    <updated>2026-06-05T00:00:00Z</updated>
-    <author>
-      <name>Najmul Hasan</name>
-    </author>
-    <author>
-      <name>Prashanth BusiReddyGari</name>
-    </author>
-    <summary type="text">We measure how well current large language models coordinate as multiple agents sharing a common resource, using the dining philosophers problem as a clean test bed. Across 630 episodes spanning seven models and three philosopher counts, four frontier closed-source systems reach mean reward 0.45 to 0.87 and Mistral-Small 24B reaches 0.83 to 0.99, while Qwen3-14B reaches 0.13 to 0.35. We then ask whether group relative policy optimization (GRPO) on rollouts from the task itself can close the gap and find that it cannot: a Welch's t-test on per-episode reward at five philosophers gives p = 0.66 and a Hedges' g of -0.11, with no statistically significant change at ten or fifteen philosophers either. Two further observations qualify the result. The training reward of both 8B and 14B runs peaked at step nine and then declined, so the default saved checkpoint at step 15 is strictly worse than several earlier ones. The four-term reward we use admits a degenerate maximum at zero actions, which DeepSeek-R1-Distill-Qwen-7B and Mistral-Small 24B at five philosophers both inhabit, with mean reward 1.0 and 0.83 respectively at zero meals. The bottleneck for an open-weight 14B model on multi-agent coordination is not training compute but training methodology: reward shaping that does not collapse to a no-action maximum, checkpoint discipline that does not depend on the final step, and curriculum across problem scales.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 15 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Modeling U.S. Attitudes Toward China via an Event-Steered Multi-Agent Simulator</title>
-    <link href="http://arxiv.org/abs/2606.06971v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.06971v2</id>
-    <published>2026-06-05T00:00:00Z</published>
-    <updated>2026-06-05T00:00:00Z</updated>
-    <author>
-      <name>Chenxu Zhu</name>
-    </author>
-    <author>
-      <name>Hantao Yao</name>
-    </author>
-    <author>
-      <name>Wu Liu</name>
-    </author>
-    <author>
-      <name>Junbo Guo</name>
-    </author>
-    <author>
-      <name>Yongdong Zhang</name>
-    </author>
-    <summary type="text">Understanding the dynamic evolution of opinions, such as U.S. public attitudes toward China, is essential for assessing geopolitical risks. However, existing LLM-based multiagent simulators predominantly rely on static rules and fixed datasets, limiting their ability to capture the dynamic, event-driven nature of macro-level opinion shifts in real-world settings. To address this limitation, we propose an Event-Steered Multi-Agent Simulator (ES-MAS), in which significant events and daily news continuously drive opinion evolution through dynamic interactions among agents. We first construct the China-U.S. Relation Evolution (CURE) dataset, covering 20 quarters from 2021 to 2025, including 258 major events and over 14,000 daily news articles, and providing a comprehensive temporal foundation for modeling opinion dynamics. Building upon the CURE dataset, we propose a Dual-Stream Data Integration Engine (DSDIE) that aligns simulations with historical timelines via macro-level events while enabling personalized information exposure based on individual agent profiles and contextual signals. Furthermore, we design a News-Driven Dynamic Interaction (NDDI) module, which adaptively groups agents with shared news interests into localized interaction contexts, facilitating bottom-up consensus formation while mitigating the risk of isolated information cocoons. Experimental results on the CURE dataset demonstrate that ES-MAS substantially outperforms existing simulators in reproducing real-world historical trends, offering a scalable and effective framework for modeling dynamic opinion evolution.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.SI" />
   </entry>
 </feed>
