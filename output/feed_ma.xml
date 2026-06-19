@@ -4,12 +4,72 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-18T05:46:57Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 20 entries</subtitle>
+  <updated>2026-06-19T06:09:30Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 18 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Blame is easier than praise: Measuring off-ball defensive performance in football</title>
+    <link href="http://arxiv.org/abs/2606.19931v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.19931v1</id>
+    <published>2026-06-18T00:00:00Z</published>
+    <updated>2026-06-18T00:00:00Z</updated>
+    <author>
+      <name>Jonas Bischofberger</name>
+    </author>
+    <author>
+      <name>Runqing Ma</name>
+    </author>
+    <author>
+      <name>Pascal Bauer</name>
+    </author>
+    <author>
+      <name>Kilian Arnsmeyer</name>
+    </author>
+    <author>
+      <name>Arnold Baca</name>
+    </author>
+    <summary type="text">The defensive performance of football players is commonly measured through a limited number of actions like tackles and interceptions while their continuous impact through positional behaviour has hardly been studied before. We formulate this problem as an attribution over multi-agent spatiotemporal trajectories without player-level ground truth labels, where event-level changes of expected threat are distributed among individuals. We propose a framework that performs this attribution using player involvement scores calculated from defensive pressure areas (DPAs). By computing role-conditioned baselines within automatically detected team structures, we can determine each defender's expected responsibility for threat created through arbitrary passes. The validity and robustness of this approach are evaluated on a uniquely extensive cross-gender and cross-competition data set, including positional and event data from 64 matches of the men's World Cup, 116 matches of the women's German Bundesliga and 336 matches of the men's German 3. Liga. In the absence of a ground truth, we propose an evaluation protocol that combines multiple relatively weak proxies into robust summary scores. We find a validity score that is improved by around 1 standard deviation compared to the best action-based metric and demonstrate that many popular measures show limited validity. The "blame" for conceding high-value actions shows especially strong correlations with external ratings and market values, making it the first published metric in football to reliably measure positioning errors. All code underlying this work is publicly available to support reproducibility and further research.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>SIGMA: Skill-Incidence Graphs for Compositional Multi-Agent Design</title>
+    <link href="http://arxiv.org/abs/2606.19758v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.19758v1</id>
+    <published>2026-06-18T00:00:00Z</published>
+    <updated>2026-06-18T00:00:00Z</updated>
+    <author>
+      <name>Kun Zeng</name>
+    </author>
+    <author>
+      <name>Yu Huo</name>
+    </author>
+    <author>
+      <name>Siyu Zhang</name>
+    </author>
+    <author>
+      <name>Yuecheng Zhuo</name>
+    </author>
+    <author>
+      <name>Yuquan Lu</name>
+    </author>
+    <author>
+      <name>Haoyue Liu</name>
+    </author>
+    <author>
+      <name>Siyue Chen</name>
+    </author>
+    <author>
+      <name>Xiaoying Tang</name>
+    </author>
+    <summary type="text">Existing graph-based multi-agent system (MAS) designers mainly improve collaboration by optimizing communication topologies over predefined agents, roles, or groups. However, because each node remains a closed-set entity, these methods struggle to generalize to tasks that require unseen combinations of capabilities. We propose SIGMA, a skill-incidence graph framework that constructs agents as task-conditioned bundles of reusable skills. Given a task and a skill library, SIGMA predicts a skill-agent incidence matrix, composes agent node embeddings from selected skills, and decodes a communication topology over the constructed agents. During execution, skill-specific mailboxes route messages to the relevant assigned capabilities, making the incidence structure directly operational. Across six reasoning and coding benchmarks with three base LLMs, SIGMA achieves the best average performance and improves over CARD, the strongest non-compositional topology-based baseline, by 2.06, 2.36, and 1.75 points, respectively. It also shows stronger robustness to unseen skill libraries, with an average performance drop of only 0.96 points. These results suggest that compositional node construction is a complementary and important axis for multi-agent design beyond communication topology optimization. Code is available at https://anonymous.4open.science/r/SIGMA-2338/.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; EMNLP2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>Data Intelligence Agents: Interpreting, Modeling, and Querying Enterprise Data via Autonomous Coding Agents</title>
     <link href="http://arxiv.org/abs/2606.19319v1" rel="alternate" type="text/html" />
@@ -160,6 +220,21 @@
     <summary type="text">Effective programming education requires personalized instruction adapted to diverse learner backgrounds. However, while LLM-based multi-agent systems (MAS) excel at complex planning, existing planners often lack profile-grounding and pedagogical scaffolding, thereby undermining personalized programming learning. To fill in the gap, we first introduce \textbf{MAP-PPL} (\textbf{M}ulti-\textbf{A}gent \textbf{P}lans for \textbf{P}ersonalized \textbf{P}rogramming \textbf{L}earning), a profile-conditioned multi-agent planning dataset with 3{,}043 query--profile--plan instances from 1{,}730 Stack Overflow question groups and 2{,}738 learner profiles. Each plan specifies agents, subtasks, executable steps, and prerequisite dependencies. Then, we propose \textbf{PersonalPlan}, a two-stage MAS planner that first performs hierarchical SFT with separate LoRA adapters for profile-aware task decomposition and step dependency planning, then applies a Reward-Adaptive GRPO to encourage the model to generate executable, personalized, and pedagogically scaffolded plans. Extensive experiments on MAP-PPL comparing PersonalPlan against frontier LLMs, generic MAS frameworks, and agentic planners demonstrate its superiority. With only 8B and 32B variants, PersonalPlan achieves state-of-the-art plan executability, personalization, and pedagogical quality, effectively orchestrating MAS for agent-student interactions.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Mesh Inference: A Formal Model of Collective Intelligence Without a Center</title>
+    <link href="http://arxiv.org/abs/2606.19537v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.19537v1</id>
+    <published>2026-06-17T00:00:00Z</published>
+    <updated>2026-06-17T00:00:00Z</updated>
+    <author>
+      <name>Hongwei Xu</name>
+    </author>
+    <summary type="text">We present a formal model of mesh inference: how a population of independent agents, each holding private state and exchanging only admitted, typed observations, derives a conclusion none of them holds alone, with no central coordinator and no agent exposed. No agent shares weights, gradients, or hidden state, and the agents may span different teams, networks, and organizations. Motivated by the observation that asking a model is energy-minimizing inference, we model the mesh as a coupled free energy that each agent relaxes locally. We show that a single admission/emission policy governs three properties. First, mesh inference converges to a unique answer for any admission, symmetric or not, because the coupling is always an M-matrix. Second, it is identification-complete: it derives the centralized optimum exactly when the contributing views are carrier-connected. Third, it is observation-only: no node transmits its internals, and confidentiality is the dual of identification. Content-addressed lineage is the only global side-channel. In the linear-Gaussian regime every derived answer is determined, hence equal to the centralized optimum, at O(diam^2) latency, the measured price of removing the center. One such derivation is one turn of a center-free learning loop, which we formalize as architecture rather than prove. The open problem we state is when asking improves the collective rather than corrupting it: whether the non-linear closure derives an upgraded answer or a confident error. To our knowledge, this is the first formal model of mesh inference.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 pages, 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.DC" />
   </entry>
   <entry>
     <title>On the Reliability of Networks of AI Agents: Density Evolution, Stopping Sets, and Architecture Optimization</title>
@@ -350,122 +425,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Learning Coordinated Preference for Multi-Objective Multi-Agent Reinforcement Learning</title>
-    <link href="http://arxiv.org/abs/2606.14693v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.14693v1</id>
-    <published>2026-06-12T00:00:00Z</published>
-    <updated>2026-06-12T00:00:00Z</updated>
-    <author>
-      <name>Pengxin Wang</name>
-    </author>
-    <author>
-      <name>Lihao Guo</name>
-    </author>
-    <author>
-      <name>Yi Xie</name>
-    </author>
-    <author>
-      <name>Bo Liu</name>
-    </author>
-    <author>
-      <name>Siyang Cao</name>
-    </author>
-    <author>
-      <name>Jingdi Chen</name>
-    </author>
-    <summary type="text">Cooperative multi-objective multi-agent reinforcement learning (MOMARL) models team decision making under multiple, potentially conflicting objectives. In this setting, conflicts arise not only across objectives but also across agents with different observations, roles, and contributions. We propose Preference Coordinated Multi-agent Policy Optimization (PCMA), which learns coordinated agent-specific preferences to enable complementary trade-offs among agents. Theoretically, we formulate cooperative MOMARL as a team-optimal game and show that, under suitable conditions, preference diversity can induce team improvement through a first-order improvement decomposition. Experiments on multiple cooperative MOMA environments and a practical traffic-control scenario show that PCMA improves both performance and trade-off coordination.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Naive Visual Memory is Not Enough: A Failure-Mode Study of GUI Agents</title>
-    <link href="http://arxiv.org/abs/2606.14106v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.14106v1</id>
-    <published>2026-06-12T00:00:00Z</published>
-    <updated>2026-06-12T00:00:00Z</updated>
-    <author>
-      <name>Seoyoung Choi</name>
-    </author>
-    <author>
-      <name>Minseok Ko</name>
-    </author>
-    <author>
-      <name>Hyunseok Lee</name>
-    </author>
-    <author>
-      <name>Kunwoong Kim</name>
-    </author>
-    <author>
-      <name>Woomin Song</name>
-    </author>
-    <author>
-      <name>Chanseok Jeon</name>
-    </author>
-    <author>
-      <name>Jinwoo Shin</name>
-    </author>
-    <summary type="text">Graphical User Interface (GUI) agents are increasingly used to automate complex computer tasks across applications, websites, and operating systems. To improve their reliability, recent work has introduced experiential memory, where agents retrieve prior trajectories to guide decision-making in similar states. More recent approaches further extend this idea to visual memory by storing and retrieving screenshots from past interactions, providing agents with richer contextual information than text-only memories. However, the effect of visual memory in GUI agents remains insufficiently understood: it is unclear which failures visual memory mitigates, or which failures it exacerbates. To systematically analyze the effect of visual memory, we introduce a taxonomy of four GUI agent failures (i.e., cognitive failure, visual state misunderstanding, hidden operation blindness, and grounding error) that map to distinct stages of the perception-reasoning-action pipeline. We find that prepending full-image memory has a divergent effect on the failure distribution: it reduces state-level failures but worsens action-level ones, and increases hidden operation blindness and grounding error. Motivated by this finding, we propose Action-Grounded Visual Memory (AGMem), an action-grounded memory framework for GUI agents. The core idea of AGMem is to store image crops that capture the local GUI region closely related to a successful action or a recovery, rather than storing full screenshots. Experiments on OSWorld show that AGMem improves task success rates by 33.3 % over full-image memory. These results demonstrate that AGMem is an effective representation for visual memory in GUI agents.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICML 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Resilient Consensus in Agentic AI</title>
-    <link href="http://arxiv.org/abs/2606.15024v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.15024v1</id>
-    <published>2026-06-12T00:00:00Z</published>
-    <updated>2026-06-12T00:00:00Z</updated>
-    <author>
-      <name>Sribalaji C. Anand</name>
-    </author>
-    <author>
-      <name>George J. Pappas</name>
-    </author>
-    <summary type="text">Large language model (LLM) agents are increasingly deployed in multi-agent systems where they must coordinate and agree on shared decisions. We ask whether classical resilient consensus theory, developed for deterministic agents, transfers to LLM agents that may behave adversarially. Framing LLM agreement as a Byzantine consensus game, we run controlled experiments on complete and general communication graphs. We find that prompted LLM agents fail to reach agreement that is achievable in principle: consensus can fail even in settings where classical theory guarantees that a convergent algorithm exists, and this failure persists across temperatures and horizons. At the same time, wrapping the agents with classical resilient consensus filters improves agreement. The benefit of filtering depends on how much robustness the underlying topology already provides. Our results suggest that classical resilient consensus theory is a useful lens for the safety of agentic AI.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; eess.SY" />
-  </entry>
-  <entry>
-    <title>Hierarchical Generative Agents for Simulating Sequential Human Behavior</title>
-    <link href="http://arxiv.org/abs/2606.14989v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.14989v1</id>
-    <published>2026-06-12T00:00:00Z</published>
-    <updated>2026-06-12T00:00:00Z</updated>
-    <author>
-      <name>Maria G. Mendoza</name>
-    </author>
-    <author>
-      <name>Lucas Waldburger</name>
-    </author>
-    <author>
-      <name>Jin Lee</name>
-    </author>
-    <author>
-      <name>Shankar Sastry</name>
-    </author>
-    <summary type="text">Complex cognitive, emotional, and social processes shape human evacuations during natural disasters. Accurate modeling and understanding of human behavior in disasters or emergencies can greatly impact the evacuation process by informing more effective planning and resource allocation. However, collecting human data in these situations is very difficult, and existing computational evacuation models assume rational, homogeneous behavior, leading to unrealistic, overly optimistic predictions. To address this gap, we present a simulation framework of sequential human decision-making during an evacuation scenario, introducing cognitively grounded, persona-driven agents. Our framework models evacuation behavior in a grid-based urban environment that evolves over time, capturing fire and other hazards. Human agents are modeled as personas that make sequential decisions in response to environmental stimuli with cognition structured in three levels: high-level evacuation goals, mid-level route reasoning, and low-level navigation. Decision-making is driven by large language models (LLMs) coupled with a cognitive module and calibrated with empirical human evacuation data. We propose a dynamic, stimulus-driven disaster simulation framework that models human evacuation decision-making using persona-conditioned LLM agents and a cognitive hierarchy.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 20 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Selective Control under Noisy Perception: Governance Failures Hidden by Aggregate Metrics in Modular Networks</title>
-    <link href="http://arxiv.org/abs/2606.14819v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.14819v1</id>
-    <published>2026-06-12T00:00:00Z</published>
-    <updated>2026-06-12T00:00:00Z</updated>
-    <author>
-      <name>Igor Itkin</name>
-    </author>
-    <summary type="text">A content-moderation system can score well on every standard accuracy metric and still cause real harm, if its mistakes fall on the few users who connect otherwise separate communities. We show this in an agent-based model where N=240 learning agents on a community-structured network each post harmless, productive, or dangerous content, and a regulator removes or penalizes whatever a noisy classifier flags. Overall usefulness barely moves as the noise changes (one-way ANOVA, p=0.96): by aggregate measures, nothing looks wrong. The damage instead concentrates on these bridge users, whose useful posts are wrongly suppressed and whose dangerous posts are wrongly spared. A governance loss (L_gov) that prices these two mistakes separately from the cost of enforcement more than doubles under false-positive-heavy noise. Aggregate accuracy hides who is harmed, and the cheap quantity to audit is how many connections a user has (degree), a near-perfect proxy for the betweenness that defines a bridge (r=0.96).</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 39 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="physics.soc-ph" />
   </entry>
 </feed>
