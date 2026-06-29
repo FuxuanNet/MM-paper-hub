@@ -4,12 +4,126 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-26T05:23:30Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 10 entries</subtitle>
+  <updated>2026-06-29T05:43:31Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 12 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>GBC: Gradient-Based Connections for Optimizing Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2606.28187v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.28187v1</id>
+    <published>2026-06-26T00:00:00Z</published>
+    <updated>2026-06-26T00:00:00Z</updated>
+    <author>
+      <name>Xiaocheng Yang</name>
+    </author>
+    <author>
+      <name>Abdulrahman Alrabah</name>
+    </author>
+    <author>
+      <name>Dilek Hakkani-Tür</name>
+    </author>
+    <author>
+      <name>Gokhan Tur</name>
+    </author>
+    <summary type="text">Multi-agent systems (MAS) built on large language models (LLMs) provide a promising framework for solving complex tasks through role specialization and structured interaction. However, their performance is often limited by miscoordination and, more fundamentally, the lack of fine-grained credit assignment across agents. Existing approaches typically rely on coarse-grained feedback, making it difficult to identify which agents or interaction steps are responsible for errors. We propose Gradient-Based Connections (GBC), an approach for fine-grained attribution and optimization of multi-agent systems. GBC models a MAS as a computational graph and introduces gradient-based connection weights to quantify the influence of each agent's output on downstream agents at the token level. By constructing an attribution graph and propagating task-specific loss signals backward, our method enables precise identification of error sources and targeted prompt optimization. We further develop AgentChord, an efficient implementation that leverages prefix-based gradient computation. Experiments on MultiWOZ and τ-bench show that GBC improves multi-agent performance and outperforms strong single-agent and multi-agent baselines, and higher attribution quality is associated with greater optimization effectiveness. Code is available at: https://github.com/yxc-cyber/AgentChord.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/yxc-cyber/AgentChord"&gt;https://github.com/yxc-cyber/AgentChord&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; SIGDIAL 2026 Long Papers&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>GenWorld: Empirically Grounded Urban Simulation Infrastructure for Scalable LLM-Agent Studies</title>
+    <link href="http://arxiv.org/abs/2606.27650v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.27650v1</id>
+    <published>2026-06-26T00:00:00Z</published>
+    <updated>2026-06-26T00:00:00Z</updated>
+    <author>
+      <name>Gen Li</name>
+    </author>
+    <author>
+      <name>Jieyuan Lan</name>
+    </author>
+    <author>
+      <name>Pengcheng Xu</name>
+    </author>
+    <author>
+      <name>Zongyuan Wu</name>
+    </author>
+    <author>
+      <name>Masaki Ogura</name>
+    </author>
+    <author>
+      <name>Tao Feng</name>
+    </author>
+    <summary type="text">LLM-agent simulation faces a joint grounding and scaling problem: agents should act in environments that reflect real urban constraints, yet direct online LLM calls for city-scale populations are computationally prohibitive. We present GenWorld, an empirically grounded urban simulation infrastructure that combines a building-level synthetic city, a structured agent-environment interface, and offline compilation of LLM-derived decision signals into lookup policies for scalable rollout. In a reference instantiation for Higashihiroshima, Japan, GenWorld grounds 196,608 synthetic residents in census and geospatial data, validates demographic consistency against census tabulations, and uses YJMob100K mobile-phone data as a commuting-distance diagnostic. We demonstrate the infrastructure through three reproducible cases: a full-city weekday rollout, a weekday-weekend behavioral contrast, and a warning-response perturbation with auditable replanning traces. These cases support GenWorld as a reproducible platform for grounded and scalable LLM-agent studies, while calibrated forecasting for traffic, evacuation, or policy outcomes remains future work.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 27 pages, 24 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>QueenBee Planner: Skill-Evolving Communication Topologies for Token-Efficient LLM Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2606.27492v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.27492v1</id>
+    <published>2026-06-25T00:00:00Z</published>
+    <updated>2026-06-25T00:00:00Z</updated>
+    <author>
+      <name>Congjia Tian</name>
+    </author>
+    <author>
+      <name>Yuhang Yao</name>
+    </author>
+    <author>
+      <name>Jiaming Cui</name>
+    </author>
+    <summary type="text">Large language model (LLM) multi-agent systems increasingly depend not only on how individual agents reason, but also on how agents are connected. This paper introduces QueenBee Planner, a framework that treats inter-agent communication topology as a retrievable and self-improving design skill. A pool of worker agents, the task adapter, and the scoring function are frozen; only an outer LLM planner learns to generate temporal communication DAGs specifying who sends information to whom, in which round, who merges messages, and who emits the final answer. Execution traces are distilled into evidence-backed design rules with three actions: \emph{Preserve}, \emph{Modify}, and \emph{Avoid}. To prevent self-evolution from turning lucky runs or plausible but false explanations into policy, QueenBee uses held-out acceptance gates, variance-aware credit, motif-level attribution, transfer trust, insight falsification, and structural deduplication. We evaluate the method on Count-Frequency aggregation and Silo-Bench-style distributed coordination tasks. With fixed workers, self-evolved graph generation produces communication structures that improve over fixed topologies and cold generation. In the CF fulltest setting, the best generated graph reduces RMSE from 12.53 for the strongest fixed topology to 7.87 while also reducing messages, model calls, and token cost; Silo-style results show the same direction of improvement over cold and fixed-topology baselines. These results suggest that multi-agent systems can learn reusable architectural design knowledge rather than merely memorizing task answers.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Glite ARF: Verifier-Driven Research with Parallel LLM Coding Agents</title>
+    <link href="http://arxiv.org/abs/2606.27416v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.27416v1</id>
+    <published>2026-06-25T00:00:00Z</published>
+    <updated>2026-06-25T00:00:00Z</updated>
+    <author>
+      <name>Vassili Philippov</name>
+    </author>
+    <author>
+      <name>Pavel Katunin</name>
+    </author>
+    <author>
+      <name>Dmitry Andreev</name>
+    </author>
+    <author>
+      <name>Igor Ostanin</name>
+    </author>
+    <author>
+      <name>Anton Nikolaev</name>
+    </author>
+    <summary type="text">LLM coding agents make it tempting to automate empirical research by delegating experiments to them directly, but naive delegation does not scale to large projects: low-rate instruction lapses compound into broken, irreproducible artefacts. To address this problem, we present Glite ARF, an open-source Python framework for running many LLM coding agents in parallel on a research repository without sacrificing reproducibility or auditability. The framework defines a three-role stack: a human researcher chooses which hypotheses to test, coding agents (Claude Code, Codex CLI) implement individual tasks under a fixed structure, and deterministic Python verifier scripts enforce task isolation, immutability of completed work, a corrections overlay, and a materialised project overview. We call this verifier-driven research: the rules of the research process live in code that fails loudly when violated, not in prose that agents are merely asked to follow. Using Glite ARF, we developed our submission to the BEA 2026 vocabulary-difficulty shared task, placing first in the closed track and second in the open track on all three target languages (Spanish, German, Mandarin) and reducing the official baseline RMSE by 29.9% (closed) and 35.9% (open). The campaign comprised 273 tracked tasks (146 experiment runs) across 129 feature sets, run by up to twelve parallel agents orchestrated from a single laptop - with some model training on rented A100s - at approximately \$450 in LLM API spend (\$498 total third-party cost), and structured per-fold provenance let us catch and strip four target-leaking feature sets, correcting an implausible 0.609 RMSE to 0.802. Across three campaigns in three domains, the framework's structural machinery adds only about 1% of wall-clock time. Framework and a public demo project accompany this paper.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.SE" />
+  </entry>
+  <entry>
+    <title>Delayed Verification Destabilizes Multi-Agent LLM Belief: Instability Thresholds and Optimal Corrector Placement</title>
+    <link href="http://arxiv.org/abs/2606.27409v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.27409v1</id>
+    <published>2026-06-25T00:00:00Z</published>
+    <updated>2026-06-25T00:00:00Z</updated>
+    <author>
+      <name>Igor Itkin</name>
+    </author>
+    <summary type="text">Multi-agent large language model (LLM) systems often rely on verifier and critic agents to suppress hallucinations, but verification is delayed. During this delay, false claims can propagate through the agent network. We model this process as delayed consensus on a graph with grounded corrector nodes. Spectral decomposition by the grounded Laplacian yields a closed-form stability threshold for the verification dose: correction that is too strong or too delayed can turn consensus into oscillation. The most unstable regime occurs when the communication and verification delays coincide; for delay two, the threshold is the inverse golden ratio. The same framework gives a supermodular placement objective and a greedy (1-1/e)-approximation rule for assigning a limited corrector budget to influential nodes. Experiments across five open models confirm the predicted dose-delay oscillations. By contrast, grounded factual answering makes truth an absorbing boundary and eliminates the effect, suggesting that the instability is specific to signed-belief tasks while grounded verification remains stabilizing</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 20 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL; Machine Learning; eess.SY" />
+  </entry>
   <entry>
     <title>Multi-Agent Goal Recognition with Team- and Goal-Conditioned Reinforcement Learning and Factorized Branch-and-Bound</title>
     <link href="http://arxiv.org/abs/2606.25978v1" rel="alternate" type="text/html" />
@@ -130,6 +244,27 @@
     <category term="Multiagent Systems" />
   </entry>
   <entry>
+    <title>SidConArena: An Environment Evaluating Agents in Open-Ended,Positive-Sum Bargaining Game</title>
+    <link href="http://arxiv.org/abs/2606.27397v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.27397v1</id>
+    <published>2026-06-24T00:00:00Z</published>
+    <updated>2026-06-24T00:00:00Z</updated>
+    <author>
+      <name>Yeqi Feng</name>
+    </author>
+    <author>
+      <name>Yuxin Chen</name>
+    </author>
+    <author>
+      <name>Tianxing He</name>
+    </author>
+    <summary type="text">Evaluating LLM agents requires dynamic environments that go beyond static reasoning and zero-sum games. Real-world economic interaction is often open-ended and mixed-motive: agents must negotiate, create positive-sum surplus, compete for scarce assets, and plan under delayed returns. We introduce SidConArena, a new benchmark framework for evaluating LLM agents in open-ended, positive-sum bargaining. SidConArena formalizes a multi-player economy as a finite-horizon partially observable stochastic game with three coupled phases: natural-language negotiation with binding trades, deterministic converter-based production, and sealed-bid auctions for long-term assets. The framework combines structured observations, phase-aware agent dispatching, a neural-symbolic action interface, and asynchronous execution, enabling free-form interaction while preserving rule-grounded evaluation. Across homogeneous and heterogeneous tournaments, stronger frontier models achieve higher economic outcomes, yet agents still misvalue resources, bargain passively, and remain limited in long-horizon investment planning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.GT" />
+  </entry>
+  <entry>
     <title>Generating Realistic Individual Activity Schedules via Activity Location Allocation Based on Simulated Travel Times</title>
     <link href="http://arxiv.org/abs/2606.24566v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2606.24566v1</id>
@@ -176,89 +311,5 @@
     <summary type="text">Realizing a multiagent system involves implementing member agents who interact based on a protocol while making decisions in a decentralized manner. Current programming models for agents offer poor abstractions for decision making and fail to adequately bridge an agent's internal decision logic with its public decisions.   We present Kiko, a protocol-based programming model for agents. To implement an agent, a programmer writes one or more decision makers, each of which chooses from among a set of valid decisions and makes mutually compatible decisions on what messages to send. By completely abstracting away the underlying communication service and by supporting practical decision-making patterns, Kiko enables agent developers to focus on business logic. We provide an operational semantics for Kiko and establish that Kiko agents are protocol compliant and able to realize any protocol enactment.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Decentralized Autonomous Traffic Management through Corridor Networks</title>
-    <link href="http://arxiv.org/abs/2606.23585v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.23585v1</id>
-    <published>2026-06-22T00:00:00Z</published>
-    <updated>2026-06-22T00:00:00Z</updated>
-    <author>
-      <name>Jasmine Jerry Aloor</name>
-    </author>
-    <author>
-      <name>Aadarsh Govada</name>
-    </author>
-    <author>
-      <name>Hamsa Balakrishnan</name>
-    </author>
-    <summary type="text">As autonomous aircraft are introduced at scale and traffic density increases, centralized management becomes insufficient to coordinate the large numbers of crewed and uncrewed aircraft. Dedicated Advanced Air Mobility (AAM) corridors have therefore been proposed for organizing high-density autonomous traffic flows. The desire to scalably provide autonomous aircraft flexibility in trajectory planning motivates the development of decentralized approaches to traffic management in AAM corridors.   In this work, we extend a multi-agent reinforcement learning (MARL) approach to address the challenge of decentralized traffic flow management in air corridor networks. We test policies trained in a single-corridor setting on increasingly complex multi-corridor networks with combinations of merges and splits in a zero-shot manner. Experimental results demonstrate that learned behaviors transfer well to scenarios with varying traffic density, network geometry, and heterogeneous vehicle performance, without needing centralized coordination or model retraining. We evaluate system-level performance in terms of conformance to corridor boundaries, completion rates, average speeds, distance traveled, and maintenance of inter-aircraft separation. We find that although our policies require only locally coordinated entry, traversal, and exit behaviors, they collectively produce desirable traffic flows through the corridor network.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Presented at the Second US-Europe Air Transportation Research and Development Symposium (ATRDS2026)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.ET; Robotics" />
-  </entry>
-  <entry>
-    <title>Decentralized Coordination of Autonomous Traffic Through Advanced Air Mobility Corridors</title>
-    <link href="http://arxiv.org/abs/2606.23832v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.23832v1</id>
-    <published>2026-06-22T00:00:00Z</published>
-    <updated>2026-06-22T00:00:00Z</updated>
-    <author>
-      <name>Jasmine Jerry Aloor</name>
-    </author>
-    <author>
-      <name>Hamsa Balakrishnan</name>
-    </author>
-    <summary type="text">The use of dedicated corridors for Advanced Air Mobility (AAM) traffic is one of the most commonly proposed pathways to integrating them into existing airspace operations. Most prior research has focused on the design of networks of AAM corridors and conflict resolution for aircraft within corridors. It is also generally believed that while attractive from an implementation perspective, corridor-based operations may be inefficient, especially in the absence of centralized traffic management.   In this paper, we show that contrary to this belief, it is possible for autonomous aircraft to learn to self-organize into corridor flows in decentralized settings. We illustrate our approach using scenarios in which fixed-wing aircraft need to safely and efficiently traverse (1) a single corridor with metering after the exit, (2) a sequence of two consecutive corridors, and (3) a corridor that splits into two. We find that in decentralized settings with only local information, the aircraft are able to conform to the corridor boundaries more than 94% of the time and reach their goal in a relatively efficient manner. Furthermore, tactical interventions to handle violations of the separation minimum are needed only infrequently in low- and medium-density settings. However, such tactical interventions become more frequently necessary only when traffic density is high.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Presented at the AIAA SciTech 2026 Forum&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.ET; Robotics" />
-  </entry>
-  <entry>
-    <title>Emergent Relational Order in LLM Agent Societies: From Collective Affect to Authority Stratification</title>
-    <link href="http://arxiv.org/abs/2606.23764v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.23764v1</id>
-    <published>2026-06-22T00:00:00Z</published>
-    <updated>2026-06-22T00:00:00Z</updated>
-    <author>
-      <name>Zhiyuan Ji</name>
-    </author>
-    <author>
-      <name>Xinyu Chen</name>
-    </author>
-    <author>
-      <name>Ziqi Dai</name>
-    </author>
-    <author>
-      <name>Shiyun Tang</name>
-    </author>
-    <author>
-      <name>Chunyu Wei</name>
-    </author>
-    <author>
-      <name>Yueguo Chen</name>
-    </author>
-    <summary type="text">Fei Xiaotong's Differential Order Pattern characterizes rural society as egocentric and relationally graded, with cooperation attenuating over social distance. Although often treated as culturally specific, its mechanistic basis remains under-operationalized, and prior LLM-based simulations have mainly addressed short-term coordination rather than long-horizon social structure. We propose CAREB-MAS, a multi-agent framework grounded in Affect Control Theory, Social Identity Theory, and Durkheimian collective affect. Agents reason through an emotion-ethics-belief chain and maintain dynamically evolving egocentric identities, while the macro environment specifies only individual production, preference-based allocation, and minimal interaction protocols. Across long-horizon simulations, agents spontaneously reproduce five core Differential Order phenomena: stable labor specialization, guanxi-based economic ethics, relational decay of cooperation, emergent relational authority, and clan-based center-periphery stratification. These patterns shift with production structure from kin-centered integration toward greater functional interdependence. Extensive experiment results support interpreting Differential Order as a structure-sensitive emergent outcome of general social mechanisms, with LLM-based multi-agent simulation providing an interdisciplinary framework for studying social structure and change.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to Findings of the Association for Computational Linguistics: ACL 2026. 37 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>GARIP: A Running-Average Moving Reference for Last-Iterate Self-Play in Two-Player Zero-Sum Games</title>
-    <link href="http://arxiv.org/abs/2606.22688v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.22688v1</id>
-    <published>2026-06-21T00:00:00Z</published>
-    <updated>2026-06-21T00:00:00Z</updated>
-    <author>
-      <name>Can Savcı</name>
-    </author>
-    <summary type="text">Self-play with naive gradient ascent cycles in two-player zero-sum games: the last iterate orbits the equilibrium. Modern methods restore last-iterate convergence by regularizing toward a reference policy -- MMD a fixed one (reaching only the regularized equilibrium), R-NaD a periodic snapshot (the engine of DeepNash). We study GARIP, which anchors to the running average, and isolate what the choice of reference controls. Our central result is a mechanism: collapse tracks the peak lag of the reference, and among causal convex averages of a fixed mean lag the running average (flat profile, peak $=$ mean) uniquely minimizes that peak, while a snapshot's sawtooth has peak $= 2\times$ mean (a one-line theorem). Two consequences follow. Convergence: we prove local last-iterate convergence at constant anchor strength -- the anchor scales the base map's rotation by $1-β$, crossing the stability boundary and turning a recurrent base into a contraction (global convergence is conjectured at small $β$; we characterize a large-$β$ consensus failure). Robustness: GARIP matches R-NaD's peak performance -- on matrix games, the Coin Game, and the board games Connect Four/Othello, both moving references are far more robust than fixed-magnet and magnet-free baselines -- but is the better hyperparameter default; we report it both ways: over the full grid collapse rates are statistically indistinguishable, yet at conventional parameterizations a matched-mean-lag setting collapses in 0/40 vs 10/40 seeds (a snapshot matches it only by knowing to shorten $K$). The boundaries: an anticipatory (negative-weight) reference does better still on the stale side, and the advantage appears only where naive self-play cycles (five deep self-play loops). All experiments are pure JAX and reproducible.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.GT; Machine Learning" />
   </entry>
 </feed>
