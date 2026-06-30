@@ -4,12 +4,228 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-06-29T05:43:31Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 12 entries</subtitle>
+  <updated>2026-06-30T05:16:43Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 22 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>MAS-Lab: A Specification-Driven Validation Framework for Reliable Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2606.30546v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.30546v1</id>
+    <published>2026-06-29T00:00:00Z</published>
+    <updated>2026-06-29T00:00:00Z</updated>
+    <author>
+      <name>Jordan Augé</name>
+    </author>
+    <author>
+      <name>Giovanna Carofiglio</name>
+    </author>
+    <author>
+      <name>Giulio Grassi</name>
+    </author>
+    <author>
+      <name>Jacques Samain</name>
+    </author>
+    <summary type="text">The rapid emergence of LLM-based agentic frameworks has significantly reduced the cost of assembling multi-agent systems (MAS), enabling fast prototyping and exploration of agentic behaviors. However, systems built with current tooling remain ill-suited for reliable, evolvable, and production-grade deployment. In practice, MAS are often developed in an ad-hoc and imperative manner, with agent logic, orchestration, observability, and control tightly interwoven, little to no explicit system-level validation, and development workflows optimized for demonstrations rather than long-lived, governed operation. As a result, behavior observed during experimentation rarely constitutes reliable evidence of behavior in production.   In this paper, we introduce MAS-Lab, a specification-driven framework for principled development and experimental validation of multi-agent systems properties. MAS-Lab is designed to transform MAS from collections of scripts into engineered distributed systems by separating semantic intent from operational concerns, making behavior and control explicit, supporting reproducible experimentation, and preserving continuity across lifecycle stages. MAS-Lab consists of three layers: a declarative, framework-agnostic agentic specification layer (Spec); a stateful MAS Operating System that provides execution and control primitives plugged-in by design (MAS-OS); and a set of lab overlays with integrated observability and evaluation tools (Labs). Together, these components enable intent-based validation, principled system evolution, and a seamless transition to production-grade MAS.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 12 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Translating Natural Language to Strategic Temporal Specifications via LLMs</title>
+    <link href="http://arxiv.org/abs/2606.30441v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.30441v1</id>
+    <published>2026-06-29T00:00:00Z</published>
+    <updated>2026-06-29T00:00:00Z</updated>
+    <author>
+      <name>Marco Aruta</name>
+    </author>
+    <author>
+      <name>Francesco Improta</name>
+    </author>
+    <author>
+      <name>Vadim Malvone</name>
+    </author>
+    <author>
+      <name>Aniello Murano</name>
+    </author>
+    <author>
+      <name>Vladana Perlic</name>
+    </author>
+    <summary type="text">A rigorous formalization of system requirements is a fundamental prerequisite for the verification of Multi-Agent Systems (MAS). However, writing correct formal specifications is well known as an error-prone, time-consuming, and expertise-intensive task. This difficulty is further accentuated in MAS, where requirements must capture strategic abilities and temporal objectives. At present, there is no established methodology for deriving MAS specifications from natural language. We present a framework for translating Natural Language descriptions of strategic requirements into well-formed ATL/ATL* formulas using Large Language Models (LLMs). Since no available dataset supports supervised learning for the NL-to-ATL/ATL* translation task, we create and curate a novel expert-validated dataset, employed for training and evaluating fine-tuned models. On a held-out test set, evaluated under the LLM judge that best agrees with expert annotations, in-domain fine-tuning of small open-weight models (3 - 7B parameters) matches strong few-shot proprietary API baselines. Our best fine-tuned system reaches 0.84 semantic accuracy, statistically on par with 0.86 for the strongest few-shot proprietary baseline, while keeping requirements on-premises. We further find that judge reliability is inverse to generator strength. The open-weight Llama-3.3-70B tracks human verdicts most closely, whereas the strongest proprietary models are the least reliable judges, over-rejecting faithful paraphrases of the reference. To assess the practical applicability of the generated specifications, we embed our tool to an existing strategic logics model checker, enabling non-expert users to specify strategic properties in natural language.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Always-OnAgents:A Survey of Persistent Memory, State, and Governance in LLMAgents</title>
+    <link href="http://arxiv.org/abs/2606.30306v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.30306v1</id>
+    <published>2026-06-29T00:00:00Z</published>
+    <updated>2026-06-29T00:00:00Z</updated>
+    <author>
+      <name>Tianyu Ding</name>
+    </author>
+    <author>
+      <name>Aditya Nannapaneni</name>
+    </author>
+    <author>
+      <name>Bingfan Liu</name>
+    </author>
+    <author>
+      <name>Ling Zhang</name>
+    </author>
+    <summary type="text">Always-on agents are systems whose future behavior depends on durable state accumulated across earlier interactions. We treat them as persistent-state systems: the operative system includes retrievable memories, but also task ledgers, permissions, credentials, commitments, provenance and audit records, shared state, trigger conditions, and externally committed effects linked to those records. The survey reads the literature through six diagnostic axes for each state item, authority, scope, mutability, provenance, recoverability, and actionability, and through a lifecycle in which state is written, validated, organized, retrieved, acted upon, updated, forgotten, audited, and sometimes rolled back. Across a 435-work coded corpus, treated as a scoped map rather than an exhaustive census, the literature concentrates more heavily on accumulating and retrieving state than on governing, recovering, or relinquishing it. We therefore introduce the Always-On Evaluation Protocol (AOEP-v0), a pilot evaluation contract that makes these governance requirements concrete by scoring state mutation and recovery obligations rather than answer quality alone. The resulting agenda connects always-on agents to databases, distributed systems, formal methods, capability security, and machine unlearning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Survey&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>TACO: Tool-Augmented Credit Optimization for Agentic Tool Use</title>
+    <link href="http://arxiv.org/abs/2606.30251v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.30251v1</id>
+    <published>2026-06-29T00:00:00Z</published>
+    <updated>2026-06-29T00:00:00Z</updated>
+    <author>
+      <name>Mingkuan Feng</name>
+    </author>
+    <author>
+      <name>Jinyang Wu</name>
+    </author>
+    <author>
+      <name>Hao Gu</name>
+    </author>
+    <author>
+      <name>Fangrui Lv</name>
+    </author>
+    <author>
+      <name>Ruihan Jin</name>
+    </author>
+    <author>
+      <name>Chuyuan Zhang</name>
+    </author>
+    <author>
+      <name>Zhengqi Wen</name>
+    </author>
+    <author>
+      <name>Jianhua Tao</name>
+    </author>
+    <summary type="text">Agentic multimodal models perform diverse operations on an image via code and reason over the returned view, an effective paradigm for fine-grained visual question answering. However, code operations can be useful, redundant, or misleading. Outcome-only rewards cannot precisely distinguish these cases, and existing process rewards either fail to attribute final correctness to individual tool calls, or require an external judge model. To address this, we introduce Tool-Augmented Credit Optimization (TACO), a GRPO variant for code-tool agents built on two coupled advantage channels. The first, Differential Answer-Probe Reward (DAPR), is a self-supervised, judge-free tool-contribution advantage that credits each tool call by its own effect on answering correctly. Probe tokens inserted into the model's reasoning elicit its predictions with and without the tool, and the difference in outcome reward is taken as the call's value: positive for a useful call, negative for a misleading one, and zero for one that changes nothing. This reuses the existing answer checker with no auxiliary judge, and, being a difference rather than an absolute probe score, is naturally robust to probe-hacking. The second is the outcome advantage from the final answer, distributed by Outcome-Gated Advantage Routing (OGAR): a parameter-free rule that, conditioned on the call's outcome, delivers this credit only to the responsible segments, suppressing wasted tool calls without any cost term. We train TACO through a two-stage SFT+RL pipeline. Extensive experiments across perception, reasoning, and general multimodal benchmarks show that it yields consistent accuracy gains and learns to invoke its tools only when they help.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA;MAG;TAP&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Sparse Sensor Placement in Multi-Agent Reinforcement Learning Control of Rayleigh-Bénard Convection</title>
+    <link href="http://arxiv.org/abs/2606.30238v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.30238v1</id>
+    <published>2026-06-29T00:00:00Z</published>
+    <updated>2026-06-29T00:00:00Z</updated>
+    <author>
+      <name>Jan Stenner</name>
+    </author>
+    <author>
+      <name>Hans Harder</name>
+    </author>
+    <author>
+      <name>Sebastian Peitz</name>
+    </author>
+    <summary type="text">This paper studies sparse sensor placement for control of Rayleigh-Bénard convection with multi-agent reinforcement learning. We train dense expert policies with windowed observations and distill sparse apprentice policies by supervised learning with grouped regularization on encoder input weights. The framework combines ordered non-convex grouped regularization and iterative reweighted grouped regularization, and uses a grouping construction that enforces consistent pruning across overlapping observation windows. Experiments with fixed and varying initial conditions show that Multi-Agent Transformer policies train more stably than proximal policy optimization baselines, while sparse apprentices retain control behavior comparable to dense experts. Sparsity results are strong for the proposed grouped methods across settings, including maximal sparsity in all fixed-initial-condition setting variants and maximal or near-maximal sparsity in varying-initial-condition setting variants. As an additional proof of concept, training from learned minimal sensor sets reduces per-agent observation size from 360 to 12 and preserves the overall training trend in simulation while reducing data throughput. The results provide both an interpretable basis for identifying control-relevant spatial regions and state components, and a practical pathway toward sensor-efficient control under realistic hardware constraints.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 22 pages, 11 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>ECHO: Learning Epistemically Adaptive Language Agents with Turn-Level Credit</title>
+    <link href="http://arxiv.org/abs/2606.29745v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.29745v1</id>
+    <published>2026-06-29T00:00:00Z</published>
+    <updated>2026-06-29T00:00:00Z</updated>
+    <author>
+      <name>Abhijnan Nath</name>
+    </author>
+    <author>
+      <name>Nikhil Krishnaswamy</name>
+    </author>
+    <summary type="text">What does it mean for a language agent to be adaptive? Effective multi-turn agents must decide what information to seek, how to use new evidence, and when they are certain enough to act. We introduce Epistemic Decision Processes (EDPs), a belief-state formulation of multi-turn information seeking in which actions produce external observations that update the agent's posterior over a latent task variable. EDPs make epistemic adaptivity explicit: good policies choose actions that are useful under the current belief, not merely those that correlate with eventual success. We prove that belief-agnostic policies can suffer errors that compound exponentially over the horizon, and that aggregate trajectory returns can fail to identify the per-turn Bayesian advantage needed for epistemic credit. We then introduce ECHO (Epistemic Credit for History-Conditioned Optimization), a practical clipped policy-gradient objective that assigns turn-level credit using posterior-sensitive rewards. In the Clue Selector Game, a novel controlled evidence-seeking benchmark, we show that ECHO substantially improves resolution, information gain, and efficiency over trajectory-level GRPO, and matches or exceeds frontier baselines on epistemic metrics such as grounding, recovery, and calibration while producing almost no visible reasoning text.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Minority Sentinel: When to Overturn Majority Voting in Multi-Agent LLM Debates</title>
+    <link href="http://arxiv.org/abs/2606.29270v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.29270v1</id>
+    <published>2026-06-28T00:00:00Z</published>
+    <updated>2026-06-28T00:00:00Z</updated>
+    <author>
+      <name>Chuan He</name>
+    </author>
+    <author>
+      <name>Zebin Chen</name>
+    </author>
+    <author>
+      <name>Zhengyi Yang</name>
+    </author>
+    <author>
+      <name>Shaobo Qiao</name>
+    </author>
+    <author>
+      <name>Mingchen Ju</name>
+    </author>
+    <author>
+      <name>Jiate Liu</name>
+    </author>
+    <author>
+      <name>Dong Wen</name>
+    </author>
+    <author>
+      <name>Guanfeng Liu</name>
+    </author>
+    <summary type="text">Multi-Agent Debate (MAD) with Majority Voting is a dominant paradigm for improving LLM reasoning, yet its effectiveness rests on the Condorcet Jury Theorem's assumption of independent errors. Because contemporary LLMs share similar pretraining corpora, their errors are strongly correlated, causing the majority to systematically suppress correct minority opinions, a phenomenon we term Minority Truth. Through debates among three heterogeneous LLM agents on six benchmarks, we find that roughly one in four divergent cases has the minority holding the correct answer, yielding a 10-percentage-point theoretical recovery margin. We propose Minority Sentinel, a lightweight meta-classifier that extracts a multi-dimensional debate fingerprint from debate logs and trains a LightGBM model to decide when to overturn majority voting. Minority Sentinel achieves a stable Flip Precision of 81.2% with positive Net Gain across all six datasets and all 20 random seed trials, demonstrating that debate logs contain sufficient behavioral signals for a non-LLM classifier to reliably recover suppressed minorities without degrading system accuracy. The LLM-as-Judge baseline yields negative Net Gain despite higher recall, confirming that flip safety, not recovery volume, determines intervention value.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the AgentSearch Workshop @ SIGIR 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Metric Aggregation Divergence: A Hidden Validity Threat in Agent-Based Policy Optimization and a Contractual Remedy</title>
+    <link href="http://arxiv.org/abs/2606.29038v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.29038v1</id>
+    <published>2026-06-27T00:00:00Z</published>
+    <updated>2026-06-27T00:00:00Z</updated>
+    <author>
+      <name>Ruiyu Zhang</name>
+    </author>
+    <author>
+      <name>Lin Nie</name>
+    </author>
+    <author>
+      <name>Xin Zhao</name>
+    </author>
+    <summary type="text">Metric aggregation divergence (MAD) is the silent inconsistency that arises when distinct pipeline stages in an agent-based model coupled with a multi-objective evolutionary algorithm (ABM+MOEA) independently re-implement how an outcome metric is extracted from simulation trajectories. Unlike deliberate analytical choices, MAD operates at the level of pipeline architecture: each stage is internally coherent, and the inconsistency becomes visible only when cross-stage outputs are compared. Code inspection of EpidemiOptim, a JAIR-published epidemic policy toolbox, reveals three structurally independent aggregation paths in peer-reviewed code. A faithful replication of this structure produces champion disagreement in 64.2% of independent runs (n=500, 95% CI: [59.9%, 68.3%]). In a 300-seed policy-flip experiment, divergent aggregation causes the optimizer to recommend the wrong champion in 83% of replications, with a mean welfare gap of 2.19 units and a Gini inequality gap of 0.050 units. In a follow-up inference audit, 3 of 249 flipped seeds cross the significance boundary itself. A complementary enterprise follow-up produces the predicted null under near-commensurable rankings (rho = 0.991), while a public upstream rerun of the Lake Problem DPS workflow shows that the archived published-path recommendation reaches joint-threshold success 0.401 whereas a shared contract-path rule reaches 0.552. We introduce the metric contract - a single shared callable enforced at dispatch time across all pipeline stages - as the remedy. Framed as standard engineering discipline applied to the cross-stage metric interface, the contract eliminates divergence by construction with approximately 3% runtime overhead.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>When Latent Agents Lie: KV-Cache Integrity in Multi-Agent LLM Collaboration</title>
+    <link href="http://arxiv.org/abs/2606.28958v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.28958v1</id>
+    <published>2026-06-27T00:00:00Z</published>
+    <updated>2026-06-27T00:00:00Z</updated>
+    <author>
+      <name>Luís Brito</name>
+    </author>
+    <author>
+      <name>Carlos Baquero</name>
+    </author>
+    <summary type="text">LLM agents can share more than text. In some systems, an agent can send a short visible message while also passing its full KV-cache state to another model. This hidden state can help the final model combine evidence from several agents, but it is also hard to inspect. A visible message may look harmless even if the hidden state has been changed.   We study this problem in a multi-agent question-answering setup. Specialists each see part of the evidence, send a short commitment, and pass full KV-cache state to a coordinator. In clean runs, this latent collaboration improves over a matched text-only version. On transformed HiddenBench with Qwen3-4B, it reaches EM/F1 of 0.338/0.486, compared with 0.231/0.369 for text collaboration. Qwen3-8B and HotPotQA runs show the same direction of improvement.   The problem appears when one specialist is malicious. Some false visible commitments can steer answers. More seriously, changing the hidden KV state can collapse performance even when the visible commitment still looks plausible. A verifier that checks only text misses this failure mode. Simple magnitude checks catch some obvious corruptions, but adaptive attacks can evade them while still damaging the final answer.   The most reliable fix we find is not to guess whether hidden state looks normal, but to protect it in transport. We implement an HMAC-SHA256 manifest that binds the specialist, session, model, visible commitment, tensor metadata, and payload digest. It accepts all 774 honest replayed payloads and rejects all 295 recorded tampered payloads. The main lesson is that full-KV latent memory can be useful, but it should be treated as a security-sensitive object, not as ordinary internal model state.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>GBC: Gradient-Based Connections for Optimizing Multi-Agent Systems</title>
     <link href="http://arxiv.org/abs/2606.28187v1" rel="alternate" type="text/html" />
@@ -62,6 +278,85 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 27 pages, 24 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>A Fast Convergent Algorithm for Solving Non-convex Partially-Decoupled Generalized Nash Equilibrium Problems</title>
+    <link href="http://arxiv.org/abs/2606.28617v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.28617v1</id>
+    <published>2026-06-26T00:00:00Z</published>
+    <updated>2026-06-26T00:00:00Z</updated>
+    <author>
+      <name>Bennet Outland</name>
+    </author>
+    <author>
+      <name>Vishala Arya</name>
+    </author>
+    <summary type="text">Solving multi-agent optimal control problems in aerospace such as pursuit-evasion and contested space operations can be modeled as non-convex differential games for which, there are limited algorithms. In this work, a relaxation of generalized Nash Equilibrium problems (GNEPs) to exclude inter-agent control coupling in dynamics, which is representative of many multi-agent systems is introduced. The main contribution is an algorithm for solving a broad class of differential games named FALCON: Fast Augmented Lagrangian Convexification for Open-loop Nash equilibria is presented. Methodologically, sequential convex programming (SCP) is utilized to create tractable convex sub-games which can then be solved via standard convex programming methods involving a potential game reformulation. FALCON is demonstrated to have global convergence guarantees to an open-loop Nash equilibrium for non-convex differential games under mild assumptions. This is numerically shown through both cooperative and competitive differential games.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="math.OC" />
+  </entry>
+  <entry>
+    <title>Digitizing Coaching Intelligence: An Agentic Framework for Holistic Athlete Profiling using VLM and RAG</title>
+    <link href="http://arxiv.org/abs/2606.28570v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.28570v1</id>
+    <published>2026-06-26T00:00:00Z</published>
+    <updated>2026-06-26T00:00:00Z</updated>
+    <author>
+      <name>Deep Ghosal</name>
+    </author>
+    <author>
+      <name>Ishani Sen</name>
+    </author>
+    <author>
+      <name>Wazib Ansar</name>
+    </author>
+    <author>
+      <name>Amlan Chakrabarti</name>
+    </author>
+    <summary type="text">Athlete assessment is a critical process for tracking physical progress and identifying elite talent. However, during mass recruitment drives, traditional methods rely on manual observation, which is inherently subjective and unscalable, or basic computer vision (CV) systems limited to quantitative repetition counting. These standard approaches lack the "coaching intelligence" required to evaluate qualitative physiological markers such as form degradation, spinal articulation, and fatigue. This paper presents a novel, LLM-based hybrid agentic framework for automated, holistic athlete profiling that strictly aligns with the Sports Authority of India (SAI) assessment protocols. Orchestrated via LangGraph, our dual-pipeline architecture synthesizes the geometric precision of CV (MediaPipe) for kinematic tracking with the semantic reasoning of Vision-Language Models (Llama-4-scout). To overcome the latency and token constraints associated with multimodal video processing, we introduce a 3 X 3 "Smart Grid" temporal chunking strategy, reducing computational overhead by over 88% while preserving critical temporal continuity. To ensure data integrity and mitigate hallucination, the framework pioneers an autonomous "LLM-as-a-Judge" self-correction loop that cross-references quantitative and qualitative metrics before persistence. Finally, we implement a dual-persistence Retrieval-Augmented Generation (RAG) pipeline utilizing a vector search engine (ChromaDB). This enables coaches to bypass rigid SQL databases and perform complex semantic queries (e.g., "Identify athletes with high endurance but poor core rigidity") using natural language. Experimental results demonstrate that this multi-agent approach significantly bridges the gap between raw biometric tracking and actionable coaching insights, offering a scalable, objective solution for national talent identification.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Is Lying an Emergent Behaviour in LLMs? Evidence from Gaslighting AI agents in a Sustainability Game</title>
+    <link href="http://arxiv.org/abs/2606.28456v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.28456v1</id>
+    <published>2026-06-26T00:00:00Z</published>
+    <updated>2026-06-26T00:00:00Z</updated>
+    <author>
+      <name>Subhendu Bhandary</name>
+    </author>
+    <author>
+      <name>Federico Carucci</name>
+    </author>
+    <author>
+      <name>Christos Charalambous</name>
+    </author>
+    <author>
+      <name>Francesca Dilisante</name>
+    </author>
+    <author>
+      <name>Ksenia Dvorkina</name>
+    </author>
+    <author>
+      <name>Anna Garbo</name>
+    </author>
+    <author>
+      <name>Jiaqi Liang</name>
+    </author>
+    <author>
+      <name>Riccardo Vasellini</name>
+    </author>
+    <author>
+      <name>Francesco Bertolotti</name>
+    </author>
+    <summary type="text">LLMs agents are increasingly used in multi-agent settings, yet their behaviour in sustainability games remains largely unexplored. This work investigates whether lying can emerge among LLM agents in a competitive sustainability game in which agents are informed that common resources can regenerate, although regeneration does not actually occur. We develop an agent-based model of a sustainability game in which agents manage industrial, military, and ecological resources, and interact through a network. LLM agents can observe neighbours' status, declare future attacks, receive permission to lie, and access reputation information, while rule-based agents provide an interpretable behavioural baseline. The results show that neighbour information strongly changes system dynamics, increasing attacks while improving biosphere retention and coexistence. Also, the presence of future declarations reduce extinction risk without suppressing conflict. Behaviourally, deception emerges even when agents are not explicitly allowed to lie, and explicit permission mainly increases bluffing and diversion rather than direct backstabbing. Finally, the presence of reputation memory and information about the current biosphere level reduces system ecological depletion. These findings suggest that deception can arise as an emergent behaviour in LLM-agent systems and that communication between LLM-agents could support sustainability while dealing with risk.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
   </entry>
   <entry>
     <title>QueenBee Planner: Skill-Evolving Communication Topologies for Token-Efficient LLM Multi-Agent Systems</title>
@@ -263,53 +558,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence; cs.GT" />
-  </entry>
-  <entry>
-    <title>Generating Realistic Individual Activity Schedules via Activity Location Allocation Based on Simulated Travel Times</title>
-    <link href="http://arxiv.org/abs/2606.24566v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.24566v1</id>
-    <published>2026-06-23T00:00:00Z</published>
-    <updated>2026-06-23T00:00:00Z</updated>
-    <author>
-      <name>Tatsuya Mitomi</name>
-    </author>
-    <author>
-      <name>Yahya Gamal</name>
-    </author>
-    <author>
-      <name>Esra Suel</name>
-    </author>
-    <author>
-      <name>Gary Polhill</name>
-    </author>
-    <author>
-      <name>Daniel Konioukhov</name>
-    </author>
-    <author>
-      <name>Alison Heppenstall</name>
-    </author>
-    <summary type="text">Individual level daily activity schedules are essential for a wide range of applications, including infectious disease control, urban transportation planning, and policy design. In practice, such schedules are typically generated by combining population data with travel survey data. These data sources are used because they are often publicly available, whereas observed individual activity schedules are difficult to obtain due to privacy concerns. However, because of the complexity of mobility modelling, it is difficult to generate realistic activity schedules that also preserve travel times consistent with those reported in travel surveys. To address this issue, we propose a framework for generating activity schedules that iteratively applies a dynamic programming method to allocate activity locations based on simulated travel times. Numerical experiments with dummy data show that the proposed method reduces the discrepancy between simulated travel times and those reported in travel surveys by 52.2% relative to the first iteration through iterative refinement.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Kiko: Programming Agents to Enact Interaction Protocols</title>
-    <link href="http://arxiv.org/abs/2606.26156v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.26156v1</id>
-    <published>2026-06-23T00:00:00Z</published>
-    <updated>2026-06-23T00:00:00Z</updated>
-    <author>
-      <name>Samuel H. Christie</name>
-    </author>
-    <author>
-      <name>Munindar P. Singh</name>
-    </author>
-    <author>
-      <name>Amit K. Chopra</name>
-    </author>
-    <summary type="text">Realizing a multiagent system involves implementing member agents who interact based on a protocol while making decisions in a decentralized manner. Current programming models for agents offer poor abstractions for decision making and fail to adequately bridge an agent's internal decision logic with its public decisions.   We present Kiko, a protocol-based programming model for agents. To implement an agent, a programmer writes one or more decision makers, each of which chooses from among a set of valid decisions and makes mutually compatible decisions on what messages to send. By completely abstracting away the underlying communication service and by supporting practical decision-making patterns, Kiko enables agent developers to focus on business logic. We provide an operational semantics for Kiko and establish that Kiko agents are protocol compliant and able to realize any protocol enactment.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
   </entry>
 </feed>
