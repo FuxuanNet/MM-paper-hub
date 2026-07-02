@@ -4,12 +4,51 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-01T05:37:58Z</updated>
+  <updated>2026-07-02T05:12:29Z</updated>
   <subtitle>Latest multimodal papers (last 7 days) — 23 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Calibrating the Instrument: Controllability of an LLM-Driven Synthetic Population</title>
+    <link href="http://arxiv.org/abs/2607.00910v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.00910v1</id>
+    <published>2026-07-01T00:00:00Z</published>
+    <updated>2026-07-01T00:00:00Z</updated>
+    <author>
+      <name>Mirko Degli Esposti</name>
+    </author>
+    <summary type="text">Generative Synthetic Populations (GSP) -- the convergence of population synthesis, agent-based modelling, and LLM agents -- are attracting growing interest for urban simulation and institutional communication research. Before any GSP instrument is used on a real population, a more basic question must be answered: does it respond to stimuli of known valence in an ordered, replicable, group-structured way? We call this controllability. We ask not whether a synthetic population tracks humans, but whether it tracks itself: whether the latent structure we impose on it is recovered in its own responses. This internal-validity question is logically prior to any claim about external validity, just as characterising an instrument's response function must precede using it to test a theory. We report SIVE (Synthetic Instrument Validation Experiment): a fictional municipality (Montelago) with 120 synthetic personas of known latent structure, exposed to seven conditions spanning strongly positive to strongly negative institutional communications about a water network. Seven pre-registered criteria, evaluated across a temperature sweep, jointly assess fidelity, stability, noise floor, specificity, sensitivity, and ordering. All seven pass at every temperature. A central finding turns a calibration failure into a diagnostic success: a message designed as "weakly positive" was identified by the instrument as functionally negative, traced to unresolved problems, uncertainty, and institutional passivity in its text; a redesigned version restored the expected ordering and interacts with agents' latent trust in unanticipated ways. A noise sub-experiment shows the instrument's intrinsic noise is roughly half the cross-agent estimate and stable across temperatures. Individual trajectories reveal coherent micro-dynamics that summary statistics obscure. Full data are available via an interactive explorer.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>M2Note: Continual Evolution of Vision Language Models via Mistake Notebook Learning</title>
+    <link href="http://arxiv.org/abs/2607.00685v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.00685v1</id>
+    <published>2026-07-01T00:00:00Z</published>
+    <updated>2026-07-01T00:00:00Z</updated>
+    <author>
+      <name>Haiwen Li</name>
+    </author>
+    <author>
+      <name>Jing Tang</name>
+    </author>
+    <author>
+      <name>Rui Chen</name>
+    </author>
+    <author>
+      <name>Lei Sun</name>
+    </author>
+    <author>
+      <name>Xiangxiang Chu</name>
+    </author>
+    <summary type="text">Vision Language Models (VLMs) have demonstrated remarkable capabilities in multimodal reasoning tasks, yet they still suffer from recurring failures, such as skipping key visual checks, misapplying domain rules, and hallucinating unsupported concepts. Most existing solutions rely on supervised fine-tuning (SFT) and reinforcement learning (RL), which are expensive to iterate and can be brittle under distribution shift. To this end, we propose Multimodal Mistake Notebook Learning (M2Note), a training-free continual evolution framework that externalizes learning into an editable memory. M2Note transforms failed trajectories into compact subject-guidance notes: the subject summarizes the underlying domain and concept, while the guidance provides actionable verification steps that can be reused in future inference. At test time, M2Note retrieves relevant notes via multimodal retrieval-augmented generation (RAG) and appends them to the model context, steering reasoning away from previously observed pitfalls. To stabilize continual evolution, we adopt batch-level post-verification with rollback, which commits notebook edits only if they improve performance on the same batch, reducing noisy updates and preventing regressions. M2Note supports both self-evolving, where the same VLM acts as solver and supervisor, and cross-model evolving, where a stronger supervisor guides a weaker solver, enabling capability transfer without weight updates. Experiments on six multimodal reasoning benchmarks show consistent improvements across domains and backbones, while achieving strong cost and sample efficiency and remaining complementary to Chain-of-Thought (CoT) prompting.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; MRE&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments</title>
     <link href="http://arxiv.org/abs/2606.31966v1" rel="alternate" type="text/html" />
@@ -292,6 +331,33 @@
     <category term="Multiagent Systems" />
   </entry>
   <entry>
+    <title>A Role-Based Multi-Agent Model for Climate Adaptation Deliberation Across Living Labs</title>
+    <link href="http://arxiv.org/abs/2607.00046v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.00046v1</id>
+    <published>2026-06-29T00:00:00Z</published>
+    <updated>2026-06-29T00:00:00Z</updated>
+    <author>
+      <name>Önder Gürcan</name>
+    </author>
+    <author>
+      <name>David Eric John Herbert</name>
+    </author>
+    <author>
+      <name>F. LeRon Shultz</name>
+    </author>
+    <author>
+      <name>Christopher Frantz</name>
+    </author>
+    <author>
+      <name>Ivan Puga-Gonzalez</name>
+    </author>
+    <summary type="text">Climate governance processes involve complex interactions between heterogeneous citizens, advocacy groups, media actors, and political decision-makers. While agent-based models (ABMs) have been widely used to study environmental policy and socio-ecological systems, many existing approaches focus either on institutional dynamics or individual behavioural mechanisms in isolation. This paper presents a modular multi-level agent-based architecture that integrates empirically grounded cognitive decision models with strategic institutional behaviour within a unified simulation framework. The architecture combines (i) motive-based individual decision-making operationalised through the HUMAT and MOA frameworks, (ii) socially embedded influence processes via demographic homophily networks, and (iii) institutional strategy modules for environmental non-governmental organisations (NGOs), media agents, and politicians. Political decisions emerge from the aggregation of multiple signals, including expert input, public mobilisation, party alignment, and media framing. The model is designed to be empirically calibrated through synthetic populations derived from survey data and and institutional parameters informed through Living Lab stakeholder engagement, and to support scenario-based exploration of climate-relevant land-use governance processes. Rather than presenting empirical results, this paper focuses on the architectural design principles, modular structure, and integration logic of the model. We discuss how this multi-layered approach contributes to the modelling of democratic climate governance and outline pathways for generalization and future validation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 4 pages, 1 figure&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.SE" />
+  </entry>
+  <entry>
     <title>Minority Sentinel: When to Overturn Majority Voting in Multi-Agent LLM Debates</title>
     <link href="http://arxiv.org/abs/2606.29270v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2606.29270v1</id>
@@ -495,66 +561,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>QueenBee Planner: Skill-Evolving Communication Topologies for Token-Efficient LLM Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2606.27492v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.27492v1</id>
-    <published>2026-06-25T00:00:00Z</published>
-    <updated>2026-06-25T00:00:00Z</updated>
-    <author>
-      <name>Congjia Tian</name>
-    </author>
-    <author>
-      <name>Yuhang Yao</name>
-    </author>
-    <author>
-      <name>Jiaming Cui</name>
-    </author>
-    <summary type="text">Large language model (LLM) multi-agent systems increasingly depend not only on how individual agents reason, but also on how agents are connected. This paper introduces QueenBee Planner, a framework that treats inter-agent communication topology as a retrievable and self-improving design skill. A pool of worker agents, the task adapter, and the scoring function are frozen; only an outer LLM planner learns to generate temporal communication DAGs specifying who sends information to whom, in which round, who merges messages, and who emits the final answer. Execution traces are distilled into evidence-backed design rules with three actions: \emph{Preserve}, \emph{Modify}, and \emph{Avoid}. To prevent self-evolution from turning lucky runs or plausible but false explanations into policy, QueenBee uses held-out acceptance gates, variance-aware credit, motif-level attribution, transfer trust, insight falsification, and structural deduplication. We evaluate the method on Count-Frequency aggregation and Silo-Bench-style distributed coordination tasks. With fixed workers, self-evolved graph generation produces communication structures that improve over fixed topologies and cold generation. In the CF fulltest setting, the best generated graph reduces RMSE from 12.53 for the strongest fixed topology to 7.87 while also reducing messages, model calls, and token cost; Silo-style results show the same direction of improvement over cold and fixed-topology baselines. These results suggest that multi-agent systems can learn reusable architectural design knowledge rather than merely memorizing task answers.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Glite ARF: Verifier-Driven Research with Parallel LLM Coding Agents</title>
-    <link href="http://arxiv.org/abs/2606.27416v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.27416v1</id>
-    <published>2026-06-25T00:00:00Z</published>
-    <updated>2026-06-25T00:00:00Z</updated>
-    <author>
-      <name>Vassili Philippov</name>
-    </author>
-    <author>
-      <name>Pavel Katunin</name>
-    </author>
-    <author>
-      <name>Dmitry Andreev</name>
-    </author>
-    <author>
-      <name>Igor Ostanin</name>
-    </author>
-    <author>
-      <name>Anton Nikolaev</name>
-    </author>
-    <summary type="text">LLM coding agents make it tempting to automate empirical research by delegating experiments to them directly, but naive delegation does not scale to large projects: low-rate instruction lapses compound into broken, irreproducible artefacts. To address this problem, we present Glite ARF, an open-source Python framework for running many LLM coding agents in parallel on a research repository without sacrificing reproducibility or auditability. The framework defines a three-role stack: a human researcher chooses which hypotheses to test, coding agents (Claude Code, Codex CLI) implement individual tasks under a fixed structure, and deterministic Python verifier scripts enforce task isolation, immutability of completed work, a corrections overlay, and a materialised project overview. We call this verifier-driven research: the rules of the research process live in code that fails loudly when violated, not in prose that agents are merely asked to follow. Using Glite ARF, we developed our submission to the BEA 2026 vocabulary-difficulty shared task, placing first in the closed track and second in the open track on all three target languages (Spanish, German, Mandarin) and reducing the official baseline RMSE by 29.9% (closed) and 35.9% (open). The campaign comprised 273 tracked tasks (146 experiment runs) across 129 feature sets, run by up to twelve parallel agents orchestrated from a single laptop - with some model training on rented A100s - at approximately \$450 in LLM API spend (\$498 total third-party cost), and structured per-fold provenance let us catch and strip four target-leaking feature sets, correcting an implausible 0.609 RMSE to 0.802. Across three campaigns in three domains, the framework's structural machinery adds only about 1% of wall-clock time. Framework and a public demo project accompany this paper.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.SE" />
-  </entry>
-  <entry>
-    <title>Delayed Verification Destabilizes Multi-Agent LLM Belief: Instability Thresholds and Optimal Corrector Placement</title>
-    <link href="http://arxiv.org/abs/2606.27409v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.27409v1</id>
-    <published>2026-06-25T00:00:00Z</published>
-    <updated>2026-06-25T00:00:00Z</updated>
-    <author>
-      <name>Igor Itkin</name>
-    </author>
-    <summary type="text">Multi-agent large language model (LLM) systems often rely on verifier and critic agents to suppress hallucinations, but verification is delayed. During this delay, false claims can propagate through the agent network. We model this process as delayed consensus on a graph with grounded corrector nodes. Spectral decomposition by the grounded Laplacian yields a closed-form stability threshold for the verification dose: correction that is too strong or too delayed can turn consensus into oscillation. The most unstable regime occurs when the communication and verification delays coincide; for delay two, the threshold is the inverse golden ratio. The same framework gives a supermodular placement objective and a greedy (1-1/e)-approximation rule for assigning a limited corrector budget to influential nodes. Experiments across five open models confirm the predicted dose-delay oscillations. By contrast, grounded factual answering makes truth an absorbing boundary and eliminates the effect, suggesting that the instability is specific to signed-belief tasks while grounded verification remains stabilizing</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 20 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.CL; Machine Learning; eess.SY" />
   </entry>
 </feed>
