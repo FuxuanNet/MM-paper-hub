@@ -4,12 +4,104 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-02T05:12:29Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 23 entries</subtitle>
+  <updated>2026-07-03T04:48:22Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 25 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Adoption and Ecosystem Health: A Longitudinal Analysis of Open-Source Multi-Agent Frameworks</title>
+    <link href="http://arxiv.org/abs/2607.02453v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.02453v1</id>
+    <published>2026-07-02T00:00:00Z</published>
+    <updated>2026-07-02T00:00:00Z</updated>
+    <author>
+      <name>Xi Zhang</name>
+    </author>
+    <author>
+      <name>Papi Menon</name>
+    </author>
+    <author>
+      <name>Vivian Chu</name>
+    </author>
+    <author>
+      <name>Koray Cosguner</name>
+    </author>
+    <summary type="text">Since ChatGPT's launch in November 2022, open-source agentic frameworks have proliferated, making framework selection important for engineering teams while obscured by popularity signals such as GitHub stars. This paper analyzes 15 major open-source AI agent framework repositories from late 2022 to early 2026, using 808,042 stars, 73,997 pull requests, 86,241 commits, and 987,330 user profiles to assess ecosystem health across awareness, adoption, and retention. Three findings emerge. First, headline popularity is unreliable. Star counts reflect hype cycles and inorganic activity. AutoGPT gained 111,967 stars in one month but converted fewer than 9 contributors per 1,000 stars, defined as contributor density in this research, compared with LangChain's 41. Lower-profile frameworks such as Pydantic-AI show higher contributor density, indicating deeper adoption. Second, mapping awareness against adoption shows that visibility and engagement diverge. MetaGPT and LangFlow have contributor density ratios below 5 even with their high visibility. Openai-agents-python's limited contributor base suggests institutional backing alone does not ensure community depth. By analyzing cross-framework contribution, we discover that LangChain functions as a shared infrastructure, attracting 82.5% of cross-ecosystem contributors. Third, retention drops most steeply in the first 30 days of initial contribution and stabilizes near 90 days. Overall, ecosystem health is better measured by contributor density, cross-ecosystem engagement, and retention than by stars alone. These metrics offer teams a more robust basis for framework evaluation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24 pages, 10 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>AgentsCAD: Automated Design for Manufacturing of FDM Parts via Multi-Agent LLM Reasoning and Geometric Feature Recognition</title>
+    <link href="http://arxiv.org/abs/2607.02448v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.02448v1</id>
+    <published>2026-07-02T00:00:00Z</published>
+    <updated>2026-07-02T00:00:00Z</updated>
+    <author>
+      <name>Emmanuel George</name>
+    </author>
+    <author>
+      <name>Christopher Keefe</name>
+    </author>
+    <author>
+      <name>Peter Pak</name>
+    </author>
+    <author>
+      <name>Amir Barati Farimani</name>
+    </author>
+    <summary type="text">Parts manufactured with Fused Deposition Modeling (FDM) often require Design for Additive Manufacturing (DFAM) modifications to ensure printability, structural integrity, and reduced post-processing. Current slicers identify defects such as steep overhangs but are unable to modify the underlying geometry. This work presents AgentsCAD, a multi-agent system that bridges raw boundary-representation (B-Rep) geometry and Large Language Model (LLM) reasoning to automate targeted DFM. The workflow begins by parsing a STEP file. The agentic system detects overhangs above a 45°threshold, constructs a face-adjacency topology graph, and optionally injects semantic feature labels from a GraphSAGE model trained on MFCAD++ (59,665 parts), before dispatching a Claude Sonnet design-reasoning agent that recommends reorientations, fillets, chamfers, and similar modifications. A GPT-4o vision-language verifier inspects rendered views to confirm geometric integrity. Outputs include a modified STEP file and a human-readable report. A test case on a birdhouse model demonstrates that the system correctly diagnoses overhangs, selects appropriate defect mitigation strategies, and proposes physically valid corrections, partially solving the geometry-to-language translation problem central to LLM-driven CAD modification.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>CausalSteward: An Agentic Divide-Conquer-Combine Copilot for Causal Discovery</title>
+    <link href="http://arxiv.org/abs/2607.01936v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.01936v1</id>
+    <published>2026-07-02T00:00:00Z</published>
+    <updated>2026-07-02T00:00:00Z</updated>
+    <author>
+      <name>Nicholas Tagliapietra</name>
+    </author>
+    <author>
+      <name>Gian Lorenzo Marchioni</name>
+    </author>
+    <author>
+      <name>Moritz Willig</name>
+    </author>
+    <author>
+      <name>Juergen Luettin</name>
+    </author>
+    <author>
+      <name>Lavdim Halilaj</name>
+    </author>
+    <author>
+      <name>Kristian Kersting</name>
+    </author>
+    <summary type="text">Learning causal models from high-dimensional data is a significant challenge, particularly in real-world settings where violations of core assumptions lead to causal identifiability issues. Although massive amounts of prior knowledge are available, and contain valuable causal information, effectively integrating this knowledge into the causal discovery process remains an open problem. We introduce CausalSTeward (CAST), a novel human-in-the-loop framework for interactively assembling large causal models. CausalSteward is a multi-agent collaborative system that tackles high-dimensional causality through a divide-and-conquer approach where large clusters of variables are iteratively partitioned and then separately analyzed. Our framework fuses prior knowledge with a data-driven approach by using tailored tools such as retrieval augmented generation and conditional independence tests. Finally, we use this work to examine the capabilities and limitations of causal reasoning in multi-agent frameworks, and how the human-in-the-loop can contribute to accurate and trustworthy results.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Congestion-Based Slot Pricing in a Railway Auction Game</title>
+    <link href="http://arxiv.org/abs/2607.01822v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.01822v1</id>
+    <published>2026-07-02T00:00:00Z</published>
+    <updated>2026-07-02T00:00:00Z</updated>
+    <author>
+      <name>Bill Roungas</name>
+    </author>
+    <author>
+      <name>Sebastiaan Meijer</name>
+    </author>
+    <summary type="text">We present a multi-agent system for studying the allocation of discrete, congested resources among heterogeneous strategic agents, motivated by the problem of railway slot allocation under deregulation. Multiple operator-agents, differing in size and capacity, interact through a shared auction mechanism over repeated rounds under time-constrained decision-making. The mechanism combines a congestion-based base price that increases with aggregate demand with an asymmetric corrective adjustment that penalises the agent requesting the most slots and rewards the agent requesting the fewest, and is designed to mitigate strategic dominance by large agents while preserving transparency and congestion sensitivity. We formulate the interaction as a repeated game with incomplete information and implement the system as a real-time, web-based multi-agent environment in which human participants control individual agents and observe live marginal-cost and competitor feedback.   We report exploratory observations from two structured sessions with domain experts acting as operator-agents. The congestion mechanism responds to aggregate demand as designed and the corrective incentives are actively triggered, but agents representing large operators persist with high-request strategies despite the penalty, suggesting that corrective pricing is necessary but not sufficient to neutralise strategic dominance in this multi-agent setting. A post-session debrief indicates that participants' decisions were driven by the assumed agent role rather than personal disposition, and provides qualitative support for strategic motives, such as preserving market presence and raising rivals' costs, operating alongside short-term profit maximisation. We discuss implications for multi-agent mechanism design under asymmetric budgets and outline directions for analytical validation and larger-scale multi-agent experiments.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.GT; econ.TH" />
+  </entry>
   <entry>
     <title>Calibrating the Instrument: Controllability of an LLM-Driven Synthetic Population</title>
     <link href="http://arxiv.org/abs/2607.00910v1" rel="alternate" type="text/html" />
@@ -47,6 +139,46 @@
     <summary type="text">Vision Language Models (VLMs) have demonstrated remarkable capabilities in multimodal reasoning tasks, yet they still suffer from recurring failures, such as skipping key visual checks, misapplying domain rules, and hallucinating unsupported concepts. Most existing solutions rely on supervised fine-tuning (SFT) and reinforcement learning (RL), which are expensive to iterate and can be brittle under distribution shift. To this end, we propose Multimodal Mistake Notebook Learning (M2Note), a training-free continual evolution framework that externalizes learning into an editable memory. M2Note transforms failed trajectories into compact subject-guidance notes: the subject summarizes the underlying domain and concept, while the guidance provides actionable verification steps that can be reused in future inference. At test time, M2Note retrieves relevant notes via multimodal retrieval-augmented generation (RAG) and appends them to the model context, steering reasoning away from previously observed pitfalls. To stabilize continual evolution, we adopt batch-level post-verification with rollback, which commits notebook edits only if they improve performance on the same batch, reducing noisy updates and preventing regressions. M2Note supports both self-evolving, where the same VLM acts as solver and supervisor, and cross-model evolving, where a stronger supervisor guides a weaker solver, enabling capability transfer without weight updates. Experiments on six multimodal reasoning benchmarks show consistent improvements across domains and backbones, while achieving strong cost and sample efficiency and remaining complementary to Chain-of-Thought (CoT) prompting.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; MRE&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Simulation Based Reward Function Validation for Multi-Agent On Orbit Inspection</title>
+    <link href="http://arxiv.org/abs/2607.01367v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.01367v1</id>
+    <published>2026-07-01T00:00:00Z</published>
+    <updated>2026-07-01T00:00:00Z</updated>
+    <author>
+      <name>Patrick Quinn</name>
+    </author>
+    <author>
+      <name>Bala Prenith Reddy Gopu</name>
+    </author>
+    <author>
+      <name>George M. Nehma</name>
+    </author>
+    <author>
+      <name>Madhur Tiwari</name>
+    </author>
+    <summary type="text">A proposed method for the control of groups of inspection spacecraft is Multi-Agent Reinforcement Learning (MARL). While MARL has already been employed for this purpose in previous work, the reward functions used focus on reaching a finite set of predetermined inspection points around the target. In this work, we study and develop a generalized reward function for the MARL inspection task informed by the analysis of 3D reconstructions of inspected objects in orbit. Because the reward function is generalized such that any number of images at arbitrary locations may evaluated, we also allow trained agents to have complete control over when images are collected. With this approach, we gather insights into best practices for not only the specific MARL inspection task, but also gain key takeaways informative to the broader inspection task outside of a MARL context.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Robotics" />
+  </entry>
+  <entry>
+    <title>Cache Merging as a Convergent Replicated State for Multi-Agent Latent Reasoning</title>
+    <link href="http://arxiv.org/abs/2607.01308v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.01308v1</id>
+    <published>2026-07-01T00:00:00Z</published>
+    <updated>2026-07-01T00:00:00Z</updated>
+    <author>
+      <name>Carlos Baquero</name>
+    </author>
+    <author>
+      <name>Luís Brito</name>
+    </author>
+    <summary type="text">Multi-agent latent reasoning composes agents' KV-caches into one context for a final agent. Prior work (Agent Primitives) does this by concatenating caches along the sequence axis with RoPE re-encoding, which we call BagMerge. BagMerge is non-commutative, and the best input ordering is unpredictable, shifting with the regime, the latent-step budget, and the model scale. We make this exchange a convergent replicated state. First, CanonicalMerge fixes the layout by content: ordering caches by mean K-norm at a middle layer renders the merged cache byte-identical under any input permutation, verified algorithmically (arity N&lt;=5) and bit-for-bit on real Qwen3-1.7B and 4B state. Second, we separate the replicated state from decode-time layout: the state is a set of content-addressed latent fragments whose merge is set union, a state-based CvRDT (commutative, associative, idempotent, absorbing), and CanonicalMerge is its deterministic render. Because the render is byte-equivalent, every N=2 accuracy number carries over unchanged and re-delivered duplicates are absorbed rather than re-concatenated. On a partitioned-reasoning benchmark, CanonicalMerge matches the best BagMerge ordering in every regime-by-budget-by-ordering cell without knowing which order is best, trading a small, statistically insignificant accuracy margin for an unconditional structural guarantee. The behaviour transfers to real multi-document QA (HotpotQA), while the closest training-free output-fusion baseline (PackLLM) loses by 45 points at matched budget, placing cache-level merging in a regime distinct from output-level fusion. Finally, at k&gt;2 the approach transports and colocates latent traces but does not by itself compose them, which we characterize to motivate future work.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
   <entry>
@@ -358,6 +490,32 @@
     <category term="cs.SE" />
   </entry>
   <entry>
+    <title>Translating Natural Language to Strategic Temporal Specifications via LLMs</title>
+    <link href="http://arxiv.org/abs/2606.30441v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2606.30441v2</id>
+    <published>2026-06-29T00:00:00Z</published>
+    <updated>2026-06-29T00:00:00Z</updated>
+    <author>
+      <name>Marco Aruta</name>
+    </author>
+    <author>
+      <name>Francesco Improta</name>
+    </author>
+    <author>
+      <name>Vadim Malvone</name>
+    </author>
+    <author>
+      <name>Aniello Murano</name>
+    </author>
+    <author>
+      <name>Vladana Perlić</name>
+    </author>
+    <summary type="text">A rigorous formalization of system requirements is a fundamental prerequisite for the verification of Multi-Agent Systems (MAS). However, writing correct formal specifications is well known as an error-prone, time-consuming, and expertise-intensive task. This difficulty is further accentuated in MAS, where requirements must capture strategic abilities and temporal objectives. At present, there is no established methodology for deriving MAS specifications from natural language. We present a framework for translating Natural Language descriptions of strategic requirements into well-formed ATL/ATL* formulas using Large Language Models (LLMs). Since no available dataset supports supervised learning for the NL-to-ATL/ATL* translation task, we create and curate a novel expert-validated dataset, employed for training and evaluating fine-tuned models. On a held-out test set, evaluated under the LLM judge that best agrees with expert annotations, in-domain fine-tuning of small open-weight models (3 - 7B parameters) matches strong few-shot proprietary API baselines. Our best fine-tuned system reaches 0.84 semantic accuracy, statistically on par with 0.86 for the strongest few-shot proprietary baseline, while keeping requirements on-premises. We further find that judge reliability is inverse to generator strength. The open-weight Llama-3.3-70B tracks human verdicts most closely, whereas the strongest proprietary models are the least reliable judges, over-rejecting faithful paraphrases of the reference. To assess the practical applicability of the generated specifications, we embed our tool to an existing strategic logics model checker, enabling non-expert users to specify strategic properties in natural language.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
     <title>Minority Sentinel: When to Overturn Majority Voting in Multi-Agent LLM Debates</title>
     <link href="http://arxiv.org/abs/2606.29270v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2606.29270v1</id>
@@ -429,137 +587,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 2 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>GBC: Gradient-Based Connections for Optimizing Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2606.28187v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.28187v1</id>
-    <published>2026-06-26T00:00:00Z</published>
-    <updated>2026-06-26T00:00:00Z</updated>
-    <author>
-      <name>Xiaocheng Yang</name>
-    </author>
-    <author>
-      <name>Abdulrahman Alrabah</name>
-    </author>
-    <author>
-      <name>Dilek Hakkani-Tür</name>
-    </author>
-    <author>
-      <name>Gokhan Tur</name>
-    </author>
-    <summary type="text">Multi-agent systems (MAS) built on large language models (LLMs) provide a promising framework for solving complex tasks through role specialization and structured interaction. However, their performance is often limited by miscoordination and, more fundamentally, the lack of fine-grained credit assignment across agents. Existing approaches typically rely on coarse-grained feedback, making it difficult to identify which agents or interaction steps are responsible for errors. We propose Gradient-Based Connections (GBC), an approach for fine-grained attribution and optimization of multi-agent systems. GBC models a MAS as a computational graph and introduces gradient-based connection weights to quantify the influence of each agent's output on downstream agents at the token level. By constructing an attribution graph and propagating task-specific loss signals backward, our method enables precise identification of error sources and targeted prompt optimization. We further develop AgentChord, an efficient implementation that leverages prefix-based gradient computation. Experiments on MultiWOZ and τ-bench show that GBC improves multi-agent performance and outperforms strong single-agent and multi-agent baselines, and higher attribution quality is associated with greater optimization effectiveness. Code is available at: https://github.com/yxc-cyber/AgentChord.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/yxc-cyber/AgentChord"&gt;https://github.com/yxc-cyber/AgentChord&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; SIGDIAL 2026 Long Papers&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>GenWorld: Empirically Grounded Urban Simulation Infrastructure for Scalable LLM-Agent Studies</title>
-    <link href="http://arxiv.org/abs/2606.27650v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.27650v1</id>
-    <published>2026-06-26T00:00:00Z</published>
-    <updated>2026-06-26T00:00:00Z</updated>
-    <author>
-      <name>Gen Li</name>
-    </author>
-    <author>
-      <name>Jieyuan Lan</name>
-    </author>
-    <author>
-      <name>Pengcheng Xu</name>
-    </author>
-    <author>
-      <name>Zongyuan Wu</name>
-    </author>
-    <author>
-      <name>Masaki Ogura</name>
-    </author>
-    <author>
-      <name>Tao Feng</name>
-    </author>
-    <summary type="text">LLM-agent simulation faces a joint grounding and scaling problem: agents should act in environments that reflect real urban constraints, yet direct online LLM calls for city-scale populations are computationally prohibitive. We present GenWorld, an empirically grounded urban simulation infrastructure that combines a building-level synthetic city, a structured agent-environment interface, and offline compilation of LLM-derived decision signals into lookup policies for scalable rollout. In a reference instantiation for Higashihiroshima, Japan, GenWorld grounds 196,608 synthetic residents in census and geospatial data, validates demographic consistency against census tabulations, and uses YJMob100K mobile-phone data as a commuting-distance diagnostic. We demonstrate the infrastructure through three reproducible cases: a full-city weekday rollout, a weekday-weekend behavioral contrast, and a warning-response perturbation with auditable replanning traces. These cases support GenWorld as a reproducible platform for grounded and scalable LLM-agent studies, while calibrated forecasting for traffic, evacuation, or policy outcomes remains future work.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 27 pages, 24 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>A Fast Convergent Algorithm for Solving Non-convex Partially-Decoupled Generalized Nash Equilibrium Problems</title>
-    <link href="http://arxiv.org/abs/2606.28617v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.28617v1</id>
-    <published>2026-06-26T00:00:00Z</published>
-    <updated>2026-06-26T00:00:00Z</updated>
-    <author>
-      <name>Bennet Outland</name>
-    </author>
-    <author>
-      <name>Vishala Arya</name>
-    </author>
-    <summary type="text">Solving multi-agent optimal control problems in aerospace such as pursuit-evasion and contested space operations can be modeled as non-convex differential games for which, there are limited algorithms. In this work, a relaxation of generalized Nash Equilibrium problems (GNEPs) to exclude inter-agent control coupling in dynamics, which is representative of many multi-agent systems is introduced. The main contribution is an algorithm for solving a broad class of differential games named FALCON: Fast Augmented Lagrangian Convexification for Open-loop Nash equilibria is presented. Methodologically, sequential convex programming (SCP) is utilized to create tractable convex sub-games which can then be solved via standard convex programming methods involving a potential game reformulation. FALCON is demonstrated to have global convergence guarantees to an open-loop Nash equilibrium for non-convex differential games under mild assumptions. This is numerically shown through both cooperative and competitive differential games.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="math.OC" />
-  </entry>
-  <entry>
-    <title>Digitizing Coaching Intelligence: An Agentic Framework for Holistic Athlete Profiling using VLM and RAG</title>
-    <link href="http://arxiv.org/abs/2606.28570v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.28570v1</id>
-    <published>2026-06-26T00:00:00Z</published>
-    <updated>2026-06-26T00:00:00Z</updated>
-    <author>
-      <name>Deep Ghosal</name>
-    </author>
-    <author>
-      <name>Ishani Sen</name>
-    </author>
-    <author>
-      <name>Wazib Ansar</name>
-    </author>
-    <author>
-      <name>Amlan Chakrabarti</name>
-    </author>
-    <summary type="text">Athlete assessment is a critical process for tracking physical progress and identifying elite talent. However, during mass recruitment drives, traditional methods rely on manual observation, which is inherently subjective and unscalable, or basic computer vision (CV) systems limited to quantitative repetition counting. These standard approaches lack the "coaching intelligence" required to evaluate qualitative physiological markers such as form degradation, spinal articulation, and fatigue. This paper presents a novel, LLM-based hybrid agentic framework for automated, holistic athlete profiling that strictly aligns with the Sports Authority of India (SAI) assessment protocols. Orchestrated via LangGraph, our dual-pipeline architecture synthesizes the geometric precision of CV (MediaPipe) for kinematic tracking with the semantic reasoning of Vision-Language Models (Llama-4-scout). To overcome the latency and token constraints associated with multimodal video processing, we introduce a 3 X 3 "Smart Grid" temporal chunking strategy, reducing computational overhead by over 88% while preserving critical temporal continuity. To ensure data integrity and mitigate hallucination, the framework pioneers an autonomous "LLM-as-a-Judge" self-correction loop that cross-references quantitative and qualitative metrics before persistence. Finally, we implement a dual-persistence Retrieval-Augmented Generation (RAG) pipeline utilizing a vector search engine (ChromaDB). This enables coaches to bypass rigid SQL databases and perform complex semantic queries (e.g., "Identify athletes with high endurance but poor core rigidity") using natural language. Experimental results demonstrate that this multi-agent approach significantly bridges the gap between raw biometric tracking and actionable coaching insights, offering a scalable, objective solution for national talent identification.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Is Lying an Emergent Behaviour in LLMs? Evidence from Gaslighting AI agents in a Sustainability Game</title>
-    <link href="http://arxiv.org/abs/2606.28456v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2606.28456v1</id>
-    <published>2026-06-26T00:00:00Z</published>
-    <updated>2026-06-26T00:00:00Z</updated>
-    <author>
-      <name>Subhendu Bhandary</name>
-    </author>
-    <author>
-      <name>Federico Carucci</name>
-    </author>
-    <author>
-      <name>Christos Charalambous</name>
-    </author>
-    <author>
-      <name>Francesca Dilisante</name>
-    </author>
-    <author>
-      <name>Ksenia Dvorkina</name>
-    </author>
-    <author>
-      <name>Anna Garbo</name>
-    </author>
-    <author>
-      <name>Jiaqi Liang</name>
-    </author>
-    <author>
-      <name>Riccardo Vasellini</name>
-    </author>
-    <author>
-      <name>Francesco Bertolotti</name>
-    </author>
-    <summary type="text">LLMs agents are increasingly used in multi-agent settings, yet their behaviour in sustainability games remains largely unexplored. This work investigates whether lying can emerge among LLM agents in a competitive sustainability game in which agents are informed that common resources can regenerate, although regeneration does not actually occur. We develop an agent-based model of a sustainability game in which agents manage industrial, military, and ecological resources, and interact through a network. LLM agents can observe neighbours' status, declare future attacks, receive permission to lie, and access reputation information, while rule-based agents provide an interpretable behavioural baseline. The results show that neighbour information strongly changes system dynamics, increasing attacks while improving biosphere retention and coexistence. Also, the presence of future declarations reduce extinction risk without suppressing conflict. Behaviourally, deception emerges even when agents are not explicitly allowed to lie, and explicit permission mainly increases bluffing and diversion rather than direct backstabbing. Finally, the presence of reputation memory and information about the current biosphere level reduces system ecological depletion. These findings suggest that deception can arise as an emergent behaviour in LLM-agent systems and that communication between LLM-agents could support sustainability while dealing with risk.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
