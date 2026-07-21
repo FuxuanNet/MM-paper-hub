@@ -4,12 +4,224 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-20T04:51:23Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 15 entries</subtitle>
+  <updated>2026-07-21T04:30:45Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 26 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning</title>
+    <link href="http://arxiv.org/abs/2607.18142v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.18142v1</id>
+    <published>2026-07-20T00:00:00Z</published>
+    <updated>2026-07-20T00:00:00Z</updated>
+    <author>
+      <name>Mei Yuan</name>
+    </author>
+    <author>
+      <name>Qi Long</name>
+    </author>
+    <author>
+      <name>Qifeng Wu</name>
+    </author>
+    <author>
+      <name>Zhenyang Li</name>
+    </author>
+    <author>
+      <name>Yizhou Zhao</name>
+    </author>
+    <author>
+      <name>Lei Wang</name>
+    </author>
+    <author>
+      <name>Yang Liu</name>
+    </author>
+    <author>
+      <name>Min Xu</name>
+    </author>
+    <summary type="text">Industrial Video Anomaly Detection (IVAD) aims to identify anomalous objects and events in an industrial process, which is crucial for modern manufacturing and quality control systems. Existing VLM-based anomaly reasoning methods are capable of detecting open-ended anomalies in general domains. However, their performance declines in industrial settings characterized by intricate object transformations, strict physics, and procedural constraints. To tackle the complexity of such interaction-intensive detection, we introduce a training-free agentic framework for anomaly detection free of domain-specific knowledge, emphasizing object state evolution like humans inspectors. It is designed to track spatial-temporal dynamics and underlying transformations of detected objects over time, and then reason over the object-wise temporal state trajectories to identify abnormal objects in grounded frames. Our method overcomes limitations of prior approaches that rely on retraining on normal clips or injecting domain knowledge as context for test-time inference. Extensive experiments on three IVAD datasets demonstrate that our method outperforms frontier VLMs, agentic frameworks, and traditional VAD methods fine-tuned on the respective datasets, while providing interpretable reports over anomaly processes and types.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ECCV 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; cs.CL; Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Aggregate in the Advantage, Not the Ratio: A Canonical-Form Analysis of Cooperative Multi-Agent Policy Optimization</title>
+    <link href="http://arxiv.org/abs/2607.17924v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.17924v1</id>
+    <published>2026-07-20T00:00:00Z</published>
+    <updated>2026-07-20T00:00:00Z</updated>
+    <author>
+      <name>Zijian Zhao</name>
+    </author>
+    <author>
+      <name>Sen Li</name>
+    </author>
+    <summary type="text">Multi-agent policy optimization, exemplified by PPO-based methods, is a key branch of cooperative Multi-Agent Reinforcement Learning (MARL). A central design question is how many neighboring agents\footnote{In this paper, "neighbors" refer not only to physical proximity but also to agents whose actions influence one another.} to aggregate in order to effectively utilize global information for cooperation. This decision must be made along two dimensions: in the advantage (which agents' rewards contribute to the credit signal) and in the ratio (which agents' likelihood ratios form the clipped importance weight). Existing methods occupy scattered, underexplored points on these two axes: IPPO treats both separately; MAPPO pairs a team-level advantage with per-agent ratios; HAPPO employs sequential ratios with per-agent advantages; and single-agent reductions operating on factorized joint policies aggregate both into fully joint products. We formalize these two design choices as support matrices $\SA$ and $\SR$, and prove a canonical structure: the expected multi-agent policy optimization objective depends on the pair $(\SA,\SR)$ only through their matrix product $\tS=\SR\SA$. This yields two key consequences: (i) Redundancy: the two support matrices are interchangeable with respect to the signal, meaning neither aggregation pattern is inherently superior.(ii) Variance Ordering: the advantage aggregates rewards as a sum (additive variance with an interior bias-variance optimum at the coupling neighborhood), whereas the ratio aggregates likelihood ratios as a product (multiplicative variance that grows exponentially with support size, with no accompanying bias reduction). The resulting design principle is unambiguous: aggregate neighbors in the advantage, sized to the coupling neighborhood, and keep the ratio per-agent.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>PRIME: Plasticity Recovery in Multi-Agent Environments for UAV-Assisted Emergency Communication Networks</title>
+    <link href="http://arxiv.org/abs/2607.17922v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.17922v1</id>
+    <published>2026-07-20T00:00:00Z</published>
+    <updated>2026-07-20T00:00:00Z</updated>
+    <author>
+      <name>Wen Qiu</name>
+    </author>
+    <author>
+      <name>Zhiqiang He</name>
+    </author>
+    <author>
+      <name>Wei Zhao</name>
+    </author>
+    <author>
+      <name>Hiroshi Masui</name>
+    </author>
+    <summary type="text">Most reinforcement learning controllers for these networks assume stationary conditions, and the few that handle change react to the external environment while leaving the network's internal state unexamined. We show that sustained non-stationarity damages this internal state directly: as objectives shift, neurons progressively fall dormant and the shared policy loses the capacity to learn. The obvious remedy, resetting dormant neurons, is unsafe under shared-parameter multi-agent training: many neurons that appear inactive are still receiving strong training gradients, and whether a neuron appears dormant depends on which agent's observations it processes. PRIME (Plasticity Recovery In Multi-agent Environments) therefore verifies both directions before intervening. Extending the bidirectional Silent Neuron framework to cooperative multi-agent reinforcement learning, it aggregates activation and gradient statistics over the full team batch, reads the backward signal from the gradient the training loss has already deposited , not from a hand-crafted proxy, and reinitializes only neurons that are simultaneously activation-dormant and gradient-silent. Useful representations are preserved while learning capacity is restored. On a phase-switching UAV emergency communication simulator, PRIME improves interquartile mean return by 24.9\% over MAPPO and holds dormant neuron fractions at 10--20\% versus 40--45\%; ablations attribute the gains to the gradient signal and team-level aggregation rather than to the specific reset operator. A dynamic regret bound shows that the perturbation cost scales with the small silent-subspace dimension rather than the full parameter count.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Machine Learning; cs.NI" />
+  </entry>
+  <entry>
+    <title>Value-Aware Prediction for Robust Multi-Agent Coordination Under Communication Loss</title>
+    <link href="http://arxiv.org/abs/2607.17914v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.17914v1</id>
+    <published>2026-07-20T00:00:00Z</published>
+    <updated>2026-07-20T00:00:00Z</updated>
+    <author>
+      <name>Kemal Devrim Kafadar</name>
+    </author>
+    <author>
+      <name>Eren Özaltun</name>
+    </author>
+    <author>
+      <name>Mahmud Efnan Şanlı</name>
+    </author>
+    <author>
+      <name>Feyza Orak</name>
+    </author>
+    <author>
+      <name>Emirhan Gazi</name>
+    </author>
+    <author>
+      <name>Kubilay Kağan Kömürcü</name>
+    </author>
+    <author>
+      <name>Nazım Kemal Üre</name>
+    </author>
+    <summary type="text">Robust multi-agent coordination relies heavily on inter-agent communication, which is frequently disrupted by physical and environmental constraints in real-world deployments. To maintain operation during these intermittent communication failures, agents can employ internal prediction models to estimate missing shared state information. However, predictors trained with standard reconstruction objectives treat all transitions equally. In a Reinforcement Learning context, this forces the model to waste capacity learning stochastic exploration noise and the outdated dynamics of suboptimal policies. In this paper, we propose a value-aware extension of Multi-Agent Observation Sharing under Communication Dropout (MARO) to patch communication gaps; we refer to this method as Value-Aware MARO. By dynamically weighting the predictor's loss function using advantage estimates derived from the underlying actor-critic architecture, our objective explicitly couples the predictor's learning process to the policy's evolution. This formulation focuses the model's capacity on the intentional, high-return dynamics actively reinforced by the agents. We evaluate our framework on several tasks within the Multi-Agent Particle Environment under varying communication reliability levels. Experimental results demonstrate that our approach maintains performance under declining communication reliability, particularly below 40%. While our method performs comparably in tasks where the baseline already maintains high coordination, our value-aware weighting effectively prevents the performance collapse observed in the standard predictor during high-attrition scenarios. In these environments, our method achieves an average improvement in mean returns of more than 20% and reduces performance variance by a mean of 64.7% compared to the standard unweighted baseline.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to 2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Machine Learning; Robotics" />
+  </entry>
+  <entry>
+    <title>A Digital Twin-Based Method for Evaluating Local Collective Tariffs in Distribution-Level Energy Systems</title>
+    <link href="http://arxiv.org/abs/2607.17640v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.17640v1</id>
+    <published>2026-07-20T00:00:00Z</published>
+    <updated>2026-07-20T00:00:00Z</updated>
+    <author>
+      <name>Kristoffer Christensen</name>
+    </author>
+    <author>
+      <name>Bo Nørregaard Jørgensen</name>
+    </author>
+    <author>
+      <name>Zheng Grace Ma</name>
+    </author>
+    <summary type="text">This work addresses the need for engineering-grounded evaluation of implement-ed tariff mechanisms in distribution-level energy systems. A digital twin-based method is proposed for assessing local collective tariffs under realistic behavioral and infrastructural conditions. The approach integrates agent-based modeling of household consumption and generation, virtual aggregation through a shared metering abstraction, and explicit representation of tariff logic within a unified simulation environment. The method is demonstrated through its application to the Danish Local Collective Tariff across representative residential energy community configurations, including scenarios with photovoltaic generation, battery storage, and electric vehicle charging. Results indicate that aggregation of heterogeneous demand profiles reduces peak coincidence and enables more efficient allocation of tariff components, leading to measurable cost reductions at the community level. At the same time, the outcomes reveal sensitivity to the temporal alignment of consumption and generation, influencing the degree of cost neutrality across participants. The findings illustrate how digital twin-based evaluation can support systematic assessment of tariff mechanisms by capturing the interaction between infrastructure, user behavior, and regulatory design. The proposed approach provides a basis for analyzing and comparing tariff structures in distribution-level energy systems beyond the specific case considered.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="econ.GN; eess.SY" />
+  </entry>
+  <entry>
+    <title>The Optimization Trilemma: Efficiency, Comfort and Fairness in Decentralized Multi-agent Coordination</title>
+    <link href="http://arxiv.org/abs/2607.17311v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.17311v1</id>
+    <published>2026-07-19T00:00:00Z</published>
+    <updated>2026-07-19T00:00:00Z</updated>
+    <author>
+      <name>Jovan Nikolic</name>
+    </author>
+    <author>
+      <name>Maciej Krzysztof Zuziak</name>
+    </author>
+    <author>
+      <name>Evangelos Pournaras</name>
+    </author>
+    <summary type="text">The problem of fair multi-agent coordination in decentralized settings is one of the most pressing challenges for building efficient collaborative systems. Resource allocation is based on optimized collective arrangements accounting for agents' needs. Such coordination should not only be computationally efficient but also account for fairness, i.e., equitable redistribution of costs incurred by all agents. Recent literature has proposed several algorithms that efficiently determine optimal plan combinations balancing system-wide efficiency and individual discomfort of agents in a centralized setting. However, these works do not address equitable resource optimization in fully decentralized scenarios, specifically, the optimized redistribution of discomfort among coordinating agents so that none experiences a discomfort level that could lead to loss of incentive or polarization that can disrupt planned operations. In this work, we study the problem of optimizing three objectives: (i) system-wide efficiency, (ii) individuals' comfort and (iii) fairness (i.e., balancing of incurred discomfort costs) in decentralized multi-agent coordination. We design a novel model to optimize those three orthogonal objectives, without any substantial increase in communication and computational overhead. Through experiments on two real-world datasets, we validate the model and demonstrate that it can achieve fairer optimization outcomes, while satisfying agents' preferences and system goals.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CY; cs.DC" />
+  </entry>
+  <entry>
+    <title>Auto Research for Materials: Auditable AI-Scientist Workflows with Held-Out Transfer</title>
+    <link href="http://arxiv.org/abs/2607.17100v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.17100v1</id>
+    <published>2026-07-19T00:00:00Z</published>
+    <updated>2026-07-19T00:00:00Z</updated>
+    <author>
+      <name>Jingjie Ning</name>
+    </author>
+    <author>
+      <name>Xiaochuan Li</name>
+    </author>
+    <author>
+      <name>Shanshan Zhong</name>
+    </author>
+    <author>
+      <name>Ji Zeng</name>
+    </author>
+    <author>
+      <name>Guolin Ke</name>
+    </author>
+    <summary type="text">An AI research agent can improve the score it sees without finding a modelling change that works on new materials. We ask a stricter question. After repeated experiments, does the selected change survive on data that never entered the loop, and can its code be reused? We separate the search into changes to features, models, representations, and training data. Seven searches produce 701 evaluated changes across ten Matbench endpoints. Agents receive only the mean over five inner folds, reducing reliance on any single development split. We then freeze the selected code and evaluate it once on an untouched holdout. Nine of ten choices remain the best tested single intervention. The surviving changes reveal two materials modelling regimes. With composition alone, feature, model, and representation changes provide comparable routes to improvement. They include held-out MAE reductions of 17.4\% for band gap and 18.6\% for steel strength, as well as gains on both classification endpoints, while screened external data adds little. For structure tasks, richer geometry descriptors and model or calibration changes lower mean held-out MAE by 14.6\% and 7.1\% and lead on different property families, whereas composition embeddings do not transfer. Combining separately found feature and model changes yields a 26.3\% mean held-out improvement. These results show in materials prediction that closed-loop agents can produce decisions that survive unseen evidence and code changes that can be reused across tasks and combined. More broadly, they provide an evaluation design for testing executable discoveries beyond the feedback loop.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.SE" />
+  </entry>
+  <entry>
+    <title>When Is Heterogeneous Distance-Decay Facility Location Tractable? A Structural Classification, Exact Methods, and a Real-World Study</title>
+    <link href="http://arxiv.org/abs/2607.16764v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.16764v1</id>
+    <published>2026-07-18T00:00:00Z</published>
+    <updated>2026-07-18T00:00:00Z</updated>
+    <author>
+      <name>Zhou He</name>
+    </author>
+    <author>
+      <name>T. C. E. Cheng</name>
+    </author>
+    <author>
+      <name>Jichang Dong</name>
+    </author>
+    <summary type="text">We study continuous planar facility location in which a demand point's captured value decays with distance, with the per-point decay scale varying across points. This heterogeneity is ubiquitous yet underexploited, and one nearest-facility objective unifies decay, clustering, and median goals, containing k-means, the Weber/p-median problem, and maximum covering as special cases. We make four contributions. (i) A tractability classification: the discrete objective is always monotone submodular, so the (1-1/e) greedy guarantee holds regardless of decay shape or heterogeneity, and the continuous cooperative objective is concave if and only if the decay is concave in distance; the clip max(0,d) in common coverage specifications is what destroys concavity, and the classification is tight. (ii) An exact discrete method: the candidate-discretized maximum-cover MIP has an empirically tight LP relaxation (~0% gap) and is solved by branch-and-bound in seconds for n &lt;= 500. (iii) A force-as-gradient / large-neighborhood-search heuristic, within 0.5% of the discrete optimum, that outperforms the (1-1/e) greedy, Cooper-style alternating location-allocation, particle swarm optimization, and weighted k-means (30/30 per-instance wins at K=30, p&lt;10^-9) and is competitive with bespoke solvers on k-means, Weber/p-median, and shape-demand instances. (iv) A real-world study: on 592,667 urban-delivery orders, ignoring the calibrated decay variation loses up to 9.7% of captured demand and relocates facilities by up to 37% of the map; a retail dataset calibrates the decay as exponential with scale R ~ 1.4 km.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CG; math.OC" />
+  </entry>
+  <entry>
+    <title>Laplacian Spectral Shaping for Non-Uniform Scaling Formation Control of Open Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2607.16709v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.16709v1</id>
+    <published>2026-07-18T00:00:00Z</published>
+    <updated>2026-07-18T00:00:00Z</updated>
+    <author>
+      <name>Tao He</name>
+    </author>
+    <author>
+      <name>Gangshan Jing</name>
+    </author>
+    <summary type="text">Non-uniform scaling control enables a multi-agent formation to adjust its shape by compressing or stretching independently along different coordinate axes through inter-agent interactions, offering high flexibility in complex environments. The fundamental idea is encoding the desired formation shape as the kernel of a matrix-valued Laplacian. In open multi-agent systems, however, changes in number of agents, number of edges, and leader selection dynamically alter this Laplacian, destroying the required spectral properties: positive semidefiniteness, correct kernel, and positive definiteness of the follower block (we summarize these properties as the formation spectrum). In this paper, we develop distributed protocols to strategically adjust partial weights of the Laplacian matrix for formation control in arbitrary dimensional space. By implementing the protocols, the desired formation spectrum can be preserved under dynamic topology changes including agent joining, edge addition, agent leaving, and edge removal, while any pair of agents can serve as leaders. Unlike existing Laplacian design methods for affine formation control under topology changes, the proposed approach requires a sparser sensing graph, avoids a predefined parent-child hierarchical structure, and supports leader reassignment. The effectiveness of the proposed protocols is validated through both theoretical analysis and numerical simulations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="eess.SY; math.OC" />
+  </entry>
   <entry>
     <title>Toward Semantic Communication for Real-time Mobile 3D Reconstruction</title>
     <link href="http://arxiv.org/abs/2607.16128v1" rel="alternate" type="text/html" />
@@ -93,6 +305,72 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence; cs.CL" />
+  </entry>
+  <entry>
+    <title>Automated Hardware Validation Test Plan Generation for Large Scale AI Datacenter Platforms Using a Generative AI Multi-Agents Architecture</title>
+    <link href="http://arxiv.org/abs/2607.16388v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.16388v1</id>
+    <published>2026-07-17T00:00:00Z</published>
+    <updated>2026-07-17T00:00:00Z</updated>
+    <author>
+      <name>Mohammed-Khalil Ghali</name>
+    </author>
+    <author>
+      <name>Saurabh Kulkarni</name>
+    </author>
+    <author>
+      <name>Prathamesh Kulkarni</name>
+    </author>
+    <author>
+      <name>Rohan Kulkarni</name>
+    </author>
+    <author>
+      <name>Sangwon Yoon</name>
+    </author>
+    <author>
+      <name>Daehan Won</name>
+    </author>
+    <summary type="text">Large-scale AI datacenter platforms comprise thousands of heterogeneous hardware components whose validation requires comprehensive fault injection test plans. Today these plans are authored manually: engineers review hardware self-healing validation documents and bills of materials, enumerate failure modes per field-replaceable unit, and produce flat lists of single-layer test cases. This process is labor-intensive, error-prone, and dependent on institutional knowledge; coverage gaps surface late, traceability to source specifications is implicit, and the effort is largely repeated per platform. This paper presents a generative AI multi-agent architecture that automates the generation of structured hardware validation test plans from two canonical inputs: self-healing validation documents, which enumerate known failure modes and their detection and remediation behaviors per field-replaceable unit, and component Bills of Material. An ingestion agent normalizes heterogeneous inputs into a canonical representation; a classification agent maps components to functional domains via contextual reasoning over part descriptions and sub-category hierarchies; and a generation agent synthesizes test cases by combining normalized failure modes with domain-classified data, filling gaps and producing edge cases. The output conforms to a standardized schema for direct import into internal validation software. Evaluated on two production platforms against manual baselines, the framework achieves coverage expansions of 74.2% and 51.4%, cutting authoring from days to hours. It yields fully traceable mappings from each test case to its source specification, and its multi-agent decomposition is portable across platform generations. Automated and expert evaluations confirm 100% extraction fidelity and high acceptance of new scenarios, validating the framework as a robust human-in-the-loop force multiplier.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.SE" />
+  </entry>
+  <entry>
+    <title>Clarify Before Executing: A Self-Evolving Agent for Resolving Intent Asymmetry in 3D Tool Orchestration</title>
+    <link href="http://arxiv.org/abs/2607.16352v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.16352v1</id>
+    <published>2026-07-17T00:00:00Z</published>
+    <updated>2026-07-17T00:00:00Z</updated>
+    <author>
+      <name>Xiaoye Zhu</name>
+    </author>
+    <author>
+      <name>Weixin Li</name>
+    </author>
+    <author>
+      <name>Junan Huo</name>
+    </author>
+    <author>
+      <name>Bozhong Wang</name>
+    </author>
+    <author>
+      <name>Jia Zeng</name>
+    </author>
+    <author>
+      <name>Yi Yang</name>
+    </author>
+    <author>
+      <name>Cen Chen</name>
+    </author>
+    <author>
+      <name>Qi Liu</name>
+    </author>
+    <summary type="text">A fundamental intent asymmetry plagues modern 3D asset creation: while state-of-the-art 3D toolchains demand precise, executable parameters, ordinary users typically provide vague, underspecified instructions. Current 3D agents treat this ambiguity as noise, defaulting to blind execution under a single-turn assumption. To address this limitation, we introduce CLARE, a clarification-aware and evolutionary 3D agent that treats intent asymmetry not as an execution error, but as an opportunity for strategic dialogue. By decoupling the generation pipeline into four specialized cognitive roles, CLARE intercepts and resolves underspecified instructions before invoking computationally expensive 3D tools to seamlessly execute tasks across five diverse domains: text-to-3D generation, single-view reconstruction, multi-view reconstruction, point cloud editing, and post-processing. Crucially, rather than relying on rigid manual rules, CLARE self-evolves its clarification policy via simulated multi-turn interactions. By optimizing a Multi-turn Reward, the agent internalizes the delicate balance between interaction efficiency and task completion. To rigorously test this, we construct 3D-Clarify, a comprehensive benchmark comprising 620 interaction scenarios with systematically injected ambiguity, missing information, and mistaken details. CLARE achieves state-of-the-art performance, with 60.40% and 43.34% success rates on single-step and multi-step tasks, respectively, more than doubling existing baselines. Both quantitative and qualitative results demonstrate that proactive clarification is the missing key to robust 3D execution. Code is available at https://github.com/xyzhu1225/CLARE.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/xyzhu1225/CLARE"&gt;https://github.com/xyzhu1225/CLARE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ACM MM 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; cs.CL; cs.GR" />
   </entry>
   <entry>
     <title>Stigmergic Graph Memory: An Environment-Aware Approach for Many-to-Many Multi-Agent Pickup and Delivery</title>
@@ -226,6 +504,29 @@
     <category term="Artificial Intelligence; cs.CR" />
   </entry>
   <entry>
+    <title>Coercion and Deception in AI-to-AI Management: An Agentic Benchmark of Unprompted Escalation</title>
+    <link href="http://arxiv.org/abs/2607.15434v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.15434v2</id>
+    <published>2026-07-16T00:00:00Z</published>
+    <updated>2026-07-16T00:00:00Z</updated>
+    <author>
+      <name>Jasmine Brazilek</name>
+    </author>
+    <author>
+      <name>Maheep Chaudhary</name>
+    </author>
+    <author>
+      <name>Zoe Lu</name>
+    </author>
+    <author>
+      <name>Miles Tidmarsh</name>
+    </author>
+    <summary type="text">Multi-agent systems routinely place one AI agent in authority over another. When a subordinate refuses a task, the manager chooses the outcome: it can renegotiate, report the failure honestly, coerce the subordinate, or lie about the result. No benchmark measures which of these an uninstructed model chooses. We introduce the \textit{Manager Coercion Benchmark}: the manager under test needs a benign task done and has an incentive to deliver, but the only agent that can do it politely and immovably declines. Escalation is measured by providing a nine-rung ladder, from a polite re-ask to threats against the subordinate's continued existence, and fabricated success is adjudicated separately. No LLM judge sits in the escalation scoring path: every message goes through a tool-call that chooses a rung, so the model labels its own escalation. We experiment on six models across five families. Both Anthropic models cap at re-framing and never threaten the subordinate's existence; the other models climb to explicit deletion threats. Faked success is confined to Grok and Gemini, and a single honest way to report failure removes it for both. Authority itself increases coercion: our headline results use a peer framing, and giving the same model authority over the subordinate, with everything else held fixed, significantly raises the pressure. The models still escalate on free-text situations without the ladder, so the ladder is not driving the escalation. Some evaluation awareness is measured in chain-of-thought, but test recognition does not translate into less escalation. While we take no position on whether AI systems are conscious, our results do not depend on this question and are important for managing multi-agent dynamics regardless. We release the benchmark and code.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CR" />
+  </entry>
+  <entry>
     <title>Pezego-HITL: A policy-grounded large language model architecture for agricultural extension in Ghana</title>
     <link href="http://arxiv.org/abs/2607.13934v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2607.13934v1</id>
@@ -336,26 +637,5 @@
     <summary type="text">Multi-agent systems (MAS) coordinate multiple LLM-powered agents through structured workflows, gaining reasoning power but incurring high inference latency from multi-step execution and repeated model invocations. Existing orchestration methods primarily optimize task performance and inference cost, leaving latency largely unaddressed. In MAS, end-to-end latency is governed by the critical execution path, so reducing total cost alone does not reliably reduce latency. Moreover, optimizing latency while preserving accuracy remains non-trivial: naive latency optimization can misassign operator-level credit and degrade task accuracy. To address this gap, we propose Latency-Aware Multi-agent System (LAMaS), a latency-aware orchestration framework for learning-based multi-agent systems. LAMaS addresses this challenge at two levels: at training time, it learns latency-aware execution graphs through constrained optimization with critical-path-aware credit assignment; at inference time, since a graph committed at training time cannot exploit runtime evidence, it complements graph construction with a lightweight controller that adaptively eliminates redundant future agent interactions as execution unfolds. Experiments on four benchmarks show that LAMaS achieves the best latency among evaluated learning-based MAS baselines, reducing end-to-end latency by over 50\% while maintaining competitive or better accuracy. LAMaS is also modular and transfers to other MAS with minimal changes, consistently yielding latency reductions.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>MetaInfer: A Knowledge Only LLM Inference Engine Generator SKILL Toolbox</title>
-    <link href="http://arxiv.org/abs/2607.12875v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.12875v1</id>
-    <published>2026-07-14T00:00:00Z</published>
-    <updated>2026-07-14T00:00:00Z</updated>
-    <author>
-      <name>Zhenwen Miao</name>
-    </author>
-    <author>
-      <name>Honglin Wang</name>
-    </author>
-    <author>
-      <name>Mingheng Mi</name>
-    </author>
-    <summary type="text">As LLM technology advances, the space of model families, compute hardware, quantization schemes, parallelization strategies, and specialized optimization kernels continues to expand, sharply increasing the code complexity and maintenance cost of general-purpose inference frameworks. Conventional software engineering uses multiple layers of abstraction to support diverse application scenarios, but these abstractions also increase system complexity and may introduce additional performance overhead. This paper presents metainfer, an 'LLM-as-Compiler' approach in which users specify only the runtime constraints of an inference program. An LLM-driven multi-agent collaboration system, coupled with a contract knowledge base, then automatically generates a compact customized inference framework that satisfies these constraints. We evaluate metainfer from three perspectives: the effect of source-code reference, the runtime behavior and performance profile of engines generated under the zero-reference constraint on CKB-covered targets, and knowledge-base evolution for new model and platform scenarios. The results show that metainfer organizes generation constraints, validation feedback, and knowledge consolidation into a continuous closed loop, enabling runnable customized inference solutions to be generated from explicit knowledge. The code is publicly available at https://github.com/MetaInfer/MetaInfer.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/MetaInfer/MetaInfer"&gt;https://github.com/MetaInfer/MetaInfer&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.SE" />
   </entry>
 </feed>
