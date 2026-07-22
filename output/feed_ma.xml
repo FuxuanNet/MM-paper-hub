@@ -4,12 +4,36 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-21T04:30:45Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 26 entries</subtitle>
+  <updated>2026-07-22T04:29:45Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 24 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Strategy-Following Multi-Agent Deep Reinforcement Learning Considering Control Strategies Provided to Other Agents</title>
+    <link href="http://arxiv.org/abs/2607.18719v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.18719v1</id>
+    <published>2026-07-21T00:00:00Z</published>
+    <updated>2026-07-21T00:00:00Z</updated>
+    <author>
+      <name>Yamato Takahagi</name>
+    </author>
+    <author>
+      <name>Gentoku Nakasone</name>
+    </author>
+    <author>
+      <name>Yoshinari Motokawa</name>
+    </author>
+    <author>
+      <name>Toshiharu Sugawara</name>
+    </author>
+    <summary type="text">This study proposes a learning method for multi-agent systems that allows agents to be controlled through human manager instructions after learning and enables uninstructed agents to implicitly complement the overall work based on the actions of other agents. Multi-agent applications using deep learning have shown potential; thus, to achieve extensive social applications, humans should be able to control learned agents using simple methods to respond to environmental and social changes. Even without such changes, learned coordination often does not match the expectations of human managers, making it preferable to control coordination structures to match human intentions. Some studies have aimed to control agent behavior using simple instructions. However, they assumed that instructions are provided to all agents, which is time-consuming and not evident when designing a better cooperation regime. Ideally, specific agents should receive key action instructions, while others should automatically complete the remaining tasks. The proposed method, which extends previous work on controllability in multi-agent deep reinforcement learning, enables uninstructed agents to adaptively complement overlooked tasks and areas. The experimental results show that agents using the proposed method can shift to another cooperative structure and achieve better performance than those using conventional methods.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 14 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning</title>
     <link href="http://arxiv.org/abs/2607.18142v1" rel="alternate" type="text/html" />
@@ -138,6 +162,47 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="econ.GN; eess.SY" />
+  </entry>
+  <entry>
+    <title>Scalable Policy Optimization for Networked Multi-Agent Reinforcement Learning with Continuous State-Action Spaces</title>
+    <link href="http://arxiv.org/abs/2607.18554v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.18554v1</id>
+    <published>2026-07-20T00:00:00Z</published>
+    <updated>2026-07-20T00:00:00Z</updated>
+    <author>
+      <name>Dongming Wang</name>
+    </author>
+    <author>
+      <name>Pengcheng Dai</name>
+    </author>
+    <author>
+      <name>Wenwu Yu</name>
+    </author>
+    <author>
+      <name>Wei Ren</name>
+    </author>
+    <summary type="text">We develop the Continuous Distributed Coupled Policy Gradient (CDCPG) algorithm for cooperative reinforcement learning in networked Markov decision processes with continuous state and action spaces. Each agent maintains a local actor over a bounded graph neighborhood, and a localized least-squares temporal-difference critic evaluates a truncated action-value function through a spectral random-feature representation of the local transition kernel. The analysis makes four contributions. First, the truncated action-value function is constructed as a conditional expectation over the neighborhood, yielding a well-posed localized Bellman theory that removes the continuation-kernel mismatch of naive truncation arguments. Second, we expose a dimensional obstruction to temporal-difference stability for normalized random features and prove an unconditional excitation bound that reduces stability to a symmetric persistence-of-excitation condition, monitorable through an online matrix-concentration certificate. Third, under exponential spatial decay of agent interactions, the excitation condition, and smoothness of the objective, CDCPG drives an averaged per-agent stationarity measure to within any excess $ε$ of an explicitly characterized approximation floor using $\widetilde{\mathcal{O}}(ε^{-2})$ shared-oracle samples, and the excess dependence matches the smooth nonconvex first-order rate; per-agent computation and communication are governed by the neighborhood size rather than the network size. Fourth, an adaptive-locality rule selects the radius that balances truncation and graph-decay residuals against the target accuracy. Experiments on a networked linear-quadratic benchmark corroborate the locality and feature-dimension predictions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Decentralized Multi-agent Reinforcement Learning for Resilient Critical Infrastructures</title>
+    <link href="http://arxiv.org/abs/2607.18359v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.18359v1</id>
+    <published>2026-07-20T00:00:00Z</published>
+    <updated>2026-07-20T00:00:00Z</updated>
+    <author>
+      <name>Minghui Ding</name>
+    </author>
+    <author>
+      <name>Evangelos Pournaras</name>
+    </author>
+    <summary type="text">Critical infrastructures are increasingly distributed, interdependent, and exposed to evolving disruptions, making resilience a central requirement for their operation and control. This paper argues that decentralized multi-agent reinforcement learning (MARL) should be understood not merely as a distributed alternative to centralized training with decentralized execution but as a paradigm structurally aligned with the requirements of resilient critical infrastructures. This perspective is grounded in an analysis of the properties of decentralized MARL and the requirements of critical infrastructures, including scalability to large numbers of agents, support for privacy and local autonomy, robustness to failures, and interaction-driven adaptation among interdependent components. However, structural alignment alone is insufficient for practical deployment. This paper identifies credit assignment and communication as two central conditions for its practical feasibility. Credit assignment determines whether local learning remains aligned with system-level objectives, while communication determines whether coordination can be learned and maintained under realistic operational constraints. Building on these challenges, this paper proposes a research agenda focused on structure-aware, causality-aware, and resilience-aware credit assignment; communication for both coordination and credit assignment; and safe, timely, and recoverable decentralized learning under deployment constraints. Overall, this paper reframes decentralized MARL as a promising but conditional foundation for resilient critical infrastructures.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the 2026 IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS 2026)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Machine Learning" />
   </entry>
   <entry>
     <title>The Optimization Trilemma: Efficiency, Comfort and Fairness in Decentralized Multi-agent Coordination</title>
@@ -525,117 +590,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence; cs.CR" />
-  </entry>
-  <entry>
-    <title>Pezego-HITL: A policy-grounded large language model architecture for agricultural extension in Ghana</title>
-    <link href="http://arxiv.org/abs/2607.13934v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.13934v1</id>
-    <published>2026-07-15T00:00:00Z</published>
-    <updated>2026-07-15T00:00:00Z</updated>
-    <author>
-      <name>Shunbao Li</name>
-    </author>
-    <author>
-      <name>Zhipeng Yuan</name>
-    </author>
-    <author>
-      <name>Amoako Ofori</name>
-    </author>
-    <author>
-      <name>Benedicta Y. Fosu-Mensah</name>
-    </author>
-    <author>
-      <name>Yang Li</name>
-    </author>
-    <author>
-      <name>Manu Kenchappa Junjanna</name>
-    </author>
-    <author>
-      <name>Qing Xue</name>
-    </author>
-    <author>
-      <name>Po Yang</name>
-    </author>
-    <summary type="text">Large language models are increasingly deployed in agricultural decision-support settings, yet high-stakes crop protection in smallholder agriculture requires more than output-quality benchmarks. Over a two-year design and evaluation programme, we formalise policy-constrained large language model assessment as an adaptive compute allocation problem that jointly captures safety compliance, helpfulness, operational latency, and expert supervision workload. We introduce P-EVAL (Policy-grounded Expert-calibrated VALidation protocol), a unified evaluation framework for policy-grounded decision support, evaluating the architecture on a simulated field query database consisting of 1,240 cases. The protocol is instantiated on the Pezego advisory architecture (Pezego-HITL) and evaluated in Ghana. Following offline judge calibration against gold-standard human expert decisions ($κ= 0.77$), we evaluate the architectural performance under simulated query workloads. Under P-EVAL, our memory-routed architecture improves the Policy Alignment Rate (PAR) to 0.94 and the Agronomic Utility Rate (AUR) to 0.95, while reducing P95 latency by 55% (from 28.6s to 12.9s) through a 59.6% cache reuse ratio. We also demonstrate generalisability using the open-source \texttt{Qwen3.5-9B-DeepSeek-V4-Flash} model, achieving a PAR of 0.86 and a 54.5% latency reduction (to 10.2s). To evaluate practical utility and socio-technical integration, we administer detailed questionnaires to Ghanaian Extension Services Officers ($N=30$) and smallholder farmers ($N=36$). Taken together, this work demonstrates how policy-grounded structured retrieval-augmented generation with validated-memory routing makes safety-utility-latency trade-offs explicit, offering a scalable template for trustworthy AI-driven extension in smallholder farming systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Social Simulations: from Agent-Based Modeling to Digital Twins</title>
-    <link href="http://arxiv.org/abs/2607.13693v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.13693v1</id>
-    <published>2026-07-15T00:00:00Z</published>
-    <updated>2026-07-15T00:00:00Z</updated>
-    <author>
-      <name>Erica Cau</name>
-    </author>
-    <author>
-      <name>Andrea Failla</name>
-    </author>
-    <author>
-      <name>Valentina Pansanella</name>
-    </author>
-    <author>
-      <name>Giulio Rossetti</name>
-    </author>
-    <summary type="text">This book chapter covers the evolution of social simulation from classical agent-based models, in which agents interact according to explicitly defined behavioral rules, to AI-enhanced simulations based on Large Language Models and, ultimately, Social Digital Twins: high-fidelity, data-driven representations of real-world socio-technical systems. Along this trajectory, we discuss the main methodological foundations, applications, advantages, and limitations of each paradigm, highlighting the progressive shift from abstract models designed to investigate general social mechanisms toward increasingly realistic computational representations of specific social systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Entry for Encyclopedia of Social Network Analysis and Mining&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.SI; physics.soc-ph" />
-  </entry>
-  <entry>
-    <title>Extending Liquid Rank Toward Multi-Source Reputation Aggregation</title>
-    <link href="http://arxiv.org/abs/2607.13615v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.13615v1</id>
-    <published>2026-07-15T00:00:00Z</published>
-    <updated>2026-07-15T00:00:00Z</updated>
-    <author>
-      <name>Nejc Znidar</name>
-    </author>
-    <author>
-      <name>Anton Kolonin</name>
-    </author>
-    <summary type="text">In this paper, we present an extension of liquid rank reputation systems that enables the aggregation and blending of multiple heterogeneous reputation sources into a unified reputation score. The proposed framework supports the incorporation of external reputational signals alongside internally generated reputation, allowing influence to reflect participation and contribution across multiple contexts and subsystems. By introducing explicit weighting and blending mechanisms, the model provides fine-grained control over the relative impact of individual reputation sources, making it adaptable to diverse governance and coordination scenarios involving both human and machine agents. The resulting approach extends existing liquid rank systems and offers a flexible foundation for designing reputation-based governance mechanisms in complex socio-technical environments.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.CY" />
-  </entry>
-  <entry>
-    <title>Equilibrium stability as a driver of cooperation among Q-learners</title>
-    <link href="http://arxiv.org/abs/2607.13607v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.13607v1</id>
-    <published>2026-07-15T00:00:00Z</published>
-    <updated>2026-07-15T00:00:00Z</updated>
-    <author>
-      <name>Janusz M. Meylahn</name>
-    </author>
-    <author>
-      <name>Maximilian Schäfer</name>
-    </author>
-    <summary type="text">Algorithmic collusion among pricing algorithms has raised concerns about sustained supra-competitive prices and their implications for social welfare. Existing work has largely focused on the probability that reinforcement-learning algorithms converge to cooperative strategies, typically under the assumption that exploration vanishes over time. Motivated by the observation that algorithms deployed in practice are likely to continue exploring in order to remain adaptive to changing environments, we study learning dynamics under constant exploration. In this setting, the relevant question is no longer whether an algorithm converges to a particular strategy profile, but rather what fraction of time the algorithms spend playing cooperative strategies. Even in the benchmark case of the repeated Prisoner's Dilemma with one-period memory, this yields high-dimensional stochastic learning dynamics, for which a complete analytic treatment is intractable. We show that cooperative strategies can be dominant in this time-averaged sense and derive a boundary predicting when such dominance arises, based on the expected dynamics of the Q-learning process. Extensive simulations show that this boundary is a strong predictor for non-defection-dominated behaviour under epsilon-greedy Q-learning.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 35 pages, 14 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="econ.GN; econ.TH" />
-  </entry>
-  <entry>
-    <title>Learning Latency-Aware Orchestration for Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2607.13359v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.13359v1</id>
-    <published>2026-07-15T00:00:00Z</published>
-    <updated>2026-07-15T00:00:00Z</updated>
-    <author>
-      <name>Xi Shi</name>
-    </author>
-    <author>
-      <name>Mengxin Zheng</name>
-    </author>
-    <author>
-      <name>Qian Lou</name>
-    </author>
-    <summary type="text">Multi-agent systems (MAS) coordinate multiple LLM-powered agents through structured workflows, gaining reasoning power but incurring high inference latency from multi-step execution and repeated model invocations. Existing orchestration methods primarily optimize task performance and inference cost, leaving latency largely unaddressed. In MAS, end-to-end latency is governed by the critical execution path, so reducing total cost alone does not reliably reduce latency. Moreover, optimizing latency while preserving accuracy remains non-trivial: naive latency optimization can misassign operator-level credit and degrade task accuracy. To address this gap, we propose Latency-Aware Multi-agent System (LAMaS), a latency-aware orchestration framework for learning-based multi-agent systems. LAMaS addresses this challenge at two levels: at training time, it learns latency-aware execution graphs through constrained optimization with critical-path-aware credit assignment; at inference time, since a graph committed at training time cannot exploit runtime evidence, it complements graph construction with a lightweight controller that adaptively eliminates redundant future agent interactions as execution unfolds. Experiments on four benchmarks show that LAMaS achieves the best latency among evaluated learning-based MAS baselines, reducing end-to-end latency by over 50\% while maintaining competitive or better accuracy. LAMaS is also modular and transfers to other MAS with minimal changes, consistently yielding latency reductions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
   </entry>
 </feed>
