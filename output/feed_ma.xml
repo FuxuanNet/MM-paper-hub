@@ -4,12 +4,144 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-27T04:40:41Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 13 entries</subtitle>
+  <updated>2026-07-28T04:20:42Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 18 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Decentralised Consensus Learning Networks: SME Rotation Without Centralised Reward</title>
+    <link href="http://arxiv.org/abs/2607.24416v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.24416v1</id>
+    <published>2026-07-27T00:00:00Z</published>
+    <updated>2026-07-27T00:00:00Z</updated>
+    <author>
+      <name>Florin Neagu</name>
+    </author>
+    <summary type="text">Centralised reward signals dominate modern AI learning systems, but they impose a single external definition of correct or valuable knowledge. We present a decentralised, consensus-based multi-agent learning framework in which expertise emerges through peer validation rather than prescribed reward. Agents update beliefs via weighted social consensus, while trust is allocated according to competence inferred from peer consistency instead of ground truth. Subject-matter expert (SME) status is assigned dynamically as a top-percentile competence rank rather than a fixed label.   We evaluate the framework across 84 simulation runs spanning 30 to 10,000 agents, multiple graph topologies, sparse large-scale networks, scalar and vector belief representations, dimensionality sweeps (D=1-500), multi-seed robustness tests, and parameter sensitivity analyses. Phase 1 shows that SME rotation is robust, persistent, topology-invariant, and scale-invariant: 90-100% of agents attain SME status, with most expertise turnover occurring after belief convergence and increasing with network size. Phases 2 and 3 show that vector beliefs introduce heterogeneous convergence with cascade dynamics and reveal five distinct dynamical regimes as belief dimensionality increases. At high dimensionality (D=150-200), the network reaches stable partial consensus while expertise becomes increasingly concentrated in a single agent. ETA sensitivity analysis demonstrates that this concentration is driven by belief dimensionality rather than stochastic noise. We interpret this behaviour as an emergent property of decentralised learning: in complex high-dimensional consensus spaces, the agent most consistently aligned with the collective belief naturally emerges as the recognised expert.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Moral Hazard in Multi-Agent Language Models</title>
+    <link href="http://arxiv.org/abs/2607.23982v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.23982v1</id>
+    <published>2026-07-27T00:00:00Z</published>
+    <updated>2026-07-27T00:00:00Z</updated>
+    <author>
+      <name>Dane Malenfant</name>
+    </author>
+    <summary type="text">Cooperation can fail when socially valuable effort is costly, weakly observable, and mainly benefits others. Drawing on Holmström's team moral-hazard model, we introduce the Dialogue Moral Hazard Game, a controlled textual game that operationalizes this hidden-action structure for language agents. In each episode, an agent can preserve an immediate local reward or pay a query cost to reveal a hidden safety fact that primarily helps another agent's downstream decision. We evaluate seven open-weight language models and decompose behavior into query use, realized information transfer, local-reward preservation, unsafe choice, format validity, and team success. Base models commonly preserve local reward without team success or query without communicating information that changes the final decision. We then use supervised fine-tuning, RLOO, sequential SFT+RLOO, and GEPA prompt optimization as diagnostic update mechanisms. Their effects are heterogeneous: OLMo-7B shows the clearest mechanism-consistent weight-level improvement, whereas GEPA sometimes improves team success while reducing or eliminating costly queries. Thus, optimization can shift aggregate reward without recovering the intended cooperative mechanism, motivating evaluations that report mechanism-level behavior rather than team success alone.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to the Second Workshop on Social Simulation with LLMS: Fidelity in Applications at COLM 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>SimBEV2X: A Large-Scale Dataset and Data Generation Tool for Multi-Task Vehicle-to-Everything Cooperative Perception</title>
+    <link href="http://arxiv.org/abs/2607.23910v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.23910v1</id>
+    <published>2026-07-27T00:00:00Z</published>
+    <updated>2026-07-27T00:00:00Z</updated>
+    <author>
+      <name>Goodarz Mehr</name>
+    </author>
+    <author>
+      <name>Sepideh Gohari</name>
+    </author>
+    <author>
+      <name>Montasir Abbas</name>
+    </author>
+    <author>
+      <name>Azim Eskandarian</name>
+    </author>
+    <summary type="text">Cooperative perception through vehicle-to-everything (V2X) communication can overcome the inherent physical limitations of individual autonomous vehicles, such as occlusions and limited sensor range. However, the development of robust V2X algorithms, particularly those relying on unified spatial representations like bird's-eye view (BEV) representation, is hampered by the lack of large-scale, multi-modal, multi-task datasets. Moreover, collecting and annotating a large set of synchronized, real-world multi-agent data is prohibitively expensive. This has resulted in a landscape where existing V2X datasets are notably limited in both size and scope. To overcome this, we introduce SimBEV2X, an advanced synthetic data generation tool built on the CARLA simulator. SimBEV2X automatically creates randomized driving scenarios to collect multi-modal sensor data alongside various types of ground truth including 3D bounding boxes with unique track IDs, HD map information, BEV segmentation maps, and semantic occupancy voxel grids from both vehicles and RSUs. We also present the SimBEV2X dataset, the largest V2X perception dataset to date. The dataset comprises 258 scenes, each involving up to 8 connected vehicles and up to 4 RSUs across a variety of road networks. The SimBEV2X dataset is an order of magnitude larger than existing V2X datasets and contains 102,200 frames, 588,520 lidar point clouds, more than 3 million images, over 27 million bounding boxes, and a comprehensive set of other annotations. Finally, we establish a strong baseline on the SimBEV2X dataset using CoopDet3D and propose CoBEVFusion, a novel architecture that combines CoopDet3D with fused axial attention (FAX) for context-aware multi-agent feature aggregation, resulting in superior performance. SimBEV2X, the SimBEV2X dataset, and CoBEVFusion are available at https://simbev2x.org and https://github.com/GoodarzMehr/SimBEV2X.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/GoodarzMehr/SimBEV2X"&gt;https://github.com/GoodarzMehr/SimBEV2X&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to IEEE for review&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning; Multiagent Systems; Robotics" />
+  </entry>
+  <entry>
+    <title>A Comparative Study of MCP and A2A for Inter-Agent Coordination in LLM-Based Systems</title>
+    <link href="http://arxiv.org/abs/2607.23884v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.23884v1</id>
+    <published>2026-07-26T00:00:00Z</published>
+    <updated>2026-07-26T00:00:00Z</updated>
+    <author>
+      <name>Ionut Predoaia</name>
+    </author>
+    <author>
+      <name>Tuong Manh Vu</name>
+    </author>
+    <author>
+      <name>Konstantinos Barmpis</name>
+    </author>
+    <author>
+      <name>Dimitris Kolovos</name>
+    </author>
+    <author>
+      <name>Antonio García-Domínguez</name>
+    </author>
+    <summary type="text">Recent industry practice has seen the rapid emergence of agentic systems composed of heterogeneous, tool- and LLM-mediated agent components, raising practical questions about inter-agent coordination and protocol design. This paper presents an implementation-grounded comparison of the Model Context Protocol (MCP) and the Agent2Agent (A2A) protocol, from a multi-agent systems engineering perspective, using an inter-agent coordination scenario involving LLM-based agents. We evaluate an MCP-based and an A2A-based multi-agent implementation of the same software engineering task against a set of requirements derived from prior literature and discussions with industry partners, including agent discoverability, multi-part messaging, multi-turn conversations, asynchronous communication, observability, interoperability, and access control. The results evidence that MCP can support inter-agent coordination in constrained LLM-based systems through a comparatively lightweight implementation model with lower coordination complexity, although coordination concerns such as conversational state management and task lifecycle handling must be implemented explicitly at the application layer. In contrast, A2A provides richer native support for stateful, multi-turn coordination through protocol-level abstractions for tasks and lifecycle management, but this comes with substantially greater implementation and coordination complexity. Given the narrow scope of the evaluated coordination pattern, these findings are presented as design observations from an empirical experience report rather than general claims of protocol suitability or superiority across broader classes of MAS, highlighting trade-offs and how protocol abstractions shape the distribution of coordination responsibilities in contemporary agentic systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>MulRobBench: A Decision-Level Benchmark for Safe and Security-Policy-Compliant Multimodal UAV Agents</title>
+    <link href="http://arxiv.org/abs/2607.23870v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.23870v1</id>
+    <published>2026-07-26T00:00:00Z</published>
+    <updated>2026-07-26T00:00:00Z</updated>
+    <author>
+      <name>Belal S. Alsinglawi</name>
+    </author>
+    <author>
+      <name>Weizheng Wang</name>
+    </author>
+    <author>
+      <name>Junyi Wu</name>
+    </author>
+    <author>
+      <name>Yi Jiang</name>
+    </author>
+    <author>
+      <name>Lianhai Lin</name>
+    </author>
+    <author>
+      <name>Merouane Debbah</name>
+    </author>
+    <author>
+      <name>Izzat Alsmadi</name>
+    </author>
+    <summary type="text">Smart-city airspace is transforming Uncrewed Aerial Vehicles (UAVs) from passive sensing platforms into cyber-physical decision makers that must follow operational rules under degraded observations and ambiguous language. Existing UAV and multimodal benchmarks evaluate perception, navigation, collaboration, and reasoning, but few assess whether physical evidence, protocol constraints, and action risk remain coupled during critical decisions. We introduce MulRobBench, an offline, protocol-conditioned benchmark for Vision-Language-Action (VLA) UAV agents in smart-city environments. MulRobBench integrates real UAV multimodal observations, protocol-level security policies, and action-level cyber-physical safety into a unified evaluation framework. The benchmark contains 3,024 samples spanning 17 task taxonomy nodes and 12 scoring dimensions across four stages: operational context understanding, multimodal evidence arbitration, degradation-aware reasoning, and risk-aware action planning. Evaluation combines semantic scoring with structural diagnostics, including policy compliance, format compliance, unsafe actions, parsing failures, and dimension-level validity. Across 17 multimodal models, the best semantic protocol-decision score reaches only 0.5141, while the best strict mean scoring-dimension accuracy is 0.1599. A controlled 20-anchor modality-ablation study changes 4-15 action selections per model, confirming that both visual and textual inputs influence decisions. Analysis identifies modality-trust selection, constraint extraction, glare, missing data, and operator shorthand as the primary causes of decision instability. MulRobBench provides a reproducible benchmark for trustworthy multimodal UAV decision making under realistic operational constraints.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 22 pages, 18 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Emergent Behaviour in Financial Markets</title>
+    <link href="http://arxiv.org/abs/2607.23311v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.23311v1</id>
+    <published>2026-07-25T00:00:00Z</published>
+    <updated>2026-07-25T00:00:00Z</updated>
+    <author>
+      <name>Omar Inverso</name>
+    </author>
+    <author>
+      <name>Emilio Tuosto</name>
+    </author>
+    <author>
+      <name>Dragisa Zunic</name>
+    </author>
+    <summary type="text">Some properties of so-called complex or collective systems can be observed to emerge from the interactions of elementary agents. This phenomenon, known as emergent behaviour, has long since been studied in the most diverse disciplines, with recent growing awareness from the formal methods community about the opportunity of opening up to seemingly distant disciplines with appropriate technology for computer-aided reasoning. Different peculiar elements of complexity make automated reasoning on these systems particularly challenging. We consider electronic financial markets to drive our discussion. We identify and structure the sources of complexity to tackle in order to provide computational support for the analysis of emergent phenomena. We refrain from evaluating the suitability of specific technical solutions or frameworks of preference, which would as usual require simplifying assumptions and divert from the actual phenomenon of interest. Rather, we elaborate on possible alternatives to handle some of the main technical aspects involved in automated analysis, while retaining a solid and concrete interpretation of the domain, and in doing so outline a more systematic research program for the formal specification and analysis of market mechanisms.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ISoLA 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>Where FactsGo Missing: A LayerwiseTaxonomy and Per-Layer Attribution of Information Omissionin Air-Gapped LLM Agent Pipelines</title>
     <link href="http://arxiv.org/abs/2607.22448v1" rel="alternate" type="text/html" />
@@ -138,6 +270,20 @@
     <category term="Artificial Intelligence; econ.GN" />
   </entry>
   <entry>
+    <title>Spectral Dynamics of Semantic Drift in Clinical Multi-Agent Language Model Networks</title>
+    <link href="http://arxiv.org/abs/2607.22758v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.22758v1</id>
+    <published>2026-07-23T00:00:00Z</published>
+    <updated>2026-07-23T00:00:00Z</updated>
+    <author>
+      <name>Amritesh Banerjee</name>
+    </author>
+    <summary type="text">The integration of iterative LLMs within multi-agent diagnostic frameworks requires a rigorous quantitative reevaluation of underlying communication topologies. Frequently used architectural paradigms depend on scale-free or small-world networks, assuming optimal communication efficiency. Our study mathematically dismantles that assumption for semantic data. By mapping multi-agent communication uncertainty trajectories onto a 768-dimensional Bio_ClinicalBERT embedding space via an analytical isotropic variance proxy using Barab'asi--Albert (BA) and Watts--Strogatz (WS) networks, we prove that structural bottlenecks compromise diagnostic safety. Our phase transition matrices illustrate that localized dense cliques confine hallucinated data, preventing global consensus and forcing the system toward a permanent entropy saturation threshold of $H_{\infty} \approx 5.947$. As a result, we measure a severe terminal cosine similarity degradation of 53.29%, completely overwriting the original ground-truth. Moreover, the terminal semantic drift reveals a catastrophic variance amplification of 51.81% ($ρ= 1.5181$) in highly clustered architectures, proving total system unpredictability when compared to Erdős--R'enyi configurations ($ρ= 1.0766$). Instead of reducing errors, hub-centric systems autonomously compound localized hallucinations. By introducing dynamic spectral monitoring operating at an $\mathcal{O}(N^3)$ time complexity and imposing a strict lower bound on algebraic connectivity ($λ_{2_{min}}$) via the continuous eigen-decomposition of the graph Laplacian, we present a mathematically rigorous technique to ensure global state diffusion. Securing the reliability of autonomous medical diagnostics necessitates treating topological stability as a non-negotiable quantitative imperative.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
     <title>Harnessing Disagreement: Detecting Correlated Agreement Blindness in Multi-Agent Triage</title>
     <link href="http://arxiv.org/abs/2607.19899v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2607.19899v1</id>
@@ -259,53 +405,6 @@
     </author>
     <summary type="text">LLM-based agents increasingly operate in multi-agent ecosystems where a coordinating agent chooses which other agents to work with, and agents are increasingly given personalities through persona prompts. However, whether personality itself influences this endogenous partner choice has not been sufficiently examined: prior work on personality in multi-agent teams has typically fixed team composition exogenously. We present a controlled selection paradigm in which a host agent chooses among six candidate agents that differ only in their Big Five personality descriptions, with capability explicitly equalized (375 trials across five task categories). We find that selection is strongly and systematically personality-dependent. Neutral hosts matched personalities to task types, choosing the open candidate for creative work and the conscientious candidate for most other categories, while the extraverted, agreeable, and balanced candidates were almost never chosen, despite human evidence that agreeableness is among the most performance-relevant traits for teams. Hosts that were themselves assigned personalities selected self-similar partners below chance and chose partners farther from themselves in trait space than random choice would produce. These results suggest that hosts read personality descriptions as signals of task fit rather than as grounds for similarity-based attraction: selection follows task stereotypes and favors complements, the opposite of human homophily. Our findings have direct implications for bias auditing in agent marketplaces and orchestration frameworks.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Strategy-Following Multi-Agent Deep Reinforcement Learning Considering Control Strategies Provided to Other Agents</title>
-    <link href="http://arxiv.org/abs/2607.18719v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.18719v1</id>
-    <published>2026-07-21T00:00:00Z</published>
-    <updated>2026-07-21T00:00:00Z</updated>
-    <author>
-      <name>Yamato Takahagi</name>
-    </author>
-    <author>
-      <name>Gentoku Nakasone</name>
-    </author>
-    <author>
-      <name>Yoshinari Motokawa</name>
-    </author>
-    <author>
-      <name>Toshiharu Sugawara</name>
-    </author>
-    <summary type="text">This study proposes a learning method for multi-agent systems that allows agents to be controlled through human manager instructions after learning and enables uninstructed agents to implicitly complement the overall work based on the actions of other agents. Multi-agent applications using deep learning have shown potential; thus, to achieve extensive social applications, humans should be able to control learned agents using simple methods to respond to environmental and social changes. Even without such changes, learned coordination often does not match the expectations of human managers, making it preferable to control coordination structures to match human intentions. Some studies have aimed to control agent behavior using simple instructions. However, they assumed that instructions are provided to all agents, which is time-consuming and not evident when designing a better cooperation regime. Ideally, specific agents should receive key action instructions, while others should automatically complete the remaining tasks. The proposed method, which extends previous work on controllability in multi-agent deep reinforcement learning, enables uninstructed agents to adaptively complement overlooked tasks and areas. The experimental results show that agents using the proposed method can shift to another cooperative structure and achieve better performance than those using conventional methods.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 14 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>CHMAS: A Coupled Hierarchical Framework for Multi-Agent Reinforcement Learning</title>
-    <link href="http://arxiv.org/abs/2607.19555v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.19555v1</id>
-    <published>2026-07-21T00:00:00Z</published>
-    <updated>2026-07-21T00:00:00Z</updated>
-    <author>
-      <name>Dongming Wang</name>
-    </author>
-    <author>
-      <name>Jie Xu</name>
-    </author>
-    <author>
-      <name>Yanyu Zhang</name>
-    </author>
-    <author>
-      <name>Wei Ren</name>
-    </author>
-    <summary type="text">Multi-agent reinforcement learning (MARL) systems face fundamental   challenges in balancing global coordination with local execution   across different temporal scales. This paper introduces the Coupled   Hierarchical Multi-Agent System (CHMAS), a novel framework that   decomposes multi-agent decision-making into centralized strategic   planning and distributed tactical execution with bidirectional   information flow. The strategic layer integrates all agents' states   with an exclusive global environmental state to generate guidance   actions every $T$ timesteps, while tactical agents execute   distributed policies augmented by strategic guidance and local   neighborhood observations. Unlike existing hierarchical approaches   with unidirectional control, CHMAS establishes a feedback mechanism   where accumulated tactical rewards influence strategic objectives   through a coupling coefficient $λ$, ensuring strategic plans   remain grounded in tactical feasibility. To address the   non-stationarity inherent in hierarchical learning, we propose an   asynchronous update protocol where strategic parameters update every   $N_f$ tactical episodes, allowing tactical policies to converge to   quasi-stationary points between strategic changes. We present both a   general bi-level formulation capturing full system dynamics and a   tractable additive approximation enabling rigorous analysis.   Theoretical analysis proves that this asynchronous scheme achieves   $\mathcal{O}(\log K/\sqrt{K})$ convergence for the strategic layer   after $K$ strategic updates under standard assumptions. Experimental   validation in a multi-agent foraging domain demonstrates successful   learning of spatially partitioned exploration strategies, with both   layers converging stably despite hierarchical coupling.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Presented at the 2026 American Control Conference (ACC 2026). This version corrects the author names in Reference 1. The technical content, results, and conclusions are unchanged&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
 </feed>
