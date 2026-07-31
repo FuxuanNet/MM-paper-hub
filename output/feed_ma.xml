@@ -4,12 +4,166 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-30T04:14:58Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 24 entries</subtitle>
+  <updated>2026-07-31T04:35:09Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 28 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Using Theory of Mind to Arbitrate between Social and Non-social Learning</title>
+    <link href="http://arxiv.org/abs/2607.28601v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.28601v1</id>
+    <published>2026-07-30T00:00:00Z</published>
+    <updated>2026-07-30T00:00:00Z</updated>
+    <author>
+      <name>Lance Ying</name>
+    </author>
+    <author>
+      <name>Ryan Truong</name>
+    </author>
+    <author>
+      <name>Joshua B. Tenenbaum</name>
+    </author>
+    <author>
+      <name>Samuel J. Gershman</name>
+    </author>
+    <summary type="text">Social learning is a powerful mechanism through which agents learn about the world from others. However, humans sometimes choose direct experience over social learning, which can carry time and cognitive resource costs. How do people balance social and non-social learning? We propose a Rational Mentalizing model of the decision to engage in social learning. This model estimates the utility of social learning by reasoning about another agent's goal and the informativeness of their future actions. It then weighs the utility of social learning against the utility of non-social learning. Using a novel game where players choose between observing other agents or exploring the environment, we show that the Rational Mentalizing model can quantitatively capture human trade-offs between these strategies. These findings suggest that selective social learning is guided by 'Theory of Mind' in the service of utility maximization.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 35 pages, includes supplementary information&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="q-bio.NC" />
+  </entry>
+  <entry>
+    <title>AgentRadio: Passive Awareness for Long-Horizon Multi-Agent Collaboration</title>
+    <link href="http://arxiv.org/abs/2607.28430v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.28430v1</id>
+    <published>2026-07-30T00:00:00Z</published>
+    <updated>2026-07-30T00:00:00Z</updated>
+    <author>
+      <name>Xinxing Ren</name>
+    </author>
+    <author>
+      <name>Qianbo Zang</name>
+    </author>
+    <author>
+      <name>Ziyan Wang</name>
+    </author>
+    <author>
+      <name>Caelum Forder</name>
+    </author>
+    <author>
+      <name>Suman Deb</name>
+    </author>
+    <author>
+      <name>Peter Carroll</name>
+    </author>
+    <author>
+      <name>Zekun Guo</name>
+    </author>
+    <summary type="text">Understanding large codebases is a long-horizon task for Large Language Model (LLM) agents: answering a single question can require building and running the software, tracing execution across files, and synthesizing evidence over tens of minutes. On SWE-Atlas QnA, a benchmark of long-horizon questions over production repositories, a single Claude Code agent (Opus 4.6) resolves only 32.3% of tasks. Dividing the work among agents with clean contexts mitigates this limitation. However, the subtasks of code comprehension are interdependent. One agent's findings can rewrite another's task, so agents must coordinate during execution, not only at phase boundaries. Existing multi-agent systems support such exchange only between phases, through staged handoffs or synchronized rounds. Communication and work remain mutually exclusive. A discovery made mid-execution cannot be shared until the next boundary. We present AgentRadio, an asynchronous message-passing layer that equips coding-agent harnesses with three primitives: threads, messages, and waiting for mentions. The last runs as a background task, surfacing teammates' messages without interrupting foreground work, so each agent remains passively aware of its peers and folds new findings into its ongoing task. Under a five-phase protocol of division of labor and negotiation, four agents organized by AgentRadio resolve 62.1% of tasks, 29.8 points above a single agent and above Claude Code with the newer Opus 4.8 (57.2%). Rubric-level analysis shows the gain growing with task difficulty, consistent with mid-course correction as the underlying mechanism. Our code is available at https://github.com/Coral-Protocol/AgentRadio.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Coral-Protocol/AgentRadio"&gt;https://github.com/Coral-Protocol/AgentRadio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>VISA: A Structured Description Protocol for Agent-Based Simulation Models Towards Machine Reproducibility</title>
+    <link href="http://arxiv.org/abs/2607.28027v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.28027v1</id>
+    <published>2026-07-30T00:00:00Z</published>
+    <updated>2026-07-30T00:00:00Z</updated>
+    <author>
+      <name>Zhou He</name>
+    </author>
+    <summary type="text">Agent-based models (ABMs) are difficult to reproduce: their behavior is spread across prose narratives, platform-specific code, and implicit assumptions, so that two readers routinely reconstruct different models from the same documentation. We present VISA, a structured, symbol-based description protocol that specifies a model in eight interconnected tables---four at the agent level (Agent, Variable, Sensing, Internal Function) and four at the model level (Associated Data, Input/Output, Schedule, Validation)---under the principle of minimality with completeness. VISA makes a model machine-parseable and unambiguous via two artifacts: nineteen executable consistency rules that turn model validity into a checkable property, and three reusable LLM-executable skills (authoring, checking, and code generation) that operationalize the full author--check--code--reproduce loop. We validate the protocol on three external, independently authored ABMs spanning three platforms: we reproduce two cross-language (NetLogo to Python) directly from their VISA specifications, and we capture a third, an industrial AnyLogic model, in eight tables (passing all nineteen rules) while honestly demarcating where reproduction is blocked by a proprietary movement library and unavailable data---itself a transparency contribution. VISA moves the reproduction barrier from the model, where it is invisible, to a named, localized dependency, where it is actionable.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CE" />
+  </entry>
+  <entry>
+    <title>$Σ$-Mem: An Online Reliability Memory for LLM-based Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2607.27958v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.27958v1</id>
+    <published>2026-07-30T00:00:00Z</published>
+    <updated>2026-07-30T00:00:00Z</updated>
+    <author>
+      <name>Peilin Feng</name>
+    </author>
+    <author>
+      <name>Suorong Yang</name>
+    </author>
+    <author>
+      <name>Soujanya Poria</name>
+    </author>
+    <summary type="text">Memory is central to long-horizon LLM agents, yet existing memory systems primarily preserve interaction content rather than modeling which agents can be trusted and under what conditions. This limitation is particularly important in multi-agent systems, where a central model may be unable to directly verify plausible or correlated peer responses. We introduce $Σ$-Mem, an online reliability memory that records historical competence evidence for individual peers and peer relationship evidence across the peer set. Both forms of evidence are maintained as real symmetric states and updated from post-decision correctness feedback. By Weyl's inequality, the spectral change caused by each event-level update is bounded, enabling stable online adaptation without retraining the underlying models. $Σ$-Mem provides a general write-and-read interface: the same memory can be used for residual steering of a central model, response-free peer routing, or reliability-weighted voting. Across five Qwen-family models, $Σ$-Mem adapts to counterfactual reliability shifts and generalizes to unseen peers and task domains. Direct memory readouts also outperform majority voting and the best fixed peer over the full OOD evaluation set. Moreover, performance improves consistently as more correctness feedback becomes available, indicating that $Σ$-Mem progressively accumulates actionable reliability information. These results establish reliability memory as a reusable foundation for adaptive coordination in LLM-based multi-agent systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Argonaut: Interactive Visual Exploration for Distributed Optimization</title>
+    <link href="http://arxiv.org/abs/2607.27946v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.27946v1</id>
+    <published>2026-07-30T00:00:00Z</published>
+    <updated>2026-07-30T00:00:00Z</updated>
+    <author>
+      <name>Srijoni Majumdar</name>
+    </author>
+    <author>
+      <name>Chuhao Qin</name>
+    </author>
+    <author>
+      <name>Evangelos Pournaras</name>
+    </author>
+    <summary type="text">Distributed discrete-choice optimization in decentralized settings is often hard to explore and navigate: disentangling what other agents choose, how their choices are interdependent, and how they collectively reach a global objective quickly becomes intractable as the system scales. The major limitation is observability of the search process. Existing methods are largely centralized and offer limited support, visualizing only the final solution or providing algorithm backends over a fixed dataset, so how a solution is reached stays a black box. We present Argonaut, a lightweight, containerized optimization dashboard that enables interactive, visual exploration of the entire search process for multi-agent discrete-choice optimization in decentralized settings. Users upload datasets, construct agents and options, modify the decision space and its parameters on the fly, and run multiple algorithm backends to inspect how each configuration shapes local agent decisions and the resulting global objective. By uniting system construction, optimization, and analysis in one interactive loop, the first of its kind, Argonaut makes distributed discrete-choice optimization a human-in-the-loop process rather than a one-shot, black-box computation. We evaluate Argonaut on real-world household-electricity, shared-mobility, and sensor-data-exchange datasets scaling to 5600 agents and up to 1M solutions under brute force. Built on a Node.js interface with extensible Java and Python optimization backends, it maintains a typical runtime of 200 agents over 100 decision attributes in under 30 seconds.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ACSOS 2026 [artifacts track]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.DC" />
+  </entry>
+  <entry>
+    <title>Scaling LLM-Driven Multi-Agent Systems: Design Principles and Architectural Scalability Analysis</title>
+    <link href="http://arxiv.org/abs/2607.27942v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.27942v1</id>
+    <published>2026-07-30T00:00:00Z</published>
+    <updated>2026-07-30T00:00:00Z</updated>
+    <author>
+      <name>Linus Sander</name>
+    </author>
+    <author>
+      <name>Fengjunjie Pan</name>
+    </author>
+    <author>
+      <name>Vahid Zolfaghari</name>
+    </author>
+    <author>
+      <name>Andre Schamschurko</name>
+    </author>
+    <author>
+      <name>Nenad Petrovic</name>
+    </author>
+    <author>
+      <name>Alois Knoll</name>
+    </author>
+    <summary type="text">LLM-based multi-agent systems have the potential to enable collective intelligence and scale toward solving highly complex tasks through coordinated ensembles of specialized agents. However, despite their theoretical potential, the architectural design space remains largely non-systematized and lacks broadly established design principles. Furthermore, the scalability characteristics of such systems are only partially understood so far. This paper makes two contributions. We first distill four design principles for scalable MAS architectures from a structured analysis of prior work: simplicity, elastic feedback, sequential workflows with optional loops, and summary-based communication. We operationalize these principles in a reference architecture whose topology is formalized as a constrained directed workflow graph, and we evaluate four configurations of increasing complexity on a standardized benchmark of terminal-based system engineering tasks using two LLMs of differing capability. Our findings show that scaling yields measurable accuracy improvements with approximately linear cost growth, but only when the underlying LLM exceeds a minimum capability threshold. Performance peaks at intermediate complexity, then degrades due to timeouts and evaluation limitations. In addition, persistent consistency issues emerge as a central challenge across all scaling levels. These results provide concrete design guidance for practitioners and highlight consistency and evaluation standardization as key targets for future research.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Stop Shipping AI Agents on Faith: Capability Is Not Production Readiness</title>
+    <link href="http://arxiv.org/abs/2607.27677v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.27677v1</id>
+    <published>2026-07-30T00:00:00Z</published>
+    <updated>2026-07-30T00:00:00Z</updated>
+    <author>
+      <name>Fouad Bousetouane</name>
+    </author>
+    <summary type="text">AI agents are moving into production workflows where they retrieve information, call tools, maintain state, and act on behalf of users or organizations, but many release decisions still rely on capability signals, demos, or behavioral tests that do not show whether an agent is ready to operate under production constraints. Capability is therefore not production readiness. This paper introduces the ProofAgent Index (PAI), a governance readiness index for AI agents. PAI combines four dimensions of deployment evidence: Evaluation, Context, Compliance, and Governance. Evaluation measures observed behavior, Context measures the operating environment that shapes that behavior, Compliance measures alignment with applicable rules and controls, and Governance measures whether the organization can authorize, monitor, audit, and control the agent during operation. PAI is implemented inside ProofAgent Harness, an open source infrastructure for auditable AI agent evaluation and governance. Validation across two heavily regulated domains, healthcare and finance, shows that PAI carries held out readiness signal and separates higher risk from lower risk configurations. The results show that context engineering strongly changes reliability, capability improves behavior but does not determine readiness, and governance evidence must remain visible rather than averaged away. PAI reframes agent release from a faith based deployment decision into an auditable readiness decision.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>Cross-organisational Process Mining from Message Logs</title>
     <link href="http://arxiv.org/abs/2607.26917v1" rel="alternate" type="text/html" />
@@ -155,6 +309,28 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Auditing Emergent LLM-Agent Collaboration through Cooperation-Obligation Coupling</title>
+    <link href="http://arxiv.org/abs/2607.27429v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.27429v1</id>
+    <published>2026-07-29T00:00:00Z</published>
+    <updated>2026-07-29T00:00:00Z</updated>
+    <author>
+      <name>Zuyuan Zhang</name>
+    </author>
+    <author>
+      <name>Hanqing Yang</name>
+    </author>
+    <author>
+      <name>Carlee Joe-Wong</name>
+    </author>
+    <author>
+      <name>Tian Lan</name>
+    </author>
+    <summary type="text">LLM-agent systems can solve complex tasks through dynamic self-organization and emergent cooperation. Auditing this process is essential because plausible intermediate or final outputs can conceal incomplete or unsupported work and poorly allocated responsibility, ultimately compromising response quality. While existing approaches may record messages, tool calls, provenance, or task dependencies, an auditability gap exists as they do not jointly represent what work remains, who is responsible for it, and what evidence justifies each work-state transition. We address this auditability gap by proposing \emph{Integrated Cooperation-Obligation REpresentation} (iCORE). It creates a unified encoding $X=(G,Q,Π)$ integrating observable interactions as a cooperation graph $G$, evolving work and assignments as an obligation graph $Q$, and the audit map $Π$ linking them with verifiable properties and evidence. This iCORE representation enables the auditor to certify two complementary properties: {Work soundness}, where every active decision-relevant work assertion must have a finite justification through $G$ and $Π$; and {Agent-assignment stability}, which requires that no feasible alternative agent improve the declared contribution value for an evaluated obligation by more than $ε$. We establish local-to-global soundness and assignment-regret guarantees and a performance bound under stated conditions. iCORE is an instrumentation layer over workflows. Numerical results show that the full coupled state exactly reconstructs soundness and assignment defects in two execution modes and that, relative to passive full-state observation, iCORE-Audit yields absolute trajectory-quality improvements of $11.5\%$ and $26.4\%$ in controlled and real-LLM execution, respectively, with corresponding absolute terminal-performance improvements of $15.1\%$ and $31.0\%$.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
   </entry>
   <entry>
     <title>Towards a Systems Foundation for Agentic Cloud Management</title>
@@ -422,6 +598,57 @@
     <category term="Multiagent Systems" />
   </entry>
   <entry>
+    <title>SafeFlow: Semantic Information-Flow Control for Blocking Malicious Propagation in Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2607.25255v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.25255v2</id>
+    <published>2026-07-28T00:00:00Z</published>
+    <updated>2026-07-28T00:00:00Z</updated>
+    <author>
+      <name>Haowen Dai</name>
+    </author>
+    <author>
+      <name>Zonghao Ying</name>
+    </author>
+    <author>
+      <name>Wenfeng Li</name>
+    </author>
+    <author>
+      <name>Xiangfan Wu</name>
+    </author>
+    <author>
+      <name>Yisong Xiao</name>
+    </author>
+    <author>
+      <name>Tianyuan Zhang</name>
+    </author>
+    <author>
+      <name>Jiaye Lin</name>
+    </author>
+    <author>
+      <name>Lei Wei</name>
+    </author>
+    <author>
+      <name>Guangyuan Dong</name>
+    </author>
+    <author>
+      <name>Xitong Ling</name>
+    </author>
+    <author>
+      <name>Xixun Lin</name>
+    </author>
+    <author>
+      <name>Quanchen Zou</name>
+    </author>
+    <author>
+      <name>Xiangzheng Zhang</name>
+    </author>
+    <summary type="text">Multi-agent systems improve capability through task decomposition and role specialization, but these same mechanisms introduce an important safety blind spot: a harmful objective can be fragmented into locally plausible subtasks, allowing malicious intent to evade detection by any single agent. This is a growing social-impact challenge: systems handling sensitive information or consequential tools can turn routine delegation into unauthorized disclosure or unsafe action. We argue that this failure mode is better understood as a semantic information-flow problem than as a single-turn prompt classification task. To address this, we propose SafeFlow, a defense framework for multi-agent systems that formalizes malicious cross-agent propagation as a semantic information-flow problem. SafeFlow attaches structured semantic taints to root requests, propagates them through a dynamic collaboration graph, and performs workflow-level validation to reconstruct the global risk context before irreversible actions are committed. Evaluated on four benchmarks spanning prompt injection, jailbreak-based unsafe tool use, risky code execution, and harmful web-agent behavior, SafeFlow reduces attack success rates compared to undefended baselines and external defenses while retaining high benign task completion and a high paired safe--harm success rate. Our findings show that multi-agent systems still lack mechanisms for preserving risk semantics across delegation boundaries. This gap can turn routine delegation into privacy harms or unsafe actions that affect people and organizations. SafeFlow keeps this risk visible throughout the workflow, before it results in harm.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; TAP&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CR" />
+  </entry>
+  <entry>
     <title>Decentralised Consensus Learning Networks: SME Rotation Without Centralised Reward</title>
     <link href="http://arxiv.org/abs/2607.24416v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2607.24416v1</id>
@@ -566,104 +793,6 @@
     <summary type="text">Some properties of so-called complex or collective systems can be observed to emerge from the interactions of elementary agents. This phenomenon, known as emergent behaviour, has long since been studied in the most diverse disciplines, with recent growing awareness from the formal methods community about the opportunity of opening up to seemingly distant disciplines with appropriate technology for computer-aided reasoning. Different peculiar elements of complexity make automated reasoning on these systems particularly challenging. We consider electronic financial markets to drive our discussion. We identify and structure the sources of complexity to tackle in order to provide computational support for the analysis of emergent phenomena. We refrain from evaluating the suitability of specific technical solutions or frameworks of preference, which would as usual require simplifying assumptions and divert from the actual phenomenon of interest. Rather, we elaborate on possible alternatives to handle some of the main technical aspects involved in automated analysis, while retaining a solid and concrete interpretation of the domain, and in doing so outline a more systematic research program for the formal specification and analysis of market mechanisms.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ISoLA 2026&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Where FactsGo Missing: A LayerwiseTaxonomy and Per-Layer Attribution of Information Omissionin Air-Gapped LLM Agent Pipelines</title>
-    <link href="http://arxiv.org/abs/2607.22448v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.22448v1</id>
-    <published>2026-07-24T00:00:00Z</published>
-    <updated>2026-07-24T00:00:00Z</updated>
-    <author>
-      <name>Santhiya Rajan</name>
-    </author>
-    <summary type="text">Air-gapped and on-premises deployments in regulated settings (clinical FHIR services, legal review, sovereign infrastructure) cannot call frontier APIs; they run quantized 4-8B models via llama.cpp or vLLM behind tool servers. The dominant reliability failure is omission: the silent absence of a decision-critical fact, such as an agent reading 20 of 400 records and reporting "no anomalies." We argue omission is a pipeline phenomenon, not a model phenomenon, and make four contributions. First, a nine-layer taxonomy (L0-L8) locating every omission mechanism from ingestion through the agent loop. Second, an attribution methodology separating deterministic layers (L0-L3) from behavioral layers (L4-L8) via controlled ablation and logit decomposition, quantifying each with an omission waterfall. Third, an open cross-architecture harness comparing sliding-window-hybrid, full-attention, and SSM-hybrid models across engines and frameworks. Fourth, a runtime-detection framework for air-gapped settings where you own the logits. Results from a 75,476-trial sweep across five models and two engines show a pooled omission rate of 0.62; 68% originates in deterministic middleware (L0-L3), relocating where operators should intervene. Server-side profile factors (weight quantization, KV-cache type, RoPE scaling) were fixed and left for future work.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Draining the Energy Commons: Self-Defeating Over-Appropriation as a Coordination Failure in Agentic LLM Collectives</title>
-    <link href="http://arxiv.org/abs/2607.22188v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.22188v1</id>
-    <published>2026-07-24T00:00:00Z</published>
-    <updated>2026-07-24T00:00:00Z</updated>
-    <author>
-      <name>Marcantonio Bracale Syrnicov</name>
-    </author>
-    <author>
-      <name>Federico Pierucci</name>
-    </author>
-    <author>
-      <name>Matteo Prandi</name>
-    </author>
-    <author>
-      <name>Marcello Galisai</name>
-    </author>
-    <author>
-      <name>Piercosma Bisconti</name>
-    </author>
-    <author>
-      <name>Francesco Giarrusso</name>
-    </author>
-    <author>
-      <name>Daniele Nardi</name>
-    </author>
-    <summary type="text">LLMs are increasingly deployed as agents that plan, use tools, and act over time. When they share persistent resources, such as compute pools or energy reserves, decisions by one agent affect the conditions faced by later agents. We study this coordination failure in a renewable energy commons. Four same-family GPT, Gemini, or Grok agents act in homogeneous self-play as electricity prosumers, instructed to maximize operational continuity. Holding aggregate residual demand and the decision protocol fixed, we vary the regeneration rate of a shared energy reserve from abundance to scarcity. All three families preserve the reserve when demand does not exceed peak renewable replacement, but over-appropriate it beyond that threshold (all nine exact scarcity contrasts survive Holm correction; largest adjusted p = 4.87e-5). The pattern is self-defeating: the same populations protect current service while undermining future service. At higher scarcity (rho = 1.2), early aggregate request pressure exceeds peak renewable replacement in every family and averages 1.21 times that level. Mean trajectories fall below the reserve level of maximum replenishment by rounds 5-7. Two offline benchmarks compare a social planner maximizing group-wide operational-service value with open access, where each prosumer maximizes its own value. At a discount factor of gamma = 0.95, both benchmarks sustain the reserve under the same dynamics. Realized depletion instead resembles outcomes under a more impatient open-access benchmark. The populations therefore behave like impatient optimizers at the level of the public trajectory. This system-level alignment failure would be missed by isolated-response evaluation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>When Language Models Meet NeuroGraphs: Exploring Enhanced Agentic LLM Framework Towards Brain Network Analysis</title>
-    <link href="http://arxiv.org/abs/2607.22082v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.22082v1</id>
-    <published>2026-07-24T00:00:00Z</published>
-    <updated>2026-07-24T00:00:00Z</updated>
-    <author>
-      <name>Jiaxing Li</name>
-    </author>
-    <author>
-      <name>Rui Dong</name>
-    </author>
-    <author>
-      <name>Muyao Tang</name>
-    </author>
-    <author>
-      <name>Youyong Kong</name>
-    </author>
-    <summary type="text">Brain network analysis is crucial for understanding cognition and neurological disorders, yet existing deep learning methods mainly treat connectome analysis as a graph-to-logit classification problem, offering limited explanatory reasoning. Large language models (LLMs) provide a promising interface for knowledge-intensive scientific analysis, but directly applying general-purpose LLMs to brain networks remains challenging due to the structure-language gap, limited neuroscience grounding, and overconfident positive predictions. In this paper, we propose \textbf{BrainAgent}, an agentic LLM framework for knowledge-enhanced brain network analysis. BrainAgent reformulates connectome classification as an iterative process of topology-aware understanding, external retrieval, reasoning, and reflection. Specifically, it first converts raw brain networks into compact multi-level structural descriptions through brain-specific analysis tools, then retrieves relevant neuroscience knowledge and task-specific cases to ground the reasoning process, and finally generates structured predictions with reflective verification. Experiments on four public rs-fMRI datasets show that BrainAgent consistently improves different closed-source and open-source LLM backbones over direct prompting and standard reasoning baselines. Further ablation and interpretability analyses demonstrate the effectiveness of each component and show that BrainAgent produces more comprehensive, multi-level, and verifiable explanations.These results indicate that agentic LLMs provide a practical route toward interpretable and knowledge-grounded brain network analysis.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Reliability-Contagion Feasibility in LLM Multi-Agent Networks</title>
-    <link href="http://arxiv.org/abs/2607.21912v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.21912v1</id>
-    <published>2026-07-24T00:00:00Z</published>
-    <updated>2026-07-24T00:00:00Z</updated>
-    <author>
-      <name>Ruiwu Niu</name>
-    </author>
-    <author>
-      <name>Xincheng Shu</name>
-    </author>
-    <author>
-      <name>Ying Zhao</name>
-    </author>
-    <summary type="text">Communication allows large language model agents to pool evidence, but it also creates paths along which an erroneous claim can spread. We formulate a correction-aware network model that tracks susceptible, exposed, infectious, and corrected agents and derive its early-invasion condition for heterogeneous communication networks. We then couple this propagation model to an analytic majority-vote benchmark in which a clean-task reliability target imposes a minimum connectivity requirement. Under fixed exposure per communication edge, reliability and error control impose opposing graph constraints. We characterize when their intersection is empty and when it contains an intermediate connectivity range, and identify regular graphs that attain the smallest invasion factor within the reliable graph class when such graphs exist. Under a fixed sender budget, the homogeneous first-order threshold is independent of network density, showing that the communication-budget convention determines whether added edges increase early propagation risk. Finite-network simulations on 21,000 trajectories illustrate these directional predictions. A controlled grok-4.3 experiment then evaluates three six-node topologies on 36 new closed-world tasks, with a balanced 12-task subset continued to full cascades. Mean first-generation offspring increased from 0.667 to 1.333 and 1.667 as degree increased from 2 to 4 and 5, while the adoption fraction among exposed neighbours remained 0.333. Mean non-seed erroneous adoption in the full-cascade subset was 0.200, 0.333, and 0.333. Together, these results provide a tractable basis for selecting connectivity under explicit reliability and propagation constraints.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Where Facts Go Missing: A Layerwise Taxonomy and Per-Layer Attribution of Information Omission in Air-Gapped LLMAgent Pipelines</title>
-    <link href="http://arxiv.org/abs/2607.22448v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.22448v2</id>
-    <published>2026-07-24T00:00:00Z</published>
-    <updated>2026-07-24T00:00:00Z</updated>
-    <author>
-      <name>Santhiya Rajan</name>
-    </author>
-    <summary type="text">Air-gapped and on-premises language-model agents can silently omit decision-critical facts at any boundary between source ingestion and final answer generation. We present a nine-layer taxonomy (L0-L8), an instrumented attribution harness, and a conditional omission waterfall that distinguishes deterministic software loss from behavioral non-retrieval. We analyze 75,476 controlled synthetic trials spanning five open-weight model configurations and two inference engines, together with a separate 372-trial real-agent pilot covering FHIR, PubMed, and SEC-EDGAR sources with LangChain and ADK orchestration. The weighted synthetic benchmark yields an omission rate of 0.574 (95% CI: 0.571-0.578); deliberately injected deterministic faults at L0-L3 account for 73.4% of weighted loss under the benchmark allocation. Increasing context length is most strongly associated with omission (odds ratio 7.43, 95% CI: 5.44-10.15). Completed server-profile analyses associate q4 KV cache and scaled RoPE with higher omission. In the real-agent pilot, 57.8% of traces are unsuccessful overall and 50.9% remain unsuccessful after excluding execution errors. These results establish pipeline-level attribution in a controlled stress test, but benchmark allocations, confounded model comparisons, and heuristic behavioral labels do not measure production prevalence or causal architectural effects.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
 </feed>
