@@ -4,12 +4,168 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-07-31T04:35:09Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 28 entries</subtitle>
+  <updated>2026-08-03T04:39:35Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 25 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>SeekBrain: An Autonomous Multi-Agent System for Accelerating Neuroscience Discovery</title>
+    <link href="http://arxiv.org/abs/2607.29347v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.29347v1</id>
+    <published>2026-07-31T00:00:00Z</published>
+    <updated>2026-07-31T00:00:00Z</updated>
+    <author>
+      <name>Jiamin Wu</name>
+    </author>
+    <author>
+      <name>Peishan Xiang</name>
+    </author>
+    <author>
+      <name>Jingyang Chen</name>
+    </author>
+    <author>
+      <name>Yuqing Zhu</name>
+    </author>
+    <author>
+      <name>Yuxi Li</name>
+    </author>
+    <author>
+      <name>Ling Luo</name>
+    </author>
+    <author>
+      <name>Qihao Zheng</name>
+    </author>
+    <author>
+      <name>Jialiang Zu</name>
+    </author>
+    <author>
+      <name>Yongchao Wu</name>
+    </author>
+    <author>
+      <name>Mindong Liu</name>
+    </author>
+    <author>
+      <name>Haitao Wu</name>
+    </author>
+    <author>
+      <name>Chaofan Hu</name>
+    </author>
+    <author>
+      <name>Yijie Sun</name>
+    </author>
+    <author>
+      <name>Yuqi Hang</name>
+    </author>
+    <author>
+      <name>Yu Zhu</name>
+    </author>
+    <author>
+      <name>Shuo Li</name>
+    </author>
+    <author>
+      <name>Yue Fan</name>
+    </author>
+    <author>
+      <name>Shiyang Feng</name>
+    </author>
+    <author>
+      <name>Wanghan Xu</name>
+    </author>
+    <author>
+      <name>Tianlei Zhang</name>
+    </author>
+    <author>
+      <name>Jie Zhang</name>
+    </author>
+    <author>
+      <name>Wenlong Zhang</name>
+    </author>
+    <author>
+      <name>Bo Zhang</name>
+    </author>
+    <author>
+      <name>Kai Wang</name>
+    </author>
+    <author>
+      <name>Lei Bai</name>
+    </author>
+    <author>
+      <name>Mianxin Liu</name>
+    </author>
+    <author>
+      <name>Wanli Ouyang</name>
+    </author>
+    <author>
+      <name>Jiulin Du</name>
+    </author>
+    <author>
+      <name>Chunfeng Song</name>
+    </author>
+    <summary type="text">Modern neuroscience relies on integrating multi-scale, multimodal datasets to uncover the neural principles underlying intelligence. However, analytical challenges posed by highly heterogeneous data and fragmented workflows increasingly constrain discoveries. Here we introduce SeekBrain, an autonomous multi-agent framework designed to accelerate neuroscience discovery through domain-grounded hierarchical planning and cross-modal data analysis. SeekBrain dynamically constructs a repertoire of analysis recipes extracted from code-paper pairs. By coupling this codified expertise with agentic planning and execution engines, the framework scalably generates hypotheses and analytical pipelines on demand. Systematic evaluation on the expert-annotated BrainArena benchmark demonstrates that SeekBrain substantially outperforms state-of-the-art agent baselines across various analysis tasks. Crucially, when deployed in real-world research, SeekBrain integrated behavioral, neural, and anatomical data to reveal structured, distributed neural representations of larval zebrafish behavior and a shared axis of regional decoding strength across the brain in a mouse decision-making task. These results establish SeekBrain as a scalable and practical tool for accelerating data-driven discoveries in neuroscience.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>TransMem: Transforming Hidden States into Memory for Large Language Models</title>
+    <link href="http://arxiv.org/abs/2607.29032v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.29032v1</id>
+    <published>2026-07-31T00:00:00Z</published>
+    <updated>2026-07-31T00:00:00Z</updated>
+    <author>
+      <name>Haodong Lei</name>
+    </author>
+    <author>
+      <name>Junming Liu</name>
+    </author>
+    <author>
+      <name>Yirong Chen</name>
+    </author>
+    <author>
+      <name>Pinlong Cai</name>
+    </author>
+    <author>
+      <name>Botian Shi</name>
+    </author>
+    <author>
+      <name>Ding Wang</name>
+    </author>
+    <author>
+      <name>Hongsong Wang</name>
+    </author>
+    <summary type="text">Large language model (LLM) agents increasingly operate over long interaction histories, where effective reasoning requires identifying and exploiting task-relevant evidence distributed across past observations and actions. However, useful information encoded in previously computed representations is often underutilized during subsequent generation. We propose \textbf{TransMem}, a lightweight inference-time parametric memory module that transforms sparse historical hidden states from a frozen LLM backbone into reusable memory representations. TransMem uses a lightweight gating network to dynamically apply the latent intervention to the current hidden states, without repeatedly encoding the preceding context. To learn transferable memory utilization rather than task-specific knowledge, we introduce evidence-conditioned self-distillation. A memory-augmented student processes the full context and matches the predictive distribution of an evidence-only teacher that shares the same frozen backbone. Experiments on LoCoMo, HotpotQA, and MemoryAgentBench demonstrate consistent improvements across different model architectures and scales. TransMem yields gains of 11.58--29.25 $F_1$ on LoCoMo and 10.20--13.03 $F_1$ on HotpotQA, while improving the average MemoryAgentBench accuracy from 29.54\% to 40.00\%. These results establish sparse historical hidden states as an effective and efficient memory substrate for long-context LLM agents. Our code is available at https://github.com/Haodong-Lei-Ray/TransMem.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Haodong-Lei-Ray/TransMem"&gt;https://github.com/Haodong-Lei-Ray/TransMem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL" />
+  </entry>
+  <entry>
+    <title>Adjudicated Captioning: Multi-Agent Alignment Scoring and Consensus-Distilled Beam Arbitration for Strict Zero-Shot Image Captioning</title>
+    <link href="http://arxiv.org/abs/2607.28986v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.28986v1</id>
+    <published>2026-07-31T00:00:00Z</published>
+    <updated>2026-07-31T00:00:00Z</updated>
+    <author>
+      <name>Duy Tran Thanh</name>
+    </author>
+    <author>
+      <name>Thien-Phuc Doan</name>
+    </author>
+    <author>
+      <name>Long Nguyen-Vu</name>
+    </author>
+    <author>
+      <name>Ngo Tan Vu Khanh</name>
+    </author>
+    <summary type="text">Zero-shot image captioning (ZIC) describes images without paired image-caption supervision during captioner training, relying on text-only corpora and frozen pretrained image-text scorers. Existing retrieval-augmented methods score image-text alignment once, at retrieval, then commit the captioner's autoregressive beam under language-model probability alone, leaving the decoder without further visual grounding feedback. Progress has stalled, with no method improving on the strict-regime best since 2024.   We propose Adjudicated Captioning, an inference-time multi-agent framework that restores grounding feedback at multiple checkpoints over an unchanged IFCap captioner. First, we install a stronger frozen Retrieval Encoder at the input. Second, between retrieval and decoding we insert a frozen Cross-Attention Verifier that re-ranks the top-9 retrievals to top-5. Third, at the output beam we attach a learned Reranker pairing TriFuse, a multilayer perceptron, with MemAttend, a memory-attended transformer, the pipeline's only learned components; both are trained self-supervised by Borda-consensus distillation across the three frozen scorers, using no paired image-caption labels and no reference captions.   Under the inductive headline protocol, with rerankers fit on the disjoint COCO Karpathy validation beam and applied frozen to test, the framework reaches CIDEr 117.6 and SPICE 21.9 on COCO Karpathy, up from 108.0 and 20.3 for IFCap, a +9.6 CIDEr gain, and +7.7 above NES, the strongest synthetic-image-augmented method at 109.9, without retraining the captioner. A training-free fixed-fusion baseline reaches 115.8 CIDEr, so +7.8 of the +9.6 gain comes from the non-learned architectural intervention and the remaining +1.8 from the learned rerankers. The same recipe transfers off-COCO without captioner retraining: +8.1 CIDEr on Flickr30k Karpathy and +5.7 on NoCaps overall.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;VG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; cs.CL; Multiagent Systems" />
+  </entry>
   <entry>
     <title>Using Theory of Mind to Arbitrate between Social and Non-social Learning</title>
     <link href="http://arxiv.org/abs/2607.28601v1" rel="alternate" type="text/html" />
@@ -163,6 +319,57 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>CyberNeuro: A Privacy-Preserving Agentic Workbench for Cohort-Scale Neuroimage and Clinical Data Analysis</title>
+    <link href="http://arxiv.org/abs/2607.28841v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2607.28841v1</id>
+    <published>2026-07-30T00:00:00Z</published>
+    <updated>2026-07-30T00:00:00Z</updated>
+    <author>
+      <name>Ran Ren</name>
+    </author>
+    <author>
+      <name>Junhong Tong</name>
+    </author>
+    <author>
+      <name>Yunxi Kong</name>
+    </author>
+    <author>
+      <name>Yiyao Chen</name>
+    </author>
+    <author>
+      <name>Yucheng Li</name>
+    </author>
+    <author>
+      <name>Kunhao Zhou</name>
+    </author>
+    <author>
+      <name>Shaoqi Wang</name>
+    </author>
+    <author>
+      <name>Yuxiang Tao</name>
+    </author>
+    <author>
+      <name>Shuheng Cao</name>
+    </author>
+    <author>
+      <name>Zhihao Fan</name>
+    </author>
+    <author>
+      <name>Marissa DiPiero</name>
+    </author>
+    <author>
+      <name>Tingting Dan</name>
+    </author>
+    <author>
+      <name>Guorong Wu</name>
+    </author>
+    <summary type="text">Despite tremendous success in neuroimaging methodology, making large-scale, high-dimensional datasets ready for AI/ML applications remains a critical operational bottleneck. Conventional workflows require extensive manual effort across metadata curation, pipeline execution, post-processing quality control, and data management, a burden that disproportionately excludes laboratories with limited manpower and computational infrastructure. To address this real-world barrier, there is an urgent need for scalable, cost-effective computational platforms that democratize advanced neuroimaging analytics and accelerate discoveries in mental health and clinical translation. Capitalizing on multi-agent LLM breakthroughs, we introduce CyberNeuro, an agentic workbench with a tailored local LLM-model ('WandaMind') for automated neuroimaging and health-data analysis. Driven by four dedicated agents (Planner, Validator, Dispatcher, and Reporter) communicating via a secure MCP bridge and a pinned execution layer, CyberNeuro enables researchers to execute complex workflows using natural language while maintaining clinical-grade data privacy. On the public NeuroBench suite, CyberNeuro increases held-out domain accuracy from 40% to 69% over the baseline model. Beyond automated metrics, the platform integrates a human-in-the-loop verification panel to ensure rigorous biomedical quality control. Across the same end-to-end 10-batch cohort workflow suite, the local WandaMind configuration completed all tasks with an estimated aggregate token count of about 10.6% using WandaMind and 61.7% using cloud providers of token usage, compared to Neuroclaw, respectively. The platform and its production-ready modules are available at https://wanda-cyberbench.com.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 25 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.SE" />
   </entry>
   <entry>
     <title>Cross-organisational Process Mining from Message Logs</title>
@@ -647,152 +854,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; TAP&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="cs.CR" />
-  </entry>
-  <entry>
-    <title>Decentralised Consensus Learning Networks: SME Rotation Without Centralised Reward</title>
-    <link href="http://arxiv.org/abs/2607.24416v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.24416v1</id>
-    <published>2026-07-27T00:00:00Z</published>
-    <updated>2026-07-27T00:00:00Z</updated>
-    <author>
-      <name>Florin Neagu</name>
-    </author>
-    <summary type="text">Centralised reward signals dominate modern AI learning systems, but they impose a single external definition of correct or valuable knowledge. We present a decentralised, consensus-based multi-agent learning framework in which expertise emerges through peer validation rather than prescribed reward. Agents update beliefs via weighted social consensus, while trust is allocated according to competence inferred from peer consistency instead of ground truth. Subject-matter expert (SME) status is assigned dynamically as a top-percentile competence rank rather than a fixed label.   We evaluate the framework across 84 simulation runs spanning 30 to 10,000 agents, multiple graph topologies, sparse large-scale networks, scalar and vector belief representations, dimensionality sweeps (D=1-500), multi-seed robustness tests, and parameter sensitivity analyses. Phase 1 shows that SME rotation is robust, persistent, topology-invariant, and scale-invariant: 90-100% of agents attain SME status, with most expertise turnover occurring after belief convergence and increasing with network size. Phases 2 and 3 show that vector beliefs introduce heterogeneous convergence with cascade dynamics and reveal five distinct dynamical regimes as belief dimensionality increases. At high dimensionality (D=150-200), the network reaches stable partial consensus while expertise becomes increasingly concentrated in a single agent. ETA sensitivity analysis demonstrates that this concentration is driven by belief dimensionality rather than stochastic noise. We interpret this behaviour as an emergent property of decentralised learning: in complex high-dimensional consensus spaces, the agent most consistently aligned with the collective belief naturally emerges as the recognised expert.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Moral Hazard in Multi-Agent Language Models</title>
-    <link href="http://arxiv.org/abs/2607.23982v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.23982v1</id>
-    <published>2026-07-27T00:00:00Z</published>
-    <updated>2026-07-27T00:00:00Z</updated>
-    <author>
-      <name>Dane Malenfant</name>
-    </author>
-    <summary type="text">Cooperation can fail when socially valuable effort is costly, weakly observable, and mainly benefits others. Drawing on Holmström's team moral-hazard model, we introduce the Dialogue Moral Hazard Game, a controlled textual game that operationalizes this hidden-action structure for language agents. In each episode, an agent can preserve an immediate local reward or pay a query cost to reveal a hidden safety fact that primarily helps another agent's downstream decision. We evaluate seven open-weight language models and decompose behavior into query use, realized information transfer, local-reward preservation, unsafe choice, format validity, and team success. Base models commonly preserve local reward without team success or query without communicating information that changes the final decision. We then use supervised fine-tuning, RLOO, sequential SFT+RLOO, and GEPA prompt optimization as diagnostic update mechanisms. Their effects are heterogeneous: OLMo-7B shows the clearest mechanism-consistent weight-level improvement, whereas GEPA sometimes improves team success while reducing or eliminating costly queries. Thus, optimization can shift aggregate reward without recovering the intended cooperative mechanism, motivating evaluations that report mechanism-level behavior rather than team success alone.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to the Second Workshop on Social Simulation with LLMS: Fidelity in Applications at COLM 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>SimBEV2X: A Large-Scale Dataset and Data Generation Tool for Multi-Task Vehicle-to-Everything Cooperative Perception</title>
-    <link href="http://arxiv.org/abs/2607.23910v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.23910v1</id>
-    <published>2026-07-27T00:00:00Z</published>
-    <updated>2026-07-27T00:00:00Z</updated>
-    <author>
-      <name>Goodarz Mehr</name>
-    </author>
-    <author>
-      <name>Sepideh Gohari</name>
-    </author>
-    <author>
-      <name>Montasir Abbas</name>
-    </author>
-    <author>
-      <name>Azim Eskandarian</name>
-    </author>
-    <summary type="text">Cooperative perception through vehicle-to-everything (V2X) communication can overcome the inherent physical limitations of individual autonomous vehicles, such as occlusions and limited sensor range. However, the development of robust V2X algorithms, particularly those relying on unified spatial representations like bird's-eye view (BEV) representation, is hampered by the lack of large-scale, multi-modal, multi-task datasets. Moreover, collecting and annotating a large set of synchronized, real-world multi-agent data is prohibitively expensive. This has resulted in a landscape where existing V2X datasets are notably limited in both size and scope. To overcome this, we introduce SimBEV2X, an advanced synthetic data generation tool built on the CARLA simulator. SimBEV2X automatically creates randomized driving scenarios to collect multi-modal sensor data alongside various types of ground truth including 3D bounding boxes with unique track IDs, HD map information, BEV segmentation maps, and semantic occupancy voxel grids from both vehicles and RSUs. We also present the SimBEV2X dataset, the largest V2X perception dataset to date. The dataset comprises 258 scenes, each involving up to 8 connected vehicles and up to 4 RSUs across a variety of road networks. The SimBEV2X dataset is an order of magnitude larger than existing V2X datasets and contains 102,200 frames, 588,520 lidar point clouds, more than 3 million images, over 27 million bounding boxes, and a comprehensive set of other annotations. Finally, we establish a strong baseline on the SimBEV2X dataset using CoopDet3D and propose CoBEVFusion, a novel architecture that combines CoopDet3D with fused axial attention (FAX) for context-aware multi-agent feature aggregation, resulting in superior performance. SimBEV2X, the SimBEV2X dataset, and CoBEVFusion are available at https://simbev2x.org and https://github.com/GoodarzMehr/SimBEV2X.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/GoodarzMehr/SimBEV2X"&gt;https://github.com/GoodarzMehr/SimBEV2X&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to IEEE for review&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning; Multiagent Systems; Robotics" />
-  </entry>
-  <entry>
-    <title>Moral Hazard in Multi-Agent Language Models</title>
-    <link href="http://arxiv.org/abs/2607.23982v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.23982v2</id>
-    <published>2026-07-27T00:00:00Z</published>
-    <updated>2026-07-27T00:00:00Z</updated>
-    <author>
-      <name>Dane Malenfant</name>
-    </author>
-    <summary type="text">Cooperation can fail when socially valuable effort is costly, weakly observable, and mainly benefits others. Drawing on Holmström's team moral-hazard model, we introduce the Dialogue Moral Hazard Game, a controlled textual game that operationalizes this hidden-action structure for language agents. In each episode, an agent can preserve an immediate local reward or pay a query cost to reveal a hidden safety fact that primarily helps another agent's downstream decision. We evaluate seven open-weight language models and one frontier API model, decomposing behavior into query use, realized information transfer, local-reward preservation, unsafe choice, format validity, and team success. Base open-weight models commonly preserve local reward without team success or query without communicating information that changes the final decision. GPT-5.6 Sol reaches ceiling behavior in the primary setting, and autonomous sweeps respond strongly to query cost and team reward. In a 3,015-decision incentive-isolation experiment with scripted partners, its empirical query threshold tracks the Holmström-derived private-share boundary across nine query costs with mean absolute error 0.013. We then use supervised fine-tuning, RLOO, sequential SFT+RLOO, and GEPA prompt optimization as diagnostic update mechanisms where coverage permits. Their effects are heterogeneous: OLMo-7B shows the clearest mechanism-consistent weight-level improvement, whereas GEPA sometimes improves team success while reducing or eliminating costly queries. Thus, optimization can shift aggregate reward without recovering the intended cooperative mechanism, motivating evaluations that report mechanism-level behavior rather than team success alone.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Post Social Simulation with LLMS: Fidelity in Applications at COLM 2026 workshop version. Included GPT 5.6 Sol for construct validity and theory tests&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>A Comparative Study of MCP and A2A for Inter-Agent Coordination in LLM-Based Systems</title>
-    <link href="http://arxiv.org/abs/2607.23884v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.23884v1</id>
-    <published>2026-07-26T00:00:00Z</published>
-    <updated>2026-07-26T00:00:00Z</updated>
-    <author>
-      <name>Ionut Predoaia</name>
-    </author>
-    <author>
-      <name>Tuong Manh Vu</name>
-    </author>
-    <author>
-      <name>Konstantinos Barmpis</name>
-    </author>
-    <author>
-      <name>Dimitris Kolovos</name>
-    </author>
-    <author>
-      <name>Antonio García-Domínguez</name>
-    </author>
-    <summary type="text">Recent industry practice has seen the rapid emergence of agentic systems composed of heterogeneous, tool- and LLM-mediated agent components, raising practical questions about inter-agent coordination and protocol design. This paper presents an implementation-grounded comparison of the Model Context Protocol (MCP) and the Agent2Agent (A2A) protocol, from a multi-agent systems engineering perspective, using an inter-agent coordination scenario involving LLM-based agents. We evaluate an MCP-based and an A2A-based multi-agent implementation of the same software engineering task against a set of requirements derived from prior literature and discussions with industry partners, including agent discoverability, multi-part messaging, multi-turn conversations, asynchronous communication, observability, interoperability, and access control. The results evidence that MCP can support inter-agent coordination in constrained LLM-based systems through a comparatively lightweight implementation model with lower coordination complexity, although coordination concerns such as conversational state management and task lifecycle handling must be implemented explicitly at the application layer. In contrast, A2A provides richer native support for stateful, multi-turn coordination through protocol-level abstractions for tasks and lifecycle management, but this comes with substantially greater implementation and coordination complexity. Given the narrow scope of the evaluated coordination pattern, these findings are presented as design observations from an empirical experience report rather than general claims of protocol suitability or superiority across broader classes of MAS, highlighting trade-offs and how protocol abstractions shape the distribution of coordination responsibilities in contemporary agentic systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>MulRobBench: A Decision-Level Benchmark for Safe and Security-Policy-Compliant Multimodal UAV Agents</title>
-    <link href="http://arxiv.org/abs/2607.23870v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.23870v1</id>
-    <published>2026-07-26T00:00:00Z</published>
-    <updated>2026-07-26T00:00:00Z</updated>
-    <author>
-      <name>Belal S. Alsinglawi</name>
-    </author>
-    <author>
-      <name>Weizheng Wang</name>
-    </author>
-    <author>
-      <name>Junyi Wu</name>
-    </author>
-    <author>
-      <name>Yi Jiang</name>
-    </author>
-    <author>
-      <name>Lianhai Lin</name>
-    </author>
-    <author>
-      <name>Merouane Debbah</name>
-    </author>
-    <author>
-      <name>Izzat Alsmadi</name>
-    </author>
-    <summary type="text">Smart-city airspace is transforming Uncrewed Aerial Vehicles (UAVs) from passive sensing platforms into cyber-physical decision makers that must follow operational rules under degraded observations and ambiguous language. Existing UAV and multimodal benchmarks evaluate perception, navigation, collaboration, and reasoning, but few assess whether physical evidence, protocol constraints, and action risk remain coupled during critical decisions. We introduce MulRobBench, an offline, protocol-conditioned benchmark for Vision-Language-Action (VLA) UAV agents in smart-city environments. MulRobBench integrates real UAV multimodal observations, protocol-level security policies, and action-level cyber-physical safety into a unified evaluation framework. The benchmark contains 3,024 samples spanning 17 task taxonomy nodes and 12 scoring dimensions across four stages: operational context understanding, multimodal evidence arbitration, degradation-aware reasoning, and risk-aware action planning. Evaluation combines semantic scoring with structural diagnostics, including policy compliance, format compliance, unsafe actions, parsing failures, and dimension-level validity. Across 17 multimodal models, the best semantic protocol-decision score reaches only 0.5141, while the best strict mean scoring-dimension accuracy is 0.1599. A controlled 20-anchor modality-ablation study changes 4-15 action selections per model, confirming that both visual and textual inputs influence decisions. Analysis identifies modality-trust selection, constraint extraction, glare, missing data, and operator shorthand as the primary causes of decision instability. MulRobBench provides a reproducible benchmark for trustworthy multimodal UAV decision making under realistic operational constraints.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 22 pages, 18 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Emergent Behaviour in Financial Markets</title>
-    <link href="http://arxiv.org/abs/2607.23311v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.23311v1</id>
-    <published>2026-07-25T00:00:00Z</published>
-    <updated>2026-07-25T00:00:00Z</updated>
-    <author>
-      <name>Omar Inverso</name>
-    </author>
-    <author>
-      <name>Emilio Tuosto</name>
-    </author>
-    <author>
-      <name>Dragisa Zunic</name>
-    </author>
-    <summary type="text">Some properties of so-called complex or collective systems can be observed to emerge from the interactions of elementary agents. This phenomenon, known as emergent behaviour, has long since been studied in the most diverse disciplines, with recent growing awareness from the formal methods community about the opportunity of opening up to seemingly distant disciplines with appropriate technology for computer-aided reasoning. Different peculiar elements of complexity make automated reasoning on these systems particularly challenging. We consider electronic financial markets to drive our discussion. We identify and structure the sources of complexity to tackle in order to provide computational support for the analysis of emergent phenomena. We refrain from evaluating the suitability of specific technical solutions or frameworks of preference, which would as usual require simplifying assumptions and divert from the actual phenomenon of interest. Rather, we elaborate on possible alternatives to handle some of the main technical aspects involved in automated analysis, while retaining a solid and concrete interpretation of the domain, and in doing so outline a more systematic research program for the formal specification and analysis of market mechanisms.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ISoLA 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
   </entry>
 </feed>
