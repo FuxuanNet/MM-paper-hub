@@ -4,12 +4,220 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-03T04:39:35Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 25 entries</subtitle>
+  <updated>2026-08-04T04:27:22Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 26 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Training Small LLMs as Spatial Multi-Agent Policies</title>
+    <link href="http://arxiv.org/abs/2608.01425v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.01425v1</id>
+    <published>2026-08-02T00:00:00Z</published>
+    <updated>2026-08-02T00:00:00Z</updated>
+    <author>
+      <name>Yi Mao</name>
+    </author>
+    <author>
+      <name>Andrew Perrault</name>
+    </author>
+    <summary type="text">Training LLM-based multi-agent systems with multi-agent reinforcement learning is rapidly gaining traction, and a parallel line of work argues that such systems should be judged by their behavior, not only their reward. We take up both threads in spatial cooperative games, where small frozen LLMs prompted with low-level actions fail outright, earning zero reward. Guided by the options/semi-MDP framework---and, because option execution is asynchronous across agents, its multi-agent extension in macro-action Dec-POMDPs---we equip each game with a library of symbolic \emph{options}: typed, state-feasible, short-horizon behaviors executed by a symbolic planner. Each library is drafted by a frontier coding model from the game's source code; the feasibility guards that filter each menu are then synthesized mechanically from cheap random-policy burn-in rollouts---a guard is adopted only if it explains repeated execution failures while hiding no logged success---so no guard is authored, selected, or reward-tuned by hand. Each agent's LLM acts as its policy over options, with a private per-agent LoRA adapter trained by a per-agent variant of multi-agent GRPO (PA-MAGRPO); this lifts frozen bases from zero reward to competent play across three games and four small backbones. Behavioral audits then reveal that reward and cooperation decouple: a rising reward curve may simply mean that one agent has learned to run the entire task alone while its partner idles---cooperation emerges only when the task makes it necessary. Reward alone is thus an unreliable readout of cooperation; behavioral evaluation must sit alongside it.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Imprecise Belief Fusion Improves Multi-agent Social Learning</title>
+    <link href="http://arxiv.org/abs/2608.01367v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.01367v1</id>
+    <published>2026-08-02T00:00:00Z</published>
+    <updated>2026-08-02T00:00:00Z</updated>
+    <author>
+      <name>Zixuan Liu</name>
+    </author>
+    <author>
+      <name>Jonathan Lawry</name>
+    </author>
+    <author>
+      <name>Michael Crosscombe</name>
+    </author>
+    <summary type="text">In social learning, agents learn not only from direct evidence but also through interactions with their peers. We investigate the role of imprecision in such interactions and ask whether it can improve the effectiveness of the collective learning process. To that end we propose a model of social learning where beliefs are equivalent to formulas in a propositional language, and where agents learn from each other by combining their beliefs according to a fusion operator. The latter is parametrised so as to allow for different levels of imprecision, where a more imprecise fusion operator tends to generates a more imprecise fused belief when the two combined beliefs differ. In this context we describe both difference equation models and agent-based simulations of social learning under a variety of conditions and with different initial biases. The results presented suggest that for populations with a strong initial bias towards incorrect beliefs some level of imprecision in fusion can improve learning accuracy across a range of learning conditions. Furthermore, such benefits of imprecision are consistent with a stability analysis of the fixed points of the proposed difference equation models.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; physics.soc-ph" />
+  </entry>
+  <entry>
+    <title>Asking Questions the Right Way: A Multi-Agent Conversational System for Prompt Formulation in Complex Task Resolution</title>
+    <link href="http://arxiv.org/abs/2608.01366v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.01366v1</id>
+    <published>2026-08-02T00:00:00Z</published>
+    <updated>2026-08-02T00:00:00Z</updated>
+    <author>
+      <name>B. Sankar</name>
+    </author>
+    <author>
+      <name>Pawni Yadav</name>
+    </author>
+    <author>
+      <name>Srinidhi Ranjini Girish</name>
+    </author>
+    <author>
+      <name>Amogh A. S</name>
+    </author>
+    <summary type="text">Large language models (LLMs) are integral to complex intellectual tasks, yet output quality remains constrained by user-provided prompts. Iterative multi-turn prompting often leads to context degradation and diminishing cognitive returns. We present PAWNI (Prompt Architecture Wizard using Neural Intelligence), an agentic conversational interface of eight agents that transforms unstructured queries into structured prompts through guided question-and-answer dialogue informed by a self-evolving knowledge base. Rather than optimizing the models response, PAWNI optimizes the question itself by front-loading intent clarification. We also propose a three-tier framework of 18 prompt elements across Essential, Enhancement, and Elevation categories.To evaluate system behavior and validate a measurement protocol, we conducted an exploratory within-subjects study (N=4) across four complex tasks, integrating 32-channel EEG, NASA-TLX workload, and behavioral metrics. Participants produced more structurally complete prompts with PAWNI (42% to 91% of assessed elements), rated LLM outputs higher across all quality dimensions, and reported lower workload (39.6 vs. 21.7 NASA-TLX). Every participant reached satisfactory output in a single turn, compared to 1-12 turns unaided. While effect sizes are unstable due to sample size, direction consistency supports the hypothesis that optimizing prompt formulation front-end is a critical lever for human-AI collaboration.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 53 pages, 31 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>When Collaboration Becomes a Trigger: Collective Evidence-Threshold Backdoors in Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2608.01085v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.01085v1</id>
+    <published>2026-08-02T00:00:00Z</published>
+    <updated>2026-08-02T00:00:00Z</updated>
+    <author>
+      <name>Jia-Hao Xiao</name>
+    </author>
+    <author>
+      <name>Lei Feng</name>
+    </author>
+    <author>
+      <name>Min-Ling Zhang</name>
+    </author>
+    <summary type="text">LLM-based multi-agent systems (MAS) extend LLM capabilities through iterative communication and shared contexts. However, this collaboration introduces a vulnerability: backdoor behavior can be activated when peer evidence reaches a hidden threshold, rather than being determined by any single message. We introduce a collective evidence-threshold backdoor paradigm for MAS and Boundary-Conditioned Backdoor Injection (BCBI), which constructs counterfactual boundary pairs to separate benign behavior before the threshold from the adversarial objective after it, and learns latent progression aligned with evidence. To mitigate this threat, we propose LAtent Transition Test-time Evaluation (LATTE), a clean-only latent-transition defense that learns benign communication dynamics and quarantines anomalous agent updates before their responses propagate. Across several benchmarks, BCBI yields selective activation with little premature activation; without knowing the attack target or trigger, LATTE limits propagation with minimal disruption.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 26 pages,11 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Stress-Relief Annealing: Polynomial-Time Simulation-Free Layout Optimization for Automated Warehouses</title>
+    <link href="http://arxiv.org/abs/2608.01024v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.01024v1</id>
+    <published>2026-08-02T00:00:00Z</published>
+    <updated>2026-08-02T00:00:00Z</updated>
+    <author>
+      <name>Xiangjie Luo</name>
+    </author>
+    <author>
+      <name>Yulun Zhang</name>
+    </author>
+    <author>
+      <name>Miyuki Koshimura</name>
+    </author>
+    <author>
+      <name>Makoto Yokoo</name>
+    </author>
+    <author>
+      <name>Jiaoyang Li</name>
+    </author>
+    <summary type="text">We study the problem of optimizing physical layouts for automated warehouses, where hundreds to thousands of robots are coordinated to transport packages. Previous works have shown that optimizing the warehouse layout (e.g., the physical location of the storage shelves) significantly improves throughput. However, state-of-the-art layout optimization approaches are based on evolutionary optimization methods, which treat the entire warehouse as a black box and rely on random mutation to search for high-quality layouts. While the optimization outcomes are promising, these methods require a massive number of simulations to evaluate candidate solutions, making them sample-inefficient. In this paper, we present Stress-Relief Annealing (SRA), a polynomial-time simulation-free layout optimization algorithm. SRA turns the task demand into a per-vertex \emph{stress field} that predicts where traffic will concentrate in the warehouse; the field's peak provably caps the throughput.   Our experimental results show that (1) SRA improves both the throughput and the scalability of a human-designed warehouse, roughly doubling the number of robots it can sustain, (2) it matches or exceeds the throughput of the evolutionary baselines while taking only $19$ minutes on one CPU core, against their $25{,}000$ simulations and $25$ hours on a $64$-core machine, and (3) the gain generalizes across different Multi-Agent Path Finding algorithms, non-uniform task demands, and a warehouse with doubled dimensions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; Robotics" />
+  </entry>
+  <entry>
+    <title>HIERA: Hierarchical Multi-Agent Relevance Assessment for Content Discovery Systems</title>
+    <link href="http://arxiv.org/abs/2608.00785v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.00785v1</id>
+    <published>2026-08-01T00:00:00Z</published>
+    <updated>2026-08-01T00:00:00Z</updated>
+    <author>
+      <name>Pritom Saha Akash</name>
+    </author>
+    <author>
+      <name>Phanideep Gampa</name>
+    </author>
+    <author>
+      <name>Chao Shen</name>
+    </author>
+    <author>
+      <name>Ying Chen</name>
+    </author>
+    <author>
+      <name>Sheikh Muhammad Sarwar</name>
+    </author>
+    <summary type="text">Content discovery systems depend on relevance judgment for search quality evaluation, but human annotation faces inter-annotator disagreement and scaling costs. While Large Language Models show promise as automated assessors, current approaches rely on flat aggregation strategies: single-step prompting, voting ensembles, or uncoordinated multi-agent pipelines that aggregate independent outputs without integration. We propose HIERA, a hierarchical multi-agent relevance assessment framework with four specialized agents: a Relevance Judge, Query Analyzer, Item Analyzer, and Relation Analyzer. The Judge determines when specialist analysis is needed; the Relation Analyzer then coordinates query and item analyses with external knowledge to establish relevance relationships for final judgment. Ablation studies show that the same agents and external knowledge without hierarchical coordination degrade performance, confirming that the coordination structure itself accounts for the improvement. Evaluation across five datasets (EVS, MSRD, ESCI, WANDS, Home Depot) shows improvements over 11 baselines: 10.2\% on Home Depot, 4.8\% on ESCI, and up to 38\% on EVS ($p &lt; 0.05$). Hierarchical coordination yields 12.7\% improvement over uncoordinated collaboration using identical agents.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>MDGAM-Based Cooperative Task Scheduling for Communication-Constrained Distributed Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2608.00648v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.00648v1</id>
+    <published>2026-08-01T00:00:00Z</published>
+    <updated>2026-08-01T00:00:00Z</updated>
+    <author>
+      <name>Licheng Wang</name>
+    </author>
+    <author>
+      <name>Mingtao Huang</name>
+    </author>
+    <author>
+      <name>Yuan Shen</name>
+    </author>
+    <summary type="text">Cooperative task scheduling in communication-constrained distributed multi-agent systems is challenging because each agent must make decisions from partial and dynamic observations while satisfying complex practical constraints. Existing heuristics rely on handcrafted bidding rules and repeated consensus, whereas many learning-based methods assume global observations and lack explicit communication-based coordination. To address these limitations, this paper proposes a neural scheduling framework for distributed multi-robot task allocation (MRTA), consisting of a multi-decoder graph attention model (MDGAM) policy model and a critic-free group relative multi-agent policy gradient (GRMAPG) training algorithm. MDGAM uses an extended graph attention mechanism to jointly update node and edge features, and employs multiple decoders to generate task-selection decisions and communication messages. GRMAPG constructs group-relative advantages from equivalent task-planning instances to replace the critic network used in conventional MARL algorithms, thereby reducing training difficulty and improving convergence performance. Experiments under different problem scales and communication ranges show that the proposed method improves task-completion performance over existing heuristic and learning-based methods, while ablation, complexity, and generalization tests further validate the proposed innovations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>BANDMAS: Causality-Inspired Semantic Packet Scheduling for Bandwidth-Efficient Multi-Agent Collaboration</title>
+    <link href="http://arxiv.org/abs/2608.00458v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.00458v1</id>
+    <published>2026-08-01T00:00:00Z</published>
+    <updated>2026-08-01T00:00:00Z</updated>
+    <author>
+      <name>Jiangwen Dong</name>
+    </author>
+    <author>
+      <name>Wanyu Lin</name>
+    </author>
+    <summary type="text">LLM-based multi-agent systems make decisions based on the aggregated information via exchanging messages across specialized agents. Forwarding every generated message among agents increases application-layer traffic. Yet, it introduces tremendous input tokens for agent processing, potentially raising inference latency and computational overhead. Existing approaches attempt to address the above issues by pruning agents or discarding redundant messages. Nevertheless, such agent-level or message-level optimization results in insufficient evidence supporting for final decisions or still containing redundant message transmissions. To address these challenges, we propose BANDMAS, a multi-agent collaboration framework that models inter-agent communications as task-oriented traffic, which enables efficient transmission via causality-inspired replay valuation. Specifically, we decompose messages into several data packets by analyzing their semantic features such as evidence and requests. The system only transmits these packets if their predicted replay-derived contribution exceeds their resource cost. Consequently, BANDMAS is able to adaptively schedule communication packets while adhering to bandwidth, latency, deadline, and receiver context constraints. On frozen Qwen3-4B traffic across SciFact, HotpotQA, and FanOutQA, our framework reduces application-layer bytes by 53.2\% to 77.3\% at selected caps and attains the highest mean task metric among constrained methods on all three workloads.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>MAPLE-Guard: Memory-Aware Link Enforcement Against Memory-Link Poisoning in Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2608.00426v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.00426v1</id>
+    <published>2026-08-01T00:00:00Z</published>
+    <updated>2026-08-01T00:00:00Z</updated>
+    <author>
+      <name>Wenjun Xiong</name>
+    </author>
+    <author>
+      <name>Yijin Zhou</name>
+    </author>
+    <author>
+      <name>Jiaqian Wang</name>
+    </author>
+    <author>
+      <name>Shangding Gu</name>
+    </author>
+    <author>
+      <name>Bo Tang</name>
+    </author>
+    <author>
+      <name>Zhiyu Li</name>
+    </author>
+    <author>
+      <name>Feiyu Xiong</name>
+    </author>
+    <author>
+      <name>Ying Wen</name>
+    </author>
+    <author>
+      <name>Muning Wen</name>
+    </author>
+    <summary type="text">LLM-based multi-agent systems (MAS) increasingly rely on persistent private and shared memories for long-horizon coordination. This memory layer improves continuity, but it also gives attackers a durable channel: a poisoned memory can be written once, continuously retrieved in later tasks, promoted into shared memory, and reused by other agents. A single poisoned write can therefore steer many later decisions and contaminate agents that never saw the original attack, all while no malicious message crosses a visible communication edge at the moment of harm. Further, because existing safeguards mainly inspect prompts, actions, or communication edges, they can miss attacks whose content appears benign at write time but becomes harmful after retrieval. We introduce Memory-Aware Propagation and Link Enforcement Guard, MAPLE-Guard, a memory-link guard for memory-enabled MAS. MAPLE-Guard monitors the memory lifecycle and places gates at write, retrieval, promotion, and cross-agent reuse, so risky memories can be quarantined, unsafe retrievals filtered, and poisoned private memories blocked before they enter shared memory. In the main evaluation, MAPLE-Guard lowers attack success rate (ASR) from 38.2% to 0.9% on LongMemEval and from 34.7% to 0.2% on AppWorld; it also raises multi-agent defense success rate (MDSR) from 54.0% to 74.3% and from 42.5% to 99.8% on the same benchmarks. These results suggest that memory-aware link enforcement covers a gap left by prompt-level and topology-level defenses. Code is available at the link: https://github.com/xiong-wenjun/MAPLE-Guard.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/xiong-wenjun/MAPLE-Guard"&gt;https://github.com/xiong-wenjun/MAPLE-Guard&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 27 pages, 14 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CR" />
+  </entry>
   <entry>
     <title>SeekBrain: An Autonomous Multi-Agent System for Accelerating Neuroscience Discovery</title>
     <link href="http://arxiv.org/abs/2607.29347v1" rel="alternate" type="text/html" />
@@ -538,321 +746,5 @@
     <summary type="text">LLM-agent systems can solve complex tasks through dynamic self-organization and emergent cooperation. Auditing this process is essential because plausible intermediate or final outputs can conceal incomplete or unsupported work and poorly allocated responsibility, ultimately compromising response quality. While existing approaches may record messages, tool calls, provenance, or task dependencies, an auditability gap exists as they do not jointly represent what work remains, who is responsible for it, and what evidence justifies each work-state transition. We address this auditability gap by proposing \emph{Integrated Cooperation-Obligation REpresentation} (iCORE). It creates a unified encoding $X=(G,Q,Π)$ integrating observable interactions as a cooperation graph $G$, evolving work and assignments as an obligation graph $Q$, and the audit map $Π$ linking them with verifiable properties and evidence. This iCORE representation enables the auditor to certify two complementary properties: {Work soundness}, where every active decision-relevant work assertion must have a finite justification through $G$ and $Π$; and {Agent-assignment stability}, which requires that no feasible alternative agent improve the declared contribution value for an evaluated obligation by more than $ε$. We establish local-to-global soundness and assignment-regret guarantees and a performance bound under stated conditions. iCORE is an instrumentation layer over workflows. Numerical results show that the full coupled state exactly reconstructs soundness and assignment defects in two execution modes and that, relative to passive full-state observation, iCORE-Audit yields absolute trajectory-quality improvements of $11.5\%$ and $26.4\%$ in controlled and real-LLM execution, respectively, with corresponding absolute terminal-performance improvements of $15.1\%$ and $31.0\%$.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Towards a Systems Foundation for Agentic Cloud Management</title>
-    <link href="http://arxiv.org/abs/2607.25883v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25883v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Minghao Li</name>
-    </author>
-    <author>
-      <name>Ziqian Liu</name>
-    </author>
-    <author>
-      <name>Ziyu Mao</name>
-    </author>
-    <author>
-      <name>Daqian Ding</name>
-    </author>
-    <author>
-      <name>Yu Kang</name>
-    </author>
-    <author>
-      <name>Qingwei Lin</name>
-    </author>
-    <author>
-      <name>Tianyin Xu</name>
-    </author>
-    <author>
-      <name>Yiming Qiu</name>
-    </author>
-    <summary type="text">Agentic cloud management is emerging as a practice to automate laborious operations, minimize toil, and improve responsiveness. Despite the rapid development of autonomous management agents, we argue that the fundamental missing piece is a systems foundation to enable safe, effective operations across agents and between agents and human operators. In this paper, we advocate for the need of such a systems foundation and share our efforts on developing CloudWeaver, an agentic management substrate that works across existing cloud-user interfaces and future agent-native interfaces. Specifically, we discuss how CloudWeaver (1) scopes the context of individual agent sessions with local views of cloud resources and (2) coordinates concurrent management operations on shared cloud resources. CloudWeaver offers strong safety guarantees and attributable feedback in the presence of conflicting intents, while preserving concurrency between independent operations. We validate CloudWeaver using a representative Azure API workload.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>CHILL-Harness: Counterfactual Harness Learning for Efficient Reasoning in Long-Horizon Agents</title>
-    <link href="http://arxiv.org/abs/2607.25825v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25825v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Jiarun Fu</name>
-    </author>
-    <author>
-      <name>Lizhong Ding</name>
-    </author>
-    <author>
-      <name>Sida Chen</name>
-    </author>
-    <author>
-      <name>Honglei Xin</name>
-    </author>
-    <author>
-      <name>Chunhui Zhang</name>
-    </author>
-    <author>
-      <name>Pengqi Li</name>
-    </author>
-    <author>
-      <name>Qiuning Wei</name>
-    </author>
-    <author>
-      <name>Ye Yuan</name>
-    </author>
-    <author>
-      <name>Guoren Wang</name>
-    </author>
-    <summary type="text">Agent harnesses have become the operational infrastructure of modern large language model agents, coordinating context, tools, verification, and execution control to translate latent model capability into reliable long-horizon behavior. However, reliable long-horizon behavior requires harness control to adapt to task demands, execution environments, and evolving execution states, whereas current harnesses predominantly rely on hand-crafted or globally fixed policies; this mismatch manifests as unnecessary computational overhead and, in adverse cases, reduced task success. To address this limitation, we formulate the task of enabling adaptive orchestration in harness systems as a causal learning problem and propose Counterfactual Harness Intervention Learning for Long-Horizon Agents (CHILL-Harness). CHILL-Harness intervenes at the orchestration layer to enable advantage-guided workflow adaptation, thereby improving reasoning and execution efficiency while preserving task performance. Specifically, we develop causal intervention effect learning as the effect-estimation component of CHILL-Harness to estimate intervention-relative workflow advantage from confidence-weighted execution evidence and identify advantageous workflow adaptations. We further introduce advantage-realizing causal orchestration as its realization component to adaptively allocate counterfactual reasoning and realize only workflow adjustments supported by sufficient expected advantage. Finally, we incorporate a success-preserving objective and advantage-margin authorization constraints into CHILL-Harness to promote reliable adaptation. Extensive experiments on heterogeneous long-horizon tasks spanning information seeking, software engineering, and terminal interaction show that CHILL-Harness consistently preserves or improves task success while substantially reducing token consumption and execution time.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>ARCHER: Agentic Rule and Compliance Harness for Executable Regulations</title>
-    <link href="http://arxiv.org/abs/2607.25566v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25566v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Chiraag Singh Anand</name>
-    </author>
-    <author>
-      <name>Xue Wen Tan</name>
-    </author>
-    <author>
-      <name>Lionel Teo</name>
-    </author>
-    <author>
-      <name>Eric Tan</name>
-    </author>
-    <summary type="text">Verifying building compliance requires validating thousands of rules against large Building Information Modeling (BIM) designs, which is laborious, capital-intensive, and unscalable. Existing Automated Compliance Checkers (ACCs) are often difficult to generalize across different scenarios, as they are typically developed for highly specific rule sets and use cases. In addition, many ACCs are proprietary, meaning the underlying verification code is not released to end users, so users cannot verify whether their regulatory intent can be accurately captured. We introduce ARCHER (Agentic Rule and Compliance Harness for Executable Regulations), a test-driven, deterministically orchestrated multi-agent program-synthesis harness that generates auditable verification code from regulatory Codes of Practice, enabling transparent, adaptable, and scalable compliance checking. To characterize what makes agentic synthesis work, we evaluate a taxonomy of six harnesses of increasing agentic sophistication across four backbone models, spanning realistic data-governance tiers (from frontier third-party APIs to a fully on-premise open-weights model) on a novel dataset derived from real-world compliance scenarios. ARCHER's deterministic multi-agent orchestration achieves the highest accuracy for every backbone, improving mean union accuracy by 82% over a naive single-pass prompting baseline. Our cost-accuracy analysis further shows that using the ARCHER harness, a self-hosted open-weights model can reach 97.8% of frontier-API accuracy at a quarter of the cost, making data-sovereign compliance checking practical.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.CE; cs.SE" />
-  </entry>
-  <entry>
-    <title>CoRenew: A large language model agent-based policy simulation platform for multifamily residential redevelopment</title>
-    <link href="http://arxiv.org/abs/2607.25447v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25447v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Yudi Zhang</name>
-    </author>
-    <author>
-      <name>Yuming Lin</name>
-    </author>
-    <author>
-      <name>Li Tian</name>
-    </author>
-    <author>
-      <name>Yu Wang</name>
-    </author>
-    <author>
-      <name>Jianghao Yu</name>
-    </author>
-    <summary type="text">The difficulty of collective action remains a central challenge in the design of policies for multifamily residential redevelopment. Stakeholders continually adjust their decisions in response to evolving negotiation contexts and the reactions of others, meaning that when a policy intervenes and which stakeholders it targets can substantially reshape collective outcomes. Assessing these adaptive responses ex ante remains difficult because existing simulation models often rely on predefined behavioral rules. Here, we present CoRenew, an open-source platform that uses LLM-based agents to simulate negotiations among multiple stakeholders and evaluate the effects of alternative policy combinations. Integrating open source geographic and demographic data, the platform can generate synthetic residents, simulate negotiation dynamics under alternative policy settings and compares policy performance across competing objectives. It supports both numerical and semantic policy inputs and includes built-in tools for visualization and result export. We validate its behavioral realism against survey responses from 324 residents and a nine-month observed negotiation process from a real redevelopment case. With its modular and adaptable architecture, CoRenew can be used to assess policies across different institutional and cultural contexts.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>SafeFlow: Semantic Information-Flow Control for Blocking Malicious Propagation in Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2607.25255v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25255v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Haowen Dai</name>
-    </author>
-    <author>
-      <name>Zonghao Ying</name>
-    </author>
-    <author>
-      <name>Wenfeng Li</name>
-    </author>
-    <author>
-      <name>Xiangfan Wu</name>
-    </author>
-    <author>
-      <name>Yisong Xiao</name>
-    </author>
-    <author>
-      <name>Tianyuan Zhang</name>
-    </author>
-    <author>
-      <name>Jiaye Lin</name>
-    </author>
-    <author>
-      <name>Lei Wei</name>
-    </author>
-    <author>
-      <name>Guangyuan Dong</name>
-    </author>
-    <author>
-      <name>Xitong Ling</name>
-    </author>
-    <author>
-      <name>Xixun Lin</name>
-    </author>
-    <author>
-      <name>Quanchen Zou</name>
-    </author>
-    <author>
-      <name>Xiangzheng Zhang</name>
-    </author>
-    <summary type="text">Multi-agent systems improve capability through task decomposition and role specialization, but these same mechanisms introduce an important safety blind spot: a harmful objective can be fragmented into locally plausible subtasks, allowing malicious intent to evade detection by any single agent. This is a growing social-impact challenge: systems handling sensitive information or consequential tools can turn routine delegation into unauthorized disclosure or unsafe action. We argue that this failure mode is better understood as a semantic information-flow problem than as a single-turn prompt classification task. To address this, we propose SafeFlow, a defense framework for multi-agent systems that formalizes malicious cross-agent propagation as a semantic information-flow problem. SafeFlow attaches structured semantic taints to root requests, propagates them through a dynamic collaboration graph, and performs workflow-level validation to reconstruct the global risk context before irreversible actions are committed. Evaluated on four benchmarks spanning prompt injection, jailbreak-based unsafe tool use, risky code execution, and harmful web-agent behavior, SafeFlow reduces attack success rates compared to undefended baselines and external defenses while retaining high benign task completion and a high paired safe--harm success rate. Our findings show that multi-agent systems still lack mechanisms for preserving risk semantics across delegation boundaries. This gap can turn routine delegation into privacy harms or unsafe actions that affect people and organizations. SafeFlow keeps this risk visible throughout the workflow, before it results in harm.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; TAP&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.CR" />
-  </entry>
-  <entry>
-    <title>Agentic AI-enabled discovery across large-scale sleep physiology</title>
-    <link href="http://arxiv.org/abs/2607.25175v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25175v1</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Rahul Thapa</name>
-    </author>
-    <author>
-      <name>Umaer Hanif</name>
-    </author>
-    <author>
-      <name>Robin Guillard</name>
-    </author>
-    <author>
-      <name>Andreas Brink-Kjaer</name>
-    </author>
-    <author>
-      <name>Adrien Specht</name>
-    </author>
-    <author>
-      <name>Matteo Saibene</name>
-    </author>
-    <author>
-      <name>Magnus Ruud Kjaer</name>
-    </author>
-    <author>
-      <name>Harrison G. Zhang</name>
-    </author>
-    <author>
-      <name>Elisabeth Roxane M. Heremans</name>
-    </author>
-    <author>
-      <name>Eric C. Landsness</name>
-    </author>
-    <author>
-      <name>Emmanuel Mignot</name>
-    </author>
-    <author>
-      <name>James Zou</name>
-    </author>
-    <summary type="text">Sleep occupies roughly one-third of human life, yet many aspects of its physiology remain poorly understood. Large polysomnography (PSG) datasets offer new opportunities to study sleep and its links to disease, but extracting insight from these recordings requires substantial expert effort and remains difficult for general-purpose AI systems. We developed AI Sleep Co-Scientist, an expert-guided environment in which human scientists direct specialist agents for hypothesis development, signal preprocessing, and statistical analysis, reviewing intermediate outputs. Each reported result is linked to the executable code that produced it. Across four cohorts of approximately 124,000 PSG recordings and more than 50 TB of raw signals, we conducted five case studies spanning how sleep physiology relates to future disease, how it distinguishes clinical phenotypes, and how sleep is organized and regulated. Diminished network-level physiological coupling during sleep was associated with incident Parkinson's disease (HR 1.48) and Alzheimer's disease (HR 1.38). A physiologically structured late-fusion sleep-age model outperformed an unconstrained early-fusion approach, and its age residual was associated with incident disease across multiple organ systems. Arousal dynamics characterized comorbid insomnia and sleep apnoea as an intermediate phenotype skewed towards obstructive sleep apnoea, distinguished by prolonged post-arousal wakefulness. Rapid eye movement (REM) bout duration tracked preceding non-REM sleep more closely than intervening wakefulness. Transient-oscillation analysis identified a fast-sigma deficit and excess centrofrontal theta activity in narcolepsy type 1. Together, these findings connect sleep to disease risk, clinical classification, and its own regulation, and show how agentic AI can support large-scale, multimodal discovery.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Agentic AI-enabled discovery across large-scale sleep physiology</title>
-    <link href="http://arxiv.org/abs/2607.25175v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25175v2</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Rahul Thapa</name>
-    </author>
-    <author>
-      <name>Umaer Hanif</name>
-    </author>
-    <author>
-      <name>Robin Guillard</name>
-    </author>
-    <author>
-      <name>Andreas Brink-Kjaer</name>
-    </author>
-    <author>
-      <name>Adrien Specht</name>
-    </author>
-    <author>
-      <name>Matteo Saibene</name>
-    </author>
-    <author>
-      <name>Magnus Ruud Kjaer</name>
-    </author>
-    <author>
-      <name>Harrison G. Zhang</name>
-    </author>
-    <author>
-      <name>Federico Bianchi</name>
-    </author>
-    <author>
-      <name>Elisabeth Roxane M. Heremans</name>
-    </author>
-    <author>
-      <name>Eric C. Landsness</name>
-    </author>
-    <author>
-      <name>Emmanuel Mignot</name>
-    </author>
-    <author>
-      <name>James Zou</name>
-    </author>
-    <summary type="text">Sleep occupies roughly one-third of human life, yet many aspects of its physiology remain poorly understood. Large polysomnography (PSG) datasets offer new opportunities to study sleep and its links to disease, but extracting insight from these recordings requires substantial expert effort and remains difficult for general-purpose AI systems. We developed AI Sleep Co-Scientist, an expert-guided environment in which human scientists direct specialist agents for hypothesis development, signal preprocessing, and statistical analysis, reviewing intermediate outputs. Each reported result is linked to the executable code that produced it. Across four cohorts of approximately 124,000 PSG recordings and more than 50 TB of raw signals, we conducted five case studies spanning how sleep physiology relates to future disease, how it distinguishes clinical phenotypes, and how sleep is organized and regulated. Diminished network-level physiological coupling during sleep was associated with incident Parkinson's disease (HR 1.48) and Alzheimer's disease (HR 1.38). A physiologically structured late-fusion sleep-age model outperformed an unconstrained early-fusion approach, and its age residual was associated with incident disease across multiple organ systems. Arousal dynamics characterized comorbid insomnia and sleep apnoea as an intermediate phenotype skewed towards obstructive sleep apnoea, distinguished by prolonged post-arousal wakefulness. Rapid eye movement (REM) bout duration tracked preceding non-REM sleep more closely than intervening wakefulness. Transient-oscillation analysis identified a fast-sigma deficit and excess centrofrontal theta activity in narcolepsy type 1. Together, these findings connect sleep to disease risk, clinical classification, and its own regulation, and show how agentic AI can support large-scale, multimodal discovery.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>SafeFlow: Semantic Information-Flow Control for Blocking Malicious Propagation in Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2607.25255v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.25255v2</id>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <author>
-      <name>Haowen Dai</name>
-    </author>
-    <author>
-      <name>Zonghao Ying</name>
-    </author>
-    <author>
-      <name>Wenfeng Li</name>
-    </author>
-    <author>
-      <name>Xiangfan Wu</name>
-    </author>
-    <author>
-      <name>Yisong Xiao</name>
-    </author>
-    <author>
-      <name>Tianyuan Zhang</name>
-    </author>
-    <author>
-      <name>Jiaye Lin</name>
-    </author>
-    <author>
-      <name>Lei Wei</name>
-    </author>
-    <author>
-      <name>Guangyuan Dong</name>
-    </author>
-    <author>
-      <name>Xitong Ling</name>
-    </author>
-    <author>
-      <name>Xixun Lin</name>
-    </author>
-    <author>
-      <name>Quanchen Zou</name>
-    </author>
-    <author>
-      <name>Xiangzheng Zhang</name>
-    </author>
-    <summary type="text">Multi-agent systems improve capability through task decomposition and role specialization, but these same mechanisms introduce an important safety blind spot: a harmful objective can be fragmented into locally plausible subtasks, allowing malicious intent to evade detection by any single agent. This is a growing social-impact challenge: systems handling sensitive information or consequential tools can turn routine delegation into unauthorized disclosure or unsafe action. We argue that this failure mode is better understood as a semantic information-flow problem than as a single-turn prompt classification task. To address this, we propose SafeFlow, a defense framework for multi-agent systems that formalizes malicious cross-agent propagation as a semantic information-flow problem. SafeFlow attaches structured semantic taints to root requests, propagates them through a dynamic collaboration graph, and performs workflow-level validation to reconstruct the global risk context before irreversible actions are committed. Evaluated on four benchmarks spanning prompt injection, jailbreak-based unsafe tool use, risky code execution, and harmful web-agent behavior, SafeFlow reduces attack success rates compared to undefended baselines and external defenses while retaining high benign task completion and a high paired safe--harm success rate. Our findings show that multi-agent systems still lack mechanisms for preserving risk semantics across delegation boundaries. This gap can turn routine delegation into privacy harms or unsafe actions that affect people and organizations. SafeFlow keeps this risk visible throughout the workflow, before it results in harm.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; TAP&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.CR" />
   </entry>
 </feed>
