@@ -4,12 +4,96 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-05T04:17:38Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 29 entries</subtitle>
+  <updated>2026-08-06T04:26:00Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 26 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>HELENA:Hierarchical Sparse Coordination over a Union of Complementary Topologies for MAS</title>
+    <link href="http://arxiv.org/abs/2608.04634v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.04634v1</id>
+    <published>2026-08-05T00:00:00Z</published>
+    <updated>2026-08-05T00:00:00Z</updated>
+    <author>
+      <name>Zhifang Mao</name>
+    </author>
+    <author>
+      <name>Linyao Zheng</name>
+    </author>
+    <author>
+      <name>Xuhang Shi</name>
+    </author>
+    <author>
+      <name>Xiuquan Hou</name>
+    </author>
+    <summary type="text">LLM-based multi-agent systems (MAS) typically optimize a single topology, restricting reasoning to a narrow trajectory and limiting comprehensive analytical capacity. Naively merging multiple topologies into a composite graph introduces redundant noise propagation across irrelevant connections, degrading solution quality. To address this dilemma, we propose \textbf{Hierarchical Sparse Coordination over a Union of Complementary Topologies for MAS (HELENA)}, a multi-agent framework that balances diverse reasoning paths with sparse task-dependent execution. \helena{} constructs a union MAS graph from complementary candidate topologies selected via Monte Carlo Tree Search and Determinantal Point Process, broadening the reasoning trajectory for comprehensive analysis of complex problems. A Hierarchical Sparse Coordination module then activates only a sparse subgraph at each step while agents exchange compressed latent briefs to suppress redundant noise propagation. Finally, a Local Self-Refinement stage identifies decision units with discrepancy evidence and rewrites them only when contrastive evidence simultaneously confirms a reliable solution-side failure and a challenger-side improvement. Experiments across eight benchmarks show that \helena{} achieves state-of-the-art results on all benchmarks, with an average gain of \pctup{3.47} over the strongest baseline and up to \pctup{10.34} on MMLU-Pro, achieving larger improvements on harder benchmarks at a reasonable additional cost.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Emergence of Reputation-Based Cooperation in LLM Agents</title>
+    <link href="http://arxiv.org/abs/2608.04507v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.04507v1</id>
+    <published>2026-08-05T00:00:00Z</published>
+    <updated>2026-08-05T00:00:00Z</updated>
+    <author>
+      <name>Kazuya Horibe</name>
+    </author>
+    <author>
+      <name>Kenji Itao</name>
+    </author>
+    <author>
+      <name>Wataru Toyokawa</name>
+    </author>
+    <summary type="text">Can cooperation among large language model (LLM) agents be evolutionarily stable against free-rider invasion? We study an indirect reciprocity donation game where LLM agents observe behavioral traces and donate on a continuous scale. Strategies, represented as natural language prompts, evolve through cultural transmission across generations. Across four LLM backends, robustness to free-rider invasion varies by more than an order of magnitude. The strongest predictor of this robustness is opponent endowment sensitivity, the degree to which agents discriminate between cooperative and uncooperative opponents, operationalizing the classical Image Scoring mechanism. By contrast, adherence to the Leading-Eight L1 norm does not predict robustness. Robustness depends on defector exclusion: while both cooperator reward and defector punishment vary across models, only the stringency of defector exclusion predicts resistance to free-rider invasion. These findings reveal that LLM agents are confined to Image Scoring-like discrimination and fail to develop the more robust Leading-Eight norms, highlighting a fundamental vulnerability in culturally evolved LLM cooperation and motivating bottom-up approaches to norm construction.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Neural and Evolutionary Computing" />
+  </entry>
+  <entry>
+    <title>Continuous Improvement and Parallel Autonomous Exploration: An LLM-Agent Framework for Searching Large Solution Spaces</title>
+    <link href="http://arxiv.org/abs/2608.04341v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.04341v1</id>
+    <published>2026-08-05T00:00:00Z</published>
+    <updated>2026-08-05T00:00:00Z</updated>
+    <author>
+      <name>Dulmini Hettiarachchi</name>
+    </author>
+    <author>
+      <name>Andre Rusli</name>
+    </author>
+    <author>
+      <name>Julio Christian Young</name>
+    </author>
+    <author>
+      <name>Sho Akiyama</name>
+    </author>
+    <summary type="text">We present a framework that gives LLM agents two mechanisms for searching large solution spaces autonomously. First, a leaderboard scored on held-out data acts as a reward signal that drives each agent to refine its solutions over repeated submissions, a loop that operates even with a single agent. Second, the framework enables running many agents in parallel, fully autonomously, with no human in the loop: agents independently analyze, survey methods, implement, self-evaluate, submit, and revise, while a moderator agent handles only logistics. Running agents in parallel under the shared reward broadens the explored region of the solution space rather than refining the single seeded paradigm. We instantiate the framework on product-to-catalog matching (a core e-commerce retrieval task with a large, category-structured solution space), posed as selective prediction with a precision-coverage operating point. A single agent refines within its seeded paradigm, whereas parallel autonomous agents surface qualitatively different solutions. On this testbed, best qualified coverage (&gt;=95% P@1 per category) reaches 47.8-57.4% with a single agent and 62.8-69.4% with five, against a 33.3% baseline. Our contribution is the framework itself: a continuous-improvement reward loop and a substrate for fully autonomous parallel exploration, backed by case-study evidence.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 5 pages, ACM KDD'26 Workshop on SciSoc Agents &amp; LLMs&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Responsibility in Multi-Agent Sequential Decision-Making: Comparing Human Judgments to Formal Models of Causal Attribution</title>
+    <link href="http://arxiv.org/abs/2608.04318v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.04318v1</id>
+    <published>2026-08-05T00:00:00Z</published>
+    <updated>2026-08-05T00:00:00Z</updated>
+    <author>
+      <name>Nripsuta Ani Saxena</name>
+    </author>
+    <author>
+      <name>Stelios Triantafyllou</name>
+    </author>
+    <author>
+      <name>Goran Radanović</name>
+    </author>
+    <summary type="text">With the growing adoption of artificial intelligence in high-stakes decision-making, identifying the causes of outcomes--particularly failures--and determining who is responsible has become a critical concern. In this work, we examine how well formal definitions of \textit{responsibility attribution}, grounded in the framework of \textit{actual causality}, align with human judgments of responsibility. To this end, we conduct a large-scale survey to elicit human judgments of responsibility in multi-agent sequential decision-making scenarios, using a modified version of the card game Goofspiel. We evaluate multiple responsibility attribution methods, assess their alignment with human judgments about responsibility, and identify factors that significantly shape responsibility judgments. While no single responsibility attribution method consistently aligns with human responses, our findings highlight key factors that influence human responsibility judgments, including agent-specific biases and amount of information available to agents during decision-making.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>History Matters: Meta-policy Delegation with Heterogeneous Multi-agent Reinforcement Learning</title>
     <link href="http://arxiv.org/abs/2608.03833v1" rel="alternate" type="text/html" />
@@ -138,6 +222,23 @@
     <summary type="text">LLM-based multi-agent systems promise effective collaborative reasoning, but communication may amplify local errors into collective risks. Existing evaluations emphasize final outcomes, leaving the reliability and propagation dynamics of distributed information aggregation unclear. We introduce Hi-Agreement, a controlled evaluation framework that strictly pairs all-honest collaboration with controlled deception by a key evidence holder and analyzes the aggregation process through multi-stage voting, testimony adoption, and evidence-root lineage propagation. Using 120 five-agent object-movement environments where partial observations jointly determine a unique endpoint, we evaluate 3 homogeneous LLM-based multi-agent systems. Across these paired conditions, aggregate truth recovery falls from 72.50% to 14.17%, with significant declines for every system. Process tracing and exit ablations show that a single false testimony is adopted more readily than truthful testimony, propagates to higher orders, and persists through honest agents after the deceiver exits. Observers without first-hand evidence suppress incorrect consensus but do not improve truth recovery. Together, these findings reveal both the fragility of distributed fact recovery and its underlying mechanism: false evidence gains collective influence through its adoption and continued propagation by other agents after entering communication.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Strategic Evaluation of Planning Strategies for LLM Agents in Cyber-Physical Systems</title>
+    <link href="http://arxiv.org/abs/2608.04265v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.04265v1</id>
+    <published>2026-08-04T00:00:00Z</published>
+    <updated>2026-08-04T00:00:00Z</updated>
+    <author>
+      <name>J. de Curtò</name>
+    </author>
+    <author>
+      <name>I. de Zarzà</name>
+    </author>
+    <summary type="text">Evaluations of LLM planning agents largely ask whether a task succeeds or a declared plan is followed. In strategic cyber-physical systems, a stronger question is whether the planning architecture remains appropriate after autonomous participants respond and physics constrains the outcome. We introduce a controlled, physics-grounded benchmark built around planning-induced control trajectories: the ordered planning operations and directives through which an execution architecture acts on other agents and the physical process. It implements predefined, sequential, hierarchical, and search executors in a smart-grid demand-response system with 40 heterogeneous prosumers and an independently simulated radial feeder. The LLM is bounded to typed policy declaration and short operator messages, while schedule construction, prosumer dynamics, and power flow remain explicit code. The protocol uses paired forced-mode counterfactuals, common random response draws, and event-level deadline feasibility. Three properties follow. Architecture materially changes outcomes: forced search is the oracle in all five baseline seeds. Execution fidelity needs more than mode agreement: objective substitution holds agreement at 1.0 while increasing voltage shortfall by 2.68x. A 144-scenario, 576-episode bank has feasible oracles from three of the four architectures. A prespecified stress-held-out ridge has mean regret 90.7 (95% interval [73.8, 108.6]) and no detectable value over fixed sequential; applying known deadline feasibility before quality prediction cuts regret to 29.0 and improves over fixed sequential by 61.1. An all-feasible ablation does not beat fixed search, localising the remaining challenge to within-feasible quality selection. A five-model extension separates stress-conditioned, state-blind, and invariant declarers; latency tails show that live feasibility should be treated probabilistically.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; eess.SY" />
   </entry>
   <entry>
     <title>SABRE: A Multi-Agent Approach for Selecting Out-of-Distribution Detectors Under a Budget</title>
@@ -587,210 +688,5 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;VG&lt;/p&gt;</content>
     <category term="Computer Vision" />
     <category term="Artificial Intelligence; cs.CL; Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Using Theory of Mind to Arbitrate between Social and Non-social Learning</title>
-    <link href="http://arxiv.org/abs/2607.28601v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.28601v1</id>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
-    <author>
-      <name>Lance Ying</name>
-    </author>
-    <author>
-      <name>Ryan Truong</name>
-    </author>
-    <author>
-      <name>Joshua B. Tenenbaum</name>
-    </author>
-    <author>
-      <name>Samuel J. Gershman</name>
-    </author>
-    <summary type="text">Social learning is a powerful mechanism through which agents learn about the world from others. However, humans sometimes choose direct experience over social learning, which can carry time and cognitive resource costs. How do people balance social and non-social learning? We propose a Rational Mentalizing model of the decision to engage in social learning. This model estimates the utility of social learning by reasoning about another agent's goal and the informativeness of their future actions. It then weighs the utility of social learning against the utility of non-social learning. Using a novel game where players choose between observing other agents or exploring the environment, we show that the Rational Mentalizing model can quantitatively capture human trade-offs between these strategies. These findings suggest that selective social learning is guided by 'Theory of Mind' in the service of utility maximization.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 35 pages, includes supplementary information&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="q-bio.NC" />
-  </entry>
-  <entry>
-    <title>AgentRadio: Passive Awareness for Long-Horizon Multi-Agent Collaboration</title>
-    <link href="http://arxiv.org/abs/2607.28430v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.28430v1</id>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
-    <author>
-      <name>Xinxing Ren</name>
-    </author>
-    <author>
-      <name>Qianbo Zang</name>
-    </author>
-    <author>
-      <name>Ziyan Wang</name>
-    </author>
-    <author>
-      <name>Caelum Forder</name>
-    </author>
-    <author>
-      <name>Suman Deb</name>
-    </author>
-    <author>
-      <name>Peter Carroll</name>
-    </author>
-    <author>
-      <name>Zekun Guo</name>
-    </author>
-    <summary type="text">Understanding large codebases is a long-horizon task for Large Language Model (LLM) agents: answering a single question can require building and running the software, tracing execution across files, and synthesizing evidence over tens of minutes. On SWE-Atlas QnA, a benchmark of long-horizon questions over production repositories, a single Claude Code agent (Opus 4.6) resolves only 32.3% of tasks. Dividing the work among agents with clean contexts mitigates this limitation. However, the subtasks of code comprehension are interdependent. One agent's findings can rewrite another's task, so agents must coordinate during execution, not only at phase boundaries. Existing multi-agent systems support such exchange only between phases, through staged handoffs or synchronized rounds. Communication and work remain mutually exclusive. A discovery made mid-execution cannot be shared until the next boundary. We present AgentRadio, an asynchronous message-passing layer that equips coding-agent harnesses with three primitives: threads, messages, and waiting for mentions. The last runs as a background task, surfacing teammates' messages without interrupting foreground work, so each agent remains passively aware of its peers and folds new findings into its ongoing task. Under a five-phase protocol of division of labor and negotiation, four agents organized by AgentRadio resolve 62.1% of tasks, 29.8 points above a single agent and above Claude Code with the newer Opus 4.8 (57.2%). Rubric-level analysis shows the gain growing with task difficulty, consistent with mid-course correction as the underlying mechanism. Our code is available at https://github.com/Coral-Protocol/AgentRadio.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Coral-Protocol/AgentRadio"&gt;https://github.com/Coral-Protocol/AgentRadio&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>VISA: A Structured Description Protocol for Agent-Based Simulation Models Towards Machine Reproducibility</title>
-    <link href="http://arxiv.org/abs/2607.28027v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.28027v1</id>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
-    <author>
-      <name>Zhou He</name>
-    </author>
-    <summary type="text">Agent-based models (ABMs) are difficult to reproduce: their behavior is spread across prose narratives, platform-specific code, and implicit assumptions, so that two readers routinely reconstruct different models from the same documentation. We present VISA, a structured, symbol-based description protocol that specifies a model in eight interconnected tables---four at the agent level (Agent, Variable, Sensing, Internal Function) and four at the model level (Associated Data, Input/Output, Schedule, Validation)---under the principle of minimality with completeness. VISA makes a model machine-parseable and unambiguous via two artifacts: nineteen executable consistency rules that turn model validity into a checkable property, and three reusable LLM-executable skills (authoring, checking, and code generation) that operationalize the full author--check--code--reproduce loop. We validate the protocol on three external, independently authored ABMs spanning three platforms: we reproduce two cross-language (NetLogo to Python) directly from their VISA specifications, and we capture a third, an industrial AnyLogic model, in eight tables (passing all nineteen rules) while honestly demarcating where reproduction is blocked by a proprietary movement library and unavailable data---itself a transparency contribution. VISA moves the reproduction barrier from the model, where it is invisible, to a named, localized dependency, where it is actionable.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.CE" />
-  </entry>
-  <entry>
-    <title>$Σ$-Mem: An Online Reliability Memory for LLM-based Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2607.27958v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.27958v1</id>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
-    <author>
-      <name>Peilin Feng</name>
-    </author>
-    <author>
-      <name>Suorong Yang</name>
-    </author>
-    <author>
-      <name>Soujanya Poria</name>
-    </author>
-    <summary type="text">Memory is central to long-horizon LLM agents, yet existing memory systems primarily preserve interaction content rather than modeling which agents can be trusted and under what conditions. This limitation is particularly important in multi-agent systems, where a central model may be unable to directly verify plausible or correlated peer responses. We introduce $Σ$-Mem, an online reliability memory that records historical competence evidence for individual peers and peer relationship evidence across the peer set. Both forms of evidence are maintained as real symmetric states and updated from post-decision correctness feedback. By Weyl's inequality, the spectral change caused by each event-level update is bounded, enabling stable online adaptation without retraining the underlying models. $Σ$-Mem provides a general write-and-read interface: the same memory can be used for residual steering of a central model, response-free peer routing, or reliability-weighted voting. Across five Qwen-family models, $Σ$-Mem adapts to counterfactual reliability shifts and generalizes to unseen peers and task domains. Direct memory readouts also outperform majority voting and the best fixed peer over the full OOD evaluation set. Moreover, performance improves consistently as more correctness feedback becomes available, indicating that $Σ$-Mem progressively accumulates actionable reliability information. These results establish reliability memory as a reusable foundation for adaptive coordination in LLM-based multi-agent systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Argonaut: Interactive Visual Exploration for Distributed Optimization</title>
-    <link href="http://arxiv.org/abs/2607.27946v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.27946v1</id>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
-    <author>
-      <name>Srijoni Majumdar</name>
-    </author>
-    <author>
-      <name>Chuhao Qin</name>
-    </author>
-    <author>
-      <name>Evangelos Pournaras</name>
-    </author>
-    <summary type="text">Distributed discrete-choice optimization in decentralized settings is often hard to explore and navigate: disentangling what other agents choose, how their choices are interdependent, and how they collectively reach a global objective quickly becomes intractable as the system scales. The major limitation is observability of the search process. Existing methods are largely centralized and offer limited support, visualizing only the final solution or providing algorithm backends over a fixed dataset, so how a solution is reached stays a black box. We present Argonaut, a lightweight, containerized optimization dashboard that enables interactive, visual exploration of the entire search process for multi-agent discrete-choice optimization in decentralized settings. Users upload datasets, construct agents and options, modify the decision space and its parameters on the fly, and run multiple algorithm backends to inspect how each configuration shapes local agent decisions and the resulting global objective. By uniting system construction, optimization, and analysis in one interactive loop, the first of its kind, Argonaut makes distributed discrete-choice optimization a human-in-the-loop process rather than a one-shot, black-box computation. We evaluate Argonaut on real-world household-electricity, shared-mobility, and sensor-data-exchange datasets scaling to 5600 agents and up to 1M solutions under brute force. Built on a Node.js interface with extensible Java and Python optimization backends, it maintains a typical runtime of 200 agents over 100 decision attributes in under 30 seconds.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ACSOS 2026 [artifacts track]&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.DC" />
-  </entry>
-  <entry>
-    <title>Scaling LLM-Driven Multi-Agent Systems: Design Principles and Architectural Scalability Analysis</title>
-    <link href="http://arxiv.org/abs/2607.27942v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.27942v1</id>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
-    <author>
-      <name>Linus Sander</name>
-    </author>
-    <author>
-      <name>Fengjunjie Pan</name>
-    </author>
-    <author>
-      <name>Vahid Zolfaghari</name>
-    </author>
-    <author>
-      <name>Andre Schamschurko</name>
-    </author>
-    <author>
-      <name>Nenad Petrovic</name>
-    </author>
-    <author>
-      <name>Alois Knoll</name>
-    </author>
-    <summary type="text">LLM-based multi-agent systems have the potential to enable collective intelligence and scale toward solving highly complex tasks through coordinated ensembles of specialized agents. However, despite their theoretical potential, the architectural design space remains largely non-systematized and lacks broadly established design principles. Furthermore, the scalability characteristics of such systems are only partially understood so far. This paper makes two contributions. We first distill four design principles for scalable MAS architectures from a structured analysis of prior work: simplicity, elastic feedback, sequential workflows with optional loops, and summary-based communication. We operationalize these principles in a reference architecture whose topology is formalized as a constrained directed workflow graph, and we evaluate four configurations of increasing complexity on a standardized benchmark of terminal-based system engineering tasks using two LLMs of differing capability. Our findings show that scaling yields measurable accuracy improvements with approximately linear cost growth, but only when the underlying LLM exceeds a minimum capability threshold. Performance peaks at intermediate complexity, then degrades due to timeouts and evaluation limitations. In addition, persistent consistency issues emerge as a central challenge across all scaling levels. These results provide concrete design guidance for practitioners and highlight consistency and evaluation standardization as key targets for future research.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Stop Shipping AI Agents on Faith: Capability Is Not Production Readiness</title>
-    <link href="http://arxiv.org/abs/2607.27677v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.27677v1</id>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
-    <author>
-      <name>Fouad Bousetouane</name>
-    </author>
-    <summary type="text">AI agents are moving into production workflows where they retrieve information, call tools, maintain state, and act on behalf of users or organizations, but many release decisions still rely on capability signals, demos, or behavioral tests that do not show whether an agent is ready to operate under production constraints. Capability is therefore not production readiness. This paper introduces the ProofAgent Index (PAI), a governance readiness index for AI agents. PAI combines four dimensions of deployment evidence: Evaluation, Context, Compliance, and Governance. Evaluation measures observed behavior, Context measures the operating environment that shapes that behavior, Compliance measures alignment with applicable rules and controls, and Governance measures whether the organization can authorize, monitor, audit, and control the agent during operation. PAI is implemented inside ProofAgent Harness, an open source infrastructure for auditable AI agent evaluation and governance. Validation across two heavily regulated domains, healthcare and finance, shows that PAI carries held out readiness signal and separates higher risk from lower risk configurations. The results show that context engineering strongly changes reliability, capability improves behavior but does not determine readiness, and governance evidence must remain visible rather than averaged away. PAI reframes agent release from a faith based deployment decision into an auditable readiness decision.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>CyberNeuro: A Privacy-Preserving Agentic Workbench for Cohort-Scale Neuroimage and Clinical Data Analysis</title>
-    <link href="http://arxiv.org/abs/2607.28841v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.28841v1</id>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
-    <author>
-      <name>Ran Ren</name>
-    </author>
-    <author>
-      <name>Junhong Tong</name>
-    </author>
-    <author>
-      <name>Yunxi Kong</name>
-    </author>
-    <author>
-      <name>Yiyao Chen</name>
-    </author>
-    <author>
-      <name>Yucheng Li</name>
-    </author>
-    <author>
-      <name>Kunhao Zhou</name>
-    </author>
-    <author>
-      <name>Shaoqi Wang</name>
-    </author>
-    <author>
-      <name>Yuxiang Tao</name>
-    </author>
-    <author>
-      <name>Shuheng Cao</name>
-    </author>
-    <author>
-      <name>Zhihao Fan</name>
-    </author>
-    <author>
-      <name>Marissa DiPiero</name>
-    </author>
-    <author>
-      <name>Tingting Dan</name>
-    </author>
-    <author>
-      <name>Guorong Wu</name>
-    </author>
-    <summary type="text">Despite tremendous success in neuroimaging methodology, making large-scale, high-dimensional datasets ready for AI/ML applications remains a critical operational bottleneck. Conventional workflows require extensive manual effort across metadata curation, pipeline execution, post-processing quality control, and data management, a burden that disproportionately excludes laboratories with limited manpower and computational infrastructure. To address this real-world barrier, there is an urgent need for scalable, cost-effective computational platforms that democratize advanced neuroimaging analytics and accelerate discoveries in mental health and clinical translation. Capitalizing on multi-agent LLM breakthroughs, we introduce CyberNeuro, an agentic workbench with a tailored local LLM-model ('WandaMind') for automated neuroimaging and health-data analysis. Driven by four dedicated agents (Planner, Validator, Dispatcher, and Reporter) communicating via a secure MCP bridge and a pinned execution layer, CyberNeuro enables researchers to execute complex workflows using natural language while maintaining clinical-grade data privacy. On the public NeuroBench suite, CyberNeuro increases held-out domain accuracy from 40% to 69% over the baseline model. Beyond automated metrics, the platform integrates a human-in-the-loop verification panel to ensure rigorous biomedical quality control. Across the same end-to-end 10-batch cohort workflow suite, the local WandaMind configuration completed all tasks with an estimated aggregate token count of about 10.6% using WandaMind and 61.7% using cloud providers of token usage, compared to Neuroclaw, respectively. The platform and its production-ready modules are available at https://wanda-cyberbench.com.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 25 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.SE" />
   </entry>
 </feed>
