@@ -4,12 +4,98 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-06T04:26:00Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 26 entries</subtitle>
+  <updated>2026-08-07T03:50:08Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 28 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>ASGE-RR: Agentic Service Graph Embedding with Revisable Reservations for Dynamic AI-Agent Calls</title>
+    <link href="http://arxiv.org/abs/2608.06033v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.06033v1</id>
+    <published>2026-08-06T00:00:00Z</published>
+    <updated>2026-08-06T00:00:00Z</updated>
+    <author>
+      <name>Trond Vatten</name>
+    </author>
+    <author>
+      <name>Yuming Jiang</name>
+    </author>
+    <summary type="text">AI-agent workflows often involve remote calls to models, memory stores, and tools distributed across a network. As execution progresses, these dependency calls collectively form an agentic service graph (ASG). Unlike traditional service requests, many dependency calls are revealed only at runtime. Consequently, allocating resources to a currently visible call may consume capacity later needed by a call from a higher-value workflow. We formulate this challenge as Agentic Service Graph Embedding (ASGE), an online network-control problem that maps runtime-revealed workflow calls to service replicas and network paths under capacity, cost and deadline constraints. We present ASGE-RR, an online ASGE controller with revisable reservations. ASGE-RR protects capacity for likely future calls while enforcing the constraints. ASGE-RR evaluates candidate replica-and-path mappings against predicted workflow continuations and updates reservations as new execution information becomes available.   We evaluate ASGE-RR using OpenHands and GPT Researcher workflows executed with gpt-5.6-luna and replayed over in two complementary experimental environments, a controlled Docker testbed and a WAN testbed. The investigation shows that all the evaluated AI-agent tasks expose at least one runtime-revealed dependency call that can be steered before connection establishment. Exploiting this control point, even though the experimental environments are small-scale, ASGE-RR already demonstrates noticeable potential: It completes (up to) 10% more workflow value than a same-information rolling-horizon controller and a current-call steering controller on the WAN testbed. The results suggest that runtime-revealed workflow structure creates a new network control opportunity: protecting resources for likely future calls allows more AI-agent workflows to finish in time.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.PF" />
+  </entry>
+  <entry>
+    <title>Certifying Collective Reasoning in Multi-Agent Systems via Koopman Spectral Analysis</title>
+    <link href="http://arxiv.org/abs/2608.05956v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.05956v1</id>
+    <published>2026-08-06T00:00:00Z</published>
+    <updated>2026-08-06T00:00:00Z</updated>
+    <author>
+      <name>Nuzhat Khan</name>
+    </author>
+    <author>
+      <name>Indrakshi Dey</name>
+    </author>
+    <summary type="text">Orchestrated collectives of large language model (LLM) agents that debate and vote are an emerging form of computational intelligence: the intelligent behaviour resides in the \emph{interaction}, not in any single agent. They improve task accuracy, yet remain black boxes at the system level: there is no principled test of convergence, no bound on the rounds needed, and no faithful account of what drove a decision. This paper develops a novel framework based on Koopman operator theory and validates its theoretical guarantees on multi-agent consensus dynamics. Treating the collective as one nonlinear dynamical system on a communication graph, we read its essential behaviour off the spectrum of its Koopman transfer operator, an exact linear representation of the nonlinear dynamics estimated from interaction traces. The spectrum yields three machine-checkable certificates: the sub-dominant eigenvalue $λ_2$ fixes the intrinsic timescale of reasoning and yields a convergence deadline computable \emph{before} the debate runs; its eigenvector names the coherent factions the collective reasons in, and $|λ_2|$ certifies when that explanation is valid; and the leading spectral coordinates form a compressed, auditable message basis. On an attention-consensus model, the deadline tracks observed convergence with log--log correlation $0.93$ and bounds it in 96\% of 24 configurations; attribution is exact whenever the spectrum certifies metastability; eight of 32 coordinates preserve the decision at 99.7\% fidelity; and a certificate learned from 15 debates held on 60/60 held-out debates. The study runs in minutes on a CPU, making spectral certification a practical layer for trustworthy collective reasoning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="eess.SY" />
+  </entry>
+  <entry>
+    <title>A Two-Tier Perspective on Inference-Time Parallelism in Multi-Agent LLM Systems</title>
+    <link href="http://arxiv.org/abs/2608.05791v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.05791v1</id>
+    <published>2026-08-06T00:00:00Z</published>
+    <updated>2026-08-06T00:00:00Z</updated>
+    <author>
+      <name>Zihan Xu</name>
+    </author>
+    <author>
+      <name>Haolin Tian</name>
+    </author>
+    <author>
+      <name>Hai Jiang</name>
+    </author>
+    <summary type="text">Large language model (LLM)-driven multi-agent systems typically require multiple model invocations and complex coordination during inference, and their execution strategies directly affect system accuracy, latency, and computational cost. Parallel execution provides a means to improve inference-time efficiency. From the perspective of inference-time execution, this paper models parallelism in multi-agent systems as two distinct levels of decision processes: Replica Parallelism, which explores multiple complete solution paths at the task level, and Structural Parallelism, which enables concurrent execution within a single solution path through task decomposition. However, the roles of different forms of parallelism and their interrelationships still lack systematic study in terms of unified organization and coordination. We therefore propose TIPEX, a controllable execution framework that unifies these two levels of parallelism and coordinates their roles within the inference process under a unified execution semantics while supporting systematic combinations and analyses of different parallel strategies and parameter configurations. Systematic experiments on the GAIA benchmark demonstrate that inference-time parallelism can significantly improve accuracy and reduce end-to-end latency at the cost of increased token consumption. Further analysis shows that Replica and Structural Parallelism exhibit complementary effects across task complexities, with tasks of intermediate difficulty benefiting most from their coordination, while overly aggressive parallel strategies do not necessarily yield better performance.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICML 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>F$^2$Agent: Financial Fusion of Agentic Intelligence for Multimodal Trading</title>
+    <link href="http://arxiv.org/abs/2608.05668v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.05668v1</id>
+    <published>2026-08-06T00:00:00Z</published>
+    <updated>2026-08-06T00:00:00Z</updated>
+    <author>
+      <name>Changshuo Liu</name>
+    </author>
+    <author>
+      <name>Yanzheng Jin</name>
+    </author>
+    <author>
+      <name>Shangfeng Cai</name>
+    </author>
+    <author>
+      <name>Peng Fang</name>
+    </author>
+    <author>
+      <name>Xiaokui Xiao</name>
+    </author>
+    <author>
+      <name>Beng Chin Ooi</name>
+    </author>
+    <summary type="text">With increasingly diverse and heterogeneous information sources, effectively leveraging multimodal data is becoming pivotal for high-quality financial trading. Although recent advancements in Large Language Model (LLM)-based agents have enabled the ingestion of multimodal inputs, existing methods fail to capture nuanced cross-modal dependencies and remain vulnerable to market noise, due to limited multimodal modeling, ineffective fusion mechanisms, and inadequate robustness. To address these challenges, we propose F$^2$Agent, a novel multimodal agentic paradigm driven by the Financial Fusion of Agentic Intelligence. F$^2$Agent first deploys a hierarchy of specialized agents to comprehensively extract modality-specific signals. It further introduces a modality-aware adaptive fusion mechanism coupled with noise-robust consistency regularization to dynamically capture fine-grained inter-modality dependencies and generate noise-resilient trading signals. Extensive experiments on six stocks and cryptocurrency assets demonstrate that F$^2$Agent consistently outperforms 16 competitive baselines across multiple trading metrics, with over 20% relative improvement in annualized return on average. Notably, F$^2$Agent delivers returns of 120.48% on GOOG and 148.41% on TSLA, demonstrating its efficacy and robustness in varying market dynamics.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 32 pages, 12 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; MAG&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; Multimedia" />
+  </entry>
   <entry>
     <title>HELENA:Hierarchical Sparse Coordination over a Union of Complementary Topologies for MAS</title>
     <link href="http://arxiv.org/abs/2608.04634v1" rel="alternate" type="text/html" />
@@ -239,6 +325,43 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence; eess.SY" />
+  </entry>
+  <entry>
+    <title>When Truth Is Distributed: Misinformation Derails Collective Fact Recovery in LLM-Based Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2608.03421v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.03421v2</id>
+    <published>2026-08-04T00:00:00Z</published>
+    <updated>2026-08-04T00:00:00Z</updated>
+    <author>
+      <name>Chenfei Yan</name>
+    </author>
+    <author>
+      <name>Zeyang Yue</name>
+    </author>
+    <author>
+      <name>Feifei Zhao</name>
+    </author>
+    <author>
+      <name>Erliang Lin</name>
+    </author>
+    <author>
+      <name>Lu Jia</name>
+    </author>
+    <author>
+      <name>Haibo Tong</name>
+    </author>
+    <author>
+      <name>Mingyang Lyu</name>
+    </author>
+    <author>
+      <name>Chengyi Sun</name>
+    </author>
+    <author>
+      <name>Yi Zeng</name>
+    </author>
+    <summary type="text">LLM-based multi-agent systems promise effective collaborative reasoning, but communication may amplify local errors into collective risks. Existing evaluations emphasize final outcomes, leaving the reliability and propagation dynamics of distributed information aggregation unclear. We introduce Hi-Agreement, a controlled evaluation framework that strictly pairs all-honest collaboration with controlled deception by a key evidence holder and analyzes the aggregation process through multi-stage voting, testimony adoption, and evidence-root lineage propagation. Using 120 five-agent object-movement environments where partial observations jointly determine a unique endpoint, we evaluate 3 homogeneous LLM-based multi-agent systems. Across these paired conditions, aggregate truth recovery falls from 72.50% to 14.17%, with significant declines for every system. Process tracing and exit ablations show that a single false testimony is adopted more readily than truthful testimony, propagates to higher orders, and persists through honest agents after the deceiver exits. Observers without first-hand evidence suppress incorrect consensus but do not improve truth recovery. Together, these findings reveal both the fragility of distributed fact recovery and its underlying mechanism: false evidence gains collective influence through its adoption and continued propagation by other agents after entering communication.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
   </entry>
   <entry>
     <title>SABRE: A Multi-Agent Approach for Selecting Out-of-Distribution Detectors Under a Budget</title>
@@ -532,161 +655,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="cs.CR" />
-  </entry>
-  <entry>
-    <title>SeekBrain: An Autonomous Multi-Agent System for Accelerating Neuroscience Discovery</title>
-    <link href="http://arxiv.org/abs/2607.29347v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.29347v1</id>
-    <published>2026-07-31T00:00:00Z</published>
-    <updated>2026-07-31T00:00:00Z</updated>
-    <author>
-      <name>Jiamin Wu</name>
-    </author>
-    <author>
-      <name>Peishan Xiang</name>
-    </author>
-    <author>
-      <name>Jingyang Chen</name>
-    </author>
-    <author>
-      <name>Yuqing Zhu</name>
-    </author>
-    <author>
-      <name>Yuxi Li</name>
-    </author>
-    <author>
-      <name>Ling Luo</name>
-    </author>
-    <author>
-      <name>Qihao Zheng</name>
-    </author>
-    <author>
-      <name>Jialiang Zu</name>
-    </author>
-    <author>
-      <name>Yongchao Wu</name>
-    </author>
-    <author>
-      <name>Mindong Liu</name>
-    </author>
-    <author>
-      <name>Haitao Wu</name>
-    </author>
-    <author>
-      <name>Chaofan Hu</name>
-    </author>
-    <author>
-      <name>Yijie Sun</name>
-    </author>
-    <author>
-      <name>Yuqi Hang</name>
-    </author>
-    <author>
-      <name>Yu Zhu</name>
-    </author>
-    <author>
-      <name>Shuo Li</name>
-    </author>
-    <author>
-      <name>Yue Fan</name>
-    </author>
-    <author>
-      <name>Shiyang Feng</name>
-    </author>
-    <author>
-      <name>Wanghan Xu</name>
-    </author>
-    <author>
-      <name>Tianlei Zhang</name>
-    </author>
-    <author>
-      <name>Jie Zhang</name>
-    </author>
-    <author>
-      <name>Wenlong Zhang</name>
-    </author>
-    <author>
-      <name>Bo Zhang</name>
-    </author>
-    <author>
-      <name>Kai Wang</name>
-    </author>
-    <author>
-      <name>Lei Bai</name>
-    </author>
-    <author>
-      <name>Mianxin Liu</name>
-    </author>
-    <author>
-      <name>Wanli Ouyang</name>
-    </author>
-    <author>
-      <name>Jiulin Du</name>
-    </author>
-    <author>
-      <name>Chunfeng Song</name>
-    </author>
-    <summary type="text">Modern neuroscience relies on integrating multi-scale, multimodal datasets to uncover the neural principles underlying intelligence. However, analytical challenges posed by highly heterogeneous data and fragmented workflows increasingly constrain discoveries. Here we introduce SeekBrain, an autonomous multi-agent framework designed to accelerate neuroscience discovery through domain-grounded hierarchical planning and cross-modal data analysis. SeekBrain dynamically constructs a repertoire of analysis recipes extracted from code-paper pairs. By coupling this codified expertise with agentic planning and execution engines, the framework scalably generates hypotheses and analytical pipelines on demand. Systematic evaluation on the expert-annotated BrainArena benchmark demonstrates that SeekBrain substantially outperforms state-of-the-art agent baselines across various analysis tasks. Crucially, when deployed in real-world research, SeekBrain integrated behavioral, neural, and anatomical data to reveal structured, distributed neural representations of larval zebrafish behavior and a shared axis of regional decoding strength across the brain in a mouse decision-making task. These results establish SeekBrain as a scalable and practical tool for accelerating data-driven discoveries in neuroscience.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>TransMem: Transforming Hidden States into Memory for Large Language Models</title>
-    <link href="http://arxiv.org/abs/2607.29032v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.29032v1</id>
-    <published>2026-07-31T00:00:00Z</published>
-    <updated>2026-07-31T00:00:00Z</updated>
-    <author>
-      <name>Haodong Lei</name>
-    </author>
-    <author>
-      <name>Junming Liu</name>
-    </author>
-    <author>
-      <name>Yirong Chen</name>
-    </author>
-    <author>
-      <name>Pinlong Cai</name>
-    </author>
-    <author>
-      <name>Botian Shi</name>
-    </author>
-    <author>
-      <name>Ding Wang</name>
-    </author>
-    <author>
-      <name>Hongsong Wang</name>
-    </author>
-    <summary type="text">Large language model (LLM) agents increasingly operate over long interaction histories, where effective reasoning requires identifying and exploiting task-relevant evidence distributed across past observations and actions. However, useful information encoded in previously computed representations is often underutilized during subsequent generation. We propose \textbf{TransMem}, a lightweight inference-time parametric memory module that transforms sparse historical hidden states from a frozen LLM backbone into reusable memory representations. TransMem uses a lightweight gating network to dynamically apply the latent intervention to the current hidden states, without repeatedly encoding the preceding context. To learn transferable memory utilization rather than task-specific knowledge, we introduce evidence-conditioned self-distillation. A memory-augmented student processes the full context and matches the predictive distribution of an evidence-only teacher that shares the same frozen backbone. Experiments on LoCoMo, HotpotQA, and MemoryAgentBench demonstrate consistent improvements across different model architectures and scales. TransMem yields gains of 11.58--29.25 $F_1$ on LoCoMo and 10.20--13.03 $F_1$ on HotpotQA, while improving the average MemoryAgentBench accuracy from 29.54\% to 40.00\%. These results establish sparse historical hidden states as an effective and efficient memory substrate for long-context LLM agents. Our code is available at https://github.com/Haodong-Lei-Ray/TransMem.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Haodong-Lei-Ray/TransMem"&gt;https://github.com/Haodong-Lei-Ray/TransMem&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.CL" />
-  </entry>
-  <entry>
-    <title>Adjudicated Captioning: Multi-Agent Alignment Scoring and Consensus-Distilled Beam Arbitration for Strict Zero-Shot Image Captioning</title>
-    <link href="http://arxiv.org/abs/2607.28986v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2607.28986v1</id>
-    <published>2026-07-31T00:00:00Z</published>
-    <updated>2026-07-31T00:00:00Z</updated>
-    <author>
-      <name>Duy Tran Thanh</name>
-    </author>
-    <author>
-      <name>Thien-Phuc Doan</name>
-    </author>
-    <author>
-      <name>Long Nguyen-Vu</name>
-    </author>
-    <author>
-      <name>Ngo Tan Vu Khanh</name>
-    </author>
-    <summary type="text">Zero-shot image captioning (ZIC) describes images without paired image-caption supervision during captioner training, relying on text-only corpora and frozen pretrained image-text scorers. Existing retrieval-augmented methods score image-text alignment once, at retrieval, then commit the captioner's autoregressive beam under language-model probability alone, leaving the decoder without further visual grounding feedback. Progress has stalled, with no method improving on the strict-regime best since 2024.   We propose Adjudicated Captioning, an inference-time multi-agent framework that restores grounding feedback at multiple checkpoints over an unchanged IFCap captioner. First, we install a stronger frozen Retrieval Encoder at the input. Second, between retrieval and decoding we insert a frozen Cross-Attention Verifier that re-ranks the top-9 retrievals to top-5. Third, at the output beam we attach a learned Reranker pairing TriFuse, a multilayer perceptron, with MemAttend, a memory-attended transformer, the pipeline's only learned components; both are trained self-supervised by Borda-consensus distillation across the three frozen scorers, using no paired image-caption labels and no reference captions.   Under the inductive headline protocol, with rerankers fit on the disjoint COCO Karpathy validation beam and applied frozen to test, the framework reaches CIDEr 117.6 and SPICE 21.9 on COCO Karpathy, up from 108.0 and 20.3 for IFCap, a +9.6 CIDEr gain, and +7.7 above NES, the strongest synthetic-image-augmented method at 109.9, without retraining the captioner. A training-free fixed-fusion baseline reaches 115.8 CIDEr, so +7.8 of the +9.6 gain comes from the non-learned architectural intervention and the remaining +1.8 from the learned rerankers. The same recipe transfers off-COCO without captioner retraining: +8.1 CIDEr on Flickr30k Karpathy and +5.7 on NoCaps overall.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; IC;VG&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; cs.CL; Multiagent Systems" />
   </entry>
 </feed>
