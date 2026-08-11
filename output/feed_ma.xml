@@ -4,12 +4,165 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-10T03:14:44Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 19 entries</subtitle>
+  <updated>2026-08-11T03:09:21Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 23 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Distributed Team Orchestration via Supervisor Networks: Convergence, Optimality, and Resilience</title>
+    <link href="http://arxiv.org/abs/2608.09256v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.09256v1</id>
+    <published>2026-08-10T00:00:00Z</published>
+    <updated>2026-08-10T00:00:00Z</updated>
+    <author>
+      <name>Juntian Zhu</name>
+    </author>
+    <author>
+      <name>Guanpu Chen</name>
+    </author>
+    <author>
+      <name>Tongtian Zhu</name>
+    </author>
+    <author>
+      <name>Miguel de Carvalho</name>
+    </author>
+    <author>
+      <name>Zhouwang Yang</name>
+    </author>
+    <author>
+      <name>Fengxiang He</name>
+    </author>
+    <summary type="text">In this paper, we study zero-sum potential team games with a supervisor network, where agents rely on supervisor-provided belief information rather than accurate common beliefs. The main challenge is that such belief information can be inaccurate because of supervisors' belief-estimation errors and the misreporting of joint actions by Byzantine teams. We propose the distributed team-orchestrating algorithm (DTOA), which combines team fictitious play with supervisor-based distributed belief learning. We prove the convergence of supervisors' belief estimates and establish that the induced learning dynamics converge to a near team-Nash equilibrium (TNE) in terms of the team-Nash gap (TNG). In the Byzantine setting, we consider a misreporting attack model and develop a Byzantine-resilient DTOA. We further provide probabilistic guarantees for Byzantine-team identification and establish an asymptotic bound on the honest TNG. Numerical experiments illustrate the theoretical findings, compare DTOA with baseline learning methods, and evaluate its performance in a Markov decision process setting.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>MoRSE: Task-Oriented Multi-Agent System with Mixture of Role-Subtask Experts</title>
+    <link href="http://arxiv.org/abs/2608.09251v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.09251v1</id>
+    <published>2026-08-10T00:00:00Z</published>
+    <updated>2026-08-10T00:00:00Z</updated>
+    <author>
+      <name>Peiwen Li</name>
+    </author>
+    <author>
+      <name>Shiyang Zhang</name>
+    </author>
+    <author>
+      <name>Yangtian Zhang</name>
+    </author>
+    <author>
+      <name>Sizhuang He</name>
+    </author>
+    <author>
+      <name>David van Dijk</name>
+    </author>
+    <author>
+      <name>Rex Ying</name>
+    </author>
+    <summary type="text">Large language model-based multi-agent systems have recently shown strong potential for complex, long-horizon tasks. However, existing methods mainly rely on coarse prompt-level differentiation without parameter adaptation for diverse subtasks, resulting in insufficient inter-agent heterogeneity and limited specialized capability that bottleneck performance on tasks with complex requirements. To address this, we introduce a Task-Oriented Multi-Agent System with Mixture of Role-Subtask Experts (MoRSE) that distinguishes agents with (role, subtask)-conditional specialization at both the task structure and parameter levels. To make agents' responsibility explicit at the task structure level, we formulate a task-oriented multi-agent system that decomposes each task into a dependency-aware Directed Acyclic Graph of subtasks and assigns each agent a specific (role, subtask), introducing task-level specialization across collaborating agents. Additionally, to address the diverse role and subtask parameter adaptation demands, we propose a dynamic Mixture of (role, subtask) LoRA Experts module with a prototype-based semantic router for subtasks, augmenting agents with parameter-level specialization on a shared LLM substrate cost-effectively. Then, to co-optimize experts and router stably under sparse task rewards, we further propose a hierarchical group-relative policy optimization with two-layer credit assignment that isolates expert updates from the cross-route variance introduced by routing decisions, disentangling expert quality from routing quality. Experiments on code-generation benchmarks across three backbones demonstrate the effectiveness of our approach, with improvements in both whole-task and step-wise performance, and the gains from trained specialization generalize across held-out task categories and domains.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 25 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CL; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Beyond Tier Labels: Role- and Deployment-Dependent Model Substitution in Multi-Call LLM Workflows</title>
+    <link href="http://arxiv.org/abs/2608.09155v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.09155v1</id>
+    <published>2026-08-10T00:00:00Z</published>
+    <updated>2026-08-10T00:00:00Z</updated>
+    <author>
+      <name>Renxiang Wang</name>
+    </author>
+    <author>
+      <name>Jiaming Cui</name>
+    </author>
+    <summary type="text">Large multi-call LLM systems pose a scientific problem that query-level routing does not capture: the value of a model depends on where it enters a dependent computation and on the deployment that surrounds that call. Existing routers typically decide \emph{where} to spend a stronger model while treating the benefit of the substitution itself as known. We separate these two decisions through a predicate-action factorization and evaluate it in controlled solve-merge-verify workflows spanning 8-64 solve calls and four three-tier model ladders. The resulting evidence reveals a consistent principle beneath apparently conflicting outcomes. On numeric frequency counting, all-strong reduces RMSE from 4.818 to 1.538 in the Mixed Qwen/GPT ladder, whereas the average Qwen-only ordering reverses. Input-matched interventions further show that the same medium-to-strong action has sharply different value across roles and scales. A semantic task-and-contract shift reverses the Mixed ordering again, while allocation ablations distinguish useful sparse placement from under-coverage and indiscriminate escalation. Together, these results establish model substitution as a deployment-conditioned action rather than a property implied by a tier label, and they provide a practical sequence for large-scale workflow routing: calibrate the action, resolve its role-conditioned effect, and then optimize its placement.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Muscle Memory for Agents: Compile not Merely Retrieve</title>
+    <link href="http://arxiv.org/abs/2608.08995v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.08995v1</id>
+    <published>2026-08-10T00:00:00Z</published>
+    <updated>2026-08-10T00:00:00Z</updated>
+    <author>
+      <name>Pouya Ghiasnezhad Omran</name>
+    </author>
+    <author>
+      <name>Soujanya Lanka</name>
+    </author>
+    <author>
+      <name>Qin Zhang</name>
+    </author>
+    <author>
+      <name>Tanya Dixit</name>
+    </author>
+    <summary type="text">Memory for LLM agents has converged on a single architectural pattern: store experience as text, embeddings, reflections, or rules; retrieve at inference time; let a general-purpose orchestrator interpret what to do. This paper argues that the pattern is the wrong default for personalization. We position Muscle Memory - the practice of compiling recurring user intent into purpose-built specialist agents - as a distinct memory paradigm from retrieval, and we argue that compilation is a better fit for the workloads where current assistants impose a multi-turn tax on their users: making them repeatedly correct format, depth, and scope to obtain a domain-appropriate answer. We support the position with a reference implementation and empirical evidence. The implementation is a four-phase pipeline (Harvest $\rightarrow$ Analyze $\rightarrow$ Augment $\rightarrow$ Evaluate) that mines conversational history, separates behavioral from task patterns, and emits quality-gated executable compiled specialists with two-stage trigger matching. On 90 held-out scenarios across five user personas, the augmented assistant wins 32 of 36 cases where a specialist fires, an 88.9% win rate, with a +2.05 personalization gain and only a $-0.28$ accuracy cost on a 1-4 scale. We discuss why compilation is better suited than retrieval in this regime, what the result implies for the broader memory design space, and what open problems remain.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Fluid Structure, Rigid Record: A Layered Organizational Design Framework for Agent-Native Organizations</title>
+    <link href="http://arxiv.org/abs/2608.08516v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.08516v1</id>
+    <published>2026-08-09T00:00:00Z</published>
+    <updated>2026-08-09T00:00:00Z</updated>
+    <author>
+      <name>Lucian Zhu</name>
+    </author>
+    <summary type="text">An agentic organization should not be a set of model instances with corporate titles, despite most MAS still operationalizing organization as a conversational topology, a role prompt, or a fixed workflow. This paper develops an agent-native organizational structure framework that separates the persistent and dynamic layers of operations. The persistent layer consists of a four-store record architecture and a pool of resident specialization agents. A coordination layer defines Permission as the boundary of the operational world available to an agent, and Privilege as the set of organizational state changes that the agent is authorized to initiate. Together, these mechanisms compile task-specific operational worlds. A runtime layer combines an external Workflow Protocol with an isolated runtime store to dynamically assemble Task Groups. A human-interaction layer exposes the organization through a Control Plane mediated by a non-decision-making Translation Agent. Three orthogonal Role Groups further separate Operation, Review, and Supervision. Operators execute within narrowly scoped leases; reviewers receive elevated but demand-activated authority to modify organizational state; supervisors retain broad observational access while holding limited modification authority. The resulting architecture is fluid at the execution surface but structurally rigid underneath: tasks and events may alter team composition, topology, views, tools, and workflows, while records, write constraints, authority boundaries, and separation of powers remain persistent. The architecture has been implemented as a prototype and evaluated in small-sample experiments. Large-scale empirical validation remains incomplete, therefore no general performance claimed is made yet. Instead, the contribution is a coherent and falsifiable framework for designing, governing, recovering, and evaluating agent-native organizations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>AOC-CBS: Anytime-Optimal Continuous-time Conflict-Based Search for Generalised Multi-Agent Path Finding</title>
+    <link href="http://arxiv.org/abs/2608.08175v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.08175v1</id>
+    <published>2026-08-08T00:00:00Z</published>
+    <updated>2026-08-08T00:00:00Z</updated>
+    <author>
+      <name>Alvin Combrink</name>
+    </author>
+    <author>
+      <name>Sabino Francesco Roselli</name>
+    </author>
+    <author>
+      <name>Martin Fabian</name>
+    </author>
+    <summary type="text">Many research fields share a common structure: a set of agents, each pursuing its own goal, whose actions must be coordinated so that no two of them conflict. Multi-Agent Path Finding (MAPF) is a concrete instance of this structure, with applications from warehouses to road traffic and airports. Much of MAPF research assumes discrete time, circular agents sharing one spatial graph, a single goal per agent, and that an agent must remain at its goal once reached, precluding heterogeneous fleets, non-geometric conflicts, task sequences, and agents that move on after completing them. We generalise the MAPF formulation to lift these assumptions, and present Anytime-Optimal Continuous-time Conflict-Based Search (AOC-CBS), an exact and solution-complete solver for it. AOC-CBS guarantees the eventual return of an optimal solution, while reporting an incumbent with a known optimality gap upper bound throughout its runtime; it is configurable with a portfolio of repair functions, one of which we introduce (Tier-Prioritized Safe Interval Path Planning), and can exploit multiple processor cores. We demonstrate AOC-CBS on a mixed fleet of non-convex agents moving along smooth, kinodynamically feasible trajectories. Preliminary experiments against the exact solver OC-CBS, on well-known benchmarks and roadmaps we sample from them, show AOC-CBS is comparable at finding optimal solutions while extending scalability from the tens to the hundreds of agents when a bounded optimality gap is accepted.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 65 pages, 19 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Decentralized Multi-Agent Urban Traffic Management via Spatio-Temporal Mobility Profile Planning</title>
+    <link href="http://arxiv.org/abs/2608.08035v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.08035v1</id>
+    <published>2026-08-08T00:00:00Z</published>
+    <updated>2026-08-08T00:00:00Z</updated>
+    <author>
+      <name>Lorenzo Mario Amorosa</name>
+    </author>
+    <author>
+      <name>Lorenzo Farina</name>
+    </author>
+    <author>
+      <name>Vittorio Todisco</name>
+    </author>
+    <author>
+      <name>Alessandro Bazzi</name>
+    </author>
+    <summary type="text">As modern cities face increasingly severe traffic congestion, connected and autonomous vehicles (CAVs) have emerged as a crucial enabling technology for next-generation intelligent traffic management. However, fully realizing this potential is hindered by the limitations of current paradigms. Existing approaches typically optimize localized interactions rather than system-wide efficiency, incur severe communication overhead, or lack the deterministic guarantees required for safe kinematic execution. Furthermore, current multi-agent adaptations are frequently restricted to small predefined scenarios, failing to scale across large and complex urban networks. To bridge this gap, this paper introduces VeloCity, a decentralized multi-agent spatio-temporal mobility profile planning framework designed for CAVs operating in arbitrary urban areas. To minimize vehicles' travel times, VeloCity distributes mobility profile optimization directly to individual CAVs. Vehicles query a localized traffic coordinator for a reservation table, independently compute their fastest conflict-free mobility profile, and reserve their requested space-time slots back with the coordinator. By natively adapting to any arbitrary road topology, the framework manages highly irregular urban areas without requiring scenario-specific tuning, all while guaranteeing collision-free and physically executable vehicle trajectories. Extensive simulations across four large-scale real-world urban maps (Tokyo, Manhattan, Rome, and Bologna) demonstrate the framework's scalability. Compared to established state-of-the-art models, VeloCity yields drastically lower travel times, tightly bounds delay variance, and successfully prevents congestion gridlocks even under extremely high vehicular densities.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.NI" />
+  </entry>
   <entry>
     <title>Strategy-first synthesis planning for complex natural products</title>
     <link href="http://arxiv.org/abs/2608.07454v1" rel="alternate" type="text/html" />
@@ -183,6 +336,49 @@
     <category term="Artificial Intelligence; Robotics" />
   </entry>
   <entry>
+    <title>Per-Shipment Multi-Agent Reinforcement Learning for Intermodal Freight Routing Under Hurricane Disruption</title>
+    <link href="http://arxiv.org/abs/2608.07824v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.07824v1</id>
+    <published>2026-08-07T00:00:00Z</published>
+    <updated>2026-08-07T00:00:00Z</updated>
+    <author>
+      <name>Aliza Sharmin</name>
+    </author>
+    <author>
+      <name>Xudong Wang</name>
+    </author>
+    <author>
+      <name>Mustafa Can Camur</name>
+    </author>
+    <author>
+      <name>Xueping Li</name>
+    </author>
+    <summary type="text">Intermodal freight networks face growing disruption risk from climate extremes that degrade multiple corridors simultaneously. To address this, we formulate freight routing as a Dec-POMDP with per-shipment action granularity and train Independent PPO (IPPO) under Centralized Training with Decentralized Execution, comparing against two heuristic baselines with privileged state access on a 15-hub network under hurricane disruption. Across 30 matched episodes, no single policy dominates: IPPO achieves the highest throughput ($+12.7\%$) and delivery rate while a capacity-aware heuristic leads on Resilience Index (RI) and delay. Under demand surge (2.9:1 capacity ratio), IPPO's RI advantage grows to $+6.4\%$, suggesting learned routing is most valuable when capacity is scarce. A Multi-Agent PPO (MAPPO) variant collapses under train-eval queue mismatch ($\mathrm{RI} = 0.811$); retraining recovers RI to $1.018$ but IPPO still leads on throughput, pointing to residual limitations in centralized critics under per-shipment dispatch.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Mobility, Memory, and Network Structure in Agent-Based Models of Convention Tipping and Convergence</title>
+    <link href="http://arxiv.org/abs/2608.07810v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.07810v1</id>
+    <published>2026-08-07T00:00:00Z</published>
+    <updated>2026-08-07T00:00:00Z</updated>
+    <author>
+      <name>Joe Shymanski</name>
+    </author>
+    <author>
+      <name>Garrick Springer</name>
+    </author>
+    <author>
+      <name>Sandip Sen</name>
+    </author>
+    <summary type="text">Tipping-point dynamics describe the critical conditions under which a committed minority drives a population to abandon an established convention in favor of a new one. We present a transparent agent-based model of this process, in which agents hold one of two behavioral states and a mobile committed minority attempts to overturn the incumbent convention. Our goal was to examine how localized mobility, bounded agent memory, and network topology jointly influence the tipping threshold. Using a custom agent-based simulation framework, we found that in many configurations, tipping becomes effectively inevitable: given sufficient time, the population always converges to the minority state. This observation motivated a complementary analysis focused on the pace of convergence rather than its feasibility. We introduce a unified predictive model that accurately estimates how structural and behavioral parameters determine the time required for complete adoption, showing that mobility is the dominant accelerator while memory and connectivity modulate convergence in systematic ways. Together, these results extend classical tipping-point research by linking structural and behavioral factors not only to the likelihood of convention change but also to the timescale on which it unfolds. While we frame the model in terms of convention-like binary behavioral adoption, the same mechanisms bear on norm change and other contagion-like social processes.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Under review at the Journal of Artificial Societies and Social Simulation (JASSS)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.SI" />
+  </entry>
+  <entry>
     <title>ASGE-RR: Agentic Service Graph Embedding with Revisable Reservations for Dynamic AI-Agent Calls</title>
     <link href="http://arxiv.org/abs/2608.06033v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2608.06033v1</id>
@@ -353,186 +549,46 @@
     <category term="Multiagent Systems" />
   </entry>
   <entry>
-    <title>History Matters: Meta-policy Delegation with Heterogeneous Multi-agent Reinforcement Learning</title>
-    <link href="http://arxiv.org/abs/2608.03833v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.03833v1</id>
-    <published>2026-08-04T00:00:00Z</published>
-    <updated>2026-08-04T00:00:00Z</updated>
+    <title>LAVE: Latent Visual Evidence-Enhanced Planning for Video Tool-use Agents</title>
+    <link href="http://arxiv.org/abs/2608.07585v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.07585v1</id>
+    <published>2026-08-05T00:00:00Z</published>
+    <updated>2026-08-05T00:00:00Z</updated>
     <author>
-      <name>Ziqing Lu</name>
+      <name>Zijian Wang</name>
     </author>
     <author>
-      <name>Avinash Reddy Mudireddy</name>
+      <name>Junnan Zhu</name>
     </author>
     <author>
-      <name>Sarra Alqahtani</name>
+      <name>Rongzhen Li</name>
     </author>
     <author>
-      <name>Weiyu Xu</name>
-    </author>
-    <summary type="text">AI agents are expected to play an increasingly important role in future decision-making systems. In this paper, we consider collaborative systems composed of heterogeneous multi-agent systems (MAS), where their members have different capabilities and operating costs. We study how agents can delegate tasks to one another so that certain research tasks can be completed effectively under resource-constrained scenarios. We first develop a multi-agent reinforcement learning-based (MARL) delegation training that enables agents to make sequential delegation decisions while minimizing the total execution cost. We then extend this approach to MARL with prescribed delegation topologies. Furthermore, we introduce two new frameworks for collaboration and delegation in multi-agent systems. The first framework proposes that an agent's policy depends not only on the current state of the underlying Markov decision process but also on the interaction history, including previous joint actions. This history-dependent formulation can improve coordination even in fully observable environments, where conventional MARL methods typically restrict policies to depend only on the current state. The second framework proposes a novel, potentially multi-dimensional monetary mechanism to facilitate the collaboration and delegation for MAS.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>An Actionable Diagnosis of Multilingual, Multi-Agent Planning Failures</title>
-    <link href="http://arxiv.org/abs/2608.03735v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.03735v1</id>
-    <published>2026-08-04T00:00:00Z</published>
-    <updated>2026-08-04T00:00:00Z</updated>
-    <author>
-      <name>Vikas Pahuja</name>
+      <name>Xiao Liu</name>
     </author>
     <author>
-      <name>Jonathan Brokman</name>
+      <name>Guohui Xiang</name>
     </author>
     <author>
-      <name>Omer Hofman</name>
+      <name>Quan Lu</name>
     </author>
     <author>
-      <name>Tamir Nizri</name>
+      <name>Lijia Liu</name>
     </author>
     <author>
-      <name>Daniel Vishna</name>
+      <name>Yining Wang</name>
     </author>
     <author>
-      <name>Seraphina Goldfarb-Tarrant</name>
+      <name>Jiang Zhong</name>
     </author>
     <author>
-      <name>Kelly Marchisio</name>
+      <name>Kaiwen Wei</name>
     </author>
-    <author>
-      <name>Hisashi Kojima</name>
-    </author>
-    <author>
-      <name>Roman Vainshtein</name>
-    </author>
-    <summary type="text">Multilingual multi-agent systems exhibit substantial degradation beyond English, yet prior work rarely identifies how task-critical information is lost when user requests are converted into executable plans. We study the planner in a multi-agent system as the request-to-action interface and derive an actionable taxonomy of planning-grounding failures from failed real-world task executions. LLM-based analysis shows that these failures constitute an increasing share of unsuccessful executions as language-resource availability declines, with the strongest effects in low-resource languages. To test whether the taxonomy supports mitigation, we introduce TART, Taxonomy-Guided Actionable Representation, that makes the taxonomy's key aspects explicit to the planner and downstream sub-agents. Across multiple languages, three LLM backbones, two datasets, and two agentic configurations, TART consistently improves performance. On multilingual GAIA, it raises a state-of-the-art system's accuracy by 5.6 percentage points averaged across eleven languages spanning low- to high-resource settings.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 22 pages, 11 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.CL" />
-  </entry>
-  <entry>
-    <title>Group Perspective Matters: Regulating Debate Relationships Can Mitigate Blind Conformity in Multi-Agent Debate</title>
-    <link href="http://arxiv.org/abs/2608.03648v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.03648v1</id>
-    <published>2026-08-04T00:00:00Z</published>
-    <updated>2026-08-04T00:00:00Z</updated>
-    <author>
-      <name>Hao Wu</name>
-    </author>
-    <author>
-      <name>Shoucheng Song</name>
-    </author>
-    <author>
-      <name>Chang Yao</name>
-    </author>
-    <author>
-      <name>Haoyu Wang</name>
-    </author>
-    <author>
-      <name>Huaiyu Wan</name>
-    </author>
-    <author>
-      <name>Youfang Lin</name>
-    </author>
-    <author>
-      <name>Kai Lv</name>
-    </author>
-    <summary type="text">Multi-Agent Debate (MAD) improves the reasoning performance of Large Language Models (LLMs) through multi-round interaction. However, LLMs in MAD are highly susceptible to blind conformity. Existing individual evaluation methods, typically based on confidence or perplexity, fail to reflect the correctness of reasoning and may even exacerbate blind conformity. To address this, we shift the perspective from individual evaluation to group interaction. We define mutual referencing among LLMs as \textbf{Debate Relationships} and recognize that regulating these relationships is the key to mitigating blind conformity. In this paper, we propose a novel framework for \textbf{D}ynamically r\textbf{E}gulating deb\textbf{A}te \textbf{R}elationships (DEAR) from the group perspective. At first, DEAR quantifies consensus and divergence as \textit{group evidence} to capture the debate state. Then, DEAR operates through three stages: 1) What: perceiving group consultation tendency and uncertainty; 2) Who: introducing a Selection RL-Agent to dynamically select reference peers; and 3) How: adopting a Behavior RL-Agent to adaptively adjust generation behaviors. Notably, we formulate the execution of the two RL-Agents as a sequential decision-making process, jointly optimizing via multi-agent reinforcement learning. Extensive experiments demonstrate that DEAR achieves superior performance while significantly reducing token consumption.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>When Truth Is Distributed: Misinformation Derails Collective Fact Recovery in LLM-Based Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2608.03421v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.03421v1</id>
-    <published>2026-08-04T00:00:00Z</published>
-    <updated>2026-08-04T00:00:00Z</updated>
-    <author>
-      <name>Chenfei Yan</name>
-    </author>
-    <author>
-      <name>Zeyang Yue</name>
-    </author>
-    <author>
-      <name>Feifei Zhao</name>
-    </author>
-    <author>
-      <name>Erliang Lin</name>
-    </author>
-    <author>
-      <name>Lu Jia</name>
-    </author>
-    <author>
-      <name>Haibo Tong</name>
-    </author>
-    <author>
-      <name>Mingyang Lyu</name>
-    </author>
-    <author>
-      <name>Chengyi Sun</name>
-    </author>
-    <author>
-      <name>Yi Zeng</name>
-    </author>
-    <summary type="text">LLM-based multi-agent systems promise effective collaborative reasoning, but communication may amplify local errors into collective risks. Existing evaluations emphasize final outcomes, leaving the reliability and propagation dynamics of distributed information aggregation unclear. We introduce Hi-Agreement, a controlled evaluation framework that strictly pairs all-honest collaboration with controlled deception by a key evidence holder and analyzes the aggregation process through multi-stage voting, testimony adoption, and evidence-root lineage propagation. Using 120 five-agent object-movement environments where partial observations jointly determine a unique endpoint, we evaluate 3 homogeneous LLM-based multi-agent systems. Across these paired conditions, aggregate truth recovery falls from 72.50% to 14.17%, with significant declines for every system. Process tracing and exit ablations show that a single false testimony is adopted more readily than truthful testimony, propagates to higher orders, and persists through honest agents after the deceiver exits. Observers without first-hand evidence suppress incorrect consensus but do not improve truth recovery. Together, these findings reveal both the fragility of distributed fact recovery and its underlying mechanism: false evidence gains collective influence through its adoption and continued propagation by other agents after entering communication.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Strategic Evaluation of Planning Strategies for LLM Agents in Cyber-Physical Systems</title>
-    <link href="http://arxiv.org/abs/2608.04265v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.04265v1</id>
-    <published>2026-08-04T00:00:00Z</published>
-    <updated>2026-08-04T00:00:00Z</updated>
-    <author>
-      <name>J. de Curtò</name>
-    </author>
-    <author>
-      <name>I. de Zarzà</name>
-    </author>
-    <summary type="text">Evaluations of LLM planning agents largely ask whether a task succeeds or a declared plan is followed. In strategic cyber-physical systems, a stronger question is whether the planning architecture remains appropriate after autonomous participants respond and physics constrains the outcome. We introduce a controlled, physics-grounded benchmark built around planning-induced control trajectories: the ordered planning operations and directives through which an execution architecture acts on other agents and the physical process. It implements predefined, sequential, hierarchical, and search executors in a smart-grid demand-response system with 40 heterogeneous prosumers and an independently simulated radial feeder. The LLM is bounded to typed policy declaration and short operator messages, while schedule construction, prosumer dynamics, and power flow remain explicit code. The protocol uses paired forced-mode counterfactuals, common random response draws, and event-level deadline feasibility. Three properties follow. Architecture materially changes outcomes: forced search is the oracle in all five baseline seeds. Execution fidelity needs more than mode agreement: objective substitution holds agreement at 1.0 while increasing voltage shortfall by 2.68x. A 144-scenario, 576-episode bank has feasible oracles from three of the four architectures. A prespecified stress-held-out ridge has mean regret 90.7 (95% interval [73.8, 108.6]) and no detectable value over fixed sequential; applying known deadline feasibility before quality prediction cuts regret to 29.0 and improves over fixed sequential by 61.1. An all-feasible ablation does not beat fixed search, localising the remaining challenge to within-feasible quality selection. A five-model extension separates stress-conditioned, state-blind, and invariant declarers; latency tails show that live feasibility should be treated probabilistically.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; eess.SY" />
-  </entry>
-  <entry>
-    <title>When Truth Is Distributed: Misinformation Derails Collective Fact Recovery in LLM-Based Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2608.03421v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.03421v2</id>
-    <published>2026-08-04T00:00:00Z</published>
-    <updated>2026-08-04T00:00:00Z</updated>
-    <author>
-      <name>Chenfei Yan</name>
-    </author>
-    <author>
-      <name>Zeyang Yue</name>
-    </author>
-    <author>
-      <name>Feifei Zhao</name>
-    </author>
-    <author>
-      <name>Erliang Lin</name>
-    </author>
-    <author>
-      <name>Lu Jia</name>
-    </author>
-    <author>
-      <name>Haibo Tong</name>
-    </author>
-    <author>
-      <name>Mingyang Lyu</name>
-    </author>
-    <author>
-      <name>Chengyi Sun</name>
-    </author>
-    <author>
-      <name>Yi Zeng</name>
-    </author>
-    <summary type="text">LLM-based multi-agent systems promise effective collaborative reasoning, but communication may amplify local errors into collective risks. Existing evaluations emphasize final outcomes, leaving the reliability and propagation dynamics of distributed information aggregation unclear. We introduce Hi-Agreement, a controlled evaluation framework that strictly pairs all-honest collaboration with controlled deception by a key evidence holder and analyzes the aggregation process through multi-stage voting, testimony adoption, and evidence-root lineage propagation. Using 120 five-agent object-movement environments where partial observations jointly determine a unique endpoint, we evaluate 3 homogeneous LLM-based multi-agent systems. Across these paired conditions, aggregate truth recovery falls from 72.50% to 14.17%, with significant declines for every system. Process tracing and exit ablations show that a single false testimony is adopted more readily than truthful testimony, propagates to higher orders, and persists through honest agents after the deceiver exits. Observers without first-hand evidence suppress incorrect consensus but do not improve truth recovery. Together, these findings reveal both the fragility of distributed fact recovery and its underlying mechanism: false evidence gains collective influence through its adoption and continued propagation by other agents after entering communication.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
+    <summary type="text">Long-video understanding requires models to efficiently acquire and reuse sparse visual evidence from long and redundant video streams. Recent video tool-use agents address this challenge by iteratively invoking visual Tools at different temporal scales, but their Tool-Planner communication typically relies on textual observations. Such text-only interfaces provide lossy summaries of Tool computations, causing previously computed visual evidence not verbalized to be discarded and unavailable for subsequent planning. We identify this limitation as the Tool observation bottleneck and propose Latent Visual Evidence-Enhanced Planning (LAVE), a training-free framework for reusing latent visual evidence from completed Tool calls. LAVE introduces a dual-channel observation interface: the visible channel preserves the original textual trajectory, while the latent channel stores pre-verbal visual updates with their Tool roles, source-frame timestamps, and visual locations. During planning, LAVE retrieves evidence relevant to the current Planner state but not covered by textual observations, and integrates it through bounded timestamp-aligned latent updates with entropy-constrained frame-time routing. This enables video agents to reuse existing visual computation without additional training, frame replay, or modifications to the original orchestration. Extensive experiments on Video-MME, LongVideoBench, and CG-Bench show that LAVE consistently improves video tool-use agents across backbones. Under a comparable frame budget, LAVE improves the Video-MME overall score by 3.76 points over the strongest baseline, demonstrating the effectiveness of latent visual evidence reuse for multi-step video-agent planning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; TAP&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Machine Learning; Multiagent Systems" />
   </entry>
 </feed>
