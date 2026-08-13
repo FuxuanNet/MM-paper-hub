@@ -4,12 +4,52 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-12T03:39:02Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 24 entries</subtitle>
+  <updated>2026-08-13T03:40:20Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 23 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Rethinking Agent Security as a Networking Problem</title>
+    <link href="http://arxiv.org/abs/2608.12172v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.12172v1</id>
+    <published>2026-08-12T00:00:00Z</published>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <author>
+      <name>Van Tran</name>
+    </author>
+    <author>
+      <name>Taveesh Sharma</name>
+    </author>
+    <author>
+      <name>Tajveer Singh Dhesi</name>
+    </author>
+    <author>
+      <name>Nick Feamster</name>
+    </author>
+    <summary type="text">AI agents are rapidly becoming more capable and widely deployed, promising substantial gains in productivity and enabling new classes of applications. However, their growing autonomy also introduces significant privacy and security risks. Existing defenses are predominantly agent-centric, relying on the agent itself to detect threats and enforce privacy and security policies. This approach is fundamentally limited because it entrusts policy enforcement to AI agents whose LLM-driven behavior is inherently nondeterministic and vulnerable to manipulation through attacks such as prompt injection. As a result, current defenses cannot reliably prevent privacy and security threats, highlighting a critical need for a new solution to securing AI agent systems.   The networking community has long grappled with similar challenges and offers insightful principles we can borrow to design a more secure AI agent system. These include centralized control with distributed enforcement, capability-based access for mediating requests to sensitive resources, and least privilege through zero-trust enforcement. Historically, these principles have provided strong deterministic guarantees for networked systems. However, these principles alone are insufficient for AI agents because the safety and appropriateness of an agent's actions often depend on semantic context beyond the expressiveness of static rules.   Building on these principles, we advocate for a systematic approach to AI agent security that combines deterministic enforcement mechanisms, which provide strong security guarantees, with semantic, context-aware policies that enable nuanced decision-making. We then present a reference architecture and identify key research questions and future directions to guide the design of secure and privacy-preserving AI agent systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Beyond Memory: A Transactional Continuity Kernel for Long-Lived AI Agents</title>
+    <link href="http://arxiv.org/abs/2608.11632v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.11632v1</id>
+    <published>2026-08-12T00:00:00Z</published>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <author>
+      <name>Jun He</name>
+    </author>
+    <author>
+      <name>Deying Yu</name>
+    </author>
+    <summary type="text">Persistent AI agents accumulate versioned state across long horizons, but storage retention alone does not identify authoritative state. Without an explicit control plane, unmediated updates by models, tools, and background workers risk stale overwrites, un-audited exposures, and self-authorizing privilege escalation. We argue that agent state governance is an infrastructural activation problem, defining continuity as an unbroken, authorized lineage of accepted branch heads. We present the Continuity Kernel (CK), an activation contract that decouples off-commit candidate evaluation from atomic state activation. Untrusted components propose typed changes against an exact predecessor head or typed absence. A short activation transaction revalidates ownership, pre-state authority, freshness, and effect uniqueness, recording one stable disposition (Commit, Reject, Quarantine, or Defer). Only Commit atomically advances the branch head and installs the complete accepted unit (state, authority, lineage, effects, outcome, and receipt). A bounded executable model verifies the protocol across 2,808,230 reachable states and 5,526,474 state-changing transitions with zero invariant violations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 6-page appendix, 15 tables&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>Who Are You Explaining To? A Multi-Agent System for Audience-Aware XAI Narratives</title>
     <link href="http://arxiv.org/abs/2608.11033v1" rel="alternate" type="text/html" />
@@ -97,6 +137,19 @@
       <name>Tianwei Zhang</name>
     </author>
     <summary type="text">Failure attribution in LLM-based multi-agent systems (MAS) aims to answer who caused failures, when they occurred, and why by identifying responsible targets including faulty agents, erroneous steps, and failure modes. Existing methods have primarily focused on developing dedicated models for specific attribution targets, with limited attention to the evidential dependencies among them. Despite these attribution targets are different, they rely on common diagnostic evidence from MAS trajectories, including task constraints, agent roles, behavioral histories and inter-agent interactions. This commonality motivates us to develop a unified representation model that aggregates the trajectory evidence into individual agent and step representations, which can subsequently be adapted to different attribution targets. Accordingly, we propose ASCon, a direction-aware reciprocal \textbf{A}gent--\textbf{S}tep \textbf{Con}textualization model for multiple failure attribution targets. ASCon introduces direction-aware graph attention to model execution context, masked step-to-agent attention to construct behavior-aware agent representations, and agent-conditioned step contextualization to incorporate agent context back into step representations. The resulting contextualized representations enable different attribution targets through lightweight target-specific heads. Experiments show that ASCon can improve faulty-agent detection by 5.83\%+ in micro-accuracy, faulty-step detection by 10.63\%+ in micro-accuracy, and failure-mode detection by 14.73\%+ in Macro-F1. Meanwhile, it can also substantially enhance the LLM-based methods' attribution capabilities in out-of-domain scenarios.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>When Do Institutions Beat Intelligence?</title>
+    <link href="http://arxiv.org/abs/2608.11357v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.11357v1</id>
+    <published>2026-08-11T00:00:00Z</published>
+    <updated>2026-08-11T00:00:00Z</updated>
+    <author>
+      <name>Zhengye Han</name>
+    </author>
+    <summary type="text">More capable agents do not necessarily form a more capable collective. A multi-agent system may jointly possess sufficient information yet fail because evidence is poorly routed, unreliable reports enter public belief, correlated claims masquerade as independent support, shared state becomes stale or strategically distorted, or useful evidence is exposed through an ineffective action interface. We ask when additional resources should improve the reasoner and when they should instead change the institutional structure through which the collective forms and acts on public information. Drawing on functional distinctions from research on group decision making and distributed cognition, we construct controlled artificial ecologies around four loci of collective failure: access and routing, admission and dependence, state maintenance and incentives, and representation and action. Across these ecologies, we separately vary model capability and institutional structure, pairing positive interventions with matched reasoning baselines and mechanism-breaking controls. The experiments reveal a consistent boundary: institutions help when they repair failures in how a collective constructs usable public state, but lose their advantage when their signals are uninformative or uncheckable, when stronger intelligence can perform the same transformation directly, or when the resulting state cannot support reliable action. Our results recast the choice between intelligence and institutions as a diagnosis of where collective reasoning fails.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
@@ -510,91 +563,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="cs.SI" />
-  </entry>
-  <entry>
-    <title>ASGE-RR: Agentic Service Graph Embedding with Revisable Reservations for Dynamic AI-Agent Calls</title>
-    <link href="http://arxiv.org/abs/2608.06033v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.06033v1</id>
-    <published>2026-08-06T00:00:00Z</published>
-    <updated>2026-08-06T00:00:00Z</updated>
-    <author>
-      <name>Trond Vatten</name>
-    </author>
-    <author>
-      <name>Yuming Jiang</name>
-    </author>
-    <summary type="text">AI-agent workflows often involve remote calls to models, memory stores, and tools distributed across a network. As execution progresses, these dependency calls collectively form an agentic service graph (ASG). Unlike traditional service requests, many dependency calls are revealed only at runtime. Consequently, allocating resources to a currently visible call may consume capacity later needed by a call from a higher-value workflow. We formulate this challenge as Agentic Service Graph Embedding (ASGE), an online network-control problem that maps runtime-revealed workflow calls to service replicas and network paths under capacity, cost and deadline constraints. We present ASGE-RR, an online ASGE controller with revisable reservations. ASGE-RR protects capacity for likely future calls while enforcing the constraints. ASGE-RR evaluates candidate replica-and-path mappings against predicted workflow continuations and updates reservations as new execution information becomes available.   We evaluate ASGE-RR using OpenHands and GPT Researcher workflows executed with gpt-5.6-luna and replayed over in two complementary experimental environments, a controlled Docker testbed and a WAN testbed. The investigation shows that all the evaluated AI-agent tasks expose at least one runtime-revealed dependency call that can be steered before connection establishment. Exploiting this control point, even though the experimental environments are small-scale, ASGE-RR already demonstrates noticeable potential: It completes (up to) 10% more workflow value than a same-information rolling-horizon controller and a current-call steering controller on the WAN testbed. The results suggest that runtime-revealed workflow structure creates a new network control opportunity: protecting resources for likely future calls allows more AI-agent workflows to finish in time.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.PF" />
-  </entry>
-  <entry>
-    <title>Certifying Collective Reasoning in Multi-Agent Systems via Koopman Spectral Analysis</title>
-    <link href="http://arxiv.org/abs/2608.05956v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.05956v1</id>
-    <published>2026-08-06T00:00:00Z</published>
-    <updated>2026-08-06T00:00:00Z</updated>
-    <author>
-      <name>Nuzhat Khan</name>
-    </author>
-    <author>
-      <name>Indrakshi Dey</name>
-    </author>
-    <summary type="text">Orchestrated collectives of large language model (LLM) agents that debate and vote are an emerging form of computational intelligence: the intelligent behaviour resides in the \emph{interaction}, not in any single agent. They improve task accuracy, yet remain black boxes at the system level: there is no principled test of convergence, no bound on the rounds needed, and no faithful account of what drove a decision. This paper develops a novel framework based on Koopman operator theory and validates its theoretical guarantees on multi-agent consensus dynamics. Treating the collective as one nonlinear dynamical system on a communication graph, we read its essential behaviour off the spectrum of its Koopman transfer operator, an exact linear representation of the nonlinear dynamics estimated from interaction traces. The spectrum yields three machine-checkable certificates: the sub-dominant eigenvalue $λ_2$ fixes the intrinsic timescale of reasoning and yields a convergence deadline computable \emph{before} the debate runs; its eigenvector names the coherent factions the collective reasons in, and $|λ_2|$ certifies when that explanation is valid; and the leading spectral coordinates form a compressed, auditable message basis. On an attention-consensus model, the deadline tracks observed convergence with log--log correlation $0.93$ and bounds it in 96\% of 24 configurations; attribution is exact whenever the spectrum certifies metastability; eight of 32 coordinates preserve the decision at 99.7\% fidelity; and a certificate learned from 15 debates held on 60/60 held-out debates. The study runs in minutes on a CPU, making spectral certification a practical layer for trustworthy collective reasoning.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="eess.SY" />
-  </entry>
-  <entry>
-    <title>A Two-Tier Perspective on Inference-Time Parallelism in Multi-Agent LLM Systems</title>
-    <link href="http://arxiv.org/abs/2608.05791v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.05791v1</id>
-    <published>2026-08-06T00:00:00Z</published>
-    <updated>2026-08-06T00:00:00Z</updated>
-    <author>
-      <name>Zihan Xu</name>
-    </author>
-    <author>
-      <name>Haolin Tian</name>
-    </author>
-    <author>
-      <name>Hai Jiang</name>
-    </author>
-    <summary type="text">Large language model (LLM)-driven multi-agent systems typically require multiple model invocations and complex coordination during inference, and their execution strategies directly affect system accuracy, latency, and computational cost. Parallel execution provides a means to improve inference-time efficiency. From the perspective of inference-time execution, this paper models parallelism in multi-agent systems as two distinct levels of decision processes: Replica Parallelism, which explores multiple complete solution paths at the task level, and Structural Parallelism, which enables concurrent execution within a single solution path through task decomposition. However, the roles of different forms of parallelism and their interrelationships still lack systematic study in terms of unified organization and coordination. We therefore propose TIPEX, a controllable execution framework that unifies these two levels of parallelism and coordinates their roles within the inference process under a unified execution semantics while supporting systematic combinations and analyses of different parallel strategies and parameter configurations. Systematic experiments on the GAIA benchmark demonstrate that inference-time parallelism can significantly improve accuracy and reduce end-to-end latency at the cost of increased token consumption. Further analysis shows that Replica and Structural Parallelism exhibit complementary effects across task complexities, with tasks of intermediate difficulty benefiting most from their coordination, while overly aggressive parallel strategies do not necessarily yield better performance.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICML 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>F$^2$Agent: Financial Fusion of Agentic Intelligence for Multimodal Trading</title>
-    <link href="http://arxiv.org/abs/2608.05668v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.05668v1</id>
-    <published>2026-08-06T00:00:00Z</published>
-    <updated>2026-08-06T00:00:00Z</updated>
-    <author>
-      <name>Changshuo Liu</name>
-    </author>
-    <author>
-      <name>Yanzheng Jin</name>
-    </author>
-    <author>
-      <name>Shangfeng Cai</name>
-    </author>
-    <author>
-      <name>Peng Fang</name>
-    </author>
-    <author>
-      <name>Xiaokui Xiao</name>
-    </author>
-    <author>
-      <name>Beng Chin Ooi</name>
-    </author>
-    <summary type="text">With increasingly diverse and heterogeneous information sources, effectively leveraging multimodal data is becoming pivotal for high-quality financial trading. Although recent advancements in Large Language Model (LLM)-based agents have enabled the ingestion of multimodal inputs, existing methods fail to capture nuanced cross-modal dependencies and remain vulnerable to market noise, due to limited multimodal modeling, ineffective fusion mechanisms, and inadequate robustness. To address these challenges, we propose F$^2$Agent, a novel multimodal agentic paradigm driven by the Financial Fusion of Agentic Intelligence. F$^2$Agent first deploys a hierarchy of specialized agents to comprehensively extract modality-specific signals. It further introduces a modality-aware adaptive fusion mechanism coupled with noise-robust consistency regularization to dynamically capture fine-grained inter-modality dependencies and generate noise-resilient trading signals. Extensive experiments on six stocks and cryptocurrency assets demonstrate that F$^2$Agent consistently outperforms 16 competitive baselines across multiple trading metrics, with over 20% relative improvement in annualized return on average. Notably, F$^2$Agent delivers returns of 120.48% on GOOG and 148.41% on TSLA, demonstrating its efficacy and robustness in varying market dynamics.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 32 pages, 12 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; MAG&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; Multimedia" />
   </entry>
 </feed>
