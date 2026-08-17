@@ -4,12 +4,60 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-14T03:40:07Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 20 entries</subtitle>
+  <updated>2026-08-17T02:23:33Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 13 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Submodular Policy Learning for Distributed Task Allocation in Open Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2608.14390v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.14390v1</id>
+    <published>2026-08-14T00:00:00Z</published>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <author>
+      <name>Jing Liu</name>
+    </author>
+    <author>
+      <name>Luca Ballotta</name>
+    </author>
+    <author>
+      <name>Yangyang Yang</name>
+    </author>
+    <author>
+      <name>Fangfei Li</name>
+    </author>
+    <author>
+      <name>Yang Tang</name>
+    </author>
+    <author>
+      <name>Ruggero Carli</name>
+    </author>
+    <summary type="text">This paper studies policy learning for distributed task allocation in open multi-agent systems, where agents may join and leave in a time-varying fashion, with submodular stage team utilities. At each time, the active agents select actions from local categorical policies such that the feasible joint agent-action pairs form a partition matroid. Standard continuous relaxations of submodular set functions are based on independent Bernoulli sampling, making them inconsistent with agents' policies.To solve this mismatch, we propose the \emph{partition multilinear extension} (PME), a policy-based relaxation whose continuous support matches feasible actions under categorical policies.We prove that the marginal gains of the stage utility provide an unbiased estimator of the gradient of the PME and that maximizing the PME over action distributions is equivalent to maximizing the stage utilities over agent actions, which are critical to devise principled policy gradient.Building on this, we design \emph{SubMAPL}, a centralized-training decentralized-execution KL-mirror policy-learning method that uses local marginal gains as stochastic PME gradients during training. KL-mirror updates preserve categorical feasibility without Euclidean projection.In the case where agents run tabular-softmax policies, we introduce open policy migration and an open-system KL tracking variation to handle agent arrivals and departures. Using dynamic regret analysis, we establish a lower bound on the cumulative utility which accounts for the openness of the environment and for the gap between optimal stage-wise and global utilities. Simulations on multi-agent coverage demonstrate that SubMAPL outperforms policy-gradient and online-learning baselines.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>XAI-Guided Conservative Decentralized Execution for Offline Multi-Agent Network Slicing</title>
+    <link href="http://arxiv.org/abs/2608.13982v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.13982v1</id>
+    <published>2026-08-14T00:00:00Z</published>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <author>
+      <name>Eslam Eldeeb</name>
+    </author>
+    <author>
+      <name>Hatim Chergui</name>
+    </author>
+    <author>
+      <name>Merouane Debbah</name>
+    </author>
+    <summary type="text">The recent advances toward sixth-generation (6G) and beyond-6G networks have accelerated the need for intelligent resource management mechanisms capable of supporting heterogeneous services under shared infrastructures in network slicing. However, resource allocation in network slicing naturally forms a resource-coupled cooperative optimization problem with competing slice demands. Slices compete for limited resources to minimize individual latencies while coordinating to avoid conflicts and underutilization. Although multi-agent reinforcement learning (MARL) has shown promising performance in such settings, existing online formulations remain costly, unsafe, and difficult to deploy due to their reliance on environmental interactions and communication among agents. In this work, we present explainable artificial intelligence (XAI)-guided conservative decentralized execution (X-CODE). X-CODE is an explainable offline MARL that operates offline without environmental interaction, nor inter-agent communication. It exploits explainability-aware reward shaping to modify the relative preference among joint offline transitions during centralized training to improve decentralized resource-allocation behavior. In deployment, the agents operate independently without signaling exchange among the agents. Simulation results demonstrate that the proposed approach achieves zero observed resource-conflict events in the evaluated test episodes while minimizing per-slice latencies. Moreover, the proposed framework exhibits lower signaling overhead and reduces effective inference latency by 88 % under the considered communication-delay model compared to the online baselines. Source codes and datasets are available through: https://github.com/Eslam211/xcode-ran-slicing.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Eslam211/xcode-ran-slicing"&gt;https://github.com/Eslam211/xcode-ran-slicing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>Reconcile Once, Write Anytime: A Trust-Tiered Librarian and a Multi-Agent Writer for Drift-Free, Point-in-Time Research</title>
     <link href="http://arxiv.org/abs/2608.12984v1" rel="alternate" type="text/html" />
@@ -60,6 +108,35 @@
     <summary type="text">The performance of large language model (LLM)-based multi-agent systems (MAS) largely depends on effective communication topologies. Existing topology generation methods, however, typically learn communication topologies through black-box optimization driven solely by task-level rewards. While effective, such optimization provides little insight into why particular communication edges are selected, making it difficult to identify the critical communication subgraphs responsible for successful collaboration. To address this limitation, we propose E2-Explainer, a model-agnostic framework for providing interpretable explanations of communication topologies produced by arbitrary topology generators. Specifically, we formulate topology explanation as a causal attribution problem that identifies compact communication subgraphs supported by edge-level evidence of task preservation. We obtain this evidence with a Granger-style objective that measures how masking each communication channel changes the task outcome and the stability of the final response. The resulting budgeted subgraphs are then distilled into an amortized explainer, enabling efficient post-hoc explanation without repeated edge-level evaluations at deployment. Extensive experiments on multiple reasoning and coding benchmarks demonstrate that E2-Explainer identifies critical communication subgraphs that preserve successful collaboration. These subgraphs can also be executed directly to prune redundant communication edges, substantially reducing communication costs while maintaining competitive task performance.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; AAAI 2027&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Discovering Efficient and Explainable Communication Topologies for LLM-based Multi-Agent Systems via Causal Inference</title>
+    <link href="http://arxiv.org/abs/2608.12921v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.12921v2</id>
+    <published>2026-08-13T00:00:00Z</published>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <author>
+      <name>Junzhi Li</name>
+    </author>
+    <author>
+      <name>Peng He</name>
+    </author>
+    <author>
+      <name>Qirui Ji</name>
+    </author>
+    <author>
+      <name>Wei Wang</name>
+    </author>
+    <author>
+      <name>Lixiang Liu</name>
+    </author>
+    <author>
+      <name>Chuxiong Sun</name>
+    </author>
+    <summary type="text">The performance of large language model (LLM)-based multi-agent systems (MAS) largely depends on effective communication topologies. Existing topology generation methods, however, typically learn communication topologies through black-box optimization driven solely by task-level rewards. While effective, such optimization provides little insight into why particular communication edges are selected, making it difficult to identify the critical communication subgraphs responsible for successful collaboration. To address this limitation, we propose E2-Explainer, a model-agnostic framework for providing interpretable explanations of communication topologies produced by arbitrary topology generators. Specifically, we formulate topology explanation as a causal attribution problem that identifies compact communication subgraphs supported by edge-level evidence of task preservation. We obtain this evidence with a Granger-style objective that measures how masking each communication channel changes the task outcome and the stability of the final response. The resulting budgeted subgraphs are then distilled into an amortized explainer, enabling efficient post-hoc explanation without repeated edge-level evaluations at deployment. Extensive experiments on multiple reasoning and coding benchmarks demonstrate that E2-Explainer identifies critical communication subgraphs that preserve successful collaboration. These subgraphs can also be executed directly to prune redundant communication edges, substantially reducing communication costs while maintaining competitive task performance.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence" />
   </entry>
@@ -252,201 +329,5 @@
     <summary type="text">More capable agents do not necessarily form a more capable collective. A multi-agent system may jointly possess sufficient information yet fail because evidence is poorly routed, unreliable reports enter public belief, correlated claims masquerade as independent support, shared state becomes stale or strategically distorted, or useful evidence is exposed through an ineffective action interface. We ask when additional resources should improve the reasoner and when they should instead change the institutional structure through which the collective forms and acts on public information. Drawing on functional distinctions from research on group decision making and distributed cognition, we construct controlled artificial ecologies around four loci of collective failure: access and routing, admission and dependence, state maintenance and incentives, and representation and action. Across these ecologies, we separately vary model capability and institutional structure, pairing positive interventions with matched reasoning baselines and mechanism-breaking controls. The experiments reveal a consistent boundary: institutions help when they repair failures in how a collective constructs usable public state, but lose their advantage when their signals are uninformative or uncheckable, when stronger intelligence can perform the same transformation directly, or when the resulting state cannot support reliable action. Our results recast the choice between intelligence and institutions as a diagnosis of where collective reasoning fails.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Distributed Team Orchestration via Supervisor Networks: Convergence, Optimality, and Resilience</title>
-    <link href="http://arxiv.org/abs/2608.09256v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.09256v1</id>
-    <published>2026-08-10T00:00:00Z</published>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <author>
-      <name>Juntian Zhu</name>
-    </author>
-    <author>
-      <name>Guanpu Chen</name>
-    </author>
-    <author>
-      <name>Tongtian Zhu</name>
-    </author>
-    <author>
-      <name>Miguel de Carvalho</name>
-    </author>
-    <author>
-      <name>Zhouwang Yang</name>
-    </author>
-    <author>
-      <name>Fengxiang He</name>
-    </author>
-    <summary type="text">In this paper, we study zero-sum potential team games with a supervisor network, where agents rely on supervisor-provided belief information rather than accurate common beliefs. The main challenge is that such belief information can be inaccurate because of supervisors' belief-estimation errors and the misreporting of joint actions by Byzantine teams. We propose the distributed team-orchestrating algorithm (DTOA), which combines team fictitious play with supervisor-based distributed belief learning. We prove the convergence of supervisors' belief estimates and establish that the induced learning dynamics converge to a near team-Nash equilibrium (TNE) in terms of the team-Nash gap (TNG). In the Byzantine setting, we consider a misreporting attack model and develop a Byzantine-resilient DTOA. We further provide probabilistic guarantees for Byzantine-team identification and establish an asymptotic bound on the honest TNG. Numerical experiments illustrate the theoretical findings, compare DTOA with baseline learning methods, and evaluate its performance in a Markov decision process setting.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>MoRSE: Task-Oriented Multi-Agent System with Mixture of Role-Subtask Experts</title>
-    <link href="http://arxiv.org/abs/2608.09251v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.09251v1</id>
-    <published>2026-08-10T00:00:00Z</published>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <author>
-      <name>Peiwen Li</name>
-    </author>
-    <author>
-      <name>Shiyang Zhang</name>
-    </author>
-    <author>
-      <name>Yangtian Zhang</name>
-    </author>
-    <author>
-      <name>Sizhuang He</name>
-    </author>
-    <author>
-      <name>David van Dijk</name>
-    </author>
-    <author>
-      <name>Rex Ying</name>
-    </author>
-    <summary type="text">Large language model-based multi-agent systems have recently shown strong potential for complex, long-horizon tasks. However, existing methods mainly rely on coarse prompt-level differentiation without parameter adaptation for diverse subtasks, resulting in insufficient inter-agent heterogeneity and limited specialized capability that bottleneck performance on tasks with complex requirements. To address this, we introduce a Task-Oriented Multi-Agent System with Mixture of Role-Subtask Experts (MoRSE) that distinguishes agents with (role, subtask)-conditional specialization at both the task structure and parameter levels. To make agents' responsibility explicit at the task structure level, we formulate a task-oriented multi-agent system that decomposes each task into a dependency-aware Directed Acyclic Graph of subtasks and assigns each agent a specific (role, subtask), introducing task-level specialization across collaborating agents. Additionally, to address the diverse role and subtask parameter adaptation demands, we propose a dynamic Mixture of (role, subtask) LoRA Experts module with a prototype-based semantic router for subtasks, augmenting agents with parameter-level specialization on a shared LLM substrate cost-effectively. Then, to co-optimize experts and router stably under sparse task rewards, we further propose a hierarchical group-relative policy optimization with two-layer credit assignment that isolates expert updates from the cross-route variance introduced by routing decisions, disentangling expert quality from routing quality. Experiments on code-generation benchmarks across three backbones demonstrate the effectiveness of our approach, with improvements in both whole-task and step-wise performance, and the gains from trained specialization generalize across held-out task categories and domains.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 25 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.CL; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Beyond Tier Labels: Role- and Deployment-Dependent Model Substitution in Multi-Call LLM Workflows</title>
-    <link href="http://arxiv.org/abs/2608.09155v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.09155v1</id>
-    <published>2026-08-10T00:00:00Z</published>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <author>
-      <name>Renxiang Wang</name>
-    </author>
-    <author>
-      <name>Jiaming Cui</name>
-    </author>
-    <summary type="text">Large multi-call LLM systems pose a scientific problem that query-level routing does not capture: the value of a model depends on where it enters a dependent computation and on the deployment that surrounds that call. Existing routers typically decide \emph{where} to spend a stronger model while treating the benefit of the substitution itself as known. We separate these two decisions through a predicate-action factorization and evaluate it in controlled solve-merge-verify workflows spanning 8-64 solve calls and four three-tier model ladders. The resulting evidence reveals a consistent principle beneath apparently conflicting outcomes. On numeric frequency counting, all-strong reduces RMSE from 4.818 to 1.538 in the Mixed Qwen/GPT ladder, whereas the average Qwen-only ordering reverses. Input-matched interventions further show that the same medium-to-strong action has sharply different value across roles and scales. A semantic task-and-contract shift reverses the Mixed ordering again, while allocation ablations distinguish useful sparse placement from under-coverage and indiscriminate escalation. Together, these results establish model substitution as a deployment-conditioned action rather than a property implied by a tier label, and they provide a practical sequence for large-scale workflow routing: calibrate the action, resolve its role-conditioned effect, and then optimize its placement.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Muscle Memory for Agents: Compile not Merely Retrieve</title>
-    <link href="http://arxiv.org/abs/2608.08995v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.08995v1</id>
-    <published>2026-08-10T00:00:00Z</published>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <author>
-      <name>Pouya Ghiasnezhad Omran</name>
-    </author>
-    <author>
-      <name>Soujanya Lanka</name>
-    </author>
-    <author>
-      <name>Qin Zhang</name>
-    </author>
-    <author>
-      <name>Tanya Dixit</name>
-    </author>
-    <summary type="text">Memory for LLM agents has converged on a single architectural pattern: store experience as text, embeddings, reflections, or rules; retrieve at inference time; let a general-purpose orchestrator interpret what to do. This paper argues that the pattern is the wrong default for personalization. We position Muscle Memory - the practice of compiling recurring user intent into purpose-built specialist agents - as a distinct memory paradigm from retrieval, and we argue that compilation is a better fit for the workloads where current assistants impose a multi-turn tax on their users: making them repeatedly correct format, depth, and scope to obtain a domain-appropriate answer. We support the position with a reference implementation and empirical evidence. The implementation is a four-phase pipeline (Harvest $\rightarrow$ Analyze $\rightarrow$ Augment $\rightarrow$ Evaluate) that mines conversational history, separates behavioral from task patterns, and emits quality-gated executable compiled specialists with two-stage trigger matching. On 90 held-out scenarios across five user personas, the augmented assistant wins 32 of 36 cases where a specialist fires, an 88.9% win rate, with a +2.05 personalization gain and only a $-0.28$ accuracy cost on a 1-4 scale. We discuss why compilation is better suited than retrieval in this regime, what the result implies for the broader memory design space, and what open problems remain.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 2 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Not a Monolith: Lab-Level Divergence in the Cooperative Equilibria of Chinese Frontier LLM Agents</title>
-    <link href="http://arxiv.org/abs/2608.10262v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.10262v1</id>
-    <published>2026-08-10T00:00:00Z</published>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <author>
-      <name>Francisco León Zúñiga Bolívar</name>
-    </author>
-    <summary type="text">Does the cooperative bias documented for Western frontier LLM agents extend to a different alignment lineage, and should the Chinese models that embody it be treated as a single bloc or as distinct laboratories? We study four frontier-tier Chinese models - DeepSeek V4 Pro, Qwen3-Max, Kimi K2.5 and GLM-5.1 - in an evolutionary Iterated Prisoner's Dilemma, under a design that removes a confound present in prior work. Rather than letting each model convert its own natural-language strategies into code, which entangles strategic disposition with coding ability, we hold the converter fixed (GPT-5.4 Mini) across all labs, so every cross-lab comparison is a comparison of generation alone. We run the full protocol: all-play-all tournaments and a Moran process at n=500 runs per condition, across three prompt styles and four population regimes. Two pre-registered hypotheses are evaluated. H6 (not monolithic) is supported: the four labs differ significantly in aggressive-equilibrium proportion, P_A running from 1% for Qwen3-Max to 9% for DeepSeek V4 Pro, with four of six pairwise comparisons surviving Holm-Bonferroni. The spread across the four labs (P_A range 8pp) is larger than the difference between the Chinese and Western ecosystems' mean P_A (5.0% vs 5.0%): on this measure, within-ecosystem variation exceeds the East-West gap. H5 (cooperative-bias generality) is consistent but qualified: a cooperative plurality holds in 6 of 12 lab-prompt combinations against the 9 of 12 reported for Western models, a difference we do not treat as firm, since the count rests on Cooperative-Neutral near-ties and rises to 9/12 under an alternate converter in our pre-registered robustness check. The lab, not the ecosystem, is the unit at which cooperative disposition is set; treating "Chinese models" as a monolith is not supported by the evidence.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 8 tables. Companion study to arXiv:2605.29874, under a fixed-converter design. Code and replication package: https://github.com/arqFranciscoLeon/evollm (archived: https://doi.org/10.5281/zenodo.20248614)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>The Deliberative Deficit: An Empirical Critique of LLMs in Democratic Discourse</title>
-    <link href="http://arxiv.org/abs/2608.10186v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.10186v1</id>
-    <published>2026-08-10T00:00:00Z</published>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <author>
-      <name>Maurice Flechtner</name>
-    </author>
-    <summary type="text">LLMs are increasingly deployed in settings that require collective reasoning on complex, value-laden problems. Confidence in these deployments rests largely on benchmarks for verifiable tasks (mathematics, coding, coordination games), yet many of these applications concern problems where no objectively correct answer exists and where decision quality instead depends on integrating pluralistic perspectives to find mutually acceptable solutions. We argue that LLM reasoning capacity on this class of problems cannot be fully inferred from verifiable-task benchmarks, and that procedural evaluations of LLM discourse (respectfulness, justification, engagement) are systematically insufficient. We apply the Deliberative Reason Index (DRI), a measure developed in political science and validated across citizen assemblies, as a tool for evaluating reliable group-level reasoning on pluralistic, non-verifiable problems. Synthesizing recent evidence across 1,980 five-agent LLM runs on 12 citizen-assembly topics across 11 frontier model configurations, we find that LLM groups produce discourse with procedural quality comparable to human deliberation, while gains in intersubjective consistency are small, topic-dependent, and concentrated on tractable rather than ethically contested questions. LLM groups exhibit roughly one-third the perspective diversity of human assemblies and reverse the human convergence pattern: human deliberation decreases dispersion as diverse views synthesise, whereas LLM deliberation increases it. Engineering diversity through persona prompting does not restore the human dynamic but inverts which component of deliberative reasoning is updated. Our conclusion is constraining rather than prohibitive: LLMs can function as tools supporting human reasoning on pluralistic problems, but current evidence does not license treating them as autonomous deliberative agents.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, archival publication at AIES 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.CY" />
-  </entry>
-  <entry>
-    <title>Beyond Cash Flows: A Multi-Agent AI Framework for Valuing Clinical-Stage, Cross-Border Biotechnology</title>
-    <link href="http://arxiv.org/abs/2608.10175v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.10175v1</id>
-    <published>2026-08-10T00:00:00Z</published>
-    <updated>2026-08-10T00:00:00Z</updated>
-    <author>
-      <name>Yuhan Fang</name>
-    </author>
-    <summary type="text">A new class of software systems is transforming investment analysis. Large language model agents assembled into collaborative team structures including analysts, researchers, and risk managers are increasingly deployed across financial markets. Yet current multi-agent frameworks share a critical limitation: they rely on the foundational assumption that companies can be valued through traditional cash flows. This paradigm fails in clinical-stage biotechnology, where enterprise value depends entirely on binary scientific and regulatory milestones. To bridge this gap, this paper introduces a specialized multi-agent framework. Its valuation layer translates qualitative scientific judgment into defensible valuations for pre-revenue assets; its cross-market coordination layer reconciles pricing across international venues simultaneously; and its conflict-fusion mechanism systematically arbitrates between bullish scientific conviction and cautious regulatory constraints in a domain-specific manner. Crucially, the architecture is not a speculative design: it encodes a method the author first executed by hand as sole portfolio manager of China's first dedicated cross-border biotechnology fund, a human practice that returned 127.17% against a 50.67% benchmark within sixteen months. That record is evidence for the underlying method rather than for any AI system; no implementation is evaluated here. This paper presents the framework at the architectural level, establishing foundational design principles for extending agentic investment systems into complex, event-driven asset classes they currently serve poorly.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="q-fin.PM" />
-  </entry>
-  <entry>
-    <title>Fluid Structure, Rigid Record: A Layered Organizational Design Framework for Agent-Native Organizations</title>
-    <link href="http://arxiv.org/abs/2608.08516v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.08516v1</id>
-    <published>2026-08-09T00:00:00Z</published>
-    <updated>2026-08-09T00:00:00Z</updated>
-    <author>
-      <name>Lucian Zhu</name>
-    </author>
-    <summary type="text">An agentic organization should not be a set of model instances with corporate titles, despite most MAS still operationalizing organization as a conversational topology, a role prompt, or a fixed workflow. This paper develops an agent-native organizational structure framework that separates the persistent and dynamic layers of operations. The persistent layer consists of a four-store record architecture and a pool of resident specialization agents. A coordination layer defines Permission as the boundary of the operational world available to an agent, and Privilege as the set of organizational state changes that the agent is authorized to initiate. Together, these mechanisms compile task-specific operational worlds. A runtime layer combines an external Workflow Protocol with an isolated runtime store to dynamically assemble Task Groups. A human-interaction layer exposes the organization through a Control Plane mediated by a non-decision-making Translation Agent. Three orthogonal Role Groups further separate Operation, Review, and Supervision. Operators execute within narrowly scoped leases; reviewers receive elevated but demand-activated authority to modify organizational state; supervisors retain broad observational access while holding limited modification authority. The resulting architecture is fluid at the execution surface but structurally rigid underneath: tasks and events may alter team composition, topology, views, tools, and workflows, while records, write constraints, authority boundaries, and separation of powers remain persistent. The architecture has been implemented as a prototype and evaluated in small-sample experiments. Large-scale empirical validation remains incomplete, therefore no general performance claimed is made yet. Instead, the contribution is a coherent and falsifiable framework for designing, governing, recovering, and evaluating agent-native organizations.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>AOC-CBS: Anytime-Optimal Continuous-time Conflict-Based Search for Generalised Multi-Agent Path Finding</title>
-    <link href="http://arxiv.org/abs/2608.08175v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.08175v1</id>
-    <published>2026-08-08T00:00:00Z</published>
-    <updated>2026-08-08T00:00:00Z</updated>
-    <author>
-      <name>Alvin Combrink</name>
-    </author>
-    <author>
-      <name>Sabino Francesco Roselli</name>
-    </author>
-    <author>
-      <name>Martin Fabian</name>
-    </author>
-    <summary type="text">Many research fields share a common structure: a set of agents, each pursuing its own goal, whose actions must be coordinated so that no two of them conflict. Multi-Agent Path Finding (MAPF) is a concrete instance of this structure, with applications from warehouses to road traffic and airports. Much of MAPF research assumes discrete time, circular agents sharing one spatial graph, a single goal per agent, and that an agent must remain at its goal once reached, precluding heterogeneous fleets, non-geometric conflicts, task sequences, and agents that move on after completing them. We generalise the MAPF formulation to lift these assumptions, and present Anytime-Optimal Continuous-time Conflict-Based Search (AOC-CBS), an exact and solution-complete solver for it. AOC-CBS guarantees the eventual return of an optimal solution, while reporting an incumbent with a known optimality gap upper bound throughout its runtime; it is configurable with a portfolio of repair functions, one of which we introduce (Tier-Prioritized Safe Interval Path Planning), and can exploit multiple processor cores. We demonstrate AOC-CBS on a mixed fleet of non-convex agents moving along smooth, kinodynamically feasible trajectories. Preliminary experiments against the exact solver OC-CBS, on well-known benchmarks and roadmaps we sample from them, show AOC-CBS is comparable at finding optimal solutions while extending scalability from the tens to the hundreds of agents when a bounded optimality gap is accepted.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 65 pages, 19 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Decentralized Multi-Agent Urban Traffic Management via Spatio-Temporal Mobility Profile Planning</title>
-    <link href="http://arxiv.org/abs/2608.08035v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.08035v1</id>
-    <published>2026-08-08T00:00:00Z</published>
-    <updated>2026-08-08T00:00:00Z</updated>
-    <author>
-      <name>Lorenzo Mario Amorosa</name>
-    </author>
-    <author>
-      <name>Lorenzo Farina</name>
-    </author>
-    <author>
-      <name>Vittorio Todisco</name>
-    </author>
-    <author>
-      <name>Alessandro Bazzi</name>
-    </author>
-    <summary type="text">As modern cities face increasingly severe traffic congestion, connected and autonomous vehicles (CAVs) have emerged as a crucial enabling technology for next-generation intelligent traffic management. However, fully realizing this potential is hindered by the limitations of current paradigms. Existing approaches typically optimize localized interactions rather than system-wide efficiency, incur severe communication overhead, or lack the deterministic guarantees required for safe kinematic execution. Furthermore, current multi-agent adaptations are frequently restricted to small predefined scenarios, failing to scale across large and complex urban networks. To bridge this gap, this paper introduces VeloCity, a decentralized multi-agent spatio-temporal mobility profile planning framework designed for CAVs operating in arbitrary urban areas. To minimize vehicles' travel times, VeloCity distributes mobility profile optimization directly to individual CAVs. Vehicles query a localized traffic coordinator for a reservation table, independently compute their fastest conflict-free mobility profile, and reserve their requested space-time slots back with the coordinator. By natively adapting to any arbitrary road topology, the framework manages highly irregular urban areas without requiring scenario-specific tuning, all while guaranteeing collision-free and physically executable vehicle trajectories. Extensive simulations across four large-scale real-world urban maps (Tokyo, Manhattan, Rome, and Bologna) demonstrate the framework's scalability. Compared to established state-of-the-art models, VeloCity yields drastically lower travel times, tightly bounds delay variance, and successfully prevents congestion gridlocks even under extremely high vehicular densities.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.NI" />
   </entry>
 </feed>
