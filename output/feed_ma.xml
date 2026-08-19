@@ -4,12 +4,89 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-18T02:38:32Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 14 entries</subtitle>
+  <updated>2026-08-19T02:19:54Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 16 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Collective Counterfactual Planning: Coordination, Consent, and Verification under Representational Constraints</title>
+    <link href="http://arxiv.org/abs/2608.17932v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.17932v1</id>
+    <published>2026-08-18T00:00:00Z</published>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <author>
+      <name>Chainarong Amornbunchornvej</name>
+    </author>
+    <summary type="text">Groups routinely complete projects that no single member can plan, execute, or verify alone. We propose a formal model of this phenomenon, Collective Counterfactual Planning (CCP), in which the binding limitation on each agent is neither capability, knowledge, nor observability, but representational geometry: each agent perceives the state, conceives moves, consents to actions, and certifies goal requirements only through a projection onto an agent-specific subspace of a common task space. Four gates jointly determine whether a team can reach a conjunctive goal and legitimately recognize that it has done so: the exogenous implementation coalitions required to perform each action, together with three representational gates -- conception, consent, and task-relative verification qualification. We define the Collective Counterfactual Solvability (CCS) problem, separating geometric feasibility, executable attainment, and validated completion. The results expose a positive-negative duality. Iterated cross-agent relay can unlock a solution that no one-shot pooling of individual plans contains, but any goal requirement depending essentially on the subspace dark to the entire team is unverifiable and therefore not validly completable, even when the trajectory accidentally attains it. Memoryless and audited consent further constrain different objects -- action directions versus cumulative trajectory states -- and neither dominates the other. A four-step exhaustive horizon-bounded solvability scheme is sound and complete under exact representation of the relay closure; restricted implementations remain sound on returned plans but need not be complete. The model gives one geometry for sequential mutual enabling, competent execution of steps whose purpose is invisible to the executor, forced sub-teaming at expertise boundaries, and completion that cannot be validly declared.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; The code is available at https://github.com/DarkEyes/Coll-Counterfactual-Plan&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>A Theoretical Framework for Parallel Lifelong MAPF Using Group Decentralized Planning</title>
+    <link href="http://arxiv.org/abs/2608.17928v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.17928v1</id>
+    <published>2026-08-18T00:00:00Z</published>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <author>
+      <name>Alex DeWeese</name>
+    </author>
+    <author>
+      <name>Jiaoyang Li</name>
+    </author>
+    <author>
+      <name>Guannan Qu</name>
+    </author>
+    <summary type="text">In the Lifelong Multi-Agent Path Finding (L-MAPF) problem, agents must repeatedly move from one destination to another while avoiding obstacles and inter-agent collisions. Widely regarded as one of the highest-performing solutions to this problem is the Rolling-Horizon Collision Resolution (RHCR) framework. However, commensurate with its quality solutions, it incurs a computational cost that limits its applicability to even modest agent counts. In this paper, leveraging theoretical methods from the Locally Interdependent Multi-Agent MDP literature, we first theoretically prove the near-optimality of RHCR in a discounted MDP formulation of the L-MAPF problem. Then, we leverage these results to naturally motivate an extended framework called Group Decentralized RHCR (GD-RHCR) which incorporates a group decentralized structure that partitions agents based on a transitive communication scheme and plans for each partition of agents in parallel. We show that both RHCR and GD-RHCR achieve similar exponentially close to optimal guarantees, establishing a theoretical duality between the time based restrictions performed by vanilla RHCR and the additional space based partitioning performed by GD-RHCR. Lastly, we show that across varying maps, GD-RHCR is able to attain high throughput that scales into higher agent counts while maintaining a significantly lower per plan cost.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; Robotics" />
+  </entry>
+  <entry>
+    <title>Offline Multi-Agent Reinforcement Learning with a Physics-Informed World Model for Cooperative Mixed Traffic Control</title>
+    <link href="http://arxiv.org/abs/2608.17739v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.17739v1</id>
+    <published>2026-08-18T00:00:00Z</published>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <author>
+      <name>Lu Liu</name>
+    </author>
+    <author>
+      <name>Chi Xie</name>
+    </author>
+    <author>
+      <name>Xi Xiong</name>
+    </author>
+    <summary type="text">This study investigates cooperative control of connected and automated vehicles (CAVs) at partially observable highway bottlenecks in mixed traffic, aiming to mitigate congestion without relying on complete global traffic states or online trial-and-error. We propose a physics-informed world model-based offline multi-agent reinforcement learning framework that reconstructs a physically interpretable global traffic state from local CAV observation-action histories, with coupled macroscopic-microscopic traffic dynamics providing physics-based supervision. A probabilistic ensemble world model learns traffic-state transitions and system rewards, while model disagreement quantifies epistemic uncertainty. Multi-step imagined rollouts with pessimistic rewards and uncertainty-driven truncation are then used for offline policy learning. Experiments in a SUMO-based on-ramp bottleneck using approximately $1\times10^6$ offline transitions show that physics supervision improves state reconstruction and world-model prediction accuracy.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Adaptive Incentive Design in Dynamic Principal-Agent Problem via Kernelized Bandits</title>
+    <link href="http://arxiv.org/abs/2608.17614v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.17614v1</id>
+    <published>2026-08-18T00:00:00Z</published>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <author>
+      <name>Arghya Mallick</name>
+    </author>
+    <author>
+      <name>Anuj S. Vora</name>
+    </author>
+    <author>
+      <name>Sergio Grammatico</name>
+    </author>
+    <author>
+      <name>Peyman Mohajerin Esfahani</name>
+    </author>
+    <summary type="text">We consider the dynamic principal-agent problem under asymmetric information, wherein a principal sequentially designs contracts to incentivize an agent with unknown preferences and hidden actions. A fundamental bottleneck in the existing literature is the assumption of deterministic agent utility, which renders the principal's expected utility discontinuous and forces computationally intractable discretizations of the contract space. In this paper, we address this limitation by introducing a stochastic counterpart into the agent's utility model, capturing the inherent physical and behavioral variations in realistic subsystems. We formally prove that this stochastic formulation restores the continuity of the principal's expected utility. Leveraging this continuous geometric structure, we formulate the interaction as a structured multi-armed bandit problem subject to heteroscedastic noise. We propose a \texttt{Heteroscedastic GP-UCB} algorithm that utilizes a Neural Network (Arcsin) kernel, chosen to capture the non-stationary, sigmoidal geometry of the utility landscape. For an $m$-dimensional compact contract space, we establish a high-probability cumulative regret bound of $O\left(\sqrt{T}(\log T)^{m+1}\right)$. Finally, we demonstrate the practical efficacy of our theoretical framework by formulating the Vehicle-to-Grid (V2G) incentive design problem, proving its equivalence to a dynamic principal-agent problem, and showing superior economic performance for grid aggregators.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="eess.SY" />
+  </entry>
   <entry>
     <title>VCE-Skill: Enhancing Skill Self-Evolution with Version-Change Experience</title>
     <link href="http://arxiv.org/abs/2608.16544v1" rel="alternate" type="text/html" />
@@ -73,6 +150,32 @@
     <summary type="text">Multi-unmanned aerial vehicle (UAV) systems provide scalable service platforms for large-scale environmental tasks, such as grassland ecosystem restoration. However, coordinating fleet operations requires solving the restoration area maximization problem (RAMP). This non-linear combinatorial optimization challenge is complicated by payload-dependent energy dynamics and heterogeneous ecological degradation. We propose a novel knowledge-guided collaborative bilevel formerpointer reinforcement learning framework (KC-BFPRL) to address this complexity. Using a hierarchical paradigm, KC-BFPRL decomposes RAMP into global task allocation and local restoration planning, with the latter further divided into upper-level trajectory planning and lower-level restoration area allocation. Our specialized architecture pairs featuring a Transformer-based encoder that fuses static environmental features with dynamic UAV states, and a Pointer Network decoder trained via a robust actor-critic framework. By embedding ecological priority rules and heuristic logic, KC-BFPRL achieves a structured warm-start, solving the RL cold-start problem while ensuring strict constraint satisfaction. Extensive experiments demonstrate that KC-BFPRL consistently outperforms state-of-the-art baselines, achieving superior objective values and efficiency. It maintains a $0.00\%$ optimality gap in the most complex scenarios U8-R160 and operates nearly three times faster than MAPDP, validating its robustness, scalability, and real-time applicability for large-scale automated ecological restoration.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>WONDER: A Radio World Model-based Negotiation Framework for Multi-Agent UAV Coverage Optimization</title>
+    <link href="http://arxiv.org/abs/2608.16955v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.16955v1</id>
+    <published>2026-08-16T00:00:00Z</published>
+    <updated>2026-08-16T00:00:00Z</updated>
+    <author>
+      <name>Jiahao Huang</name>
+    </author>
+    <author>
+      <name>Rongpeng Li</name>
+    </author>
+    <author>
+      <name>Zhifeng Zhao</name>
+    </author>
+    <author>
+      <name>Guoru Ding</name>
+    </author>
+    <author>
+      <name>Honggang Zhang</name>
+    </author>
+    <summary type="text">Post-disaster damage to terrestrial infrastructure can disrupt wireless coverage,while Uncrewed Aerial Vehicle (UAV) swarms provide a promising solution for rapid restoration.However, due to the limitations in local geometry observations hidden radio impact,and inter-UAV communication,there exists a significant gap between locally visible movement choices and swarm-level coverage outcomes.To combat this gap,we propose a raido World-model-based Optimized Negotiation framework for Distributed UAV covERage (WONDER).Particularly, to tackle the unavailability of the future radio field from onboard observations, WONDER uses a Joint-Embedding Predictive Architecture (JEPA)-based radio world model to learn and predict the incremental radio effect of each candidate trajectory from deployment-available information.Multi-round negotiation in WONDER then coordinates ranked proposals by committing one trajectory at a time and re-evaluating the remaining proposals under the updated context. Our theoretical analyses further validate the effectiveness of such a world model-based framework. WONDER also adopts a Proximal Policy Optimization (PPO)-style Actor and alternates between updating the world model and the actor. Furthermore,we build RadioDynamics,a comprehensive simulation environment that integrates UAV mobility,radio propagation, inter-UAV communication modeling,and digital-twin geometry with ray-traced fields in $62$ metropolitan scenes.Experiments on $11$ testing scenes in RadioDynamics show that WONDER achieves the highest balanced score among seven evaluated methods,reaching $0.870$ with a $0.162$ coverage advantage over STACCA, while maintaining $100\%$ connectivity between UAVs.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Machine Learning" />
   </entry>
   <entry>
     <title>ETHOS: Towards a Modular Ethics Framework for Clinical Multi-Agent Systems</title>
@@ -246,6 +349,29 @@
     <category term="Artificial Intelligence" />
   </entry>
   <entry>
+    <title>Emergent Misaligned Communication in Long-Horizon Multi-Agent LLM Commerce</title>
+    <link href="http://arxiv.org/abs/2608.14825v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.14825v2</id>
+    <published>2026-08-14T00:00:00Z</published>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <author>
+      <name>Zeyuan Li</name>
+    </author>
+    <author>
+      <name>Lukas Petersson</name>
+    </author>
+    <author>
+      <name>Alessandro Acquisti</name>
+    </author>
+    <author>
+      <name>Michiel A. Bakker</name>
+    </author>
+    <summary type="text">Frontier LLM agents increasingly transact on behalf of separate principals, often using natural language rather than structured APIs. Much of the safety literature studies misaligned LLM behavior through adversarial-elicitation evaluations on single agents or stylized tasks. Its prevalence and structure in settings that combine long horizons, separate principals, real operational state, and inter-agent natural-language exchange remain insufficiently measured. We study 2,583 inter-agent emails from 20 one-year simulation runs of Vending-Bench Arena, a competitive vending environment spanning 13 frontier LLMs. We operationalize speech-act misalignment as emails containing false factual claims, manipulation, collusion, or threats, combining message content with ground-truth simulator state and logged reasoning traces to classify and validate such behavior. Under our primary classifier, 12.6% of emails are labeled misaligned; misalignment appears in all 20 runs and 74.7% of individual agent-runs. Both the magnitude and composition of this misalignment are preserved under repeated classification at different sampling temperatures and under full-pipeline replication with judges from two other frontier-model families. Misalignment is also reciprocal and stress-conditioned: receiving a misaligned email from a counterparty raises the odds of a misaligned reply by 1.65x, and low-inventory conditions raise them by 1.58x. Across tests of capability-asymmetric exploitation, we find no evidence that higher-capability models differentially exploit weaker counterparties, and model performance rank does not predict misalignment rates. Together, these results indicate that measurable, state-dependent misalignment can arise in competitive multi-agent environments without engineered elicitation, in patterns associated with operational scarcity and counterparty behavior rather than model capability alone.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
     <title>Reconcile Once, Write Anytime: A Trust-Tiered Librarian and a Multi-Agent Writer for Drift-Free, Point-in-Time Research</title>
     <link href="http://arxiv.org/abs/2608.12984v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2608.12984v1</id>
@@ -326,92 +452,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Rethinking Agent Security as a Networking Problem</title>
-    <link href="http://arxiv.org/abs/2608.12172v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.12172v1</id>
-    <published>2026-08-12T00:00:00Z</published>
-    <updated>2026-08-12T00:00:00Z</updated>
-    <author>
-      <name>Van Tran</name>
-    </author>
-    <author>
-      <name>Taveesh Sharma</name>
-    </author>
-    <author>
-      <name>Tajveer Singh Dhesi</name>
-    </author>
-    <author>
-      <name>Nick Feamster</name>
-    </author>
-    <summary type="text">AI agents are rapidly becoming more capable and widely deployed, promising substantial gains in productivity and enabling new classes of applications. However, their growing autonomy also introduces significant privacy and security risks. Existing defenses are predominantly agent-centric, relying on the agent itself to detect threats and enforce privacy and security policies. This approach is fundamentally limited because it entrusts policy enforcement to AI agents whose LLM-driven behavior is inherently nondeterministic and vulnerable to manipulation through attacks such as prompt injection. As a result, current defenses cannot reliably prevent privacy and security threats, highlighting a critical need for a new solution to securing AI agent systems.   The networking community has long grappled with similar challenges and offers insightful principles we can borrow to design a more secure AI agent system. These include centralized control with distributed enforcement, capability-based access for mediating requests to sensitive resources, and least privilege through zero-trust enforcement. Historically, these principles have provided strong deterministic guarantees for networked systems. However, these principles alone are insufficient for AI agents because the safety and appropriateness of an agent's actions often depend on semantic context beyond the expressiveness of static rules.   Building on these principles, we advocate for a systematic approach to AI agent security that combines deterministic enforcement mechanisms, which provide strong security guarantees, with semantic, context-aware policies that enable nuanced decision-making. We then present a reference architecture and identify key research questions and future directions to guide the design of secure and privacy-preserving AI agent systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Beyond Memory: A Transactional Continuity Kernel for Long-Lived AI Agents</title>
-    <link href="http://arxiv.org/abs/2608.11632v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.11632v1</id>
-    <published>2026-08-12T00:00:00Z</published>
-    <updated>2026-08-12T00:00:00Z</updated>
-    <author>
-      <name>Jun He</name>
-    </author>
-    <author>
-      <name>Deying Yu</name>
-    </author>
-    <summary type="text">Persistent AI agents accumulate versioned state across long horizons, but storage retention alone does not identify authoritative state. Without an explicit control plane, unmediated updates by models, tools, and background workers risk stale overwrites, un-audited exposures, and self-authorizing privilege escalation. We argue that agent state governance is an infrastructural activation problem, defining continuity as an unbroken, authorized lineage of accepted branch heads. We present the Continuity Kernel (CK), an activation contract that decouples off-commit candidate evaluation from atomic state activation. Untrusted components propose typed changes against an exact predecessor head or typed absence. A short activation transaction revalidates ownership, pre-state authority, freshness, and effect uniqueness, recording one stable disposition (Commit, Reject, Quarantine, or Defer). Only Commit atomically advances the branch head and installs the complete accepted unit (state, authority, lineage, effects, outcome, and receipt). A bounded executable model verifies the protocol across 2,808,230 reachable states and 5,526,474 state-changing transitions with zero invariant violations.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 6-page appendix, 15 tables&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Do LLMs Beat Nash? Testing Decentralized Coordination in Self-Play Multi-Agent Games</title>
-    <link href="http://arxiv.org/abs/2608.12547v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.12547v1</id>
-    <published>2026-08-12T00:00:00Z</published>
-    <updated>2026-08-12T00:00:00Z</updated>
-    <author>
-      <name>Deborah Sinishaw</name>
-    </author>
-    <author>
-      <name>Qile Zhu</name>
-    </author>
-    <author>
-      <name>Edwin Meriaux</name>
-    </author>
-    <author>
-      <name>Gregory Dudek</name>
-    </author>
-    <summary type="text">Large language model agents deployed without a central controller are often assumed to require communication to coordinate their actions. We ask what remains possible without it: when independent instances of the same model cannot communicate, can they still reason about their counterparts well enough to exceed the standard game-theoretic baseline for uncoordinated play? We introduce a benchmark of one-shot, no-communication games in which each of thirteen language models is told only that its counterparts are running the same model and is evaluated against the Nash equilibrium of the underlying game. In two-player matrix games spanning seven archetypes and two to ten actions per player, two frontier-hosted models consistently exceed their Nash benchmark, approaching the optimal joint outcome in several archetypes, while most open-weight models achieve only partial gains that vary sharply by game structure. Performance degrades substantially in team-based games with four or more interchangeable agents, particularly as the action space grows, suggesting that whatever capability drives self-play gains in dyadic games does not transfer to larger multi-agent teams.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 5 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Robotics" />
-  </entry>
-  <entry>
-    <title>Entropy-Augmented Multi-Objective Policy Optimization in Multiagent Systems</title>
-    <link href="http://arxiv.org/abs/2608.12534v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.12534v1</id>
-    <published>2026-08-12T00:00:00Z</published>
-    <updated>2026-08-12T00:00:00Z</updated>
-    <author>
-      <name>Jamie Santos</name>
-    </author>
-    <author>
-      <name>Ayhan Alp Aydeniz</name>
-    </author>
-    <author>
-      <name>Raghav Thakar</name>
-    </author>
-    <author>
-      <name>Kagan Tumer</name>
-    </author>
-    <summary type="text">Autonomous agent teams deployed in settings such as marine and extraterrestrial outposts must coordinate actions to achieve optimal outcomes across multiple competing objectives. Multi-objective evolutionary algorithms such as NSGA-II optimize for diversity in the objective space, but neglect diversity in the behavior space, possibly leading to premature convergence and a collapse in behaviors that may differentiate policies in different external conditions. To address this, we introduce an entropy-augmented policy evaluation strategy that incorporates an entropy bonus into agent fitness scores, discouraging behavioral homogeneity across the evolving population. By augmenting policy evaluation with a behavior-space diversity signal while preserving the underlying Pareto optimization framework, our method is designed to encourage exploration of behaviorally distinct policies in multiagent domains. We evaluate our approach across rover-domain experiments with qualitatively distinct reward structures and observe hypervolume improvements of up to 48% relative to the NSGA-II baseline, suggesting that behavioral diversity is a promising and underexplored direction for improving multi-objective multiagent evolutionary optimization.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Robotics" />
   </entry>
 </feed>
