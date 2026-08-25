@@ -4,12 +4,246 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-24T02:39:51Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 12 entries</subtitle>
+  <updated>2026-08-25T02:12:42Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 16 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams</title>
+    <link href="http://arxiv.org/abs/2608.23541v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.23541v1</id>
+    <published>2026-08-24T00:00:00Z</published>
+    <updated>2026-08-24T00:00:00Z</updated>
+    <author>
+      <name>Summer Eunhyung Ann</name>
+    </author>
+    <author>
+      <name>Haokun Liu</name>
+    </author>
+    <author>
+      <name>Chenhao Tan</name>
+    </author>
+    <summary type="text">Does multi-agent LLM interaction help or hurt? Some work reports gains from debate (Du et al., 2024), critique loops (Chen et al., 2025), and mixture-of-agents synthesis (Wang et al., 2025), while other work finds that interaction adds cost without improving quality under equal budgets (Tran &amp; Kiela, 2026; Xu et al., 2026; Jarrett et al., 2025), or that independent sampling already captures multi-agent gains (Li et al., 2024). We argue this contradiction partly reflects a missing distinction, because not all multi-agent communication is equal. Different model families find structurally different solutions, but when agents read each other's complete outputs, their proposals converge within one round, erasing the diversity that motivates using multiple models. We call this the interaction tax. We test 11 verifier-scored optimization tasks under matched budgets and find that full-solution interaction is a weak default. Independent proposal generation avoids this collapse. Full-solution interaction mainly makes agents stay close to the first solution they see instead of trying different approaches, and critique helps only if the violated rule is easy for the LLM to find and fix. These results suggest that multi-agent performance depends less on the number of agents than on the information they exchange, and interaction helps only when agents share the right information at the right time.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICML 2026 (PMLR 306)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Right-Sizing LLM-Agent Decomposition in VAT Determination: A Pilot Controlled Sweep</title>
+    <link href="http://arxiv.org/abs/2608.23395v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.23395v1</id>
+    <published>2026-08-24T00:00:00Z</published>
+    <updated>2026-08-24T00:00:00Z</updated>
+    <author>
+      <name>Pedro Santos</name>
+    </author>
+    <summary type="text">Recent LLM-agent systems make conflicting design bets: decompose work across many narrow agents, or use one strong tool-using agent. This pilot studies that choice on bounded cross-border VAT determination with reverse charge, where every case has an oracle label and each intermediate decision is independently scoreable. We hold the activity surface fixed (subtasks, tools, I/O schemas, validation checks, orchestrator, base model, and merge policy) and vary only the assignment of subtasks to workers across four orchestrated configurations, from one wide worker to five narrow ones, against S0, a tuned no-orchestrator single agent, with a deterministic rule engine as oracle. The program spans 4,400 runs: a 40-case, five-repeat main sweep, matched-token arms separating prompt-budget from agent-count effects, and three failure-injection arms, all judged against pre-registered falsification criteria. The two intermediate configurations lead on accuracy (0.830, against endpoints at 0.720 and 0.770) but miss the pre-stated bar against the fine endpoint, so the intermediate-optimum hypothesis remains unsupported at pilot scale. The single agent does not Pareto-dominate the orchestrated set. The matched-token criterion fires: the budget-matched single agent lands 6.5 points below the leader, but the interval includes zero, so any advantage is consistent with a prompt-budget explanation. Under injection, availability faults are absorbed at every granularity, with wide-scope restart over-recovering its baseline by +0.160, while one schema-conforming hallucinated record degrades every configuration and inverts the ordering, hitting fragmented configurations hardest. The contribution is a bounded, preregistered pilot heuristic for right-sizing decomposition (place one partition boundary at the dependency-layer midpoint), released with oracle, dataset, harness, raw traces, and analysis pipeline.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 29 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.SE" />
+  </entry>
+  <entry>
+    <title>First Demonstration of Multi-Agent LLM System for Million-Scale Optical Link Management in Global Production AIDCs</title>
+    <link href="http://arxiv.org/abs/2608.23145v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.23145v1</id>
+    <published>2026-08-24T00:00:00Z</published>
+    <updated>2026-08-24T00:00:00Z</updated>
+    <author>
+      <name>Jingyi Su</name>
+    </author>
+    <author>
+      <name>Yihao Zhang</name>
+    </author>
+    <author>
+      <name>Dianxuan Fu</name>
+    </author>
+    <author>
+      <name>Leiyan Fei</name>
+    </author>
+    <author>
+      <name>Juan Wang</name>
+    </author>
+    <author>
+      <name>Mengfan Dai</name>
+    </author>
+    <author>
+      <name>Qing Liu</name>
+    </author>
+    <author>
+      <name>Xiong Wu</name>
+    </author>
+    <author>
+      <name>Yufeng Jiang</name>
+    </author>
+    <author>
+      <name>Cheng Chen</name>
+    </author>
+    <author>
+      <name>Bowen Zhang</name>
+    </author>
+    <author>
+      <name>Peilong Wang</name>
+    </author>
+    <author>
+      <name>Xi Chen</name>
+    </author>
+    <author>
+      <name>Zonglong He</name>
+    </author>
+    <author>
+      <name>Hongchen Yu</name>
+    </author>
+    <author>
+      <name>Zhicheng Ye</name>
+    </author>
+    <author>
+      <name>Weisheng Hu</name>
+    </author>
+    <author>
+      <name>Qunbi Zhuge</name>
+    </author>
+    <summary type="text">We present the first LLM-powered multi-agent system for autonomous fault management across millions of optical links in production AIDCs. Refined via SFT and continuous memory evolution, it achieves 97.7% F1 and over 60% fault-incident reduction, outperforming SOTA LLMs on a ten-week field data evaluation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 4 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="physics.optics" />
+  </entry>
+  <entry>
+    <title>Predicting the scale limits of social mechanisms in agent societies</title>
+    <link href="http://arxiv.org/abs/2608.22884v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.22884v1</id>
+    <published>2026-08-24T00:00:00Z</published>
+    <updated>2026-08-24T00:00:00Z</updated>
+    <author>
+      <name>Zengqing Wu</name>
+    </author>
+    <author>
+      <name>Chuan Xiao</name>
+    </author>
+    <summary type="text">Societies of interacting language-model agents offer a controllable and repeatable way to study collective behaviour at scales that would be difficult to test with people. Their scientific value, however, depends on whether a social mechanism that works in a small group still operates when thousands of agents interact, and testing this directly requires costly large-scale runs. Here we introduce an audit that predicts a mechanism's fate as a population grows. It asks how often the mechanism can act, whether agents use the information it supplies, and whether the measurement itself creates apparent scale effects. Controlled experiments show that a single structural term can decide whether reciprocity, consensus or punishment survives scaling. For gossip, the population at which the mechanism fails is set by the reach and lifetime of its messages. In language-model societies, agents respond not only to social information but to how it is expressed: counts and percentages led to different scale behaviour. Predictions made before execution held on third-party code and a second model family, while a failed prediction exposed the boundary of the finding. The audit provides a prospective way to decide which social mechanisms can be interpreted across population scales.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.SI" />
+  </entry>
+  <entry>
+    <title>Minimal Local Simulation Foundations for LLM- and VLM-Driven Agents in 2D and 3D Environments</title>
+    <link href="http://arxiv.org/abs/2608.22833v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.22833v1</id>
+    <published>2026-08-24T00:00:00Z</published>
+    <updated>2026-08-24T00:00:00Z</updated>
+    <author>
+      <name>Ryuki Hyodo</name>
+    </author>
+    <summary type="text">Large language models (LLMs) and vision-language models (VLMs) are expanding the range of behaviors that can be represented in agent-based simulations, but many contemporary platforms are difficult to study, modify, or run on ordinary computers. We present two intentionally minimal simulation foundations for education and rapid prototyping. SD-AgentFoundry-2D provides a two-dimensional multi-agent environment in which locally hosted LLM agents move, communicate, respond to place occupancy, and encounter spatially localized fire events. SD-AgentFoundry-3D provides a three-dimensional digital-twin environment in which a locally hosted VLM receives first-person images and produces natural-language movement instructions. Both codebases are designed to run locally on macOS, Windows, and Linux and are deliberately left open to modification rather than developed as finished applications. Together, they offer accessible starting points for learning about generative social simulation and for building domain-specific extensions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; GitHub Repositories: https://github.com/ryukih/SD-AgentFoundry-2D and https://github.com/ryukih/SD-AgentFoundry-3D&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>PropUQ-MAS: Propagation-Aware Uncertainty Quantification for LLM Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2608.22130v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.22130v1</id>
+    <published>2026-08-22T00:00:00Z</published>
+    <updated>2026-08-22T00:00:00Z</updated>
+    <author>
+      <name>Yaokun Liu</name>
+    </author>
+    <author>
+      <name>Yifan Liu</name>
+    </author>
+    <author>
+      <name>Daniel Yue Zhang</name>
+    </author>
+    <author>
+      <name>Ruichen Yao</name>
+    </author>
+    <author>
+      <name>Zelin Li</name>
+    </author>
+    <author>
+      <name>Dong Wang</name>
+    </author>
+    <summary type="text">LLM-based multi-agent systems (MAS) solve complex tasks through communication among role-specialized agents. However, inter-agent dependencies introduce reliability risks beyond isolated agent failures. For instance, errors in intermediate messages could be inherited and amplified by downstream agents. Existing uncertainty quantification (UQ) methods mainly target isolated responses or single-agent reasoning, and therefore fail to capture uncertainty propagation in MAS. To this end, we propose PropUQ-MAS, an error propagation-aware UQ framework that represents MAS execution as a communication-structured graph and estimates each step's reliability by combining local uncertainty with uncertainty inherited from upstream messages. Extensive experiments demonstrate that PropUQ-MAS consistently improves UQ in MAS, with average relative gains of +6.10% in AUROC and +47.58% in PRR.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to EMNLP 2026 (Main Conference)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL" />
+  </entry>
+  <entry>
+    <title>Opinion-Guided Layered Strategies for Decentralized Coordination</title>
+    <link href="http://arxiv.org/abs/2608.22104v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.22104v1</id>
+    <published>2026-08-22T00:00:00Z</published>
+    <updated>2026-08-22T00:00:00Z</updated>
+    <author>
+      <name>Shuhao Qi</name>
+    </author>
+    <author>
+      <name>Zhiyong Sun</name>
+    </author>
+    <author>
+      <name>Siep Weiland</name>
+    </author>
+    <author>
+      <name>Sofie Haesaert</name>
+    </author>
+    <summary type="text">Autonomous agents increasingly interact with other independent agents, and such interactions typically admit multiple joint behaviors. When two agents prefer different ones, their independent strategies may be mutually incompatible and fail to reach a coordinated outcome; when they are identical, neither can differentiate its role when needed. Ideally, an agent should coordinate with any agent it encounters, regardless of which admissible joint behavior that agent aims to realize. We therefore propose a new form of strategy, the opinion-guided strategy, which keeps all the admissible joint behaviors available and postpones the selection to execution time, when the other agent's behavior reveals which one to realize. To realize this, nonlinear opinion dynamics are leveraged in a layered realization to guide the agent to a common admissible joint behavior in response to the other agent's evolving behavior, even without communication. We formally establish the conditions under which the strategy remains robust to every preference the other agent may hold. This robustness has an important implication: two agents running identical strategies can break symmetry when needed, a capability that conventional strategies lack. Three case studies across different applications show that the opinion-guided strategy coordinates with every randomly encountered agent, as long as it is willing to realize one of the admissible joint behaviors. One of them corresponds to a general-sum game: unlike conventional approaches devoted to finding a unique Nash equilibrium in advance, the opinion-guided strategy keeps every equilibrium open and guarantees the agents reach one, decided by their runtime interaction.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="eess.SY" />
+  </entry>
+  <entry>
+    <title>OptiMAS: Automatically Optimize Multi-Agent System</title>
+    <link href="http://arxiv.org/abs/2608.21918v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.21918v1</id>
+    <published>2026-08-22T00:00:00Z</published>
+    <updated>2026-08-22T00:00:00Z</updated>
+    <author>
+      <name>Yuxin Cheng</name>
+    </author>
+    <author>
+      <name>Chang Liu</name>
+    </author>
+    <author>
+      <name>Hanxin Yu</name>
+    </author>
+    <author>
+      <name>Haochen Tan</name>
+    </author>
+    <author>
+      <name>Taiqiang Wu</name>
+    </author>
+    <author>
+      <name>Weiqiang Jin</name>
+    </author>
+    <author>
+      <name>Jie Ran</name>
+    </author>
+    <author>
+      <name>Kaibo Wang</name>
+    </author>
+    <author>
+      <name>Xiaoguang Li</name>
+    </author>
+    <author>
+      <name>Haoli Bai</name>
+    </author>
+    <author>
+      <name>Graziano Chesi</name>
+    </author>
+    <author>
+      <name>Ngai Wong</name>
+    </author>
+    <summary type="text">Automated evolution of Multi-Agent Systems (MAS) holds significant potential for reducing the manual effort required to design and optimize LLM-based agent architectures. However, extant search-based paradigms face a fundamental trade-off, where an expanded optimization scope exacerbates evolutionary instability, while discrete branch-and-discard search isolates insights across lineages. To address these limitations, we propose a continuous, data-driven optimization paradigm built upon a unified ReAct-based infrastructure that reconciles a broad optimization scope with operational stability. Under this paradigm, we present OptiMAS, a task-agnostic agentic optimizer that leverages textual interaction trajectories and task feedback as loss signals for end-to-end MAS evolution. Equipped with a novel dual-track memory mechanism, OptiMAS sustains performance improvement over extended optimization horizons. Evaluation on four heterogeneous agentic benchmarks with three varying scale and accessibility LLM backbones, demonstrates that OptiMAS consistently achieves competitive or superior accuracy relative to both domain-specialized hand-crafted systems and existing evolutionary methods. Our work establishes a practical milestone toward robust, automated MAS evolution.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; EMNLP 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>Level-k Distinguishable Mechanisms for Evaluating Bounded Rationality in LLMs</title>
     <link href="http://arxiv.org/abs/2608.21296v1" rel="alternate" type="text/html" />
@@ -119,6 +353,33 @@
     <category term="Multiagent Systems" />
   </entry>
   <entry>
+    <title>Multi-Agent Orchestration with the Common-Sense Reasoning Capabilities of LLMs for Autonomous Driving</title>
+    <link href="http://arxiv.org/abs/2608.20129v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.20129v2</id>
+    <published>2026-08-20T00:00:00Z</published>
+    <updated>2026-08-20T00:00:00Z</updated>
+    <author>
+      <name>Mehdi Azarafza</name>
+    </author>
+    <author>
+      <name>Faezeh Pasandideh</name>
+    </author>
+    <author>
+      <name>Ali Ehteshami Bejnordi</name>
+    </author>
+    <author>
+      <name>Stefan Henkler</name>
+    </author>
+    <author>
+      <name>Achim Rettberg</name>
+    </author>
+    <summary type="text">Autonomous vehicles require robust perception and decision-making capabilities to operate in diverse and unseen scenarios. While reinforcement learning and rule-based methods can provide effective control and safety mechanisms, their performance may degrade in situations requiring contextual reasoning. Large Language Models (LLMs) have demonstrated strong capabilities in understanding multimodal information and generating contextual reasoning, however, their use for direct vehicle control can introduce latency and hallucination risks. To address these limitations, a hybrid framework is proposed. This system uses an orchestrator to coordinate PPO-trained reinforcement learning and PID control, with LLM common-sense reasoning applied throughout the framework. LLM reasoning is further employed iteratively to refine the RL reward function for dynamic driving environments. The proposed framework is evaluated in highly randomized CARLA scenarios under diverse environmental and traffic conditions. The results demonstrate the potential of integrating LLM-based reasoning with conventional autonomous driving methods while retaining structured control and safety mechanism.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL; Computer Vision" />
+  </entry>
+  <entry>
     <title>Bayesian Partner Modelling enables Adaptive Replanning for LLM Coordination</title>
     <link href="http://arxiv.org/abs/2608.18490v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2608.18490v1</id>
@@ -178,99 +439,6 @@
       <name>Binbin Weng</name>
     </author>
     <summary type="text">Methane field monitoring requires the integration of sampling design, meteorological interpretation, sensor processing, plume analysis, visualization, and reporting, but these steps are often distributed across separate expert-driven workflows. We developed a locally deployable, tool-grounded large language model (LLM) multi-agent framework for our low-cost methane sensing and field-monitoring campaigns. The framework uses LLM agents as workflow coordinators that link field measurements, meteorological data, deterministic sensor-processing routines, Gaussian plume inversion, and report generation, rather than directly estimating methane concentrations or emissions. Extensive field deployments across diverse real-world environments (e.g., wastewater treatment facilities, landfills, and oil and gas sites) demonstrate that our framework can achieve 92.0\% accuracy in workflow routing and parameter extraction, 85.0\% success in emission-rate estimation and plume prediction, and 95.0\% success in generating editable reports under practical operating conditions. Compared with manual and general-purpose LLM-assisted workflows, it reduced workflow time from hours-level to minutes-level, lowered manual coordination and prompt-engineering requirements, and retained traceable plume-based outputs. In addition, most processing can be performed locally, reducing exposure of sensitive facility and field data to cloud services. These results indicate that tool-grounded LLM coordination can reduce the time, labor, usability, and data-security barriers of methane field monitoring.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Collective Counterfactual Planning: Coordination, Consent, and Verification under Representational Constraints</title>
-    <link href="http://arxiv.org/abs/2608.17932v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.17932v1</id>
-    <published>2026-08-18T00:00:00Z</published>
-    <updated>2026-08-18T00:00:00Z</updated>
-    <author>
-      <name>Chainarong Amornbunchornvej</name>
-    </author>
-    <summary type="text">Groups routinely complete projects that no single member can plan, execute, or verify alone. We propose a formal model of this phenomenon, Collective Counterfactual Planning (CCP), in which the binding limitation on each agent is neither capability, knowledge, nor observability, but representational geometry: each agent perceives the state, conceives moves, consents to actions, and certifies goal requirements only through a projection onto an agent-specific subspace of a common task space. Four gates jointly determine whether a team can reach a conjunctive goal and legitimately recognize that it has done so: the exogenous implementation coalitions required to perform each action, together with three representational gates -- conception, consent, and task-relative verification qualification. We define the Collective Counterfactual Solvability (CCS) problem, separating geometric feasibility, executable attainment, and validated completion. The results expose a positive-negative duality. Iterated cross-agent relay can unlock a solution that no one-shot pooling of individual plans contains, but any goal requirement depending essentially on the subspace dark to the entire team is unverifiable and therefore not validly completable, even when the trajectory accidentally attains it. Memoryless and audited consent further constrain different objects -- action directions versus cumulative trajectory states -- and neither dominates the other. A four-step exhaustive horizon-bounded solvability scheme is sound and complete under exact representation of the relay closure; restricted implementations remain sound on returned plans but need not be complete. The model gives one geometry for sequential mutual enabling, competent execution of steps whose purpose is invisible to the executor, forced sub-teaming at expertise boundaries, and completion that cannot be validly declared.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; The code is available at https://github.com/DarkEyes/Coll-Counterfactual-Plan&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>A Theoretical Framework for Parallel Lifelong MAPF Using Group Decentralized Planning</title>
-    <link href="http://arxiv.org/abs/2608.17928v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.17928v1</id>
-    <published>2026-08-18T00:00:00Z</published>
-    <updated>2026-08-18T00:00:00Z</updated>
-    <author>
-      <name>Alex DeWeese</name>
-    </author>
-    <author>
-      <name>Jiaoyang Li</name>
-    </author>
-    <author>
-      <name>Guannan Qu</name>
-    </author>
-    <summary type="text">In the Lifelong Multi-Agent Path Finding (L-MAPF) problem, agents must repeatedly move from one destination to another while avoiding obstacles and inter-agent collisions. Widely regarded as one of the highest-performing solutions to this problem is the Rolling-Horizon Collision Resolution (RHCR) framework. However, commensurate with its quality solutions, it incurs a computational cost that limits its applicability to even modest agent counts. In this paper, leveraging theoretical methods from the Locally Interdependent Multi-Agent MDP literature, we first theoretically prove the near-optimality of RHCR in a discounted MDP formulation of the L-MAPF problem. Then, we leverage these results to naturally motivate an extended framework called Group Decentralized RHCR (GD-RHCR) which incorporates a group decentralized structure that partitions agents based on a transitive communication scheme and plans for each partition of agents in parallel. We show that both RHCR and GD-RHCR achieve similar exponentially close to optimal guarantees, establishing a theoretical duality between the time based restrictions performed by vanilla RHCR and the additional space based partitioning performed by GD-RHCR. Lastly, we show that across varying maps, GD-RHCR is able to attain high throughput that scales into higher agent counts while maintaining a significantly lower per plan cost.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; Robotics" />
-  </entry>
-  <entry>
-    <title>Offline Multi-Agent Reinforcement Learning with a Physics-Informed World Model for Cooperative Mixed Traffic Control</title>
-    <link href="http://arxiv.org/abs/2608.17739v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.17739v1</id>
-    <published>2026-08-18T00:00:00Z</published>
-    <updated>2026-08-18T00:00:00Z</updated>
-    <author>
-      <name>Lu Liu</name>
-    </author>
-    <author>
-      <name>Chi Xie</name>
-    </author>
-    <author>
-      <name>Xi Xiong</name>
-    </author>
-    <summary type="text">This study investigates cooperative control of connected and automated vehicles (CAVs) at partially observable highway bottlenecks in mixed traffic, aiming to mitigate congestion without relying on complete global traffic states or online trial-and-error. We propose a physics-informed world model-based offline multi-agent reinforcement learning framework that reconstructs a physically interpretable global traffic state from local CAV observation-action histories, with coupled macroscopic-microscopic traffic dynamics providing physics-based supervision. A probabilistic ensemble world model learns traffic-state transitions and system rewards, while model disagreement quantifies epistemic uncertainty. Multi-step imagined rollouts with pessimistic rewards and uncertainty-driven truncation are then used for offline policy learning. Experiments in a SUMO-based on-ramp bottleneck using approximately $1\times10^6$ offline transitions show that physics supervision improves state reconstruction and world-model prediction accuracy.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Adaptive Incentive Design in Dynamic Principal-Agent Problem via Kernelized Bandits</title>
-    <link href="http://arxiv.org/abs/2608.17614v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.17614v1</id>
-    <published>2026-08-18T00:00:00Z</published>
-    <updated>2026-08-18T00:00:00Z</updated>
-    <author>
-      <name>Arghya Mallick</name>
-    </author>
-    <author>
-      <name>Anuj S. Vora</name>
-    </author>
-    <author>
-      <name>Sergio Grammatico</name>
-    </author>
-    <author>
-      <name>Peyman Mohajerin Esfahani</name>
-    </author>
-    <summary type="text">We consider the dynamic principal-agent problem under asymmetric information, wherein a principal sequentially designs contracts to incentivize an agent with unknown preferences and hidden actions. A fundamental bottleneck in the existing literature is the assumption of deterministic agent utility, which renders the principal's expected utility discontinuous and forces computationally intractable discretizations of the contract space. In this paper, we address this limitation by introducing a stochastic counterpart into the agent's utility model, capturing the inherent physical and behavioral variations in realistic subsystems. We formally prove that this stochastic formulation restores the continuity of the principal's expected utility. Leveraging this continuous geometric structure, we formulate the interaction as a structured multi-armed bandit problem subject to heteroscedastic noise. We propose a \texttt{Heteroscedastic GP-UCB} algorithm that utilizes a Neural Network (Arcsin) kernel, chosen to capture the non-stationary, sigmoidal geometry of the utility landscape. For an $m$-dimensional compact contract space, we establish a high-probability cumulative regret bound of $O\left(\sqrt{T}(\log T)^{m+1}\right)$. Finally, we demonstrate the practical efficacy of our theoretical framework by formulating the Vehicle-to-Grid (V2G) incentive design problem, proving its equivalence to a dynamic principal-agent problem, and showing superior economic performance for grid aggregators.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="eess.SY" />
-  </entry>
-  <entry>
-    <title>Contracting for LLM Delegation: Moral Hazard in Technology and Effort Choice</title>
-    <link href="http://arxiv.org/abs/2608.18232v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.18232v1</id>
-    <published>2026-08-18T00:00:00Z</published>
-    <updated>2026-08-18T00:00:00Z</updated>
-    <author>
-      <name>Nanda Kishore Sreenivas</name>
-    </author>
-    <author>
-      <name>Kate Larson</name>
-    </author>
-    <summary type="text">We extend the standard Principal-Agent framework to scenarios where the Agent selects from a suite of technologies, each characterized by a distinct cost-capability profile. This framework is increasingly critical in the era of Large Language Models (LLMs), where Agents choose both a model and an associated effort level (e.g., token budget). We model the relationship between output quality and effort as a concave, saturating function, which depends on the Agent's hidden two-dimensional action choice balancing technology selection and effort allocation. We derive the optimal linear contract for the Principal, demonstrating that the Agent's best response is characterized by a threshold reward share that triggers technology switching. Finally, we calibrate our model using open-weight LLM pairings across the MATH and MMLUPro benchmarks. We show that both Principal and Agent, when employing bandit algorithms to navigate this environment, converge to strategies that closely align with our theoretical equilibrium. These results suggest that simple linear contracts can effectively incentivize complex, technology-aware delegation in agentic workflows.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
