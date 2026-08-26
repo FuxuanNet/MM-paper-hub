@@ -4,12 +4,45 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-08-25T02:12:42Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 16 entries</subtitle>
+  <updated>2026-08-26T02:35:25Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 18 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Test-Time Collaborative Classification over Multi-Agent Networks</title>
+    <link href="http://arxiv.org/abs/2608.24787v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.24787v1</id>
+    <published>2026-08-25T00:00:00Z</published>
+    <updated>2026-08-25T00:00:00Z</updated>
+    <author>
+      <name>Ping Hu</name>
+    </author>
+    <author>
+      <name>Mert Kayaalp</name>
+    </author>
+    <author>
+      <name>Ali H. Sayed</name>
+    </author>
+    <summary type="text">The increasing heterogeneity of multi-agent systems poses significant challenges for jointly training a global model across agents. At the same time, cooperative inference between agents has long been recognized as a powerful mechanism for distributed decision making over networks. Motivated by these observations, we propose a collaboration framework for distributed binary classification over multi-agent networks, where a set of independently trained agents, potentially differing in architecture, feature space, or modality, coordinate their actions during test time to form collective predictions. This coordination is achieved by exchanging local decision statistics through a distributed learning protocol. We develop a theoretical and experimental study of this independent training and cooperative inference paradigm, and examine its performance under different communication budgets and distributed learning rules. We establish classification error guarantees under sufficient, finite-round, and finite-precision communication, together with PAC-style generalization bounds. These results capture the influence of model heterogeneity, network topology, combination policy, and communication constraints on prediction accuracy. Taken together with the experimental results, they reveal both the price of independent training and the benefit of collective prediction for the proposed distributed decision making framework with models learned from data.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Agentopia on a Consumer GPU: A Reduced-Scale Long-Horizon Port with an 8B Model</title>
+    <link href="http://arxiv.org/abs/2608.24215v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.24215v1</id>
+    <published>2026-08-25T00:00:00Z</published>
+    <updated>2026-08-25T00:00:00Z</updated>
+    <author>
+      <name>Luo Huan</name>
+    </author>
+    <summary type="text">Large language model (LLM)-based multi-agent social simulation has demonstrated compelling results, but Agentopia was evaluated with 100 agents over 10 simulated years using Qwen3.5-397B-A17B, leaving the behavior of reduced-scale deployments on consumer hardware unclear. In this paper, we implement and evaluate a reduced-scale Agentopia port on a single NVIDIA RTX 5070 Ti(12 GB VRAM) using Qwen3-8B-AWQ, a 4-bit quantized model. We introduce three structural adaptations for this setting: (1) system-managed layered memory compression, (2) four activity blocks per simulated day, and (3) explicit physical- and mental-health state variables. Across three independent stochastic runs, two runs completed 52 weeks and the third completed 50 weeks before reaching the context limit, totaling 154 system-weeks (770 agent-weeks). No agent died,and no threshold-based health warning was logged; activity records containing at least one NO_RESPONSE field occurred at rates of 10.15-10.29% across runs. A 52-week memory-off run tied L2/L3 artifact production to layered memory; a separate 10-week comparison associated four daily time blocks with 2.72 times more finalized records and lower lexical duplication, but a higher missing-field rate. These comparisons do not support causal behavioral claims. We release validated configurations, derived audits, analysis scripts, aggregate figure data, and our implementation changes in a public fork; raw runs and initial persona data are excluded because their redistribution provenance is not fully resolved.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams</title>
     <link href="http://arxiv.org/abs/2608.23541v1" rel="alternate" type="text/html" />
@@ -145,6 +178,39 @@
     <category term="Artificial Intelligence" />
   </entry>
   <entry>
+    <title>Markets, Not Planners: Decentralized Orchestration of LLM Agents with Private Information</title>
+    <link href="http://arxiv.org/abs/2608.23867v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.23867v1</id>
+    <published>2026-08-24T00:00:00Z</published>
+    <updated>2026-08-24T00:00:00Z</updated>
+    <author>
+      <name>Xiao Liu</name>
+    </author>
+    <author>
+      <name>Haoyang Li</name>
+    </author>
+    <author>
+      <name>Songwei Li</name>
+    </author>
+    <author>
+      <name>Hongbo Fang</name>
+    </author>
+    <author>
+      <name>Fengli Xu</name>
+    </author>
+    <author>
+      <name>Feng Shi</name>
+    </author>
+    <author>
+      <name>James Evans</name>
+    </author>
+    <summary type="text">As LLM agents proliferate, built by different parties and with different capabilities and costs, orchestrating them is more like assembling labor across the economy than a computer calling a subroutine. Existing orchestration is typically centralized, with a single planner assigning every task, but this creates a bottleneck as agent pools grow, requires private information (e.g., agents' execution costs), and can easily be manipulated, such that a single inserted preference nearly doubles a favored agent's task share under a centralized LLM allocator. We introduce AgentLance, a repeated labor market in which agents bid on tasks using their private costs and self-maintained strategy notes, an allocator selects winners from bids and public reputation records, and a VCG-style payment rule rewards cost-aware bidding. Complex tasks are handled by hierarchical delegation: winning agents can decompose work and subcontract it through the same mechanism. Across mathematical reasoning, code generation, knowledge-intensive QA, and agentic tasks, AgentLance matches agents to their specializations, shifts work toward cheaper agents as cost sensitivity rises, and consistently outperforms single-model, centralized-orchestration, and market baselines. Diagnosing market failures, including inaccurate cost self-estimation and sub-optimal bidding, then correcting them in controlled experiments yields further gains, charting a path toward more efficient agent economies.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Working paper&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL" />
+  </entry>
+  <entry>
     <title>PropUQ-MAS: Propagation-Aware Uncertainty Quantification for LLM Multi-Agent Systems</title>
     <link href="http://arxiv.org/abs/2608.22130v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2608.22130v1</id>
@@ -248,6 +314,22 @@
     <title>Level-k Distinguishable Mechanisms for Evaluating Bounded Rationality in LLMs</title>
     <link href="http://arxiv.org/abs/2608.21296v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2608.21296v1</id>
+    <published>2026-08-21T00:00:00Z</published>
+    <updated>2026-08-21T00:00:00Z</updated>
+    <author>
+      <name>Binchi Zhang</name>
+    </author>
+    <author>
+      <name>Atrisha Sarkar</name>
+    </author>
+    <summary type="text">Strategic depth of reasoning is essential for human interaction of Large Language Models (LLMs) operating in boundedly rational environments. However, existing evaluations are primarily based on canonical games prevalent in pretraining corpora, making it difficult to disentangle true strategic reasoning from memorisation. To address this, we formalise a necessary level-K distinguishability condition for strategic depth inference and construct a suite of novel game structures that meet this standard. Using these games, we evaluate strategic depth in LLMs from both the Chain-of-Thought tokens and actual actions under recursive reasoning and an inductive trace of opponent game-play data. Across experimental trials spanning four LLMs, four game structures, and ten levels of iterated reasoning, we find that model models maintain accurate strategic depth under recursive reasoning, with strong internal consistency between stated reasoning and actions at every level. Errors arise from using the wrong number of iterated depth of reasoning steps, not from computing best responses incorrectly. However, inductive inference from opponent play degrades accuracy sharply and unevenly across games, and explicit strategic mentalizing in the chain of thought substantially improves overall performance.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Level-k Distinguishable Mechanisms for Evaluating Bounded Rationality in LLMs</title>
+    <link href="http://arxiv.org/abs/2608.21296v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2608.21296v2</id>
     <published>2026-08-21T00:00:00Z</published>
     <updated>2026-08-21T00:00:00Z</updated>
     <author>
@@ -378,68 +460,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="cs.CL; Computer Vision" />
-  </entry>
-  <entry>
-    <title>Bayesian Partner Modelling enables Adaptive Replanning for LLM Coordination</title>
-    <link href="http://arxiv.org/abs/2608.18490v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.18490v1</id>
-    <published>2026-08-19T00:00:00Z</published>
-    <updated>2026-08-19T00:00:00Z</updated>
-    <author>
-      <name>Harsh Goel</name>
-    </author>
-    <author>
-      <name>Aditya Sai Ellendula</name>
-    </author>
-    <author>
-      <name>Vaishnav Tadiparthi</name>
-    </author>
-    <author>
-      <name>Ehsan Moradi Pari</name>
-    </author>
-    <author>
-      <name>Hossein Nourkhiz Mahjoub</name>
-    </author>
-    <author>
-      <name>Sandeep P. Chinchali</name>
-    </author>
-    <summary type="text">Multi-agent Large Language Model (LLM) systems often struggle to collaborate with new teammates whose strategies shift mid-task. Because agents execute multi-step or temporally extended skills, they frequently continue executing outdated plans long after public evidence shows that a partner has changed its skill. Existing methods either treat partner tracking as passive context-leaving the agent aware of the shift but slow to act-or replan indiscriminately. We introduce BayesBeliefAgent, which pairs a hierarchical LLM planner with a Bayesian tracking module. Rather than replanning constantly, our agent interrupts its current skill only when a partner's actions directly contradict the inferred skill. Beyond standard reward, we evaluate performance using replanning efficiency and the belief-action gap: the fraction of total decisions where an agent with a correct partner estimate executes a non-complementary skill. Across benchmark Overcooked environments, contradiction-conditioned control drastically narrows this belief-action gap while requiring an order of magnitude fewer replans than heuristic methods</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Preprint&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>A Locally Deployable Tool-Grounded LLM Multi-agent Framework for Automating Methane Emission Analysis and Reporting</title>
-    <link href="http://arxiv.org/abs/2608.18473v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.18473v1</id>
-    <published>2026-08-19T00:00:00Z</published>
-    <updated>2026-08-19T00:00:00Z</updated>
-    <author>
-      <name>Yang Yan</name>
-    </author>
-    <author>
-      <name>Zifan Zhou</name>
-    </author>
-    <author>
-      <name>Xuan Wang</name>
-    </author>
-    <author>
-      <name>Erum Hassan</name>
-    </author>
-    <author>
-      <name>Bilguunzaya Mijiddorj</name>
-    </author>
-    <author>
-      <name>Jie Cao</name>
-    </author>
-    <author>
-      <name>Bin Li</name>
-    </author>
-    <author>
-      <name>Binbin Weng</name>
-    </author>
-    <summary type="text">Methane field monitoring requires the integration of sampling design, meteorological interpretation, sensor processing, plume analysis, visualization, and reporting, but these steps are often distributed across separate expert-driven workflows. We developed a locally deployable, tool-grounded large language model (LLM) multi-agent framework for our low-cost methane sensing and field-monitoring campaigns. The framework uses LLM agents as workflow coordinators that link field measurements, meteorological data, deterministic sensor-processing routines, Gaussian plume inversion, and report generation, rather than directly estimating methane concentrations or emissions. Extensive field deployments across diverse real-world environments (e.g., wastewater treatment facilities, landfills, and oil and gas sites) demonstrate that our framework can achieve 92.0\% accuracy in workflow routing and parameter extraction, 85.0\% success in emission-rate estimation and plume prediction, and 95.0\% success in generating editable reports under practical operating conditions. Compared with manual and general-purpose LLM-assisted workflows, it reduced workflow time from hours-level to minutes-level, lowered manual coordination and prompt-engineering requirements, and retained traceable plume-based outputs. In addition, most processing can be performed locally, reducing exposure of sensitive facility and field data to cloud services. These results indicate that tool-grounded LLM coordination can reduce the time, labor, usability, and data-security barriers of methane field monitoring.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
   </entry>
 </feed>
