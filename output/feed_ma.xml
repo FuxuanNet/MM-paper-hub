@@ -4,12 +4,48 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-04T05:26:14Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 15 entries</subtitle>
+  <updated>2026-09-07T05:36:50Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 12 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Trust-Aware Adaptive Disclosure for Inference Privacy Preservation in Multi-Agent Networks</title>
+    <link href="http://arxiv.org/abs/2609.05340v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.05340v1</id>
+    <published>2026-09-04T00:00:00Z</published>
+    <updated>2026-09-04T00:00:00Z</updated>
+    <author>
+      <name>Puspanjali Ghoshal</name>
+    </author>
+    <author>
+      <name>Tobias J. Oechtering</name>
+    </author>
+    <summary type="text">Agent based systems are increasingly deployed in information critical systems including healthcare management systems, and smart grids. In this paper, we consider a multi-agent system where each agent has a latent goal that needs to be kept hidden from observing adversaries. More specifically, this paper studies privacy-preserving consensus in networked multi-agent systems under goal inference attacks. We propose a Trust-Aware Privacy Control framework that adapts message disclosure based on the dynamic trust relationships between agents. The proposed method controls information release using a trust-dependent stochastic policy. This enables a tradeoff between consensus performance and privacy preservation. Experiments demonstrate that the proposed method reduces adversarial goal inference accuracy compared to representative baselines, while maintaining competitive consensus utility, thereby highlighting the effectiveness of trust-aware mechanisms in privacy preservation of the agents in multi-agent systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; proceedings of 2026 IEEE International Conference on Advanced Networks and Telecommunications Systems (ANTS)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CR" />
+  </entry>
+  <entry>
+    <title>Online Change-point Detection for Cooperative Multi-Agent Reinforcement Learning</title>
+    <link href="http://arxiv.org/abs/2609.05298v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.05298v1</id>
+    <published>2026-09-04T00:00:00Z</published>
+    <updated>2026-09-04T00:00:00Z</updated>
+    <author>
+      <name>Fatemeh Saberi Khomami</name>
+    </author>
+    <author>
+      <name>Julita Vassileva</name>
+    </author>
+    <summary type="text">Cooperative multi-agent reinforcement learning (MARL) systems rely on past experience for learning coordinated behaviour, but this experience may become unreliable if the environment or task objective changes during training. In such cases, agents first need a way to recognize that the situation has changed before deciding how to adapt. This paper studies online change-point detection for cooperative MARL using reward-derived signals. We propose \emph{Patterns of Past Rewards} (PPR), a lightweight algorithm-agnostic detector that smooths agents' return streams, highlights recent changes, and applies a statistical drift detector to flag significant shifts. We evaluate PPR in a custom Speaker-Listener environment based on the Multi-Agent Particle Environment under two controlled non-stationarity scenarios. Our results show a trade-off between detection speed and alarm stability. A smoothed-return baseline detects earlier but produces many repeated alarms. In contrast, applying the detector directly to raw returns often misses the shift. PPR offers a more balanced approach by limiting redundant detections while still identifying the controlled shifts. These findings highlight PPR as a lightweight, reward-based monitoring tool that enables cooperative MARL systems to reliably identify major changes during training.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>The Civilization Framework: Sovereign-Anchored Communication Between Personal Multi-Agent Systems</title>
     <link href="http://arxiv.org/abs/2609.03425v1" rel="alternate" type="text/html" />
@@ -25,6 +61,72 @@
 &lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; TAP&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Abstraction Agent</title>
+    <link href="http://arxiv.org/abs/2609.04303v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.04303v1</id>
+    <published>2026-09-03T00:00:00Z</published>
+    <updated>2026-09-03T00:00:00Z</updated>
+    <author>
+      <name>Boning Li</name>
+    </author>
+    <author>
+      <name>Longbo Huang</name>
+    </author>
+    <summary type="text">Information abstraction, which groups strategically similar private states into a tractable number of buckets, is essential for scaling game-solving algorithms to large imperfect-information games. Constructing effective abstractions, however, has traditionally required domain-specific evaluators such as hand-strength calculators or equity estimators, which demand expert knowledge and engineering effort and are unavailable for most less-studied games. We propose the Abstraction Agent, a zero-shot pipeline that uses a large language model (LLM) to discover continuous strategic features from a natural-language game description, score private states on these features, and cluster them into abstraction buckets, without any game-specific evaluator, training data, or game-tree traversal during abstraction construction. The pipeline runs in four phases: feature discovery with calibration anchors, batched private-state scoring, correlation-based feature selection, and $k$-means clustering. The resulting abstractions reduce lifted-strategy exploitability by up to 62% relative to an expected-hand-strength baseline on heads-up no-limit Texas hold'em (HUNL) turn endgames, and beat a scalar rank baseline at every granularity on ROVER Trials, an original game absent from any pretraining corpus. Beyond these quantitative benchmarks, the pipeline transfers with unchanged prompts to four-card Pot-Limit Omaha, HUNL preflop and flop, and Riichi Mahjong, where the discovered features track each game's recognized strategic concepts. This is structured knowledge elicitation: converting implicit strategic knowledge in LLM parameters into explicit numerical features for downstream algorithmic computation. The code is available at https://github.com/lbn187/AbstractionAgent.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/lbn187/AbstractionAgent"&gt;https://github.com/lbn187/AbstractionAgent&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CL; cs.GT" />
+  </entry>
+  <entry>
+    <title>EVOHARNESSBENCH: Can Your Agents Keep Pace with an Evolving Harness?</title>
+    <link href="http://arxiv.org/abs/2609.04280v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.04280v1</id>
+    <published>2026-09-03T00:00:00Z</published>
+    <updated>2026-09-03T00:00:00Z</updated>
+    <author>
+      <name>Zixuan Ke</name>
+    </author>
+    <author>
+      <name>Vaidehi Patil</name>
+    </author>
+    <author>
+      <name>Haizhou Shi</name>
+    </author>
+    <author>
+      <name>Yang Li</name>
+    </author>
+    <author>
+      <name>Ye Liu</name>
+    </author>
+    <author>
+      <name>Sarath Shekkizhar</name>
+    </author>
+    <author>
+      <name>Anurag Koul</name>
+    </author>
+    <author>
+      <name>Jiayu Wang</name>
+    </author>
+    <author>
+      <name>Xuan Phi Nguyen</name>
+    </author>
+    <author>
+      <name>Semih Yavuz</name>
+    </author>
+    <author>
+      <name>Mohit Bansal</name>
+    </author>
+    <author>
+      <name>Shafiq Joty</name>
+    </author>
+    <summary type="text">Modern LLM-based agents operate through a harness of tools, reusable skills, and specialist agents that shapes what they observe and what they can do. In practice, this harness continually evolves as new capabilities are added. We introduce EVOHARNESSBENCH, a benchmark for evaluating agents under controlled harness evolution across three axes (tools, skills, and agents). Unlike existing continual-learning benchmarks for agents, which typically place non-stationarity (i.e., what changes over time) in the task stream while keeping the harness fixed, EVOHARNESSBENCH places non-stationarity in the externally supplied harness itself. It contains 17 multi-stage harness streams constructed deterministically from verifier-based benchmarks, comprising 802 tasks, 520 tools, 42 skills, and 62 agents. We evaluate two complementary settings corresponding to the central challenges of harness evolution: deployment evaluation, which isolates retention of previously accessible competence as the harness expands, and self-evolving adaptation evaluation, which tests whether accumulated experience remains useful as new capabilities are introduced. Our results reveal three persistent gaps. First, harness expansion alone can degrade performance on previously solved tasks, producing harness-induced forgetting. Second, gains from self-evolving adaptation remain inconsistent across stages of harness evolution, capability axes, and environments. Third, retention and adaptation can pull in different directions: preserving earlier competence does not necessarily improve adaptation to newly introduced capabilities, and vice versa. These results establish harness evolution as a distinct challenge for building agents that can keep pace with an evolving harness while preserving previously effective behavior.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; https://mas-orchestra.salesforceresearch.ai/evoharness/&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL" />
   </entry>
   <entry>
     <title>Competitive Market Behavior of LLMs</title>
@@ -179,221 +281,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Thesis submitted in partial fulfillment of the requirements for the Master of Sciences degree, The Department of Computer Science, The Faculty of Natural Sciences, Ben-Gurion University of the Negev, Israel&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Evidence, Logic, and Compliance: Multi-Agent Structured Graph Reasoning with Expert Arbitration for Medical Referral</title>
-    <link href="http://arxiv.org/abs/2608.30938v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.30938v1</id>
-    <published>2026-08-31T00:00:00Z</published>
-    <updated>2026-08-31T00:00:00Z</updated>
-    <author>
-      <name>Qi Peng</name>
-    </author>
-    <author>
-      <name>Yi Cai</name>
-    </author>
-    <author>
-      <name>Jialin Cui</name>
-    </author>
-    <author>
-      <name>Tong Zhu</name>
-    </author>
-    <author>
-      <name>Yujuan Ding</name>
-    </author>
-    <author>
-      <name>Qingbao Huang</name>
-    </author>
-    <author>
-      <name>Tao Wang</name>
-    </author>
-    <author>
-      <name>Jiayuan Xie</name>
-    </author>
-    <author>
-      <name>Changmeng Zheng</name>
-    </author>
-    <author>
-      <name>Qing Li</name>
-    </author>
-    <summary type="text">Medical referral (directing patients to the appropriate hospital department) is a complex decision-making process requiring the synthesis of multimodal data, including patient narratives, laboratory indicators, and radiology imaging. While Large Language Models (LLMs) have advanced medical dialogue systems, they struggle with real-world referral tasks due to two primary limitations: (1) Information Overload, where models fixate on high-frequency disease terms while overlooking subtle but critical urgency indicators; and (2) Unstructured Collaboration, where existing multi-agent frameworks rely on loose dialogue that leads to semantic drift and confirmation bias. To address these challenges, we introduce MASGR (Multi-Agent Structured Graph Reasoning), a framework that treats referral not as a classification task but as a structured graph construction problem. MASGR deploys specialized agents to extract evidence from distinct modalities and coordinates them through a clinical reasoning graph. This graph forces agents to establish explicit logical connections between conflicting evidence. Furthermore, we integrate a knowledge-guided arbitration mechanism that prioritizes patient safety rules over standard diagnostic classification. Extensive experiments on real-world medical records demonstrate that MASGR significantly outperforms state-of-the-art LLMs and existing multi-agent systems, particularly in complex cases requiring the balancing of chronic disease management and emergency intervention. The AI contribution lies in the Multi-Agent Structured Graph Reasoning framework that transforms unstructured multi-agent dialogue into a verifiable logical graph construction. The engineering application is demonstrated through its deployment in a complex healthcare decision-making system to optimize the precision of complex medical referrals.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Harness-RL: Black-Box Reinforcement Learning with Action-Args Decoupling for Central-Agent Multi-Agent Harnesses</title>
-    <link href="http://arxiv.org/abs/2608.29641v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.29641v1</id>
-    <published>2026-08-30T00:00:00Z</published>
-    <updated>2026-08-30T00:00:00Z</updated>
-    <author>
-      <name>Xinke Jiang</name>
-    </author>
-    <author>
-      <name>Zhixin Zhang</name>
-    </author>
-    <author>
-      <name>Zhibang Yang</name>
-    </author>
-    <author>
-      <name>Jiaran Gao</name>
-    </author>
-    <author>
-      <name>Rihong Qiu</name>
-    </author>
-    <author>
-      <name>Shijin Chen</name>
-    </author>
-    <author>
-      <name>Xu Chu</name>
-    </author>
-    <author>
-      <name>Junfeng Zhao</name>
-    </author>
-    <author>
-      <name>Yasha Wang</name>
-    </author>
-    <summary type="text">Large language model agents increasingly solve long-horizon tasks through multi-agent harnesses in which a central agent coordinates specialized sub-agents, tools, and environments. Training the central policy in such a harness raises two challenges. First, an action label is a low-cardinality decision, whereas its args form a high-dimensional conditional sequence; optimizing both with a shared sequence-level signal can produce conflicting gradients. Second, dynamic scheduling creates interdependent sessions with branches, parallel calls, and rewritten contexts, which cannot be faithfully reduced to one flat token sequence. We introduce Harness-RL, a structured reinforcement learning framework that combines Conflict-Aware Policy Optimization (CAPO) with interface-level black-box trajectory construction. The black-box component captures Interface Call Records, builds per-session prefix trees, and aligns outcome and process rewards with trainable tokens. CAPO uses forward activations to identify parameter partitions associated with action and args tokens, then routes their policy gradients to the corresponding subspaces. Harness-RL supports both central-only and joint multi-agent training. Across seven multi-hop question answering and agentic retrieval benchmarks, it reaches average F1 scores of 42.93 and 47.79 with Qwen2.5-1.5B and Qwen2.5-3B, respectively, while ablations validate the contribution of CAPO and favor central-only optimization in the evaluated setting. Our code is available at https://github.com/jiangxinke/Harness-RL.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/jiangxinke/Harness-RL"&gt;https://github.com/jiangxinke/Harness-RL&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; PCC 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>AgenticRag-R1: Agentic Reinforcement Learning with Stack Memory for Multi-Step Reasoning, Retrieval and Memorizing</title>
-    <link href="http://arxiv.org/abs/2608.29622v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.29622v1</id>
-    <published>2026-08-30T00:00:00Z</published>
-    <updated>2026-08-30T00:00:00Z</updated>
-    <author>
-      <name>Xinke Jiang</name>
-    </author>
-    <author>
-      <name>Yue Fang</name>
-    </author>
-    <author>
-      <name>Zhibang Yang</name>
-    </author>
-    <author>
-      <name>Jiaran Gao</name>
-    </author>
-    <author>
-      <name>Zhixin Zhang</name>
-    </author>
-    <author>
-      <name>Tao Feng</name>
-    </author>
-    <author>
-      <name>Rihong Qiu</name>
-    </author>
-    <author>
-      <name>Wentao Zhang</name>
-    </author>
-    <author>
-      <name>Hongxin Ding</name>
-    </author>
-    <author>
-      <name>Ruizhe Zhang</name>
-    </author>
-    <author>
-      <name>Yongxin Xu</name>
-    </author>
-    <author>
-      <name>Yuheng Huang</name>
-    </author>
-    <author>
-      <name>Xu Chu</name>
-    </author>
-    <author>
-      <name>Junfeng Zhao</name>
-    </author>
-    <author>
-      <name>Yasha Wang</name>
-    </author>
-    <summary type="text">Retrieval-Augmented Generation (RAG) improves the factuality of large language models (LLMs), yet existing RAG systems often struggle with complex, multi-step reasoning that requires adaptive retrieval and continuous revision of intermediate contexts. Recent reinforcement learning (RL)-based agentic RAG methods partially alleviate this issue, but typically rely on coarse-grained action spaces and trajectory-level rewards, resulting in weak reward assignment and a bias toward short-horizon, stereotyped reasoning template. To address, we propose AgenticRag-R1, a RL framework that deeply integrates reasoning, retrieval, and memory via a memory stack and fine-grained action space, supported by hierarchical action-aware rewards and an information-aware trajectory rejection strategy to enable effective long-horizon learning. Experiments across a diverse set of multi-hop, open-domain, and agentic reasoning benchmarks, spanning multiple backbone model sizes, demonstrate that AgenticRag-R1 consistently outperforms strong baselines. Moreover, AgenticRag-R1 learns more robust, interpretable, and memory-aware reasoning behaviors, highlighting the effect of fine-grained action modeling and information-aware optimization for long-horizon reasoning. Our code is anonymous available at https://github.com/jiangxinke/Harness-RL/tree/AgenticRAG-R1-Whitebox.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/jiangxinke/Harness-RL/tree/AgenticRAG-R1-Whitebox"&gt;https://github.com/jiangxinke/Harness-RL/tree/AgenticRAG-R1-Whitebox&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Forward-Deployed Full-Stack Engineering for Autonomous Cloud MLOps</title>
-    <link href="http://arxiv.org/abs/2608.29615v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.29615v1</id>
-    <published>2026-08-30T00:00:00Z</published>
-    <updated>2026-08-30T00:00:00Z</updated>
-    <author>
-      <name>Sagar Srinivas Sakhinana</name>
-    </author>
-    <author>
-      <name>Venkataramana Runkana</name>
-    </author>
-    <summary type="text">Across industries, machine-learning systems support applications ranging from prediction and anomaly detection to forecasting, optimization, and scheduling, yet operationalizing these systems requires coordinating application development, model pipelines, cloud infrastructure, security, deployment, monitoring, retraining, recovery, and rollback. We present an evidence-gated multi-agent framework for transforming a natural-language MLOps cloud engineering task into a verified repository and operational cloud deployment. The framework combines graph engineering, loop engineering, and agent harness engineering. A stateful Graph Orchestrator coordinates specialized agents for repository generation, review, execution, verification, release, and monitoring while governing workflow dependencies, evidence gates, retry bounds, recovery paths, and termination. Consequential lifecycle transitions proceed only when their required predicates are supported by verifiable execution or runtime evidence. Verification failures activate bounded reflection, repair, and re-verification, while runtime evidence of failure, drift, degradation, or policy violation can trigger bounded adaptation, recovery, or rollback. Agent harness engineering constrains repository generation, review, and repair, artifact execution, and cloud operations through controlled capabilities and isolated execution environments. We realize the framework on Google Cloud Platform and evaluate repository completeness, controlled execution, evidence-gated transitions, cloud promotion, and bounded recovery. Our experimental results show that the framework prevents unsupported lifecycle transitions and drives each run toward either a verified operational deployment or an auditable terminal failure.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Nill&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Generalizable Multi-Agent Planning from Signal Temporal Logic Specifications via Diffusion</title>
-    <link href="http://arxiv.org/abs/2608.29490v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2608.29490v1</id>
-    <published>2026-08-30T00:00:00Z</published>
-    <updated>2026-08-30T00:00:00Z</updated>
-    <author>
-      <name>Joe Eappen</name>
-    </author>
-    <author>
-      <name>Zikang Xiong</name>
-    </author>
-    <author>
-      <name>Shreyash S. Iyengar</name>
-    </author>
-    <author>
-      <name>Suresh Jagannathan</name>
-    </author>
-    <summary type="text">Multi-agent systems in the real-world (e.g., drone swarms, autonomous cars, warehouse robots) must satisfy rich, temporal tasks while avoiding collisions. Signal Temporal Logic (STL) elegantly encodes such objectives, but current STL planning methods face critical limitations. State-of-the-art optimization-based approaches can handle arbitrary STL specifications but struggle with scalability, becoming computationally impractical as the number of agents grows. Learning-based methods efficiently handle a large number of agents with rapid planning times but fare poorly when deployment-time objectives differ from those used during training, and do not support planning tasks that require different specifications to be ascribed to different agents (i.e., heterogeneity) or team-level specifications requiring coordination of multiple agents. This fundamental trade-off between generalizability and scalability presents a challenge for realizing multi-agent STL planning algorithms in practice. To overcome this challenge, we introduce a new diffusion method for multi-agent planning with STL specifications. Using a differentiable approximation of STL, we integrate the STL gradient in the denoising process, making our approach generalizable to novel formulas whose predicates are placed anywhere within the goal region covered during training, while achieving the same scalability as existing learning-based methods. Our method supports heterogeneous specifications, and by using diffusion models, naturally enhances plan diversity, thereby significantly reducing safety-related violations (e.g., collisions) among agents. A detailed evaluation study justifies the utility of STL-guided diffusion-based multi-agent planners for constructing generalizable, scalable, and diverse plans. Videos and code are available at https://www.jeappen.com/diff-ma-stl/ and https://github.com/jeappen/diff-ma-stl .</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/jeappen/diff-ma-stl"&gt;https://github.com/jeappen/diff-ma-stl&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted for publication in IEEE Robotics and Automation Letters (RA-L), 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; Robotics" />
-  </entry>
-  <entry>
-    <title>RAPIDMap: Rapid Multi-Agent Pipeline for Interpretable Disaster Mapping from Satellite and Street-view Imagery</title>
-    <link href="http://arxiv.org/abs/2609.00046v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.00046v1</id>
-    <published>2026-08-30T00:00:00Z</published>
-    <updated>2026-08-30T00:00:00Z</updated>
-    <author>
-      <name>Yifan Yang</name>
-    </author>
-    <author>
-      <name>Lei Zou</name>
-    </author>
-    <summary type="text">Rapid and reliable disaster mapping of impacted areas, damaged infrastructure, and affected populations is essential for emergency response and recovery. However, existing AI-based approaches often require extensive manual annotation, lack cross-hazard generalization, and rely on single-modal observations. To address these challenges, this paper proposes RAPIDMap, a rapid multi-agent pipeline for zero-shot interpretable disaster mapping from satellite and street-view imagery. The framework integrates four intelligent agents: Disaster Perception Agent (DPA), Image Restoration Agent (IRA), Damage Recognition Agent (DRA), and Disaster Mapping Agent (DMA). By combining remote sensing and street-view data, RAPIDMap eliminates the need for manual fine-tuning, generalizes across multiple disaster categories, and generates structured, map-ready disaster intelligence with recovery recommendations.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 4 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.CY" />
-  </entry>
-  <entry>
-    <title>RAPIDMap: Rapid Multi-Agent Pipeline for Interpretable Disaster Mapping from Satellite and Street-view Imagery</title>
-    <link href="http://arxiv.org/abs/2609.00046v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.00046v2</id>
-    <published>2026-08-30T00:00:00Z</published>
-    <updated>2026-08-30T00:00:00Z</updated>
-    <author>
-      <name>Yifan Yang</name>
-    </author>
-    <author>
-      <name>Lei Zou</name>
-    </author>
-    <summary type="text">Rapid and reliable disaster mapping of impacted areas, damaged infrastructure, and affected populations is essential for emergency response and recovery. However, existing AI-based approaches often require extensive manual annotation, lack cross-hazard generalization, and rely on single-modal observations. To address these challenges, this paper proposes RAPIDMap, a rapid multi-agent pipeline for zero-shot interpretable disaster mapping from satellite and street-view imagery. The framework integrates four intelligent agents: Disaster Perception Agent (DPA), Image Restoration Agent (IRA), Damage Recognition Agent (DRA), and Disaster Mapping Agent (DMA). By combining remote sensing and street-view data, RAPIDMap eliminates the need for manual fine-tuning, generalizes across multiple disaster categories, and generates structured, map-ready disaster intelligence with recovery recommendations.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CaGIS Conference 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.CY" />
   </entry>
 </feed>
