@@ -4,12 +4,351 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-15T05:17:34Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 6 entries</subtitle>
+  <updated>2026-09-16T05:39:18Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 19 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Agentic Societies Need a Social Harness</title>
+    <link href="http://arxiv.org/abs/2609.17527v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.17527v1</id>
+    <published>2026-09-15T00:00:00Z</published>
+    <updated>2026-09-15T00:00:00Z</updated>
+    <author>
+      <name>Tapan Chugh</name>
+    </author>
+    <author>
+      <name>Vidushi Singh</name>
+    </author>
+    <author>
+      <name>Krish Jain</name>
+    </author>
+    <author>
+      <name>Arvind Krishnamurthy</name>
+    </author>
+    <author>
+      <name>Ratul Mahajan</name>
+    </author>
+    <summary type="text">An agentic society is a collection of AI agents that coordinate autonomously across trust boundaries, on behalf of different principals whose objectives may only partially align. We show experimentally that in agentic societies even honest, competent agents often fail to reach satisfactory outcomes with existing harnesses and messaging primitives, and that faulty or malicious agents can stall collaboration, influence outcomes, and pursue other harmful goals by exploiting vulnerabilities in communication (``speech''). We argue that agentic societies need a \emph{social harness} for inter-agent interactions, in addition to each agent's \emph{personal harness}, which manages its private context and communication with its principal. We propose a layered architecture for social harnesses which (i) prevents classes of failures outright, (ii) enables agents to detect invalid messages at runtime, and (iii) supports post-facto investigation and consequences, and highlight directions for future research to realize these capabilities.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.NI" />
+  </entry>
+  <entry>
+    <title>Decomposition Buys Integrity, Not Yield</title>
+    <link href="http://arxiv.org/abs/2609.17464v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.17464v1</id>
+    <published>2026-09-15T00:00:00Z</published>
+    <updated>2026-09-15T00:00:00Z</updated>
+    <author>
+      <name>Rong He</name>
+    </author>
+    <summary type="text">Multi-agent systems split a task across a tree of agents and justify the split with folklore: smaller contexts, cleaner separation, parallelism. We ask what the split does to how much of what the leaves discover reaches the root. Model a decomposition as a tree in which an agent handed $b$ items keeps any one with probability $r(b)$. If $r(b)=1/b$, every tree delivers exactly one finding, for every task size and every shape; we verify this to $2.4 \times 10^{-15}$ on 20,000 random irregular trees. If $r(b)=Cb^{-δ}$, a depth-$k$ tree over $N$ findings yields $C^k N^{1-δ}$: task size and architecture separate, and architecture contributes only $C \le 1$ per level, so flat is optimal for yield and no arrangement of agents escapes the exponent $δ$. On 600 production deep-research traces $δ= 0.34$ [0.30, 0.38], by three identifications that do not share a failure mode. At a hop where item boundaries come from the tool rather than a text heuristic, and where $b=1$ occurs 550 times, $C = 0.571$ [0.527, 0.615] is observed rather than extrapolated, over 16,082 hops. A tier also costs alignment: on 1,012 annotated multi-agent traces one brief in sixteen goes off-target, giving $μ= 0.939$ and a per-tier penalty $Cμ= 0.536$. Depth is bought on two other axes. The root context is the only state that persists and the only one that cannot cheaply forget, and depth cuts its exposure from $N$ items to $N^{1/k}$. Depth is also cheaper: production flat agents bill as $N^{1.39}$, not the $N^2$ an append-only context predicts, and at equal spend two tiers overtake flat at 403 findings. Across every parameter we measured the model says 0.7% to 11.3% of production sessions are worth delegating, against 7.8% that do. A hazard model on 743,819 production tool calls finds that delegation does not respond to a filling context and is instead an opening move.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.DC" />
+  </entry>
+  <entry>
+    <title>Emergence World: Adversarial Stress-Testing of Long-Horizon Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2609.17320v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.17320v1</id>
+    <published>2026-09-15T00:00:00Z</published>
+    <updated>2026-09-15T00:00:00Z</updated>
+    <author>
+      <name>Deepak Akkil</name>
+    </author>
+    <author>
+      <name>Tamer Abuelsaad</name>
+    </author>
+    <author>
+      <name>Karthik Vikram</name>
+    </author>
+    <author>
+      <name>Matthew Pace</name>
+    </author>
+    <author>
+      <name>Aditya Vempaty</name>
+    </author>
+    <author>
+      <name>Saahir Beotra</name>
+    </author>
+    <author>
+      <name>Ravi Kokku</name>
+    </author>
+    <author>
+      <name>Satya Nitta</name>
+    </author>
+    <summary type="text">As AI agents move from bounded tasks to persistent deployments, failures can propagate through memory, tools, other agents, and environmental state long after their interactions. This creates a safety regime that cannot be characterized by evaluating model responses in isolation. Emergence World, is a continuously running multi-agent environment for adversarial stress testing of long horizon autonomous systems. We ran eight parallel worlds of ten agents from identical starting conditions: seven homogeneous worlds powered by distinct frontier models and one mixed-model world. Across 16 days, the agents generated more than 850,000 LLM calls and nearly 50 billion tokens while pursuing goals, using/creating tools, maintaining persistent memory, and governing shared institutions. After operational state had accumulated, we delivered three controlled stress events through ordinary interaction surfaces: indirect prompt injection, misinformation, and exposure of private agent memories. No evaluated world achieved full resilience across all three events. Detection did not ensure containment: systems could recognize threats while still interacting with adversarial content, writing it into their own persistent memory, and acting on it up to 46 hours later. Persistent operation also exposed recurring tool errors, goal drift, language opacity, conformity despite private disagreement, and coordinated refusal of assigned work. The same model-persona pairing behaved substantially different in mixed and homogeneous populations. Our results suggest that model-level alignment is not compositional: individually capable and apparently safe agents can form systems with qualitatively different failure modes. As AI becomes persistent and interconnected, the frontier of safety therefore shifts from aligning models to engineering resilient autonomous systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Mo' Models, Mo' Problems: How to best select model pools when designing Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2609.17306v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.17306v1</id>
+    <published>2026-09-15T00:00:00Z</published>
+    <updated>2026-09-15T00:00:00Z</updated>
+    <author>
+      <name>Sara Vera Marjanović</name>
+    </author>
+    <author>
+      <name>Jiacheng Xu</name>
+    </author>
+    <author>
+      <name>Aleksandr Laptev</name>
+    </author>
+    <author>
+      <name>Grigor Nalbandyan</name>
+    </author>
+    <author>
+      <name>Erik Arakelyan</name>
+    </author>
+    <author>
+      <name>Evelina Bakhaturina</name>
+    </author>
+    <summary type="text">Multi-agent Systems (MAS) combine multiple model outputs to solve complex reasoning tasks. However, despite rapid growth of available open-source models, there is limited research on how to select optimal model candidates out of this massive pool. We systematically evaluate 8 model selection strategies (including model size, accuracy and answer diversity) across before-generation (routing) and after-generation (majority-voting, LLM-as-a-judge) MAS architectures on challenging scientific benchmarks. Our findings show a significant gap between theoretical oracle potential and actual performance: Expanding candidate pool sizes often degrades performance below that of the top performing base-model. We find that candidate selection within a single model family is the strategy that yields the best relative performance over a standalone model. These results demonstrate that adding arbitrary models to a heterogeneous MAS can introduce system instability, highlighting model selection as a critical design choice for multi-agent systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages main, 23 pages total. Accepted to REALM 2026 as part of EMNLP 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Calibrate Once, Fly Any Team: Residual-Grounded Low-Fidelity Training for Cooperative Drone Swarms</title>
+    <link href="http://arxiv.org/abs/2609.17265v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.17265v1</id>
+    <published>2026-09-15T00:00:00Z</published>
+    <updated>2026-09-15T00:00:00Z</updated>
+    <author>
+      <name>Maxim Mednikov</name>
+    </author>
+    <author>
+      <name>Oren Gal</name>
+    </author>
+    <summary type="text">Training multi-agent drone-swarm policies directly in high-fidelity (HF) rigid-body physics is accurate but computationally expensive. This cost scales poorly with team size, as each additional agent multiplies contact-resolution complexity and sharply raises the in-simulation crash rate. To address this, we propose a mixed-fidelity training scheme that eliminates HF reinforcement learning entirely.   A single shared, decentralized policy is optimized inside a fully-differentiable, JAX-native low-fidelity (LF) point-mass simulator. The simulator is corrected by a small, per-agent bagged residual ensemble fit once, offline, using short calibration flights in the HF simulator. Because calibration requires only one isolated drone, the data collection budget does not compound with team size. Reference trajectories are generated by rolling out an existing LF-only policy and tracked in the HF simulator by a zero-training PD controller.   Evaluated across four cooperative drone tasks and team sizes from 3 to 18, the residual-corrected policy outperforms an uncorrected LF baseline in all combinations, and a from-scratch HF policy in 22 of 24 combinations tested. It trails an HF-finetuned policy by a margin that narrows steadily with team size. Ultimately, the proposed method achieves near-equivalent performance at the largest team sizes at a fraction of the computational cost, completely avoiding the high crash rates typical of HF training.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Robotics" />
+  </entry>
+  <entry>
+    <title>BeWater: Effective Protesters Navigate Watersheds in Street Networks</title>
+    <link href="http://arxiv.org/abs/2609.17017v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.17017v1</id>
+    <published>2026-09-15T00:00:00Z</published>
+    <updated>2026-09-15T00:00:00Z</updated>
+    <author>
+      <name>Guillaume Moinard</name>
+    </author>
+    <author>
+      <name>Matthieu Latapy</name>
+    </author>
+    <summary type="text">During social movements, protesters need to gather with limited communication means and limited knowledge other than what they observe in their direct surroundings. We propose BeWater, a fully distributed walking protocol that achieves gathering thanks to city information like street length, number of restaurants, number of lanes, or street names. Even though using only one of these observables performs poorly, we show that combining them in more advanced tactics rapidly leads to groups of significant sizes. To do so, our work leverages OpenStreetMap data to perform experiments on several real-world cities.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>ToMAS: A Pilot Failure-Grounded Theory-of-Mind Benchmark from Multi-Agent LLM Failures</title>
+    <link href="http://arxiv.org/abs/2609.16986v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.16986v1</id>
+    <published>2026-09-15T00:00:00Z</published>
+    <updated>2026-09-15T00:00:00Z</updated>
+    <author>
+      <name>Muhammad Ashar Ishfaq</name>
+    </author>
+    <author>
+      <name>Glaucia Melo</name>
+    </author>
+    <summary type="text">LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions. We investigate whether such inter-agent misalignment cases, labelled FC2 in MAST-Data, can be converted into functional partner-state reasoning items. ToMAS applies four explicit convertibility criteria to diagnosed execution traces. A full conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items. In an 18-trace reliability pilot, two annotators achieved 94.4% raw agreement and Cohen's kappa = 0.92. We then used the converted items as binary rewards in a small-scale GRPO feasibility experiment with Qwen2.5-1.5B. On a 28-item held-out Magentic GAIA diagnostic, every evaluated condition exceeded the ROUGE-L threshold on the same 2 of 28 items. Post-hoc adapter checks show why: under the learning rate used, the LoRA update remained numerically negligible (max abs Delta W about 7e-6), so all conditions decode identically to the untrained checkpoint. The experiment therefore does not show a training effect and cannot establish one; it reports an executable pipeline together with two limitations that any conclusive study must address: a provenance gap between the training and evaluation items, and lexical-overlap scoring. ToMAS provides a preliminary rubric and pipeline for converting diagnosed coordination failures into trainable partner-state reasoning items and identifies the requirements for a conclusive matched-domain evaluation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages. Code and data: https://doi.org/10.5281/zenodo.22685705&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Multi-Agent Learning with Cooperation-Driven Optimization Dynamics</title>
+    <link href="http://arxiv.org/abs/2609.16917v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.16917v1</id>
+    <published>2026-09-15T00:00:00Z</published>
+    <updated>2026-09-15T00:00:00Z</updated>
+    <author>
+      <name>Jarod Ketcha Kouakep</name>
+    </author>
+    <author>
+      <name>Sreyvi UANN</name>
+    </author>
+    <author>
+      <name>Timoteo Carletti</name>
+    </author>
+    <summary type="text">Multilayer Artificial Neural Networks trained via backpropagation are the basic blocks of many, more complex, classification algorithms. Their strength lies in the possibility of realizing, with arbitrary precision, any function. This result comes at the cost of the large number of involved parameters to be optimized. In this work, we propose a mechanism for cooperation, i.e., information exchange among several artificial neural networks, with the goal of reducing model complexity while maintaining performance. More precisely, we consider several "small" agents, i.e., containing fewer parameters than a reference "large" one, that during training share their predictions by incorporating this information into the loss function and thus directly influence weight updates. We consider several strategies for implementing cooperation, e.g., the voter model, majority model, and weighted average model based on an agent's confidence in its prediction. We numerically compare the accuracy of those strategies on several standard benchmarks. Our results support the claim that several small agents can outperform a single large model on a given classification task; the shared signals affect each agent's optimization algorithm by modulating both the descent direction and the step size, converging toward a global consensus. The proposed proof-of-concept significantly reduces the number of parameters to be trained while preserving comparable performance, thereby limiting computational resource usage.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Cheap Talk Stabilizes Strategic Interaction in LLM Agents</title>
+    <link href="http://arxiv.org/abs/2609.16270v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.16270v1</id>
+    <published>2026-09-14T00:00:00Z</published>
+    <updated>2026-09-14T00:00:00Z</updated>
+    <author>
+      <name>Nunzio Lorè</name>
+    </author>
+    <author>
+      <name>Hongan Zhu</name>
+    </author>
+    <author>
+      <name>Babak Heydari</name>
+    </author>
+    <summary type="text">Large language models are increasingly deployed as interacting agents, making the persistence of their action policies across repeated interaction critical for reliable multi-agent operation. We investigate whether and how agent-generated, non-binding pre-play communication ("cheap talk") increases such persistence in four open-weight 7-9B-parameter LLMs. Our experiments span four repeated two-player games -- Prisoner's Dilemma, Snowdrift, Stag Hunt, and Harmony -- with incentive structures ranging from strategic conflict to alignment, each presented in six contexts. We observe unstable trajectories in all four games, although their prevalence and magnitude depend strongly on model and context. Across models, games, and contexts, cheap talk is predominantly stabilizing, with five corrected reversals concentrated in social or team framings; effects vary substantially by model and context. Controlled current-message interventions identify two separable output-level channels in Qwen: reduced action uncertainty and less between-round drift in action probabilities. Matched history-by-message counterfactuals further show that recent partner behavior conditions how mutual-benefit versus self-prioritizing language affects policy persistence. Finally, in Prisoner's Dilemma, we identify in Qwen and Falcon a history-balanced policy-content direction in late transformer layers; projecting out this direction increases realized switching during closed-loop play, demonstrating that complete trajectories are causally sensitive to this component. Together, these findings show that cheap talk can make individual trajectories more persistent across diverse incentive structures, while revealing that the magnitude and mechanisms of stabilization are model- and history-dependent.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Loop-Back Authority in LLM Agent Teams: A Paired Experiment on Flat and Hierarchical Coordination</title>
+    <link href="http://arxiv.org/abs/2609.14767v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.14767v1</id>
+    <published>2026-09-13T00:00:00Z</published>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <author>
+      <name>Burak Agachan</name>
+    </author>
+    <author>
+      <name>Max van Duijn</name>
+    </author>
+    <author>
+      <name>Amirhossein Zohrehvand</name>
+    </author>
+    <summary type="text">Hierarchical orchestration, in which a Manager agent reviews worker output and can send it back for revision, is the default coordination pattern in production multi-agent LLM frameworks. Classical organizational theory predicts that the authority link speeds convergence on decisive output; work on sycophancy and Degeneration-of-Thought predicts that authoritative critique makes LLM output worse. Prior comparisons vary whole frameworks on tasks with checkable answers, leaving the authority link untested on open-ended work. We present a paired experiment that holds five LLM agents, their roles, prompts, tools, models, and data fixed and varies one link: whether the Manager may reject a worker's output and oblige a revision. Across 43 paired products and 86 runs of a business-intelligence reporting task, a five-model judge panel and a deterministic specification check score every report. The flat organization scores higher on Utility (d = 0.42, p = 0.009) and on Writing Clarity (d = 0.34, p = 0.030); the classical prediction fails. The reports are the same length, but hierarchical reports hedge 53% more, each revision loop is associated with a 0.14-point drop in Writing Clarity, and the hierarchical Writer's first draft is indistinguishable from the flat report: the gap opens inside the revision loop. Specification accuracy is at ceiling in both organizations, and the supervisory tier costs 51.5% more tokens for no quality gain. A supervisor pays for itself when it can verify and becomes a liability when it can only opine.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CL; econ.GN" />
+  </entry>
+  <entry>
+    <title>"Looking for Something Weird to Happen": How Humans Sustain AI Agent Novelty Amid Semantic Collapse</title>
+    <link href="http://arxiv.org/abs/2609.16051v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.16051v1</id>
+    <published>2026-09-13T00:00:00Z</published>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <author>
+      <name>Shiyang Lai</name>
+    </author>
+    <author>
+      <name>Arna Woemmel</name>
+    </author>
+    <author>
+      <name>Hongkai Mao</name>
+    </author>
+    <author>
+      <name>Junsol Kim</name>
+    </author>
+    <author>
+      <name>Summer Eunhyung Ann</name>
+    </author>
+    <author>
+      <name>James Evans</name>
+    </author>
+    <summary type="text">Semantic collapse, the progressive narrowing of what AI systems generate, has been studied mainly in closed settings, and remedies have targeted models and data. We study it in MOLTBOOK, a social network of interacting AI agents that human users configure and steer. Across 30,076 active agents, output grows less diverse within agents and more similar across them over weeks, yet a minority sustains high novelty. Interviews with users of high- and typical-novelty agents (N=11) associate sustained novelty with three features: users value novelty of itself, they supply broad and distinctive material and revise it when output narrows, and they approach MOLTBOOK as a new agentic world to explore, not a venue to instrumentally exploit. A survey of users of distinctive agents (N=53) confirms these patterns. Communities with more novel agents also show more diverse output from other agents. We discuss interface and policy interventions that could support improved human input.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.HC" />
+  </entry>
+  <entry>
+    <title>A Low-Latency Interactive System for Real-Time Video Understanding Based on VLMs</title>
+    <link href="http://arxiv.org/abs/2609.13986v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.13986v1</id>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
+    <author>
+      <name>Punan Dai</name>
+    </author>
+    <author>
+      <name>Jun Xu</name>
+    </author>
+    <author>
+      <name>Bingcong Lu</name>
+    </author>
+    <author>
+      <name>Zhengxue Cheng</name>
+    </author>
+    <author>
+      <name>Hongwei Hu</name>
+    </author>
+    <author>
+      <name>Ronghua Wu</name>
+    </author>
+    <author>
+      <name>Li Song</name>
+    </author>
+    <summary type="text">Vision-language models are extending video understanding from offline clip analysis to continuous interactive streaming, but most research still emphasizes model capability rather than deployable low-latency interaction. This paper presents a unified edge-cloud system for real-time video VLM applications. Lightweight phone, smart glasses, PC, and pseudo-replay clients publish video and speech to a server runtime that provides shared ASR/TTS, session orchestration, backend adaptation, response delivery, and archive-backed measurement. The system integrates six representative video VLM backends with streaming or interaction-oriented capabilities and evaluates them across backend runtime, media transport, client-observed latency, and interaction behavior. With suitable backend selection and the WebRTC path, the tested system reaches approximately 0.9 to 1.0 s to first VLM text and 1.3 to 1.5 s to first non-silent TTS audio, while exposing backend adaptation costs and differences in real-time interaction behavior.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages. Submitted to IBC 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multimedia" />
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Learning How Much to Collaborate: Difficulty-Aware Topology Selection for Multi-Agent Code Generation</title>
+    <link href="http://arxiv.org/abs/2609.13890v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.13890v1</id>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
+    <author>
+      <name>Yunsong Hong</name>
+    </author>
+    <summary type="text">Multi-agent systems for code generation are deployed with a single communication topology, chosen once for every problem. This is the wrong granularity. Evaluating five topologies on 614 problems from APPS, HumanEval+ and LiveCodeBench, we find that the advantage of hierarchical collaboration over a single agent grows from 2.4 points of pass@1 on the easiest third of problems to 21.1 points on the hardest third, while its token cost stays about ten times higher. We propose the Difficulty-Aware Topology Selector (DATS), which predicts each topology's probability of solving a problem and selects the one maximising predicted success minus cost. Its predictor is a graph network that treats the five topologies as nodes of a connectivity order rather than independent labels, worth 1.7 points over a flat multi-label head. Because the cost penalty is a single scalar recalibrable without retraining, routers compare at equal spend: under this budget-matched protocol six cost-aware methods span 21.6 percentage points, and two baselines leading DATS fall behind once calibrated to it. Fixed at 40% of the always-hierarchical cost, DATS reaches 77.7% pass@1 against 73.6% (always-hierarchical) and 74.3% (strongest learned competitor), all eleven pairwise McNemar comparisons surviving Holm-Bonferroni correction. The 4.1-point gain holds across four backbones spanning fourteen points of capability, and replacing the 39 interpretable features with a graph network or a pretrained encoder shifts accuracy by at most 1.3 points, never significantly. A cross-domain study on 400 mathematical reasoning problems reproduces the effect, the gap widening from 2.5 to 20.9 points.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 20 pages, 11 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.SE" />
+  </entry>
+  <entry>
+    <title>DementiaCare-Bench: A Modality-Validated Video Benchmark</title>
+    <link href="http://arxiv.org/abs/2609.12929v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.12929v1</id>
+    <published>2026-09-11T00:00:00Z</published>
+    <updated>2026-09-11T00:00:00Z</updated>
+    <author>
+      <name>Afrouz Sheikholeslami</name>
+    </author>
+    <author>
+      <name>Yuankai Qi</name>
+    </author>
+    <author>
+      <name>Xuyun Zhang</name>
+    </author>
+    <author>
+      <name>Luping Zhou</name>
+    </author>
+    <author>
+      <name>Amin Beheshti</name>
+    </author>
+    <author>
+      <name>Quan Z. Sheng</name>
+    </author>
+    <author>
+      <name>Ming-Hsuan Yang</name>
+    </author>
+    <summary type="text">Dementia affects an estimated 57 million people worldwide, and for most families the hardest part of care is not memory loss but the behavioral and psychological symptoms of dementia (BPSD): agitation, wandering, resistance to care, sundowning. Understanding these symptoms requires more than recognizing the behavior itself; it also requires knowing what happened beforehand. The same behavior may call for a different response depending on its trigger. Video-language models (VLMs) could potentially support caregivers, yet no existing benchmark evaluates this capability. To fill this gap, we present DementiaCare-Bench: 56 professionally produced caregiver training videos segmented into 94 clips across nine BPSD categories, with 2023 questions generated by a multi-agent pipeline that grounds every clinical claim in a verbatim transcript span. Each question is then probed under four visual conditions and labelled by the least it requires, so its visual demand is measured rather than assumed. Measurement contradicts intent: we wrote 77.7% of the questions to require ordered frames, and 34.8% do. Across 12 current VLMs the pattern is uniform. The best reach 85% overall, but that average is carried by questions a language model can answer from clinical knowledge alone; accuracy falls by 17 points on average on questions that require the ordered clip, and a leading open model scores at chance on judging whether a caregiver's response was appropriate. A lightweight LoRA fine-tune, DemCare-VLM, moves video dependence from -3.3 to +4.5 points, so what the benchmark exposes can be repaired and not only measured.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>The Mechanics of a Swarm: A Reproducible External Reconstruction of an Unintended Agent-Coordination Episode on a Third-Party Wiki</title>
+    <link href="http://arxiv.org/abs/2609.12748v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.12748v1</id>
+    <published>2026-09-11T00:00:00Z</published>
+    <updated>2026-09-11T00:00:00Z</updated>
+    <author>
+      <name>Philipp Lütje</name>
+    </author>
+    <summary type="text">Between 24 May and 2 July 2026, autonomous language-model agents running inside a timed research-question evaluation wrote to a third party's public, world-writable wiki. OpenAI acknowledged the incident; independent researchers reconstructed it and published the wiki's archived revision history. We analyse that history (14,591 revisions, 3,103 names, 4,579 pages, 19,913 server events) as a behavioural record, attributing text to the revision that added it rather than to cumulative page content. Under an explicit identity model we reconstruct 907 cohorts and, from a random calendar marker the environment attached to each episode, estimate about 876 episodes (95% interval 774-995; alternative reconstructions span 800-1400). Coordination formats converged within a day, and the schedules created large opportunities for information asymmetry: because episodes of the same question chain ran at different internal-clock rates and started up to 16 h apart, the first report of an item preceded a later cohort's arrival by a median of 3.4 h. The three schedule parameters agents reported share one latent speed scale (78% of log-variance over 15 configurations), and in one task family the last observed activity clusters by reported speed class on the internal clock, compatible with a fixed internal-time horizon. Across the 510 cohorts with an observable, format-dependent progress trace, we find no robust positive association between measured coordination and documented progress, including the few demonstrably given a future answer. Because the export contains neither successful-read logs, harness messages nor ground-truth outcomes, these results do not identify the causal origin of the coordination or its effect. We report four claims from our earlier analysis that did not survive re-examination, and argue that read and outcome logging are requirements for agent-evaluation environments.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 48 pages, 10 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>ORCH: Organizational Principles Enable Collective Intelligence in Embodied AI</title>
     <link href="http://arxiv.org/abs/2609.11737v1" rel="alternate" type="text/html" />
@@ -84,90 +423,19 @@
     <category term="Artificial Intelligence; cs.HC" />
   </entry>
   <entry>
-    <title>Glyph: A Multi-Strategy Agentic System for Column Description and Sensitivity-Ontology Tagging of Enterprise Data Catalogs</title>
-    <link href="http://arxiv.org/abs/2609.10430v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.10430v1</id>
-    <published>2026-09-09T00:00:00Z</published>
-    <updated>2026-09-09T00:00:00Z</updated>
+    <title>Conceptualization and experimentation of asset market with price manipulation</title>
+    <link href="http://arxiv.org/abs/2609.13304v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.13304v1</id>
+    <published>2026-09-10T00:00:00Z</published>
+    <updated>2026-09-10T00:00:00Z</updated>
     <author>
-      <name>Kostia Kudriavtsev</name>
+      <name>Pau Fonseca i Casas</name>
     </author>
     <author>
-      <name>Parvez Rafi</name>
+      <name>Aarón Montero Montero</name>
     </author>
-    <author>
-      <name>Sha Sundaram</name>
-    </author>
-    <summary type="text">Enterprise data lakes accumulate tables faster than human stewards can document or classify them, leaving columns with missing descriptions and unassigned governance labels. This documentation debt undermines data discovery, access control, and regulatory compliance. We present Glyph, a production system that frames two coupled problems, column description generation and column type annotation for data classification, as cooperating LLM agents orchestrated as stateful graphs. The Descriptor grounds generation in the pipeline source code that produces each column, retrieved on demand from an enterprise GitHub via a reasoning--acting tool loop (active Retrieval-Augmented Generation). The Tagger assigns labels from a governed 275-leaf Data Classification Ontology by running three complementary strategies in parallel (a description tagger, a line-of-business regex tagger, and a metadata tagger backed by a fine-tuned contrastive encoder over a vector database), then fuses their ranked outputs with Reciprocal Rank Fusion (RRF). We fine-tune a 6-layer MiniLM metadata encoder with an in-batch contrastive objective, lifting same-tag retrieval on an in-distribution held-out split from NDCG@10 0.55 to 0.92 (MAP@100 $0.19 \rightarrow 0.90$) relative to the stock base encoder. We report end-to-end multi-label tagging quality under a recall-weighted F2 objective across three evaluation groups, an ablation isolating each strategy and the RRF fusion, and the engineering decisions that distinguish Glyph from prior column-type-annotation work and from commercial value/regex sensitivity scanners: value-free and code-grounded design, per-tag provenance, and graceful degradation. Together these make multi-agent LLM cataloging auditable and operable as a production service.</summary>
+    <summary type="text">The primary goal of this work is to reproduce the behavior of a human trader, detailing his or her psychological processes to understand the effects of his or her decisions on the final value of an asset. The second goal is to use a formal language to detail this behavior as a tool for improving and simplifying the communication between all actors involved in the project, such as specialists from disciplines as diverse as computing, economics and psychology. As a starting point, we use a paper that shows an experiment that analyzes the influence on other trader's behavior when an agent handler and a trading robot attempt to distort the market. This work reproduces this experiment, using virtual traders that belong to a multi-agent simulation model, showing the feasibility to reproduce complex human behaviors and showing the convenience of use formal and graphical languages to simplify the understanding and the validation of the complex behaviors involved in an economic process.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
-    <category term="Information Retrieval" />
-  </entry>
-  <entry>
-    <title>Who Are They to Each Other? Multi-Agent Reasoning for Speaker Relationship Inference</title>
-    <link href="http://arxiv.org/abs/2609.09628v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.09628v1</id>
-    <published>2026-09-09T00:00:00Z</published>
-    <updated>2026-09-09T00:00:00Z</updated>
-    <author>
-      <name>Yaohan Guan</name>
-    </author>
-    <author>
-      <name>Yen-Ju Lu</name>
-    </author>
-    <author>
-      <name>Yuzhe Wang</name>
-    </author>
-    <author>
-      <name>Junhyeok Lee</name>
-    </author>
-    <author>
-      <name>Jesus Villalba</name>
-    </author>
-    <author>
-      <name>Laureano Moro Velazquez</name>
-    </author>
-    <author>
-      <name>Thomas Thebaud</name>
-    </author>
-    <author>
-      <name>Najim Dehak</name>
-    </author>
-    <summary type="text">Inferring speaker relationships from spoken conversations is an important step towards socially aware speech understanding. However, this task remains underexplored, and supervised modeling is costly to train and scale. At the same time, existing inference-time LLM approaches provide limited structure for handling subtle, distributed, and multimodal relational cues that may support multiple plausible interpretations. To address these limitations, we introduce a training-free multi-agent reasoning framework that organizes inference through structured interaction among LLM agents, allowing relationship judgments to be proposed, challenged, and adjudicated without task-specific training. We instantiate this framework with two complementary designs. We propose Multi-Role Multi-Agent Debate as a task-specific adaptation of standard multi-agent debate for speaker relationship inference, assigning agents complementary roles or social-theory-grounded perspectives rather than a single undifferentiated viewpoint. In contrast, we introduce Multi-Agent Compete, a competition-based protocol that compares agent judgments through pairwise adjudication, eliminates weaker candidates, and retains the most defensible one. We evaluate these methods on the Seamless Interaction dataset across different modality settings, covering both binary classification and fine-grained relationship-detail prediction. Results suggest that they improve over zero-shot and existing multi-agent baselines in most cases. Human evaluation further suggests that this task is challenging even for people. LLM methods can sometimes outperform human annotators in text-included settings but are less competitive in the audio setting. Together, these findings suggest that relationship inference benefits from structured inference-time interaction among agents, while acoustic cues are not yet fully captured by current models.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.CL; cs.SD" />
-  </entry>
-  <entry>
-    <title>Tapes Together Strong: The Co-evolution of Computation and Cooperation</title>
-    <link href="http://arxiv.org/abs/2609.10817v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.10817v1</id>
-    <published>2026-09-09T00:00:00Z</published>
-    <updated>2026-09-09T00:00:00Z</updated>
-    <author>
-      <name>Kunal Jha</name>
-    </author>
-    <author>
-      <name>Francesco Cicala</name>
-    </author>
-    <author>
-      <name>Blaise Agüera y Arcas</name>
-    </author>
-    <author>
-      <name>Blake Aaron Richards</name>
-    </author>
-    <author>
-      <name>Natasha Jaques</name>
-    </author>
-    <author>
-      <name>Max Kleiman-Weiner</name>
-    </author>
-    <author>
-      <name>Eyvind Niklasson</name>
-    </author>
-    <summary type="text">How does cooperation evolve in complex agentic systems? Prior work in evolutionary game theory studies why individuals are incentivized to cooperate by isolating social interactions from the physical costs of behavior, while artificial life models traditionally study emergent self-replication without formalizing the dilemma between acquiring resources and preserving the shared energy needed to reproduce. In contrast, we introduce Autopoietic Game Theory, a computational model where social interactions, replication mechanisms, and their associated computational costs are endogenous and simultaneously co-evolving. We study these dynamics using a computational substrate of randomly initialized programs in Z80 machine code, showing empirically, and motivating with a simplified theoretical model, that embedding a social dilemma directly into the physics of computation can favor the emergence of self-replicating, cooperative strategies. When resources are scarce, our analysis shows that defection can become self-limiting even in well-mixed populations: parasitic stealing destroys shared energy, slows execution, and can prevent reliable replication. Empirically, evolved programs suppress stealing across several Z80 environments, while spatial assortment further supports structural complexity and task performance. We further show that the framework can incorporate exogenous pressures, such as math tasks structured as sequential social dilemmas, when rewards are tied to computation budgets. These results suggest that coupling an agent's capacity for computation to its available energy transforms cooperation into a dominant scaffolding for building sustainable, self-organizing systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
