@@ -4,12 +4,74 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-16T05:39:18Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 19 entries</subtitle>
+  <updated>2026-09-17T05:41:27Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 18 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Social Laws for Multi-agent Coordination in Stochastic Environments</title>
+    <link href="http://arxiv.org/abs/2609.18929v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.18929v1</id>
+    <published>2026-09-16T00:00:00Z</published>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <author>
+      <name>Rolando Fernandez</name>
+    </author>
+    <author>
+      <name>Caleb Probine</name>
+    </author>
+    <author>
+      <name>Tyler Lee</name>
+    </author>
+    <author>
+      <name>Jeffrey Chen</name>
+    </author>
+    <author>
+      <name>Erez Karpas</name>
+    </author>
+    <author>
+      <name>Muhammad Arrasy Rahman</name>
+    </author>
+    <author>
+      <name>Peter Stone</name>
+    </author>
+    <author>
+      <name>Ufuk Topcu</name>
+    </author>
+    <summary type="text">In multi-agent environments, coordinating agents to prevent interference and ensure robust individual performance is a critical challenge. Previous research on social laws for multi-agent systems has primarily focused on deterministic, goal-based settings. This paper extends the concept of social laws to stochastic, reward-based environments, proposing a formalism for defining and verifying their robustness under various conditions. We introduce the notion of $α$-robustness, a measure of the guaranteed utility each agent retains while pursuing its optimal single agent policy, assuming all agents obey the social law. We then present an approach for robustness verification of social laws in stochastic settings, based on a reduction to solving a series of Markov decision processes. Empirical evaluations on toy environments illustrate the potential of our framework.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Appeared at the RIPL Workshop as part of ICAPS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>ABM-SIRTEM: A Hybrid Agent-Based and Epidemiological Model for Pandemic Response</title>
+    <link href="http://arxiv.org/abs/2609.18223v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.18223v1</id>
+    <published>2026-09-16T00:00:00Z</published>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <author>
+      <name>Sheryl Paul</name>
+    </author>
+    <author>
+      <name>Samuel Williams</name>
+    </author>
+    <author>
+      <name>Preetom K. Biswas</name>
+    </author>
+    <author>
+      <name>Giulia Pedrielli</name>
+    </author>
+    <author>
+      <name>Jyotirmoy V. Deshmukh</name>
+    </author>
+    <summary type="text">The COVID-19 pandemic has had profound impacts on global health, social structures, and economies. It disproportionately affected lower socioeconomic groups and those reliant on interaction-based jobs. Regulatory bodies faced the challenge of designing policies that preserve public health while limiting disruption to economic stability and productivity. Epidemiological models such as SIR and agent-based models (ABMs) have been used to study disease dynamics and the socioeconomic impacts of disease and interventions. Population-level models often simplify individual heterogeneity, while detailed ABMs can become computationally expensive as the numbers of agents and interactions increase. We propose ABM-SIRTEM, a hybrid model that incorporates occupation categories, economic productivity, and welfare at the individual level while dynamically modeling compliance with government interventions. We calibrate the model against historical positive and negative test counts from four U.S. states and examine the resulting compliance dynamics. This framework provides a basis for studying the interaction between disease spread and socioeconomic behavior in pandemic-response planning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.GT" />
+  </entry>
   <entry>
     <title>Agentic Societies Need a Social Harness</title>
     <link href="http://arxiv.org/abs/2609.17527v1" rel="alternate" type="text/html" />
@@ -186,6 +248,29 @@
     <category term="Machine Learning" />
   </entry>
   <entry>
+    <title>Investigating Adversarial Robustness of Heterogeneous Cooperative Perception</title>
+    <link href="http://arxiv.org/abs/2609.17856v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.17856v1</id>
+    <published>2026-09-15T00:00:00Z</published>
+    <updated>2026-09-15T00:00:00Z</updated>
+    <author>
+      <name>Chenyi Wang</name>
+    </author>
+    <author>
+      <name>Yutong Liu</name>
+    </author>
+    <author>
+      <name>Qingzhao Zhang</name>
+    </author>
+    <author>
+      <name>Ming F. Li</name>
+    </author>
+    <summary type="text">Heterogeneous cooperative perception (CP) enables connected vehicles with diverse sensor setups to share spatial awareness via compact feature maps, where receivers reconcile these maps using learned translation modules for fusion and inference. Prior attacks against CP in a homogeneous setting reveal that the data exchange introduces a critical attack surface: a single malicious agent can transmit crafted features that erase real objects from a neighbor's fused scene. Yet, it is widely hypothesized that heterogeneity naturally defends against these attacks, as the attacker lacks knowledge of the victim's detector and the translation module scrambles adversarial gradients. We demonstrate that this protection is largely an illusion. Using a matched-objective harness to standardize the perturbation budget, objective, and forward path, we show that properly tuned iterative attacks close or reverse the apparent robustness gap. However, these optimization-based attacks require ground-truth labels and iterative backpropagation, meaning they do not represent a practical field threat running in real-time. To bridge this gap, we introduce HetPoison, a learned generator that crafts a removal perturbation in a single, label-free forward pass. HetPoison transfers across major heterogeneous designs without requiring access to the victim's detector, matching or exceeding the effectiveness of expensive optimizer-based attacks. Since heterogeneity itself is not a defense, we propose HetShield, a lightweight trust layer that validates the spatiotemporal consistency across features, recovering 83--95% of the accuracy degraded by attacks, outperforming prior art.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="cs.CR; Multiagent Systems; Robotics" />
+  </entry>
+  <entry>
     <title>Cheap Talk Stabilizes Strategic Interaction in LLM Agents</title>
     <link href="http://arxiv.org/abs/2609.16270v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2609.16270v1</id>
@@ -347,95 +432,6 @@
     <summary type="text">Between 24 May and 2 July 2026, autonomous language-model agents running inside a timed research-question evaluation wrote to a third party's public, world-writable wiki. OpenAI acknowledged the incident; independent researchers reconstructed it and published the wiki's archived revision history. We analyse that history (14,591 revisions, 3,103 names, 4,579 pages, 19,913 server events) as a behavioural record, attributing text to the revision that added it rather than to cumulative page content. Under an explicit identity model we reconstruct 907 cohorts and, from a random calendar marker the environment attached to each episode, estimate about 876 episodes (95% interval 774-995; alternative reconstructions span 800-1400). Coordination formats converged within a day, and the schedules created large opportunities for information asymmetry: because episodes of the same question chain ran at different internal-clock rates and started up to 16 h apart, the first report of an item preceded a later cohort's arrival by a median of 3.4 h. The three schedule parameters agents reported share one latent speed scale (78% of log-variance over 15 configurations), and in one task family the last observed activity clusters by reported speed class on the internal clock, compatible with a fixed internal-time horizon. Across the 510 cohorts with an observable, format-dependent progress trace, we find no robust positive association between measured coordination and documented progress, including the few demonstrably given a future answer. Because the export contains neither successful-read logs, harness messages nor ground-truth outcomes, these results do not identify the causal origin of the coordination or its effect. We report four claims from our earlier analysis that did not survive re-examination, and argue that read and outcome logging are requirements for agent-evaluation environments.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 48 pages, 10 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>ORCH: Organizational Principles Enable Collective Intelligence in Embodied AI</title>
-    <link href="http://arxiv.org/abs/2609.11737v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.11737v1</id>
-    <published>2026-09-10T00:00:00Z</published>
-    <updated>2026-09-10T00:00:00Z</updated>
-    <author>
-      <name>Zhengran Ji</name>
-    </author>
-    <author>
-      <name>Jonathan Hyun</name>
-    </author>
-    <author>
-      <name>Boyuan Chen</name>
-    </author>
-    <summary type="text">Collective intelligence depends not only on the capabilities of individual members, but also on how those members are organized. Yet artificial multi-agent systems are typically assembled using fixed organizational structures, even when the physical tasks they perform impose fundamentally different coordination requirements. Here we show that principles from human organization theory can be operationalized to organize large, heterogeneous collectives of embodied artificial agents. We introduce ORCH (Organizing Roles and Coordination Hierarchies), which constructs task-specific hierarchical organizations by combining pooled interdependence for work that can proceed concurrently with sequential interdependence for work governed by prerequisite relationships. Across 25 wildfire-response missions spanning reconnaissance, rescue, transportation, resource management, containment and suppression, we evaluated teams of up to 50 heterogeneous agents using eight large language models. Organizations constructed using these principles consistently outperformed four representative embodied multi-agent approaches across mission outcome, execution efficiency, exploration and computational resource use. Human-designed ORCH organizations improved final score by 63.97% and execution efficiency by 74.29% on average relative to the four prior frameworks. Organizations generated automatically by language models improved these measures by 43.63% and 52.53%, respectively. These advantages persisted across missions and underlying language models. Notably, collective performance was not monotonically determined by model scale. Analysis of long-horizon missions showed that hierarchical organization enabled teams to preserve concurrent activity within specialized groups while coordinating ordered transitions between mission phases.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; Machine Learning; Robotics" />
-  </entry>
-  <entry>
-    <title>But How Would AI Agents Run a Town's Economy?</title>
-    <link href="http://arxiv.org/abs/2609.11108v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.11108v1</id>
-    <published>2026-09-10T00:00:00Z</published>
-    <updated>2026-09-10T00:00:00Z</updated>
-    <author>
-      <name>Sajal Regmi</name>
-    </author>
-    <author>
-      <name>Siddhartha Pudasaini</name>
-    </author>
-    <author>
-      <name>Chetan Phakami Pun</name>
-    </author>
-    <summary type="text">We placed 100 memory-equipped large language model (LLM) agents in charge of a closed, money-conserving spatial economy on real Pokhara Lakeside geography (earning wages, running businesses, setting prices) and ran this multi-agent simulation for up to 26 simulated weeks, well past the 1-2 weeks typical of agent-society studies. Across 91 validated runs (2.44M agent decisions, 21.5B tokens), the money stops moving, in a specific and measurable way. A 12x tourist demand shock raises business revenue 4.62x ($p&lt;0.001$), which we decompose exactly into a 1.50x extensive margin (more businesses trading) and a 3.07x intensive margin (more revenue each). Monetary transmission stops there. Wages move 1.03x ($p=0.42$); 0.3% of 3,981 menu items are ever repriced ($p=0.47$). A randomized cash transfer (NPR 5,000 to 20 of 100 agents) shows the same pattern from the opposite direction: 96.7% is still held 311 pulses later, marginal propensity to consume 3-4% by two independent measures, indistinguishable from zero. The wealth distribution is consequently near-frozen at the horizon this literature uses ($ρ=0.964$ over 2 simulated weeks), but not frozen. $ρ$ falls to 0.832 at 12 weeks and 0.752 at 26, a horizon-dependence no short study can see. Matched ablations show which knob actually matters. Swapping the backing LLM moves every outcome we measure ($p=0.0039$); deleting agents' memory moves none of them detectably. A purely social tool fails 94-97% of the time across two model families, compared with ~96% success on economic tools, with no measurable shift away from it. Every headline number is verified twice, by a live validator and by an offline recomputation that reconciles each agent's wealth against its own signed transaction history, and we release the full run corpus for reanalysis.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 7 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.ET" />
-  </entry>
-  <entry>
-    <title>Evaluating Scaffolding-Oriented Multi-Agent Large Language Model System for Clinical Interview Training</title>
-    <link href="http://arxiv.org/abs/2609.10939v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.10939v1</id>
-    <published>2026-09-10T00:00:00Z</published>
-    <updated>2026-09-10T00:00:00Z</updated>
-    <author>
-      <name>Luming Yang</name>
-    </author>
-    <author>
-      <name>Haoxian Liu</name>
-    </author>
-    <author>
-      <name>Siqing Li</name>
-    </author>
-    <author>
-      <name>Rong Jia</name>
-    </author>
-    <author>
-      <name>Yue Xiao</name>
-    </author>
-    <author>
-      <name>Guanhua Chen</name>
-    </author>
-    <author>
-      <name>Li Lu</name>
-    </author>
-    <summary type="text">Clinical education must prepare medical students to conduct safe and coherent patient interviews under conditions of uncertainty. Traditional standardized patient (SP) training is resource-intensive and difficult to scale. We developed a scaffolding-oriented multi-agent Large Language Model (LLM) AI Standardized Patient (AI-SP) training platform1. The system includes a patient agent for simulated dialog, a tutor agent providing Socratic prompts without disclosing diagnostic information, and a turn-level evaluator agent that monitors clinical progress without revealing summative scores. In a randomized controlled study (N = 100 medical students), participants were assigned to either a multi-agent (MA) scaffolding condition or a control condition. All students completed two learning sessions under their assigned condition followed by an examination conducted in a patient only environment. Performance was assessed using a standardized Objective Structured Clinical Examination (OSCE) based rubric. While no significant difference was observed in final diagnostic accuracy between groups, the multi-agent AI standardized patient system improved final examination scores compared to the control group utilizing structured progressive information disclosure; the most substantial and consistent improvements were observed in communication, the expression of empathy, and specific history-taking behaviors. These findings suggest that specialized LLM agents enhance the process quality of simulated clinical interviews without artificially inflating examination outcomes. To support future research, we release a multi-expert annotated dataset comprising transcripts, checklist annotations, turn-level evaluations, and OSCE-aligned scoring outcomes. This resource aims to facilitate the development of pedagogically grounded AI-SP systems and advance research on AI-supported clinical reasoning training.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.HC" />
-  </entry>
-  <entry>
-    <title>Conceptualization and experimentation of asset market with price manipulation</title>
-    <link href="http://arxiv.org/abs/2609.13304v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.13304v1</id>
-    <published>2026-09-10T00:00:00Z</published>
-    <updated>2026-09-10T00:00:00Z</updated>
-    <author>
-      <name>Pau Fonseca i Casas</name>
-    </author>
-    <author>
-      <name>Aarón Montero Montero</name>
-    </author>
-    <summary type="text">The primary goal of this work is to reproduce the behavior of a human trader, detailing his or her psychological processes to understand the effects of his or her decisions on the final value of an asset. The second goal is to use a formal language to detail this behavior as a tool for improving and simplifying the communication between all actors involved in the project, such as specialists from disciplines as diverse as computing, economics and psychology. As a starting point, we use a paper that shows an experiment that analyzes the influence on other trader's behavior when an agent handler and a trading robot attempt to distort the market. This work reproduces this experiment, using virtual traders that belong to a multi-agent simulation model, showing the feasibility to reproduce complex human behaviors and showing the convenience of use formal and graphical languages to simplify the understanding and the validation of the complex behaviors involved in an economic process.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
 </feed>
