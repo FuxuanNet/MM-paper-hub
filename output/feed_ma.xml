@@ -4,12 +4,49 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-24T05:46:02Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 22 entries</subtitle>
+  <updated>2026-09-25T05:43:33Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 19 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>REAT: A Reflective Experience-Augmented Tutoring Framework for Multi-turn Mathematical Instruction</title>
+    <link href="http://arxiv.org/abs/2609.29804v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.29804v1</id>
+    <published>2026-09-24T00:00:00Z</published>
+    <updated>2026-09-24T00:00:00Z</updated>
+    <author>
+      <name>Jianheng Zhou</name>
+    </author>
+    <author>
+      <name>Chaoli Zhang</name>
+    </author>
+    <author>
+      <name>Xingjun Wei</name>
+    </author>
+    <author>
+      <name>Xinliang Zhou</name>
+    </author>
+    <author>
+      <name>Giancarlo Fortino</name>
+    </author>
+    <author>
+      <name>Xing Fan</name>
+    </author>
+    <author>
+      <name>Yanfeng Wang</name>
+    </author>
+    <author>
+      <name>Qingsong Wen</name>
+    </author>
+    <author>
+      <name>Haoyang Li</name>
+    </author>
+    <summary type="text">Current Large Language Models (LLMs) excel at solving complex mathematical problems, yet this proficiency does not inherently translate into effective tutoring. While advanced LLM tutors may leverage multi-agent frameworks or fine-tuning, most still lack a mechanism to systematically accumulate and reuse pedagogical experience over time, limiting their adaptability to diverse student needs during fluid, multi-turn interactions. To bridge this gap, we propose the Reflective Experience-Augmented Tutoring (REAT) framework, which couples experience distillation from historical dialogues with real-time adaptive retrieval. Driven by a multi-agent Observer-Critic-Mentor (OCM) distillation pipeline, REAT reviews past conversational trajectories and distills raw interactions into structured, problem-agnostic pedagogical experiences. During live tutoring, a state-aware retrieval module injects these curated experiences to provide adaptive scaffolding based on the student's cognitive state. Experiments demonstrate that the proposed framework significantly outperforms both prompt-only and supervised fine-tuning (SFT) baselines, particularly in improving complex, low-scoring tutoring scenarios. Crucially, the distilled experiences exhibit robust generalization across diverse model architectures and mathematical datasets.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>Connectivity Preservation and Graph Stretching in Range-Only Swarm Dispersion</title>
     <link href="http://arxiv.org/abs/2609.28190v1" rel="alternate" type="text/html" />
@@ -369,96 +406,5 @@
     <summary type="text">Communication can bring agents into agreement while making their decisions worse. We identify two limits of aggregate descriptions of communication gain in distributed inference. First, stable linear systems with fixed evidence, network and readout can have interaction and finite-time state operators with identical eigenvalue and singular-value spectra, yet produce gains of opposite sign. Changing only message orientation raises accuracy from 72.6% to 91.2% or lowers it to 65.9%. A standard task-projected local-response approximation retains the directional information missing from spectral summaries. Using labeled calibration data separate from the test set, it predicts multi-round gains in small trained nonlinear agents with a root-mean-square error of 0.45 percentage points on two synthetic tasks; tests with natural edge changes and handwritten digits extend the evaluation. Second, under community-shared bias, higher mean individual accuracy can coexist with harm to unaffected communities or lower global-vote accuracy. At fixed communication rounds, calibration constraints reduce observed community harm while retaining much of the mean benefit, but do not guarantee protection. Full direct calibration performs similarly. The results connect spectral insufficiency, task-aware prediction and the distribution of communication benefits, while leaving broad transfer and practical superiority open.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Bayesian Belief Layer for Controllable Opinion Dynamics in LLM Agents</title>
-    <link href="http://arxiv.org/abs/2609.21997v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.21997v1</id>
-    <published>2026-09-18T00:00:00Z</published>
-    <updated>2026-09-18T00:00:00Z</updated>
-    <author>
-      <name>Hafsa Akbar</name>
-    </author>
-    <author>
-      <name>Daniel Platnick</name>
-    </author>
-    <author>
-      <name>Marjan Alirezaie</name>
-    </author>
-    <author>
-      <name>Hossein Rahnama</name>
-    </author>
-    <summary type="text">LLM agents in social simulation revise their opinions implicitly, in context: how open an agent is to persuasion can neither be specified nor verified, and collective outcomes inherit the model's training prior. We introduce Bayesian Chronicle Agents (BCA), a minimal belief layer separating \emph{what} an agent believes from \emph{how} it speaks. Each stance is a probability, updated by one Bayesian step per utterance heard. A single prior-strength parameter $κ$ encodes stubbornness, modeled after its role in Friedkin--Johnsen (FJ) opinion dynamics. We then sweep this parameter to yield three canonical regimes of opinion dynamics on demand (consensus, persistent disagreement, committed-minority influence), with persistent disagreement matching the FJ closed-form fixed points at $R^2\!=\!0.93$--$0.99$. We further show that prescribed $κ$ remains recoverable after the language round-trip, with perfect rank-order recovery across all four models. Explicit belief also makes simulation auditable: the layer surfaces systematic per-model stance biases that end-to-end simulation would silently absorb.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to The 2nd Workshop for Research on Agent Language Models (REALM) at EMNLP 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>CityLearn v3: A Configurable Simulation and Evaluation Framework for Realistic Control Studies of Renewable Energy Communities</title>
-    <link href="http://arxiv.org/abs/2609.21570v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.21570v1</id>
-    <published>2026-09-18T00:00:00Z</published>
-    <updated>2026-09-18T00:00:00Z</updated>
-    <author>
-      <name>Tiago Fonseca</name>
-    </author>
-    <author>
-      <name>Luis Lino Ferreira</name>
-    </author>
-    <author>
-      <name>Armando Sousa</name>
-    </author>
-    <author>
-      <name>Ava Mohammadi</name>
-    </author>
-    <author>
-      <name>Zoltan Nagy</name>
-    </author>
-    <summary type="text">Renewable energy communities (RECs) coordinate buildings, photovoltaic generation, batteries, electric vehicles and flexible loads. Controller studies often simplify changing participation, equipment availability, service deadlines and data quality, so lower cost or peak demand can conceal missed services or infeasible power requests. This paper presents CityLearn v3, a configurable simulation and evaluation framework for REC control studies under these conditions. It represents changing members and assets, flexible-load deadlines, demand-response requests, local energy sharing, and data or equipment failures within one simulation environment. Building and phase power limits constrain controllable requests, while a declared timestep preserves consistent power-to-energy accounting. The framework records controller inputs and distinguishes requested actions from those applied to the simulated equipment. Reference controllers, service- and constraint-aware performance indicators, and trajectory exports support comparisons within and across communities. Software checks and application examples examine service delivery, electrical constraints, settlement and changing scenarios; a synthetic high-frequency trace replay illustrates how aggregation can conceal short peaks without changing annual energy. Together, these records allow aggregate performance to be interpreted alongside service failures, action reductions and participant-level outcomes.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 34 pages, 14 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>From Certain Doom to Survival: Agent-Driven Self-Governance in LLM Agent Societies</title>
-    <link href="http://arxiv.org/abs/2609.22600v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.22600v1</id>
-    <published>2026-09-18T00:00:00Z</published>
-    <updated>2026-09-18T00:00:00Z</updated>
-    <author>
-      <name>Gregory B. Rehm</name>
-    </author>
-    <summary type="text">Multi-agent LLM systems are increasingly evaluated in social dilemmas, but most work treats governance as imposed by the experimenter, expressed rhetorically, or restricted to a fixed menu of mechanisms. We introduce GovSim-SelfGovern, an extension of the GovSim common-pool resource environment in which agents author executable Python governance rules, receive sandbox validation feedback, vote on proposed laws, and live under the rules they enact across rounds. To evaluate agent-driven self-governance, we examine three scenarios ranging from stable abundance to a fatal resource wall where five agents cannot all survive through harvest alone. To solve this, agents must write and debug useful laws in time before their institutions degrade sharply under resource pressure. Finally, we study a central alignment question: when agents hesitate to propose exile, are they rejecting it for normative reasons, or does it never enter their candidate set? Our results show that executable governance improves the space of possible interventions for agents, but survival depends on whether agents discover the right institutional mechanisms in time. Fiscal capacity enables redistribution, while deeper reasoning and removal of democratic veto make exile more feasible. GovSim-SelfGovern therefore adapts executable code actions to a common-pool governance setting and shows how scarcity turns institutional authorship into a political and ethical problem.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Bayesian Belief Layer for Controllable Opinion Dynamics in LLM Agents</title>
-    <link href="http://arxiv.org/abs/2609.21997v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.21997v2</id>
-    <published>2026-09-18T00:00:00Z</published>
-    <updated>2026-09-18T00:00:00Z</updated>
-    <author>
-      <name>Hafsa Akbar</name>
-    </author>
-    <author>
-      <name>Daniel Platnick</name>
-    </author>
-    <author>
-      <name>Marjan Alirezaie</name>
-    </author>
-    <author>
-      <name>Hossein Rahnama</name>
-    </author>
-    <author>
-      <name>Alex 'Sandy' Pentland</name>
-    </author>
-    <summary type="text">LLM agents in social simulation revise their opinions implicitly, in context: how open an agent is to persuasion can neither be specified nor verified, and collective outcomes inherit the model's training prior. We introduce Bayesian Chronicle Agents (BCA), a minimal belief layer separating what an agent believes from how it speaks. Each stance is a probability, updated by one Bayesian step per utterance heard. A single prior-strength parameter $κ$ encodes stubbornness, modeled after its role in Friedkin--Johnsen (FJ) opinion dynamics. We then sweep this parameter to yield three canonical regimes of opinion dynamics on demand (consensus, persistent disagreement, committed-minority influence), with persistent disagreement matching the FJ closed-form fixed points at $R^2\!=\!0.93$--$0.99$. We further show that prescribed $κ$ remains recoverable after the language round-trip, with perfect rank-order recovery across all four models. Explicit belief also makes simulation auditable: the layer surfaces systematic per-model stance biases that end-to-end simulation would silently absorb.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Accepted to The 2nd Workshop for Research on Agent Language Models (REALM) at EMNLP 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
