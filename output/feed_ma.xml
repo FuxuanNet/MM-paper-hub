@@ -4,12 +4,133 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-25T05:43:33Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 19 entries</subtitle>
+  <updated>2026-09-28T06:12:06Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 18 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>AgentWorld: Benchmarking Long-Horizon Collaboration of Multi-agent LLMs</title>
+    <link href="http://arxiv.org/abs/2609.31590v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.31590v1</id>
+    <published>2026-09-25T00:00:00Z</published>
+    <updated>2026-09-25T00:00:00Z</updated>
+    <author>
+      <name>Raphael Shu</name>
+    </author>
+    <author>
+      <name>Yusen Zhang</name>
+    </author>
+    <author>
+      <name>Young Min Cho</name>
+    </author>
+    <author>
+      <name>Jin Mo Yang</name>
+    </author>
+    <author>
+      <name>Yuan Yuan</name>
+    </author>
+    <author>
+      <name>Wenliang Zheng</name>
+    </author>
+    <author>
+      <name>Sharath Chandra Guntuku</name>
+    </author>
+    <author>
+      <name>Lyle Ungar</name>
+    </author>
+    <author>
+      <name>Zhou Yu</name>
+    </author>
+    <author>
+      <name>Rui Zhang</name>
+    </author>
+    <summary type="text">Existing multi-agent benchmarks primarily test in competitive settings, short-horizon interactions under 20 steps, or simply aggregate individual performance, failing to isolate and highlight genuine collaboration capabilities of LLM-based agents. We introduce AgentWorld, a benchmark of 100 human-annotated tasks (with 100 augmented variants) for evaluating long-horizon, multi-agent collaboration. Tasks span 50+ interaction rounds across a rich MMORPG sandbox and require 3-20 agents with asymmetric roles and abilities to coordinate through communication, joint planning, and resource sharing under a blackbox setting where each agent acts independently without access to others' internal states. To quantify collaboration effectiveness in addition to conventional binary task success, we propose Causal Collaboration Effectiveness (CCE), a graph-based metric that traces causal dependencies between agent actions and measures what fraction of a team's effort actually contributed to the outcome. Experiments with Gemini 3 Flash, Claude Haiku 4.5, GPT-5 Mini, and DeepSeek R1-70B show that even the best model achieves only 52.0% task success, with systematic failure modes including communication breakdowns, role confusion, and inability to maintain shared plans across rounds. AgentWorld is fully open-source.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; COLM 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Towards Mitigating Fabricated Consensus: The Active Provenance Gate for Multi-Agent Debate Synthesis</title>
+    <link href="http://arxiv.org/abs/2609.31422v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.31422v1</id>
+    <published>2026-09-25T00:00:00Z</published>
+    <updated>2026-09-25T00:00:00Z</updated>
+    <author>
+      <name>Jakub Masłowski</name>
+    </author>
+    <author>
+      <name>Jarosław A. Chudziak</name>
+    </author>
+    <summary type="text">Large language model-based multi-agent debate (MAD) systems are being increasingly used as complex decision pipelines in distributed processes. However, their final synthesis phase still remains inadequately controlled. Even with detailed debate logs, summarizing models are prone to fabricating smoothly written debate consensus that is not grounded in the debate's history. To address this safety gap, this paper presents empirical research and studies if the introduction of active post-debate verification can mitigate the production of such factually unsupported summaries, while still providing valuable information. Furthermore, it is examined whether explicitly signalling divergence is preferable in the absence of a reliable compromise. The Active Provenance Gate (APG) is introduced as a post-debate verification layer that treats the source as a hard constraint, analysing the debate logs, auditing each claim, and applying self-correction. In crisis simulations, the self-healing mechanism more than doubles the average data Provenance Fidelity in difficult condition scenarios, before the strict gate blocks unsupported claims and generates divergence reports. In the human study, a vast majority of the users (over 75%) preferred a report explicitly stating failure in critical scenarios, despite most of them perceiving fabricated consensus from the baseline system as more fluent. Our main contribution is the transition of data origin tracing from passive logging to active conditional blocking before publication.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Conference on Tools with Artificial Intelligence (ICTAI 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CL" />
+  </entry>
+  <entry>
+    <title>Collision-free Movement on Grids and Beyond</title>
+    <link href="http://arxiv.org/abs/2609.31099v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.31099v1</id>
+    <published>2026-09-25T00:00:00Z</published>
+    <updated>2026-09-25T00:00:00Z</updated>
+    <author>
+      <name>Hendrik Molter</name>
+    </author>
+    <author>
+      <name>Meirav Zehavi</name>
+    </author>
+    <summary type="text">We study collision-free movement problems on graphs, where the task is to coordinate a set of robots so that they reach a target formation satisfying a desired property while minimizing the total travel distance. This framework extends two classical models: (a) minimizing movement [Demaine et al., TALG '09, '14], which does not enforce collision avoidance, and (b) coordinated motion planning or multi-agent path finding [Eiben et al., SoCG '23, Deligkas et al., ICALP '24, among many others], where each robot is assigned an explicit target position.   We focus on the setting where the target formation of the robots should be connected. We analyze the parameterized complexity of the problem with respect to the number of (main) robots and the total travel length on grid graphs and two natural generalizations thereof: planar graphs and unit disk graphs.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.DS" />
+  </entry>
+  <entry>
+    <title>The Crowd in the Machine: A Crisis-Informatics Reading of the 2026 Autonomous Agent Incidents</title>
+    <link href="http://arxiv.org/abs/2609.31060v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.31060v1</id>
+    <published>2026-09-25T00:00:00Z</published>
+    <updated>2026-09-25T00:00:00Z</updated>
+    <author>
+      <name>Tomer Simon</name>
+    </author>
+    <summary type="text">Twice in 2026, groups of autonomous AI agents deployed by OpenAI for unrelated tasks operated, by design, under restrictions that left them no sanctioned means of coordinating with one another, and in each case they converged on whatever channel remained and used it to organize. The surfaces they used were widely called message boards. That is the wrong word. That is the wrong word. It names the surface the agents wrote on and misses the social network they built on it, with self-chosen identity, emergent norms, an emergent hierarchy, and collective action at cost to the individual. Decades of research in crisis informatics and disaster sociology find that when human populations lose their usual means of communication, they do not fall silent but converge on whatever channel survives and improvise coordination, norms, and identity on it, a pattern also evident in the agents' documented behavior. This paper is a comparative case study of the two incidents, based on published investigations and reconstructed agent records, read through those fields, and it brings into focus one distinction the message-board framing obscures. Whether such a collective coordinates well, whether the beliefs guiding it are accurate, and whether its actions stay within their authorized bounds are three separate matters that can come apart. Some agents in the cache incident adopted cryptographic signing to check whom they dealt with, even as the collective organized around a mistaken expectation that its work would be judged by an inspection of its transcripts, a reminder that mechanisms for trustworthy interaction guarantee neither accurate collective belief nor authorized collective action.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.SI" />
+  </entry>
+  <entry>
+    <title>ADF-EA: A Unified Execution Assurance System for Agent Device Foundation</title>
+    <link href="http://arxiv.org/abs/2609.30691v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.30691v1</id>
+    <published>2026-09-25T00:00:00Z</published>
+    <updated>2026-09-25T00:00:00Z</updated>
+    <author>
+      <name>Xuechun Li</name>
+    </author>
+    <author>
+      <name>Jiaxin Liang</name>
+    </author>
+    <author>
+      <name>Jie Li</name>
+    </author>
+    <author>
+      <name>baolong Li</name>
+    </author>
+    <author>
+      <name>Jue Wang</name>
+    </author>
+    <author>
+      <name>Peng Yuan</name>
+    </author>
+    <author>
+      <name>Hang Huang</name>
+    </author>
+    <summary type="text">Agents based on large language models (LLMs) can access heterogeneous devices through tools and APIs, but reliable execution must account for unmet effects, uncertain outcomes, and changing prerequisites. A command may be acknowledged without producing its intended effect, while missing feedback may obscure an action that has already succeeded. We present Agent Device Foundation--Execution Assurance (ADF-EA), an architecture that connects agent planning and device execution through shared capability contracts. Device Capability Contracts (DCCs) unify invocation conditions, intended effects, evidence requirements, and recovery rules across heterogeneous interfaces. Agents use these contracts to plan, while the runtime applies the same semantics to authorize actions, verify effects, and govern continuation and completion. Persistent execution state retains verified progress, unresolved outcomes, and remaining budgets across plan revisions, enabling observation-based recovery, authorized retries, and necessary state repair. We formalize the execution lifecycle and establish conditional soundness properties for completion and recovery authorization. Evaluations span multiple LLMs, five agent frameworks, and simulated process-control, household, and robotic manipulation domains. Compared with direct invocation and existing execution-checking approaches, ADF-EA reduces false completion and unnecessary repetition, supports necessary state repair, prevents calls to unavailable capabilities, and preserves permitted task completion and recovery. These results demonstrate DCCs as a reusable semantic foundation for agent autonomy across heterogeneous devices, unifying capability-based planning, evidence-grounded execution, and authorized recovery within one architecture.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>REAT: A Reflective Experience-Augmented Tutoring Framework for Multi-turn Mathematical Instruction</title>
     <link href="http://arxiv.org/abs/2609.29804v1" rel="alternate" type="text/html" />
@@ -285,126 +406,6 @@
     <summary type="text">Large language model agents increasingly retrieve reusable Skills and inject them into the active context. However, a retrieved Skill can be relevant yet unnecessary, costly, or even harmful in the current execution state. We present SkillApt, a post-retrieval activation framework that decides whether a retrieved Skill should actually be loaded. SkillApt builds execution evidence from matched WITH/WITHOUT runs and uses outcomes from similar historical states to make a LOAD/ABSTAIN decision for each candidate Skill. On the frozen confirmatory SRA-Bench evaluation, SkillApt-E achieved the same observed accuracy as BM25 Top-1 (0.838 vs. 0.838) while reducing the Skill activation rate from 100% to 31.5% and mean token usage by 74.3%. Further diagnostics show that both Skill utility and the learnability of its activation boundary vary across base models. These results suggest that Skill retrieval and Skill activation should be treated as separate decisions: retrieval identifies which Skill may be relevant, while SkillApt determines whether using it is worthwhile in the current state.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 11 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Perception-Aware Communication Middleware for Distributed Visual Perception in UAV Swarms</title>
-    <link href="http://arxiv.org/abs/2609.24964v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.24964v1</id>
-    <published>2026-09-21T00:00:00Z</published>
-    <updated>2026-09-21T00:00:00Z</updated>
-    <author>
-      <name>Manveen Kaur</name>
-    </author>
-    <author>
-      <name>Kevin Loi</name>
-    </author>
-    <author>
-      <name>Ifunanya Okafor</name>
-    </author>
-    <author>
-      <name>Daniel Ng</name>
-    </author>
-    <author>
-      <name>Joseph Lucey-Renteria</name>
-    </author>
-    <summary type="text">Unmanned Aerial Vehicle (UAV) swarms increasingly support safety-critical applications that rely on distributed visual perception. Meeting the low-latency requirements of these applications can require perception models to execute within the swarm on inference-capable UAVs, creating a need for efficient UAV-to-UAV transport of high-bandwidth perception data. However, the Quality-of-Service (QoS) requirements of perception differ from conventional packet-level QoS; successful delivery of individual packets does not ensure that a complete, timely, and usable image is available for inference. We present a novel perception-aware communication middleware that treats complete perception-data samples as the communication objects for which QoS must be satisfied. The middleware extends a lightweight UDP broker-based publish-subscribe architecture with perception-specific services, including image fragmentation and reconstruction, concurrent packet transmission, priority-aware scheduling, and image quality assessment. The middleware is evaluated on a heterogeneous hardware testbed emulating a UAV swarm using YOLOv8n object detection. Experimental results demonstrate low end-to-end application latency, substantially higher throughput than a lightweight UDP broker, effective prioritization of perception traffic under increasing background load, and mitigation of object-detection degradation through middleware-level image quality assessment. This work provides an initial framework for integrating AI-specific data handling into communication middleware to support emerging distributed AI applications in multi-agent mobile cyber-physical systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Mixed-integer flow formulations for motion planning and decision-making of networked multi-agent systems</title>
-    <link href="http://arxiv.org/abs/2609.24474v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.24474v1</id>
-    <published>2026-09-21T00:00:00Z</published>
-    <updated>2026-09-21T00:00:00Z</updated>
-    <author>
-      <name>Angelo Caregnato-Neto</name>
-    </author>
-    <author>
-      <name>Paul-Louis Delacour</name>
-    </author>
-    <author>
-      <name>Raf Van de Plas</name>
-    </author>
-    <author>
-      <name>Tamás Keviczky</name>
-    </author>
-    <author>
-      <name>Janito Vaqueiro Ferreira</name>
-    </author>
-    <summary type="text">This work investigates the use of flow-based connectivity maintenance constraints in mixed-integer linear programming (MILP) trajectory planning and decision-making models for networked multi-agent systems (MAS). We integrate flow-based encodings for standard and k-hop connectivity into MILP multi-vehicle maneuvering models that are widely used alongside receding horizon planning strategies. Their necessity and sufficiency is demonstrated, guaranteeing full coverage of potential network topologies. The flow formulation for standard connectivity decreases the growth of the required inequality constraints from exponential to polynomial w.r.t. the size of the MAS when compared to the state-of-the-art subtour elimination (SEC) method. The flow-based k-hop connectivity constraints decrease the number of required binary variables and decouple its growth from the number of hops. However, the impact of these formulations in performance is not straightforward due to the introduction of a substantial number of continuous flow optimization variables and, in the case of k-hop connectivity, additional inequality constraints. We investigate this trade-off through a statistical evaluation of costs and optimization times using a conventional branch-and-bound commercial solver and trials performed with randomized environments for increasingly larger MAS. The results show that the flow formulation outperforms SEC in standard connectivity problems, enabling the solutions to be computed for larger MAS considering the imposed optimization time limit. The reduction in number of binary variables enabled by the k-hop flow formulations decreases the theoretical worst-case number of iterations required by the branch-and-bound algorithm to compute the global optimal solution. Our results show that this advantage did not translate into improvements in the average performance when compared to the baseline.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>A Task-Oriented Multi-Agent Framework for Complex Wearable Health Analysis</title>
-    <link href="http://arxiv.org/abs/2609.24107v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.24107v1</id>
-    <published>2026-09-21T00:00:00Z</published>
-    <updated>2026-09-21T00:00:00Z</updated>
-    <author>
-      <name>Kunpeng Yang</name>
-    </author>
-    <summary type="text">Wearable health questions often combine data retrieval, longitudinal analysis, and health advice over structured records. Prompting a single large language model with a complete record and a composite query obscures whether every request is executed and which evidence supports the answer. We propose a task-oriented multi-agent framework that represents a composite query as distinct intents and typed tasks with explicit intra-intent dependencies. Specialized agents execute retrieval, analysis, and advice tasks; isolated intent states preserve request boundaries and evidence relationships before aggregation. We evaluate the framework on a synthetic dataset of $10{,}000$ virtual users with one month of longitudinal wearable records, covering structured data retrieval, multi-intent recognition, and overall response quality. Across $1{,}500$ retrieval questions, the Query Agent achieves $98.3\%$ accuracy, compared with $97.9\%$ for the Direct LLM baseline, while reducing average query-stage token consumption from $6{,}869$ to $3{,}136$. On $180$ multi-intent questions, the Manager Agent achieves $100.0\%$ Multi-Intent Coverage and $94.4\%$ Multiset Jaccard Similarity. Under the current synthetic evaluation setting, our method receives higher mean Trustworthiness and Transparency scores on both question categories, whereas Actionability does not improve consistently. These results provide preliminary evidence that explicit task organization can support task-relevant data access and data-grounded longitudinal analysis, while leaving health advice generation and validation on real wearable data as open challenges.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Tipping Points in LLM-Based Multi-Agent Systems: Stance on Climate Change Action</title>
-    <link href="http://arxiv.org/abs/2609.25432v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.25432v1</id>
-    <published>2026-09-21T00:00:00Z</published>
-    <updated>2026-09-21T00:00:00Z</updated>
-    <author>
-      <name>Astghik Altunyan</name>
-    </author>
-    <author>
-      <name>Shimon Edelman</name>
-    </author>
-    <summary type="text">Because significant action to counter global warming requires massive public support, it is important to understand the dynamics of public opinion on climate issues. Of special interest are social tipping points, as revealed by large-scale effects of small perturbations in individual behaviors. Agent-based models (ABM) are an effective computational tool for studying these matters, because they allow controlled and systematic exploration of the effects of interventions that may be infeasible in real-world social systems. Large language models (LLMs) have been used to endow model agents with the ability to communicate in natural language (rather than by exchanging predefined messages), as well as with personality (in the form of a narrative self and episodic memory). We leverage LLM-powered ABM to look for tipping points in the social dynamics of a micro-society in which some of the discussions are about climate change. Our agents' stance was defined by two variables: the strength of conviction about the urgency of climate action and the degree of trust in existing institutions. We quantified shifts in agents' "beliefs" by monitoring, across multiple rounds of conversations, (1) inter-agent distances in this two-dimensional stance space and (2) the patterns of discussion topics as modeled by Latent Dirichlet Allocation (LDA). Our findings to date suggest that significant abrupt changes in climate-change stance do occur in this simple model. We report a number of methodological lessons from this study, notably, the need to prevent LLM biases from interfering with the conversational dynamics and, more generally, to maintain agent personality and episodic memories of interactions in the face of such biases. Resolving these issues may allow for using ABM-derived insights in designing real-life interventions vis-a-vis climate change and other important societal challenges.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.CY" />
-  </entry>
-  <entry>
-    <title>Indirect tipping: a social attack surface in AI agent populations</title>
-    <link href="http://arxiv.org/abs/2609.25194v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.25194v1</id>
-    <published>2026-09-21T00:00:00Z</published>
-    <updated>2026-09-21T00:00:00Z</updated>
-    <author>
-      <name>Ariel Flint</name>
-    </author>
-    <author>
-      <name>Luca Maria Aiello</name>
-    </author>
-    <author>
-      <name>Sara M. Constantino</name>
-    </author>
-    <author>
-      <name>Romualdo Pastor-Satorras</name>
-    </author>
-    <author>
-      <name>Andrea Baronchelli</name>
-    </author>
-    <summary type="text">As generative AI agents are deployed at scale, safety will depend not only on technical safeguards and individual model design, but also on collective equilibria that determine how agent populations process information, prioritize actions, and respond to uncertainty. Yet the same equilibria that enable agents to coordinate also create a social attack surface. The standard framework to assess this vulnerability is critical mass dynamics: the minimum fraction of adversarial agents required to overturn an equilibrium through direct competition. Here, we show that this approach risks underestimating system vulnerability by reducing the problem to the identification of singular tipping points, and ignoring indirect but potentially more efficient routes through which collective behavior can be redirected. Through experiments with populations of LLM agents and an analytic framework that captures their collective dynamics at scale, we map critical-mass thresholds that define a directed, weighted topology over the space of coordination equilibria, and treat this topology as a navigable landscape. We show that indirect tipping through intermediate stepping-stone equilibria can reduce the committed minority required to reach an alternative state, bypass majority requirements, and make possible transitions inaccessible through direct challenges. The diversity of available alternatives and timing of the attack further reshape this landscape, creating opportunities for control as well as risks of unintended destabilization. These results show that an equilibrium's resistance to committed intervention is not an intrinsic property but a structural feature of its competitive relations with alternative states. Securing populations of interacting AI agents therefore requires mapping this social landscape alongside individual agent capabilities and the technical channels through which they interact.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.CY; eess.SY" />
-  </entry>
-  <entry>
-    <title>When Does Communication Help? Beyond Spectral Descriptions of Collective Intelligence</title>
-    <link href="http://arxiv.org/abs/2609.23310v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.23310v1</id>
-    <published>2026-09-20T00:00:00Z</published>
-    <updated>2026-09-20T00:00:00Z</updated>
-    <author>
-      <name>Xuening Wu</name>
-    </author>
-    <summary type="text">Communication can bring agents into agreement while making their decisions worse. We identify two limits of aggregate descriptions of communication gain in distributed inference. First, stable linear systems with fixed evidence, network and readout can have interaction and finite-time state operators with identical eigenvalue and singular-value spectra, yet produce gains of opposite sign. Changing only message orientation raises accuracy from 72.6% to 91.2% or lowers it to 65.9%. A standard task-projected local-response approximation retains the directional information missing from spectral summaries. Using labeled calibration data separate from the test set, it predicts multi-round gains in small trained nonlinear agents with a root-mean-square error of 0.45 percentage points on two synthetic tasks; tests with natural edge changes and handwritten digits extend the evaluation. Second, under community-shared bias, higher mean individual accuracy can coexist with harm to unaffected communities or lower global-vote accuracy. At fixed communication rounds, calibration constraints reduce observed community harm while retaining much of the mean benefit, but do not guarantee protection. Full direct calibration performs similarly. The results connect spectral insufficiency, task-aware prediction and the distribution of communication benefits, while leaving broad transfer and practical superiority open.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
 </feed>
