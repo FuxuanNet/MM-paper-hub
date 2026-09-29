@@ -4,12 +4,267 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-28T06:12:06Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 18 entries</subtitle>
+  <updated>2026-09-29T06:30:38Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 24 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Positional choice and robust collective behavior in fish schools: biohybrid experiments and modeling</title>
+    <link href="http://arxiv.org/abs/2609.35554v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.35554v1</id>
+    <published>2026-09-28T00:00:00Z</published>
+    <updated>2026-09-28T00:00:00Z</updated>
+    <author>
+      <name>Vahagn Grigoryan</name>
+    </author>
+    <author>
+      <name>Donato Romano</name>
+    </author>
+    <author>
+      <name>Cesare Stefanini</name>
+    </author>
+    <author>
+      <name>Giulia De Masi</name>
+    </author>
+    <summary type="text">Collective behavior of fish schools is usually modeled on the assumption that each individual follows specific rules of motion that depend on its position and velocity relative to its neighbors. Although these models reproduce many schooling patterns observed in nature, it remains unclear whether the assumed rules are realistic at the individual level. To address this question, we first analyzed a set of experiments in which a live fish interacted with four moving robotic fish in a tank, and measured the time it spent in each position relative to the robots. We then simulated this experiment, replacing the fish with an agent, and assessed the extent to which classical models agree with the experimental observations. An extensive exploration of the parameter space showed that these models closely matched the experimental observations, with a very specific choice of parameters. However, they were highly sensitive to the parameter values: a minor perturbation caused them to fail completely. To resolve this, we propose a new model that incorporates an additional exploratory term characterizing the agent's positional preference at every moment. This model proved robust to small errors in the parameters while successfully replicating the experiments. Furthermore, when generalised to multiple fish, the model reproduced schooling behaviour and common schooling patterns, while also exhibiting exploratory behaviour at both the individual and the school level. This shows that social cohesion coexists with individual exploratory behaviour, and that realistic models of collective behaviour should account for both social interactions and this exploratory component.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 38 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>CEO Arena: Evaluating Long-Horizon Multi-Agent Decision-Making in Competitive Markets</title>
+    <link href="http://arxiv.org/abs/2609.34821v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.34821v1</id>
+    <published>2026-09-28T00:00:00Z</published>
+    <updated>2026-09-28T00:00:00Z</updated>
+    <author>
+      <name>An Yan</name>
+    </author>
+    <author>
+      <name>Yu Huo</name>
+    </author>
+    <author>
+      <name>Zhiwei Shang</name>
+    </author>
+    <author>
+      <name>Yiran Peng</name>
+    </author>
+    <author>
+      <name>Chenglin Wu</name>
+    </author>
+    <summary type="text">Long-horizon competition tests agents' ability to coordinate business decisions under uncertainty and adapt to changing rival strategies. We introduce CEO Arena, a benchmark that uses matched replacement evaluation to assess operating returns alongside an agent's effects on rivals and the market. Each CEO agent is compared with a reference policy in the same company under the same economic seed, holding other agents' identities and assignments fixed while all agents adapt. In a shared eight-company market spanning 500 simulated days, CEOs make sequential decisions on pricing, procurement, marketing, research and development, and service using private company information and noisy market signals, under resource constraints and delayed feedback. We evaluate eight LLM-based CEO agents in 27 main runs and 26 robustness runs. In the main evaluation, most agents have negative mean returns, and private gains can accompany market losses. Robustness analyses suggest that aggregate patterns extend beyond the original rule-based baseline; four of the 56 directed pairs show relatively stable effects. Memory, action, and accounting traces suggest demand capture and rivals' pricing and spending responses as possible explanations. CEO Arena provides a controlled testbed for studying long-horizon agent competition, strategic interaction, and market externalities.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2027&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>MASTraceBench: Diagnosing Collaboration Gains through Proposal Trajectories in LLM-Based Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2609.34496v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.34496v1</id>
+    <published>2026-09-28T00:00:00Z</published>
+    <updated>2026-09-28T00:00:00Z</updated>
+    <author>
+      <name>Yapeng Li</name>
+    </author>
+    <author>
+      <name>Songze Li</name>
+    </author>
+    <author>
+      <name>Shuang Yu</name>
+    </author>
+    <author>
+      <name>Jing Yu</name>
+    </author>
+    <author>
+      <name>Zhixin Liu</name>
+    </author>
+    <author>
+      <name>Liqiang Wen</name>
+    </author>
+    <author>
+      <name>Tonghua Su</name>
+    </author>
+    <summary type="text">LLM-based multi-agent systems (MAS) have shown promise in complex problem solving. As MAS methods diversify, systematic evaluation becomes increasingly challenging. However, existing benchmarks largely focus on final outcomes, leaving unclear how collaboration gains arise, are preserved, or are lost. To address this limitation, we introduce MASTraceBench, a benchmark for diagnosing collaboration gains through proposal trajectories in MAS. Across six cooperative and competitive tasks, MASTraceBench tracks and grades proposal trajectories and provides a multi-layer metric suite covering Task Score, Collaboration Gain, proposal-trajectory indicators, and Token Cost. Using MASTraceBench, we systematically compare representative MAS methods not only by final performance, but also by how agent proposals evolve and are aggregated into the final answer. This analysis reveals a recurring pattern: final MAS answers rarely surpass the strongest initial proposal; interaction often lifts initially weaker proposals toward it, while strong initial proposals are seldom further improved and may regress. To reduce this risk, we propose CLEARS, which replaces whole-proposal exchange with claim-level evaluation across agents to guide reliable synthesis. CLEARS more often preserves or improves upon the strongest initial proposal and achieves the highest Collaboration Gain on five of the six tasks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Prospective Interpretation Risk: Principled Communication Control Between LLMs</title>
+    <link href="http://arxiv.org/abs/2609.33885v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.33885v1</id>
+    <published>2026-09-27T00:00:00Z</published>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <author>
+      <name>Wanrong Yang</name>
+    </author>
+    <author>
+      <name>Rehan Deen</name>
+    </author>
+    <author>
+      <name>Julian Ma</name>
+    </author>
+    <author>
+      <name>Yuheng Fan</name>
+    </author>
+    <author>
+      <name>Yaoyu Jin</name>
+    </author>
+    <author>
+      <name>Taher Jafferjee</name>
+    </author>
+    <author>
+      <name>Ziquan Liu</name>
+    </author>
+    <author>
+      <name>Dominik Wojtczak</name>
+    </author>
+    <author>
+      <name>Yalin Zheng</name>
+    </author>
+    <author>
+      <name>David Henry Mguni</name>
+    </author>
+    <summary type="text">Large language model (LLM) agentic systems increasingly rely on models communicating with one another, yet existing uncertainty and multi-agent methods rarely estimate how a particular receiver will interpret a message before it is sent. This matters in heterogeneous systems, where capable receivers can reconstruct different tasks from the same message. We model this as a sender-receiver problem with a latent receiver type and define prospective interpretation risk (PIR): the probability that a receiver reconstructs a task other than intended. Rather than model an LLM's full input-output behaviour, we use black-box probes relating messages, intended tasks, and receiver-specific reconstructions, yielding scalable supervision while separating interpretation from downstream capability failure. Offline, heterogeneous frozen receivers provide supervision for receiver-conditioned risk and the effects of predefined mutable message features. At deployment, history induces a posterior over receiver types, guiding message revision and selection. We introduce value of interpretation information (VoII), querying for receiver information only when its expected communication benefit exceeds its cost. Our theory characterises when receiver information has decision value and bounds such queries. Empirically, interpretation-failure rates vary by 4-13x across receivers. Receiver information reduces PIR calibration error by 68% relative to a receiver-agnostic predictor, largely by correcting receiver-specific risk levels. PIR-guided revision reduces interpretation failure by 44% relative to the original message and 40% relative to a generic rewrite, mostly through a repair that helps every receiver. VoII outperforms information-gain and random querying at matched cost on the interpretation objective it optimises, lowering interpretation failure from 3.84% to 3.79% while querying 18.2% of episodes.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Population Physics, Population Problems: Safety and Emergence in LLM Societies</title>
+    <link href="http://arxiv.org/abs/2609.33871v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.33871v1</id>
+    <published>2026-09-27T00:00:00Z</published>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <author>
+      <name>Adrian de Wynter</name>
+    </author>
+    <summary type="text">The collective behaviour of large language model (LLM) societies is not the sum of their individual outputs. It yields statistically distinct, sometimes-unpredictable phenomena, for which the tools we use to study single agents may not scale. Due to recent incidents involving autonomous agentic systems, however, understanding these systems is paramount. For that we introduce a framework for measuring self-organisation in LLM social systems and apply it to three such systems: a Schelling grid, a social network (Moltbook), and a Twitter-like misinformation simulation ('Rogue'). All three exhibit statistically significant self-organisation. Moreover, their relaxation dynamics vary with the environmental information available to the agents, with open-ended systems (Moltbook, Rogue) exhibiting sharp, phase-transition-like dynamics. Further results show that population-level pathologies can emerge even when the LLMs are safety-tuned or monitored, being primarily driven by the coordinated activity of a population subset. We also show when self-organisation does \textit{not} emerge under two additional scenarios (a commons dilemma, GovSim, and a LLM-as-a-judge deliberation scheme, ChatEval). We argue that measuring signatures of this kind offers a lightweight, agent-agnostic diagnostic layer for detecting coordinated collective behaviour in deployed multi-agent systems without relying on natural language or model versioning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL" />
+  </entry>
+  <entry>
+    <title>TRACE: Governing Memory Validity in Evolving Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2609.33517v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.33517v1</id>
+    <published>2026-09-27T00:00:00Z</published>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <author>
+      <name>Wenjun Xiong</name>
+    </author>
+    <author>
+      <name>Shengtao Zhang</name>
+    </author>
+    <author>
+      <name>Shangding Gu</name>
+    </author>
+    <author>
+      <name>Bo Tang</name>
+    </author>
+    <author>
+      <name>Zhiyu Li</name>
+    </author>
+    <author>
+      <name>Feiyu Xiong</name>
+    </author>
+    <author>
+      <name>Ying Wen</name>
+    </author>
+    <author>
+      <name>Muning Wen</name>
+    </author>
+    <summary type="text">Persistent memory lets language-model agents carry information across long-running collaborations, but leaves a lifecycle question open: what may a returning agent still act on once the shared state has changed? A memory can be correctly retrieved, relevant to the current task, and faithful to its source, and nonetheless be inadmissible for action: an itinerary saved before a pause still names the hotel the team has since replaced. We formalize this as temporal memory admission and present TRACE, a training-free layer that treats re-entry as an eligibility decision rather than a storage or retrieval operation, reconciling a departure checkpoint against absence-period updates, resolving explicit and implicit invalidation, and releasing a bounded Return View only when it covers the returning role's open obligations. We evaluate TRACE under three actor models on Memora, STALE Type II, and a derived ManBench-Return setting, each recast as return episodes: one agent departs, four teammates change the shared state, and the agent rejoins. What separates methods is not overall accuracy but whether one can retain valid memory and reject stale memory at once, and no single-policy baseline can: Restore (reinstate the departure checkpoint in full) admits stale state, Reset (start the return from an empty memory) discards valid state, each bottoming out at 0% on one of the two. TRACE is the only method high on both, reaching 92.6-98.3% valid-information availability with 98.4-99.5% invalid-information rejection on ManBench-Return, within 3.8 points of the best baseline's overall accuracy. On STALE Type II it improves Overall over the strongest comparison policy by 22.3 (Qwen), 18.5 (Gemini), and 27.5 (DeepSeek) points at roughly 2.3 times their tokens, while a write-time consolidation pipeline is more accurate still at 3.99 times TRACE's.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 41 pages, including appendices. Code: https://github.com/xiong-wenjun/TRACE&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>ORBIT: A Framework for Multi-Agent Safety and Security Evaluations</title>
+    <link href="http://arxiv.org/abs/2609.33102v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.33102v1</id>
+    <published>2026-09-27T00:00:00Z</published>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <author>
+      <name>Ben Hagag</name>
+    </author>
+    <author>
+      <name>William L. Anderson</name>
+    </author>
+    <author>
+      <name>Srija Chakraborty</name>
+    </author>
+    <author>
+      <name>Christian Schroeder de Witt</name>
+    </author>
+    <summary type="text">Multi-agent LLM systems are increasingly deployed for complex, long-horizon tasks or emerge as a natural consequence of agents interacting in the wild. Yet they give rise to significant safety and security risks: the flexible protocols that enable task generalization also expose novel threats, from cascading prompt injection to inter-agent collusion. Progress in defending against these threats has been slowed by a lack of shared empirical infrastructure, which forces bespoke environment development for every new defense and makes standardized comparison impossible. Existing evaluations address isolated threat models or single-agent settings, but none jointly vary attack, defense, and architecture across realistic multi-agent environments. To address this gap, we introduce ORBIT, a configurable evaluation framework for empirical multi-agent safety and security research, built on UK AISI's Inspect. ORBIT lets researchers configure communication topologies, memory, scheduling, and agent roles. It supports four threat types and four defense strategies, as well as non-adversarial failures, with a benchmark suite spanning five scenario families covering browser use, computer use, agentic coding, customer service, and cooperative allocation. Our central finding is a gap in defense transferability across threats: per-action defenses that cut a compromised agent's attack success by 60 points on multi-issue coding give no measurable protection against colluding agents, and none of the defenses we tested generalized over all attacks tested. We further demonstrate security-performance tradeoffs and interactions between architecture and defense effectiveness. We make ORBIT available open-source at https://github.com/wlanderson0/orbit.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/wlanderson0/orbit"&gt;https://github.com/wlanderson0/orbit&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CR" />
+  </entry>
+  <entry>
+    <title>Adaptive and Resilient Dual-Layer Resource Slicing for Hovering Aerial Backhaul Networks</title>
+    <link href="http://arxiv.org/abs/2609.32798v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.32798v1</id>
+    <published>2026-09-26T00:00:00Z</published>
+    <updated>2026-09-26T00:00:00Z</updated>
+    <author>
+      <name>Chuan-Chi Lai</name>
+    </author>
+    <author>
+      <name>Jen-Hsiang Li</name>
+    </author>
+    <summary type="text">This paper investigates adaptive and resilient dual-layer resource slicing in hovering aerial agent (HAA)-assisted backhaul networks for heterogeneous 5G/6G services, including enhanced mobile broadband (eMBB), ultra-reliable and low-latency communications (URLLC), and massive machine-type communications (mMTC). To address the complex coupling of this dual-layer architecture in non-stationary environments, we propose the resilient adaptive priority orchestration enhanced twin delayed deep deterministic policy gradient (RAPO-TD3) framework. We introduce a novel double soft-max projection mechanism to map the continuous action space into physically feasible bandwidth distributions, ensuring strict constraint adherence. Additionally, a resilient adaptive priority orchestration (RAPO) mechanism is embedded to safeguard mission-critical URLLC latency. Crucially, we establish a rigorous mathematical foundation proving that our framework ensures Lipschitz continuity and satisfies the Robbins-Monro conditions for stable asymptotic convergence. Extensive simulations under non-stationary traffic demonstrate that our RAPO-TD3 framework achieves superior performance relative to PPO, DDPG, and traditional solvers. Notably, via the RAPO mechanism, our approach maintains URLLC satisfaction levels closely approaching theoretical optima even during 500% demand surges. Furthermore, scalability evaluations indicate that sub-millisecond execution latencies strictly satisfy the 1 ms URLLC budget, demonstrating the performance efficacy of our proposed framework.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 6 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.NI" />
+  </entry>
+  <entry>
+    <title>Self-Evolving Multi-Agent Symbolic Discovery for Financial Fundamental Analysis</title>
+    <link href="http://arxiv.org/abs/2609.32746v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.32746v1</id>
+    <published>2026-09-26T00:00:00Z</published>
+    <updated>2026-09-26T00:00:00Z</updated>
+    <author>
+      <name>Kelvin J. L. Koa</name>
+    </author>
+    <author>
+      <name>Filip Orestav</name>
+    </author>
+    <author>
+      <name>Shengqiong Wu</name>
+    </author>
+    <author>
+      <name>Michael J. Wooldridge</name>
+    </author>
+    <author>
+      <name>Ke-Wei Huang</name>
+    </author>
+    <summary type="text">While symbolic regression (SR) has been successfully used in science to discover new equations, its use in financial valuation is hindered by several limitations. Whereas the natural sciences provide objectively correct relationships, financial valuation constitutes a distinct class of symbolic discovery problems, as it admits multiple valid perspectives, operates under non-stationary market conditions, and involves noisy, continuous performance signals. In this work, we propose Multi-Agent Fundamental Analysis with Symbolic Adaptive learning (MUFASA), a hierarchical multi-agent framework for symbolic discovery in finance. MUFASA introduces (1) disentangled equation discovery via specialized agents representing distinct valuation perspectives, (2) a meta-coordinator that performs hierarchical-level reasoning over market context information, and (3) a memory mechanism that reasons over statistical performance summaries (e.g., accuracy, stability, and tail risk) to guide learning under noisy feedback. Experiments across datasets from multiple countries show that MUFASA achieves state-of-the-art performance on the valuation task compared to classical finance methods, financial large language models, and SR approaches, while simultaneously producing interpretable equations, which we share with the community. We also make publicly available the distilled learnings across evolution iterations and context-dependent strategy weights, which might offer useful insights for future research on financial fundamental analysis.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; Machine Learning; q-fin.CP" />
+  </entry>
+  <entry>
+    <title>Robust Game-theoretic Motion Planning over Extended Time Horizons</title>
+    <link href="http://arxiv.org/abs/2609.32098v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.32098v1</id>
+    <published>2026-09-26T00:00:00Z</published>
+    <updated>2026-09-26T00:00:00Z</updated>
+    <author>
+      <name>Bennet Outland</name>
+    </author>
+    <author>
+      <name>Vishala Arya</name>
+    </author>
+    <summary type="text">This work presents a solution to nonconvex, game-theoretic motion planning problems subject to disturbances over long time horizons. The problem is posed as a partially-decoupled generalized Nash equilibrium problem, in which each agent's dynamics depend only on its own state and control, admitting fast solution methods for competitive multi-agent motion planning. An algorithm, WOLF, is developed that applies receding-horizon model predictive control to an open-loop differential games solver based on sequential convexification. In contrast to robust formulations that fix the uncertainty description offline, the robustness tube here is itself a dynamic state, co-optimized with the trajectory, and its thickness directly sets the tightening of the shared coupling constraints. A sufficient condition is derived under which a nominal trajectory satisfying constraints tightened against all agents' error bounds remains feasible for every admissible disturbance realization. The method is demonstrated on two adversarial on-orbit games with coupled translational-attitude dynamics: a stealthy co-orbital jamming game under an active detection-probability bound, and a sun-blocking game in which an adversary disables an evader by decreasing solar power</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="eess.SY" />
+  </entry>
   <entry>
     <title>AgentWorld: Benchmarking Long-Horizon Collaboration of Multi-agent LLMs</title>
     <link href="http://arxiv.org/abs/2609.31590v1" rel="alternate" type="text/html" />
@@ -132,9 +387,73 @@
     <category term="Multiagent Systems" />
   </entry>
   <entry>
+    <title>On Evaluating and Improving Conversational Agents in Production</title>
+    <link href="http://arxiv.org/abs/2609.32092v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.32092v1</id>
+    <published>2026-09-25T00:00:00Z</published>
+    <updated>2026-09-25T00:00:00Z</updated>
+    <author>
+      <name>Kasra Hosseini</name>
+    </author>
+    <author>
+      <name>Wen-Sen Cheng</name>
+    </author>
+    <author>
+      <name>Marco-Andrea Buchmann</name>
+    </author>
+    <author>
+      <name>Emir Mulabegovic</name>
+    </author>
+    <author>
+      <name>Weiwei Cheng</name>
+    </author>
+    <summary type="text">We present a framework for evaluating and improving a large-scale, multi-agent shopping assistant in production, and report lessons from its use. Offline evaluation of such a system faces three obstacles. (i) A logged conversation cannot be replayed against a modified system, because a different response changes every turn that follows. (ii) The unchanged system itself varies from run to run. Its LLM components are stochastic, and in product search the available products, their prices, and the customer's personalization signals change. (iii) Aggregate quality scores combine distinct behaviors, so they show that quality has changed but not which behavior caused the change. Our framework addresses each obstacle in turn. For a reported behavior, an Evaluation Harness generates targeted assertions and a fixed cohort of customer scenarios. It then reproduces the behavior in a local instance of the assistant through grounded user simulation. Instead of replaying the log, the simulator writes new customer turns conditioned on the recorded messages and context. Repeated runs of the unchanged system form a stored baseline. An Improvement Orchestrator turns the assertion results into hypotheses, implements each as an isolated modification, and compares it with the baseline using paired percentile bootstrap intervals over scenario-level differences. When an investigation ends, the harness may propose revisions to future evaluations, subject to human approval and without altering past decisions. We report production investigations with this framework. Assertion profiles showed which positions of a product carousel a failure affected, and repeated runs distinguished a real improvement from run-to-run fluctuation. Audits of the evaluation itself found a judge that lacked the evidence it needed and a model setting that was configured but not applied.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 pages, 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CL; cs.ET" />
+  </entry>
+  <entry>
     <title>REAT: A Reflective Experience-Augmented Tutoring Framework for Multi-turn Mathematical Instruction</title>
     <link href="http://arxiv.org/abs/2609.29804v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2609.29804v1</id>
+    <published>2026-09-24T00:00:00Z</published>
+    <updated>2026-09-24T00:00:00Z</updated>
+    <author>
+      <name>Jianheng Zhou</name>
+    </author>
+    <author>
+      <name>Chaoli Zhang</name>
+    </author>
+    <author>
+      <name>Xingjun Wei</name>
+    </author>
+    <author>
+      <name>Xinliang Zhou</name>
+    </author>
+    <author>
+      <name>Giancarlo Fortino</name>
+    </author>
+    <author>
+      <name>Xing Fan</name>
+    </author>
+    <author>
+      <name>Yanfeng Wang</name>
+    </author>
+    <author>
+      <name>Qingsong Wen</name>
+    </author>
+    <author>
+      <name>Haoyang Li</name>
+    </author>
+    <summary type="text">Current Large Language Models (LLMs) excel at solving complex mathematical problems, yet this proficiency does not inherently translate into effective tutoring. While advanced LLM tutors may leverage multi-agent frameworks or fine-tuning, most still lack a mechanism to systematically accumulate and reuse pedagogical experience over time, limiting their adaptability to diverse student needs during fluid, multi-turn interactions. To bridge this gap, we propose the Reflective Experience-Augmented Tutoring (REAT) framework, which couples experience distillation from historical dialogues with real-time adaptive retrieval. Driven by a multi-agent Observer-Critic-Mentor (OCM) distillation pipeline, REAT reviews past conversational trajectories and distills raw interactions into structured, problem-agnostic pedagogical experiences. During live tutoring, a state-aware retrieval module injects these curated experiences to provide adaptive scaffolding based on the student's cognitive state. Experiments demonstrate that the proposed framework significantly outperforms both prompt-only and supervised fine-tuning (SFT) baselines, particularly in improving complex, low-scoring tutoring scenarios. Crucially, the distilled experiences exhibit robust generalization across diverse model architectures and mathematical datasets.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>REAT: A Reflective Experience-Augmented Tutoring Framework for Multi-turn Mathematical Instruction</title>
+    <link href="http://arxiv.org/abs/2609.29804v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.29804v2</id>
     <published>2026-09-24T00:00:00Z</published>
     <updated>2026-09-24T00:00:00Z</updated>
     <author>
@@ -286,126 +605,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multimedia" />
     <category term="Artificial Intelligence; Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Behavior is Not Enough: A Mechanism-Based Evaluation of Social Norm Emergence in LLM Societies</title>
-    <link href="http://arxiv.org/abs/2609.26481v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.26481v1</id>
-    <published>2026-09-22T00:00:00Z</published>
-    <updated>2026-09-22T00:00:00Z</updated>
-    <author>
-      <name>Rasika Muralidharan</name>
-    </author>
-    <author>
-      <name>Haewoon Kwak</name>
-    </author>
-    <author>
-      <name>Jisun An</name>
-    </author>
-    <summary type="text">Social norms cannot be identified from behavior alone: the same cooperative equilibrium may reflect shared expectations, strategic incentives, or simple imitation. Yet in multi-agent large language model systems, prior work largely treats behavioral convergence as evidence of norm emergence. In this work, we introduce an evaluation framework that measures agents' reported empirical and normative expectations in addition to behavioral convergence. Through controlled ablations, we test the effect of expectation elicitation and isolate two collective mechanisms central to theories of norm formation---social learning through interaction and social selection through network-based group formation. We further test the stability of these resulting dynamics under adversarial disruption across four LLM families. We find that eliciting expectations increases cooperative contributions, while social learning stabilizes behavior, and social selection reliably identifies cooperators but provides limited behavioral reinforcement. Following disruption, normative expectations and behavioral coordination recover differently. Together, these results show that similar cooperative outcomes can arise from different underlying social processes. By making expectations observable, our framework allows us to attribute each mechanism's contribution separately, offering designers of multi-agent systems a principled basis for selecting the social processes that sustain cooperation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; AAAI 2027&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.CL; cs.CY; cs.GT" />
-  </entry>
-  <entry>
-    <title>MATES: Learning Multi-Agent Interactions by Transforming Observations for Frozen Single-Agent Policies</title>
-    <link href="http://arxiv.org/abs/2609.26010v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.26010v1</id>
-    <published>2026-09-22T00:00:00Z</published>
-    <updated>2026-09-22T00:00:00Z</updated>
-    <author>
-      <name>Elie Abboud</name>
-    </author>
-    <author>
-      <name>Oren Gal</name>
-    </author>
-    <summary type="text">Multi-agent reinforcement learning (MARL) commonly trains decentralized policies from scratch, requiring agents to acquire individual task competence and coordination simultaneously. Yet many multi-agent problems admit a compatible single-agent counterpart in which the underlying task can be learned in isolation. We introduce Multi-Agent Observation Transformation for Existing Single-Agent Policies (MATES), an input-side adaptation framework for tasks whose multi-agent observations preserve the solo-task information while exposing separately identifiable neighbor information. From multi-agent experience, MATES learns a small adapter that maps this observation into the format expected by a frozen single-agent policy, inducing actions suited to the shared environment without updating the single-agent policy itself. MATES leaves the pretrained policy's internal architecture unchanged and retains the objectives and update procedures of the underlying MARL algorithm. We evaluate MATES using both on- and off-policy algorithms on lifelong pathfinding, navigation, and cooperative discovery, spanning discrete and continuous observation and action spaces. Across all evaluated settings, MATES optimizes only 3.5-7.3% as many parameters as full-policy training while consistently outperforming MARL training from scratch. It approaches the performance of full fine-tuning, remains competitive overall with demonstration-based baselines, and retains strong task performance at team sizes not encountered during training. These results provide evidence that, under this observation structure, effective multi-agent behavior can be learned without modifying the policy that encodes individual competence.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Robotics; eess.SY" />
-  </entry>
-  <entry>
-    <title>Calibration Is Not Verification: Falsifiability-Aware Conformal Routing for Mixture-of-Agents</title>
-    <link href="http://arxiv.org/abs/2609.25959v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.25959v1</id>
-    <published>2026-09-22T00:00:00Z</published>
-    <updated>2026-09-22T00:00:00Z</updated>
-    <author>
-      <name>Nada Rahali</name>
-    </author>
-    <author>
-      <name>Zijia Wang</name>
-    </author>
-    <author>
-      <name>Zhisong Liu</name>
-    </author>
-    <summary type="text">Multi-agent language systems often treat agreement as evidence, yet heterogeneous agents can jointly repeat an unsupported claim or omit a correct specialist fact. We introduce C-MoA, an agreement-based conformal filter that turns inter-agent semantic support into a claim-level nonconformity score and calibrates a retention threshold at the example level, giving distribution-free within-domain factuality control for heterogeneous Mixture-of-Agents. C-MoA is effective: it nearly doubles retained-claim precision on long-form generation (from 0.41 to 0.75), certifies a human-labelled medical set, and transfers across domains without recalibration; its one failure mode is short-form answering, where consensus is cheap and the score is left near chance. We then ask whether counterfactual falsifiability can push past consensus, and introduce CONTRA-MoA, which adds a blinded near-miss tournament, leave-one-agent-out stability, and availability-aware fusion. This extension helps only where the verifier holds domain knowledge, dropping half of the false medical claims at 0.940 precision, whereas with a memory-only judge the added signals are near chance (AUC 0.531 and 0.511) and naive max fusion degrades the working agreement signal from 0.687 to 0.652. The message is twofold: agreement-based conformal calibration delivers reliable, transferable factuality control, while moving beyond consensus requires a knowledgeable verifier, availability-aware signals, and robust fusion.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Governed AI-Agent Coordination for Dementia Care: Architecture, Safety Contracts, and Evidence-Derived Workflow Verification</title>
-    <link href="http://arxiv.org/abs/2609.25956v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.25956v1</id>
-    <published>2026-09-22T00:00:00Z</published>
-    <updated>2026-09-22T00:00:00Z</updated>
-    <author>
-      <name>Francesca Medda</name>
-    </author>
-    <author>
-      <name>Hui Gong</name>
-    </author>
-    <summary type="text">Dementia care increasingly involves connected sensors, medication devices, electronic records, and assistive technologies. Interoperability can transport observations but cannot maintain an accountable care state, reconcile evidence, determine who may act, or verify resolution. The shift from large language models to agentic engineering creates a systems opportunity: an external runtime can maintain memory across episodes, plan over goals and constraints, invoke tools, observe outcomes, and enforce governance. This paper presents Governed Closed-loop Agent Coordination (GCAC), an architecture for bounded agent participation in community dementia-care workflows. Evidence on care-coordination failures and policy obligations is translated into traceable system requirements. GCAC separates observation, governed memory, planning, deterministic policy enforcement, execution, and outcome monitoring through a typed event-memory-decision-action-outcome contract. A reference harness evaluates 18 evidence-derived traces covering missing records, medication conflict, caregiver reports, service failure, consent change, stale state, duplicate events, untrusted text, and suspected acute neurological change. GCAC satisfies all 18 contract oracles with zero policy-violating tool calls and correctly preserves obligations, rejects stale state, creates human hand-offs, and records workflow closure. Event-threshold and stateless-planner controls satisfy 2/18 and 1/18 oracles, respectively. Component ablations localise failures to the removed memory, policy, or versioning function. The results establish architectural conformance rather than clinical effectiveness and show how agentic systems can automate reconciliation, routing, documentation, and follow-up while preserving human authority over consequential care decisions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 2 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>When Does Execution Provenance Help Agent Memory Retrieval?</title>
-    <link href="http://arxiv.org/abs/2609.25913v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.25913v1</id>
-    <published>2026-09-22T00:00:00Z</published>
-    <updated>2026-09-22T00:00:00Z</updated>
-    <author>
-      <name>Yiqi Wang</name>
-    </author>
-    <author>
-      <name>Jinqian Ju</name>
-    </author>
-    <author>
-      <name>Jiaqi Zhang</name>
-    </author>
-    <author>
-      <name>Zequn Sun</name>
-    </author>
-    <author>
-      <name>Yiqun Duan</name>
-    </author>
-    <author>
-      <name>Mingkai Zheng</name>
-    </author>
-    <author>
-      <name>Taotao Cai</name>
-    </author>
-    <summary type="text">A language agent's execution history can exceed its context window, requiring its memory system to retrieve complete supporting evidence under a hard token budget. Evidence may span multiple execution events, yet conventional retrievers use fixed token windows and fixed-k metrics that reward individual fragments without showing whether the complete evidence set fits in context. Smaller windows reduce irrelevant text but scatter evidence across candidates, while flat-versus-graph comparisons can conflate candidate design with graph propagation. To address these limitations, we formulate agent-memory retrieval as budgeted evidence completion and score exact gold spans in shared source coordinates. We first construct source-aligned provenance units from tool arguments and outputs. We then apply a zero-initialized residual R-GCN to refine frozen dense-retrieval scores over typed provenance edges. We evaluate 2,000 span-grounded memory queries over 1,207 held-out execution-grounded ISETrace trajectories. With matched Dense-FT scoring, provenance units improve Full Support@2048 by 19.07 points over flat 512-token windows and remain 11.96 points above a per-metric oracle over four flat chunk sizes; the pattern also holds with cross-encoder scoring. Holding the candidates and seed scores fixed, graph propagation adds 4.55 points in Full Support@2048 (95% CI [2.98, 6.18]). This gain is concentrated when gold evidence spans multiple events; entity co-occurrence expansion produces no comparable benefit, and relation and topology controls confirm dependence on typed transformations and observed graph structure. Overall, source-aligned candidates address the dominant granularity trade-off, while graph-conditioned propagation adds a smaller, targeted benefit for distributed evidence.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 Pages, 4 Figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>SkillApt: Learning When to Activate Agent Skills from Counterfactual Evidence</title>
-    <link href="http://arxiv.org/abs/2609.26863v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.26863v1</id>
-    <published>2026-09-22T00:00:00Z</published>
-    <updated>2026-09-22T00:00:00Z</updated>
-    <author>
-      <name>Shuang Guo</name>
-    </author>
-    <summary type="text">Large language model agents increasingly retrieve reusable Skills and inject them into the active context. However, a retrieved Skill can be relevant yet unnecessary, costly, or even harmful in the current execution state. We present SkillApt, a post-retrieval activation framework that decides whether a retrieved Skill should actually be loaded. SkillApt builds execution evidence from matched WITH/WITHOUT runs and uses outcomes from similar historical states to make a LOAD/ABSTAIN decision for each candidate Skill. On the frozen confirmatory SRA-Bench evaluation, SkillApt-E achieved the same observed accuracy as BM25 Top-1 (0.838 vs. 0.838) while reducing the Skill activation rate from 100% to 31.5% and mean token usage by 74.3%. Further diagnostics show that both Skill utility and the learnability of its activation boundary vary across base models. These results suggest that Skill retrieval and Skill activation should be treated as separate decisions: retrieval identifies which Skill may be relevant, while SkillApt determines whether using it is worthwhile in the current state.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 18 pages, 11 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
   </entry>
 </feed>
