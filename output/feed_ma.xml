@@ -4,12 +4,255 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-09-29T06:30:38Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 24 entries</subtitle>
+  <updated>2026-09-30T06:21:18Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 33 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>IMPACT: Modeling Socially Interdependent Movement in a Generative Multi-Agent Simulation of a Pompeian Household</title>
+    <link href="http://arxiv.org/abs/2609.38113v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.38113v1</id>
+    <published>2026-09-29T00:00:00Z</published>
+    <updated>2026-09-29T00:00:00Z</updated>
+    <author>
+      <name>Tianqi Liu</name>
+    </author>
+    <author>
+      <name>Nayoung Kim</name>
+    </author>
+    <author>
+      <name>Julia Sebastien</name>
+    </author>
+    <author>
+      <name>Kathryn Gleason</name>
+    </author>
+    <author>
+      <name>Caitlín Eilís Barrett</name>
+    </author>
+    <author>
+      <name>Andrea Stevenson Won</name>
+    </author>
+    <summary type="text">Simulations of archaeological sites can make interpretations of past cultural practices observable and examinable. Generative multi-agent simulations offer a bottom-up approach to modeling how people collectively moved through and used historical spaces. However, current agents designed to simulate everyday life often plan and act independently, limiting their ability to capture how movement depends on others' actions. We introduce IMPACT (Interdependent Movement Planning through Inter-Agent Constraints and Triggers), an architecture that uses culturally specific roles and obligations to define dependencies among agents' activities and guide coordination. IMPACT connects socially gated milestone planning, wait-or-prompt resolution, structured directive issuance, and directive integration. These mechanisms determine whether and when activities can begin or change as social conditions evolve, producing socially constrained and prompted movement as their primary observable outcome. We instantiate IMPACT in a five-hour simulation of a Pompeian dinner involving ten agents across interdependent roles. Analysis of five simulation runs shows how social roles, responsibilities, and status relations shape household activities and spatial practices, as reflected in patterns of co-location, asymmetric waiting, co-movement, and social directives. In a controlled ablation evaluation, thirty-seven participants rated the complete architecture's behavior as more socially coherent and believable than that of two reduced architectures. Interviews with six archaeology experts highlighted historically plausible movement patterns and the simulation's potential to support archaeological interpretation, while identifying areas requiring stronger historical grounding for future work.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>RAVEN: Receiver-Conditioned Action-Value Encoding for Finite-Alphabet Multi-Agent Communication</title>
+    <link href="http://arxiv.org/abs/2609.37566v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.37566v1</id>
+    <published>2026-09-29T00:00:00Z</published>
+    <updated>2026-09-29T00:00:00Z</updated>
+    <author>
+      <name>Shuwei Sun</name>
+    </author>
+    <author>
+      <name>Chenxi Wang</name>
+    </author>
+    <author>
+      <name>Jian Huang</name>
+    </author>
+    <author>
+      <name>Weiyun Ru</name>
+    </author>
+    <author>
+      <name>Hui Cao</name>
+    </author>
+    <summary type="text">A message drawn from a small alphabet helps a teammate only if it keeps the distinctions that change that teammate's next decision. We show that scoring messages by action values averaged over the receiver's situation can erase exactly these distinctions, and we propose RAVEN (Receiver-conditioned Action-Value ENcoding), which trains a four-symbol, one-step-delayed channel to preserve each receiver's centered action-value profile within the receiver's own context. The sender never needs to know that context: the receiver decodes every symbol with its private information. We give two estimators of this target. With a teacher, offline RAVEN selects the codebook that exactly minimizes an empirical conditional distortion and distills it into a frozen sender; we bound the resulting codebook-selection error and one-step decision loss. Without a teacher, online RAVEN aligns, inside a QMIX learner, the deployed symbol pathway with a training-only continuous reference that shares its routing. Against five recent communication methods on eight navigation settings, offline RAVEN attains the highest return in seven, and removing receiver conditioning forfeits 83% of its communication gain. Online RAVEN raises predator-prey capture success from 53.2% to 96.0% over the same QMIX backbone without communication, and on SMAC and MPE it attains the best mean normalized score of 14 methods, including methods that exchange kilobit messages. Every RAVEN message costs 2 bits, 12-1,024x fewer than those of NDQ, CACOM and ExpoComm on navigation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 25 pages, 20 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.IT" />
+  </entry>
+  <entry>
+    <title>PowerMarketJax: A JAX Benchmark Suite for Multi-Agent Reinforcement Learning in Power Markets</title>
+    <link href="http://arxiv.org/abs/2609.37321v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.37321v1</id>
+    <published>2026-09-29T00:00:00Z</published>
+    <updated>2026-09-29T00:00:00Z</updated>
+    <author>
+      <name>Zhanhua Pan</name>
+    </author>
+    <author>
+      <name>Xin Qin</name>
+    </author>
+    <author>
+      <name>Xiao Liu</name>
+    </author>
+    <author>
+      <name>Zhilong Cao</name>
+    </author>
+    <author>
+      <name>Jianhong Wang</name>
+    </author>
+    <author>
+      <name>Dawei Qiu</name>
+    </author>
+    <summary type="text">Power markets are a natural testbed for multi-agent reinforcement learning (MARL), where multiple self-interested participants repeatedly submit bids. A market-clearing mechanism then determines dispatch and prices subject to power grid constraints and market settlement rules. However, existing MARL environments typically focus on a single market setting, implement simplified clearing mechanisms, or rely on CPU-based optimization solvers that slow large-scale training and limit the systematic study of bidding strategies and market behavior. We introduce PowerMarketJax, a benchmark suite for MARL across five power markets: day-ahead wholesale, real-time balancing, ancillary services, peer-to-peer double auctions, and local flexibility. Each environment implements its own clearing, pricing, and settlement rules while providing a common framework for learning and evaluation. We find that learned bidding behavior depends strongly on the market design: independent learners can miss better strategies when gains require many agents to change together, when more profitable strategies lie beyond a region of lower profit, or when profits disappear as more agents adopt the same strategy. PowerMarketJax implements both market simulation and policy training in JAX, allowing the entire pipeline to run on the GPU with 1,024 X 1,200 parallelisms across both environments and market participants, achieving up to 33X speedup over CPU-based baselines. Our open-source benchmark is available at: https://github.com/powermarketjax/PowerMarketJax.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/powermarketjax/PowerMarketJax"&gt;https://github.com/powermarketjax/PowerMarketJax&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 69 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; eess.SY" />
+  </entry>
+  <entry>
+    <title>FlowMAS: Learning Multi-Agent Workflow Topology via Information-guided Generative Flow Network</title>
+    <link href="http://arxiv.org/abs/2609.37151v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.37151v1</id>
+    <published>2026-09-29T00:00:00Z</published>
+    <updated>2026-09-29T00:00:00Z</updated>
+    <author>
+      <name>Haitao Wang</name>
+    </author>
+    <author>
+      <name>Chenjing Liang</name>
+    </author>
+    <author>
+      <name>Haipeng Zhang</name>
+    </author>
+    <author>
+      <name>Jiawei Hu</name>
+    </author>
+    <author>
+      <name>Sicheng Wang</name>
+    </author>
+    <author>
+      <name>Songzhu Mei</name>
+    </author>
+    <author>
+      <name>Chenglu Wen</name>
+    </author>
+    <author>
+      <name>Siqi Shen</name>
+    </author>
+    <author>
+      <name>Cheng Wang</name>
+    </author>
+    <summary type="text">Automated multi-agent systems offer clear advantages over manually designed ones in scalability and adaptability, but existing workflow topology methods still face important limitations. Search-based methods are often computationally expensive, textual-gradient-based methods rely on coarse-grained feedback, and existing generation-based methods are not well suited to discrete workflow topologies with complex dependencies. To address these limitations, we propose FlowMAS, a multi-agent workflow topology method based on Generative Flow Networks (GFlowNets). FlowMAS models workflow generation as reward-guided flow over the topology space and introduces three components: a GFlowNet-based topology generation backbone, a curiosity-driven module for structure-aware exploration, and an information-guided optimization module for evaluating intermediate topologies. Concretely, the curiosity-driven module encourages exploration of structurally novel workflows, while the information-guided module measures both the information contribution and the communication efficiency of different operators to favor more informative and effective collaboration patterns. Experiments on six benchmark datasets with three LLM backbones show that FlowMAS consistently outperforms multiple baselines.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>LLM-Based Multi-Agent Systems over Wireless Networks: A Joint Agent--Network Design Perspective</title>
+    <link href="http://arxiv.org/abs/2609.37094v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.37094v1</id>
+    <published>2026-09-29T00:00:00Z</published>
+    <updated>2026-09-29T00:00:00Z</updated>
+    <author>
+      <name>Chao Hu</name>
+    </author>
+    <author>
+      <name>Yuan Guo</name>
+    </author>
+    <author>
+      <name>Guanlin Wu</name>
+    </author>
+    <author>
+      <name>Yueling Che</name>
+    </author>
+    <author>
+      <name>Han Hu</name>
+    </author>
+    <author>
+      <name>Jie Xu</name>
+    </author>
+    <summary type="text">As large language models (LLMs) evolve from standalone models into collaborative agents embedded in physical systems, their reasoning and execution are increasingly distributed across wireless edge nodes. In this setting, wireless networks are experiencing a paradigm shift from only providing data connectivity to supporting the multi-agent reasoning workflow itself. The task performance of such network-constrained LLM-based multi-agent systems (MASs) is jointly affected by the multi-agent reasoning dependencies as well as the underlying network connectivity and edge resources. This coupling gives rise to various technical challenges, including the metric misalignment and message redundancy, state inconsistency and topology mismatch, as well as resource limitation and trust discontinuity. To address these challenges, this article develops a novel joint agent--network design perspective that coordinates decisions on both sides of the system. Specifically, we present the joint design of agent--interaction scheduling and resource allocation, the message selection-transmission co-design, as well as the joint agent--network topology design and workload--resource allocation. Furthermore, we consider the network-verified provenance that is linked with agent-side information-flow control to constrain how received information affects subsequent operations. An illustrative vehicle-to-everything (V2X) case study shows that jointly adapting agent-side interaction decisions and network operations improves task completion under communication and edge-resource constraints, outperforming the conventional agent-only and wireless-only separate designs.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to IEEE Wireless Communications&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Signal Processing" />
+  </entry>
+  <entry>
+    <title>GitHarness: Git Init Your Harness Working Memory for Perpetual User Requirements</title>
+    <link href="http://arxiv.org/abs/2609.36789v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.36789v1</id>
+    <published>2026-09-29T00:00:00Z</published>
+    <updated>2026-09-29T00:00:00Z</updated>
+    <author>
+      <name>Zhibang Yang</name>
+    </author>
+    <author>
+      <name>Xinke Jiang</name>
+    </author>
+    <author>
+      <name>Yuxuan Liu</name>
+    </author>
+    <author>
+      <name>Mingyu Zhang</name>
+    </author>
+    <author>
+      <name>Zhixin Zhang</name>
+    </author>
+    <author>
+      <name>Zhengxing Song</name>
+    </author>
+    <author>
+      <name>Yue Fang</name>
+    </author>
+    <author>
+      <name>Guohong Qiu</name>
+    </author>
+    <author>
+      <name>Ruiqing Li</name>
+    </author>
+    <author>
+      <name>Xu Chu</name>
+    </author>
+    <author>
+      <name>Junfeng Zhao</name>
+    </author>
+    <author>
+      <name>Yasha Wang</name>
+    </author>
+    <summary type="text">LLM-based agents increasingly collaborate with users on long-horizon tasks, accumulating evidence, code, and drafts through extensive search, reasoning, and execution. As users inspect these results, they may supply missing information requirement completion, introduce new requirements requirement elicitation, or revise existing ones requirement shift. These changes often affect only part of the accumulated work, yet agents may carry forward obsolete information or turn local revisions into global rewrites. Existing approaches clarify current intent without determining how prior work should change, or reuse execution histories under a fixed objective. We address this gap by formulating dynamic-requirement collaboration as joint requirement tracking and local update. We introduce GitHarness, a pluggable Git-style framework that organizes requirement states and their corresponding harness work states into a branchable version history. A trainable Git Agent resolves requirement changes and selects a semantically compatible historical state. A unified version interface then restores that state and creates a new branch, enabling the underlying harness to exclude obsolete information, inherit compatible work, and focus execution on affected parts. The Git Agent is trained through interface-level black-box reinforcement learning, with downstream harnesses and task-execution models kept fixed. We also construct MTAgentBench, a verifier-preserving benchmark covering mathematical reasoning, text-to-SQL, agentic search, software engineering, and research synthesis. Experiments demonstrate strong task performance alongside effective requirement tracking, preservation of valid work, and efficient execution.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.SE" />
+  </entry>
+  <entry>
+    <title>Regularized policy gradient with learned mixtures of Gaussians for games with continuous actions</title>
+    <link href="http://arxiv.org/abs/2609.36787v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.36787v1</id>
+    <published>2026-09-29T00:00:00Z</published>
+    <updated>2026-09-29T00:00:00Z</updated>
+    <author>
+      <name>Ondřej Kubíček</name>
+    </author>
+    <author>
+      <name>Viliam Lisý</name>
+    </author>
+    <author>
+      <name>Tuomas Sandholm</name>
+    </author>
+    <summary type="text">Most successes of superhuman game-playing algorithms are in games with discrete actions, yet in auctions, robotics, sports, or trading, actions are nearly continuous. Prior techniques either rely on expert-designed discretizations or are sample inefficient. We present a scalable policy-gradient algorithm for large sequential games with continuous or mixed discrete and continuous actions. It combines magnetic mirror descent with a mixture of Gaussians reparametrization, trained via self-play. We show that it approximates equilibrium in games where gradient descent fails. In sequential games, it outperforms neural fictitious self-play and matches or outperforms the final strategies of policy space response oracles with 3.5--5.5$\times$ fewer samples. In heads-up no-limit Texas hold'em, it performs on par with Slumbot.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.GT" />
+  </entry>
+  <entry>
+    <title>Agent-Based Evolutionary Dynamics for Mixed Autonomy Weaving Ramps</title>
+    <link href="http://arxiv.org/abs/2609.36424v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.36424v1</id>
+    <published>2026-09-29T00:00:00Z</published>
+    <updated>2026-09-29T00:00:00Z</updated>
+    <author>
+      <name>Sheryl Paul</name>
+    </author>
+    <author>
+      <name>Kexin Wang</name>
+    </author>
+    <author>
+      <name>Ruolin Li</name>
+    </author>
+    <author>
+      <name>Jyotirmoy V. Deshmukh</name>
+    </author>
+    <summary type="text">Existing models of mixed-autonomy weaving ramps characterize how altruistic connected and automated vehicles (CAVs) can improve traffic efficiency at the population level, but provide limited insight into how such behavior emerges from decentralized vehicle interactions or how it is affected by finite populations, heterogeneous preferences, and imperfect information. We develop an agent-based model of a macroscopic weaving-ramp framework in which individual vehicles adapt their lane choices using an evolutionary game-theoretic update rule and altruism-based objectives providing a microscopic interpretation of the original Wardrop model. We prove convergence of the decentralized dynamics to the unique equilibrium predicted by the macroscopic theory. Beyond reproducing aggregate equilibrium behavior, the framework enables the study of deployment-level questions that cannot be addressed by static analysis. Simulation results demonstrate close agreement with the macroscopic predictions while revealing how convergence rates, adaptation to changing traffic conditions, heterogeneous altruism levels among CAVs, and imperfect state information influence system performance and the distribution of altruistic burden across vehicles. These results provide a bridge between equilibrium traffic theory and decentralized mixed-autonomy deployment.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 6 pages, 9 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>Positional choice and robust collective behavior in fish schools: biohybrid experiments and modeling</title>
     <link href="http://arxiv.org/abs/2609.35554v1" rel="alternate" type="text/html" />
@@ -89,6 +332,128 @@
     <summary type="text">LLM-based multi-agent systems (MAS) have shown promise in complex problem solving. As MAS methods diversify, systematic evaluation becomes increasingly challenging. However, existing benchmarks largely focus on final outcomes, leaving unclear how collaboration gains arise, are preserved, or are lost. To address this limitation, we introduce MASTraceBench, a benchmark for diagnosing collaboration gains through proposal trajectories in MAS. Across six cooperative and competitive tasks, MASTraceBench tracks and grades proposal trajectories and provides a multi-layer metric suite covering Task Score, Collaboration Gain, proposal-trajectory indicators, and Token Cost. Using MASTraceBench, we systematically compare representative MAS methods not only by final performance, but also by how agent proposals evolve and are aggregated into the final answer. This analysis reveals a recurring pattern: final MAS answers rarely surpass the strongest initial proposal; interaction often lifts initially weaker proposals toward it, while strong initial proposals are seldom further improved and may regress. To reduce this risk, we propose CLEARS, which replaces whole-proposal exchange with claim-level evaluation across agents to guide reliable synthesis. CLEARS more often preserves or improves upon the strongest initial proposal and achieves the highest Collaboration Gain on five of the six tasks.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Embodied Semantic Communication for Collective Autonomous Agents: A Tutorial on Representation, Wireless Delivery, and Closed-Loop Coordination</title>
+    <link href="http://arxiv.org/abs/2609.35936v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.35936v1</id>
+    <published>2026-09-28T00:00:00Z</published>
+    <updated>2026-09-28T00:00:00Z</updated>
+    <author>
+      <name>Yizheng Huang</name>
+    </author>
+    <author>
+      <name>Wensheng Lin</name>
+    </author>
+    <author>
+      <name>Lixin Li</name>
+    </author>
+    <author>
+      <name>Qinghe Du</name>
+    </author>
+    <author>
+      <name>Wenchi Cheng</name>
+    </author>
+    <author>
+      <name>Zhu Han</name>
+    </author>
+    <summary type="text">As autonomous systems and embodied intelligence enter the dynamic physical world, multi-agent collaboration calls for a paradigm shift in communication design. However, existing communication paradigms overlook that agents form action understanding from their own states, environmental observations, and collaboration relations through a process that evolves as a task unfolds. Consequently, reliable bit delivery, general semantic recovery, or single-task utility optimization alone cannot ensure that heterogeneous agents form coordinated actions compatible with their own conditions from shared information during task execution. To address this gap, this paper proposes embodied semantic communication (ESC) as a paradigm that transforms information transmission into action-oriented semantic interaction. Specifically, ESC characterizes how an explicit communication link can encapsulate multimodal perceptual states, intrinsic hardware capabilities, and collaborative intents into unified actionable semantic representations, thereby enabling heterogeneous receiving agents to parse, align, and ground them in local motor control. This paper clarifies the conceptual boundary, system characteristics, and environment-constrained technical pathways of ESC. It maps the underlying mathematical tools, including semantic information theory, world models, and multi-agent decision theory. Finally, this paper summarizes key open challenges, including measurable semantic reliability, ambiguity-triggered interaction under dynamic environments and tasks, and bandwidth-adaptive semantic transmission, outlining a roadmap for collective embodied networks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Survey&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Bregman Consensus</title>
+    <link href="http://arxiv.org/abs/2609.35930v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.35930v1</id>
+    <published>2026-09-28T00:00:00Z</published>
+    <updated>2026-09-28T00:00:00Z</updated>
+    <author>
+      <name>Andrei N. Soklakov</name>
+    </author>
+    <summary type="text">Consider a community of agents who are seeking consensus on a set of parameters. The agents agree to use the same Bregman-type divergence to quantify disagreement between their individual estimates of the parameters but have varying confidence in each other's abilities. Each agent is happy to revise their estimate by moving to the weighted barycenter of all individual estimates with higher weights applied to more trusted agents. We show that such revisions naturally lead to an iterative algorithm which converges to a unique consensus estimate of the parameters. Furthermore, since the consensus estimate is itself a barycenter with computable weights, the group emerges as a collective super-agent with a well-formed opinion regarding the ability of each individual agent.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 7 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.IT; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Prompted Identity Degrades Cooperation in Multi-Agent LLM Systems</title>
+    <link href="http://arxiv.org/abs/2609.35928v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.35928v1</id>
+    <published>2026-09-28T00:00:00Z</published>
+    <updated>2026-09-28T00:00:00Z</updated>
+    <author>
+      <name>Xavier Del Giudice</name>
+    </author>
+    <author>
+      <name>Alessio Palma</name>
+    </author>
+    <author>
+      <name>Matteo Migliarini</name>
+    </author>
+    <author>
+      <name>Fabio Galasso</name>
+    </author>
+    <author>
+      <name>Indro Spinelli</name>
+    </author>
+    <summary type="text">Multi-agent LLM systems increasingly mix models from several providers, yet exposing each agent's underlying model identity to its peers significantly impairs cooperation. We show that when agents are aware of each other's model family, the group splits into clusters, where agents prefer interacting with others carrying their same label, although nothing in the task rewards or asks for such a split. We argue that the label itself causes this split, which we define as $\textit{factionalism}$. We show and measure this phenomenon in two cooperative games and on a reasoning benchmark, with nine to twenty-five agents drawn from up to five open-weight model families. We further show that when the announced families are shuffled, or replaced by arbitrary labels, the factions still follow this information; when the label is removed, this behavior disappears. In strictly cooperative tasks, labeled groups spend on average $30\%$ more rounds and $55\%$ more tokens to reach a decision, and their success rate drops from $96\%$ to $81\%$. The effect replicates across tasks, group sizes and model families. Withholding identity labels from the agents is simple and effective mitigation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>VehicleArena: A Realistic Urban Environment for Multi-Agent Driving</title>
+    <link href="http://arxiv.org/abs/2609.35916v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.35916v1</id>
+    <published>2026-09-28T00:00:00Z</published>
+    <updated>2026-09-28T00:00:00Z</updated>
+    <author>
+      <name>Jie Yang</name>
+    </author>
+    <author>
+      <name>Jiajun Chen</name>
+    </author>
+    <author>
+      <name>Jiazheng Zhou</name>
+    </author>
+    <author>
+      <name>Mianqiu Huang</name>
+    </author>
+    <author>
+      <name>Yining Zheng</name>
+    </author>
+    <author>
+      <name>Yuxin Wang</name>
+    </author>
+    <author>
+      <name>Xipeng Qiu</name>
+    </author>
+    <summary type="text">Real-world embodied agents often pursue independent objectives within a shared physical environment, where their actions can alter the conditions faced by others. Existing benchmarks, however, typically assume shared goals or explicitly prescribed interaction protocols, leaving such emergent physical coupling underexplored. We introduce VehicleArena, a 3D urban-driving benchmark for studying independently operating agents in a dynamic shared world. In VehicleArena, LLM-controlled agents must fulfill evolving passenger requests while navigating complex traffic, and each agent's driving decisions can reshape traffic flow, delays, risks, and subsequent observations for surrounding agents. The benchmark provides 112 evaluation tasks spanning single-agent and multi-agent driving. Across nine evaluated models, the highest arrival rates reach only 65.0% on single-agent tasks and 65.6% on multi-agent tasks, while strong passenger-request or cabin scores do not reliably translate into successful trip completion. Moreover, in matched multi-agent runs, every tested focal policy reduces the arrival rate of surrounding vehicles relative to the simulator's native traffic controller, revealing measurable externalities beyond the focal vehicle itself.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL; Computer Vision" />
+  </entry>
+  <entry>
+    <title>Agentic Federated Learning: Rule-Based Client and Server Agents for Adaptive Training</title>
+    <link href="http://arxiv.org/abs/2609.35914v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.35914v1</id>
+    <published>2026-09-28T00:00:00Z</published>
+    <updated>2026-09-28T00:00:00Z</updated>
+    <author>
+      <name>Deepthy K. Bhaskar</name>
+    </author>
+    <author>
+      <name>VP Binu</name>
+    </author>
+    <author>
+      <name>B Minimol</name>
+    </author>
+    <summary type="text">Federated Learning (FL) enables collaborative model training across distributed clients without sharing raw data, making it suitable for privacy-sensitive applications such as healthcare, finance, and edge intelligence. However, conventional FL approaches rely on static client participation and fixed aggregation strategies, which limits their effectiveness under non-IID data distributions, heterogeneous client behavior, and noisy or unreliable updates. To overcome these issuess, this paper proposes an Agentic Federated Learning (AFL) framework that integrates lightweight rule-based autonomous agents at both client and server levels. The proposed framework introduces a Client-Side Agent (CSA) that dynamically adapts local training parameters, controls participa- tion, and evaluates update reliability, while a Server-Side Orchestrator Agent (SSOA) performs quality-aware client selection and adaptive aggregation. Unlike traditional FL methods, AFL enables context-aware decision-making during the training process, improving adaptability and robustness in dynamic distributed environments. Extensive experiments conducted on the CIFAR-10 dataset under IID, non-IID, and noisy-client settings demonstrate that AFL consistently outperforms standard base- lines including FedAvg and FedProx. Experimental results show improvements in classification accuracy, convergence speed, robustness against corrupted updates, and communication efficiency. Ablation studies further confirm the complementary contributions of CSA and SSOA, while statistical analysis validates the significance of the observed gains. The proposed AFL framework demonstrates that incorporating autonomous agentic reasoning into federated learning provides an effective and practical solution for intelligent, adaptive, and robust distributed learning systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Machine Learning" />
   </entry>
   <entry>
     <title>Prospective Interpretation Risk: Principled Communication Control Between LLMs</title>
@@ -203,6 +568,29 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="cs.CR" />
+  </entry>
+  <entry>
+    <title>Collective Regimes in Multi-Agent LLMs under Reasoning Effort and Communication Topology</title>
+    <link href="http://arxiv.org/abs/2609.35885v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.35885v1</id>
+    <published>2026-09-27T00:00:00Z</published>
+    <updated>2026-09-27T00:00:00Z</updated>
+    <author>
+      <name>Machiko Hirota</name>
+    </author>
+    <author>
+      <name>Akshara Nadayanur Sathis Kanna</name>
+    </author>
+    <author>
+      <name>Ujwal Kumar</name>
+    </author>
+    <author>
+      <name>Phan Xuan Tan</name>
+    </author>
+    <summary type="text">Multi-agent LLM systems are increasingly used for deliberation and evaluation, often under the assumption that greater peer interaction leads to more reliable consensus. Existing work largely evaluates these systems through final accuracy or aggregate agreement. However, such measures do not reveal how agreement is organized in the panel. In this paper, we study \(N=50\) stateless LLM agents that update their predictions from locally visible peers, and characterize their behavior using both global and local measurements of agreement. We identify three collective regimes: synchronised, twisted (locally ordered but globally incoherent) and chimera-like, where coherent and incoherent subpopulations coexist. Increasing reasoning effort in gpt-5-mini shifts panels from variable, often fragmented outcomes toward locally ordered twisted states, and a small follow-up shows such states can also form from permuted initial conditions, whereas increasing communication connectivity drives them toward global synchronisation. Fragmentation collapses faster as algebraic connectivity increases across rewired graphs. The topology effect also appears on a non-circular judging task and across models from three providers. Finally, low spatial heterogeneity does not guarantee global consensus: 40\% of trials with $ΔZ$ below 0.03 retain a twisted configuration through the final 20 turns. These results show that reasoning effort and communication topology control different aspects of multi-agent coordination, and that aggregate agreement alone is insufficient to characterize collective LLM behavior.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2027&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
   </entry>
   <entry>
     <title>Adaptive and Resilient Dual-Layer Resource Slicing for Hovering Aerial Backhaul Networks</title>
@@ -488,122 +876,18 @@
     <category term="Multiagent Systems" />
   </entry>
   <entry>
-    <title>Connectivity Preservation and Graph Stretching in Range-Only Swarm Dispersion</title>
-    <link href="http://arxiv.org/abs/2609.28190v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.28190v1</id>
-    <published>2026-09-23T00:00:00Z</published>
-    <updated>2026-09-23T00:00:00Z</updated>
+    <title>Amadeus: When Models of People Meet</title>
+    <link href="http://arxiv.org/abs/2609.35835v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.35835v1</id>
+    <published>2026-09-24T00:00:00Z</published>
+    <updated>2026-09-24T00:00:00Z</updated>
     <author>
-      <name>Ariel Barel</name>
+      <name>Karl Hanna</name>
     </author>
-    <summary type="text">We study connectivity-preserving finite-jump dispersion of anonymous, identical, and oblivious agents under an idealized range-only sensing model. Each agent measures only the distances to its visible neighbors, without bearings, identifiers, communication, memory, or a shared coordinate system. We derive the largest isotropic displacement certifiable as safe from these measurements alone. The resulting rule requires only the distance to the farthest visible neighbor: each agent selects a random direction and moves by half of its remaining visibility margin. The rule preserves every existing visibility edge under synchronous finite motion and therefore preserves connectivity. For two agents, we prove positive conditional drift in squared distance, almost-sure convergence to the visibility boundary, and finite expected time to reach any fixed neighborhood of that boundary. A one-million-run Monte Carlo experiment agrees with the exact first-round moments and estimates approximately 9.5 rounds to reach distance 0.97V from coincident initial positions; an independent Bellman-equation computation gives the same estimate. For general swarms, 1,000 runs across five initial-topology classes reproduce the deterministic safety guarantee at implementation level and reveal a consistent topology-dependent ordering of attainable diameter under the tested protocol. These results provide a theoretical foundation for connectivity-preserving multi-robot dispersion under minimal sensing, while isolating the guarantees achievable from anonymous range measurements alone.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Compliant with Local Controls, Collectively Discriminatory. A Governance Architecture for Multi-Agent AI in Regulated Finance</title>
-    <link href="http://arxiv.org/abs/2609.27994v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.27994v1</id>
-    <published>2026-09-23T00:00:00Z</published>
-    <updated>2026-09-23T00:00:00Z</updated>
-    <author>
-      <name>Jose Manuel de la Chica Rodriguez</name>
-    </author>
-    <author>
-      <name>Juan Manuel Vera Diaz</name>
-    </author>
-    <author>
-      <name>Pablo Delgado Romero</name>
-    </author>
-    <summary type="text">Financial institutions are beginning to deploy agentic workflows in credit, fraud, collections, compliance, and operational control. Governance remains largely component-centric: each model or agent is specified, tested, authorized, and monitored locally. That is insufficient when institutional risk arises from the joint behavior of many locally acceptable components. We call this gap constitutional non-compositionality: local compliance checks need not compose into acceptable collective outcomes such as bounded disparate impact, market integrity, or traceable accountability. We propose ARIA as a finance-specific reference architecture and falsifiable research agenda for agent-population governance. It organizes six capabilities across normative-accountability, execution-control, and assurance-learning planes: policy specification, population-level observed-versus-expected behavior monitoring (M2), bounded authority, runtime containment, adaptive policy change, and preserved human oversight competence. Two simulations illustrate shared-signal thin-file exclusion under local controls and earlier warning from observed-versus-expected distributional monitoring in a constructed drift regime. The contribution maps these controls to fair-lending, EU AI Act, model-risk, and conduct-supervision evidence needs, and closes with a validation agenda rather than a production-effectiveness claim.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Agent-Based Modeling of Systems of Systems</title>
-    <link href="http://arxiv.org/abs/2609.27573v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.27573v1</id>
-    <published>2026-09-23T00:00:00Z</published>
-    <updated>2026-09-23T00:00:00Z</updated>
-    <author>
-      <name>Jean-Baptiste Soyez</name>
-    </author>
-    <author>
-      <name>Gildas Morvan</name>
-    </author>
-    <author>
-      <name>Rochdi Merzouki</name>
-    </author>
-    <author>
-      <name>Daniel Dupont</name>
-    </author>
-    <summary type="text">This paper deals with the generic modeling of systems of systems (SoSs) using agent-based modeling. SoSs are large-scale systems, including numerous-possibly heterogeneous-interacting component systems evolving in a dynamic environment. The aim of this paper is to provide generic formalism allowing to represent and control the whole complexity of a SoS using agent-based simulations. In particular, organizational aspects of SoSs are managed with the Agent-Group-Role model. Functional aspects, guiding SoSs to accomplish their global goals, are handled via a functional specification. Multilevel aspects are modeled with the Influence Reaction Model for Multilevel Simulation (IRM4MLS) agent-based meta-model. Models generated using this formalism encompass static and dynamic aspects of SoSs. They consider reorganization of SoSs caused by changes of goals or subsystem capacity. All these elements are illustrated in this paper using a SoS case study of Intelligent Autonomous Vehicles initiated by the Intelligent Transportation for Dynamic Environment (InTraDE) European project to automate the port container logistic.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>KITE: Scaling Jev Population Experiments with Sparse Flagship Calibration</title>
-    <link href="http://arxiv.org/abs/2609.27535v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.27535v1</id>
-    <published>2026-09-23T00:00:00Z</published>
-    <updated>2026-09-23T00:00:00Z</updated>
-    <author>
-      <name>Hengyu Li</name>
-    </author>
-    <summary type="text">KITE queries a typed behavioral kernel once per unique state, then executes populations of any size from the table with event-keyed randomness and common random numbers. An expensive flagship model is reserved for sparse paired anchors that estimate intervention effects. Measured human-model discrepancy is propagated as shared error into every conclusion. Population-experiment cost thus scales with unique states and anchors, while uncertainty is governed by evidence about people rather than Monte Carlo noise. On Epstein experiments with 9,070 participants, anchors covering 1.7% of states reduced effect error by 41% (absolute MAE reduction 0.0125). On 37 held-out SocSci210 experiments, 0.5-1.5% anchor coverage raised captured decision gain from 0.27 to 0.39. The kernel passed content-fidelity criteria in all 15 new countries of a 16-country study. Shared discrepancy yielded retrospective coverage of 93% and 96% at nominal 80% and 90%, versus 29% and 36% from human sampling uncertainty alone. A million agents executed 20 tabulated steps in 0.9 seconds on a laptop. This architecture offers a route to screening candidate interventions before human trials, multi-country content audits, and uncertainty-aware policy comparison at the cost of a few thousand kernel calls with sparse flagship anchors. Property-specific evidence records connect each use to its validation scope, correction provenance, and uncertainty, making these applications auditable.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24 pages, 5 figures&lt;/p&gt;
+    <summary type="text">With the sheer constant advancements raining down in the field of Artificial Intelligence, one particular possibility that may cross our mind is whether it is possible to model agents after humans and, in turn, use these agents to carry out synthetic interactions that predict their real counterparts, or even interactions at a larger scale such as groups or societies. In this paper, we test a more controlled version of this question through chess. We use 8 elite chess players, seal their direct pairwise games, learn each player independently using different methods, and then compose the resulting models on the withheld dyads. To evaluate the generated interactions, we use two measurements: opening-family total variation distance and win-draw-loss (WDL) total variation distance. M1 reduces WDL-TV while leaving opening-family TV largely unchanged, whereas M2 substantially reduces opening-family TV while having little effect on WDL-TV. An additional post-hoc method combining components of the other two retains improvements across both measurements. These results suggest that independently learned models can recover aspects of previously unseen interactions, and that recovery across different behavioural aspects need not be mutually exclusive.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted to AAMAS 2027&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
-    <category term="cs.CY" />
-  </entry>
-  <entry>
-    <title>Anchor and Perturb: Lazy Agent Remediation by Exploration Injection</title>
-    <link href="http://arxiv.org/abs/2609.27365v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.27365v1</id>
-    <published>2026-09-23T00:00:00Z</published>
-    <updated>2026-09-23T00:00:00Z</updated>
-    <author>
-      <name>Chengxi Zhong</name>
-    </author>
-    <author>
-      <name>Yongzhe Chang</name>
-    </author>
-    <summary type="text">Anchor and Perturb (AnP) is a lightweight framework that resolves multi-agent coordination failures by decoupling exploratory variance injection from recurrent manifold stability. Existing remediation strategies predominantly alter mixing network architectures or enforce simultaneous exploration across the collective, which inevitably precipitates severe temporal-difference penalties in non-monotonic reward spaces. Specifically, AnP isolates underperforming lazy agents and injects an asymmetric exploratory pulse into targeted coordinates whilst anchoring converged teammates to nominal greedy exploitation. Empirical telemetry benchmarks demonstrate that AnP successfully rescues collapsed joint policies (recovering from a 5% evaluation win rate nadir back to 85%) and facilitates escape from suboptimal coordination plateaus, sustaining peak win rates of 90% without requiring structural network modifications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 6 pages, 1 figure&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Self-Evolving Multimedia Verification through Memory Consolidation of Contestation Experiences</title>
-    <link href="http://arxiv.org/abs/2609.27175v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.27175v1</id>
-    <published>2026-09-23T00:00:00Z</published>
-    <updated>2026-09-23T00:00:00Z</updated>
-    <author>
-      <name>Truong Thanh Hung Nguyen</name>
-    </author>
-    <author>
-      <name>Vo Thanh Khang Nguyen</name>
-    </author>
-    <author>
-      <name>Hoang-Loc Cao</name>
-    </author>
-    <author>
-      <name>Phuc Ho</name>
-    </author>
-    <author>
-      <name>Truong Thinh Nguyen</name>
-    </author>
-    <author>
-      <name>Van Pham</name>
-    </author>
-    <author>
-      <name>Hung Cao</name>
-    </author>
-    <summary type="text">Multimedia verification requires not only accurate decisions but also traceable evidence, reliable human correction, and safe reuse of prior experience. Existing systems often lack explicit mechanisms for revising intermediate reasoning or preventing harmful knowledge transfer. We present SEMV (Self-Evolving Multimedia Verification), a self-evolving multi-agent framework that treats provenance-bearing arguments as the interface between evidence, reasoning, human contestation, and memory. SEMV combines arena-based quantitative bipolar argumentation (A-QBAF), causal and scoped revision, and verification-gated memory consolidation with explicit conflict retention. On COSMOS benchmark, SEMV achieves 91.88% accuracy versus 89.10% for the strongest comparable baseline. Verified memory reduces negative transfer from 5.7% to 0.2%. On CTR benchmark, constructed from reviewer contestations, scoped causal revision corrects 96.7% of initial errors while saving 52.8% compute. MV2026 Grand Challenge dataset further supports evidence-grounded, temporally consistent reporting. These results show that SEMV can evolve through verified experience while keeping accumulated knowledge and subsequent decisions traceable, revisable, and contestable.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multimedia" />
-    <category term="Artificial Intelligence; Multiagent Systems" />
+    <category term="Machine Learning" />
   </entry>
 </feed>
