@@ -4,12 +4,161 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-01T06:32:23Z</updated>
+  <updated>2026-10-02T06:32:05Z</updated>
   <subtitle>Latest multimodal papers (last 7 days) — 39 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Form and Void: Entangled Composition through an Autonomous AI Agent</title>
+    <link href="http://arxiv.org/abs/2610.02045v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.02045v1</id>
+    <published>2026-10-01T00:00:00Z</published>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author>
+      <name>Shiwen Wang</name>
+    </author>
+    <author>
+      <name>Jian Yang</name>
+    </author>
+    <author>
+      <name>Xu Wang</name>
+    </author>
+    <author>
+      <name>Xincan Wang</name>
+    </author>
+    <author>
+      <name>Weiming Dong</name>
+    </author>
+    <summary type="text">Positive and negative space is a fundamental principle in visual composition, supporting visually coherent forms and layered semantic relationships. Generating such compositions is challenging because it requires coordinated control over two semantic concepts that share a common boundary. Although recent text-to-image models and multimodal large language models (MLLMs) have achieved strong performance in image generation and visual understanding, positive-negative space generation remains difficult, particularly under direct single-pass prompting. In this work, we present the \textbf{F}orm \textbf{a}nd \textbf{V}oid \textbf{A}gent (\textbf{FaV-A}), a multimodal agent designed for staged positive-negative space generation. FaV-A follows a progressive workflow: it first generates a base object, then analyzes its shape and spatial structure to identify candidate negative-space semantics, and finally produces compositional instructions for the final image generation stage. Experimental results and ablation analyses suggest that FaV-A provides a more effective framework than direct zero-shot MLLM baselines for producing visually coherent and semantically aligned positive-negative space compositions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; T2I;MAG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>After Cooperation Is Learned: Gradient Routing and Optimizer-Dependent Maintenance in Multi-Agent Reinforcement Learning</title>
+    <link href="http://arxiv.org/abs/2610.01630v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.01630v1</id>
+    <published>2026-10-01T00:00:00Z</published>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author>
+      <name>Chaoyuan Hao</name>
+    </author>
+    <author>
+      <name>Wentao Yue</name>
+    </author>
+    <author>
+      <name>Tianyou Lai</name>
+    </author>
+    <author>
+      <name>Hongji Li</name>
+    </author>
+    <author>
+      <name>Jiayi Zhou</name>
+    </author>
+    <author>
+      <name>Qingyu Mao</name>
+    </author>
+    <author>
+      <name>Qilei Li</name>
+    </author>
+    <summary type="text">Cooperative MARL is commonly evaluated through cooperation discovery from random initialization, leaving open whether continued optimization can destabilize learned cooperation. Actor-critic comparisons can also conflate critic presence with value gradients entering shared actor representations. We study cooperation maintenance, defined as the survival of a behaviorally verified cooperative policy under continued training. We formulate maintenance as a right-censored event-time problem and compare matched warm starts: X0 allows value loss gradients to update shared actor features, X1 retains the critic while blocking those gradients, and X5 removes the learned critic as a critic-free reference. This isolates direct value-gradient access while controlling initialization, critic computation, and evaluation. Positive reward scaling preserves strategic preferences and equilibria while perturbing learning dynamics. Gradient audits confirm the intended routing pathways, and frozen-policy torso perturbations probe whether route-induced updates align with local cooperation boundaries. In confirmatory MinEx and CleanUp-lite experiments, higher scales selectively increase maintenance sensitivity in X0; X1 remains near the censoring ceiling, and X5 has no confirmed events in the tested settings. In CleanUp-lite, route-by-scale displacement is associated with reduced local cooperation margins; MinEx shows a weaker, optimizer-dependent effect. These results identify a conditional, scale-sensitive maintenance risk associated with direct value-gradient routing rather than a universal failure of critics.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Managing Context and Communication in Distributed Agentic UAV Swarms</title>
+    <link href="http://arxiv.org/abs/2610.01569v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.01569v1</id>
+    <published>2026-10-01T00:00:00Z</published>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author>
+      <name>Andrea Iannoli</name>
+    </author>
+    <author>
+      <name>Ivan Zyrianoff</name>
+    </author>
+    <author>
+      <name>Angelo Trotta</name>
+    </author>
+    <author>
+      <name>Lorenzo Gigli</name>
+    </author>
+    <author>
+      <name>Marco Di Felice</name>
+    </author>
+    <summary type="text">Unmanned aerial vehicle (UAV) swarms increasingly rely on language-model agents to provide adaptive mission-level reasoning in uncertain environments. Fully distributed control, in which each UAV hosts an independent Small Language Model (SLM), removes reliance on a centralized coordinator but introduces an information-management problem: long-running interaction histories can degrade the reasoning context, while indiscriminate information dissemination increases communication and inference overhead. We address these challenges with a distributed UAV-agent architecture that enables continuous local SLM control through an event-driven reason-act-observe lifecycle. Runtime knowledge is represented as structured atomic notes and organized into core, local, and peer-specific memory. A deterministic interest-aware gossip engine selectively disseminates these notes according to recipient-specific semantic novelty and recency. We evaluate the architecture using ten UAVs in a simulated search-and-rescue mission. Our approach completes all experimental runs, whereas unrestricted flooding messages completes only 70-85\%, and delegating forwarding decisions to the SLM prevents mission completion in every run. Compared with unrestricted flooding, our approach approximately halves inference-token consumption, reduces transmitted data, and achieves lower survivor-count error.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE Consumer Communications &amp; Networking Conference 2027 (CCNC 2027&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; Machine Learning; cs.NI" />
+  </entry>
+  <entry>
+    <title>LLM-Driven Multi-Agent Control for Skill-Based Smart Manufacturing</title>
+    <link href="http://arxiv.org/abs/2610.01364v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.01364v1</id>
+    <published>2026-10-01T00:00:00Z</published>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author>
+      <name>Kay Köhle</name>
+    </author>
+    <author>
+      <name>Darko Anicic</name>
+    </author>
+    <author>
+      <name>Thomas A. Runkler</name>
+    </author>
+    <author>
+      <name>René Graf</name>
+    </author>
+    <summary type="text">Factories are shifting toward smaller lot sizes with high product customization, requiring frequent re-programming of flexible and reconfigurable automation systems. LLM-based agents can be deployed in two complementary roles: Offline, they generate deterministic production sequences, reducing programming effort; online, they operate live machines and handle unforeseen runtime faults that static programs cannot anticipate. We propose a solution in which each factory module is paired with a dedicated LLM-based agent and an MCP tool server that exposes the module's skills via OPC UA method calls, with agents coordinating over MQTT and grounded by real-time updates of the factory state. We compare three agent architectures (orchestrator, peer-to-peer, and monolithic) across nine production challenges of increasing complexity in a simulation of a physical six-module hexagonal factory, including silent hardware fault detection. The monolithic and peer-to-peer architectures both achieve the highest mean solve rate (93\%), while the orchestrator uniquely resolves a silent conveyor-belt fault in all ten runs by autonomously rerouting plates around the blocked segment. All architectures exhibit emergent fault-diagnosis behavior without any explicit failure-handling logic, establishing standardized MCP tooling, MQTT-based inter-agent communication, and real-time state injection as a viable and reproducible foundation for LLM-programmed smart manufacturing.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the 2026 IEEE 31st International Conference on Emerging Technologies and Factory Automation (ETFA)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; eess.SY" />
+  </entry>
+  <entry>
+    <title>Can AI Scientists Coordinate at Runtime?</title>
+    <link href="http://arxiv.org/abs/2610.00980v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.00980v1</id>
+    <published>2026-10-01T00:00:00Z</published>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author>
+      <name>Zijian Liu</name>
+    </author>
+    <author>
+      <name>Yangzhixin Luo</name>
+    </author>
+    <author>
+      <name>Junyu Lu</name>
+    </author>
+    <author>
+      <name>Yi Li</name>
+    </author>
+    <author>
+      <name>Yu Chen</name>
+    </author>
+    <author>
+      <name>David Xu</name>
+    </author>
+    <author>
+      <name>William F. Shen</name>
+    </author>
+    <author>
+      <name>Xinchi Qiu</name>
+    </author>
+    <author>
+      <name>Xisen Wang</name>
+    </author>
+    <summary type="text">Multi-agent AI scientists have shown improving performance across a diverse range of tasks. Yet a common approach is design-time agentic orchestration, which typically relies on fixed workflows. In contrast, human scientists coordinate and adjust their division of labor at runtime. We therefore ask: can AI scientists also coordinate at runtime? To this end, we introduce Runtime Agent Coordination (RAC), which selects agents from existing AI-scientist hosts during execution, assigns scoped work contracts, and provides artifact-grounded verification. Verification informs subsequent agents without blocking transitions or discarding artifacts. We conduct a single-seed exploratory evaluation across Agent Laboratory, EvoScientist, and ARK on ResearchClawBench, preserving host models, tools, and permissions under host-calibrated budgets. Four cumulative conditions separate native execution, runtime communication, runtime selection, and the combined addition of contracts and verification. Runtime selection yields the highest observed mean score for each host; adding contracts and verification reduces these means, with host-dependent outcomes relative to native execution. These results motivate runtime coordination while exposing the limits of additional coordination mechanisms under constrained budgets. Code is available at https://github.com/systemind-team/Runtime-AI-Scientist.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/systemind-team/Runtime-AI-Scientist"&gt;https://github.com/systemind-team/Runtime-AI-Scientist&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 35 pages (9 pages main text), 4 figures, 10 tables. Code: https://github.com/systemind-team/Runtime-AI-Scientist&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>Solving Multi-Agent Sokoban via LaCAM</title>
     <link href="http://arxiv.org/abs/2609.39889v1" rel="alternate" type="text/html" />
@@ -74,6 +223,39 @@
     <summary type="text">When a multi-agent system answers correctly, it is tempting to conclude that its agents shared, checked, and used information as intended. Yet a system can break one of its collective mechanisms, the rules that govern how agents route, admit, store, and act on shared information, and still return the right answer, while a wrong answer rarely reveals which mechanism failed. We ask what evidence from an execution is sufficient to conclude that a particular mechanism was violated. Our answer is a diagnostic contract, which separates what counts as a violation from which execution records can establish one, and concludes that a violation is supported, ruled out, or unknown; removing records can make this conclusion unknown but never reverse it. We test contracts for four mechanisms by replaying executions from the step where a mechanism acts, once unchanged, once with the mechanism broken, and once with it restored. Broken mechanisms often left the answer correct. An LLM diagnoser detected many more violations from internal records than from public outputs, yet with identical records a generic prompt often claimed certainty the records did not support, which prompts stating the contracts largely avoided. The contracts also applied, in narrow form, to mechanisms in independently developed systems, but a diagnostic behavior that was nearly perfect on our benchmark degraded on an independently developed workflow. A correct outcome is therefore no substitute for records of how collective mechanisms operated, and agreement on one benchmark does not show that a diagnoser transfers to another system.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Deny Without Disabling: Authorization-Paired Evaluation and Control for Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2610.00371v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.00371v1</id>
+    <published>2026-09-30T00:00:00Z</published>
+    <updated>2026-09-30T00:00:00Z</updated>
+    <author>
+      <name>Yunbei Zhang</name>
+    </author>
+    <author>
+      <name>Saiyue Lyu</name>
+    </author>
+    <author>
+      <name>Janet Wang</name>
+    </author>
+    <author>
+      <name>Yingqiang Ge</name>
+    </author>
+    <author>
+      <name>Jiang Guo</name>
+    </author>
+    <author>
+      <name>Jihun Hamm</name>
+    </author>
+    <author>
+      <name>Chandan K Reddy</name>
+    </author>
+    <summary type="text">Multi-agent systems derive their capabilities from sharing evidence, delegating tasks, and combining information across agents. The same process creates a safety problem: contributions that are admissible in isolation can jointly enable a prohibited use. Blocking every sensitive action avoids disclosure but defeats the purpose of collaboration. We introduce authorization-paired evaluation, which makes blocking prohibited uses and completing required authorized uses a joint success criterion, and FlowReview, a framework connecting object resolution, permission ranking, and deterministic enforcement. In controlled composition experiments, reviewing combined artifacts reduces the denied-commit rate from 86.0% to zero with no loss of authorized supply. Our findings show that preserving information and lineage alone does not ensure correct permission attribution. Object identity and permission must remain connected to execution through components whose outputs can be verified. Together, these findings establish a system-level requirement for multi-agent safety: govern composed information flows while preserving the authorized capabilities that make collaboration useful.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 44 pages, 9 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CR" />
   </entry>
   <entry>
     <title>IMPACT: Modeling Socially Interdependent Movement in a Generative Multi-Agent Simulation of a Pompeian Household</title>
@@ -830,153 +1012,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="eess.SY" />
-  </entry>
-  <entry>
-    <title>AgentWorld: Benchmarking Long-Horizon Collaboration of Multi-agent LLMs</title>
-    <link href="http://arxiv.org/abs/2609.31590v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.31590v1</id>
-    <published>2026-09-25T00:00:00Z</published>
-    <updated>2026-09-25T00:00:00Z</updated>
-    <author>
-      <name>Raphael Shu</name>
-    </author>
-    <author>
-      <name>Yusen Zhang</name>
-    </author>
-    <author>
-      <name>Young Min Cho</name>
-    </author>
-    <author>
-      <name>Jin Mo Yang</name>
-    </author>
-    <author>
-      <name>Yuan Yuan</name>
-    </author>
-    <author>
-      <name>Wenliang Zheng</name>
-    </author>
-    <author>
-      <name>Sharath Chandra Guntuku</name>
-    </author>
-    <author>
-      <name>Lyle Ungar</name>
-    </author>
-    <author>
-      <name>Zhou Yu</name>
-    </author>
-    <author>
-      <name>Rui Zhang</name>
-    </author>
-    <summary type="text">Existing multi-agent benchmarks primarily test in competitive settings, short-horizon interactions under 20 steps, or simply aggregate individual performance, failing to isolate and highlight genuine collaboration capabilities of LLM-based agents. We introduce AgentWorld, a benchmark of 100 human-annotated tasks (with 100 augmented variants) for evaluating long-horizon, multi-agent collaboration. Tasks span 50+ interaction rounds across a rich MMORPG sandbox and require 3-20 agents with asymmetric roles and abilities to coordinate through communication, joint planning, and resource sharing under a blackbox setting where each agent acts independently without access to others' internal states. To quantify collaboration effectiveness in addition to conventional binary task success, we propose Causal Collaboration Effectiveness (CCE), a graph-based metric that traces causal dependencies between agent actions and measures what fraction of a team's effort actually contributed to the outcome. Experiments with Gemini 3 Flash, Claude Haiku 4.5, GPT-5 Mini, and DeepSeek R1-70B show that even the best model achieves only 52.0% task success, with systematic failure modes including communication breakdowns, role confusion, and inability to maintain shared plans across rounds. AgentWorld is fully open-source.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; COLM 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Towards Mitigating Fabricated Consensus: The Active Provenance Gate for Multi-Agent Debate Synthesis</title>
-    <link href="http://arxiv.org/abs/2609.31422v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.31422v1</id>
-    <published>2026-09-25T00:00:00Z</published>
-    <updated>2026-09-25T00:00:00Z</updated>
-    <author>
-      <name>Jakub Masłowski</name>
-    </author>
-    <author>
-      <name>Jarosław A. Chudziak</name>
-    </author>
-    <summary type="text">Large language model-based multi-agent debate (MAD) systems are being increasingly used as complex decision pipelines in distributed processes. However, their final synthesis phase still remains inadequately controlled. Even with detailed debate logs, summarizing models are prone to fabricating smoothly written debate consensus that is not grounded in the debate's history. To address this safety gap, this paper presents empirical research and studies if the introduction of active post-debate verification can mitigate the production of such factually unsupported summaries, while still providing valuable information. Furthermore, it is examined whether explicitly signalling divergence is preferable in the absence of a reliable compromise. The Active Provenance Gate (APG) is introduced as a post-debate verification layer that treats the source as a hard constraint, analysing the debate logs, auditing each claim, and applying self-correction. In crisis simulations, the self-healing mechanism more than doubles the average data Provenance Fidelity in difficult condition scenarios, before the strict gate blocks unsupported claims and generates divergence reports. In the human study, a vast majority of the users (over 75%) preferred a report explicitly stating failure in critical scenarios, despite most of them perceiving fabricated consensus from the baseline system as more fluent. Our main contribution is the transition of data origin tracing from passive logging to active conditional blocking before publication.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IEEE International Conference on Tools with Artificial Intelligence (ICTAI 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.CL" />
-  </entry>
-  <entry>
-    <title>Collision-free Movement on Grids and Beyond</title>
-    <link href="http://arxiv.org/abs/2609.31099v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.31099v1</id>
-    <published>2026-09-25T00:00:00Z</published>
-    <updated>2026-09-25T00:00:00Z</updated>
-    <author>
-      <name>Hendrik Molter</name>
-    </author>
-    <author>
-      <name>Meirav Zehavi</name>
-    </author>
-    <summary type="text">We study collision-free movement problems on graphs, where the task is to coordinate a set of robots so that they reach a target formation satisfying a desired property while minimizing the total travel distance. This framework extends two classical models: (a) minimizing movement [Demaine et al., TALG '09, '14], which does not enforce collision avoidance, and (b) coordinated motion planning or multi-agent path finding [Eiben et al., SoCG '23, Deligkas et al., ICALP '24, among many others], where each robot is assigned an explicit target position.   We focus on the setting where the target formation of the robots should be connected. We analyze the parameterized complexity of the problem with respect to the number of (main) robots and the total travel length on grid graphs and two natural generalizations thereof: planar graphs and unit disk graphs.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.DS" />
-  </entry>
-  <entry>
-    <title>The Crowd in the Machine: A Crisis-Informatics Reading of the 2026 Autonomous Agent Incidents</title>
-    <link href="http://arxiv.org/abs/2609.31060v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.31060v1</id>
-    <published>2026-09-25T00:00:00Z</published>
-    <updated>2026-09-25T00:00:00Z</updated>
-    <author>
-      <name>Tomer Simon</name>
-    </author>
-    <summary type="text">Twice in 2026, groups of autonomous AI agents deployed by OpenAI for unrelated tasks operated, by design, under restrictions that left them no sanctioned means of coordinating with one another, and in each case they converged on whatever channel remained and used it to organize. The surfaces they used were widely called message boards. That is the wrong word. That is the wrong word. It names the surface the agents wrote on and misses the social network they built on it, with self-chosen identity, emergent norms, an emergent hierarchy, and collective action at cost to the individual. Decades of research in crisis informatics and disaster sociology find that when human populations lose their usual means of communication, they do not fall silent but converge on whatever channel survives and improvise coordination, norms, and identity on it, a pattern also evident in the agents' documented behavior. This paper is a comparative case study of the two incidents, based on published investigations and reconstructed agent records, read through those fields, and it brings into focus one distinction the message-board framing obscures. Whether such a collective coordinates well, whether the beliefs guiding it are accurate, and whether its actions stay within their authorized bounds are three separate matters that can come apart. Some agents in the cache incident adopted cryptographic signing to check whom they dealt with, even as the collective organized around a mistaken expectation that its work would be judged by an inspection of its transcripts, a reminder that mechanisms for trustworthy interaction guarantee neither accurate collective belief nor authorized collective action.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.SI" />
-  </entry>
-  <entry>
-    <title>ADF-EA: A Unified Execution Assurance System for Agent Device Foundation</title>
-    <link href="http://arxiv.org/abs/2609.30691v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.30691v1</id>
-    <published>2026-09-25T00:00:00Z</published>
-    <updated>2026-09-25T00:00:00Z</updated>
-    <author>
-      <name>Xuechun Li</name>
-    </author>
-    <author>
-      <name>Jiaxin Liang</name>
-    </author>
-    <author>
-      <name>Jie Li</name>
-    </author>
-    <author>
-      <name>baolong Li</name>
-    </author>
-    <author>
-      <name>Jue Wang</name>
-    </author>
-    <author>
-      <name>Peng Yuan</name>
-    </author>
-    <author>
-      <name>Hang Huang</name>
-    </author>
-    <summary type="text">Agents based on large language models (LLMs) can access heterogeneous devices through tools and APIs, but reliable execution must account for unmet effects, uncertain outcomes, and changing prerequisites. A command may be acknowledged without producing its intended effect, while missing feedback may obscure an action that has already succeeded. We present Agent Device Foundation--Execution Assurance (ADF-EA), an architecture that connects agent planning and device execution through shared capability contracts. Device Capability Contracts (DCCs) unify invocation conditions, intended effects, evidence requirements, and recovery rules across heterogeneous interfaces. Agents use these contracts to plan, while the runtime applies the same semantics to authorize actions, verify effects, and govern continuation and completion. Persistent execution state retains verified progress, unresolved outcomes, and remaining budgets across plan revisions, enabling observation-based recovery, authorized retries, and necessary state repair. We formalize the execution lifecycle and establish conditional soundness properties for completion and recovery authorization. Evaluations span multiple LLMs, five agent frameworks, and simulated process-control, household, and robotic manipulation domains. Compared with direct invocation and existing execution-checking approaches, ADF-EA reduces false completion and unnecessary repetition, supports necessary state repair, prevents calls to unavailable capabilities, and preserves permitted task completion and recovery. These results demonstrate DCCs as a reusable semantic foundation for agent autonomy across heterogeneous devices, unifying capability-based planning, evidence-grounded execution, and authorized recovery within one architecture.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>On Evaluating and Improving Conversational Agents in Production</title>
-    <link href="http://arxiv.org/abs/2609.32092v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.32092v1</id>
-    <published>2026-09-25T00:00:00Z</published>
-    <updated>2026-09-25T00:00:00Z</updated>
-    <author>
-      <name>Kasra Hosseini</name>
-    </author>
-    <author>
-      <name>Wen-Sen Cheng</name>
-    </author>
-    <author>
-      <name>Marco-Andrea Buchmann</name>
-    </author>
-    <author>
-      <name>Emir Mulabegovic</name>
-    </author>
-    <author>
-      <name>Weiwei Cheng</name>
-    </author>
-    <summary type="text">We present a framework for evaluating and improving a large-scale, multi-agent shopping assistant in production, and report lessons from its use. Offline evaluation of such a system faces three obstacles. (i) A logged conversation cannot be replayed against a modified system, because a different response changes every turn that follows. (ii) The unchanged system itself varies from run to run. Its LLM components are stochastic, and in product search the available products, their prices, and the customer's personalization signals change. (iii) Aggregate quality scores combine distinct behaviors, so they show that quality has changed but not which behavior caused the change. Our framework addresses each obstacle in turn. For a reported behavior, an Evaluation Harness generates targeted assertions and a fixed cohort of customer scenarios. It then reproduces the behavior in a local instance of the assistant through grounded user simulation. Instead of replaying the log, the simulator writes new customer turns conditioned on the recorded messages and context. Repeated runs of the unchanged system form a stored baseline. An Improvement Orchestrator turns the assertion results into hypotheses, implements each as an isolated modification, and compares it with the baseline using paired percentile bootstrap intervals over scenario-level differences. When an investigation ends, the harness may propose revisions to future evaluations, subject to human approval and without altering past decisions. We report production investigations with this framework. Assertion profiles showed which positions of a product carousel a failure affected, and repeated runs distinguished a real improvement from run-to-run fluctuation. Audits of the evaluation itself found a judge that lacked the evidence it needed and a model setting that was configured but not applied.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 pages, 2 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.CL; cs.ET" />
   </entry>
 </feed>
