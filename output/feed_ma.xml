@@ -4,12 +4,98 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-02T06:32:05Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 39 entries</subtitle>
+  <updated>2026-10-05T06:34:19Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 28 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>FinNextAssist: Towards Professional Financial Deep Research Assistant</title>
+    <link href="http://arxiv.org/abs/2610.03174v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.03174v1</id>
+    <published>2026-10-02T00:00:00Z</published>
+    <updated>2026-10-02T00:00:00Z</updated>
+    <author>
+      <name>Xiangyu Li</name>
+    </author>
+    <author>
+      <name>Fengbin Zhu</name>
+    </author>
+    <author>
+      <name>Xuan Yao</name>
+    </author>
+    <author>
+      <name>Siyu Liu</name>
+    </author>
+    <author>
+      <name>Xiaoluan Liu</name>
+    </author>
+    <author>
+      <name>Chao Wang</name>
+    </author>
+    <author>
+      <name>Huanbo Luan</name>
+    </author>
+    <author>
+      <name>Xiaofen Xing</name>
+    </author>
+    <author>
+      <name>Xiangmin Xu</name>
+    </author>
+    <author>
+      <name>Ke-Wei Huang</name>
+    </author>
+    <author>
+      <name>Richang Hong</name>
+    </author>
+    <author>
+      <name>Tat-Seng Chua</name>
+    </author>
+    <summary type="text">Deep Research (DR) agents have demonstrated strong capabilities in complex, research-oriented tasks through autonomous planning, iterative retrieval, multi-step reasoning, and structured reporting. However, adapting DR agents to finance introduces unique challenges: financial analysis demands the joint completion of heterogeneous sub-tasks spanning diverse data types, tools, and analytical workflows. We identify three key requirements for a professional financial DR agent: integration of authoritative, heterogeneous financial data sources; specialized analytical tools and skills; and dedicated sub-agents for domain-specific sub-tasks. Building on these principles, we propose FinNextAssist, an end-to-end deep research framework designed for professional financial analysis. FinNextAssist decomposes the research process into four stages: Task Planner, Evidence Compiler, Reasoning Engine, and Report Assembler, and introduces two novel lightweight sub-agents: TabAgent, for cross-market financial table understanding, and HeteroAgent, for cross-modality heterogeneous financial data interpretation. Extensive experiments on FinDeepResearch, the Finance Agent Benchmark, and FinTMMBench-Web show that FinNextAssist substantially outperforms both strong proprietary and open-source DR agents, with ablation studies confirming the contribution of each component across diverse markets and languages.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="q-fin.CP" />
+  </entry>
+  <entry>
+    <title>Evaluator-in-the-Loop Monte Carlo Tree Search via LLM Agents for Motif Scaffolding in Protein Design</title>
+    <link href="http://arxiv.org/abs/2610.02924v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.02924v1</id>
+    <published>2026-10-02T00:00:00Z</published>
+    <updated>2026-10-02T00:00:00Z</updated>
+    <author>
+      <name>Haotian Hu</name>
+    </author>
+    <author>
+      <name>Oguzhan Gungordo</name>
+    </author>
+    <author>
+      <name>Siheng Xiong</name>
+    </author>
+    <author>
+      <name>Faramarz Fekri</name>
+    </author>
+    <summary type="text">Motif-scaffolding systems commonly follow a generate-then-filter paradigm, in which candidate proteins are generated independently and structural evaluation is used primarily for terminal screening or ranking. This paradigm underuses evaluation: failed predictions contain state-specific evidence about whether a design requires repair of motif geometry, global foldability, or other structural constraints. We introduce \textbf{ELMS} (Evidence-based LLM-guided Monte Carlo Search), an evaluator-in-the-loop search framework for motif scaffolding that turns such evaluator feedback into targeted design actions. Effective reuse of structural feedback is nontrivial because different scaffold states exhibit different failure modes, and repeatedly refining a single trajectory can prematurely commit computation to an unproductive region of sequence space. ELMS therefore retains evaluated scaffolds as persistent search states: a Critic Agent diagnoses state-local structural failures, a Policy Agent selects targeted operators with execution parameters, motif-locked operators realize legal sequence modifications, and MCTS determines which historical states should receive further design effort. Under the standard GeomMotif protocol (100 candidates per task), ELMS achieves Successful rates of 86.41\% on single-motif tasks and 84.57\% on paired-motif tasks, exceeding the strongest prior baseline by 19.3 and 21.9 percentage points, respectively. On MotifBench, under a matched 100-candidate search budget, it solves 26.7 of 30 tasks on average (88.89\% Task Success), compared with 16.0 tasks (53.33\%) for the strongest baseline. These results establish ELMS as an effective approach for converting structural evaluation from a terminal filter into actionable guidance for iterative motif scaffolding.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Turnover-Orthogonal Credit Assignment for Open-Team Multi-Agent Reinforcement Learning</title>
+    <link href="http://arxiv.org/abs/2610.02847v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.02847v1</id>
+    <published>2026-10-02T00:00:00Z</published>
+    <updated>2026-10-02T00:00:00Z</updated>
+    <author>
+      <name>Amit Thakur</name>
+    </author>
+    <author>
+      <name>Mukesh Singhal</name>
+    </author>
+    <summary type="text">Open-team multi-agent reinforcement learning studies cooperative systems in which agents may join, leave, or be replaced during an episode. In such settings, the team return changes both because agents choose useful actions and because the active population itself changes. Standard centralized critics and shared advantages often mix these two effects into one scalar credit signal, allowing surviving agents to be rewarded or penalized for exogenous turnover events outside their control. We introduce turnover-orthogonal credit assignment (TOCA), a value decomposition for open teams that separates action effects, pure turnover effects, and action--turnover interactions. Under exogenous turnover, the event-conditioned value admits a centered decomposition whose event-conditioned baseline removes the pure turnover component while preserving credit for actions that make the team robust to future replacements. We instantiate this idea with a permutation-invariant centralized critic over variable-size agent sets and event tokens, and derive both a counterfactual per-agent credit signal and a softly weighted interaction variant, TOCA-$β$, for high-variance control environments. Controlled diagnostic experiments show that TOCA improves return over event-aware MAPPO-style critics and that removing interaction credit substantially hurts performance. In a replacement-only Dynamic Spread benchmark, TOCA-$β$ achieves the best mean return at high turnover rates and improves over its no-interaction ablation. These results suggest that explicitly separating turnover from action credit is a useful principle for robust learning in dynamic cooperative teams.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>Form and Void: Entangled Composition through an Autonomous AI Agent</title>
     <link href="http://arxiv.org/abs/2610.02045v1" rel="alternate" type="text/html" />
@@ -158,6 +244,34 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Form and Void: Entangled Composition through an Autonomous AI Agent</title>
+    <link href="http://arxiv.org/abs/2610.02045v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.02045v2</id>
+    <published>2026-10-01T00:00:00Z</published>
+    <updated>2026-10-01T00:00:00Z</updated>
+    <author>
+      <name>Shiwen Wang</name>
+    </author>
+    <author>
+      <name>Jian Yang</name>
+    </author>
+    <author>
+      <name>Xu Wang</name>
+    </author>
+    <author>
+      <name>Xincan Wang</name>
+    </author>
+    <author>
+      <name>Weiming Dong</name>
+    </author>
+    <summary type="text">Positive and negative space is a fundamental principle in visual composition, supporting visually coherent forms and layered semantic relationships. Generating such compositions is challenging because it requires coordinated control over two semantic concepts that share a common boundary. Although recent text-to-image models and multimodal large language models (MLLMs) have achieved strong performance in image generation and visual understanding, positive-negative space generation remains difficult, particularly under direct single-pass prompting. In this work, we present the \textbf{F}orm \textbf{a}nd \textbf{V}oid \textbf{A}gent (\textbf{FaV-A}), a multimodal agent designed for staged positive-negative space generation. FaV-A follows a progressive workflow: it first generates a base object, then analyzes its shape and spatial structure to identify candidate negative-space semantics, and finally produces compositional instructions for the final image generation stage. Experimental results and ablation analyses suggest that FaV-A provides a more effective framework than direct zero-shot MLLM baselines for producing visually coherent and semantically aligned positive-negative space compositions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; CVPR Workshops AI4VA, 2026, Best Paper Award&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; T2I;MAG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Multiagent Systems" />
   </entry>
   <entry>
     <title>Solving Multi-Agent Sokoban via LaCAM</title>
@@ -614,403 +728,23 @@
     <category term="Multiagent Systems" />
   </entry>
   <entry>
-    <title>Positional choice and robust collective behavior in fish schools: biohybrid experiments and modeling</title>
-    <link href="http://arxiv.org/abs/2609.35554v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.35554v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
+    <title>From Solo to Social Learning: Characterizing Recursive Social Improvement in LLMs</title>
+    <link href="http://arxiv.org/abs/2609.38516v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2609.38516v2</id>
+    <published>2026-09-29T00:00:00Z</published>
+    <updated>2026-09-29T00:00:00Z</updated>
     <author>
-      <name>Vahagn Grigoryan</name>
+      <name>Kunal Jha</name>
     </author>
     <author>
-      <name>Donato Romano</name>
+      <name>Max Kleiman-Weiner</name>
     </author>
     <author>
-      <name>Cesare Stefanini</name>
+      <name>Natasha Jaques</name>
     </author>
-    <author>
-      <name>Giulia De Masi</name>
-    </author>
-    <summary type="text">Collective behavior of fish schools is usually modeled on the assumption that each individual follows specific rules of motion that depend on its position and velocity relative to its neighbors. Although these models reproduce many schooling patterns observed in nature, it remains unclear whether the assumed rules are realistic at the individual level. To address this question, we first analyzed a set of experiments in which a live fish interacted with four moving robotic fish in a tank, and measured the time it spent in each position relative to the robots. We then simulated this experiment, replacing the fish with an agent, and assessed the extent to which classical models agree with the experimental observations. An extensive exploration of the parameter space showed that these models closely matched the experimental observations, with a very specific choice of parameters. However, they were highly sensitive to the parameter values: a minor perturbation caused them to fail completely. To resolve this, we propose a new model that incorporates an additional exploratory term characterizing the agent's positional preference at every moment. This model proved robust to small errors in the parameters while successfully replicating the experiments. Furthermore, when generalised to multiple fish, the model reproduced schooling behaviour and common schooling patterns, while also exhibiting exploratory behaviour at both the individual and the school level. This shows that social cohesion coexists with individual exploratory behaviour, and that realistic models of collective behaviour should account for both social interactions and this exploratory component.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 38 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>CEO Arena: Evaluating Long-Horizon Multi-Agent Decision-Making in Competitive Markets</title>
-    <link href="http://arxiv.org/abs/2609.34821v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.34821v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>An Yan</name>
-    </author>
-    <author>
-      <name>Yu Huo</name>
-    </author>
-    <author>
-      <name>Zhiwei Shang</name>
-    </author>
-    <author>
-      <name>Yiran Peng</name>
-    </author>
-    <author>
-      <name>Chenglin Wu</name>
-    </author>
-    <summary type="text">Long-horizon competition tests agents' ability to coordinate business decisions under uncertainty and adapt to changing rival strategies. We introduce CEO Arena, a benchmark that uses matched replacement evaluation to assess operating returns alongside an agent's effects on rivals and the market. Each CEO agent is compared with a reference policy in the same company under the same economic seed, holding other agents' identities and assignments fixed while all agents adapt. In a shared eight-company market spanning 500 simulated days, CEOs make sequential decisions on pricing, procurement, marketing, research and development, and service using private company information and noisy market signals, under resource constraints and delayed feedback. We evaluate eight LLM-based CEO agents in 27 main runs and 26 robustness runs. In the main evaluation, most agents have negative mean returns, and private gains can accompany market losses. Robustness analyses suggest that aggregate patterns extend beyond the original rule-based baseline; four of the 56 directed pairs show relatively stable effects. Memory, action, and accounting traces suggest demand capture and rivals' pricing and spending responses as possible explanations. CEO Arena provides a controlled testbed for studying long-horizon agent competition, strategic interaction, and market externalities.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2027&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>MASTraceBench: Diagnosing Collaboration Gains through Proposal Trajectories in LLM-Based Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2609.34496v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.34496v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Yapeng Li</name>
-    </author>
-    <author>
-      <name>Songze Li</name>
-    </author>
-    <author>
-      <name>Shuang Yu</name>
-    </author>
-    <author>
-      <name>Jing Yu</name>
-    </author>
-    <author>
-      <name>Zhixin Liu</name>
-    </author>
-    <author>
-      <name>Liqiang Wen</name>
-    </author>
-    <author>
-      <name>Tonghua Su</name>
-    </author>
-    <summary type="text">LLM-based multi-agent systems (MAS) have shown promise in complex problem solving. As MAS methods diversify, systematic evaluation becomes increasingly challenging. However, existing benchmarks largely focus on final outcomes, leaving unclear how collaboration gains arise, are preserved, or are lost. To address this limitation, we introduce MASTraceBench, a benchmark for diagnosing collaboration gains through proposal trajectories in MAS. Across six cooperative and competitive tasks, MASTraceBench tracks and grades proposal trajectories and provides a multi-layer metric suite covering Task Score, Collaboration Gain, proposal-trajectory indicators, and Token Cost. Using MASTraceBench, we systematically compare representative MAS methods not only by final performance, but also by how agent proposals evolve and are aggregated into the final answer. This analysis reveals a recurring pattern: final MAS answers rarely surpass the strongest initial proposal; interaction often lifts initially weaker proposals toward it, while strong initial proposals are seldom further improved and may regress. To reduce this risk, we propose CLEARS, which replaces whole-proposal exchange with claim-level evaluation across agents to guide reliable synthesis. CLEARS more often preserves or improves upon the strongest initial proposal and achieves the highest Collaboration Gain on five of the six tasks.</summary>
+    <summary type="text">Large language models (LLMs) can now improve themselves by revising the instructions they follow, and LLM agents are increasingly orchestrated to work together on complex problems. However, self-improvement methods typically optimize one system at a time, and multi-agent frameworks often have every model work toward a shared goal. We ask a different question. When each agent pursues its own reward, can self-improving LLMs learn from one another well enough to improve the whole population? We call this capability recursive social improvement. We study populations that revise skill files and choose whether, when, and whom to copy from. Independent search, learning from peers, and acting all share one token budget. In controlled environments, established social-learning algorithms benefit from peers, but three LLMs do not. They earn less reward per token than solo learners, and explore too narrowly or run out of tokens before acting. We then let the models write and revise their own skills. Observing peers changes how they improve, helping one model find useful skills sooner and another spend less on private search. Neither, however, outperforms independent learners at the same cost. Skills are copied, revised, and passed on, so one discovery can seed further search. Yet these exchanges concentrate the population around fewer independent discoveries. Together, these results show that LLMs can make learning more efficient by copying from peers, but not yet more effective.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Embodied Semantic Communication for Collective Autonomous Agents: A Tutorial on Representation, Wireless Delivery, and Closed-Loop Coordination</title>
-    <link href="http://arxiv.org/abs/2609.35936v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.35936v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Yizheng Huang</name>
-    </author>
-    <author>
-      <name>Wensheng Lin</name>
-    </author>
-    <author>
-      <name>Lixin Li</name>
-    </author>
-    <author>
-      <name>Qinghe Du</name>
-    </author>
-    <author>
-      <name>Wenchi Cheng</name>
-    </author>
-    <author>
-      <name>Zhu Han</name>
-    </author>
-    <summary type="text">As autonomous systems and embodied intelligence enter the dynamic physical world, multi-agent collaboration calls for a paradigm shift in communication design. However, existing communication paradigms overlook that agents form action understanding from their own states, environmental observations, and collaboration relations through a process that evolves as a task unfolds. Consequently, reliable bit delivery, general semantic recovery, or single-task utility optimization alone cannot ensure that heterogeneous agents form coordinated actions compatible with their own conditions from shared information during task execution. To address this gap, this paper proposes embodied semantic communication (ESC) as a paradigm that transforms information transmission into action-oriented semantic interaction. Specifically, ESC characterizes how an explicit communication link can encapsulate multimodal perceptual states, intrinsic hardware capabilities, and collaborative intents into unified actionable semantic representations, thereby enabling heterogeneous receiving agents to parse, align, and ground them in local motor control. This paper clarifies the conceptual boundary, system characteristics, and environment-constrained technical pathways of ESC. It maps the underlying mathematical tools, including semantic information theory, world models, and multi-agent decision theory. Finally, this paper summarizes key open challenges, including measurable semantic reliability, ambiguity-triggered interaction under dynamic environments and tasks, and bandwidth-adaptive semantic transmission, outlining a roadmap for collective embodied networks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Survey&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Bregman Consensus</title>
-    <link href="http://arxiv.org/abs/2609.35930v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.35930v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Andrei N. Soklakov</name>
-    </author>
-    <summary type="text">Consider a community of agents who are seeking consensus on a set of parameters. The agents agree to use the same Bregman-type divergence to quantify disagreement between their individual estimates of the parameters but have varying confidence in each other's abilities. Each agent is happy to revise their estimate by moving to the weighted barycenter of all individual estimates with higher weights applied to more trusted agents. We show that such revisions naturally lead to an iterative algorithm which converges to a unique consensus estimate of the parameters. Furthermore, since the consensus estimate is itself a barycenter with computable weights, the group emerges as a collective super-agent with a well-formed opinion regarding the ability of each individual agent.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 7 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.IT; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Prompted Identity Degrades Cooperation in Multi-Agent LLM Systems</title>
-    <link href="http://arxiv.org/abs/2609.35928v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.35928v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Xavier Del Giudice</name>
-    </author>
-    <author>
-      <name>Alessio Palma</name>
-    </author>
-    <author>
-      <name>Matteo Migliarini</name>
-    </author>
-    <author>
-      <name>Fabio Galasso</name>
-    </author>
-    <author>
-      <name>Indro Spinelli</name>
-    </author>
-    <summary type="text">Multi-agent LLM systems increasingly mix models from several providers, yet exposing each agent's underlying model identity to its peers significantly impairs cooperation. We show that when agents are aware of each other's model family, the group splits into clusters, where agents prefer interacting with others carrying their same label, although nothing in the task rewards or asks for such a split. We argue that the label itself causes this split, which we define as $\textit{factionalism}$. We show and measure this phenomenon in two cooperative games and on a reasoning benchmark, with nine to twenty-five agents drawn from up to five open-weight model families. We further show that when the announced families are shuffled, or replaced by arbitrary labels, the factions still follow this information; when the label is removed, this behavior disappears. In strictly cooperative tasks, labeled groups spend on average $30\%$ more rounds and $55\%$ more tokens to reach a decision, and their success rate drops from $96\%$ to $81\%$. The effect replicates across tasks, group sizes and model families. Withholding identity labels from the agents is simple and effective mitigation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>VehicleArena: A Realistic Urban Environment for Multi-Agent Driving</title>
-    <link href="http://arxiv.org/abs/2609.35916v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.35916v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Jie Yang</name>
-    </author>
-    <author>
-      <name>Jiajun Chen</name>
-    </author>
-    <author>
-      <name>Jiazheng Zhou</name>
-    </author>
-    <author>
-      <name>Mianqiu Huang</name>
-    </author>
-    <author>
-      <name>Yining Zheng</name>
-    </author>
-    <author>
-      <name>Yuxin Wang</name>
-    </author>
-    <author>
-      <name>Xipeng Qiu</name>
-    </author>
-    <summary type="text">Real-world embodied agents often pursue independent objectives within a shared physical environment, where their actions can alter the conditions faced by others. Existing benchmarks, however, typically assume shared goals or explicitly prescribed interaction protocols, leaving such emergent physical coupling underexplored. We introduce VehicleArena, a 3D urban-driving benchmark for studying independently operating agents in a dynamic shared world. In VehicleArena, LLM-controlled agents must fulfill evolving passenger requests while navigating complex traffic, and each agent's driving decisions can reshape traffic flow, delays, risks, and subsequent observations for surrounding agents. The benchmark provides 112 evaluation tasks spanning single-agent and multi-agent driving. Across nine evaluated models, the highest arrival rates reach only 65.0% on single-agent tasks and 65.6% on multi-agent tasks, while strong passenger-request or cabin scores do not reliably translate into successful trip completion. Moreover, in matched multi-agent runs, every tested focal policy reduces the arrival rate of surrounding vehicles relative to the simulator's native traffic controller, revealing measurable externalities beyond the focal vehicle itself.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.CL; Computer Vision" />
-  </entry>
-  <entry>
-    <title>Agentic Federated Learning: Rule-Based Client and Server Agents for Adaptive Training</title>
-    <link href="http://arxiv.org/abs/2609.35914v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.35914v1</id>
-    <published>2026-09-28T00:00:00Z</published>
-    <updated>2026-09-28T00:00:00Z</updated>
-    <author>
-      <name>Deepthy K. Bhaskar</name>
-    </author>
-    <author>
-      <name>VP Binu</name>
-    </author>
-    <author>
-      <name>B Minimol</name>
-    </author>
-    <summary type="text">Federated Learning (FL) enables collaborative model training across distributed clients without sharing raw data, making it suitable for privacy-sensitive applications such as healthcare, finance, and edge intelligence. However, conventional FL approaches rely on static client participation and fixed aggregation strategies, which limits their effectiveness under non-IID data distributions, heterogeneous client behavior, and noisy or unreliable updates. To overcome these issuess, this paper proposes an Agentic Federated Learning (AFL) framework that integrates lightweight rule-based autonomous agents at both client and server levels. The proposed framework introduces a Client-Side Agent (CSA) that dynamically adapts local training parameters, controls participa- tion, and evaluates update reliability, while a Server-Side Orchestrator Agent (SSOA) performs quality-aware client selection and adaptive aggregation. Unlike traditional FL methods, AFL enables context-aware decision-making during the training process, improving adaptability and robustness in dynamic distributed environments. Extensive experiments conducted on the CIFAR-10 dataset under IID, non-IID, and noisy-client settings demonstrate that AFL consistently outperforms standard base- lines including FedAvg and FedProx. Experimental results show improvements in classification accuracy, convergence speed, robustness against corrupted updates, and communication efficiency. Ablation studies further confirm the complementary contributions of CSA and SSOA, while statistical analysis validates the significance of the observed gains. The proposed AFL framework demonstrates that incorporating autonomous agentic reasoning into federated learning provides an effective and practical solution for intelligent, adaptive, and robust distributed learning systems.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Prospective Interpretation Risk: Principled Communication Control Between LLMs</title>
-    <link href="http://arxiv.org/abs/2609.33885v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.33885v1</id>
-    <published>2026-09-27T00:00:00Z</published>
-    <updated>2026-09-27T00:00:00Z</updated>
-    <author>
-      <name>Wanrong Yang</name>
-    </author>
-    <author>
-      <name>Rehan Deen</name>
-    </author>
-    <author>
-      <name>Julian Ma</name>
-    </author>
-    <author>
-      <name>Yuheng Fan</name>
-    </author>
-    <author>
-      <name>Yaoyu Jin</name>
-    </author>
-    <author>
-      <name>Taher Jafferjee</name>
-    </author>
-    <author>
-      <name>Ziquan Liu</name>
-    </author>
-    <author>
-      <name>Dominik Wojtczak</name>
-    </author>
-    <author>
-      <name>Yalin Zheng</name>
-    </author>
-    <author>
-      <name>David Henry Mguni</name>
-    </author>
-    <summary type="text">Large language model (LLM) agentic systems increasingly rely on models communicating with one another, yet existing uncertainty and multi-agent methods rarely estimate how a particular receiver will interpret a message before it is sent. This matters in heterogeneous systems, where capable receivers can reconstruct different tasks from the same message. We model this as a sender-receiver problem with a latent receiver type and define prospective interpretation risk (PIR): the probability that a receiver reconstructs a task other than intended. Rather than model an LLM's full input-output behaviour, we use black-box probes relating messages, intended tasks, and receiver-specific reconstructions, yielding scalable supervision while separating interpretation from downstream capability failure. Offline, heterogeneous frozen receivers provide supervision for receiver-conditioned risk and the effects of predefined mutable message features. At deployment, history induces a posterior over receiver types, guiding message revision and selection. We introduce value of interpretation information (VoII), querying for receiver information only when its expected communication benefit exceeds its cost. Our theory characterises when receiver information has decision value and bounds such queries. Empirically, interpretation-failure rates vary by 4-13x across receivers. Receiver information reduces PIR calibration error by 68% relative to a receiver-agnostic predictor, largely by correcting receiver-specific risk levels. PIR-guided revision reduces interpretation failure by 44% relative to the original message and 40% relative to a generic rewrite, mostly through a repair that helps every receiver. VoII outperforms information-gain and random querying at matched cost on the interpretation objective it optimises, lowering interpretation failure from 3.84% to 3.79% while querying 18.2% of episodes.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Population Physics, Population Problems: Safety and Emergence in LLM Societies</title>
-    <link href="http://arxiv.org/abs/2609.33871v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.33871v1</id>
-    <published>2026-09-27T00:00:00Z</published>
-    <updated>2026-09-27T00:00:00Z</updated>
-    <author>
-      <name>Adrian de Wynter</name>
-    </author>
-    <summary type="text">The collective behaviour of large language model (LLM) societies is not the sum of their individual outputs. It yields statistically distinct, sometimes-unpredictable phenomena, for which the tools we use to study single agents may not scale. Due to recent incidents involving autonomous agentic systems, however, understanding these systems is paramount. For that we introduce a framework for measuring self-organisation in LLM social systems and apply it to three such systems: a Schelling grid, a social network (Moltbook), and a Twitter-like misinformation simulation ('Rogue'). All three exhibit statistically significant self-organisation. Moreover, their relaxation dynamics vary with the environmental information available to the agents, with open-ended systems (Moltbook, Rogue) exhibiting sharp, phase-transition-like dynamics. Further results show that population-level pathologies can emerge even when the LLMs are safety-tuned or monitored, being primarily driven by the coordinated activity of a population subset. We also show when self-organisation does \textit{not} emerge under two additional scenarios (a commons dilemma, GovSim, and a LLM-as-a-judge deliberation scheme, ChatEval). We argue that measuring signatures of this kind offers a lightweight, agent-agnostic diagnostic layer for detecting coordinated collective behaviour in deployed multi-agent systems without relying on natural language or model versioning.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.CL" />
-  </entry>
-  <entry>
-    <title>TRACE: Governing Memory Validity in Evolving Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2609.33517v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.33517v1</id>
-    <published>2026-09-27T00:00:00Z</published>
-    <updated>2026-09-27T00:00:00Z</updated>
-    <author>
-      <name>Wenjun Xiong</name>
-    </author>
-    <author>
-      <name>Shengtao Zhang</name>
-    </author>
-    <author>
-      <name>Shangding Gu</name>
-    </author>
-    <author>
-      <name>Bo Tang</name>
-    </author>
-    <author>
-      <name>Zhiyu Li</name>
-    </author>
-    <author>
-      <name>Feiyu Xiong</name>
-    </author>
-    <author>
-      <name>Ying Wen</name>
-    </author>
-    <author>
-      <name>Muning Wen</name>
-    </author>
-    <summary type="text">Persistent memory lets language-model agents carry information across long-running collaborations, but leaves a lifecycle question open: what may a returning agent still act on once the shared state has changed? A memory can be correctly retrieved, relevant to the current task, and faithful to its source, and nonetheless be inadmissible for action: an itinerary saved before a pause still names the hotel the team has since replaced. We formalize this as temporal memory admission and present TRACE, a training-free layer that treats re-entry as an eligibility decision rather than a storage or retrieval operation, reconciling a departure checkpoint against absence-period updates, resolving explicit and implicit invalidation, and releasing a bounded Return View only when it covers the returning role's open obligations. We evaluate TRACE under three actor models on Memora, STALE Type II, and a derived ManBench-Return setting, each recast as return episodes: one agent departs, four teammates change the shared state, and the agent rejoins. What separates methods is not overall accuracy but whether one can retain valid memory and reject stale memory at once, and no single-policy baseline can: Restore (reinstate the departure checkpoint in full) admits stale state, Reset (start the return from an empty memory) discards valid state, each bottoming out at 0% on one of the two. TRACE is the only method high on both, reaching 92.6-98.3% valid-information availability with 98.4-99.5% invalid-information rejection on ManBench-Return, within 3.8 points of the best baseline's overall accuracy. On STALE Type II it improves Overall over the strongest comparison policy by 22.3 (Qwen), 18.5 (Gemini), and 27.5 (DeepSeek) points at roughly 2.3 times their tokens, while a write-time consolidation pipeline is more accurate still at 3.99 times TRACE's.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 41 pages, including appendices. Code: https://github.com/xiong-wenjun/TRACE&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>ORBIT: A Framework for Multi-Agent Safety and Security Evaluations</title>
-    <link href="http://arxiv.org/abs/2609.33102v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.33102v1</id>
-    <published>2026-09-27T00:00:00Z</published>
-    <updated>2026-09-27T00:00:00Z</updated>
-    <author>
-      <name>Ben Hagag</name>
-    </author>
-    <author>
-      <name>William L. Anderson</name>
-    </author>
-    <author>
-      <name>Srija Chakraborty</name>
-    </author>
-    <author>
-      <name>Christian Schroeder de Witt</name>
-    </author>
-    <summary type="text">Multi-agent LLM systems are increasingly deployed for complex, long-horizon tasks or emerge as a natural consequence of agents interacting in the wild. Yet they give rise to significant safety and security risks: the flexible protocols that enable task generalization also expose novel threats, from cascading prompt injection to inter-agent collusion. Progress in defending against these threats has been slowed by a lack of shared empirical infrastructure, which forces bespoke environment development for every new defense and makes standardized comparison impossible. Existing evaluations address isolated threat models or single-agent settings, but none jointly vary attack, defense, and architecture across realistic multi-agent environments. To address this gap, we introduce ORBIT, a configurable evaluation framework for empirical multi-agent safety and security research, built on UK AISI's Inspect. ORBIT lets researchers configure communication topologies, memory, scheduling, and agent roles. It supports four threat types and four defense strategies, as well as non-adversarial failures, with a benchmark suite spanning five scenario families covering browser use, computer use, agentic coding, customer service, and cooperative allocation. Our central finding is a gap in defense transferability across threats: per-action defenses that cut a compromised agent's attack success by 60 points on multi-issue coding give no measurable protection against colluding agents, and none of the defenses we tested generalized over all attacks tested. We further demonstrate security-performance tradeoffs and interactions between architecture and defense effectiveness. We make ORBIT available open-source at https://github.com/wlanderson0/orbit.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/wlanderson0/orbit"&gt;https://github.com/wlanderson0/orbit&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.CR" />
-  </entry>
-  <entry>
-    <title>Collective Regimes in Multi-Agent LLMs under Reasoning Effort and Communication Topology</title>
-    <link href="http://arxiv.org/abs/2609.35885v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.35885v1</id>
-    <published>2026-09-27T00:00:00Z</published>
-    <updated>2026-09-27T00:00:00Z</updated>
-    <author>
-      <name>Machiko Hirota</name>
-    </author>
-    <author>
-      <name>Akshara Nadayanur Sathis Kanna</name>
-    </author>
-    <author>
-      <name>Ujwal Kumar</name>
-    </author>
-    <author>
-      <name>Phan Xuan Tan</name>
-    </author>
-    <summary type="text">Multi-agent LLM systems are increasingly used for deliberation and evaluation, often under the assumption that greater peer interaction leads to more reliable consensus. Existing work largely evaluates these systems through final accuracy or aggregate agreement. However, such measures do not reveal how agreement is organized in the panel. In this paper, we study \(N=50\) stateless LLM agents that update their predictions from locally visible peers, and characterize their behavior using both global and local measurements of agreement. We identify three collective regimes: synchronised, twisted (locally ordered but globally incoherent) and chimera-like, where coherent and incoherent subpopulations coexist. Increasing reasoning effort in gpt-5-mini shifts panels from variable, often fragmented outcomes toward locally ordered twisted states, and a small follow-up shows such states can also form from permuted initial conditions, whereas increasing communication connectivity drives them toward global synchronisation. Fragmentation collapses faster as algebraic connectivity increases across rewired graphs. The topology effect also appears on a non-circular judging task and across models from three providers. Finally, low spatial heterogeneity does not guarantee global consensus: 40\% of trials with $ΔZ$ below 0.03 retain a twisted configuration through the final 20 turns. These results show that reasoning effort and communication topology control different aspects of multi-agent coordination, and that aggregate agreement alone is insufficient to characterize collective LLM behavior.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2027&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Adaptive and Resilient Dual-Layer Resource Slicing for Hovering Aerial Backhaul Networks</title>
-    <link href="http://arxiv.org/abs/2609.32798v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.32798v1</id>
-    <published>2026-09-26T00:00:00Z</published>
-    <updated>2026-09-26T00:00:00Z</updated>
-    <author>
-      <name>Chuan-Chi Lai</name>
-    </author>
-    <author>
-      <name>Jen-Hsiang Li</name>
-    </author>
-    <summary type="text">This paper investigates adaptive and resilient dual-layer resource slicing in hovering aerial agent (HAA)-assisted backhaul networks for heterogeneous 5G/6G services, including enhanced mobile broadband (eMBB), ultra-reliable and low-latency communications (URLLC), and massive machine-type communications (mMTC). To address the complex coupling of this dual-layer architecture in non-stationary environments, we propose the resilient adaptive priority orchestration enhanced twin delayed deep deterministic policy gradient (RAPO-TD3) framework. We introduce a novel double soft-max projection mechanism to map the continuous action space into physically feasible bandwidth distributions, ensuring strict constraint adherence. Additionally, a resilient adaptive priority orchestration (RAPO) mechanism is embedded to safeguard mission-critical URLLC latency. Crucially, we establish a rigorous mathematical foundation proving that our framework ensures Lipschitz continuity and satisfies the Robbins-Monro conditions for stable asymptotic convergence. Extensive simulations under non-stationary traffic demonstrate that our RAPO-TD3 framework achieves superior performance relative to PPO, DDPG, and traditional solvers. Notably, via the RAPO mechanism, our approach maintains URLLC satisfaction levels closely approaching theoretical optima even during 500% demand surges. Furthermore, scalability evaluations indicate that sub-millisecond execution latencies strictly satisfy the 1 ms URLLC budget, demonstrating the performance efficacy of our proposed framework.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.NI" />
-  </entry>
-  <entry>
-    <title>Self-Evolving Multi-Agent Symbolic Discovery for Financial Fundamental Analysis</title>
-    <link href="http://arxiv.org/abs/2609.32746v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.32746v1</id>
-    <published>2026-09-26T00:00:00Z</published>
-    <updated>2026-09-26T00:00:00Z</updated>
-    <author>
-      <name>Kelvin J. L. Koa</name>
-    </author>
-    <author>
-      <name>Filip Orestav</name>
-    </author>
-    <author>
-      <name>Shengqiong Wu</name>
-    </author>
-    <author>
-      <name>Michael J. Wooldridge</name>
-    </author>
-    <author>
-      <name>Ke-Wei Huang</name>
-    </author>
-    <summary type="text">While symbolic regression (SR) has been successfully used in science to discover new equations, its use in financial valuation is hindered by several limitations. Whereas the natural sciences provide objectively correct relationships, financial valuation constitutes a distinct class of symbolic discovery problems, as it admits multiple valid perspectives, operates under non-stationary market conditions, and involves noisy, continuous performance signals. In this work, we propose Multi-Agent Fundamental Analysis with Symbolic Adaptive learning (MUFASA), a hierarchical multi-agent framework for symbolic discovery in finance. MUFASA introduces (1) disentangled equation discovery via specialized agents representing distinct valuation perspectives, (2) a meta-coordinator that performs hierarchical-level reasoning over market context information, and (3) a memory mechanism that reasons over statistical performance summaries (e.g., accuracy, stability, and tail risk) to guide learning under noisy feedback. Experiments across datasets from multiple countries show that MUFASA achieves state-of-the-art performance on the valuation task compared to classical finance methods, financial large language models, and SR approaches, while simultaneously producing interpretable equations, which we share with the community. We also make publicly available the distilled learnings across evolution iterations and context-dependent strategy weights, which might offer useful insights for future research on financial fundamental analysis.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; Machine Learning; q-fin.CP" />
-  </entry>
-  <entry>
-    <title>Robust Game-theoretic Motion Planning over Extended Time Horizons</title>
-    <link href="http://arxiv.org/abs/2609.32098v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2609.32098v1</id>
-    <published>2026-09-26T00:00:00Z</published>
-    <updated>2026-09-26T00:00:00Z</updated>
-    <author>
-      <name>Bennet Outland</name>
-    </author>
-    <author>
-      <name>Vishala Arya</name>
-    </author>
-    <summary type="text">This work presents a solution to nonconvex, game-theoretic motion planning problems subject to disturbances over long time horizons. The problem is posed as a partially-decoupled generalized Nash equilibrium problem, in which each agent's dynamics depend only on its own state and control, admitting fast solution methods for competitive multi-agent motion planning. An algorithm, WOLF, is developed that applies receding-horizon model predictive control to an open-loop differential games solver based on sequential convexification. In contrast to robust formulations that fix the uncertainty description offline, the robustness tube here is itself a dynamic state, co-optimized with the trajectory, and its thickness directly sets the tightening of the shared coupling constraints. A sufficient condition is derived under which a nominal trajectory satisfying constraints tightened against all agents' error bounds remains feasible for every admissible disturbance realization. The method is demonstrated on two adversarial on-orbit games with coupled translational-attitude dynamics: a stealthy co-orbital jamming game under an active detection-probability bound, and a sun-blocking game in which an adversary disables an evader by decreasing solar power</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="eess.SY" />
+    <category term="Artificial Intelligence; Machine Learning" />
   </entry>
 </feed>
