@@ -4,12 +4,103 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-08T06:56:54Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 28 entries</subtitle>
+  <updated>2026-10-09T06:59:06Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 29 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Mental-Models for Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2610.12453v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.12453v1</id>
+    <published>2026-10-08T00:00:00Z</published>
+    <updated>2026-10-08T00:00:00Z</updated>
+    <author>
+      <name>Hanan Gani</name>
+    </author>
+    <author>
+      <name>Lulu Shao</name>
+    </author>
+    <author>
+      <name>Manmohan Chandraker</name>
+    </author>
+    <summary type="text">Large foundation models have accelerated progress toward general-purpose agents that interact with humans and other agents through language and multimodal signals. However, robust multi-agent decision-making requires reasoning about what other agents know, intend, and are likely to do under partial observability. Current agentic systems often operate through prompt design, memory, or end-to-end behavioral shaping, but typically do not learn an explicit partner-state representation that can be reused as a decision variable across tasks. We introduce \emph{mental-model-enabled agents}, a framework that equips an agent with a latent mental model of its counterpart, allowing it to infer hidden beliefs, intentions, and likely reactions from the observed history and use these inferences to guide action selection. Our method learns an amortized recursive Theory-of-Mind representation, with first- and second-order mental-state structure, jointly with a belief-conditioned reward model that evaluates candidate actions relative to the inferred partner state. A policy is then learned under this belief-aware signal, yielding an agent that can act independently at inference time while retaining the benefits of explicit partner modeling. We evaluate the same framework on both language-only and multimodal benchmarks. Across these settings, explicit mental-state modeling consistently improves interaction quality and Theory-of-Mind performance over base agentic systems, showing that structured partner modeling is a useful inductive bias for general multi-agent systems. Our code is publicly available at https://github.com/hananshafi/Mental-Models</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/hananshafi/Mental-Models"&gt;https://github.com/hananshafi/Mental-Models&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Spatial Pattern Formation from Multi-Agent Learning in Public Goods Dilemmas</title>
+    <link href="http://arxiv.org/abs/2610.12321v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.12321v1</id>
+    <published>2026-10-08T00:00:00Z</published>
+    <updated>2026-10-08T00:00:00Z</updated>
+    <author>
+      <name>Yefei Zhang</name>
+    </author>
+    <author>
+      <name>Yuxuan Zhao</name>
+    </author>
+    <summary type="text">Spatial public goods models show that prescribed movement toward richer locations can generate spatial patterns. We ask how such patterns emerge when agents learn where to move and how learning rates shape their consequences for collective welfare. Fixed populations of cooperators and defectors independently learn movement policies using tabular Q-learning and local observations. Cooperator learning generates clusters around resource peaks, while co-adaptation changes their strength and motion. At a fixed training budget, the largest welfare losses occur when cooperators learn at high rates and defectors at low rates. In part of this regime, learned policies also generate traveling bands supported by a shared directional preference. The conditions supporting travel change with further training, so these patterns reflect training history rather than an established asymptotic outcome. Across the tested learning-rate conditions with cooperator learning, mean collective welfare falls below random movement because increased crowding outweighs gains in resource benefit. Charging agents for the crowding they impose on others during learning recovers much of the welfare loss in the tested conditions. These results connect learning rates to the emergence and welfare costs of spatial organization driven by individual rewards.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.GT; Machine Learning" />
+  </entry>
+  <entry>
+    <title>ConventionPlay: Capability-Limited Training for Robust Ad-Hoc Collaboration</title>
+    <link href="http://arxiv.org/abs/2610.11842v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.11842v1</id>
+    <published>2026-10-08T00:00:00Z</published>
+    <updated>2026-10-08T00:00:00Z</updated>
+    <author>
+      <name>Abhishek Sriraman</name>
+    </author>
+    <author>
+      <name>Eleni Vasilaki</name>
+    </author>
+    <author>
+      <name>Robert Loftin</name>
+    </author>
+    <summary type="text">Ad-hoc collaboration often requires agents to identify and adhere to some shared convention within a cooperative task. Existing work on reinforcement learning (RL) for ad-hoc collaboration focuses on training agents that adapt to the conventions established by their partners. These methods fail to consider the possibility that while some partners might follow only a single fixed convention, others may themselves be capable of adapting to multiple conventions. Here we present ConventionPlay, an RL-based approach that teaches agents to discover their partner's optimal convention by training against a learned population of partners that exhibit different degrees of adaptability across conventions. Some of these partners follow a single, fixed convention, while others are able to adapt to a subset of the possible conventions for the task in question. The existence of partners that support a limited subset of conventions forces agents trained against this population to actively probe their partner's capabilities, and steer their partner towards the most effective joint strategy that they are capable of following. Our experimental results demonstrate that agents trained via ConventionPlay achieve superior performance to existing ad-hoc collaboration methods against test populations of partners that are compatible with multiple conventions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2027&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Personalization Matters: Long-Horizon Conversation Agent with User-Centric Information in Online Shopping Interactions</title>
+    <link href="http://arxiv.org/abs/2610.11375v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.11375v1</id>
+    <published>2026-10-08T00:00:00Z</published>
+    <updated>2026-10-08T00:00:00Z</updated>
+    <author>
+      <name>Rena Gao</name>
+    </author>
+    <author>
+      <name>Yue Dai</name>
+    </author>
+    <author>
+      <name>Hao Guan</name>
+    </author>
+    <author>
+      <name>Shengxiang Gao</name>
+    </author>
+    <author>
+      <name>Wangyang Wu</name>
+    </author>
+    <author>
+      <name>Yixin Shen</name>
+    </author>
+    <author>
+      <name>Jey Han Lau</name>
+    </author>
+    <summary type="text">Personalized conversational shopping requires maintaining preference consistency over multi-turn interactions, where users reveal constraints gradually. Existing approaches often rely on static profiles and do not explicitly control long-horizon interaction behavior. We propose a multi-agent, multimodal Retrieval-Augmented Generation (RAG) framework that decomposes dialogue state tracking, recommendation retrieval, preference-aware reasoning, and response generation, while integrating product metadata, product reviews, image-derived descriptions, and user historical reviews. To evaluate interaction-level quality, we adopt a trajectory-level protocol with four dimensions: Global Preference Consistency, Cumulative Information Synthesis, Interaction Trajectory, and Tone Consistency. On an Amazon Reviews 2023 benchmark, retrieval-enabled variants outperform a no-RAG baseline on automatic trajectory metrics (average 4.82 vs. 3.74). In a small real-user study ($n{=}5$), the Full variant achieves the highest mean overall rating (4.60 vs. 2.20 for Baseline), providing exploratory evidence that role decomposition plus user-centric retrieval improves perceived personalization.\footnote{Code and dataset are available at: https://github.com/RenaGao/Multimodel_RAG_Indexing</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/RenaGao/Multimodel_RAG_Indexing"&gt;https://github.com/RenaGao/Multimodel_RAG_Indexing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; AACL-IJCNLP 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>A Society of Researchers: Designing Institutions for Populations of Autonomous Research Agents</title>
     <link href="http://arxiv.org/abs/2610.10468v1" rel="alternate" type="text/html" />
@@ -101,6 +192,25 @@
     <summary type="text">Layout generation for real-world facilities is a challenging problem, requiring reasoning over irregular site boundaries, heterogeneous orientations, access-aware placements, and motion-planning feasibility. Yet, most existing layout benchmarks in the generative AI space target simpler placements over rectangular domains and rely on distributional metrics such as FID and IoU that reward conformity to dataset priors, thus discounting design innovation. Motivated by these gaps, we introduce ALPS-Bench, a benchmark of $1,000$ professionally annotated real-world facility layouts paired with an instance-specific scoring protocol grounded in a structured design manual. As a strong baseline for ALPS-Bench, we propose CANDO, a training-free multi-agent framework in which specialized agents iteratively refine layouts through a verification-grounded loop, concentrating reasoning on strategic spatial decisions. We demonstrate that CANDO surpasses state-of-the-art trained and LLM-based baselines on the widely adopted PubLayNet, RICO, and PKU-PosterLayout benchmarks, establishing cooperative agentic design as a broadly effective recipe for constraint-aware layout synthesis.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Decentralized collaborative continual learning: A multi-objective minimization-based technique</title>
+    <link href="http://arxiv.org/abs/2610.10882v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.10882v1</id>
+    <published>2026-10-07T00:00:00Z</published>
+    <updated>2026-10-07T00:00:00Z</updated>
+    <author>
+      <name>Yara Zgheib</name>
+    </author>
+    <author>
+      <name>Marc Antonini</name>
+    </author>
+    <author>
+      <name>Roula Nassif</name>
+    </author>
+    <summary type="text">In this work, we formulate decentralized continual learning within a multi-objective optimization framework. For a given inference task t (corresponding to a common minimizer shared by the cost functions of all agents), agents collecting data in a distributed and streamed manner are only allowed to perform local computations and to exchange information with neighboring agents over the underlying communication graph. As tasks evolve sequentially over time, agents must adapt to newly arriving tasks while retaining knowledge acquired from previously learned ones. This requirement leads to the wellknown stability plasticity dilemma, where stability refers to the ability to retain previous knowledge, while plasticity refers to the ability to learn and adapt to new tasks. To address the stability challenge, agents store subsets of samples from past tasks in local memory buffers. Then, through an appropriate multiobjective formulation, the stored information is incorporated into the learning process so that parameter updates account jointly for the current task and previously learned tasks. The proposed decentralized continual learning approach is analyzed in the mean square error sense under general assumptions on the individual cost functions and gradient noise processes. The analysis reveals that cooperation among agents improves the performance of continual learning. In particular, by exchanging information with neighboring agents, decentralized collaborative learning can exploit the diversity of locally observed data and memory buffers to improve the network average mean-square deviation (MSD) across tasks. Finally, simulations illustrate the theoretical findings and the effectiveness of the method in reducing forgetting and improving the average MSD across tasks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
   <entry>
@@ -535,111 +645,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence; cs.CY" />
-  </entry>
-  <entry>
-    <title>FinNextAssist: Towards Professional Financial Deep Research Assistant</title>
-    <link href="http://arxiv.org/abs/2610.03174v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.03174v1</id>
-    <published>2026-10-02T00:00:00Z</published>
-    <updated>2026-10-02T00:00:00Z</updated>
-    <author>
-      <name>Xiangyu Li</name>
-    </author>
-    <author>
-      <name>Fengbin Zhu</name>
-    </author>
-    <author>
-      <name>Xuan Yao</name>
-    </author>
-    <author>
-      <name>Siyu Liu</name>
-    </author>
-    <author>
-      <name>Xiaoluan Liu</name>
-    </author>
-    <author>
-      <name>Chao Wang</name>
-    </author>
-    <author>
-      <name>Huanbo Luan</name>
-    </author>
-    <author>
-      <name>Xiaofen Xing</name>
-    </author>
-    <author>
-      <name>Xiangmin Xu</name>
-    </author>
-    <author>
-      <name>Ke-Wei Huang</name>
-    </author>
-    <author>
-      <name>Richang Hong</name>
-    </author>
-    <author>
-      <name>Tat-Seng Chua</name>
-    </author>
-    <summary type="text">Deep Research (DR) agents have demonstrated strong capabilities in complex, research-oriented tasks through autonomous planning, iterative retrieval, multi-step reasoning, and structured reporting. However, adapting DR agents to finance introduces unique challenges: financial analysis demands the joint completion of heterogeneous sub-tasks spanning diverse data types, tools, and analytical workflows. We identify three key requirements for a professional financial DR agent: integration of authoritative, heterogeneous financial data sources; specialized analytical tools and skills; and dedicated sub-agents for domain-specific sub-tasks. Building on these principles, we propose FinNextAssist, an end-to-end deep research framework designed for professional financial analysis. FinNextAssist decomposes the research process into four stages: Task Planner, Evidence Compiler, Reasoning Engine, and Report Assembler, and introduces two novel lightweight sub-agents: TabAgent, for cross-market financial table understanding, and HeteroAgent, for cross-modality heterogeneous financial data interpretation. Extensive experiments on FinDeepResearch, the Finance Agent Benchmark, and FinTMMBench-Web show that FinNextAssist substantially outperforms both strong proprietary and open-source DR agents, with ablation studies confirming the contribution of each component across diverse markets and languages.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="q-fin.CP" />
-  </entry>
-  <entry>
-    <title>Evaluator-in-the-Loop Monte Carlo Tree Search via LLM Agents for Motif Scaffolding in Protein Design</title>
-    <link href="http://arxiv.org/abs/2610.02924v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.02924v1</id>
-    <published>2026-10-02T00:00:00Z</published>
-    <updated>2026-10-02T00:00:00Z</updated>
-    <author>
-      <name>Haotian Hu</name>
-    </author>
-    <author>
-      <name>Oguzhan Gungordo</name>
-    </author>
-    <author>
-      <name>Siheng Xiong</name>
-    </author>
-    <author>
-      <name>Faramarz Fekri</name>
-    </author>
-    <summary type="text">Motif-scaffolding systems commonly follow a generate-then-filter paradigm, in which candidate proteins are generated independently and structural evaluation is used primarily for terminal screening or ranking. This paradigm underuses evaluation: failed predictions contain state-specific evidence about whether a design requires repair of motif geometry, global foldability, or other structural constraints. We introduce \textbf{ELMS} (Evidence-based LLM-guided Monte Carlo Search), an evaluator-in-the-loop search framework for motif scaffolding that turns such evaluator feedback into targeted design actions. Effective reuse of structural feedback is nontrivial because different scaffold states exhibit different failure modes, and repeatedly refining a single trajectory can prematurely commit computation to an unproductive region of sequence space. ELMS therefore retains evaluated scaffolds as persistent search states: a Critic Agent diagnoses state-local structural failures, a Policy Agent selects targeted operators with execution parameters, motif-locked operators realize legal sequence modifications, and MCTS determines which historical states should receive further design effort. Under the standard GeomMotif protocol (100 candidates per task), ELMS achieves Successful rates of 86.41\% on single-motif tasks and 84.57\% on paired-motif tasks, exceeding the strongest prior baseline by 19.3 and 21.9 percentage points, respectively. On MotifBench, under a matched 100-candidate search budget, it solves 26.7 of 30 tasks on average (88.89\% Task Success), compared with 16.0 tasks (53.33\%) for the strongest baseline. These results establish ELMS as an effective approach for converting structural evaluation from a terminal filter into actionable guidance for iterative motif scaffolding.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Turnover-Orthogonal Credit Assignment for Open-Team Multi-Agent Reinforcement Learning</title>
-    <link href="http://arxiv.org/abs/2610.02847v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.02847v1</id>
-    <published>2026-10-02T00:00:00Z</published>
-    <updated>2026-10-02T00:00:00Z</updated>
-    <author>
-      <name>Amit Thakur</name>
-    </author>
-    <author>
-      <name>Mukesh Singhal</name>
-    </author>
-    <summary type="text">Open-team multi-agent reinforcement learning studies cooperative systems in which agents may join, leave, or be replaced during an episode. In such settings, the team return changes both because agents choose useful actions and because the active population itself changes. Standard centralized critics and shared advantages often mix these two effects into one scalar credit signal, allowing surviving agents to be rewarded or penalized for exogenous turnover events outside their control. We introduce turnover-orthogonal credit assignment (TOCA), a value decomposition for open teams that separates action effects, pure turnover effects, and action--turnover interactions. Under exogenous turnover, the event-conditioned value admits a centered decomposition whose event-conditioned baseline removes the pure turnover component while preserving credit for actions that make the team robust to future replacements. We instantiate this idea with a permutation-invariant centralized critic over variable-size agent sets and event tokens, and derive both a counterfactual per-agent credit signal and a softly weighted interaction variant, TOCA-$β$, for high-variance control environments. Controlled diagnostic experiments show that TOCA improves return over event-aware MAPPO-style critics and that removing interaction credit substantially hurts performance. In a replacement-only Dynamic Spread benchmark, TOCA-$β$ achieves the best mean return at high turnover rates and improves over its no-interaction ablation. These results suggest that explicitly separating turnover from action credit is a useful principle for robust learning in dynamic cooperative teams.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Resilient Multi-Agent Target Localization and Tracking via BAG-Aware Mutual Information Maximization under False Data Injection Attacks</title>
-    <link href="http://arxiv.org/abs/2610.03930v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.03930v1</id>
-    <published>2026-10-02T00:00:00Z</published>
-    <updated>2026-10-02T00:00:00Z</updated>
-    <author>
-      <name>Bibek Adhikari</name>
-    </author>
-    <author>
-      <name>Samrat Chaulagain</name>
-    </author>
-    <author>
-      <name>Kamesh Subbarao</name>
-    </author>
-    <summary type="text">Cooperative multi-agent networks deployed for target localization and tracking remain critically vulnerable to malicious cyberattacks, since a single compromised agent can corrupt the centralized target belief and mislead the estimation process across the entire network. This paper presents a resilient multi-agent target localization and tracking framework under a limited agent sensing range and false-data injection (FDI) attacks. The proposed method combines information-based navigation for target search and posterior target state uncertainty reduction, Bayesian attack graph (BAG) based attack detection for probabilistic identification of the compromised agents, and reachable set-guided recovery that guides the uncompromised agents to relocalize the target when the sole localizing agent is attacked. The framework preserves the network localization capability after an attack by trust-gating compromised sensing information and guiding attack-immune agents toward a dynamically constructed recovery set representing the new target belief using a Linear Quadratic Regulator (LQR). Simulation validates that the proposed framework maintains a robust tracking performance under FDI attacks, demonstrating the potential for resilient autonomy in safety-critical applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 6 pages, 5 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
   </entry>
 </feed>
