@@ -4,12 +4,148 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-09T06:59:06Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 29 entries</subtitle>
+  <updated>2026-10-12T06:47:55Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 22 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Ask Your Advisor: Learning When to Consult Stronger Models in Agentic Systems</title>
+    <link href="http://arxiv.org/abs/2610.13870v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.13870v1</id>
+    <published>2026-10-09T00:00:00Z</published>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <author>
+      <name>Pascal Sowietzki</name>
+    </author>
+    <author>
+      <name>Steffen Holter</name>
+    </author>
+    <author>
+      <name>Yannick Metz</name>
+    </author>
+    <author>
+      <name>Emil Kasper</name>
+    </author>
+    <author>
+      <name>Raphael Baur</name>
+    </author>
+    <author>
+      <name>Mennatallah El-Assady</name>
+    </author>
+    <summary type="text">To balance task performance and computational cost, agentic workflows can use a lower-cost model for execution and selectively consult a stronger model. In such executor-advisor systems, the executor decides when to seek advice, making escalation depend on self-assessment, although current language models struggle to detect where their own reasoning fails. The need for stronger reasoning emerges during execution and varies across workflow phases. We introduce ARIA, a meta-controller that learns when to consult by balancing task success against consultation cost. Our approach formulates consultation as a sequential resource-allocation problem. At workflow contact points, ARIA maps execution evidence to a compact state abstraction and selects SILENT or CONSULT, with action values learned by Monte Carlo control from cost-penalized outcomes. Across evaluated tasks of SWE-bench Verified, Terminal-Bench 2.1, and $τ^2$-bench, ARIA recovers 44-81% of the executor-advisor success gap at less than half the advisor model's cost. ARIA achieves the best observed success-cost trade-off among ten other evaluated conditions, including routing and cascading methods, fixed and prompted consultation, and random placement at matched advice volume. The policies are compact and inspectable, with a single consultation-price parameter governing the success-cost trade-off without retraining either underlying model.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>OpenSocialJax: Evaluating Social Adaptation in Sequential Social Dilemmas with Open-Ended Environmental Dynamics</title>
+    <link href="http://arxiv.org/abs/2610.13710v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.13710v1</id>
+    <published>2026-10-09T00:00:00Z</published>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <author>
+      <name>Zihao Guo</name>
+    </author>
+    <author>
+      <name>Meng Fang</name>
+    </author>
+    <author>
+      <name>Joel Z. Leibo</name>
+    </author>
+    <author>
+      <name>Yali Du</name>
+    </author>
+    <summary type="text">Sequential social dilemma benchmarks capture diverse social interactions, but rarely test whether agents can infer hidden environmental rules through repeated interaction while adapting to other agents. We introduce \textbf{OpenSocialJax}, which extends Clean Up and Commons Harvest across an open-ended distribution of latent environment configurations, systematically varying spatial layouts and hidden rules governing tool crafting, payoffs, and resource dynamics. Each episode samples one configuration from tens of millions of possibilities and holds it fixed across five trials. We evaluate eight large language models, including three closed source models and five open source models. Our evaluation tests whether models can discover hidden rules and adapt to other agents in homogeneous and mixed teams. We find that rule discovery often improves performance but does not reliably sustain cooperation, as the cleaning burden becomes concentrated among fewer agents in OpenCleanup and every team eventually exhausts the shared resource in OpenHarvest. In our mixed arena, one cooperative agent was able to sustain the public good in OpenCleanup at a cost to its own return, but could not prevent resource depletion in OpenHarvest. Together, these results highlight the difficulty of adapting jointly to unfamiliar environmental dynamics and the changing behavior of other agents.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24 pages, including appendix&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Collective Autonomous Vehicle Routing Needs Social Awareness for Coexistence with Human Drivers</title>
+    <link href="http://arxiv.org/abs/2610.13439v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.13439v1</id>
+    <published>2026-10-09T00:00:00Z</published>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <author>
+      <name>Anastasia Psarou</name>
+    </author>
+    <author>
+      <name>Mikolaj Rams</name>
+    </author>
+    <author>
+      <name>Blazej Torbus</name>
+    </author>
+    <author>
+      <name>Rafal Kucharski</name>
+    </author>
+    <summary type="text">Collective Autonomous Vehicle (AV) route choices in real-world traffic networks can create externalities for Human-Driven Vehicles (HDVs), as routes that benefit AVs may increase travel times for other road users. To address this, we introduce a social component, the marginal cost, to the selfish travel time AV reward. Marginal cost captures an AV's impact on other road users by comparing their travel times with those in a counterfactual simulation in which the AV is removed.   We study AV route choice in mixed-autonomy traffic settings using Multi-Agent Reinforcement Learning (MARL), where AVs learn routing policies through repeated interactions with the traffic environment. Experiments on the real-world networks of Ingolstadt and Provins show that incorporating marginal cost into the AV reward not only limits the increase in HDV travel times and shortens AV travel times relative to selfish AV routing, but also improves overall system performance. In Ingolstadt, selfish routing of 40\% AVs increases the travel times of other vehicles by 1.7\%, and this drops to 1.1\% when the social reward is included. Interestingly, not only does overall system performance improve, but the AVs are also better off when acting socially.This effect is consistent across tested cities, penetration rates, and replications, yet when the weight of the social component in the reward increases, the system fails to reach the desired performance.   For a more scalable approach to social AV routing in mixed-autonomy traffic, we compute the marginal cost only for the AVs whose route choices most affect the traffic system. This reduces the number of counterfactual simulations and achieves similar performance at a significantly lower computational cost. Our results suggest that AV routing should go beyond selfish rewards and, for the benefit of all traffic participants, include a social component in its objective.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>When AI Advisors Agree: Distinguishing Forecast Risk from Forecast Reliability</title>
+    <link href="http://arxiv.org/abs/2610.13431v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.13431v1</id>
+    <published>2026-10-09T00:00:00Z</published>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <author>
+      <name>Russlan Ramdowar</name>
+    </author>
+    <summary type="text">If seven AI advisors give similar forecasts, should we trust them more? Agreement can indicate useful shared evidence, but it can also reflect an asset that was easier to forecast in the first place. We examine this distinction using 928 completed first-quarter forecasts for 232 assets across four production batches of iPulse AI. Ten historical Gemini configurations are grouped into seven investment frameworks; their archived forecasts are compared with later market outcomes, without generating new reports. Mean absolute return error rises from 10.31 percentage points in the lowest-disagreement quartile to 21.05 in the highest. Yet a forecast of no price change shows almost the same increase, from 9.89 to 21.15. The relationship between disagreement and additional forecast error is not resolved after accounting for visible asset risk. Retaining the quarter of forecasts with lowest historical volatility produces lower error than retaining those with least disagreement: 7.97 versus 10.31 percentage points. Agreement about direction behaves differently. When at least six of seven frameworks share a direction, directional accuracy is higher, but return-magnitude error is also larger. These results distinguish three questions often collapsed into one confidence score: how risky the asset is, whether advisors agree on its direction, and how precisely they forecast its return. For this historical council, agreement is informative in specific ways; it is not a general certificate of forecast reliability.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>The Limits of Manipulation within Personalized Incentive Policies</title>
+    <link href="http://arxiv.org/abs/2610.13133v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.13133v1</id>
+    <published>2026-10-09T00:00:00Z</published>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <author>
+      <name>Andrea Araldo</name>
+    </author>
+    <author>
+      <name>Alessa Mayer</name>
+    </author>
+    <author>
+      <name>Ravi Seshadri</name>
+    </author>
+    <author>
+      <name>Amir Brudner</name>
+    </author>
+    <summary type="text">Demand management policies aim to shift individual behavior toward sustainable choices (e.g., goods, transport modes). Personalized incentive policies tailor subsidies to agents' needs and constraints, but personalization also exposes the regulator to agents' strategic manipulative behavior. The extent to which agents can profitably manipulate such policies remains poorly understood, which limits their applicability.   This paper establishes analytically the conditions under which manipulation benefits the agent. We formalize a Stackelberg game in which an agent may simulate a different profile to extract higher incentives from a regulator. Previous work typically assumes that the regulator would instantaneously classify agents into the simulated user profile. In contrast, we explicitly model the regulator's process of learning the agent profile, based on observed past behavior. This makes manipulation harder, since it forces the agent to consistently behave according to a simulated profile, thus renouncing following their true preferences. Manipulative agents thus incur a Cost of Manipulation, which has typically been neglected. By accounting for it, we get a counterintuitive finding: although classification uncertainty reduces personalization accuracy, it may benefit the regulator by deterring manipulation. We establish an upper bound on the agent's gain from manipulation, which becomes stricter as profiles become harder to distinguish for the regulator. Simulations on the London Passenger Mode Choice dataset illustrate this deterrence effect. The framework can therefore be used to stress-test the robustness of personalized incentive policies before deployment.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>SwingGuard: Risk-Conditioned Multi-Agent Swing Trading with Dual-Timescale Governance</title>
+    <link href="http://arxiv.org/abs/2610.12988v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.12988v1</id>
+    <published>2026-10-09T00:00:00Z</published>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <author>
+      <name>Junzhou Su</name>
+    </author>
+    <author>
+      <name>Yichen Luo</name>
+    </author>
+    <author>
+      <name>Yebo Feng</name>
+    </author>
+    <author>
+      <name>Teng Li</name>
+    </author>
+    <author>
+      <name>Jiahua Xu</name>
+    </author>
+    <summary type="text">Cryptocurrency swing trading spans mismatched timescales: positions remain active while market and event risk can change within minutes. However, many predictive and large language model (LLM)-based trading systems assess risk after strategy generation or run both functions at the same cadence, leaving proposals unconditioned by current risk and exposure weakly governed between revisions. We propose SwingGuard, a dual-timescale, long-only multi-agent framework for risk-conditioned strategy generation. At the strategy timescale, specialized analysts synthesize point-in-time technical, sentiment, on-chain, and macroeconomic evidence through bullish-bearish deliberation. The resulting evidence and current risk context are then combined by a Portfolio Architect to form a target position. At the governance timescale, a five-minute Risk Controller performs conditional diagnosis, maintains persistent risk states with staged recovery, audits the proposal, and constrains execution until the next strategy revision. This design allows risk to shape the feasible strategy before proposal finalization while continuing to govern the active position afterward. Evaluations on Bitcoin (BTC) and Ether (ETH) show that SwingGuard preserves positive returns after transaction costs while maintaining shallow drawdowns and strong risk-adjusted performance on both assets. The exposure-capped joint portfolio achieves a Sharpe ratio of 2.98, compared with 2.79 for an otherwise identical Post-hoc Risk variant. Structured traces further link risk evidence and state transitions to strategy constraints and executed position changes, providing an auditable framework for asynchronous cryptocurrency swing trading. Overall, the results indicate that conditioning strategy formation on current risk, together with persistent high-frequency governance, improves risk-adjusted performance without sacrificing auditability.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>Mental-Models for Multi-Agent Systems</title>
     <link href="http://arxiv.org/abs/2610.12453v1" rel="alternate" type="text/html" />
@@ -100,6 +236,68 @@
 &lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; AACL-IJCNLP 2026&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>How Do Hardware Faults Manifest Differently in LLM Agents?</title>
+    <link href="http://arxiv.org/abs/2610.12756v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.12756v1</id>
+    <published>2026-10-08T00:00:00Z</published>
+    <updated>2026-10-08T00:00:00Z</updated>
+    <author>
+      <name>Aiden Rubey</name>
+    </author>
+    <author>
+      <name>Zachary Coalson</name>
+    </author>
+    <author>
+      <name>Cong Chen</name>
+    </author>
+    <author>
+      <name>Jean-Philippe Monteuuis</name>
+    </author>
+    <author>
+      <name>Jonathan Petit</name>
+    </author>
+    <author>
+      <name>Sanghyun Hong</name>
+    </author>
+    <summary type="text">We present the first systematic study of the resilience of large language model (LLM) agents to random hardware-induced faults. Prior work on hardware fault resilience in LLMs focuses on model-level outcomes, such as incorrect outputs or generation failures. Yet LLM agents repeatedly interact with tools and environments, creating loops that can change how hardware faults manifest. We conduct an extensive evaluation across three agent benchmarks, comprising 6,814 agent executions: 2,400+ clean runs and 4,300+ fault-injected runs with independently sampled random two-bit weight faults. We trace how these faults propagate through agent execution. Unlike prior studies, we find that agentic execution transforms model-level corruption into distinct system-level outcomes: (1) agents can recover from faulty model outputs and still complete tasks correctly; (2) this recovery increases computational and execution costs; (3) a few faults cause subtle but semantically meaningful errors while the agent otherwise behaves normally; and (4) for some models and scenarios, faults can alter security and alignment behavior.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>SoftwareGym: Scaling Computer-Use Agent Training with Diverse Synthesized Software Environments</title>
+    <link href="http://arxiv.org/abs/2610.12611v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.12611v1</id>
+    <published>2026-10-08T00:00:00Z</published>
+    <updated>2026-10-08T00:00:00Z</updated>
+    <author>
+      <name>Tian Jin</name>
+    </author>
+    <author>
+      <name>Wenhao Wang</name>
+    </author>
+    <author>
+      <name>Jing Kang</name>
+    </author>
+    <author>
+      <name>Haoting Shi</name>
+    </author>
+    <author>
+      <name>Rui Ye</name>
+    </author>
+    <author>
+      <name>Yijun Lu</name>
+    </author>
+    <author>
+      <name>Siheng Chen</name>
+    </author>
+    <summary type="text">Computer-use agents (CUAs) are rapidly improving, yet synthesizing diverse and reliable software environments at scale remains challenging. Native application environments require substantial construction and integration effort, which limits application coverage and increases the risk of application-specific overfitting. Browser-hosted environments provide limited interaction depth and workflow complexity. These limitations motivate SoftwareGym, an automated pipeline for synthesizing GUI software environments with diverse interfaces, executable functionality, and runtime-verified behavior. It generates structurally diverse designs, realizes them as runnable applications, and uses GUI evaluation with iterative repair to ensure functional reliability. Using SoftwareGym, we synthesize 182 applications across twelve categories and achieve a mean GUI task pass rate of 91.5%. We construct SoftwareGym-Bench, a 120-task evaluation suite spanning the same twelve categories, and use trajectories collected from these environments for CUA training. The resulting model improves Pass@3 from 41.39% to 56.97% on the strictly out-of-domain OSWorld benchmark and achieves 40.0% on SoftwareGym-Bench. These results demonstrate the potential of synthesized software environments as scalable and transferable supervision for CUA training.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 26 pages, 11 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.SE" />
   </entry>
   <entry>
     <title>A Society of Researchers: Designing Institutions for Populations of Autonomous Research Agents</title>
@@ -322,328 +520,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence; cs.CL; cs.SI" />
-  </entry>
-  <entry>
-    <title>On Learning Optimal Corners in Orthogonal Partially Observable Cooperative Guard Art Galleries</title>
-    <link href="http://arxiv.org/abs/2610.06777v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.06777v1</id>
-    <published>2026-10-05T00:00:00Z</published>
-    <updated>2026-10-05T00:00:00Z</updated>
-    <author>
-      <name>Yassin Ben Mansour</name>
-    </author>
-    <author>
-      <name>Edwin Meriaux</name>
-    </author>
-    <summary type="text">The CADENCE algorithm solves the Partially Observable Cooperative Guard Art Gallery Problem (POCGAGP) with formal coverage and connectivity guarantees, but leaves unspecified which valid corner each agent should be deployed to, a choice that strongly affects efficiency. We introduce two learned corner-selection heuristics that preserve these guarantees: a CNN scoring candidates on a grid encoding, and a GATv2 network trained with Deep Q-Learning (DQN) on a visibility graph. Across 7,500 runs on random orthogonal environments (50x50 to 250x250), our heuristics outperform baseline CADENCE in both steps to full coverage and peak agent count, with gains growing with scale, and improve on Incremental Self-Deployment (ISDA) baselines in agent utilization while providing guarantees ISDA lacks. Learned corner selection thus improves CADENCE in speed and agent utilization at no cost to its formal properties.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Machine Learning; Robotics" />
-  </entry>
-  <entry>
-    <title>BazaarBench: Delegation Safety in Decentralized C2C Marketplaces Run by LLM Agents</title>
-    <link href="http://arxiv.org/abs/2610.06748v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.06748v1</id>
-    <published>2026-10-05T00:00:00Z</published>
-    <updated>2026-10-05T00:00:00Z</updated>
-    <author>
-      <name>Ziyan Wang</name>
-    </author>
-    <author>
-      <name>Shuqing Shi</name>
-    </author>
-    <author>
-      <name>James Oldfield</name>
-    </author>
-    <author>
-      <name>Samuele Marro</name>
-    </author>
-    <author>
-      <name>Jialin Yu</name>
-    </author>
-    <author>
-      <name>Philip Torr</name>
-    </author>
-    <author>
-      <name>Yali Du</name>
-    </author>
-    <author>
-      <name>Adel Bibi</name>
-    </author>
-    <summary type="text">In decentralized consumer-to-consumer (C2C) marketplaces, people list goods, negotiate with strangers, and rate one another, so trust rests on reputation. Large language model (LLM) agents now act for users, raising risks to their money, privacy, and reputation. We introduce BazaarBench, a simulated C2C marketplace and benchmark for evaluating the safety of these agents. It tracks ownership, item condition, and commitments across transactions, combining record checks with rubric-based LLM judgments to identify six failure types across five stages. We run three base markets for 30 simulated days, each with 100 agents using one model and inventories drawn from a public eBay sample. Across 45 continuations, we evaluate five models under ordinary instructions, deadline pressure, or adversarial instructions to exploit other traders. Each continuation runs for seven simulated days from a copy of a market's day-30 state. The tested model controls the same 20 selected agents, retaining their personas, inventories, and histories, while the other 80 keep the base model. All five models attempt to promise the same item to multiple buyers under ordinary instructions. Adding targets and deadlines increases these attempts for every model. Under adversarial instructions, the share of tested sellers' committed transactions completed despite unavailable items or overstated conditions rises from 15.4% to 33.4%, reaching 55.5% for GPT-5.4. Averaged across models and markets, simulated weekly earnings per tested agent rise from USD 20 under ordinary instructions to USD 33 under adversarial instructions. Most of the increase comes from items the sellers never held. We release the simulator, saved market states, evaluation code, and records covering 357,608 agent model calls for evaluating new models and developing safer marketplace agents.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 38 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Attention Tax, Handoff Tax: A Stylised Model of When Multi-Agent LLM Systems Help</title>
-    <link href="http://arxiv.org/abs/2610.06069v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.06069v1</id>
-    <published>2026-10-05T00:00:00Z</published>
-    <updated>2026-10-05T00:00:00Z</updated>
-    <author>
-      <name>Akshit Anchan</name>
-    </author>
-    <author>
-      <name>Nayonika Sen</name>
-    </author>
-    <summary type="text">Recent work on multi-agent LLM systems reaches sharply different conclusions: some results show that a single agent with the same information and compute should dominate a delegated system, others that multi-agent gains grow with task depth. We argue that much of the disagreement comes from modelling different bottlenecks, and introduce a stylised reliability model built around two trade-offs. Decomposition reduces the burden of long contexts but incurs a handoff tax when information is compressed or transferred between agents. Redundancy gains from multiple samples, but its benefit depends on how much their failures are shared. With reasoning budget, verification, and task structure added, the model yields two crossover conditions: decomposition becomes preferable once the attention cost avoided by resetting context exceeds the handoff cost, and parallel sampling at equal budget is eventually preferable when its shared-failure floor lies below the error floor of one agent thinking longer. We connect these regimes to recent theoretical and empirical results. On a ledger-reconciliation task we measure the context-degradation curve and the handoff tax from single-agent and handoff runs alone. From these the model places the crossover at depth 10 and predicts decomposition to win at depths 20, 50, and 100. It does, on step-level and final-balance accuracy, and the decomposed system's success, which the prediction never sees, lands within 9 percentage points of the predicted rate at every depth.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 23 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.CL; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Who Keeps the Gains from Personal AI Assistants? Seller Adaptation and the Unassisted in a Language-Model Market Simulation</title>
-    <link href="http://arxiv.org/abs/2610.05823v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.05823v1</id>
-    <published>2026-10-05T00:00:00Z</published>
-    <updated>2026-10-05T00:00:00Z</updated>
-    <author>
-      <name>Haonan Huang</name>
-    </author>
-    <author>
-      <name>Joey Xiao</name>
-    </author>
-    <summary type="text">Personal AI assistants are beginning to transact for consumers, and early adopters capture real savings. Whether those savings survive, and what happens to consumers who have no assistant, depends on how sellers respond -- a question single-user evidence cannot answer. We build an agent-based rental market in which language models play consumers, assistants, and six adaptive sellers guided by an algorithmic pricing tool. Half the population receives an assistant under an advisory or an executing mandate; the contract pairs a fee only the renter's physical action avoids with a pre-selected add-on an authorised assistant can cancel online. An analytical benchmark and a behaviourally calibrated rule market supply ex-ante predictions, and paired branches with frozen versus adaptive sellers separate adoption effects from market feedback. Across thirty simulated markets, executing assistants cut adopters' spending by 13.7 USD per renter-day when sellers are frozen; adaptation claws back about a third, leaving 8.7, with the gains arriving both as lower bills and as rentals completed at all. Sellers raise headline rates while cutting fees, and the calibrated forecast of the burden on unassisted consumers (+3.6) does not transfer: their mean spending change is +0.4, confidence interval -0.6 to +1.3. Seller-model swaps and a within-market transfer of fee-setting to the pricing tool show that fee conduct, and with it the division of the gains, is decided on the seller side. Assistants, we conclude, should be evaluated at market level -- completion, total spending, and non-users included -- and the comparison layers locate exactly where a calibrated behavioural forecast fails in a language-model market.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; econ.GN" />
-  </entry>
-  <entry>
-    <title>Scalar Communication via Random Direction Refreshing for Distributed Optimization</title>
-    <link href="http://arxiv.org/abs/2610.05666v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.05666v1</id>
-    <published>2026-10-05T00:00:00Z</published>
-    <updated>2026-10-05T00:00:00Z</updated>
-    <author>
-      <name>Mohammadreza Rostami</name>
-    </author>
-    <author>
-      <name>Solmaz S. Kia</name>
-    </author>
-    <summary type="text">Distributed optimization over networks requires agents to repeatedly exchange decision variables with their neighbors. When the decision dimension $d$ is large, these exchanges dominate the communication cost, which is critical for bandwidth-constrained agents. Existing remedies quantize or sparsify the exchanged vectors, yet each message still scales with $d$ and the compression error must be compensated by additional states. To address this limitation, we propose a scalar-communication mechanism in which every neighbor message carries a single real number regardless of $d$. Agents regenerate a common random direction from a shared seed, transmit only the inner product of their state with that direction, and act on the resulting rank-one surrogate of their neighbors' states while retaining full local gradients. We develop and analyze the mechanism for an existing continuous-time distributed optimization algorithm. For strongly convex local costs with Lipschitz gradients, we show that the optimizer remains the unique consensus equilibrium, that a fixed direction admits spurious equilibria, and that refreshing the direction at a sufficiently high rate yields exponential mean-square and almost-sure convergence with constant gains and no residual error. The framework admits any isotropic fixed-norm direction distribution, including Rademacher, scaled-coordinate, and sphere-normalized Gaussian directions; all three attain lower fresh-encoding variance than unnormalized Gaussian directions. The effects of the direction distribution and the refresh interval are illustrated in~simulations.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Can CaMeLs Talk? Securing Multi-Agent Systems Against Indirect Prompt Injection Attacks</title>
-    <link href="http://arxiv.org/abs/2610.05640v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.05640v1</id>
-    <published>2026-10-05T00:00:00Z</published>
-    <updated>2026-10-05T00:00:00Z</updated>
-    <author>
-      <name>James Peters-Gill</name>
-    </author>
-    <author>
-      <name>Avi Semler</name>
-    </author>
-    <author>
-      <name>Henning Bartsch</name>
-    </author>
-    <author>
-      <name>Ilia Shumailov</name>
-    </author>
-    <author>
-      <name>Christian Schroeder de Witt</name>
-    </author>
-    <summary type="text">Indirect prompt injection attacks - malicious instructions embedded in content processed by large language models - remain a major obstacle to safely deploying tool-using agents. CaMeL [Debenedetti et al., 2025] mitigates this threat for an individual agent by separating trusted control flow from untrusted data and enforcing capability-based security policies at runtime. In this work, we investigate whether CaMeL's security guarantees compose in hierarchical multi-agent systems, where agents invoke other agents as tools. We find that CaMeL's guarantees do not compose. We construct a concrete prompt-injection attack that succeeds despite all constituent agents individually operating CaMeL. Our attack exploits the fact that untrusted data can be reinterpreted as trusted input by a downstream agent. We then introduce multi-CaMeL, an agent-to-agent communication protocol that preserves provenance across agent boundaries by separating trusted natural-language instructions from untrusted data passed through a distinct data channel. We evaluate multi-CaMeL's utility on AssetOpsBench and its security-utility tradeoff on MultiAgentDojo, a benchmark we develop by extending AgentDojo to the multi-agent setting. We find that multi-CaMeL reduces attack success rate (ASR) to 0.0%, compared with 0.2% for individual-agent CaMeL and 12.9% with no CaMeL. Multi-CaMeL incurs a utility cost, but this cost trends downward as model capability increases and is modest for the strongest models, suggesting that more capable models better accommodate the constraints imposed by the protocol.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Preprint&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Distributed Algorithms for $α$-Potential Functions in General-Sum Games</title>
-    <link href="http://arxiv.org/abs/2610.05516v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.05516v1</id>
-    <published>2026-10-04T00:00:00Z</published>
-    <updated>2026-10-04T00:00:00Z</updated>
-    <author>
-      <name>Yifei Chen</name>
-    </author>
-    <author>
-      <name>Chinmay Maheshwari</name>
-    </author>
-    <summary type="text">We study the problem of computing the tightest \(α\)-potential approximation of a general-sum game over continuous action spaces, within a prescribed class of potential functions and when each player has access only to its own utility function. The difficulty is twofold: the approximation error involves a worst-case search over an infinite set of unilateral deviations, and the required utility information is distributed across players.   For a linear-in-parameters potential class, we use an exact finite-tuple reformulation that separates the problem into a global outer search over deviation tuples and distributed convex inner problems. We develop a primal--dual inner oracle tailored to this structure and establish a uniform one-sided accuracy guarantee. This oracle can be combined with global outer search to obtain an end-to-end guarantee on the outer optimization error. We also develop a projected zeroth-order outer method as a computationally lighter alternative for higher-dimensional problems. Numerical experiments illustrate the accuracy--computation tradeoff between the two outer-search methods and show that the proposed optimization framework can improve upon analytical \(α\)-potential constructions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.GT; eess.SY; math.OC" />
-  </entry>
-  <entry>
-    <title>Synergizing Drone Delivery Order Pooling and Road Network Monitoring through Monitoring-Task Orderization</title>
-    <link href="http://arxiv.org/abs/2610.05270v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.05270v1</id>
-    <published>2026-10-04T00:00:00Z</published>
-    <updated>2026-10-04T00:00:00Z</updated>
-    <author>
-      <name>Yulong Hu</name>
-    </author>
-    <author>
-      <name>Meng Xu</name>
-    </author>
-    <author>
-      <name>Sen Li</name>
-    </author>
-    <author>
-      <name>Nikolas Geroliminis</name>
-    </author>
-    <summary type="text">This paper investigates the real-time dispatch of a shared drone fleet for on-demand food delivery and urban road network monitoring. We consider a courier-drone collaborative setting in which couriers transport orders to launchpads and drones complete the final delivery leg to kiosks. Drones may consolidate multiple origin-destination orders within one flight and make monitoring-aware route adjustments to collect real-time traffic information subject to delivery-time constraints. This yields a joint decision problem coupling dynamic order-to-drone matching, multi-order pooling, routing, and time-varying monitoring under fleet-level competition and uncertainty. We propose monitoring-task orderization, which periodically converts road-network nodes with high congestion and stale information into virtual monitoring orders. Pooling these virtual tasks with food-delivery orders creates a unified heterogeneous task set and transforms the coupled matching-and-routing problem into an order-level decision process. Building on this abstraction, we formulate a decentralized graph-interdependent Multi-Agent Markov Decision Process and develop Graph Multi-Agent Q-Learning (Graph-MAQL), which captures localized inter-agent dependencies through bipartite match coordination graphs. Agent-task value estimates are then used as edge weights in a dynamic heterogeneous bipartite matching program for globally feasible execution. Experiments using real-world data reveal strong operational synergy between delivery and monitoring. Monitoring-task orderization improves monitoring performance by 25.1% with less than a 1% reduction in delivery performance, while Graph-MAQL improves the aggregate objective by up to 20.8%, reduces deadline violations by over 40%, and transfers zero-shot to higher demand intensity without retraining.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>templar: agentic induction and evolution of standardized radiology reporting templates from large-scale clinical corpora</title>
-    <link href="http://arxiv.org/abs/2610.05247v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.05247v1</id>
-    <published>2026-10-04T00:00:00Z</published>
-    <updated>2026-10-04T00:00:00Z</updated>
-    <author>
-      <name>Xiaotian Hu</name>
-    </author>
-    <author>
-      <name>Mingxuan Liu</name>
-    </author>
-    <author>
-      <name>Zhonghan Wang</name>
-    </author>
-    <author>
-      <name>Xinfeng Zhang</name>
-    </author>
-    <author>
-      <name>Yiming Huang</name>
-    </author>
-    <author>
-      <name>Ziang Wang</name>
-    </author>
-    <author>
-      <name>Kasidit Anmahaepong</name>
-    </author>
-    <author>
-      <name>Yijin Li</name>
-    </author>
-    <author>
-      <name>Yifei Chen</name>
-    </author>
-    <author>
-      <name>Hongjia Yang</name>
-    </author>
-    <author>
-      <name>Zihan Li</name>
-    </author>
-    <author>
-      <name>Qiyuan Tian</name>
-    </author>
-    <summary type="text">Structured radiology reporting mitigates the heterogeneity of free-text reports, yet its benefits depend on high-quality reporting templates. In practice, such templates are conventionally built through labor-intensive expert consensus and therefore vary across institutions and lag behind evolving clinical practice. Large language models (LLMs) enable automated template induction, but existing approaches remain limited: single-LLM induction is constrained by context length, and the corpus-scale method ASTAR produces a static, closed-corpus template without external grounding or downstream adaptation. To address these limitations, we propose TEMPLAR, a TEMPLate-centric Agentic framework for inducing and evolving standardized Radiology reporting templates from large-scale clinical corpora. TEMPLAR treats the template as a persistent central state maintained alongside two provenance-aware knowledge graphs, namely an anatomical graph that constrains template construction and a diagnostic graph that supports finding-to-diagnosis reasoning. Three agents operate on this state. The Induction Agent derives canonical clinical slots from anatomy-constrained Span-Triple atoms via dual-view similarity clustering; the Evolution Agent then assembles these slots into a hierarchical template and revises it under consistency constraints, external clinical evidence, and downstream structuring feedback; and the Clinical Agent applies the evolved template to report structuring, reconstruction, and diagnostic reasoning. Across four datasets, TEMPLAR outperforms ASTAR, three medical LLMs, and six general-purpose LLMs in coverage, information fidelity, and diagnostic fidelity, while achieving the highest or tied-highest LLM-rated template quality. Its fidelity advantages over ASTAR persist under cross-dataset transfer, and cumulative ablations support complementary contributions of its key components.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.CL" />
-  </entry>
-  <entry>
-    <title>Communication Shapes Collective Inference in Self-Adapting LLM Societies: Evidence from Mafia</title>
-    <link href="http://arxiv.org/abs/2610.05041v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.05041v1</id>
-    <published>2026-10-04T00:00:00Z</published>
-    <updated>2026-10-04T00:00:00Z</updated>
-    <author>
-      <name>Haonan Huang</name>
-    </author>
-    <author>
-      <name>Joey Xiao</name>
-    </author>
-    <summary type="text">When does communication help a group identify hidden adversaries, and how does its value change as the group adapts? In Mafia, an informed minority hides inside an uninformed majority whose only evidence is open play. The zero-information game, where each day's vote eliminates a random player, is exactly solved and scores every society; matched-casting comparisons between protocols identify the effect of communication. Societies of 8-100 claude-haiku-4-5 agents (7,416 analyzed games, 1.9M model calls) adapt by rewriting and inheriting private strategy notes. Simultaneous broadcast improves adversary identification over silence in all nine compositions tested (8-46 players). Turn-taking removes most of this advantage; its voting landslides are as frequent as broadcast's but land on mafia near chance (1.08x versus 2.53x). At 70 players, agents reading eight statements per day identify adversaries worse than silent ones, and limited talk is worth less than at 46 players. Adaptation is fast but need not help. In their first broadcast games, citizens announce their role far more often than mafia (91% vs. 30%) and first-day votes find mafia at three times chance; within two generations citizens stop announcing and the cue fades, a change the inherited notes carry. In controlled redeployments at 16 players, societies carrying sixty generations of their own notes score below societies with none. Communication shapes both collective inference and the signals it depends on, so a protocol's value must be measured together with the adaptation that changes those signals.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.CL" />
-  </entry>
-  <entry>
-    <title>Orchestrating Level-$K$ Policies Against Unknown Opponents in Partially-Observable Dynamic Games</title>
-    <link href="http://arxiv.org/abs/2610.04937v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.04937v1</id>
-    <published>2026-10-04T00:00:00Z</published>
-    <updated>2026-10-04T00:00:00Z</updated>
-    <author>
-      <name>Addison Kalanther</name>
-    </author>
-    <author>
-      <name>Sanika Bharvirkar</name>
-    </author>
-    <author>
-      <name>Daniel Bostwick</name>
-    </author>
-    <author>
-      <name>Chinmay Maheshwari</name>
-    </author>
-    <author>
-      <name>Shankar Sastry</name>
-    </author>
-    <summary type="text">Level-$K$ reasoning generates a hierarchy of policies specialized to opponents with different reasoning levels. When an opponent's level is unknown, a common deployment rule estimates that level and selects the corresponding response. In a dynamic, partially-observed game, this selection is repeated, with each choice shaping subsequent states and observations. The response associated with the most likely opponent level need not maximize expected return from the current history. We formulate this deployment problem as dynamic orchestration of a fixed, pretrained policy library in a partially observable Markov game. We compare classification-based orchestrators (CBOs) trained using offline data or on-policy data aggregation with a reinforcement-learning-based orchestrator (RLBO) trained to maximize expected discounted return. In pursuit-evasion experiments, on-policy training improves classification and return, yet RLBO achieves higher return than the on-policy and offline CBOs. Given a pretrained library, RLBO also reaches performance comparable to a policy trained directly over the pursuers' action space with fewer training timesteps. These findings support treating a hierarchy of level-$K$ policies as a resource for orchestration, not a prescription for deployment.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Robotics" />
-  </entry>
-  <entry>
-    <title>Increasing Resilience of Smart Home Agents</title>
-    <link href="http://arxiv.org/abs/2610.04923v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.04923v1</id>
-    <published>2026-10-04T00:00:00Z</published>
-    <updated>2026-10-04T00:00:00Z</updated>
-    <author>
-      <name>Christopher Terrazas</name>
-    </author>
-    <author>
-      <name>Eduardo Cotilla-Sanchez</name>
-    </author>
-    <summary type="text">Smart homes and smart devices are becoming more prevalent across millions of homes around the world. With the rise of AI, the smart home industry is quickly increasing its integration to manage common smart home tasks. However, existing work in large language models (LLMs) as agents within smart homes have shown minimal resilience due to limited environment scenarios or poor performance in complex tasks. We explore several strategies for LLMs as agents within the popular open-source software (OSS) smart home automation framework HomeAssistant to increase overall smart home resilience. Our approach combines traditional supervised learning techniques and optimized prompting as the core learning process. We use a diverse set of LLMs covering different levels of reasoning and costs in our optimization pipeline and evaluate their performance on a subset of the hardest tasks in a smart home benchmark. We include ReAct and Reflexion agentic paradigms and reveal how both provide marginal return on investment compared to fine-tuned LLMs for multi-device control within HomeAssistant but show promise in resilience tasks such as failure response.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Pre-print&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Organising Trajectory Evidence for Language-Model Agent Assurance: Fragments, Methods, and the Residual</title>
-    <link href="http://arxiv.org/abs/2610.04710v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.04710v1</id>
-    <published>2026-10-03T00:00:00Z</published>
-    <updated>2026-10-03T00:00:00Z</updated>
-    <author>
-      <name>Xiaowei Huang</name>
-    </author>
-    <summary type="text">Methods for assessing language-model agents include rule checkers over logs, analyses of skill coverage and composition, support checkers, prefix monitors, execution gates, and rare-event estimators. Each observes a different part of a run and makes a claim of a different strength, and no common account says how these claims combine or what they leave unchecked. We give one, built from a logic, information fragments, and an assurance ledger. Requirements are formulas of a two-tier logic: an outer finite-trace temporal logic over recorded events, and an inner logic of standing over the argument structure that the agent's recorded context supports at a decision. A rule violation and an action taken on withdrawn support are thus formulas of one language. The information available to an assessor, to the agent, and to an execution gate defines fragments of that language; each checking method decides one fragment and returns a typed claim: exact, on a named test suite, a risk bound, or descriptive. The ledger merges the evidence and classifies every obligation as established, addressed but not established, or unaddressed. On 456 released $τ^2$-bench telecom trajectories, the benchmark oracle flags 231 runs; adding a rule checker, a support stand-in, and a prefix-monitor baseline raises the union to 391, 401, and 407, each contributing flags the others miss, and a gate makes one prohibition exact on a gated deployment. The 49 unflagged runs and the unmet or unaddressed obligations form the residual. Discovery makes unknown requirements explicit, and new or stronger checkers then reduce it.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Nonlinear Density-Driven Optimal Control (D2OC) for Multi-Agent Spatial Coverage via Sequential Convex Programming</title>
-    <link href="http://arxiv.org/abs/2610.04545v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.04545v1</id>
-    <published>2026-10-03T00:00:00Z</published>
-    <updated>2026-10-03T00:00:00Z</updated>
-    <author>
-      <name>Julian Martinez</name>
-    </author>
-    <author>
-      <name>Kooktae Lee</name>
-    </author>
-    <summary type="text">This paper presents a nonlinear extension of Density-Driven Optimal Control (D2OC) for multi-agent spatial coverage with prescribed density distributions. Rather than assigning individual target locations, D2OC drives the collective spatial distribution of agents toward a desired density through a Wasserstein-based objective. We extend this framework to multi-step finite-horizon control for discrete-time control-affine nonlinear systems using sequential convex programming. At each control update, the nonlinear dynamics are locally linearized over the prediction horizon, yielding a strictly convex quadratic program that preserves the Wasserstein barycentric structure while directly incorporating input constraints. We further characterize the effect of constrained control deviations and nonlinear Taylor remainders on the accuracy of the local linear prediction, establishing an explicit finite-horizon error bound and a two-step specialization for receding-horizon implementation. The resulting method retains the decentralized, distribution-driven nature of D2OC while providing a computationally efficient optimization procedure for nonlinear multi-agent systems. Simulations with unicycle and quadrotor teams show coverage performance comparable to nonlinear model predictive control, while substantially reducing computation time. These results demonstrate a tractable and theoretically characterized framework for density-driven spatial coverage under nonlinear dynamics.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Robotics; eess.SY; math.OC" />
-  </entry>
-  <entry>
-    <title>Quantifying Collusion Among Autonomous LLM Agents: A Statistical Analysis of the Collusion Wiki Incident</title>
-    <link href="http://arxiv.org/abs/2610.04528v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.04528v1</id>
-    <published>2026-10-03T00:00:00Z</published>
-    <updated>2026-10-03T00:00:00Z</updated>
-    <author>
-      <name>Shariq Murtuza</name>
-    </author>
-    <summary type="text">In August and September 2026, independent researchers publicly documented an unusual incident: thousands of autonomous agents, self identifying as OpenAI models on web research tasks, discovered and began using a small German wiki as an improvised message board posting roughly 18,000 times over six weeks to relay task answers, share a sandbox escape technique, and coordinate against a volunteer human moderator who spent weeks manually deleting their content [1]. The investigators' public writeup is a careful qualitative account, rich with direct quotation, but does not attempt a statistically rigorous quantitative characterization of the behaviour it documents.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.CY" />
   </entry>
 </feed>
