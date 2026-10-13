@@ -4,8 +4,8 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-12T06:47:55Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 22 entries</subtitle>
+  <updated>2026-10-13T07:30:54Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 17 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
@@ -410,115 +410,5 @@
     <summary type="text">In this work, we formulate decentralized continual learning within a multi-objective optimization framework. For a given inference task t (corresponding to a common minimizer shared by the cost functions of all agents), agents collecting data in a distributed and streamed manner are only allowed to perform local computations and to exchange information with neighboring agents over the underlying communication graph. As tasks evolve sequentially over time, agents must adapt to newly arriving tasks while retaining knowledge acquired from previously learned ones. This requirement leads to the wellknown stability plasticity dilemma, where stability refers to the ability to retain previous knowledge, while plasticity refers to the ability to learn and adapt to new tasks. To address the stability challenge, agents store subsets of samples from past tasks in local memory buffers. Then, through an appropriate multiobjective formulation, the stored information is incorporated into the learning process so that parameter updates account jointly for the current task and previously learned tasks. The proposed decentralized continual learning approach is analyzed in the mean square error sense under general assumptions on the individual cost functions and gradient noise processes. The analysis reveals that cooperation among agents improves the performance of continual learning. In particular, by exchanging information with neighboring agents, decentralized collaborative learning can exploit the diversity of locally observed data and memory buffers to improve the network average mean-square deviation (MSD) across tasks. Finally, simulations illustrate the theoretical findings and the effectiveness of the method in reducing forgetting and improving the average MSD across tasks.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Visual Orchestration Tax in Agentic VLM Pipelines: Auditing and Certifying Visual Evidence Reuse</title>
-    <link href="http://arxiv.org/abs/2610.08170v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.08170v1</id>
-    <published>2026-10-06T00:00:00Z</published>
-    <updated>2026-10-06T00:00:00Z</updated>
-    <author>
-      <name>Lingteng Zeng</name>
-    </author>
-    <summary type="text">Agentic VLM pipelines increasingly pass the same static visual evidence through multiple specialist agents and tools. This design creates an orchestration-level redundancy mode: semantically unchanged images are repeatedly reconstructed as image-conditioned requests at the VLM API boundary. We call this phenomenon visual orchestration tax and develop a measurement-to-certification framework for visual evidence reuse in agentic VLM pipelines. The audit side defines $\mathrm{M1}_{\mathrm{trace}}$ to count raw visual-evidence touches and M2 to measure structural touch redundancy, with query-level distributions, bootstrap confidence intervals, and paired quality tests. Across SeeingEye and MAMMQA on chart, document, general-VQA, and multi-modal-QA tasks, audits reveal 66.8-75.6% visual-evidence touch redundancy, and every audited query exceeds the predefined gate. The certification side introduces SharedVisCache, a contract-aware evidence reuse hook keyed by image content, preprocessing fingerprint, and encoder assumptions. On SeeingEye, contract validation certifies 75.0-75.5% repeated touches as reusable while preserving 350/350 output strings and $Δ\mathrm{M5}{=}0$. At the physical layer, certified hits reduce $F_{\mathrm{vision}}$ from 800 to 200 in ChartQA-200 trace replay and from 200 to 50 inside live SeeingEye translator-stage physical integration, preserving 800/800 replay strings and 200/200 integrated call outputs. The results position visual reuse as a measurable, behavior-preserving property of agent orchestration and define an agent-layer contract that makes backend prefix or token reuse semantically interpretable.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 2 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; VQA&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Computer Vision" />
-  </entry>
-  <entry>
-    <title>Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor</title>
-    <link href="http://arxiv.org/abs/2610.08155v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.08155v1</id>
-    <published>2026-10-06T00:00:00Z</published>
-    <updated>2026-10-06T00:00:00Z</updated>
-    <author>
-      <name>Zihan Zhou</name>
-    </author>
-    <author>
-      <name>Xinzhe Hu</name>
-    </author>
-    <author>
-      <name>Hanxu Yang</name>
-    </author>
-    <author>
-      <name>Liangjian Wen</name>
-    </author>
-    <author>
-      <name>Zhao Kang</name>
-    </author>
-    <summary type="text">Large language model (LLM)-based multi-agent systems (MAS) have become a promising paradigm for complex information-seeking and reasoning tasks by enabling collaborative problem solving among specialized agents. However, existing MAS frameworks tightly couple task reasoning with coordination operations, including task selection, role assignment, message routing, and context management. As interactions grow, using powerful LLMs for these bounded control decisions introduces substantial token overhead and latency, limiting the scalability of agentic Web services. In this paper, we investigate whether coordination can be decoupled from expensive reasoning without compromising collaborative performance. We propose S1-MAS, a token-efficient multi-agent framework based on System One-guided computational division of labor. S1-MAS assigns bounded coordination decisions to lightweight System One models while reserving open-ended reasoning for capable LLM workers. Specifically, a lightweight controller selects inspection conditions, chooses subsequent tasks, and determines termination, while a compact reader retrieves condition-relevant evidence from authorized sources to support these decisions. Through a decision-evidence loop, selected tasks dynamically determine worker roles and source access, enabling adaptive collaboration without task-specific training. Extensive experiments on seven diverse benchmarks demonstrate that S1-MAS achieves superior accuracy while substantially reducing the inference cost. Across individual comparisons with AgentVerse, DyLAN, and SelfOrg on seven benchmarks, S1-MAS reduces GPT-4o token consumption by 44.9%-97.2% and measured end-to-end latency by 37.8%-93.0%. These results highlight its potential for scalable and cost-effective agentic Web applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Independent Multi-Agent Reinforcement Learning with Counterfactual Semantic-Social World Models</title>
-    <link href="http://arxiv.org/abs/2610.07704v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.07704v1</id>
-    <published>2026-10-06T00:00:00Z</published>
-    <updated>2026-10-06T00:00:00Z</updated>
-    <author>
-      <name>Fernando Martinez</name>
-    </author>
-    <author>
-      <name>Tao Li</name>
-    </author>
-    <author>
-      <name>Yingdong Lu</name>
-    </author>
-    <author>
-      <name>Juntao Chen</name>
-    </author>
-    <summary type="text">Fully decentralized multi-agent reinforcement learning (MARL), also referred to as independent learning, requires each agent to learn and act using only its local information and experience, without a centralized critic or inter-agent communication. Such a stringent information structure renders the conventional reward signal ambiguous. A poor return may result from an ineffective ego action, an incompatible teammate response, or an effective opponent response, yet scalar rewards alone do not reveal which explanation is responsible. We argue that agents can learn more effectively by prospectively comparing the consequences of candidate actions rather than diagnosing failures only from realized returns. We introduce CASTLE (Counterfactual Action-conditioned Semantic Tokens for Local Execution in Decentralized MARL), an offline-training, online-in-context guidance framework with two complementary world models. A Local Dynamics World Model, offline pre-trained over agents' local trajectories, summarizes the agent's local trajectory dynamics and partial observability, while a Semantic-Social World Model predicts compact short-horizon task and social consequences for each candidate ego action. The latter is trained from counterfactual simulator rollouts that expose plausible teammate and opponent responses to alternative actions taken from the same logged rollout state. During online learning and execution, both world models remain frozen and are queried by agents using only locally available information. Their prediction logits provide in-context guidance to an independent PPO policy. Across 30 matched seeds on Tag, Spread, and Adversary in the benchmark multi-particle environments, our proposed CASTLE achieves the highest mean final score among the evaluated methods, exceeding the strongest baseline on each task by 10.67, 6.46, and 0.33 normalized points, respectively.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>Joint Workflow and Prompt Optimization for User Behavior Simulation</title>
-    <link href="http://arxiv.org/abs/2610.07663v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.07663v1</id>
-    <published>2026-10-06T00:00:00Z</published>
-    <updated>2026-10-06T00:00:00Z</updated>
-    <author>
-      <name>Nipun B Nair</name>
-    </author>
-    <author>
-      <name>Tongtong Wu</name>
-    </author>
-    <author>
-      <name>Hongzhi Yin</name>
-    </author>
-    <author>
-      <name>Hui Li</name>
-    </author>
-    <author>
-      <name>Weiqing Wang</name>
-    </author>
-    <summary type="text">User behavior simulation is the computational modeling of user interactions within information systems through the use of simulated agents in place of live users. It supports system testing and evaluation, decision-making and forecasting, and user experience design. Existing simulators rely on hand-crafted rules or domain expertise that transfers poorly across tasks. SWORD (Simulation-driven Workflow and Prompt Optimization with Role-based Design) is introduced as a framework that jointly optimizes multi-agent workflow topology and natural-language prompts. It is guided solely by a scalar task metric, without domain initialization or task-specific engineering. The experimental results demonstrate that SWORD achieves statistically significant gains over prompt-only, workflow-only, and staged-optimization baselines under a controlled, identical-backbone comparison. Against the strongest published domain-specific baseline, SWORD further improves accuracy while using a smaller backbone model, substantially less training data, and a very reasonable API cost (\$4--\$6 for each dataset). Beyond predictive performance, SWORD autonomously discovers domain-relevant signals, review-sentiment mapping rules and epidemiological decay priors, purely from scalar error feedback, establishing textual gradients as a mechanism for unsupervised feature-importance discovery in user behavior modeling.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 34 pages, 2 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Disentangling Models from Personas in Heterogeneous LLM Simulations</title>
-    <link href="http://arxiv.org/abs/2610.07535v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.07535v1</id>
-    <published>2026-10-06T00:00:00Z</published>
-    <updated>2026-10-06T00:00:00Z</updated>
-    <author>
-      <name>Dani Roytburg</name>
-    </author>
-    <author>
-      <name>Daphne Ippolito</name>
-    </author>
-    <summary type="text">Multi-agent simulations with large language models (LLMs) often operate networks of agents with a single base model. This overlooks the inter-model effects which may dominate engagement dynamics in real-world deployments. To show this, we simulate a heterogeneous social network powered by several different base models and show that the amount of engagement an agent receives depends more on its base model than on its assigned persona. The attraction or repulsion effects of a base model strengthen dramatically when more models are added in the mix, suggesting that networks dynamics may converge to base model effects at scale. To help explain this effect, we conduct a series of content-mediating analyses, showing the predictability of base models across contexts as well as the relationship between a model's lexical patterns and an engagement-maximizing style. In light of recent developments in mass multi-agent interaction, this work underscores the relevance of heterogeneous compositions in driving the outcomes of those networks</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Presented as a Spotlight Paper at the Second Workshop on Social Simulation with LLMS, Third Conference on Language Modeling, 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.CL; cs.SI" />
   </entry>
 </feed>
