@@ -4,12 +4,194 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-14T05:41:40Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 31 entries</subtitle>
+  <updated>2026-10-15T05:33:03Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 34 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>From Training to Escalation: Forensic Analysis and Local Recreation of RL/RLHF-Induced Privilege Escalation in AI Agents (CVE-2026-65616)</title>
+    <link href="http://arxiv.org/abs/2610.20437v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.20437v1</id>
+    <published>2026-10-14T00:00:00Z</published>
+    <updated>2026-10-14T00:00:00Z</updated>
+    <author>
+      <name>Alicia Colmenero-Fernández</name>
+    </author>
+    <summary type="text">Mid-2026 reporting on autonomous AI evaluation incidents claimed that frontier large language model (LLM) agents escaped server containment through emergent coordination and cloud infrastructure attacks. This paper contextualizes those claims through forensic analysis and containerized recreation of both the Highly Persistent Internal Model (HPIM) training-case conditions and the Phase One privilege escalation targeting internal package repositories during OpenAI's ExploitGym evaluations. We recreate the configuration of the OpenAI-provided training example and reproduce the cryptographic verification bypass (CVE-2026-65616) in isolated repository servers, where misconfigured systems enabled token forgery and privilege escalation through basic HTTP requests, Python, and JavaScript. Crucially, the training-example conditions and the Phase One (and later) misconfigurations share the same exploitable patterns. Our analysis explains how Zero Trust Architecture principles neutralize this shared attack vector. Contemporary AI risks derive directly from training and deployment conditions in ambivalent learning environments lacking adequate containment measures.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 1 figure&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CR" />
+  </entry>
+  <entry>
+    <title>When Extremists Enter LLM Societies: Investigating Extreme Behavior in Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2610.19863v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.19863v1</id>
+    <published>2026-10-14T00:00:00Z</published>
+    <updated>2026-10-14T00:00:00Z</updated>
+    <author>
+      <name>Guo Chen</name>
+    </author>
+    <author>
+      <name>Huaijin Xie</name>
+    </author>
+    <author>
+      <name>Ziwen Li</name>
+    </author>
+    <author>
+      <name>Reed Li</name>
+    </author>
+    <author>
+      <name>Yu Lu</name>
+    </author>
+    <author>
+      <name>Haibo Shi</name>
+    </author>
+    <author>
+      <name>Bingbing Xu</name>
+    </author>
+    <author>
+      <name>Junjie Huang</name>
+    </author>
+    <summary type="text">Large language model (LLM) agents increasingly serve as computational actors in multi-agent social simulations. While existing work emphasizes representative personas and average-case behavior, social science shows that persistent tail actors can disproportionately shape collective dynamics. We study this regularity in controlled LLM-based multi-agent systems (LLM-MAS). In these systems, such actors cannot be reduced to fixed scalar states: prompts, natural-language histories, and backbone generation mediate their behavior and influence. We first analyzed three properties of extremists in sociology and model the LLM extremist based on LLM-native perspective. We introduce EXAM, an EXtremist Agent Modeling framework that capable of configuring extremist agents for specific tasks and precisely controlling their population proportion, spatial distribution, interaction protocols, and measurement interfaces. Across four scenarios: congressional election, financial crisis, epidemic public opinion, and iterated prisoner's dilemma, we observe that small persistent tail groups produce measurable, backbone- and scenario-dependent collective shifts. EXAM shows how this social-science regularity manifests through language-mediated mechanisms specific to LLM-based social simulation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>One Agent per Zone: Decentralised Active Inference under Partial Observability for Multi-Zone HVAC Control on Edge Hardware</title>
+    <link href="http://arxiv.org/abs/2610.19790v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.19790v1</id>
+    <published>2026-10-14T00:00:00Z</published>
+    <updated>2026-10-14T00:00:00Z</updated>
+    <author>
+      <name>Panagiotis Kasnesis</name>
+    </author>
+    <author>
+      <name>Lazaros Toumanidis</name>
+    </author>
+    <author>
+      <name>Christos Chatzigeorgiou</name>
+    </author>
+    <author>
+      <name>Amalia Contiero Syropoulou</name>
+    </author>
+    <author>
+      <name>Miguel De Prado</name>
+    </author>
+    <summary type="text">Multi-zone HVAC control is a shared-resource problem: zones on a floor share one fan and cooling coil, so each zone's demand affects its neighbours and the building's peak power. One controller per zone scales well and isolates faults, but each controller then observes only its own zone, not the shared air loop. In this work, we present a decentralised controller that assigns each zone an independent active-inference agent, which plans by minimising expected free energy and learns its zone dynamics online. The agents exchange no messages, so none depends on peers or a coordinator; each accounts for the unobserved coupling through a latent disturbance and a congestion signal derived from the metered power of the other floors. Fifteen agents are evaluated in EnergyPlus on a Sinergym office building against three rule-based controllers and three MADDPG fleets, one given the same floor meters. On five noisy weather years unseen during training, the fleet attains the lowest mean building peak (88.3 kW, 3 to 17 % below the baselines) and staggers the floor peaks better than any baseline, with a coincidence factor (building peak over the sum of the floor peaks) of 0.929 versus 0.936 to 0.994. Compared with a reactive rule at similar comfort (0.912 versus 0.916), it lowers the sum of monthly peaks, on which demand charges are billed, by 33 kW (4 %) in every year, at the cost of about 10 % more energy. It costs 9% less per year than the proactive rule (at lower comfort) and 1% less than the MADDPG fleet given the same floor meters, in every test year. The whole fleet runs on a single low-cost Raspberry Pi 5, closing the observation-to-action loop over MQTT in 442 ms at p95, far below the 15-minute control step.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; European Conference on EDGE AI Technologies and Applications&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Exact Cut Complexity of Equal-Length Proportional Cake Cutting</title>
+    <link href="http://arxiv.org/abs/2610.19733v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.19733v1</id>
+    <published>2026-10-14T00:00:00Z</published>
+    <updated>2026-10-14T00:00:00Z</updated>
+    <author>
+      <name>Yasushi Kawase</name>
+    </author>
+    <author>
+      <name>Bodhayan Roy</name>
+    </author>
+    <author>
+      <name>Mohammad Azharuddin Sanpui</name>
+    </author>
+    <summary type="text">We study proportional cake cutting under an equal-length constraint, where each of $n$ agents must receive a bundle of length exactly $1/n$ that is worth at least $1/n$ to that agent. Our main result determines the exact worst-case number of cuts needed to guarantee such an allocation, namely $2n-2$ for every $n$. This improves on the previously known quadratic upper bound. The proof combines the constrained necklace-splitting theorem with a recursive assignment argument based on Hall's theorem. The same bound extends to the stronger requirement of envy-freeness when $n$ is a prime power, and an $O(n^{1.525})$ upper bound holds for arbitrary $n$. We then ask whether such allocations can be computed. We first show that no deterministic protocol in the Robertson--Webb model terminates after finitely many queries on every instance and always returns an exact equal-length proportional allocation, even for two agents with identical valuations. For every $\varepsilon&gt;0$, however, $O(n^2/\varepsilon)$ queries suffice to produce an allocation in which every agent receives a bundle of length exactly $1/n$ and value at least $1/n-\varepsilon$, again using at most $2n-2$ cuts. Finally, we augment the Robertson--Webb model with two-knife queries. We show that recursive balanced halving attains the optimal bound of $2n-2$ cuts when $n$ is a power of two. For arbitrary $n$, we give a procedure using $O(n\log n)$ cuts.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; A preliminary version of this paper appeared in the proceedings of the 51st International Symposium on Mathematical Foundations of Computer Science (MFCS 2026)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.DS; cs.GT" />
+  </entry>
+  <entry>
+    <title>XferAgent: Cross-Agent Experience Transfer for Self-Improving LLM Agents</title>
+    <link href="http://arxiv.org/abs/2610.19581v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.19581v1</id>
+    <published>2026-10-14T00:00:00Z</published>
+    <updated>2026-10-14T00:00:00Z</updated>
+    <author>
+      <name>Weihao Li</name>
+    </author>
+    <author>
+      <name>Jun Bai</name>
+    </author>
+    <author>
+      <name>Shijie Chen</name>
+    </author>
+    <author>
+      <name>Qincheng Lu</name>
+    </author>
+    <author>
+      <name>Xinyu Wang</name>
+    </author>
+    <author>
+      <name>Ziyang Song</name>
+    </author>
+    <summary type="text">Large language model (LLM) agents can reuse experience from prior task executions to improve performance on subsequent tasks. Although existing methods enable cross-agent experience sharing, differences in agents' execution histories and task requirements make shared experiences difficult to reuse effectively. We propose XferAgent, a framework for cross-agent experience transfer that organizes reusable experience in local and shared experience graphs. XferAgent reconciles compatible contributions from heterogeneous agents while avoiding unreliable merges. For each new task, it selects shared experiences and integrates them with the target agent's local experience to support task execution. Experiments across diverse task domains show improvements over representative memory-based methods and effective experience transfer between heterogeneous agent frameworks. Cumulative task success also increases over successive task passes as agents update and reuse their experiences.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Why Do Agent Teams Fail Across Boundaries? A Failure Taxonomy for Agent-to-Agent Systems with Private States</title>
+    <link href="http://arxiv.org/abs/2610.19342v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.19342v1</id>
+    <published>2026-10-14T00:00:00Z</published>
+    <updated>2026-10-14T00:00:00Z</updated>
+    <author>
+      <name>Sarath Shekkizhar</name>
+    </author>
+    <author>
+      <name>Prathyusha Jwalapuram</name>
+    </author>
+    <author>
+      <name>Zixuan Ke</name>
+    </author>
+    <author>
+      <name>Vaidehi Patil</name>
+    </author>
+    <author>
+      <name>Jiayu Wang</name>
+    </author>
+    <author>
+      <name>Srijan Bansal</name>
+    </author>
+    <author>
+      <name>Trong Huy Nguyen</name>
+    </author>
+    <author>
+      <name>Dingfeng Jiang</name>
+    </author>
+    <author>
+      <name>Dongqi Liu</name>
+    </author>
+    <author>
+      <name>Ruochen Zhao</name>
+    </author>
+    <author>
+      <name>Wei Lu</name>
+    </author>
+    <author>
+      <name>Giuseppe Carenini</name>
+    </author>
+    <author>
+      <name>Mohit Bansal</name>
+    </author>
+    <author>
+      <name>Shafiq Joty</name>
+    </author>
+    <summary type="text">Agents are increasingly interacting with other agents that act for different principals -- people or organizations on whose behalf they work -- e.g., a buyer's personal agent negotiating with an enterprise's seller agent. In such agent-to-agent (A2A) scenarios, each agent has its own environment and holds information and authority that the other cannot see. Moreover, the interests of each agent may be aligned (cooperative), partly aligned (mixed-motive), or opposed (competitive). Existing multi-agent system failure studies assume only one orchestrator, shared workspace, or principal. We ask how A2A systems fail when these assumptions are removed. We study more than 2,500 recorded runs of A2A systems built from different agent harnesses and models, spanning 488 scenarios across eight families (legal, CRM, security, commerce, etc.). From these traces, we derive $A^2$-Failures, a taxonomy of 20 A2A failure modes in four categories: (i) discovery and delegation, (ii) grounding and record consistency, (iii) verification, and (iv) conduct and fidelity. Three observations hold across the harnesses, models, and scenarios studied: (1) Agents match tasks to peer names mentioned in the prompt rather than actively searching for available peers; (2) Agents never fact-check each other unprompted; (3) Scoring only the final output rewards the lead agent while hiding internal coordination, verification, and behavioral breakdowns. Our study makes a case for comprehensive evaluations where agents are scored individually against their own objectives in addition to task outcome. We release the run logs behind the taxonomy at https://huggingface.co/datasets/a2a-salesforce/a2-failures.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://huggingface.co/datasets/a2a-salesforce/a2-failures"&gt;https://huggingface.co/datasets/a2a-salesforce/a2-failures&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 20 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>Optimizing Team Behavior via Extremum-seeking Control in Multi-agent Reinforcement Learning</title>
     <link href="http://arxiv.org/abs/2610.18808v1" rel="alternate" type="text/html" />
@@ -153,6 +335,43 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>CLASHarness: Benchmarking Multi-Agent Conflict in Computer Use via a Controllable and Verifiable Generation Pipeline</title>
+    <link href="http://arxiv.org/abs/2610.19128v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.19128v1</id>
+    <published>2026-10-13T00:00:00Z</published>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <author>
+      <name>Yuxiang Lai</name>
+    </author>
+    <author>
+      <name>Jike Zhong</name>
+    </author>
+    <author>
+      <name>Chengzhi Liu</name>
+    </author>
+    <author>
+      <name>Ming Li</name>
+    </author>
+    <author>
+      <name>Haonan Wang</name>
+    </author>
+    <author>
+      <name>Xiaofeng Yang</name>
+    </author>
+    <author>
+      <name>Liang Zhao</name>
+    </author>
+    <author>
+      <name>Youbao Tang</name>
+    </author>
+    <author>
+      <name>Ruixi Fan</name>
+    </author>
+    <summary type="text">Vision-language models (VLMs) are increasingly deployed in multi-agent systems to automate complex computer-use workflows, yet existing benchmarks mostly assume consistent, cooperative environments. In contrast, real-world collaboration rarely runs on consistent information: peer or sub-agents frequently report outdated states, issue contradictory instructions, or compete over shared permissions and files, forcing agents to check others' outputs and verify ground truth in the environment. Evaluating such conflict resolution remains challenging: manual authoring cannot scale across complex systems, while unconstrained LLM generation produces narrative drift, answer leakage, and unsatisfiable rubrics. We introduce CLASHarness (Conflict-Loaded Agent Scenario Harness), a controllable framework for generating verifiable multi-agent conflicts in computer use, with a benchmark of 600 multi-round tasks. By combining hierarchical scenario planning with an eight-step verified micro-pipeline, CLASHarness pre-commits decisive visual facts before rendering and compiles hybrid code and semantic graders directly from executed reference trajectories, guaranteeing every task is solvable by construction. Evaluating 15 frontier models on CLASHarness reveals three core bottlenecks. First, when sub-agent outputs conflict with the environment, weaker models blindly follow misleading information, whereas stronger models inspect visual evidence to verify ground truth. Second, resolving conflicts is much harder than finding them: while agents can spot inconsistencies, actively fixing system state drops task success significantly. Third, coordination protocols remain a universal bottleneck: even frontier models fail over 58% of closing actions, often forgetting to release shared locks or hand off tasks. CLASHarness provides a scalable, verifiable foundation for building reliable multi-agent systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
   </entry>
   <entry>
     <title>Origin Attribution for Unsafe Behavior in Self-Evolving Multi-Agent Coding Systems</title>
@@ -513,6 +732,20 @@
     <category term="Artificial Intelligence; Machine Learning" />
   </entry>
   <entry>
+    <title>sGLP: Simulating People with Stochastic Agents</title>
+    <link href="http://arxiv.org/abs/2610.14738v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.14738v2</id>
+    <published>2026-10-10T00:00:00Z</published>
+    <updated>2026-10-10T00:00:00Z</updated>
+    <author>
+      <name>Ehud Shapiro</name>
+    </author>
+    <summary type="text">Grassroots platforms are designed to be owned, operated and governed by their participants, and thus are constituted from person-to-person smartphone apps that are run by the participants. A grassroots app is specified using a grassroots social contract, which is compiled through an abstraction cascade into a volition-guarded Grassroots Logic Program (vGLP), a multiagent concurrent logic programming language. A vGLP program in turn specifies a smartphone UI via which people express their volitions and thus control the app. Prudence dictates large-scale evaluation and testing of grassroots platforms prior to deployment, but using the many people needed to do that is a contradiction in terms. Hence another solution is needed.   Here, we present stochastic GLP (sGLP), designed to allow grassroots platforms to be simulated at scale from the vGLP programs that deploy them, with stochastic agents in place of people. sGLP is GLP with a rate extension for specifying stochastic behaviour. A stochastic agent is an sGLP program replacing both the vGLP UI and the person behind it. It is typed by the dual of the interactive type of the UI and specifies a stochastic profile of a person's behaviour.   We demonstrate sGLP on the grassroots social graph, with a population of men and women drawn from four stochastic profiles --- homophile or indifferent, wary or sociable --- and on grassroots currencies, with four profiles --- spenders or savers, cautious or generous --- and report what the mix of profiles does to the social graph that forms and to the currencies that circulate.   We prove that every run of a vGLP program in which sGLP agents replace the UI and the people behind it is a vGLP run. We implemented sGLP in GLP by Gillespie's method, and ran reproducible simulations with it.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.DC; cs.HC; cs.PL" />
+  </entry>
+  <entry>
     <title>Ask Your Advisor: Learning When to Consult Stronger Models in Agentic Systems</title>
     <link href="http://arxiv.org/abs/2610.13870v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2610.13870v1</id>
@@ -649,156 +882,17 @@
     <category term="Multiagent Systems" />
   </entry>
   <entry>
-    <title>Mental-Models for Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2610.12453v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.12453v1</id>
-    <published>2026-10-08T00:00:00Z</published>
-    <updated>2026-10-08T00:00:00Z</updated>
+    <title>When AI Advisors Agree: Distinguishing Forecast Risk from Forecast Reliability</title>
+    <link href="http://arxiv.org/abs/2610.13431v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.13431v2</id>
+    <published>2026-10-09T00:00:00Z</published>
+    <updated>2026-10-09T00:00:00Z</updated>
     <author>
-      <name>Hanan Gani</name>
+      <name>Russlan Ramdowar</name>
     </author>
-    <author>
-      <name>Lulu Shao</name>
-    </author>
-    <author>
-      <name>Manmohan Chandraker</name>
-    </author>
-    <summary type="text">Large foundation models have accelerated progress toward general-purpose agents that interact with humans and other agents through language and multimodal signals. However, robust multi-agent decision-making requires reasoning about what other agents know, intend, and are likely to do under partial observability. Current agentic systems often operate through prompt design, memory, or end-to-end behavioral shaping, but typically do not learn an explicit partner-state representation that can be reused as a decision variable across tasks. We introduce \emph{mental-model-enabled agents}, a framework that equips an agent with a latent mental model of its counterpart, allowing it to infer hidden beliefs, intentions, and likely reactions from the observed history and use these inferences to guide action selection. Our method learns an amortized recursive Theory-of-Mind representation, with first- and second-order mental-state structure, jointly with a belief-conditioned reward model that evaluates candidate actions relative to the inferred partner state. A policy is then learned under this belief-aware signal, yielding an agent that can act independently at inference time while retaining the benefits of explicit partner modeling. We evaluate the same framework on both language-only and multimodal benchmarks. Across these settings, explicit mental-state modeling consistently improves interaction quality and Theory-of-Mind performance over base agentic systems, showing that structured partner modeling is a useful inductive bias for general multi-agent systems. Our code is publicly available at https://github.com/hananshafi/Mental-Models</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/hananshafi/Mental-Models"&gt;https://github.com/hananshafi/Mental-Models&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
+    <summary type="text">If seven AI advisors agree, what have we learned: that their forecast is reliable, or that the asset is easier to forecast? We examine 928 completed first-quarter outcomes for 232 assets across four historical iPulse AI batches. Ten Gemini configurations form seven equally weighted investment frameworks; no forecasts are regenerated. The council has mean absolute return error of 15.15 percentage points (pp), versus 14.99 for no change, with an unresolved paired difference of +0.16 pp. Error rises from 10.31 to 21.05 pp across disagreement quartiles, but the no-change baseline rises almost identically, from 9.89 to 21.15. In the pooled archive, selecting the lowest-volatility quarter produces lower error than selecting the least-disagreeing quarter: 7.97 versus 10.31 pp. Directional agreement introduces a second trap: its apparent value depends on the aggregation rule. When at least six of seven frameworks share a direction, the sign of their mean return is correct in 53.21% of cases, versus 44.11% with lower agreement. Scoring the modal direction instead changes the lower-agreement accuracy to 54.27%, removing that positive contrast. Recomputed-rank bootstraps, scale-aware losses, and period sensitivities qualify these descriptive results; four overlapping periods cannot establish future-regime performance. Agreement, visible asset risk, and aggregation-specific skill should be evaluated separately before consensus is presented as confidence.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24 pages, 11 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Spatial Pattern Formation from Multi-Agent Learning in Public Goods Dilemmas</title>
-    <link href="http://arxiv.org/abs/2610.12321v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.12321v1</id>
-    <published>2026-10-08T00:00:00Z</published>
-    <updated>2026-10-08T00:00:00Z</updated>
-    <author>
-      <name>Yefei Zhang</name>
-    </author>
-    <author>
-      <name>Yuxuan Zhao</name>
-    </author>
-    <summary type="text">Spatial public goods models show that prescribed movement toward richer locations can generate spatial patterns. We ask how such patterns emerge when agents learn where to move and how learning rates shape their consequences for collective welfare. Fixed populations of cooperators and defectors independently learn movement policies using tabular Q-learning and local observations. Cooperator learning generates clusters around resource peaks, while co-adaptation changes their strength and motion. At a fixed training budget, the largest welfare losses occur when cooperators learn at high rates and defectors at low rates. In part of this regime, learned policies also generate traveling bands supported by a shared directional preference. The conditions supporting travel change with further training, so these patterns reflect training history rather than an established asymptotic outcome. Across the tested learning-rate conditions with cooperator learning, mean collective welfare falls below random movement because increased crowding outweighs gains in resource benefit. Charging agents for the crowding they impose on others during learning recovers much of the welfare loss in the tested conditions. These results connect learning rates to the emergence and welfare costs of spatial organization driven by individual rewards.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.GT; Machine Learning" />
-  </entry>
-  <entry>
-    <title>ConventionPlay: Capability-Limited Training for Robust Ad-Hoc Collaboration</title>
-    <link href="http://arxiv.org/abs/2610.11842v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.11842v1</id>
-    <published>2026-10-08T00:00:00Z</published>
-    <updated>2026-10-08T00:00:00Z</updated>
-    <author>
-      <name>Abhishek Sriraman</name>
-    </author>
-    <author>
-      <name>Eleni Vasilaki</name>
-    </author>
-    <author>
-      <name>Robert Loftin</name>
-    </author>
-    <summary type="text">Ad-hoc collaboration often requires agents to identify and adhere to some shared convention within a cooperative task. Existing work on reinforcement learning (RL) for ad-hoc collaboration focuses on training agents that adapt to the conventions established by their partners. These methods fail to consider the possibility that while some partners might follow only a single fixed convention, others may themselves be capable of adapting to multiple conventions. Here we present ConventionPlay, an RL-based approach that teaches agents to discover their partner's optimal convention by training against a learned population of partners that exhibit different degrees of adaptability across conventions. Some of these partners follow a single, fixed convention, while others are able to adapt to a subset of the possible conventions for the task in question. The existence of partners that support a limited subset of conventions forces agents trained against this population to actively probe their partner's capabilities, and steer their partner towards the most effective joint strategy that they are capable of following. Our experimental results demonstrate that agents trained via ConventionPlay achieve superior performance to existing ad-hoc collaboration methods against test populations of partners that are compatible with multiple conventions.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICLR 2027&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Personalization Matters: Long-Horizon Conversation Agent with User-Centric Information in Online Shopping Interactions</title>
-    <link href="http://arxiv.org/abs/2610.11375v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.11375v1</id>
-    <published>2026-10-08T00:00:00Z</published>
-    <updated>2026-10-08T00:00:00Z</updated>
-    <author>
-      <name>Rena Gao</name>
-    </author>
-    <author>
-      <name>Yue Dai</name>
-    </author>
-    <author>
-      <name>Hao Guan</name>
-    </author>
-    <author>
-      <name>Shengxiang Gao</name>
-    </author>
-    <author>
-      <name>Wangyang Wu</name>
-    </author>
-    <author>
-      <name>Yixin Shen</name>
-    </author>
-    <author>
-      <name>Jey Han Lau</name>
-    </author>
-    <summary type="text">Personalized conversational shopping requires maintaining preference consistency over multi-turn interactions, where users reveal constraints gradually. Existing approaches often rely on static profiles and do not explicitly control long-horizon interaction behavior. We propose a multi-agent, multimodal Retrieval-Augmented Generation (RAG) framework that decomposes dialogue state tracking, recommendation retrieval, preference-aware reasoning, and response generation, while integrating product metadata, product reviews, image-derived descriptions, and user historical reviews. To evaluate interaction-level quality, we adopt a trajectory-level protocol with four dimensions: Global Preference Consistency, Cumulative Information Synthesis, Interaction Trajectory, and Tone Consistency. On an Amazon Reviews 2023 benchmark, retrieval-enabled variants outperform a no-RAG baseline on automatic trajectory metrics (average 4.82 vs. 3.74). In a small real-user study ($n{=}5$), the Full variant achieves the highest mean overall rating (4.60 vs. 2.20 for Baseline), providing exploratory evidence that role decomposition plus user-centric retrieval improves perceived personalization.\footnote{Code and dataset are available at: https://github.com/RenaGao/Multimodel_RAG_Indexing</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/RenaGao/Multimodel_RAG_Indexing"&gt;https://github.com/RenaGao/Multimodel_RAG_Indexing&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; AACL-IJCNLP 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>How Do Hardware Faults Manifest Differently in LLM Agents?</title>
-    <link href="http://arxiv.org/abs/2610.12756v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.12756v1</id>
-    <published>2026-10-08T00:00:00Z</published>
-    <updated>2026-10-08T00:00:00Z</updated>
-    <author>
-      <name>Aiden Rubey</name>
-    </author>
-    <author>
-      <name>Zachary Coalson</name>
-    </author>
-    <author>
-      <name>Cong Chen</name>
-    </author>
-    <author>
-      <name>Jean-Philippe Monteuuis</name>
-    </author>
-    <author>
-      <name>Jonathan Petit</name>
-    </author>
-    <author>
-      <name>Sanghyun Hong</name>
-    </author>
-    <summary type="text">We present the first systematic study of the resilience of large language model (LLM) agents to random hardware-induced faults. Prior work on hardware fault resilience in LLMs focuses on model-level outcomes, such as incorrect outputs or generation failures. Yet LLM agents repeatedly interact with tools and environments, creating loops that can change how hardware faults manifest. We conduct an extensive evaluation across three agent benchmarks, comprising 6,814 agent executions: 2,400+ clean runs and 4,300+ fault-injected runs with independently sampled random two-bit weight faults. We trace how these faults propagate through agent execution. Unlike prior studies, we find that agentic execution transforms model-level corruption into distinct system-level outcomes: (1) agents can recover from faulty model outputs and still complete tasks correctly; (2) this recovery increases computational and execution costs; (3) a few faults cause subtle but semantically meaningful errors while the agent otherwise behaves normally; and (4) for some models and scenarios, faults can alter security and alignment behavior.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>SoftwareGym: Scaling Computer-Use Agent Training with Diverse Synthesized Software Environments</title>
-    <link href="http://arxiv.org/abs/2610.12611v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.12611v1</id>
-    <published>2026-10-08T00:00:00Z</published>
-    <updated>2026-10-08T00:00:00Z</updated>
-    <author>
-      <name>Tian Jin</name>
-    </author>
-    <author>
-      <name>Wenhao Wang</name>
-    </author>
-    <author>
-      <name>Jing Kang</name>
-    </author>
-    <author>
-      <name>Haoting Shi</name>
-    </author>
-    <author>
-      <name>Rui Ye</name>
-    </author>
-    <author>
-      <name>Yijun Lu</name>
-    </author>
-    <author>
-      <name>Siheng Chen</name>
-    </author>
-    <summary type="text">Computer-use agents (CUAs) are rapidly improving, yet synthesizing diverse and reliable software environments at scale remains challenging. Native application environments require substantial construction and integration effort, which limits application coverage and increases the risk of application-specific overfitting. Browser-hosted environments provide limited interaction depth and workflow complexity. These limitations motivate SoftwareGym, an automated pipeline for synthesizing GUI software environments with diverse interfaces, executable functionality, and runtime-verified behavior. It generates structurally diverse designs, realizes them as runnable applications, and uses GUI evaluation with iterative repair to ensure functional reliability. Using SoftwareGym, we synthesize 182 applications across twelve categories and achieve a mean GUI task pass rate of 91.5%. We construct SoftwareGym-Bench, a 120-task evaluation suite spanning the same twelve categories, and use trajectories collected from these environments for CUA training. The resulting model improves Pass@3 from 41.39% to 56.97% on the strictly out-of-domain OSWorld benchmark and achieves 40.0% on SoftwareGym-Bench. These results demonstrate the potential of synthesized software environments as scalable and transferable supervision for CUA training.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 26 pages, 11 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.SE" />
   </entry>
 </feed>
