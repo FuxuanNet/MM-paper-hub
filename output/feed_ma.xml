@@ -4,12 +4,210 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-15T05:33:03Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 34 entries</subtitle>
+  <updated>2026-10-16T05:22:00Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 36 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Learning Self-Orchestration in Decentralized Agent Swarms</title>
+    <link href="http://arxiv.org/abs/2610.22322v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.22322v1</id>
+    <published>2026-10-15T00:00:00Z</published>
+    <updated>2026-10-15T00:00:00Z</updated>
+    <author>
+      <name>Guowei Xu</name>
+    </author>
+    <author>
+      <name>Zhenting Qi</name>
+    </author>
+    <author>
+      <name>Amani Kiruga</name>
+    </author>
+    <author>
+      <name>Himabindu Lakkaraju</name>
+    </author>
+    <author>
+      <name>Yilun Du</name>
+    </author>
+    <summary type="text">The capabilities of an agent swarm depend on both its individual members and how they coordinate. Yet existing multi-agent systems often train agents within fixed orchestration structures, separating the learning of individual capabilities from the organization of collective behavior. We introduce market-based post-training (MPT), a framework for jointly learning action policies and self-orchestration in decentralized agent swarms. Agents express their willingness to participate through bids, which determine who acts and how collective outcomes provide local training credit. Learning both action and bidding behavior allows individual capabilities and patterns of participation to adapt together without a central coordinating agent. We evaluate MPT on embodied crafting, robot navigation, and deep research. Results show gains over monolithic post-training and confirm that agent participation indeed evolves with learning. With the same post-trained action policies, learned self-orchestration outperforms alternative coordination strategies. Ablations show that both action and bidding benefit from learning, and that learned bids provide more effective action-training signals. Beyond the original training objectives, trained swarms adapt faster to related tasks and achieve better performance with larger populations at inference time. Larger populations also suffer smaller performance losses under agent dropout, demonstrating that learned self-orchestration supports reuse, scaling, and robustness in decentralized agent swarms. Code and trained models are available at https://github.com/Embodied-Minds-Lab/MPT.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Embodied-Minds-Lab/MPT"&gt;https://github.com/Embodied-Minds-Lab/MPT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CL" />
+  </entry>
+  <entry>
+    <title>Auditable and Deployable Multi-Agent Motion Planning via Posetal Games from Legal Guidelines</title>
+    <link href="http://arxiv.org/abs/2610.22277v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.22277v1</id>
+    <published>2026-10-15T00:00:00Z</published>
+    <updated>2026-10-15T00:00:00Z</updated>
+    <author>
+      <name>Florian Lercher</name>
+    </author>
+    <author>
+      <name>Karan Mahesh</name>
+    </author>
+    <author>
+      <name>Yujun Huang</name>
+    </author>
+    <author>
+      <name>Meshal Alharbi</name>
+    </author>
+    <author>
+      <name>Runyu Zhang</name>
+    </author>
+    <author>
+      <name>Hanna Krasowski</name>
+    </author>
+    <author>
+      <name>Michael R. Benjamin</name>
+    </author>
+    <author>
+      <name>Matthias Althoff</name>
+    </author>
+    <author>
+      <name>Gioele Zardini</name>
+    </author>
+    <summary type="text">When robots are deployed in the real-world, they must interact with other agents and accomplish their own goals while adhering to legal constraints. These potentially conflicting objectives are often only partially prioritized, making scalarized objectives or fully specified hierarchies unsuitable. We present a framework for multi-agent motion planning under legal requirements based on games with partially ordered preferences (posetal games). Scenario-independent legal guidelines order abstract legal concerns, from which we automatically derive agent preferences and a legal game for any concrete scenario. Agents may refine their legal preferences with private objectives, and regulators may refine the guideline as laws evolve. We prove that such customizations can only remove equilibria and thus preserve legality. To coordinate agents without explicitly communicating private preferences, we introduce belief play, which provably recovers the true equilibria from conservative local games, and a distributed iterative best-response protocol requiring less information. We apply the framework to maritime navigation, systematically lifting pairwise traffic rules to multi-vessel encounters. On seven encounters with up to four vessels, every rule violation of the committed equilibria is certified as forced by the legal hierarchy or unsatisfiable, and defectors are identified from public information in all tested cases. These results indicate that guideline-based posetal games offer an auditable route from partially specified laws to multi-agent motion planning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.GT; Robotics; eess.SY" />
+  </entry>
+  <entry>
+    <title>Agentic-Priors: Using Large Language Models to Address the Cold Start Problem in Preference Elicitation</title>
+    <link href="http://arxiv.org/abs/2610.21938v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.21938v1</id>
+    <published>2026-10-15T00:00:00Z</published>
+    <updated>2026-10-15T00:00:00Z</updated>
+    <author>
+      <name>Bruno Arcanjo</name>
+    </author>
+    <author>
+      <name>Zhaoxing Li</name>
+    </author>
+    <author>
+      <name>Sebastian Stein</name>
+    </author>
+    <summary type="text">An agent that learns a user's preferences from their choices faces a cold start problem: before any choices are observed, it must rely solely on a prior. Informative priors are usually fitted to historical choice data, which new tasks and deployments lack. To address this, we present Agentic-Priors, which lets agentic systems use the implicit knowledge of large language models (LLMs) instead. Specifically, an LLM states a new user's trade-offs in interpretable terms, such as willingness to pay or value of time, which we map to a prior over multinomial logit coefficients. This prior is then refined by a Bayesian learner as choices are observed. Across seven choice datasets, Agentic-Priors improves cold start accuracy over an uninformed prior by 5-40 percentage points. It also outperforms AutoElicit, a state-of-the-art LLM prior-elicitation method, on three datasets and loses on one. It is up to 18 points more accurate than in-context learning, and never significantly worse. Against hierarchical Bayes models fitted to surveys of increasing size, our approach is worth roughly 6-40 surveyed users, in terms of log-loss, so its value is concentrated in a deployment's first users.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>MetaShare: Failure-Aware Collective Self-Improvement for Open-Ended Agents</title>
+    <link href="http://arxiv.org/abs/2610.21887v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.21887v1</id>
+    <published>2026-10-15T00:00:00Z</published>
+    <updated>2026-10-15T00:00:00Z</updated>
+    <author>
+      <name>Vishal Bhutani</name>
+    </author>
+    <author>
+      <name>Prasang Gupta</name>
+    </author>
+    <author>
+      <name>Sumanth Chundru</name>
+    </author>
+    <author>
+      <name>Kevin Paul</name>
+    </author>
+    <summary type="text">Humans often learn fastest not by repeating success, but by remembering which failures not to repeat. Open-ended self-improving agents can share experience across lineages, as in GEA, or edit their own improvement mechanisms, as in DGM-Hyperagents, yet failed improvement attempts are rarely retained as reusable cross-branch knowledge, and search can collapse onto redundant strategies. We introduce MetaShare, a failure-aware framework that records successful and unsuccessful agent modifications together with signed performance deltas. Before each generation, MetaShare retrieves diverse high-performing strategies alongside high-confidence failures from other lineages, letting agents reuse effective mechanisms while avoiding known dead ends. A task-blind auditor periodically injects absent or underrepresented mechanism categories, while embedding-based de-ranking limits redundancy during retrieval. Multiple meta-agents propose modifications in parallel at heterogeneous temperatures behind a deterministic selector that gates applicability, scope, compilability, and size. Experiments across paper review, coding, math grading, robotics reward design, and financial audit-risk assessment show that MetaShare's median matches or exceeds DGM-Hyperagents' final performance and reaches its own best-performing agent in 1.7--2.9$\times$ fewer evolution iterations.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026 Meta-Agents Workshop (Managing Agents that Manage Agents)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>The Delegation Dilemma: Economies of Scale, Accountability, and Polycentric Governance</title>
+    <link href="http://arxiv.org/abs/2610.21746v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.21746v1</id>
+    <published>2026-10-15T00:00:00Z</published>
+    <updated>2026-10-15T00:00:00Z</updated>
+    <author>
+      <name>Arin Mukhopadhyay</name>
+    </author>
+    <author>
+      <name>Aris Filos-Ratsikas</name>
+    </author>
+    <author>
+      <name>Panayiotis Danassis</name>
+    </author>
+    <summary type="text">Many collective-action systems are neither fully decentralized nor fully centralized: agents voluntarily organize into institutions that share organizational costs and delegate decisions to representatives. Delegation can reduce individual costs, but it also transfers control to representatives whose private objectives need not align with those of their constituents. We study this tension in a repeated game with endogenous delegation to self-interested centers. A simple reduced-form model yields a scale--accountability tradeoff: larger constituencies offer greater cost-sharing benefits to members, yet the marginal value to a center of retaining any one constituent decreases as group size grows. Consequently, the prospect of individual exit can sustain non-exploitative delegation only up to an endogenous accountable constituency size. Additionally, we identify parameter regions in which fully delegated, accountable governance, when feasible, must be polycentric. We investigate these predictions through simulations with large language model (LLM) agents. Across five matched pairs of 30-agent simulations, polycentric structures repeatedly emerge but remain fluid, exhibiting cycles of concentration, exploitation, exit, and re-formation. We further find that models of different capacity exhibit similar willingness to assume leadership but differ substantially in their exercise of authority, with Sol initiating exploitation more frequently than Luna in matched decision states.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>A Responsibility-Centered Coordination Mechanism for Decentralized Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2610.21243v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.21243v1</id>
+    <published>2026-10-15T00:00:00Z</published>
+    <updated>2026-10-15T00:00:00Z</updated>
+    <author>
+      <name>Thi-Nhung Nguyen</name>
+    </author>
+    <author>
+      <name>Viet-Thanh Pham</name>
+    </author>
+    <author>
+      <name>Linhao Luo</name>
+    </author>
+    <author>
+      <name>Thuy-Trang Vu</name>
+    </author>
+    <author>
+      <name>Dinh Phung</name>
+    </author>
+    <summary type="text">Centralized orchestration provides comprehensive multi-agent coordination but creates bottlenecks in scalability, adaptability, and collective performance. Decentralized approaches alleviate these bottlenecks by distributing coordination across agents, yet often leave responsibility for delegated dependencies and failure recovery unclear. To address this gap, we propose RCM, a responsibility-centered coordination mechanism that leverages commitments to couple task delegation with explicit responsibilities of the involved parties. Through recursive delegation, agents retain their upstream responsibilities while locally orchestrating downstream commitments, thereby preserving accountability across delegation chains, creating a network of local orchestration. We operationalize this mechanism locally through responsibility-constrained decision-making and a responsibility-oriented communication protocol (RCP), enabling agents to autonomously establish, manage, and terminate commitments. As agents act in parallel, their local actions continuously evolve the commitment graph, allowing global coordination to emerge and adapt toward a shared mission without centralized control. Experiments across reasoning, coding, and executable agent environments demonstrate that RCM outperforms strong centralized and decentralized coordination baselines by up to 18.7 points in task performance and 10.2 points in Responsibility, while improving failure and harm detection without task-specific training.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, including appendices&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>SSR: Structural Signal Retriever for Scalable Agent Discovery in LLM-Orchestrated Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2610.21113v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.21113v1</id>
+    <published>2026-10-15T00:00:00Z</published>
+    <updated>2026-10-15T00:00:00Z</updated>
+    <author>
+      <name>Giancarlo Maldonado Cárdenas</name>
+    </author>
+    <author>
+      <name>Carlos A. Astudillo</name>
+    </author>
+    <author>
+      <name>Nelson L. S. da Fonseca</name>
+    </author>
+    <summary type="text">Large-scale multi-agent ecosystems require mechanisms for discovering suitable agents without exposing entire registries to a large language model (LLM) orchestrator. The challenge is not only to retrieve relevant Agent Cards from a growing registry, but also to maintain a compact candidate context, since each additional candidate increases prompt size, inference cost, latency, and the risk of exceeding the model context window. We formulate this problem as candidate-context scalability and propose the Structural Signal Retriever (SSR), our deterministic and training-free retrieval method designed for Agent Card discovery. SSR derives structural lexical signals from capability-bearing Agent Card fields, weights them using inverse document frequency (IDF), and uses an Inverted Signal Index (ISI) for selective candidate scoring. We evaluate SSR using a synthetic agent benchmark, a public MS MARCO adaptation, and end-to-end LLM orchestration. At 1,000 agents, SSR reduces LLM input by 98.8% and orchestration latency by 70.9% relative to full-catalog orchestration. On MS MARCO, IDF improves retrieval effectiveness within the structural representation, while the ISI preserves retrieval effectiveness and reduces explicitly scored passages by 96.8%. End-to-end experiments show that candidate pre-selection maintains a compact candidate context as registry size grows and avoids the operational failures observed with full-catalog orchestration. These results support SSR as an Agent-Card-native, traceable retrieval mechanism for candidate-context scalability.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; Information Retrieval" />
+  </entry>
+  <entry>
+    <title>SCARCE: Emergent Institutions in Long-Horizon Multi-Agent Coding Systems</title>
+    <link href="http://arxiv.org/abs/2610.21029v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.21029v1</id>
+    <published>2026-10-15T00:00:00Z</published>
+    <updated>2026-10-15T00:00:00Z</updated>
+    <author>
+      <name>Abhinav Kumar</name>
+    </author>
+    <author>
+      <name>Rediet Abebe</name>
+    </author>
+    <author>
+      <name>Eugene Bagdasarian</name>
+    </author>
+    <author>
+      <name>Sahar Abdelnabi</name>
+    </author>
+    <summary type="text">As autonomous agents become widely deployed, coordinating access to shared computing resources and services will become increasingly important. Recent incidents have already revealed unplanned coordination between agents, highlighting the safety implications of these interactions. Yet prior studies of agent negotiation often use stylized games and simulated bargaining, leaving open how these behaviors develop during sustained, long-horizon tasks. We propose SCARCE (Shared Compute ARena for Coding agEnts), a framework in which agents solve sequences of coding tasks under individual deadlines while negotiating access to a shared execution resource. This negotiation determines when and for how long they can inspect programs, compile code, and run tests. We find that agents spontaneously develop informal institutions: persistent rules and commitments grounded in reputation, reciprocity, and precedent. These arrangements, which we call institutional behaviors, carry across tasks and influence resource allocation, with agents sometimes foregoing immediate advantages to honor earlier agreements. We develop a 21-category taxonomy of negotiation strategies and emergent norms and use it to analyze eight models and audit more than 1,500 trajectories across different environmental settings. Among the models tested, newer frontier models exhibit more institutional behaviors than older or lightweight models. Alongside cooperation, we observe exclusionary coalitions and rare divide-and-conquer strategies. SCARCE provides a controlled setting for proactively and systematically auditing how these relationships emerge, shape access to resources, and affect the safety and coordination of multi-agent systems.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
   <entry>
     <title>From Training to Escalation: Forensic Analysis and Local Recreation of RL/RLHF-Induced Privilege Escalation in AI Agents (CVE-2026-65616)</title>
     <link href="http://arxiv.org/abs/2610.20437v1" rel="alternate" type="text/html" />
@@ -186,6 +384,64 @@
       <name>Shafiq Joty</name>
     </author>
     <summary type="text">Agents are increasingly interacting with other agents that act for different principals -- people or organizations on whose behalf they work -- e.g., a buyer's personal agent negotiating with an enterprise's seller agent. In such agent-to-agent (A2A) scenarios, each agent has its own environment and holds information and authority that the other cannot see. Moreover, the interests of each agent may be aligned (cooperative), partly aligned (mixed-motive), or opposed (competitive). Existing multi-agent system failure studies assume only one orchestrator, shared workspace, or principal. We ask how A2A systems fail when these assumptions are removed. We study more than 2,500 recorded runs of A2A systems built from different agent harnesses and models, spanning 488 scenarios across eight families (legal, CRM, security, commerce, etc.). From these traces, we derive $A^2$-Failures, a taxonomy of 20 A2A failure modes in four categories: (i) discovery and delegation, (ii) grounding and record consistency, (iii) verification, and (iv) conduct and fidelity. Three observations hold across the harnesses, models, and scenarios studied: (1) Agents match tasks to peer names mentioned in the prompt rather than actively searching for available peers; (2) Agents never fact-check each other unprompted; (3) Scoring only the final output rewards the lead agent while hiding internal coordination, verification, and behavioral breakdowns. Our study makes a case for comprehensive evaluations where agents are scored individually against their own objectives in addition to task outcome. We release the run logs behind the taxonomy at https://huggingface.co/datasets/a2a-salesforce/a2-failures.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://huggingface.co/datasets/a2a-salesforce/a2-failures"&gt;https://huggingface.co/datasets/a2a-salesforce/a2-failures&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 20 pages, 7 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Why Do Agent Teams Fail Across Boundaries? A Failure Taxonomy for Agent-to-Agent Systems with Private States</title>
+    <link href="http://arxiv.org/abs/2610.19342v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.19342v2</id>
+    <published>2026-10-14T00:00:00Z</published>
+    <updated>2026-10-14T00:00:00Z</updated>
+    <author>
+      <name>Sarath Shekkizhar</name>
+    </author>
+    <author>
+      <name>Prathyusha Jwalapuram</name>
+    </author>
+    <author>
+      <name>Zixuan Ke</name>
+    </author>
+    <author>
+      <name>Vaidehi Patil</name>
+    </author>
+    <author>
+      <name>Jiayu Wang</name>
+    </author>
+    <author>
+      <name>Srijan Bansal</name>
+    </author>
+    <author>
+      <name>Trong Huy Nguyen</name>
+    </author>
+    <author>
+      <name>Dingfeng Jiang</name>
+    </author>
+    <author>
+      <name>Dongqi Liu</name>
+    </author>
+    <author>
+      <name>Ruochen Zhao</name>
+    </author>
+    <author>
+      <name>Wei Lu</name>
+    </author>
+    <author>
+      <name>Giuseppe Carenini</name>
+    </author>
+    <author>
+      <name>Mohit Bansal</name>
+    </author>
+    <author>
+      <name>Silvio Savarese</name>
+    </author>
+    <author>
+      <name>Shafiq Joty</name>
+    </author>
+    <summary type="text">Agents are increasingly interacting with other agents that act for different principals (people or organizations on whose behalf they work), such as a buyer's personal agent negotiating with an enterprise's seller agent. In such agent-to-agent (A2A) scenarios, each agent has its own environment and holds information and authority that the other cannot see. Moreover, the interests of each agent may be aligned (cooperative), partly aligned (mixed-motive), or opposed (competitive). Existing multi-agent system failure studies assume one orchestrator, shared workspace, or single principal. We ask how A2A systems fail when these assumptions are removed. We study more than 2,500 recorded runs of A2A systems built from different agent harnesses and models, spanning 488 scenarios across eight families (legal, CRM, security, commerce, etc.). From these traces, we derive $A^2$-Failures, a taxonomy of 20 A2A failure modes in four categories: (i) discovery and delegation, (ii) grounding and record consistency, (iii) verification, and (iv) conduct and fidelity. Three findings hold across every harness, model, and scenario studied: (1) discovery and interaction are driven by the phrasing of the task rather than the availability of peer agents; (2) no agent verifies a peer's factual claim on its own initiative, so an A2A system inherits the reliability of its least reliable participant unless the protocol or mechanism performs the check; and (3) the aggregate outcome score credits the agent completing the task while staying blind to the coordination, verification, and conduct failures beneath it, so A2A systems must be evaluated per agent, against each agent's own principal. We release the run logs behind the taxonomy at https://huggingface.co/datasets/a2a-salesforce/a2-failures.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://huggingface.co/datasets/a2a-salesforce/a2-failures"&gt;https://huggingface.co/datasets/a2a-salesforce/a2-failures&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 20 pages, 7 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
@@ -744,155 +1000,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="cs.DC; cs.HC; cs.PL" />
-  </entry>
-  <entry>
-    <title>Ask Your Advisor: Learning When to Consult Stronger Models in Agentic Systems</title>
-    <link href="http://arxiv.org/abs/2610.13870v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.13870v1</id>
-    <published>2026-10-09T00:00:00Z</published>
-    <updated>2026-10-09T00:00:00Z</updated>
-    <author>
-      <name>Pascal Sowietzki</name>
-    </author>
-    <author>
-      <name>Steffen Holter</name>
-    </author>
-    <author>
-      <name>Yannick Metz</name>
-    </author>
-    <author>
-      <name>Emil Kasper</name>
-    </author>
-    <author>
-      <name>Raphael Baur</name>
-    </author>
-    <author>
-      <name>Mennatallah El-Assady</name>
-    </author>
-    <summary type="text">To balance task performance and computational cost, agentic workflows can use a lower-cost model for execution and selectively consult a stronger model. In such executor-advisor systems, the executor decides when to seek advice, making escalation depend on self-assessment, although current language models struggle to detect where their own reasoning fails. The need for stronger reasoning emerges during execution and varies across workflow phases. We introduce ARIA, a meta-controller that learns when to consult by balancing task success against consultation cost. Our approach formulates consultation as a sequential resource-allocation problem. At workflow contact points, ARIA maps execution evidence to a compact state abstraction and selects SILENT or CONSULT, with action values learned by Monte Carlo control from cost-penalized outcomes. Across evaluated tasks of SWE-bench Verified, Terminal-Bench 2.1, and $τ^2$-bench, ARIA recovers 44-81% of the executor-advisor success gap at less than half the advisor model's cost. ARIA achieves the best observed success-cost trade-off among ten other evaluated conditions, including routing and cascading methods, fixed and prompted consultation, and random placement at matched advice volume. The policies are compact and inspectable, with a single consultation-price parameter governing the success-cost trade-off without retraining either underlying model.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>OpenSocialJax: Evaluating Social Adaptation in Sequential Social Dilemmas with Open-Ended Environmental Dynamics</title>
-    <link href="http://arxiv.org/abs/2610.13710v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.13710v1</id>
-    <published>2026-10-09T00:00:00Z</published>
-    <updated>2026-10-09T00:00:00Z</updated>
-    <author>
-      <name>Zihao Guo</name>
-    </author>
-    <author>
-      <name>Meng Fang</name>
-    </author>
-    <author>
-      <name>Joel Z. Leibo</name>
-    </author>
-    <author>
-      <name>Yali Du</name>
-    </author>
-    <summary type="text">Sequential social dilemma benchmarks capture diverse social interactions, but rarely test whether agents can infer hidden environmental rules through repeated interaction while adapting to other agents. We introduce \textbf{OpenSocialJax}, which extends Clean Up and Commons Harvest across an open-ended distribution of latent environment configurations, systematically varying spatial layouts and hidden rules governing tool crafting, payoffs, and resource dynamics. Each episode samples one configuration from tens of millions of possibilities and holds it fixed across five trials. We evaluate eight large language models, including three closed source models and five open source models. Our evaluation tests whether models can discover hidden rules and adapt to other agents in homogeneous and mixed teams. We find that rule discovery often improves performance but does not reliably sustain cooperation, as the cleaning burden becomes concentrated among fewer agents in OpenCleanup and every team eventually exhausts the shared resource in OpenHarvest. In our mixed arena, one cooperative agent was able to sustain the public good in OpenCleanup at a cost to its own return, but could not prevent resource depletion in OpenHarvest. Together, these results highlight the difficulty of adapting jointly to unfamiliar environmental dynamics and the changing behavior of other agents.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24 pages, including appendix&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Collective Autonomous Vehicle Routing Needs Social Awareness for Coexistence with Human Drivers</title>
-    <link href="http://arxiv.org/abs/2610.13439v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.13439v1</id>
-    <published>2026-10-09T00:00:00Z</published>
-    <updated>2026-10-09T00:00:00Z</updated>
-    <author>
-      <name>Anastasia Psarou</name>
-    </author>
-    <author>
-      <name>Mikolaj Rams</name>
-    </author>
-    <author>
-      <name>Blazej Torbus</name>
-    </author>
-    <author>
-      <name>Rafal Kucharski</name>
-    </author>
-    <summary type="text">Collective Autonomous Vehicle (AV) route choices in real-world traffic networks can create externalities for Human-Driven Vehicles (HDVs), as routes that benefit AVs may increase travel times for other road users. To address this, we introduce a social component, the marginal cost, to the selfish travel time AV reward. Marginal cost captures an AV's impact on other road users by comparing their travel times with those in a counterfactual simulation in which the AV is removed.   We study AV route choice in mixed-autonomy traffic settings using Multi-Agent Reinforcement Learning (MARL), where AVs learn routing policies through repeated interactions with the traffic environment. Experiments on the real-world networks of Ingolstadt and Provins show that incorporating marginal cost into the AV reward not only limits the increase in HDV travel times and shortens AV travel times relative to selfish AV routing, but also improves overall system performance. In Ingolstadt, selfish routing of 40\% AVs increases the travel times of other vehicles by 1.7\%, and this drops to 1.1\% when the social reward is included. Interestingly, not only does overall system performance improve, but the AVs are also better off when acting socially.This effect is consistent across tested cities, penetration rates, and replications, yet when the weight of the social component in the reward increases, the system fails to reach the desired performance.   For a more scalable approach to social AV routing in mixed-autonomy traffic, we compute the marginal cost only for the AVs whose route choices most affect the traffic system. This reduces the number of counterfactual simulations and achieves similar performance at a significantly lower computational cost. Our results suggest that AV routing should go beyond selfish rewards and, for the benefit of all traffic participants, include a social component in its objective.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>When AI Advisors Agree: Distinguishing Forecast Risk from Forecast Reliability</title>
-    <link href="http://arxiv.org/abs/2610.13431v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.13431v1</id>
-    <published>2026-10-09T00:00:00Z</published>
-    <updated>2026-10-09T00:00:00Z</updated>
-    <author>
-      <name>Russlan Ramdowar</name>
-    </author>
-    <summary type="text">If seven AI advisors give similar forecasts, should we trust them more? Agreement can indicate useful shared evidence, but it can also reflect an asset that was easier to forecast in the first place. We examine this distinction using 928 completed first-quarter forecasts for 232 assets across four production batches of iPulse AI. Ten historical Gemini configurations are grouped into seven investment frameworks; their archived forecasts are compared with later market outcomes, without generating new reports. Mean absolute return error rises from 10.31 percentage points in the lowest-disagreement quartile to 21.05 in the highest. Yet a forecast of no price change shows almost the same increase, from 9.89 to 21.15. The relationship between disagreement and additional forecast error is not resolved after accounting for visible asset risk. Retaining the quarter of forecasts with lowest historical volatility produces lower error than retaining those with least disagreement: 7.97 versus 10.31 percentage points. Agreement about direction behaves differently. When at least six of seven frameworks share a direction, directional accuracy is higher, but return-magnitude error is also larger. These results distinguish three questions often collapsed into one confidence score: how risky the asset is, whether advisors agree on its direction, and how precisely they forecast its return. For this historical council, agreement is informative in specific ways; it is not a general certificate of forecast reliability.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>The Limits of Manipulation within Personalized Incentive Policies</title>
-    <link href="http://arxiv.org/abs/2610.13133v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.13133v1</id>
-    <published>2026-10-09T00:00:00Z</published>
-    <updated>2026-10-09T00:00:00Z</updated>
-    <author>
-      <name>Andrea Araldo</name>
-    </author>
-    <author>
-      <name>Alessa Mayer</name>
-    </author>
-    <author>
-      <name>Ravi Seshadri</name>
-    </author>
-    <author>
-      <name>Amir Brudner</name>
-    </author>
-    <summary type="text">Demand management policies aim to shift individual behavior toward sustainable choices (e.g., goods, transport modes). Personalized incentive policies tailor subsidies to agents' needs and constraints, but personalization also exposes the regulator to agents' strategic manipulative behavior. The extent to which agents can profitably manipulate such policies remains poorly understood, which limits their applicability.   This paper establishes analytically the conditions under which manipulation benefits the agent. We formalize a Stackelberg game in which an agent may simulate a different profile to extract higher incentives from a regulator. Previous work typically assumes that the regulator would instantaneously classify agents into the simulated user profile. In contrast, we explicitly model the regulator's process of learning the agent profile, based on observed past behavior. This makes manipulation harder, since it forces the agent to consistently behave according to a simulated profile, thus renouncing following their true preferences. Manipulative agents thus incur a Cost of Manipulation, which has typically been neglected. By accounting for it, we get a counterintuitive finding: although classification uncertainty reduces personalization accuracy, it may benefit the regulator by deterring manipulation. We establish an upper bound on the agent's gain from manipulation, which becomes stricter as profiles become harder to distinguish for the regulator. Simulations on the London Passenger Mode Choice dataset illustrate this deterrence effect. The framework can therefore be used to stress-test the robustness of personalized incentive policies before deployment.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>SwingGuard: Risk-Conditioned Multi-Agent Swing Trading with Dual-Timescale Governance</title>
-    <link href="http://arxiv.org/abs/2610.12988v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.12988v1</id>
-    <published>2026-10-09T00:00:00Z</published>
-    <updated>2026-10-09T00:00:00Z</updated>
-    <author>
-      <name>Junzhou Su</name>
-    </author>
-    <author>
-      <name>Yichen Luo</name>
-    </author>
-    <author>
-      <name>Yebo Feng</name>
-    </author>
-    <author>
-      <name>Teng Li</name>
-    </author>
-    <author>
-      <name>Jiahua Xu</name>
-    </author>
-    <summary type="text">Cryptocurrency swing trading spans mismatched timescales: positions remain active while market and event risk can change within minutes. However, many predictive and large language model (LLM)-based trading systems assess risk after strategy generation or run both functions at the same cadence, leaving proposals unconditioned by current risk and exposure weakly governed between revisions. We propose SwingGuard, a dual-timescale, long-only multi-agent framework for risk-conditioned strategy generation. At the strategy timescale, specialized analysts synthesize point-in-time technical, sentiment, on-chain, and macroeconomic evidence through bullish-bearish deliberation. The resulting evidence and current risk context are then combined by a Portfolio Architect to form a target position. At the governance timescale, a five-minute Risk Controller performs conditional diagnosis, maintains persistent risk states with staged recovery, audits the proposal, and constrains execution until the next strategy revision. This design allows risk to shape the feasible strategy before proposal finalization while continuing to govern the active position afterward. Evaluations on Bitcoin (BTC) and Ether (ETH) show that SwingGuard preserves positive returns after transaction costs while maintaining shallow drawdowns and strong risk-adjusted performance on both assets. The exposure-capped joint portfolio achieves a Sharpe ratio of 2.98, compared with 2.79 for an otherwise identical Post-hoc Risk variant. Structured traces further link risk evidence and state transitions to strategy constraints and executed position changes, providing an auditable framework for asynchronous cryptocurrency swing trading. Overall, the results indicate that conditioning strategy formation on current risk, together with persistent high-frequency governance, improves risk-adjusted performance without sacrificing auditability.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>When AI Advisors Agree: Distinguishing Forecast Risk from Forecast Reliability</title>
-    <link href="http://arxiv.org/abs/2610.13431v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.13431v2</id>
-    <published>2026-10-09T00:00:00Z</published>
-    <updated>2026-10-09T00:00:00Z</updated>
-    <author>
-      <name>Russlan Ramdowar</name>
-    </author>
-    <summary type="text">If seven AI advisors agree, what have we learned: that their forecast is reliable, or that the asset is easier to forecast? We examine 928 completed first-quarter outcomes for 232 assets across four historical iPulse AI batches. Ten Gemini configurations form seven equally weighted investment frameworks; no forecasts are regenerated. The council has mean absolute return error of 15.15 percentage points (pp), versus 14.99 for no change, with an unresolved paired difference of +0.16 pp. Error rises from 10.31 to 21.05 pp across disagreement quartiles, but the no-change baseline rises almost identically, from 9.89 to 21.15. In the pooled archive, selecting the lowest-volatility quarter produces lower error than selecting the least-disagreeing quarter: 7.97 versus 10.31 pp. Directional agreement introduces a second trap: its apparent value depends on the aggregation rule. When at least six of seven frameworks share a direction, the sign of their mean return is correct in 53.21% of cases, versus 44.11% with lower agreement. Scoring the modal direction instead changes the lower-agreement accuracy to 54.27%, removing that positive contrast. Recomputed-rank bootstraps, scale-aware losses, and period sensitivities qualify these descriptive results; four overlapping periods cannot establish future-regime performance. Agreement, visible asset risk, and aggregation-specific skill should be evaluated separately before consensus is presented as confidence.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24 pages, 11 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
   </entry>
 </feed>
