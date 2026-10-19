@@ -4,12 +4,39 @@
   <id>https://rspaper.top/output/feed_mm.xml</id>
   <link href="https://rspaper.top/output/feed_mm.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-16T05:21:59Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 136 entries</subtitle>
+  <updated>2026-10-19T05:32:32Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 131 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Semantic-Critical Regions for Video-to-Audio Generation</title>
+    <link href="http://arxiv.org/abs/2610.23021v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.23021v1</id>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <author>
+      <name>Yun Fang</name>
+    </author>
+    <author>
+      <name>Wei Guo</name>
+    </author>
+    <author>
+      <name>Zhuonan Liang</name>
+    </author>
+    <author>
+      <name>Heng Wang</name>
+    </author>
+    <author>
+      <name>Weidong Cai</name>
+    </author>
+    <summary type="text">In real-world videos, sound events are often associated with localized and fine-grained visual cues, such as object motion, object-part dynamics, contact events, and interactions between objects. Existing video-to-audio (V2A) methods employ implicit conditioning based on global visual representations or explicit control derived from temporal and spatial cues. However, subtle sound-producing and sound-indicative interactions remain insufficiently captured, leaving room for more precise visual conditioning of sound-event semantics and temporal dynamics. Motivated by this observation, we refer to regions containing such sound-relevant visual evidence as Semantic-Critical Regions (SCRs) and introduce SCR-V2A, a V2A generation framework that explicitly localizes and encodes SCRs as fine-grained visual guidance for audio generation. Specifically, we first identify SCRs through sound-related visual localization. We then transform the localized regions into a control representation through adapter-based dual visual encoding, which jointly captures global visual context and fine-grained sound-relevant evidence. The representation is used to condition a downstream audio generation model. Experiments on both in-domain and out-of-domain benchmarks demonstrate that SCR-V2A achieves strong performance in distribution matching and audio quality while remaining competitive in cross-modal alignment and requiring few trainable parameters. These results highlight the value of prioritizing fine-grained, sound-relevant visual regions for V2A generation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ACM Multimedia Asia 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Multimedia; cs.SD; Audio and Speech Processing" />
+  </entry>
   <entry>
     <title>Perceive, Predict, and Plan: a Unified World Action Model for Egocentric Dexterous Manipulation</title>
     <link href="http://arxiv.org/abs/2610.22363v1" rel="alternate" type="text/html" />
@@ -4042,214 +4069,5 @@
     <summary type="text">Uniform frame sampling for vision-language model (VLM)-based video analysis often floods multimodal backbones with redundant content, while existing keyframe selection methods are typically optimized for human viewing rather than downstream extraction accuracy. We propose AdaFrame, a content-adaptive preprocessing cascade that reduces visual redundancy without sacrificing extraction fidelity. Three progressively finer filters, perceptual hashing, learned perceptual image patch similarity (LPIPS), and CLIP-based semantic clustering, efficiently eliminate redundant frames before costly cross-modal inference. Per-video frame budgets are determined using Intrinsic Semantic Dimensionality (ISD), which estimates each video's semantic complexity through singular value decomposition of its frame embeddings. Experiments on 500 video advertisements from the Pitt Ads Dataset show that AdaFrame reduces the frame count by 48 percent and VLM inference cost by 75 percent compared with uniform sampling, while achieving 86.0 percent topic accuracy, an improvement of 1.6 percentage points, and 79.4 percent sentiment accuracy, an improvement of 7.5 percentage points.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multimedia" />
-  </entry>
-  <entry>
-    <title>World-T3: Test-Time Training as Persistent Memory for Real-Time Video World Models</title>
-    <link href="http://arxiv.org/abs/2610.17434v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.17434v1</id>
-    <published>2026-10-12T00:00:00Z</published>
-    <updated>2026-10-12T00:00:00Z</updated>
-    <author>
-      <name>Junyi Wu</name>
-    </author>
-    <author>
-      <name>Zekun Li</name>
-    </author>
-    <author>
-      <name>Chenhongyi Yang</name>
-    </author>
-    <author>
-      <name>Chen Guo</name>
-    </author>
-    <author>
-      <name>Lingchen Yang</name>
-    </author>
-    <author>
-      <name>Yongan Zhang</name>
-    </author>
-    <author>
-      <name>Xinyi Zhang</name>
-    </author>
-    <author>
-      <name>Hongbing Hu</name>
-    </author>
-    <author>
-      <name>Bartek Rymkowski</name>
-    </author>
-    <author>
-      <name>Srinath Sridhar</name>
-    </author>
-    <author>
-      <name>Yan Yan</name>
-    </author>
-    <author>
-      <name>Xijie Huang</name>
-    </author>
-    <summary type="text">Recent advances in video world models have enabled plausible interactive environments, yet long-horizon generation places a fundamental demand on visual memory: the previously observed world must remain consistent as the model continues to generate. Existing autoregressive approaches often implicitly rely on the generative model itself to retain such information, leading to spatial memory decay beyond the active context. We introduce World-T3, a camera-controlled video world model with a test-time training memory that consolidates past observations into dedicated model parameters. To robustly update this memory, we propose a recursive least-squares rule that incrementally absorbs novel visual features via online pose-keyed memory updates. Our TTT memory reads out previously observed scene features from the fast-weight state by camera pose, enabling consistent generation with constant storage and per-step computation regardless of rollout length. To facilitate real-time interactive generation with this robust memory, we further distill the autoregressive model into a few-step generator via dual-teacher distribution matching. On a long-horizon revisit benchmark, World-T3 raises revisit PSNR from 13.52 to 18.31 dB and reduces absolute rotation error from 3.344 to 1.075 relative to the strongest baseline on both metrics, while sustaining 20.6 FPS at 1280 x 704 on a single NVIDIA B200 GPU.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Project Page: https://adreamwu.github.io/World-T3/&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Multimedia" />
-  </entry>
-  <entry>
-    <title>GHOST: Geometry-Constrained Hybrid Diffusion for Open-Vocabulary 3D Scene Graph Generation</title>
-    <link href="http://arxiv.org/abs/2610.16455v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.16455v1</id>
-    <published>2026-10-12T00:00:00Z</published>
-    <updated>2026-10-12T00:00:00Z</updated>
-    <author>
-      <name>Changqun Feng</name>
-    </author>
-    <author>
-      <name>Wangxiandi Yin</name>
-    </author>
-    <author>
-      <name>Xin Hu</name>
-    </author>
-    <author>
-      <name>Ruiting Dai</name>
-    </author>
-    <author>
-      <name>Feiyang Yang</name>
-    </author>
-    <author>
-      <name>Jielei Wang</name>
-    </author>
-    <author>
-      <name>Tao He</name>
-    </author>
-    <summary type="text">3D scene graph generation requires understanding both object semantics and metric spatial relations. However, existing open-vocabulary methods often struggle with spatial predicates because language similarity reflects semantic co-occurrence rather than explicit geometry. We propose GHOST, a Geometry-constrained Hybrid diffusion framework for Open-vocabulary 3D Scene graph generaTion. GHOST jointly models continuous node geometry and discrete edge predicates, following a geometry-to-constraint-to-predicate denoising process to ensure geometrically consistent relation prediction. It introduces language-grounded constraint induction, which maps predicate embeddings to differentiable geometric constraints that guide both layout refinement and predicate reweighting. A Geometry-Topology Collaborative Denoiser further couples node and edge reasoning through noise-adaptive interaction and orientation-aware modeling. Experiments on 3DSSG demonstrate state-of-the-art performance in both closed-set and open-vocabulary settings, including over 17-point gains over RelationField on spatial predicates.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ACM MM 2026 (34th ACM International Conference on Multimedia)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Multimedia" />
-  </entry>
-  <entry>
-    <title>EventLens: Event-Structure Reinforcement Learning for Video Understanding</title>
-    <link href="http://arxiv.org/abs/2610.16172v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.16172v1</id>
-    <published>2026-10-12T00:00:00Z</published>
-    <updated>2026-10-12T00:00:00Z</updated>
-    <author>
-      <name>Guowen Zhang</name>
-    </author>
-    <author>
-      <name>Boshen Xu</name>
-    </author>
-    <author>
-      <name>Zihao Yue</name>
-    </author>
-    <author>
-      <name>Ziheng Wang</name>
-    </author>
-    <author>
-      <name>Xiaokun Liu</name>
-    </author>
-    <author>
-      <name>Xin Tao</name>
-    </author>
-    <author>
-      <name>Wenyu Qin</name>
-    </author>
-    <author>
-      <name>Pengfei Wan</name>
-    </author>
-    <author>
-      <name>Qin Jin</name>
-    </author>
-    <summary type="text">Recent multimodal large language models (MLLMs) achieve strong results on video question answering, yet often fail to recover the temporal structure that makes a video coherent. They may merge neighboring events, miss single-event progression, or infer implausible relations across events. We study structured temporal understanding as the ability to recover event structure from visual evidence, including event boundaries, single-event progression, and multi-event relations. We argue that this gap arises from a mismatch between current post-training objectives and temporal reasoning, where caption-style supervision allows models to rely on language shortcuts rather than visual temporal grounding. To address this, we propose EventLens, a vision-centric reinforcement learning framework that learns video understanding through event-structure recovery. Instead of reconstructing captions, EventLens trains models to recover temporal structure under controlled perturbations, such as altered temporal granularity, reversed progression, and shuffled event order. We instantiate this framework with a three-level temporal ontology and derive three verifiable task families: event segmentation, progression discrimination, and multi-event relation reasoning. These tasks admit deterministic rewards, enabling task-specialized GRPO training without human preference labels or learned reward models. We further introduce multi-teacher on-policy distillation (MT-OPD) to consolidate specialized policies into a unified model. Experiments on Qwen3-VL backbones show consistent improvements on temporal grounding and event-sensitive reasoning benchmarks, while preserving general video-QA performance. Learning curves further demonstrate that EventLens achieves comparable downstream transfer with significantly reduced training cost compared to direct mixed RL optimization.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 22 pages, 8 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Artificial Intelligence; Multimedia" />
-  </entry>
-  <entry>
-    <title>Elephant in the Fridge: Constant-Memory Frame Packing for Long Video Understanding</title>
-    <link href="http://arxiv.org/abs/2610.16118v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.16118v1</id>
-    <published>2026-10-12T00:00:00Z</published>
-    <updated>2026-10-12T00:00:00Z</updated>
-    <author>
-      <name>Shuo Gao</name>
-    </author>
-    <author>
-      <name>Chenhao Zheng</name>
-    </author>
-    <author>
-      <name>Zhongzheng Ren</name>
-    </author>
-    <summary type="text">Hour-long videos, streaming feeds, and movie-length content are pushing vision-language models (VLMs) past their breaking point -- the standard recipe of encoding each frame into visual tokens yields sequences that grow linearly with video length, causing prohibitive memory consumption and inference latency. Existing approaches, such as token reduction and keyframe selection, shorten the token sequence but leave the O(n) scaling intact, failing to resolve the fundamental bottleneck. We propose FramePack-U, a strikingly simple, training-free frame packing framework that compresses arbitrarily long videos into a fixed size visual representation at constant memory cost. FramePack-U requires no fine-tuning or architectural modification -- it plugs directly into off-the-shelf VLMs at inference time. Inspired by FramePack from the generation literature, we propose a content-aware compression strategy for visual understanding under a fixed token budget. Specifically, FramePack-U (1) scores each frame by its semantic similarity to the text prompt and ranks frames in a diversity-driven manner, and (2) packs the selected frames at varying resolutions into a fixed-length context window. This concentrates the memory budget on frames that are both instruction-relevant and visually diverse. While FramePack-U can in theory pack arbitrarily many frames into the fixed budget, we identify an empirical instantiation that generalizes robustly across settings. Extensive experiments on LongVideoBench, MLVU, and Video-MME show that FramePack-U consistently outperforms full-resolution baselines and prior token reduction and keyframe selection methods across diverse model families, parameter scales, and frame budgets. Notably, on Qwen3.5-35B-A3B with a 128-frame budget, FramePack-U yields gains of +12.9\%, +10.6\%, and +9.7\% over the official model on the three benchmarks, respectively.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Computer Vision" />
-    <category term="Machine Learning; Multimedia" />
-  </entry>
-  <entry>
-    <title>SIMPLE: Semantic Structure-Aligned Prompt Learning for Open-Vocabulary Audio-Visual Event Localization</title>
-    <link href="http://arxiv.org/abs/2610.15342v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.15342v1</id>
-    <published>2026-10-11T00:00:00Z</published>
-    <updated>2026-10-11T00:00:00Z</updated>
-    <author>
-      <name>Hanyu Xuan</name>
-    </author>
-    <author>
-      <name>Haoran Xu</name>
-    </author>
-    <author>
-      <name>Min Yin</name>
-    </author>
-    <author>
-      <name>Shuo Wang</name>
-    </author>
-    <author>
-      <name>Cheng Zhao</name>
-    </author>
-    <author>
-      <name>Kun Li</name>
-    </author>
-    <author>
-      <name>Fei Wang</name>
-    </author>
-    <author>
-      <name>Zhiliang Wu</name>
-    </author>
-    <author>
-      <name>Guanghui Yue</name>
-    </author>
-    <author>
-      <name>Hehe Fan</name>
-    </author>
-    <summary type="text">Open-vocabulary audio-visual event localization aims to infer explicit segment-level categories for both seen and unseen audio-visual events. Existing solutions rely heavily on hand-crafted prompt templates, whose predictions are highly sensitive to subtle wording variations. Learnable prompts remove this manual tuning burden, but when trained solely on seen events, they tend to overfit to seen categories and distort the inter-event semantic topology required for generalization to unseen categories, a failure we term semantic topology drift. In this paper, we propose SIMPLE, a semantic structure-aligned prompt learning framework that aligns cross-category semantic topology between learnable and hand-crafted prompts across asynchronous audio and visual streams. Specifically, our SIMPLE combines Learnable Continuous Prompt Tuning (LCPT) with Semantic Topology Consistency Regularization (STCR). The LCPT automates prompt engineering through data-driven optimization, while the STCR module aligns the category-wise similarity distributions of learnable and hand-crafted prompts under random category subset sampling to alleviate semantic topology drift. Comprehensive experiments and analyses on the OV-AVEBench demonstrate that our SIMPLE framework achieves state-of-the-art performance on the seen and unseen splits, while using roughly half the trainable parameters and roughly one-third the training time.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multimedia" />
-    <category term="cs.SD" />
-  </entry>
-  <entry>
-    <title>PAG-Agent: Zero-Shot Personalized Music Album Generation via Aesthetic Profile Distillation</title>
-    <link href="http://arxiv.org/abs/2610.14508v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.14508v1</id>
-    <published>2026-10-10T00:00:00Z</published>
-    <updated>2026-10-10T00:00:00Z</updated>
-    <author>
-      <name>Yifeng Mao</name>
-    </author>
-    <author>
-      <name>Ziye Wang</name>
-    </author>
-    <author>
-      <name>Yutong Shen</name>
-    </author>
-    <author>
-      <name>Feiran Liu</name>
-    </author>
-    <author>
-      <name>Wenjuan Han</name>
-    </author>
-    <summary type="text">Large Music Models (LMMs) can synthesize high-fidelity audio and support increasingly flexible prompt control, yet modeling the subjective preferences of an individual listener remains underexplored. We present PAG-Agent, a zero-shot multimodal framework that uses an explicit Personal Aesthetic Profile to bridge user preference inference and music generation control. A multimodal LLM distills favorite-song audio and contextual user information into this structured representation, which a planning LLM translates into generation instructions for existing music synthesizers. We further introduce PA-Eval, which evaluates personalization through the Aesthetic Consistency Score (ACS) for target-user alignment and the Aesthetic Specificity Index (ASI) for cross-user specificity. Experiments with Personal-100 on multiple MLLM and music-generation backbones show consistent improvements over generic and direct conditioning. A 50-participant follow-up study further shows a correlation $r=0.64$ between ACS and subjective preference.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 5 pages, 2 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multimedia" />
-    <category term="cs.SD" />
   </entry>
 </feed>
