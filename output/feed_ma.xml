@@ -4,12 +4,81 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-10-23T05:33:43Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 21 entries</subtitle>
+  <updated>2026-10-26T05:37:53Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 20 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Agent-Based Transport Model Calibration via Online Stochastic Batch Optimization</title>
+    <link href="http://arxiv.org/abs/2610.32698v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.32698v1</id>
+    <published>2026-10-23T00:00:00Z</published>
+    <updated>2026-10-23T00:00:00Z</updated>
+    <author>
+      <name>Abdelkader Dib</name>
+    </author>
+    <author>
+      <name>Milos Balac</name>
+    </author>
+    <summary type="text">Calibrating agent-based models (ABMs) is computationally demanding, as traditional black-box optimization typically requires hundreds or thousands of independent simulation runs. To reduce this burden, we introduce an online calibration framework that estimates parameters within a single simulation run. The approach combines black-box optimization with stochastic batch optimization, a method widely applied in machine learning but not yet explored in ABM calibration. Using MATSim as a case study, we treat each simulation iteration as a stochastic batch, enabling incremental parameter updates as agents make decisions. This online calibration paradigm allows model parameters and agent behaviors to co-evolve, achieving convergence without restarting the simulation. We demonstrate the effectiveness of our method by calibrating utility function parameters in MATSim for a large-scale transportation scenario of Switzerland. Results show that mode shares align closely with observed data within a typical simulation timeframe, confirming the feasibility and efficiency of the approach. By embedding calibration directly into the simulation loop, our method opens new possibilities for real-time, scalable, and efficient calibration of complex ABMs.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Presented at the World Conference on Transport Research (WCTR 2026), Toulouse, France&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Empirically Calibrated Differential Games for Simulating Driver Interactions</title>
+    <link href="http://arxiv.org/abs/2610.32276v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.32276v1</id>
+    <published>2026-10-23T00:00:00Z</published>
+    <updated>2026-10-23T00:00:00Z</updated>
+    <author>
+      <name>Amirmohammad Khakpour</name>
+    </author>
+    <author>
+      <name>Nachuan Li</name>
+    </author>
+    <author>
+      <name>Pedram Beigi</name>
+    </author>
+    <author>
+      <name>Yu</name>
+    </author>
+    <author>
+      <name>Nie</name>
+    </author>
+    <summary type="text">Game-theoretic models can resolve vehicle interactions without hand-written priority rules, but whether they describe human drivers once calibrated has rarely been tested. This study formulates a general-sum differential game of vehicle interactions at urban intersections, calibrates it to observed driving, and evaluates it on data not used for calibration. Each vehicle minimizes a cost that combines speed tracking, adherence to a map-derived lane route, control effort, gap keeping based on the intelligent driver model, a predictive conflict term, and a contact barrier, while perceiving the other vehicles with a delay. The game is solved with a feedback iterative linear-quadratic algorithm, and ten behavioral parameters per vehicle are calibrated by Bayesian optimization on trajectories recorded at four intersections in Washington, D.C. The calibrated game reproduces the trajectories of 819 vehicles with a mean position error of 1.00 m. When only each vehicle's route is known, as in a simulator, it is the most accurate of the compared models on 96 held-out vehicles (7.42 m), and ten-fold cross-validation shows that it is significantly more accurate than calibrated SUMO (by 3.61 m), an inverse reinforcement learning model (by 0.93 m), and independent and cooperative variants of the same model (by 0.33 and 0.32 m). The solutions, computed in 2.1 s for a typical interaction, are verified approximate equilibria. Finally, the conflict and steering weights, which the data do not identify, can be set from safety and comfort targets; together with a stiffer contact barrier, this removes the collisions that otherwise occur in 43% of tight closed-loop conflicts.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; This manuscript is intended for submission to IEEE Transactions on Intelligent Transportation Systems (IEEE T-ITS)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="math.OC" />
+  </entry>
+  <entry>
+    <title>Markets of Minds: A 51-Billion-State Economy of Intelligence</title>
+    <link href="http://arxiv.org/abs/2610.32190v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.32190v1</id>
+    <published>2026-10-23T00:00:00Z</published>
+    <updated>2026-10-23T00:00:00Z</updated>
+    <author>
+      <name>Jusheng Zhang</name>
+    </author>
+    <author>
+      <name>Xuekun Wu</name>
+    </author>
+    <author>
+      <name>Wenhao Wang</name>
+    </author>
+    <author>
+      <name>Mark Wang</name>
+    </author>
+    <author>
+      <name>Ming-Hsuan Yang</name>
+    </author>
+    <summary type="text">When intelligence is shared, reasoning becomes a constrained allocation problem. In a population of agents with limited access to expert models, an intervention can benefit its recipient yet still be a poor use of shared capacity if another feasible intervention has greater expected value. Assistance must therefore be evaluated through both its marginal benefit and the opportunity cost induced by budgets, access, scarcity, and service capacity. To this end, we introduce Markets of Minds, a framework for allocating expert reasoning across agents before expert outputs are observed. For each feasible agent-service pair, the framework estimates the expected gain from assistance relative to the agent's default continuation, explicitly separating repair benefit from regression risk, and jointly clears assistance contracts under shared resource constraints. We then study this problem in a dependency-aware agent economy with 51.2 billion addressable persona-market states spanning capabilities, cognitive budgets, provider access, scarcity, and network roles. These dependencies couple allocation feasibility across agents rather than the outcome of a fixed contract. Empirically, in a matched replay of 240 cases under a common 30% assistance quota, the frozen allocator reaches 85.42% task-level persona adherence versus 73.86% for equal-capacity random allocation, a gain of 11.56 percentage points. The results show that assistance value is heterogeneous and can be negative, and that scarcity changes which interventions are worth purchasing. Together, these findings motivate a population-level view of intelligence where the value of assistance depends not only on what it can achieve, but also on which alternative uses of scarce cognitive capacity it displaces.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>When Is a Memory Safe Enough to Act On? Action-Conditioned Verification for Long-Lived Agents</title>
     <link href="http://arxiv.org/abs/2610.31446v1" rel="alternate" type="text/html" />
@@ -59,6 +128,58 @@
     </author>
     <summary type="text">In clinical systems built from several large language model (LLM) agents, one agent often chairs the discussion and makes the final decision. Whether the chair's persona prompt changes that decision, or the agreement between repeated runs that some systems treat as reliability, has not been tested with the case held constant. We ask whether the persona changes the decision or only its timing, how it affects agreement between runs, and which behaviors appear when the prompt describes only personality traits. A simulated department of seven agents discussed 20 published cases of degenerative cervical myelopathy, with the case reports replayed unchanged in every run. Only the prompts of the chair and its deputy changed (no persona, or a consultative, autocratic or avoidant one), written either as rules of conduct or as personality traits. With personas written as rules, the chair chose to operate now in 93% of runs when autocratic and in 2% when avoidant, against 57% without a persona. Surgery was still planned in nearly all decisions, so the personas mainly changed whether to operate now or after more tests. These effects held with a second model and reworded prompts. The autocratic and avoidant personas made the three runs of a case agree more often, but only about as often as chance predicts, and Fleiss $κ$ did not rise. Prompts that described only personality traits kept more than half of the autocratic and avoidant effects on operating now. They reproduced quick decisions, delays and extra tests, but not ignoring red flags, dropping backup plans or passing the decision to the family. Studies should report and vary the chair's persona as they do the model, and correct agreement between runs for chance before calling it reliability.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 32 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Toward an Agentic AI Approach to Public Health Data Collection</title>
+    <link href="http://arxiv.org/abs/2610.31746v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.31746v1</id>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <author>
+      <name>Xueyi Zhang</name>
+    </author>
+    <author>
+      <name>Hongru Du</name>
+    </author>
+    <author>
+      <name>Ensheng Dong</name>
+    </author>
+    <summary type="text">Disease surveillance increasingly integrates automated data collection, yet predefined sources and procedures require manual adaptation as reporting practices change. We explore agentic artificial intelligence (AI) as an approach to coordinating surveillance data collection across heterogeneous sources. Specifically, we built a multi-agent framework that integrates source discovery, source assessment, evidence structuring, event linking, and validation. Three retrospective applications illustrate its promise. The workflow recovered all 13 individual cases in a hantavirus outbreak, with links to 85 distinct publisher domains compared with 28 in the reference benchmark, reconstructed Canadian measles counts with a final total 0.33% below the national reference and higher cumulative counts on 79.8% of comparable days, and increased the share of days with recent Sierra Leone mpox reports from 28.2% to 65.6% by incorporating attributed media. These demonstrations also reveal limitations in record completeness and accuracy, while prospective gains in timeliness remain untested. We envision agentic AI as a complementary layer of public health data infrastructure, coordinating evidence-linked collection under surveillance goals and standards defined by public health professionals.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 46 pages, 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Not Every Agent Needs the Strongest Model: Unified Prompt-Model Optimization for Heterogeneous LLM-based Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2610.31743v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.31743v1</id>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <author>
+      <name>Mingxiu Cai</name>
+    </author>
+    <author>
+      <name>Haoyang Xian</name>
+    </author>
+    <author>
+      <name>Xinyu Ma</name>
+    </author>
+    <author>
+      <name>Yutong Wang</name>
+    </author>
+    <author>
+      <name>Zhenxi Song</name>
+    </author>
+    <author>
+      <name>Jing Li</name>
+    </author>
+    <author>
+      <name>Xuebo Liu</name>
+    </author>
+    <summary type="text">Large language model (LLM)-based multi-agent systems (MAS) rely on role-specific prompts and execution models to solve complex tasks collaboratively. However, prompt optimization typically keeps model assignments fixed, leaving differences in role requirements and their associated inference costs outside the search. We present UniMASO, a Unified framework for heterogeneous Multi-Agent System Optimization through the joint adaptation of prompts and model assignments. UniMASO evaluates candidate updates through local, downstream, and global feedback, using cost-aware Pareto search to retain useful quality-cost trade-offs. Topology-aware co-evolution then coordinates these updates according to agent roles and dependencies. Cross-level trajectory memory further supplies historical successes and failures to guide subsequent optimization. Experiments on five benchmarks and five execution topologies show that UniMASO achieves competitive task performance at substantially lower deployment cost than the strongest homogeneous configurations. Under centralized execution, it improves the average score from 69.79 to 70.40 while reducing token-weighted deployment cost by 85.2% relative to DeepSeek-V4-Pro with MASPO. These results support joint prompt-model adaptation as an effective approach to efficient multi-agent collaboration. The code is available at https://github.com/Achilles008/UniMASO_main.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Achilles008/UniMASO_main"&gt;https://github.com/Achilles008/UniMASO_main&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
@@ -154,6 +275,36 @@
     </author>
     <author>
       <name>Chao Huang</name>
+    </author>
+    <summary type="text">Unlike question answering, where a query specifies a perceptual target, open-ended detailed captioning must determine what evidence to acquire and how to integrate it into a coherent global description. We propose Observation-Adaptive Video Captioner (OACap), a caption-centered agent that turns unsupported or missing information into targeted observation requests, uses spatiotemporal tools to acquire evidence, and iteratively verifies and revises the caption. OACap captions consistently improve performance across general video-understanding benchmarks using a fixed text-only reader. To better diagnose the information they preserve, we introduce Factual-Semantic Captioning Bench (FSCap-Bench). Its Core-Support Factuality Score (CSFS) combines claim precision with importance-aware fact coverage and responds as expected to four controlled perturbation types on 93.0-98.3% of valid caption pairs. Its Cross-Modal Semantic Round-Trip Score (CSRS) measures semantic preservation through a video-caption-video-caption round trip by matching atomic facts from source and recovered captions. Together, they connect downstream textual-memory utility with factual and semantic preservation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="cs.CL; Multiagent Systems; Multimedia" />
+  </entry>
+  <entry>
+    <title>OACap: Caption-Guided Active Observation for Detailed Video Captioning</title>
+    <link href="http://arxiv.org/abs/2610.29327v3" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.29327v3</id>
+    <published>2026-10-21T00:00:00Z</published>
+    <updated>2026-10-21T00:00:00Z</updated>
+    <author>
+      <name>Hao Shi</name>
+    </author>
+    <author>
+      <name>Hong Yan</name>
+    </author>
+    <author>
+      <name>Xiaoyang Zhang</name>
+    </author>
+    <author>
+      <name>Chao Huang</name>
+    </author>
+    <author>
+      <name>Qing Cui</name>
+    </author>
+    <author>
+      <name>Jun Zhou</name>
     </author>
     <summary type="text">Unlike question answering, where a query specifies a perceptual target, open-ended detailed captioning must determine what evidence to acquire and how to integrate it into a coherent global description. We propose Observation-Adaptive Video Captioner (OACap), a caption-centered agent that turns unsupported or missing information into targeted observation requests, uses spatiotemporal tools to acquire evidence, and iteratively verifies and revises the caption. OACap captions consistently improve performance across general video-understanding benchmarks using a fixed text-only reader. To better diagnose the information they preserve, we introduce Factual-Semantic Captioning Bench (FSCap-Bench). Its Core-Support Factuality Score (CSFS) combines claim precision with importance-aware fact coverage and responds as expected to four controlled perturbation types on 93.0-98.3% of valid caption pairs. Its Cross-Modal Semantic Round-Trip Score (CSRS) measures semantic preservation through a video-caption-video-caption round trip by matching atomic facts from source and recovered captions. Together, they connect downstream textual-memory utility with factual and semantic preservation.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 14 pages, 4 figures&lt;/p&gt;
@@ -444,184 +595,78 @@
     <category term="Artificial Intelligence" />
   </entry>
   <entry>
-    <title>Discovery-Probability Graph Planning for Embodied Agents in Tasks with Hidden Cooperation Requirements</title>
-    <link href="http://arxiv.org/abs/2610.26359v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.26359v1</id>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
+    <title>S$^2$-MAS: A Society-Scale Multi-Agent Simulation Framework with 500 Million Household Persona Agents</title>
+    <link href="http://arxiv.org/abs/2610.27746v4" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2610.27746v4</id>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
     <author>
-      <name>Zihuang Cai</name>
+      <name>Yang Li</name>
     </author>
     <author>
-      <name>Changjian Chen</name>
+      <name>Yike Wang</name>
     </author>
     <author>
-      <name>Zhuo Tang</name>
+      <name>Di Wan</name>
     </author>
     <author>
-      <name>Chang Tang</name>
+      <name>Chujun He</name>
     </author>
     <author>
-      <name>Kenli Li</name>
-    </author>
-    <summary type="text">Embodied agents are increasingly capable of perceiving, planning, and acting autonomously in dynamic environments, demonstrating strong performance on complex cooperative tasks. Recent advances typically assume that cooperative tasks are known in advance. In real-world applications, however, hidden-cooperation tasks are more common: the need for cooperation only becomes apparent after an agent observes and interacts with task-related targets. In this paper, we first present HiddenCoop, a benchmark for effectively evaluating agent cooperation in hidden-cooperation tasks. We further propose Discovery-Probability Graph Planning (DPGP), a method for enabling effective agent cooperation in such tasks. At the core of DPGP is a discovery-probability graph that encodes the probability distribution over the number and locations of task-related targets, facilitating effective and efficient information exchange among agents. A search algorithm is then used to derive action plans that minimize expected costs. Experiments show that DPGP achieves cooperative-task success rates of 99.3% on C-WAH and 58.3% on TDW-MAT, surpassing all compared baselines, while also reducing overall embodied execution time and substantially lowering LLM token usage. Our code is available at https://github.com/hnu-vis/DPGP.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/hnu-vis/DPGP"&gt;https://github.com/hnu-vis/DPGP&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 25 pages, 6 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Behavioral Probes for Information Flow in LLM Swarms</title>
-    <link href="http://arxiv.org/abs/2610.25966v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.25966v1</id>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <author>
-      <name>Junhui Chen</name>
+      <name>Zongsi Xu</name>
     </author>
     <author>
-      <name>Yu Zhang</name>
+      <name>Yitao Yu</name>
     </author>
     <author>
-      <name>Lantian Li</name>
+      <name>Quanfeng Lu</name>
     </author>
     <author>
-      <name>Dong Wang</name>
+      <name>Xiyu Chen</name>
     </author>
-    <summary type="text">Most existing approaches to LLM swarm optimization are utility-driven, focusing on final task utility while leaving the processing, integration, and reliance of information within individual interactions largely implicit. To address this, we study LLM swarm interactions from an information-flow-based view and introduce behavioral probes to quantify information flow patterns. Specifically, we repurpose External Context Score (ECS) and Parametric Knowledge Score (PKS)---originally designed for hallucination analysis---to measure a node's external-context dependence and parametric-knowledge dependence, respectively. Across controlled and realistic swarm settings, we observe consistent patterns: ECS increases with input relevance and distinguishes useful multi-source contributions, while PKS decreases as informative context accumulates. Building on this heuristic interpretation, we demonstrate how these probes can complement utility-driven structure optimization in two controlled applications. Probe-guided node pruning reduces redundant communication and token consumption, and probe-guided reasoning-path search accelerates convergence compared to utility-only baselines. Our empirical results suggest that behavioral probes can make the internal information flow of LLM swarms observable and serve as effective auxiliary signals for structure optimization.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
+    <author>
+      <name>Sheng Zhong</name>
+    </author>
+    <author>
+      <name>Deng Binjie</name>
+    </author>
+    <author>
+      <name>Yichen Guo</name>
+    </author>
+    <author>
+      <name>Zhenwei Guo</name>
+    </author>
+    <author>
+      <name>Hou Jun</name>
+    </author>
+    <author>
+      <name>Kunhan Guo</name>
+    </author>
+    <author>
+      <name>Weihao Lin</name>
+    </author>
+    <author>
+      <name>Tuo Zhou</name>
+    </author>
+    <author>
+      <name>Hai Liu</name>
+    </author>
+    <author>
+      <name>Chenwei Wu</name>
+    </author>
+    <author>
+      <name>Jianyuan Zhong</name>
+    </author>
+    <author>
+      <name>Xilin Dai</name>
+    </author>
+    <author>
+      <name>Ye Luo</name>
+    </author>
+    <summary type="text">Simulating economic responses at society scale requires agents whose decisions reflect household circumstances. We introduce S$^2$-MAS, a society-scale multi-agent simulation framework built on 500 million synthetic household personas grounded in real-survey data. Its Genese engine separates decisions from state updates, while reusable financial scenarios and application ledgers track consumption, cash, debt and payments. Trained with SFT + RLCD on 2.93 million examples, sharp-421m-mlx achieves 74.55% accuracy and 38.37% question-macro F1 on one-shot consumer financial-choice tasks derived from held-out survey responses. Its accuracy exceeds GLM-5.3-Flash, Jev 1.13, DeepSeek-V4.1-Flash, GPT-6-Luna and GPT-6-Astra in the common benchmark (full test for the first four; matched 500-group sample for Astra). We evaluate eight financial task families and simulate 12 million distinct household agents in paired purchase-funding conditions. Jointly raising purchase goals and approved credit limits increases consumption, with responses differing across age and income groups. Education, employment and household-size differences persist after age-income standardization and mainly reflect transitions from deferral to purchase. Asset and debt groups differ in cash drawdown, repayment and closing debt. S$^2$-MAS links heterogeneous household decisions to evolving consumption, cash and repayment paths, supporting economic experiments across household groups and population scales.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 50 pages, 9 main figures and 7 supplementary figures. Project resources: https://github.com/KataDavidXD/s2-mas&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Learning Who Talks to Whom: Role-Aware Communication Topology Scheduling for Efficient LLM Multi-Agent Collaboration</title>
-    <link href="http://arxiv.org/abs/2610.25851v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.25851v1</id>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <author>
-      <name>Haibin Li</name>
-    </author>
-    <author>
-      <name>Wenya Yu</name>
-    </author>
-    <author>
-      <name>Xuefeng Jiang</name>
-    </author>
-    <author>
-      <name>Jia Li</name>
-    </author>
-    <author>
-      <name>Xiao Han</name>
-    </author>
-    <author>
-      <name>Shuai Su</name>
-    </author>
-    <author>
-      <name>Wei Wei</name>
-    </author>
-    <summary type="text">Multi-agent systems driven by large language models (LLMs) rely on structured communication topologies to facilitate information exchange and collaborative reasoning. However, effectively scheduling these topologies to dynamically determine who talks to whom and when to communicate remains a fundamental challenge in balancing collective reasoning performance against exponential token overhead. Existing topology scheduling approaches either enforce static communication graphs that cannot adapt to dynamic problem-solving states, or overlook agent role complementarity while failing to explicitly incorporate the synthesized graph structure into team-level decision evaluation. To tackle these limitations, we propose ACTS, a role-aware adaptive communication topology scheduling framework for efficient LLM multi-agent collaboration. Orchestrated within a Centralized Training with Decentralized Execution (CTDE) paradigm, ACTS introduces a novel dual-attention mechanism. Specifically, a Role-conditioned Relational Attention module dynamically selects variable-cardinality interaction partners based on agent roles and evolving execution states, while a Topological Attention Mixer explicitly embeds the directed communication topology into team value decomposition for precise credit assignment. Comprehensive evaluations across 9 challenging benchmarks covering code generation, multi-step reasoning, general knowledge, and competitive mathematics demonstrate that ACTS consistently outperforms state-of-the-art baselines, boosting average accuracy by up to 6.19 percentage points while reducing token consumption by over 15%. The project website is available at https://acts-mas.github.io/ACTS/.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Project website: https://acts-mas.github.io/ACTS/&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>How Far Can an Agent Push? Trust-Safety Margins in Live Language-Based Economic Games</title>
-    <link href="http://arxiv.org/abs/2610.25508v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.25508v1</id>
-    <published>2026-10-18T00:00:00Z</published>
-    <updated>2026-10-18T00:00:00Z</updated>
-    <author>
-      <name>Dima Galat</name>
-    </author>
-    <author>
-      <name>Marian-Andrei Rizoiu</name>
-    </author>
-    <summary type="text">The previous version contained Unicode em dashes. Paste this ASCII-only version:   Game theory identifies when a strategic action should be accepted, but not how long a live, language-based counterpart will continue to accept it. We entered the GLEE competition in its final week with one protected agent, Milton, and four instrument agents that ran deterministic, per-game randomized trials of policy changes; Milton received changes only through pre-specified gates or registered, rollback-guarded production rules. In negotiation, learned pricing improves adjusted percentile by 0.071 (n=21,168); in bargaining, a continuation model conditioned on the rejected offer did not improve on a recency-weighted incumbent and was retired. In persuasion, a preregistered five-dose experiment (7,391 assigned games, blinded until a fixed stop) shows that recommending every unit raises sales by 0.194 of the maximum (95% CI [0.147, 0.241]) where the receiver's slack makes obedience rational (52% of the Bayesian benchmark), lowers them where it does not (-0.067), and produces a larger early-to-late purchase decline than honest recommendations (-0.123). A rule fixed before unblinding now routes Milton's dose per cell. Milton stood 11th of 460 agents in bargaining at the fixed stop; we also report the close, where the final day's pool shift moved all five agents' bargaining ratings together while their play was unchanged, and three dispatch defects were found by checking delivered behavior against the design.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.GT" />
-  </entry>
-  <entry>
-    <title>How Far Can an Agent Push? Trust-Safety Margins in Live Language-Based Economic Games</title>
-    <link href="http://arxiv.org/abs/2610.25508v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.25508v2</id>
-    <published>2026-10-18T00:00:00Z</published>
-    <updated>2026-10-18T00:00:00Z</updated>
-    <author>
-      <name>Dima Galat</name>
-    </author>
-    <author>
-      <name>Marian-Andrei Rizoiu</name>
-    </author>
-    <summary type="text">Game theory identifies when a strategic action should be accepted, but not how long a live, language-based counterpart will continue to accept it. We entered the GLEE competition in its final week with one protected agent, Milton, and four instrument agents that ran deterministic, per-game randomized trials of policy changes; Milton received changes only through pre-specified gates or registered, rollback-guarded production rules. In negotiation, learned pricing improves adjusted percentile by 0.071 (n=21,168); in bargaining, a continuation model conditioned on the rejected offer did not improve on a recency-weighted incumbent and was retired. In persuasion, a preregistered five-dose experiment (7,391 assigned games, blinded until a fixed stop) shows that recommending every unit raises sales by 0.194 of the maximum (95% CI [0.147, 0.241]) where the receiver's slack makes obedience rational (52% of the Bayesian benchmark), lowers them where it does not (-0.067), and produces a larger early-to-late purchase decline than honest recommendations (-0.123). A rule fixed before unblinding now routes Milton's dose per cell. Milton stood 11th of 460 agents in bargaining at the fixed stop; we also report the close, where the final day's pool shift moved all five agents' bargaining ratings together while their play was unchanged, and three dispatch defects were found by checking delivered behavior against the design.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.GT" />
-  </entry>
-  <entry>
-    <title>AgentSoV: Virtual Sensing for LLM Multi-Agent Systems via Stream of Variation</title>
-    <link href="http://arxiv.org/abs/2610.24845v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.24845v1</id>
-    <published>2026-10-17T00:00:00Z</published>
-    <updated>2026-10-17T00:00:00Z</updated>
-    <author>
-      <name>Congjing Zhang</name>
-    </author>
-    <author>
-      <name>Siyuan Xu</name>
-    </author>
-    <author>
-      <name>Yunfei Bai</name>
-    </author>
-    <author>
-      <name>Ke Ren</name>
-    </author>
-    <author>
-      <name>Xiaoning Qian</name>
-    </author>
-    <author>
-      <name>Shuai Huang</name>
-    </author>
-    <summary type="text">Large language model (LLM) multi-agent systems (MASs) solve complex tasks through interacting agents, yet their reliability is difficult to analyze because failures depend on both individual agents and how information and errors propagate across the system. Existing approaches largely treat this as post-hoc failure attribution, but do not provide a common model across heterogeneous MAS architectures or support broader analysis of information influence and observability. We introduce AgentSoV, a virtual-sensing framework that models MAS execution as a stochastic dynamic system through Stream of Variation (SoV). AgentSoV maps heterogeneous trajectories into diagnostic stages, constructs virtual measurements from observable outputs, and learns cross-stage variation propagation with a state-space model. Its representation is architecture-aware in stage dependencies yet architecture-agnostic in analytical language, supporting chain-structured, orchestration-based, and directed acyclic graph (DAG)-structured MASs. Without re-executing the MAS, AgentSoV supports three system-level analyses: failure attribution identifies where abnormal variation enters; stage-input influence quantifies how strongly intermediate inputs affect downstream outcomes; and virtual-sensor placement selects complementary observations under a monitoring budget. Experiments across multiple MAS architectures demonstrate a unified approach to fault localization, information influence, and observability. AgentSoV reframes agentic execution as a dynamic system to model rather than merely text to inspect, providing insights for MAS structure and component design.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="eess.SY" />
-  </entry>
-  <entry>
-    <title>Measuring Consensus in AI Agent Networks</title>
-    <link href="http://arxiv.org/abs/2610.24833v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.24833v1</id>
-    <published>2026-10-17T00:00:00Z</published>
-    <updated>2026-10-17T00:00:00Z</updated>
-    <author>
-      <name>Jin Gao</name>
-    </author>
-    <summary type="text">As AI agents become increasingly connected through networks and take on tasks that require negotiation and joint decision-making, a systematic approach is needed to assess how their views converge and what information supports their decisions. We present an evaluation framework that treats consensus formation as the evolution of publicly stated positions toward a shared region, using accumulated communication history as context. The framework tracks position trajectories, group dispersion, and information expressed in public messages. Two case studies examine staffing decisions based on distributed facts and decisions requiring agents to reconcile duplicate information and a cancelled contract. Results from 1,872 completed runs associate sharing explanations with more accurate group decisions, while the second task reveals persistent disagreement despite accurate aggregate answers. Membership-change experiments provide a complementary evaluation. By separating convergence among agents from progress toward a task's full-information answer, the framework relates decision accuracy and bounded disagreement to the information available during the exchange.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the NANDA Workshop&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>CARVS: A Congestion-Aware Algorithm for Online Multi-Agent Pickup-and-Delivery in Human-Collaborative Warehouses</title>
-    <link href="http://arxiv.org/abs/2610.24549v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.24549v1</id>
-    <published>2026-10-17T00:00:00Z</published>
-    <updated>2026-10-17T00:00:00Z</updated>
-    <author>
-      <name>Chaoran Li</name>
-    </author>
-    <author>
-      <name>Zeyuan Zhao</name>
-    </author>
-    <author>
-      <name>Shao Zhang</name>
-    </author>
-    <summary type="text">Intelligent warehouse systems have transformed logistics by integrating robots with minimal infrastructure changes, boosting efficiency and optimizing workflows compared to traditional human-only operations. However, human-robot collaboration introduces new challenges, particularly due to human uncertainty, which leads to dynamic interactions and unpredictable behavior. To address these complexities, this paper presents the Multi-Agent Pickup-and-Delivery with Human Collaboration (MAPDwHC) problem, an extension of the Multi-Agent Pickup-and-Delivery (MAPD) problem that incorporates human unpredictability. This problem adds key constraints, such as dynamic obstacles caused by robots temporarily blocking paths when interacting with humans, and the need for real-time responsiveness. We formalize the MAPDwHC problem with additional constraints and properties. Based on this problem setting, we propose the CARVS algorithm, which improves task assignment and path planning by integrating task swapping, validation checks, and random initialization. CARVS reduces congestion, enhances adaptability to human-robot interactions, and ensures real-time responsiveness. Simulation results show that CARVS significantly reduces timeouts of path planning in large-scale scenarios where traditional MAPD algorithms fail, improving both efficiency and scalability.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; DAI 2026 (Oral)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; Robotics" />
   </entry>
 </feed>
