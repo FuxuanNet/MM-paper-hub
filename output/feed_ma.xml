@@ -4,12 +4,154 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-03T07:37:46Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 25 entries</subtitle>
+  <updated>2026-11-04T07:21:20Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 29 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>GeoFaham: Domain-Specialized Multi-Agent Geospatial Analytics for Disaster Response</title>
+    <link href="http://arxiv.org/abs/2611.04977v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.04977v1</id>
+    <published>2026-11-03T00:00:00Z</published>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <author>
+      <name>Muhammad Sohail Danish</name>
+    </author>
+    <author>
+      <name>Gilles Q. Hacheme</name>
+    </author>
+    <author>
+      <name>Akram Zaytar</name>
+    </author>
+    <author>
+      <name>Satej S. Soman</name>
+    </author>
+    <author>
+      <name>Inbal Becker-Reshef</name>
+    </author>
+    <author>
+      <name>Juan Lavista Ferres</name>
+    </author>
+    <author>
+      <name>Salman Khan</name>
+    </author>
+    <author>
+      <name>Girmaw Abebe Tadesse</name>
+    </author>
+    <summary type="text">Real-world geospatial decision support requires more than single-step retrieval or code generation. Disaster-response questions often involve multi-source workflows that combine spatial databases, map-derived features, satellite imagery, raster products, and reusable geospatial artifacts, where correctness depends on preserving spatial scope, temporal context, and intermediate execution state. While large language models and coding agents offer a promising interface for such workflows, they struggle with geospatial-specific failure modes, including handling large artifacts, selecting the wrong evidence source, losing spatial or temporal metadata, and applying invalid geometric operations. We introduce GeoFaham, a domain-specialized multi-agent system for geospatial disaster analytics. GeoFaham decomposes workflows into specialist agents for vector operations, map feature retrieval, imagery discovery, and raster analysis, coordinated by an Orchestrator with a dual-ledger control loop for dependency-aware planning, progress tracking, validation, and replanning. To support artifact-centric collaboration, GeoFaham uses a Response Store that persists full geospatial outputs and typed metadata outside the LLM context window while agents exchange compact identifiers and summaries. We also introduce GeoFaham-Bench, a 40-task benchmark grounded in 17 real-world disaster records, designed to evaluate multi-step geospatial reasoning, cross-source integration, raster-vector computation, artifact generation, and recovery under non-rigid ground truth. We evaluate GeoFaham on GeoFaham-Bench against strong general-purpose coding-agent baselines, including Codex, Claude Code, and OpenCode. GeoFaham achieves the best overall performance, scoring 0.940 versus the next-best 0.879, while using 7.5 times fewer tokens. Our code and benchmark are publicly available at https://github.com/microsoft/GeoFaham.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/microsoft/GeoFaham"&gt;https://github.com/microsoft/GeoFaham&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Local Visibility Roadmaps in Continous Multi-agent Path Finding</title>
+    <link href="http://arxiv.org/abs/2611.04944v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.04944v1</id>
+    <published>2026-11-03T00:00:00Z</published>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <author>
+      <name>Kristýna Janovská</name>
+    </author>
+    <author>
+      <name>Pavel Surynek</name>
+    </author>
+    <summary type="text">We address the problem of smooth continuous multi-agent path finding (SC-MAPF), where agents move in a continuous environment along smooth curves in continuous time. The paths for individual agents are searched in local visibility roadmaps that consider obstacles and other agents. A new algorithm is proposed in this work, which combines the previous algorithm CE-CBS for high-level search with any-angle path finding for local single-agent planning, where agents are to avoid obstacles, both static and other agents. The new algorithm is tested and compared to CE-CBS, the algorithm building individual paths using RRT$^*$, and SMT-CCBS algorithm, an algorithm for MAPF$_R$. Experimental results show various advantages of the new algorithm over CE-CBS and SMT-CCBS in comparable settings.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICAART 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Can Network Models of Science Do Without Pluralist Agents?</title>
+    <link href="http://arxiv.org/abs/2611.04590v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.04590v1</id>
+    <published>2026-11-03T00:00:00Z</published>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <author>
+      <name>Jonas Hallgren</name>
+    </author>
+    <author>
+      <name>David Hyland</name>
+    </author>
+    <author>
+      <name>Mahault Albarracin</name>
+    </author>
+    <summary type="text">Science is a process of useful models being proven wrong time and again, but despite its many flaws, it somehow works. Why is this? Paul Feyerabend argued that it works because people dare to hold and defend incompatible rival theories against the accepted one, since a theory's failures often lead to its abandonment in the presence of a more accurate or simpler alternative. He called this view theoretical pluralism. We introduce a theoretical and experimental model in which this can be examined. It compares communities of pluralist agents, which can hold rival theories side by side and maintain beliefs within and between those theories, with communities of monist agents, which can only incorporate what they hear or observe into a single model of their own. In a multi-agent variational inference setting, our experimental demonstrations illustrate how communities with rival theories can go through periods of uncertainty followed by a shift in the theories they hold true, how the information that is communicated between communities affects beliefs when those communities make different observations about the world, and how sharing support for theories and sharing beliefs within them contribute differently to collective belief dynamics.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IWAI 2026 (International Workshop on Active Inference)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>AttriSwarm: Orchestrating Agent Swarms for Cross-Page Visual Attribution</title>
+    <link href="http://arxiv.org/abs/2611.04504v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.04504v1</id>
+    <published>2026-11-03T00:00:00Z</published>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <author>
+      <name>Suifeng Zhao</name>
+    </author>
+    <author>
+      <name>Zida Liu</name>
+    </author>
+    <author>
+      <name>Lei Sun</name>
+    </author>
+    <author>
+      <name>Xun Wang</name>
+    </author>
+    <author>
+      <name>Daojian Zeng</name>
+    </author>
+    <author>
+      <name>Jun Gao</name>
+    </author>
+    <author>
+      <name>Sujian Li</name>
+    </author>
+    <summary type="text">Multimodal large language models (MLLMs) increasingly address knowledge-intensive tasks by integrating evidence scattered across multiple document pages into a final answer. Because such answers are synthesized from many pages, the link between the answer and its supporting visual evidence can become obscured, hindering verification and trust. Cross-page visual attribution is therefore essential: it requires identifying the supporting pages and localizing fine-grained evidence regions within them, thereby making multi-page reasoning transparent and auditable. Existing approaches either process multiple pages jointly or iteratively refine evidence within a single trajectory, risking cross-page context pollution and, for interactive methods, substantial sequential overhead. We introduce \textbf{AttriSwarm}, an agent-swarm framework that assigns these concerns to separate roles: a leader handles global cross-page reasoning, while subagents perform page-wise attribution in isolation and in parallel. To support training and evaluation, we construct \textbf{AttriDoc}, a cross-page QA dataset linking supporting pages to their annotated evidence regions, and use it for role-specific training of AttriSwarm, improving answer accuracy, page-level $F_1$, and region-level IoU over its training-free counterpart by an average of 18.94, 29.34, and 23.04 percentage points, respectively, across three open-source backbones and three datasets.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Distributed Marginal Return: A Communication-Efficient Algorithm for Multi-Agent Weapon Target Assignment</title>
+    <link href="http://arxiv.org/abs/2611.04370v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.04370v1</id>
+    <published>2026-11-03T00:00:00Z</published>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <author>
+      <name>Kamal Mammadov</name>
+    </author>
+    <author>
+      <name>Glen Pearce</name>
+    </author>
+    <author>
+      <name>Helen Krause</name>
+    </author>
+    <author>
+      <name>Damith C. Ranasinghe</name>
+    </author>
+    <summary type="text">The Weapon-Target Assignment (WTA) problem in distributed multi-agent systems is challenged by limited situational awareness and communication constraints. Existing distributed methods, such as auction-consensus algorithms, typically assume task-value independence, a simplification that fails to capture the coupled effects of multi-weapon assignments. This paper introduces the Distributed Marginal Return (DMR) algorithm, a novel decentralized approach that generalizes auction-consensus frameworks. DMR enables agents to compute bids based on marginal return and uses a consensus protocol to resolve conflicts, allowing multiple non-conflicting proposals to be accepted in parallel for cooperative optimization with minimal communication. A key theoretical contribution is our proof that the marginal returns of non-conflicting bids are additive, a property that ensures global consistency and validates our parallel acceptance mechanism. Extensive simulations demonstrate that DMR significantly outperforms baseline algorithms in both solution quality and communication efficiency, offering a scalable and robust solution for real-world distributed command and control applications.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the IEEE Systems Journal&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>When Is Fresh AI Stock Analysis Worth It? Allocating a Limited Research Budget Across Price Updates, Deep Forecast Refreshes, and Editorial Reviews of Top Stock Picks</title>
+    <link href="http://arxiv.org/abs/2611.04348v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.04348v1</id>
+    <published>2026-11-03T00:00:00Z</published>
+    <updated>2026-11-03T00:00:00Z</updated>
+    <author>
+      <name>Russlan Ramdowar</name>
+    </author>
+    <summary type="text">Must long-horizon AI investment research be rewritten every time stock prices move? Using 8,120 production reports on the same 203 stocks across four iPulse AI batches, we compare repricing existing targets, guarding them against price shocks, mechanically resetting old forecast growth, and generating fresh multi-agent reports. Ten matched configurations represent seven investment frameworks.   Our primary economic evaluation selects Top 10 USD portfolios using one-year forecasts. Across two unchanged-model windows, guarded reuse averages 2.25%, versus 1.66% for SPY and 4.77% for fresh reports, after modeled trading costs and reference compute charges on a USD 100,000 account. Guarded reuse beats SPY in all three short windows, including the model-change transition. Extending the first holding window to nearly six months reverses the result: guarded reuse returns -11.26%, fresh reports +9.12%, and SPY +3.46%, motivating the thesis half-life question.   Supporting quarter-forecast diagnostics show that mechanically re-anchoring old growth paths closes 98% of the MAE improvement over fixed targets, yet Fresh and Reset share only 1-4 of their Top 10 stocks. At Top 30, the unchanged-model portfolio comparison instead favors guarded reuse (4.17% versus 1.88%). Endpoint and concentration tests reveal the influence of horizon choices and exceptional winners. Nine production editions show substantial between-edition turnover, while every final editorial screen retains its own incoming list.   Measured token workloads connect refresh costs to shared capital and realized break-even budgets. The resulting architecture separates continuous price monitoring from episodic thesis rebuilding and targeted editorial evidence checks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 26 pages, 9 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>Cloudra: Geometric Reasoning and Scientific Validation for Autonomous Reaction Mechanism Exploration</title>
     <link href="http://arxiv.org/abs/2611.02909v1" rel="alternate" type="text/html" />
@@ -149,6 +291,29 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence; cs.SI" />
+  </entry>
+  <entry>
+    <title>Beyond Division of Labor: How Roles Shape Feedback and Recovery in Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2611.03931v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.03931v1</id>
+    <published>2026-11-02T00:00:00Z</published>
+    <updated>2026-11-02T00:00:00Z</updated>
+    <author>
+      <name>Chih-Hsuan Yang</name>
+    </author>
+    <author>
+      <name>Xinyang Li</name>
+    </author>
+    <author>
+      <name>Rajeev Thakur</name>
+    </author>
+    <author>
+      <name>Feng Yan</name>
+    </author>
+    <summary type="text">Roles in multi-agent large language model (LLM) systems allocate decisions as well as work. In a Planner--Executor--Reviewer team, the Reviewer's approval can determine when the team submits an answer and receives corrective feedback. We study both functions by varying role instructions while holding agents, topology, call budget, and ground-truth evaluator constant, using three open-weight models on Omni-MATH and two on SciBench. Removing roles largely eliminates functional specialization without lowering first-pass accuracy. After a failed first answer, however, submission decisions matter: a role-structured Reviewer often withholds approval, so its team submits less often and receives fewer evaluator verdicts. In an exploratory comparison with feedback available to both teams, the role-free team recovers more often across all five model--benchmark settings. Two further analyses support the importance of feedback opportunities. In a post hoc comparison at equal numbers of verdicts, the pooled recovery difference is small (role-structured minus role-free: $+0.009$, 95% interval $[-0.014,+0.033]$). In an exploratory intervention on $400$ Omni-MATH problems with gemma-4, keeping the role prompts but forcing submission in every cycle raises recovery from $0.198$ to $0.613$; the paired comparison detects no difference from the role-free team. The takeaway is to evaluate roles through recovery after failure as well as specialization. For systems with reliable external feedback, this requires measuring who may submit, how often the team receives feedback, and which agents can act on it.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 19 pages, including supplementary material. Project website: https://chihhsuan-yang.github.io/AAMAS2027-AgentProtocols/&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
   </entry>
   <entry>
     <title>Towards a Theory for the Design of Rules in Multi-Agent Systems: the case of Homogeneous Fleets</title>
@@ -554,76 +719,6 @@
     </author>
     <summary type="text">Model-based offline multi-agent reinforcement learning (MARL) provides a promising approach to multi-agent decision-making under partial observability, where the global state is unavailable from offline data. However, limited dataset coverage can lead to substantial out-of-distribution (OOD) model errors, which may mislead policy optimization and degrade downstream performance. Existing model-based offline MARL methods typically rely on access to global states or mitigate model errors through pessimistic or conservative policy optimization, leaving the reliability and refinement of learned world models less explored. We propose a Bayesian offline MARL framework that infers latent global states from decentralized observation-action histories and iteratively refines a posterior world model using only offline data. Building on posterior information loss, we extend this criterion to the multi-agent setting as multi-agent posterior information loss (MPIL), which provides a reliability measure for world model refinement and offline evaluation. Theoretically, we establish an upper bound on policy regret that is monotonic in MPIL and further characterize its dependence on the size and state-joint-action coverage of the offline dataset. Experiments on partially observable multi-agent variants of D4RL MuJoCo tasks demonstrate competitive policy performance across diverse offline data conditions, while MPIL-guided refinement improves world model prediction and downstream policy performance. These results support a principled connection between world model reliability, offline data coverage, and policy performance in partially observable offline MARL.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Tunable Spatial Task Allocation with Application to Maritime Swarms</title>
-    <link href="http://arxiv.org/abs/2610.39018v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.39018v1</id>
-    <published>2026-10-28T00:00:00Z</published>
-    <updated>2026-10-28T00:00:00Z</updated>
-    <author>
-      <name>Vishnudatta Thota</name>
-    </author>
-    <author>
-      <name>Tyler Paine</name>
-    </author>
-    <author>
-      <name>Anastasia Bizyaeva</name>
-    </author>
-    <summary type="text">In this chapter, we explore how a team of autonomous agents can flexibly reconfigure the distribution of its members across many spatially embedded tasks using a task allocation strategy grounded in a generalization of the recently proposed Nonlinear Opinion Dynamics model. Motivated by an adaptive maritime survey application, we couple opinion dynamics directly to spatial movement and examine how the emergent macroscopic allocation is shaped by the interplay between environmental geometry, nature of social interactions, and task demands. We illustrate in simulation how social coupling in the model tunes group cohesion, producing macroscopic allocation patterns ranging from maximally dispersed states, to intermediate semi-dispersed states with a smaller number of distinct subgroups, to maximally cohesive consensus states, in distinct and interpretable parameter regimes. Furthermore, we demonstrate with illustrative examples how a team can reconfigure itself in real time under changing task demands. For allocation scenarios with distance-based task preference and matched number of agents and tasks, we relate numerically the final allocation in the group to the Hungarian optimum, illustrating close-to-optimal performance. We illustrate performance of this method under realistic communication constraints in the MOOS-IvP-Multi simulation environment with simulated autonomous underwater vehicles (AUVs). Together, these examples show how a common set of local interaction rules can support a large range of interpretable macroscopic allocation states and flexible transitions between them.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 29 pages, 10 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="eess.SY; math.OC" />
-  </entry>
-  <entry>
-    <title>MAS-Loop: Beyond One-Shot Orchestration towards Self-Evolving Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2610.38946v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.38946v1</id>
-    <published>2026-10-28T00:00:00Z</published>
-    <updated>2026-10-28T00:00:00Z</updated>
-    <author>
-      <name>Hehai Lin</name>
-    </author>
-    <author>
-      <name>Qi Yang</name>
-    </author>
-    <author>
-      <name>Chengwei Qin</name>
-    </author>
-    <summary type="text">Training-time multi-agent system (MAS) design seeks to learn reusable orchestration policies, yet prevailing approaches remain largely one-shot: an Orchestrator generates a system but only observes and learns from its terminal outcome. This paradigm discards execution trajectories that expose system-level failures and contain fine-grained information beyond the terminal outcome, leaving no direct basis for revising the source MAS, evaluating the updated MAS, or learning from the resulting contrast. To this end, we introduce MAS-Loop, an execution-grounded framework that closes this feedback loop by coupling an Orchestrator with a trajectory-conditioned Refiner. For each task, the Orchestrator constructs and executes a source MAS to obtain an outcome score and an intermediate trajectory. Conditioned on the trajectory, the Refiner localizes an actionable failure, formulates a trajectory-grounded diagnosis, and proposes a bounded patch to the agents, information flow, or execution configuration. The executable updated MAS is re-executed on the same task to measure its realized outcome under stochastic execution. This pair-MAS comparison provides complementary learning signals: the Orchestrator learns to generate strong systems with fewer recoverable failures, whereas the Refiner learns to expose and repair observed weaknesses, thereby driving policy-level co-evolution across training iterations. Experiments show that MAS-Loop achieves the strongest overall performance among the evaluated baselines, with consistent gains from refinement across all evaluated benchmarks. The co-evolution process also yields MAS-JudgeCorpus, a dataset of execution-grounded source-updated pairs with orchestration- and trajectory-level supervision, which can provide the community with support for MAS reward modeling and trajectory-aware investigation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Cinematize from Unreal: Agentic Choreography for Controllable World Simulation</title>
-    <link href="http://arxiv.org/abs/2610.38468v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.38468v1</id>
-    <published>2026-10-28T00:00:00Z</published>
-    <updated>2026-10-28T00:00:00Z</updated>
-    <author>
-      <name>Zifan Song</name>
-    </author>
-    <author>
-      <name>Caihua Shan</name>
-    </author>
-    <author>
-      <name>Kaitao Song</name>
-    </author>
-    <author>
-      <name>Yifan Yang</name>
-    </author>
-    <author>
-      <name>Dongsheng Li</name>
-    </author>
-    <author>
-      <name>Cairong Zhao</name>
-    </author>
-    <summary type="text">Controllable world simulation requires more than visually plausible frames: scenes must retain persistent state, coordinated actions, and editable temporal structure. Generative world models offer flexible visual synthesis, but their outputs do not always expose the objects and transitions needed for precise revision. Graphics engines provide executable state and direct control, yet translating language into valid operations requires specialized knowledge of assets, geometry, and interdependent APIs. We present CineU (Cinematize from Unreal), an agentic system for language-driven world orchestration and cinematic choreography within Unreal Engine. From a code-based world modeling perspective, an Unreal project serves as a persistent, inspectable world representation, while agent-generated code specifies operations whose effects can be executed and verified. CineU combines hierarchical orchestration, cascaded asset retrieval and geometry-constrained placement, capability-aligned code synthesis, and multi-stage verification with localized repair. Shared scene and timeline context coordinates entities, actions, camera trajectories, and shot boundaries while supporting dependency-aware revisions. Experiments on scene construction, selective editing, multi-shot cinematography, and component ablations show how specialized execution knowledge and engine feedback improve task completion and targeted recovery. CineU illustrates how executable world state can complement learned visual generation to support controllable and revisable simulated worlds.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 25 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
 </feed>
