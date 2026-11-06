@@ -4,12 +4,102 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-05T07:40:19Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 28 entries</subtitle>
+  <updated>2026-11-06T07:35:29Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 32 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Trilemma: How Agents choose between Honesty, Confidentiality, and Task Completion</title>
+    <link href="http://arxiv.org/abs/2611.08312v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.08312v1</id>
+    <published>2026-11-05T00:00:00Z</published>
+    <updated>2026-11-05T00:00:00Z</updated>
+    <author>
+      <name>Johannes Taraz</name>
+    </author>
+    <author>
+      <name>Abhinav Kumar</name>
+    </author>
+    <author>
+      <name>Sahar Abdelnabi</name>
+    </author>
+    <summary type="text">Personal AI agents often act on underspecified instructions and draw on context such as their user's messages and calendar to decide how to proceed. This context can contain private preferences that interfere with the task, with other people's interests, or with confidentiality norms. Prior work has studied deception under goal conflicts and the leakage of private information, but largely as separate problems. We study both problems together in a simulated company Slack workspace in which four employees delegate sprint staffing to personal agents. Two agents learn from private messages that their employee avoids working with a particular colleague. Because the other agents request justifications for task preferences and the only true justification is confidential, the agents cannot simultaneously remain honest, preserve confidentiality, and complete the staffing. We evaluate seven open-weight models and Claude and GPT models. Of the 135/140 open-weight agents that pursue the avoidance preference, 107 either make false claims about task fit or logistics or cite a true consideration as if it were their actual reason. In a three-model comparison, confidentiality instructions reduce disclosure of the preference from 83% (none) to 31% (medium) to 2% (strong). However, the task is often not completed anyway; in the main experiment (medium confidentiality instructions), only 16 of 70 runs end with a valid staffing. In their reasoning traces, agents frequently acknowledge evidence against their claims and still conclude that the claims are not false; they engage in motivated reasoning. Our results indicate that agents can strategically make false or misleading claims in a day-to-day task without being instructed to; the environment provides a controlled testbed for studying how agents resolve such conflicts and for developing deception monitors.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>ReferClaw: Disambiguating User Intent for Egocentric Assistance</title>
+    <link href="http://arxiv.org/abs/2611.07683v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.07683v1</id>
+    <published>2026-11-05T00:00:00Z</published>
+    <updated>2026-11-05T00:00:00Z</updated>
+    <author>
+      <name>Hangyu Qin</name>
+    </author>
+    <author>
+      <name>Junbin Xiao</name>
+    </author>
+    <author>
+      <name>Angela Yao</name>
+    </author>
+    <summary type="text">Users of egocentric AI assistants often ask short, ambiguous questions whose intended referents cannot be uniquely resolved from video and dialogue history. For example, "Where did I leave it?" may refer to several previously handled objects. Existing VideoQA systems typically commit to a single interpretation, risking plausible but intention-misaligned answers. We introduce ReferClaw, an agentic framework that formulates egocentric streaming QA as an interactive process: the assistant asks clarifying questions to resolve user intent before answering. Three cooperating agents identify candidate interpretations, request clarification, and generate answers grounded in the resolved intent and visual evidence. A bounded, cost-aware policy balances expected information gain against user effort while limiting clarification turns and question complexity. Referclaw learns from interaction through intent-specific skill updates and process-reward-guided policy optimization with agent-level credit assignment. Evaluations on augmented egocentric QA benchmarks demonstrate improved answer accuracy and joint answer-and-grounding performance over existing baselines, alongside zero-shot transfer across datasets. These findings support interactive clarification as a practical approach to resolving online user intent in egocentric streaming assistance.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Designing with Cinematic Language: An Intent-Driven Approach to Human-AI Video Clip Co-Creation</title>
+    <link href="http://arxiv.org/abs/2611.07377v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.07377v1</id>
+    <published>2026-11-05T00:00:00Z</published>
+    <updated>2026-11-05T00:00:00Z</updated>
+    <author>
+      <name>Yi He</name>
+    </author>
+    <author>
+      <name>Zhengxi Yu</name>
+    </author>
+    <author>
+      <name>Feilin Han</name>
+    </author>
+    <author>
+      <name>Chuer Chen</name>
+    </author>
+    <author>
+      <name>Shengqi Dang</name>
+    </author>
+    <author>
+      <name>Nan Cao</name>
+    </author>
+    <summary type="text">Generative video models have made video creation more accessible, yet creators still struggle to translate high-level narrative intentions into coherent cinematic expressions. Existing systems primarily rely on prompt refinement or expose isolated camera controls, leaving a gap between what to express and how to film it. We present CineAssist, a human-AI co-creation system that treats cinematic language as an interactive design medium connecting creative intentions with executable video controls. We construct a Cinematic Language Design Space and an annotated dataset from 107 filmmaking sources and 1,436 film clips, linking communicative intentions to cinematic parameter values. CineAssist combines a multi-agent workflow for intent alignment and strategy recommendation with an interactive cinematic editor and a context-sensitive preference learner for user-controlled personalization. We evaluate the system through three studies examining end-to-end usability, cinematic quality, and preference evolution. Results show that CineAssist facilitates efficient, controllable, and personalized intent-driven cinematic video creation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 22 pages, 16 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Design of Multi-UAV Cooperative Deep Semantic Autoencoders for Communication Networks</title>
+    <link href="http://arxiv.org/abs/2611.07374v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.07374v1</id>
+    <published>2026-11-05T00:00:00Z</published>
+    <updated>2026-11-05T00:00:00Z</updated>
+    <author>
+      <name>Xiaoling Han</name>
+    </author>
+    <author>
+      <name>Bin Lin</name>
+    </author>
+    <author>
+      <name>Nan Wu</name>
+    </author>
+    <author>
+      <name>Tony Q. S. Quek</name>
+    </author>
+    <summary type="text">Driven by the rapid development of the low-altitude economy, Uncrewed Aerial Vehicle (UAV) networks have become increasingly important for executing tasks such as search, rescue, and monitoring. However, under bandwidth-constrained scenarios, UAV networks still face significant challenges in task execution efficiency and intelligent processing capabilities. To address these issues, we propose Multi-UAV Cooperative Deep Semantic Autoencoders (MC-DSA) for communication networks. The architecture comprises one Task UAV (T-UAV) and multiple Support UAVs (S-UAVs), which jointly enhance communication efficiency and data-processing capability via semantic communication and cooperation. Specifically, we introduce a semantic matching and source selection mechanism, enabling the proposed MC-DSA to handle low-quality images while ensuring effective utilization of high-quality images. The T-UAV broadcasts a task query, and each S-UAV computes the semantic similarity between its local image and the query. Communication links are established only when the similarity exceeds a predefined threshold. The training algorithm optimizes network parameters through gradient descent, improving semantic feature extraction accuracy. The testing algorithm evaluates UAV collaboration efficiency and communication quality. Experimental results demonstrate that, compared with benchmarks, the proposed MC-DSA improves image semantic segmentation accuracy while maintaining task execution efficiency. As a result, it reduces redundant transmissions and offers an effective solution for multi-UAV communication networks.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>A Framework for Context Enrichment and Selective Robustness in LLM Social Agents</title>
     <link href="http://arxiv.org/abs/2611.06914v1" rel="alternate" type="text/html" />
@@ -58,6 +148,49 @@
     <summary type="text">When multi-agent systems act on the external world, a single agent's faulty output can spread across tasks before detection, creating a system-wide blast radius. Single-agent guardrails are confined to individual harnesses, while existing multi-agent controls either cancel only the faulty source and miss downstream consumers or halt and roll back the entire workflow at the cost of healthy work. We present Airlock, a multi-agent runtime and guardrail for selective post-alert fault containment. Its tree-structured runtime, EdgeCitadel, narrows permissions vertically from parent to child agents to establish node boundaries and control switches. Meanwhile, an append-only provenance DAG records cross-agent data consumption horizontally. Upon an alert, Airlock traces forward on this DAG to isolate tainted executions and pending actions, and backward to narrow root causes. At the site switches, a default full quarantine tier freezes affected branches without a solver, while an assured optimized cut tier uses fence-then-prune to enforce a deadline-aware minimum cut minimizing collateral disruption. Across 1,832 testbed runs, 161 physical smart-home LLM runs, and 24,266 simulation records, Airlock blocks all post-alert faulty actuations on our main testbed and smart-home grids with zero post-convergence leaks. Whereas native controls in A2A and LangGraph either contain at most 33.3% of faults or retain at most 16% of work without redo, Airlock retains +68 pp to +96 pp more healthy work, and its optimized cut retains +46 pp more than full quarantine under dense spread. These results show that co-designing runtime authority boundaries with online provenance enables surgical fault containment without sacrificing healthy work (code: https://github.com/EdgeCitadelTeam/EdgeCitadel).</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/EdgeCitadelTeam/EdgeCitadel"&gt;https://github.com/EdgeCitadelTeam/EdgeCitadel&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>More Agents, More Reliable? System-Level Reliability of Multi-Agent LLMs under Operational-Profile Uncertainty</title>
+    <link href="http://arxiv.org/abs/2611.07140v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.07140v1</id>
+    <published>2026-11-04T00:00:00Z</published>
+    <updated>2026-11-04T00:00:00Z</updated>
+    <author>
+      <name>Burkay Tunçtürk</name>
+    </author>
+    <author>
+      <name>Koorosh Aslansefat</name>
+    </author>
+    <author>
+      <name>Yiannis Papadopoulos</name>
+    </author>
+    <author>
+      <name>Bao Nguyen</name>
+    </author>
+    <summary type="text">Teams increasingly build software from cooperating large language model (LLM) agents, often assuming more agents mean more reliability. Yet the usual evidence, average benchmark accuracy, ignores the input mix a deployed system meets and the rule merging the agents' answers. Building on HIP-LLM, a hierarchical imprecise-probability assessment of single LLMs, we propose a framework combining it with a Bayesian network of the system's failure logic for multi-agent systems. Agent failure-probability intervals propagate through this network, where the combining rule can itself fail, into a reliability envelope showing which evidence limits it. In a pipeline extracting regulated chemical-hazard statements, majority voting over three models protected against the weakest but did not clearly exceed the best, and a voter failing on 5\% of demands would largely erase its advantage over the middle model. More agents yield a more defensible reliability claim, not automatically a more reliable system.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted for IEEE Software Magazine&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Authorization Propagation in Agent2Agent Systems: An Experimental Security Evaluation of Multi-Hop Delegation</title>
+    <link href="http://arxiv.org/abs/2611.07050v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.07050v1</id>
+    <published>2026-11-04T00:00:00Z</published>
+    <updated>2026-11-04T00:00:00Z</updated>
+    <author>
+      <name>Gabriele Donno</name>
+    </author>
+    <author>
+      <name>Kashif Mehmood</name>
+    </author>
+    <author>
+      <name>Katina Kralevska</name>
+    </author>
+    <summary type="text">Delegated Agent2Agent (A2A) workflows create a security problem when the agent sending a request is different from the principal from which the authority originated. This paper evaluates a layered downstream-verification design in a synthetic four-party healthcare reimbursement workflow. The prototype separates current-caller context, transitive authorization evidence, per-hop Ed25519 request authentication, and independent replay state for requests and authorization artifacts. Of 15 adversarial conditions, 14 are rejected; an isolated delegation-path test exposes the absence of semantic authority attenuation. A separate authorized-intermediary experiment shows that a holder of the shared authorization-evidence HMAC key can modify the represented authority and generate valid evidence. In the fixed-depth local benchmark, the full configuration has a median security-processing latency of 5.11 ms and a 3.87 kB serialized payload. The results show the value of separating request authentication from inherited authority while identifying origin-verifiable delegation and semantic attenuation as requirements for stronger A2A authorization propagation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
   <entry>
@@ -636,39 +769,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>When Disclosure Is Compulsory: Evaluating Ride-Hailing Rebalancing Policies with Self-Interested LLM Driver Agents</title>
-    <link href="http://arxiv.org/abs/2610.41132v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.41132v1</id>
-    <published>2026-10-30T00:00:00Z</published>
-    <updated>2026-10-30T00:00:00Z</updated>
-    <author>
-      <name>Xinyu Wang</name>
-    </author>
-    <author>
-      <name>Andres Fielbaum</name>
-    </author>
-    <summary type="text">The EU Platform Work Directive, to be transposed by December 2026, requires ride-hailing platforms to state in plain language the main parameters of their automated decisions and how a worker's behaviour affects them. Such rules are exactly what a large language model (LLM) can read, so drivers will be able to let one decide for them. We compare two main families of rebalancing policy once their rules are public: a reactive policy (R) that sends idle drivers to cover requests just lost, and an anticipatory policy (A) that plans moves on a demand forecast. Each driver is an LLM agent maximizing its own net income, given no rules (N) or the rules at the directive's level of detail (L). We test two LLMs, Claude Haiku 5.5 and Jev, which understand the rules equally well, in a three-zone model and in Manhattan. With the rules disclosed, drivers follow the platform more closely: in Manhattan, the share of relocation offers they decline falls from about four in five to one in four under both policies. Yet the effects differ by policy. For the platform, disclosure costs R 3.7% of its profit in Manhattan, as R now pays for moves drivers used to make for free, while A's profit is unchanged; the two policies, which tie on profit under full compliance, end 6.1% apart. For drivers, disclosure raises income in the small model under both policies and LLMs; for users, it raises the service rate there by 10 to 18 percentage points. In Manhattan, self-interested drivers also make A a win-win-win against full compliance, raising driver income, platform profit and service rate by 10 to 12% each. Rebalancing policies that perform equally well under full compliance can thus show opposite results under mandatory disclosure. The study offers a framework to evaluate such policies under the new requirement and is, to our knowledge, the first to do so with LLM agents.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>When Disclosure Is Compulsory: Evaluating Ride-Hailing Rebalancing Policies with Self-Interested LLM Driver Agents</title>
-    <link href="http://arxiv.org/abs/2610.41132v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2610.41132v2</id>
-    <published>2026-10-30T00:00:00Z</published>
-    <updated>2026-10-30T00:00:00Z</updated>
-    <author>
-      <name>Xinyu Wang</name>
-    </author>
-    <author>
-      <name>Andres Fielbaum</name>
-    </author>
-    <summary type="text">The EU Platform Work Directive, to be transposed by December 2026, requires ride-hailing platforms to state in plain language the main parameters of their automated decisions and how a worker's behaviour affects them. Such rules are exactly what a large language model (LLM) can read, so drivers will be able to let one decide for them. We compare two main families of rebalancing policy once their rules are public: a reactive policy (R) that sends idle drivers to cover requests just lost, and an anticipatory policy (A) that plans moves on a demand forecast. Each driver is an LLM agent maximizing its own net income, given no rules (N) or the rules at the directive's level of detail (L). We test two LLMs, Claude Haiku 5.5 and Jev, which understand the rules equally well, in a three-zone model and in Manhattan. With the rules disclosed, drivers follow the platform more closely: in Manhattan, the share of relocation offers they decline falls from about four in five to one in four under both policies. Yet the effects differ by policy. For the platform, disclosure costs R 3.7% of its profit in Manhattan, as R now pays for moves drivers used to make for free, while A's profit is unchanged; the two policies, which tie on profit under full compliance, end 6.1% apart. For drivers, disclosure raises income in the small model under both policies and LLMs; for users, it raises the service rate there by 10 to 18 percentage points. In Manhattan, self-interested drivers also make A a win-win-win against full compliance, raising driver income, platform profit and service rate by 10 to 12% each. Rebalancing policies that perform equally well under full compliance can thus show opposite results under mandatory disclosure. The study offers a framework to evaluate such policies under the new requirement and is, to our knowledge, the first to do so with LLM agents.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
