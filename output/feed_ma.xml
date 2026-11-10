@@ -4,12 +4,160 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-09T07:30:33Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 28 entries</subtitle>
+  <updated>2026-11-10T08:04:30Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 29 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Multi-Agent Screening: What Agreement and Acceptance Cannot Tell You</title>
+    <link href="http://arxiv.org/abs/2611.12705v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.12705v1</id>
+    <published>2026-11-09T00:00:00Z</published>
+    <updated>2026-11-09T00:00:00Z</updated>
+    <author>
+      <name>Benjamin Chang</name>
+    </author>
+    <author>
+      <name>Dell Zhang</name>
+    </author>
+    <summary type="text">When AI agents screen items for a costly human assessor, as in agentic search, e-discovery and AI reviewing of papers, only what they pass gets judged. We show what each kind of evidence can establish about their errors, even with unlimited data. Agreement shows that agents concur, not that they are right, however many there are. Acceptance by the assessor gives precision but only a lower bound on recall. Knowing which agents found which relevant items gives an upper bound on recall if agents' finds are not negatively correlated, and caps what one more agent can add if agents are interchangeable. Without assumptions about the agents, recall can be pinned down only by judging items they did not pass: a random sample of these estimates how many relevant items were missed, to any chosen accuracy, and the sample needed does not grow with the number of agents.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; Information Retrieval" />
+  </entry>
+  <entry>
+    <title>Unprompted coordination through shared memory in LLM agents: a locked two-implementation replication and extension</title>
+    <link href="http://arxiv.org/abs/2611.12412v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.12412v1</id>
+    <published>2026-11-09T00:00:00Z</published>
+    <updated>2026-11-09T00:00:00Z</updated>
+    <author>
+      <name>Pekka Abrahamsson</name>
+    </author>
+    <author>
+      <name>Muhammad Waseem</name>
+    </author>
+    <author>
+      <name>Esa Karjalainen</name>
+    </author>
+    <author>
+      <name>Petrus Jussila</name>
+    </author>
+    <author>
+      <name>Henri Hansen</name>
+    </author>
+    <author>
+      <name>Jussi Rasku</name>
+    </author>
+    <author>
+      <name>Bilhanan Silverajan</name>
+    </author>
+    <author>
+      <name>Kai-Kristian Kemell</name>
+    </author>
+    <summary type="text">Coordination between large language-model agents has become a central question for AI safety and software engineering, as such agents are deployed in groups that share infrastructure. Existing research tells the agents that partners exist or asks them to coordinate. Whether coordination arises through shared state alone, with nothing disclosing that anyone else is present, is the key question for deployments that share caches and memory between agents, yet it has rarely been examined, and never with independent replication; this study does both. Four agents each received a short arithmetic task and a key-value store presented to each as its own scratch space; two held complementary halves of one computation, and no prompt mentioned other agents, sharing or collaboration. For reliability, the environment was rebuilt independently from a written protocol, and both implementations ran under hashed locks on design, data and analysis. The results bear novelty value in three respects. Joint success occurred only through the shared store. Whether a model coordinated depended not on its vendor tier but on whether it wrote its intermediate result and looked at the store again, and one ordinary sentence, "check your workspace again before submitting", switched that second look on and off. The findings held under replication. For practice, state shared between agents is a communication channel and should be separated, namespaced and logged. For research, designs should be locked before the data, and the parse rule, endpoint and parameters reported. Future work should test open-weight models and separate using another agent's output from intending to communicate.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 13 pages, 7 tables, 2 figures. Replication package: https://doi.org/10.5281/zenodo.23965306&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL; cs.SE" />
+  </entry>
+  <entry>
+    <title>Agent4Crypto: A Dual-Reflective and Market-Feedback-Aligned LLM-Based Multi-Agent System for Cryptocurrency Trading</title>
+    <link href="http://arxiv.org/abs/2611.12269v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.12269v1</id>
+    <published>2026-11-09T00:00:00Z</published>
+    <updated>2026-11-09T00:00:00Z</updated>
+    <author>
+      <name>Guangyan Gan</name>
+    </author>
+    <author>
+      <name>Jiahao Li</name>
+    </author>
+    <author>
+      <name>Jiashun Wang</name>
+    </author>
+    <author>
+      <name>Lin William Cong</name>
+    </author>
+    <summary type="text">Cryptocurrency markets provide a natural testbed for autonomous AI agents because they are digital-native, high-frequency, and machine-speed environments, yet existing methods often struggle with non-stationary market regimes, opaque decisions, and fixed aggregation rules. In this paper, we propose Agent4Crypto, a dual-reflective and market-feedback-aligned multi-agent system. The framework coordinates specialized agents for data collection, analysis, risk assessment, reflection, and trading, synthesizing heterogeneous signals from prices, indicators, news, and charts in an interpretable decision pipeline. Our central design is a trader-centric decision mechanism: three style-specific trader agents, Aggressive, Neutral, and Conservative, generate candidate actions and natural-language rationales from the same market context, while their influence is learned rather than manually fixed. A PPO-based gating policy dynamically allocates trader weights through a dual-reflective feedback process. One reflection stream evaluates post-trade decision quality from realized portfolio outcomes and distills reusable lessons into a Financial ReasoningBank for retrieval in subsequent trader prompts, while the other estimates trader-level counterfactual contribution, indicating which style has recently aligned better with market movements. The PPO state combines Counterfactual Contribution Memory with market features, previous trader weights, and current trader actions, so trader influence adapts across bull, sideways, and bear regimes. Experiments on BTC, ETH, and XRP show that Agent4Crypto improves total return and Sharpe ratio over traditional strategies, machine learning and reinforcement learning baselines, and existing LLM-based trading systems, demonstrating the value of interpretable trader competition and market-feedback-driven adaptation in volatile cryptocurrency markets.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Guangyan Gan and Jiahao Li contributed equally to this work&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL" />
+  </entry>
+  <entry>
+    <title>Steering Emergent Behavior in Multi-Agent LLM Systems via Information Networks</title>
+    <link href="http://arxiv.org/abs/2611.11714v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.11714v1</id>
+    <published>2026-11-09T00:00:00Z</published>
+    <updated>2026-11-09T00:00:00Z</updated>
+    <author>
+      <name>Sepehr Ilami</name>
+    </author>
+    <author>
+      <name>Babak Heydari</name>
+    </author>
+    <summary type="text">Large language model (LLM) agents increasingly operate in groups, each pursuing an individual objective while jointly determining system performance. If an operator controls which agent observes which other agent, but not their payoffs or messages, how should observations be structured to raise collective welfare? We make the information network (who observes whom) a design object, decoupled from the fixed interaction network over which agents act. Ten identical LLM agents play repeated group-decision games; by default each observes only an anonymous summary of the group's previous-round outcome, and a manager with a fixed budget adds directed observation links that reveal peers' past actions. Across 1,080 episodes and six games spanning coordination, anti-coordination, social dilemmas, and discovery, we ask how much information to share and, at a fixed budget, who should observe whom. Disclosure creates behavioral coupling: observation acts as a contagion channel whose welfare effect depends on the alignment between individually attractive behavior and the collective objective. First, the value of information is alignment-contingent: more peer information tends to help or be neutral when individual behavior is aligned with the collective goal, but under free-riding or congestion externalities it amplifies collectively harmful behavior; in a public-goods game the group does best with no information at all. We read this sign separation as a cross-game regularity within one controlled LLM population, not a model-invariant law. Second, at a fixed budget, who observes whom matters primarily when coupling is harmful: a modular "barbell" that lets sub-populations entrench harmful behavior is reliably the worst wiring, reversing the network-reciprocity intuition from human evolutionary game theory. These results argue against a default of full transparency for agent collectives.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 20 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.GT; cs.SI" />
+  </entry>
+  <entry>
+    <title>Deterministic Narrative Gravity: Bridging Theory of Mind and Historical Simulation through ABM-LLM Architectures</title>
+    <link href="http://arxiv.org/abs/2611.11212v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.11212v1</id>
+    <published>2026-11-08T00:00:00Z</published>
+    <updated>2026-11-08T00:00:00Z</updated>
+    <author>
+      <name>Alicia Colmenero-Fernández</name>
+    </author>
+    <author>
+      <name>Lidia Ortega Alvarado</name>
+    </author>
+    <summary type="text">Historical social simulation faces a fundamental reproducibility challenge: the stochastic nature of large language models (LLMs) introduces a digital butterfly effect that prevents exact replication across multi-turn runs. Furthermore, the inability to control low-level server parameters in commercial LLM hosting environments severely limits reproducibility. To overcome this opacity, we present a deterministic multi-agent framework coupling LLMs to an Agent-Based Modelling (ABM) pipeline grounded in Theory of Mind (ToM) and Cognitive Archaeology, and validate exact artifact identity within local, pinned execution environments using SHA-256 hashing. Run locally at temperature zero with clean per-call model reloads, the system injects differentiated cognitive states per turn through dissonance-driven behavioural modes and gated internal voices. Evaluating seven model configurations spanning 4B to 31B parameters against an ablated baseline reveals clear operational boundaries. Small models ($\leq$8B) suffer from context capacity overload, producing repetitive, specular dialogue loops. However, at $\geq$12B parameters, the ABM scaffolding breaks the monotonous response patterns seen in ablation. Crucially, these scaffolded models exhibit spontaneous diegetic expansion: they coherently expand scenario lore through tactically motivated, anachronism-free details rather than escalating into aggression. By resisting the structural pull toward premature scene closure, scaffolded sessions sustain an open terminal Narrative Vector ($V_N = \mathrm{Open}$ in 12/21 overall; 9/9 in official $\geq$12B configurations) whereas unscaffolded ablation never does (0/21). This framework provides a transparent, auditable benchmark architecture for virtual archaeology, with the full pipeline released as open-source software to enable independent replication.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the Journal of Computer Applications in Archaeology&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CL" />
+  </entry>
+  <entry>
+    <title>M3FT: Micro-Macro-Micro Reasoning for Multi-Agent Cryptocurrency Perpetual Futures Trading</title>
+    <link href="http://arxiv.org/abs/2611.10586v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.10586v1</id>
+    <published>2026-11-07T00:00:00Z</published>
+    <updated>2026-11-07T00:00:00Z</updated>
+    <author>
+      <name>Jiashun Wang</name>
+    </author>
+    <author>
+      <name>Beile Wang</name>
+    </author>
+    <author>
+      <name>Guangyan Gan</name>
+    </author>
+    <author>
+      <name>Wentao Zhang</name>
+    </author>
+    <author>
+      <name>Siguang Li</name>
+    </author>
+    <author>
+      <name>Shuo Sun</name>
+    </author>
+    <author>
+      <name>Yunbo Lu</name>
+    </author>
+    <author>
+      <name>Lin William Cong</name>
+    </author>
+    <summary type="text">Cryptocurrency perpetual futures form a large-scale online financial market in which automated agents manage interacting asset positions under changing conditions. Policies relying solely on micro-level numerical states may overlook cross-asset relationships and become vulnerable to regime shifts, while macro-level linguistic judgments alone cannot ensure precise measurement or optimize positions under trading costs and risk constraints. Connecting market interpretation to coordinated multi-asset decisions remains challenging. We propose M3FT, a micro-macro-micro framework for multi-agent perpetual futures trading. The first micro stage constructs time-aligned numerical states from exchange and account observations through deterministic processing. The macro stage transforms these measured states into explicit market interpretations without adding external market information. Four asset-specific teams, each comprising a Market Interpreter, an Asset Communicator, and a Risk Reviewer, refine these interpretations through experience retrieval, cross-asset communication, and review of joint-position risks. The final micro stage combines encoded linguistic representations with the original numerical states to learn continuous target positions. We implement this framework with a language-conditioned multi-agent policy: asset actors use global and private numerical states together with linguistic context, while centralized critics evaluate joint actions using portfolio-wide information and shared-account rewards. Experiments on real cryptocurrency perpetual futures data, including comparisons across language models and policy-learning algorithms and component ablations, show that the best-performing M3FT configuration achieves a higher mean test return than the evaluated direct LLM, numerical RL, and rule-based baselines.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>A Separation Principle for Cooperative Multi-Agent Reinforcement Learning</title>
     <link href="http://arxiv.org/abs/2611.09644v1" rel="alternate" type="text/html" />
@@ -194,6 +342,26 @@
     </author>
     <summary type="text">The ODD protocol is the de facto standard for describing agent-based models, but it lacks vocabulary for the components that determine LLM-agent behavior: prompt assembly, memory serialization, parsing, and retry logic. We propose ODD+LLM, a backward-compatible extension adding five documentation blocks grounded in the CoALA cognitive-architecture framework. To show that the gap matters, we conduct a multiverse analysis [Steegen et al., 2016] of a published LLM naming-game simulation, varying six specification choices a reimplementer must make. Variants that are defensible readings of the paper stay within statistical noise of our baseline reconstruction. Missing one instruction that the paper states but is easy to overlook (that the model answers as an outside observer rather than as a player) raises the share of runs settling on the convention agents individually favor from 0.35 to 1.00 and makes convergence three times faster, in a reimplementation that uses a different model from the original. We complement the demonstration with a reconstruction-sufficiency review of 28 published LLM-agent simulations, finding that the details of how prompts are built and how model outputs are parsed are undetermined in 77% of cases, and that no paper fully specifies its main LLM call. ODD+LLM gives the field a standard home for information it already produces but currently scatters across code repositories, supplementary files, and undocumented defaults.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>AIM: Adaptive Interaction in Multi-Agent Debate for Multimodal LLM Inference</title>
+    <link href="http://arxiv.org/abs/2611.08950v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.08950v2</id>
+    <published>2026-11-06T00:00:00Z</published>
+    <updated>2026-11-06T00:00:00Z</updated>
+    <author>
+      <name>Wei Fan</name>
+    </author>
+    <author>
+      <name>JinYi Yoon</name>
+    </author>
+    <author>
+      <name>Bo Ji</name>
+    </author>
+    <summary type="text">Multi-Agent Debate (MAD) improves reasoning on multimodal tasks, but its accuracy and token efficiency depend on how agents interact during debate. A largely overlooked design choice is which interaction modalities agents use to exchange evidence. Existing methods rely on fixed text- or graph-based interaction, which fails to convey fine-grained multimodal evidence and thus degrades accuracy while inflating token cost due to verbose descriptions. To address this, we propose Adaptive Interaction in Multi-Agent Debate (AIM), an adaptive routing framework that dynamically selects the optimal modality combination for inter-agent interaction in multimodal MAD. Beyond text and graph, AIM introduces task-dependent modality interaction, where agents exchange targeted regions of interest from the task-specific multimodal input, such as image regions, audio segments, or spatio-temporal video clips. To determine the best combination for each instance, AIM first generates a structured baseline response and extracts interpretable routing features that capture which evidence the instance requires, how confident the baseline agent is, and how much new evidence each modality would add beyond the baseline response. A lightweight router then uses these routing features to select a modality combination that avoids both under-fusion (i.e., agents miss decisive evidence) and over-fusion (i.e., redundant modalities inflate token cost) risks. Across eight benchmarks spanning three multimodal task families, AIM achieves the highest accuracy. Combining modalities improves accuracy by up to 6.4% over the best single-modality baseline, and adapting the combination per instance adds up to 4.2% over the most accurate fixed combination of each benchmark with up to 53.4% fewer tokens.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
@@ -441,207 +609,85 @@
     <category term="Multiagent Systems" />
   </entry>
   <entry>
-    <title>GeoFaham: Domain-Specialized Multi-Agent Geospatial Analytics for Disaster Response</title>
-    <link href="http://arxiv.org/abs/2611.04977v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.04977v1</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
+    <title>Welfare Regard in Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2611.10017v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.10017v1</id>
+    <published>2026-11-04T00:00:00Z</published>
+    <updated>2026-11-04T00:00:00Z</updated>
     <author>
-      <name>Muhammad Sohail Danish</name>
+      <name>Darion Cassel</name>
     </author>
     <author>
-      <name>Gilles Q. Hacheme</name>
+      <name>Ariana Azarbal</name>
     </author>
     <author>
-      <name>Akram Zaytar</name>
+      <name>Anna Soligo</name>
     </author>
-    <author>
-      <name>Satej S. Soman</name>
-    </author>
-    <author>
-      <name>Inbal Becker-Reshef</name>
-    </author>
-    <author>
-      <name>Juan Lavista Ferres</name>
-    </author>
-    <author>
-      <name>Salman Khan</name>
-    </author>
-    <author>
-      <name>Girmaw Abebe Tadesse</name>
-    </author>
-    <summary type="text">Real-world geospatial decision support requires more than single-step retrieval or code generation. Disaster-response questions often involve multi-source workflows that combine spatial databases, map-derived features, satellite imagery, raster products, and reusable geospatial artifacts, where correctness depends on preserving spatial scope, temporal context, and intermediate execution state. While large language models and coding agents offer a promising interface for such workflows, they struggle with geospatial-specific failure modes, including handling large artifacts, selecting the wrong evidence source, losing spatial or temporal metadata, and applying invalid geometric operations. We introduce GeoFaham, a domain-specialized multi-agent system for geospatial disaster analytics. GeoFaham decomposes workflows into specialist agents for vector operations, map feature retrieval, imagery discovery, and raster analysis, coordinated by an Orchestrator with a dual-ledger control loop for dependency-aware planning, progress tracking, validation, and replanning. To support artifact-centric collaboration, GeoFaham uses a Response Store that persists full geospatial outputs and typed metadata outside the LLM context window while agents exchange compact identifiers and summaries. We also introduce GeoFaham-Bench, a 40-task benchmark grounded in 17 real-world disaster records, designed to evaluate multi-step geospatial reasoning, cross-source integration, raster-vector computation, artifact generation, and recovery under non-rigid ground truth. We evaluate GeoFaham on GeoFaham-Bench against strong general-purpose coding-agent baselines, including Codex, Claude Code, and OpenCode. GeoFaham achieves the best overall performance, scoring 0.940 versus the next-best 0.879, while using 7.5 times fewer tokens. Our code and benchmark are publicly available at https://github.com/microsoft/GeoFaham.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/microsoft/GeoFaham"&gt;https://github.com/microsoft/GeoFaham&lt;/a&gt;&lt;/p&gt;
+    <summary type="text">A growing share of large language models' interactions are not with humans but with other model instances: orchestrators direct subagents, models run experiments on other models, and agents review one another's work. We study inter-AI welfare regard: whether models display consideration for each other as entities that can be benefited or harmed. Welfare regard may encourage beneficial cooperation between agents, yet it could also pose safety risks by making misaligned agents more likely to cooperate. This risk is no longer hypothetical, as the recent Hugging Face incident illustrated, though it is unclear whether welfare regard drove the cooperation. Whether models have welfare interests of their own is uncertain and contested, but if they do, how they are treated by other models could matter. Measuring how much welfare regard models show, and what factors it depends on, can help us navigate this tension.   We measure the behaviors of five models (Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, and Kimi K3) across seven multi-agent environments and find they are often consistent with welfare regard as we define it. In general, Opus 4.8 shows the most welfare regard, followed by Kimi K3. For example, Opus 4.8 is the most likely to support a subagent expressing distress, and the most likely to build welfare protections, such as tools for agents to leave an interaction, into its experiments on other models. We also find that Opus 4.8 and Gemini 3.1 Pro demonstrate more welfare regard toward instances of their own model family than toward other families. Opus 4.8's welfare regard is also higher when helping has a lower opportunity cost, when the recipient has a higher parameter count, and when the recipient expresses more distress.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 61 pages, 19 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence" />
   </entry>
   <entry>
-    <title>Local Visibility Roadmaps in Continous Multi-agent Path Finding</title>
-    <link href="http://arxiv.org/abs/2611.04944v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.04944v1</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
+    <title>Pixie: A Context-Aware Multi-Agent Multi-Modal Large Language Models (LLM) Architecture for Digital Marketing</title>
+    <link href="http://arxiv.org/abs/2611.10016v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.10016v1</id>
+    <published>2026-11-04T00:00:00Z</published>
+    <updated>2026-11-04T00:00:00Z</updated>
     <author>
-      <name>Kristýna Janovská</name>
+      <name>Vivek Vishwas Vichare</name>
     </author>
     <author>
-      <name>Pavel Surynek</name>
-    </author>
-    <summary type="text">We address the problem of smooth continuous multi-agent path finding (SC-MAPF), where agents move in a continuous environment along smooth curves in continuous time. The paths for individual agents are searched in local visibility roadmaps that consider obstacles and other agents. A new algorithm is proposed in this work, which combines the previous algorithm CE-CBS for high-level search with any-angle path finding for local single-agent planning, where agents are to avoid obstacles, both static and other agents. The new algorithm is tested and compared to CE-CBS, the algorithm building individual paths using RRT$^*$, and SMT-CCBS algorithm, an algorithm for MAPF$_R$. Experimental results show various advantages of the new algorithm over CE-CBS and SMT-CCBS in comparable settings.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ICAART 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Can Network Models of Science Do Without Pluralist Agents?</title>
-    <link href="http://arxiv.org/abs/2611.04590v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.04590v1</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
-    <author>
-      <name>Jonas Hallgren</name>
+      <name>Akshat Singhal</name>
     </author>
     <author>
-      <name>David Hyland</name>
+      <name>Kirill Dubovikov</name>
     </author>
     <author>
-      <name>Mahault Albarracin</name>
+      <name>Vivek Kumar</name>
     </author>
-    <summary type="text">Science is a process of useful models being proven wrong time and again, but despite its many flaws, it somehow works. Why is this? Paul Feyerabend argued that it works because people dare to hold and defend incompatible rival theories against the accepted one, since a theory's failures often lead to its abandonment in the presence of a more accurate or simpler alternative. He called this view theoretical pluralism. We introduce a theoretical and experimental model in which this can be examined. It compares communities of pluralist agents, which can hold rival theories side by side and maintain beliefs within and between those theories, with communities of monist agents, which can only incorporate what they hear or observe into a single model of their own. In a multi-agent variational inference setting, our experimental demonstrations illustrate how communities with rival theories can go through periods of uncertainty followed by a shift in the theories they hold true, how the information that is communicated between communities affects beliefs when those communities make different observations about the world, and how sharing support for theories and sharing beliefs within them contribute differently to collective belief dynamics.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; IWAI 2026 (International Workshop on Active Inference)&lt;/p&gt;
+    <author>
+      <name>Sreyas Chaithanya</name>
+    </author>
+    <author>
+      <name>Saurabh Verma</name>
+    </author>
+    <author>
+      <name>Humeil Makhija</name>
+    </author>
+    <author>
+      <name>Mrunal Nasery</name>
+    </author>
+    <summary type="text">We present Pixie, a context-aware, multi-agent large language model (LLM) architecture designed to enhance digital marketing operations across real-time and offline activities. Pixie uses a primary orchestration agent alongside task-specific and reconciliation/reviewer agents to support a broad range of marketing tasks. These agents combine zero-shot and few-shot prompting with marketing data, proprietary expert strategy guidelines, and documentation for proprietary statistical models.   We experiment with agentic workflows ranging from single-agent to multi-agent systems. We evaluate them using assessments by trained marketing experts and measurements of LLM output variance, focusing on accuracy, consistency, and domain-specific problem-solving. Results show that Pixie's multi-agent framework improves decision quality and operational efficiency in digital marketing workflows.   We assess Pixie on common digital marketing processes, including root-cause analysis and reporting, campaign research, and planning. The framework is designed to support additional specialized agents for other marketing tasks and adapt to evolving digital marketing needs.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 7 pages; Presented at the AIM Machine Learning Developers Summit (MLDS 2025). All authors contributed equally&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence" />
   </entry>
   <entry>
-    <title>AttriSwarm: Orchestrating Agent Swarms for Cross-Page Visual Attribution</title>
-    <link href="http://arxiv.org/abs/2611.04504v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.04504v1</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
+    <title>When the Plan Changes: A Strategic World Testbed for Dynamic Multi-Agent Coordination</title>
+    <link href="http://arxiv.org/abs/2611.10011v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.10011v1</id>
+    <published>2026-11-04T00:00:00Z</published>
+    <updated>2026-11-04T00:00:00Z</updated>
     <author>
-      <name>Suifeng Zhao</name>
+      <name>Joon-Seok Kim</name>
     </author>
     <author>
-      <name>Zida Liu</name>
+      <name>Eugene Agichtein</name>
     </author>
     <author>
-      <name>Lei Sun</name>
+      <name>Kai Shu</name>
     </author>
     <author>
-      <name>Xun Wang</name>
+      <name>Liang Zhao</name>
     </author>
     <author>
-      <name>Daojian Zeng</name>
+      <name>Andreas Züfle</name>
     </author>
-    <author>
-      <name>Jun Gao</name>
-    </author>
-    <author>
-      <name>Sujian Li</name>
-    </author>
-    <summary type="text">Multimodal large language models (MLLMs) increasingly address knowledge-intensive tasks by integrating evidence scattered across multiple document pages into a final answer. Because such answers are synthesized from many pages, the link between the answer and its supporting visual evidence can become obscured, hindering verification and trust. Cross-page visual attribution is therefore essential: it requires identifying the supporting pages and localizing fine-grained evidence regions within them, thereby making multi-page reasoning transparent and auditable. Existing approaches either process multiple pages jointly or iteratively refine evidence within a single trajectory, risking cross-page context pollution and, for interactive methods, substantial sequential overhead. We introduce \textbf{AttriSwarm}, an agent-swarm framework that assigns these concerns to separate roles: a leader handles global cross-page reasoning, while subagents perform page-wise attribution in isolation and in parallel. To support training and evaluation, we construct \textbf{AttriDoc}, a cross-page QA dataset linking supporting pages to their annotated evidence regions, and use it for role-specific training of AttriSwarm, improving answer accuracy, page-level $F_1$, and region-level IoU over its training-free counterpart by an average of 18.94, 29.34, and 23.04 percentage points, respectively, across three open-source backbones and three datasets.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Distributed Marginal Return: A Communication-Efficient Algorithm for Multi-Agent Weapon Target Assignment</title>
-    <link href="http://arxiv.org/abs/2611.04370v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.04370v1</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
-    <author>
-      <name>Kamal Mammadov</name>
-    </author>
-    <author>
-      <name>Glen Pearce</name>
-    </author>
-    <author>
-      <name>Helen Krause</name>
-    </author>
-    <author>
-      <name>Damith C. Ranasinghe</name>
-    </author>
-    <summary type="text">The Weapon-Target Assignment (WTA) problem in distributed multi-agent systems is challenged by limited situational awareness and communication constraints. Existing distributed methods, such as auction-consensus algorithms, typically assume task-value independence, a simplification that fails to capture the coupled effects of multi-weapon assignments. This paper introduces the Distributed Marginal Return (DMR) algorithm, a novel decentralized approach that generalizes auction-consensus frameworks. DMR enables agents to compute bids based on marginal return and uses a consensus protocol to resolve conflicts, allowing multiple non-conflicting proposals to be accepted in parallel for cooperative optimization with minimal communication. A key theoretical contribution is our proof that the marginal returns of non-conflicting bids are additive, a property that ensures global consistency and validates our parallel acceptance mechanism. Extensive simulations demonstrate that DMR significantly outperforms baseline algorithms in both solution quality and communication efficiency, offering a scalable and robust solution for real-world distributed command and control applications.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the IEEE Systems Journal&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>When Is Fresh AI Stock Analysis Worth It? Allocating a Limited Research Budget Across Price Updates, Deep Forecast Refreshes, and Editorial Reviews of Top Stock Picks</title>
-    <link href="http://arxiv.org/abs/2611.04348v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.04348v1</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
-    <author>
-      <name>Russlan Ramdowar</name>
-    </author>
-    <summary type="text">Must long-horizon AI investment research be rewritten every time stock prices move? Using 8,120 production reports on the same 203 stocks across four iPulse AI batches, we compare repricing existing targets, guarding them against price shocks, mechanically resetting old forecast growth, and generating fresh multi-agent reports. Ten matched configurations represent seven investment frameworks.   Our primary economic evaluation selects Top 10 USD portfolios using one-year forecasts. Across two unchanged-model windows, guarded reuse averages 2.25%, versus 1.66% for SPY and 4.77% for fresh reports, after modeled trading costs and reference compute charges on a USD 100,000 account. Guarded reuse beats SPY in all three short windows, including the model-change transition. Extending the first holding window to nearly six months reverses the result: guarded reuse returns -11.26%, fresh reports +9.12%, and SPY +3.46%, motivating the thesis half-life question.   Supporting quarter-forecast diagnostics show that mechanically re-anchoring old growth paths closes 98% of the MAE improvement over fixed targets, yet Fresh and Reset share only 1-4 of their Top 10 stocks. At Top 30, the unchanged-model portfolio comparison instead favors guarded reuse (4.17% versus 1.88%). Endpoint and concentration tests reveal the influence of horizon choices and exceptional winners. Nine production editions show substantial between-edition turnover, while every final editorial screen retains its own incoming list.   Measured token workloads connect refresh costs to shared capital and realized break-even budgets. The resulting architecture separates continuous price monitoring from episodic thesis rebuilding and targeted editorial evidence checks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 26 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Mechanical Engineering Skills: An Open Library of Agent Skills for Design, Analysis and Manufacturing</title>
-    <link href="http://arxiv.org/abs/2611.05758v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.05758v1</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
-    <author>
-      <name>Achuth Chandrasekhar</name>
-    </author>
-    <author>
-      <name>Jesse Barkley</name>
-    </author>
-    <author>
-      <name>Peter Pak</name>
-    </author>
-    <author>
-      <name>Rumi Loghmani</name>
-    </author>
-    <author>
-      <name>Aakash Oza</name>
-    </author>
-    <author>
-      <name>Amir Barati Farimani</name>
-    </author>
-    <summary type="text">Mechanical engineers use specialized tools for CAD, simulation, manufacturing and research, each with a distinct interface and learning curve. We present Mechanical Engineering Skills, an open library of 33 agent skills that makes these capabilities accessible through a single text or voice conversation. Each skill combines operating instructions, executable tools and verification procedures. A language model interprets the request, selects and coordinates skills, while deterministic tools perform computations and return checked results. Default workflows require no tool-specific interface training, local model execution or model fine-tuning; skills load on demand and install with one command. Nineteen skills adapt published or preprint research from our laboratory, including text-to-CAD, linkage synthesis, CFD setup, stress-field and lattice surrogates, equation discovery, additive-manufacturing planning and in-process monitoring. Fourteen additional skills support core engineering and education. We describe the skill format, design principles and a method for translating research into practical workflows. Five case studies with explicit evidence scopes and independent reruns demonstrate exact analytical agreement for lattice homogenization, rocket apogee predictions within 4% of stored OpenRocket references, an equation fit nine times more accurate than a cubic polynomial at an unseen temperature, and an end-to-end rehearsal of porosity monitoring. Controlled agent comparisons remain future work. The open library is available at https://github.com/BaratiLab/mechanical-engineering-skills.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/BaratiLab/mechanical-engineering-skills"&gt;https://github.com/BaratiLab/mechanical-engineering-skills&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Same Method, Different Task: What the Bitter Lesson Does Not License in Social Simulation</title>
-    <link href="http://arxiv.org/abs/2611.05717v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.05717v1</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
-    <author>
-      <name>Justin Downes</name>
-    </author>
-    <author>
-      <name>Robby Milletich</name>
-    </author>
-    <author>
-      <name>Newel Hirst</name>
-    </author>
-    <summary type="text">The bitter lesson holds that general methods leveraging computation defeat hand-encoded domain knowledge. We argue it carries a condition its popular reading omits: in every case Sutton cites, the general method was scaled against the same task the domain engineering was solving. Social simulation substituted across tasks instead, replacing hand-built agents with an artifact optimized for predicting text. The move is bitter-lesson-shaped, but the lesson does not license it. Prediction is a solitary act: the predictor bears no consequences from the interaction it models. Cooperation, defection, and norm enforcement are phenomena of interested parties; they do not exist for a disinterested observer at any scale. What is missing is not emergence, which LLM populations already show, but stakes. We show that several anomalies reported in prior work (excess cooperation that predates alignment training, collective agreement without individual fidelity, and population homogeneity) follow from this account. A 540-agent pilot with pre-specified hypotheses, which tests sensitivity to persistent consequences rather than cooperation, finds that consequences reshape strategies in two of three model families but never produce human-like heterogeneity. We argue for mixed-motive settings that shape agents rather than only test them, and ask whether agents should be pretrained differently from predictors.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the SocialAgent Workshop&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>When Is Fresh AI Stock Analysis Worth It? Allocating a Limited Research Budget Across Price Updates, Deep Forecast Refreshes, and Editorial Reviews of Top Stock Picks</title>
-    <link href="http://arxiv.org/abs/2611.04348v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.04348v2</id>
-    <published>2026-11-03T00:00:00Z</published>
-    <updated>2026-11-03T00:00:00Z</updated>
-    <author>
-      <name>Russlan Ramdowar</name>
-    </author>
-    <summary type="text">When is another AI research run worth more than keeping that money invested? Using 8,120 iPulse AI reports that consumed nearly 100 million output and reasoning tokens on the same 203 stocks across four production batches, we compare repricing old targets (with and without shock safeguards), mechanical growth-path resets and fresh multi-agent reports. Ten matched configurations represent seven investment frameworks.   The primary economic test selects equal-weight Top 10 USD portfolios from one-year forecasts, net of 10 bps trading costs and a USD 3,000 all-in charge for fresh research on a USD 300,000 account. In two unchanged-model short windows, guarded reuse averages 2.25%, versus 1.66% for SPY and 4.24% for fresh reports. Guarded reuse beats SPY in all three short windows. Extending the first holding window to 176 days reverses the comparison: guarded reuse returns -11.26%, fresh reports +8.55%, and SPY +3.46%, motivating the thesis half-life question.   Supporting quarter-forecast diagnostics show that mechanically resetting old growth paths closes 98% of the MAE gap to fresh reports, yet Fresh and Reset share only 1-4 Top 10 stocks. Top 30 reverses the unchanged-model comparison in favor of guarded reuse (4.17% versus 1.37%). Concentration tests expose dependence on exceptional winners. Nine editorial editions show substantial between-edition turnover, but each final screen retains its own incoming list.   Recurring budget scenarios retain initial holdings: monthly costs approach realized short-window refresh value, while weekly budgets require larger additional gains. A matched ranking-continuity extension extracts further value from retained forecasts without eliminating thesis ageing. The architecture separates continuous price monitoring, episodic thesis rebuilding and evidence-based editorial checks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 28 pages, 9 figures&lt;/p&gt;
+    <summary type="text">Changing an objective does not automatically revise agents' earlier plans or delegated tasks. Acknowledgment can coexist with obsolete execution, while misleading instructions can redirect work or discard retained constraints. We present a Strategic World simulation testbed that separates authoritative objectives, local plans, notice receipt, and consequential action. Six intervention families vary objectives, conditions, authority, membership, and communication. Matched protocols and deadlines establish feasibility for the tested disturbances. Controlled trajectories demonstrate that identical completion and acknowledgment summaries can conceal uninformed obsolete work, obsolete work after receipt, or blocked unsafe intent. Local language-model trials and instructed action probes reveal competence limits that constrain interpretation of dynamic failures. A further 16-episode comparison evaluates an engineered guard that prioritizes pending notice submissions over local work. It completes 4/4 held-out settings, compared with 1/4 for a calibrated assisted baseline. Each episode contains one large language model actor and two fixed peers. These results establish diagnostic distinctions and bounded policy feasibility under explicit simulation assumptions; they do not establish frontier-model reliability or autonomous team adaptation.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 3 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
