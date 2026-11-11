@@ -4,12 +4,29 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-10T08:04:30Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 29 entries</subtitle>
+  <updated>2026-11-11T07:27:54Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 23 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>PARLEY: Evaluating LLM Collaboration Through Cooperative Asymmetric Puzzles</title>
+    <link href="http://arxiv.org/abs/2611.14242v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.14242v1</id>
+    <published>2026-11-10T00:00:00Z</published>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <author>
+      <name>Javier Hernandez</name>
+    </author>
+    <author>
+      <name>Andrew D. Wilson</name>
+    </author>
+    <summary type="text">As large language models power autonomous agents, understanding how they collaborate and where they fail becomes critical. We introduce PARLEY, an extensible platform for studying LLM agent collaboration through four asymmetric puzzle tasks grounded in cognitive psychology (referential communication, joint coordination, perspective-taking, and spatial reasoning). GPT-4o agent pairs succeeded in 60.5% of conversations (N=400, 100 per task), with task-level variation (34-80%) reflecting distinct collaborative demands. From these conversations, we derived the data-driven PAC taxonomy: six failure types organized into Perception (visual interpretation and spatial reasoning), Adaptation (progress tracking and feedback integration), and Coordination (verification and grounding). Failure to incorporate external feedback was a critical indicator of unsuccessful collaboration, with agents repeatedly applying unsuccessful strategies. We also show that a taxonomy-guided intervention (N=200) improved average task success to 70.5%. These results demonstrate how PARLEY can be used to derive meaningful, data-driven insights that can in turn lead to improved agentic collaboration.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 8 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
   <entry>
     <title>Multi-Agent Screening: What Agreement and Acceptance Cannot Tell You</title>
     <link href="http://arxiv.org/abs/2611.12705v1" rel="alternate" type="text/html" />
@@ -514,181 +531,5 @@
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>A Framework for Context Enrichment and Selective Robustness in LLM Social Agents</title>
-    <link href="http://arxiv.org/abs/2611.06914v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.06914v1</id>
-    <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <author>
-      <name>Mattia Greiche</name>
-    </author>
-    <author>
-      <name>Reihaneh Rabbany</name>
-    </author>
-    <author>
-      <name>Maximilian Puelma Touzel</name>
-    </author>
-    <summary type="text">Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape their actions. Yet LLM agents have been shown to substantially change their behavior under meaning-preserving prompt variations, creating a validation problem for social simulation. One plausible hypothesis is that this brittleness reflects a lack of grounding and can be reduced by enriching the context provided to the agents. Whether richer context improves robustness remains unclear, in part because context richness and robustness are rarely defined in ways that support controlled comparisons. We address the first need with controlled context enrichment, a set of prompt substitution rules that systematically enriches distinct types of context: neutral padding, generic social background, descriptive decision grounding, and normative decision grounding. We address the second by introducing selective robustness as a validation criterion: insensitivity to meaning-preserving prompt variation combined with a directional response to decision-relevant changes in the social world. We demonstrate the framework in a Prisoner's Dilemma-like game, showing how it can be used to identify which forms of context enrichment produce more desirable and robust agent behavior. We find that these forms of enrichment produce distinct behavioral patterns that vary between the two models tested.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.CL; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Airlock: Bounding the Multi-Agent Blast Radius via Selective Online Containment</title>
-    <link href="http://arxiv.org/abs/2611.06727v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.06727v1</id>
-    <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <author>
-      <name>Zhonghao Zhan</name>
-    </author>
-    <author>
-      <name>Javad Forough</name>
-    </author>
-    <author>
-      <name>Yefan Zhang</name>
-    </author>
-    <author>
-      <name>Krinos Li</name>
-    </author>
-    <author>
-      <name>Xiao Ma</name>
-    </author>
-    <author>
-      <name>Hamed Haddadi</name>
-    </author>
-    <summary type="text">When multi-agent systems act on the external world, a single agent's faulty output can spread across tasks before detection, creating a system-wide blast radius. Single-agent guardrails are confined to individual harnesses, while existing multi-agent controls either cancel only the faulty source and miss downstream consumers or halt and roll back the entire workflow at the cost of healthy work. We present Airlock, a multi-agent runtime and guardrail for selective post-alert fault containment. Its tree-structured runtime, EdgeCitadel, narrows permissions vertically from parent to child agents to establish node boundaries and control switches. Meanwhile, an append-only provenance DAG records cross-agent data consumption horizontally. Upon an alert, Airlock traces forward on this DAG to isolate tainted executions and pending actions, and backward to narrow root causes. At the site switches, a default full quarantine tier freezes affected branches without a solver, while an assured optimized cut tier uses fence-then-prune to enforce a deadline-aware minimum cut minimizing collateral disruption. Across 1,832 testbed runs, 161 physical smart-home LLM runs, and 24,266 simulation records, Airlock blocks all post-alert faulty actuations on our main testbed and smart-home grids with zero post-convergence leaks. Whereas native controls in A2A and LangGraph either contain at most 33.3% of faults or retain at most 16% of work without redo, Airlock retains +68 pp to +96 pp more healthy work, and its optimized cut retains +46 pp more than full quarantine under dense spread. These results show that co-designing runtime authority boundaries with online provenance enables surgical fault containment without sacrificing healthy work (code: https://github.com/EdgeCitadelTeam/EdgeCitadel).</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/EdgeCitadelTeam/EdgeCitadel"&gt;https://github.com/EdgeCitadelTeam/EdgeCitadel&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>More Agents, More Reliable? System-Level Reliability of Multi-Agent LLMs under Operational-Profile Uncertainty</title>
-    <link href="http://arxiv.org/abs/2611.07140v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.07140v1</id>
-    <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <author>
-      <name>Burkay Tunçtürk</name>
-    </author>
-    <author>
-      <name>Koorosh Aslansefat</name>
-    </author>
-    <author>
-      <name>Yiannis Papadopoulos</name>
-    </author>
-    <author>
-      <name>Bao Nguyen</name>
-    </author>
-    <summary type="text">Teams increasingly build software from cooperating large language model (LLM) agents, often assuming more agents mean more reliability. Yet the usual evidence, average benchmark accuracy, ignores the input mix a deployed system meets and the rule merging the agents' answers. Building on HIP-LLM, a hierarchical imprecise-probability assessment of single LLMs, we propose a framework combining it with a Bayesian network of the system's failure logic for multi-agent systems. Agent failure-probability intervals propagate through this network, where the combining rule can itself fail, into a reliability envelope showing which evidence limits it. In a pipeline extracting regulated chemical-hazard statements, majority voting over three models protected against the weakest but did not clearly exceed the best, and a voter failing on 5\% of demands would largely erase its advantage over the middle model. More agents yield a more defensible reliability claim, not automatically a more reliable system.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Submitted for IEEE Software Magazine&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Authorization Propagation in Agent2Agent Systems: An Experimental Security Evaluation of Multi-Hop Delegation</title>
-    <link href="http://arxiv.org/abs/2611.07050v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.07050v1</id>
-    <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <author>
-      <name>Gabriele Donno</name>
-    </author>
-    <author>
-      <name>Kashif Mehmood</name>
-    </author>
-    <author>
-      <name>Katina Kralevska</name>
-    </author>
-    <summary type="text">Delegated Agent2Agent (A2A) workflows create a security problem when the agent sending a request is different from the principal from which the authority originated. This paper evaluates a layered downstream-verification design in a synthetic four-party healthcare reimbursement workflow. The prototype separates current-caller context, transitive authorization evidence, per-hop Ed25519 request authentication, and independent replay state for requests and authorization artifacts. Of 15 adversarial conditions, 14 are rejected; an isolated delegation-path test exposes the absence of semantic authority attenuation. A separate authorized-intermediary experiment shows that a holder of the shared authorization-evidence HMAC key can modify the represented authority and generate valid evidence. In the fixed-depth local benchmark, the full configuration has a median security-processing latency of 5.11 ms and a 3.87 kB serialized payload. The results show the value of separating request authentication from inherited authority while identifying origin-verifiable delegation and semantic attenuation as requirements for stronger A2A authorization propagation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Welfare Regard in Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2611.10017v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.10017v1</id>
-    <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <author>
-      <name>Darion Cassel</name>
-    </author>
-    <author>
-      <name>Ariana Azarbal</name>
-    </author>
-    <author>
-      <name>Anna Soligo</name>
-    </author>
-    <summary type="text">A growing share of large language models' interactions are not with humans but with other model instances: orchestrators direct subagents, models run experiments on other models, and agents review one another's work. We study inter-AI welfare regard: whether models display consideration for each other as entities that can be benefited or harmed. Welfare regard may encourage beneficial cooperation between agents, yet it could also pose safety risks by making misaligned agents more likely to cooperate. This risk is no longer hypothetical, as the recent Hugging Face incident illustrated, though it is unclear whether welfare regard drove the cooperation. Whether models have welfare interests of their own is uncertain and contested, but if they do, how they are treated by other models could matter. Measuring how much welfare regard models show, and what factors it depends on, can help us navigate this tension.   We measure the behaviors of five models (Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, and Kimi K3) across seven multi-agent environments and find they are often consistent with welfare regard as we define it. In general, Opus 4.8 shows the most welfare regard, followed by Kimi K3. For example, Opus 4.8 is the most likely to support a subagent expressing distress, and the most likely to build welfare protections, such as tools for agents to leave an interaction, into its experiments on other models. We also find that Opus 4.8 and Gemini 3.1 Pro demonstrate more welfare regard toward instances of their own model family than toward other families. Opus 4.8's welfare regard is also higher when helping has a lower opportunity cost, when the recipient has a higher parameter count, and when the recipient expresses more distress.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 61 pages, 19 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Pixie: A Context-Aware Multi-Agent Multi-Modal Large Language Models (LLM) Architecture for Digital Marketing</title>
-    <link href="http://arxiv.org/abs/2611.10016v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.10016v1</id>
-    <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <author>
-      <name>Vivek Vishwas Vichare</name>
-    </author>
-    <author>
-      <name>Akshat Singhal</name>
-    </author>
-    <author>
-      <name>Kirill Dubovikov</name>
-    </author>
-    <author>
-      <name>Vivek Kumar</name>
-    </author>
-    <author>
-      <name>Sreyas Chaithanya</name>
-    </author>
-    <author>
-      <name>Saurabh Verma</name>
-    </author>
-    <author>
-      <name>Humeil Makhija</name>
-    </author>
-    <author>
-      <name>Mrunal Nasery</name>
-    </author>
-    <summary type="text">We present Pixie, a context-aware, multi-agent large language model (LLM) architecture designed to enhance digital marketing operations across real-time and offline activities. Pixie uses a primary orchestration agent alongside task-specific and reconciliation/reviewer agents to support a broad range of marketing tasks. These agents combine zero-shot and few-shot prompting with marketing data, proprietary expert strategy guidelines, and documentation for proprietary statistical models.   We experiment with agentic workflows ranging from single-agent to multi-agent systems. We evaluate them using assessments by trained marketing experts and measurements of LLM output variance, focusing on accuracy, consistency, and domain-specific problem-solving. Results show that Pixie's multi-agent framework improves decision quality and operational efficiency in digital marketing workflows.   We assess Pixie on common digital marketing processes, including root-cause analysis and reporting, campaign research, and planning. The framework is designed to support additional specialized agents for other marketing tasks and adapt to evolving digital marketing needs.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 7 pages; Presented at the AIM Machine Learning Developers Summit (MLDS 2025). All authors contributed equally&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>When the Plan Changes: A Strategic World Testbed for Dynamic Multi-Agent Coordination</title>
-    <link href="http://arxiv.org/abs/2611.10011v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.10011v1</id>
-    <published>2026-11-04T00:00:00Z</published>
-    <updated>2026-11-04T00:00:00Z</updated>
-    <author>
-      <name>Joon-Seok Kim</name>
-    </author>
-    <author>
-      <name>Eugene Agichtein</name>
-    </author>
-    <author>
-      <name>Kai Shu</name>
-    </author>
-    <author>
-      <name>Liang Zhao</name>
-    </author>
-    <author>
-      <name>Andreas Züfle</name>
-    </author>
-    <summary type="text">Changing an objective does not automatically revise agents' earlier plans or delegated tasks. Acknowledgment can coexist with obsolete execution, while misleading instructions can redirect work or discard retained constraints. We present a Strategic World simulation testbed that separates authoritative objectives, local plans, notice receipt, and consequential action. Six intervention families vary objectives, conditions, authority, membership, and communication. Matched protocols and deadlines establish feasibility for the tested disturbances. Controlled trajectories demonstrate that identical completion and acknowledgment summaries can conceal uninformed obsolete work, obsolete work after receipt, or blocked unsafe intent. Local language-model trials and instructed action probes reveal competence limits that constrain interpretation of dynamic failures. A further 16-episode comparison evaluates an engineered guard that prioritizes pending notice submissions over local work. It completes 4/4 held-out settings, compared with 1/4 for a calibrated assisted baseline. Each episode contains one large language model actor and two fixed peers. These results establish diagnostic distinctions and bounded policy feasibility under explicit simulation assumptions; they do not establish frontier-model reliability or autonomous team adaptation.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
   </entry>
 </feed>
