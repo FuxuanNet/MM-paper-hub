@@ -4,12 +4,165 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-12T08:02:54Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 17 entries</subtitle>
+  <updated>2026-11-13T07:35:28Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 15 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>From Delegation to Coordination: Learning Efficient Multi-Agent Deep Research</title>
+    <link href="http://arxiv.org/abs/2611.17041v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.17041v1</id>
+    <published>2026-11-12T00:00:00Z</published>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <author>
+      <name>Yuyang Wu</name>
+    </author>
+    <author>
+      <name>Yang Liu</name>
+    </author>
+    <author>
+      <name>Zequn Xie</name>
+    </author>
+    <author>
+      <name>Junjie Wang</name>
+    </author>
+    <author>
+      <name>Dan Yang</name>
+    </author>
+    <author>
+      <name>Zehao Tan</name>
+    </author>
+    <author>
+      <name>Ding-Chu Zhang</name>
+    </author>
+    <author>
+      <name>Junming Yang</name>
+    </author>
+    <author>
+      <name>Yue Shen</name>
+    </author>
+    <author>
+      <name>Jian Wang</name>
+    </author>
+    <author>
+      <name>Jinjie Gu</name>
+    </author>
+    <summary type="text">Multi-agent deep-research systems use delegation to parallelize search and keep long tool traces out of the main agent's context. Yet delegation helps only when task allocation and subtask execution are coordinated: the main agent must issue useful subtasks, while subagents must return reliable evidence. Existing training either optimizes only the main agent or broadcasts the same team advantage to all agents, which can reward misleading subagent reports and penalize useful ones. We introduce LEAD-RL (Learning Effective Agent Delegation with Reinforcement Learning), a joint main-agent-subagent training framework with contribution-aware credit assignment. A training-time rubric evaluates the research utility of each subagent report and gates its inherited team advantage, while final-answer correctness remains the only team reward; no token, step, or speedup reward is used. Across five benchmarks and two model families, LEAD-RL improves answer quality. On BrowseComp, it improves accuracy by 2.49 percentage points and reduces critical-path cost by 24.5% over joint training with shared team credit. During validation, accuracy increases by 6.78 points at approximately constant critical-path cost. These results show that contribution-aware credit assignment improves the quality-efficiency trade-off of multi-agent deep research.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Shared Item-Level Error Limits the Aggregation of Small Language Models in Fermi Estimation</title>
+    <link href="http://arxiv.org/abs/2611.16315v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.16315v1</id>
+    <published>2026-11-12T00:00:00Z</published>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <author>
+      <name>Carolina Fortuna</name>
+    </author>
+    <author>
+      <name>Blaz Bertalanic</name>
+    </author>
+    <summary type="text">Multi-agent systems of language models are often motivated by an averaging argument: if the agents' errors are unbiased and independent, the error of an aggregate of N answers falls as 1/sqrt(N). Fermi estimation, whose continuous answers are aggregated on the logarithmic scale, permits a direct test. We decompose the log10 error of each answer into the mean error of its model on the item, common to all its draws on the item, and a residual, and estimate both from 2.51M answers given before any communication by 15 open-weight models (3B-72B) on realFP, with replication under a single prompt pair on realFP, Science Olympiad Fermi questions and a guesstimation set. Given the item, teammates' errors are uncorrelated and teams behave as independent draws, but the item-level component accounts for a median 0.906 of the error variance over items. Teams of thirty therefore reduce a single agent's error by a median 1.7% (at most 5.4%), whereas draws that were also unbiased on each item would reduce it by 74-79%. All models compress their estimates toward about 10^6; this trend explains a median 17% of the item-level component, and a cross-validated linear recalibration on labelled items removes the overall bias but not that component. Three rounds of debate reduce within-team dispersion by 93% and leave the item-level component unchanged; revision without peers attains the same small gain. Mixing five models of similar accuracy reduces error by 6.6% relative to their own homogeneous teams, but no mixture improves on the most accurate model. Higher sampling temperature changes team error by about 1% at most, and contrastive activation steering not detectably; per-agent scaffold prompts (not significant after multiplicity correction) and skipping one layer in a single-model screen improve it. The results are conditional on the models, benchmarks, prompts and settings tested.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 pages, 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>SwarmSafe-Delta: Isolating Message Effects on LLM Agent Safety</title>
+    <link href="http://arxiv.org/abs/2611.16123v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.16123v1</id>
+    <published>2026-11-12T00:00:00Z</published>
+    <updated>2026-11-12T00:00:00Z</updated>
+    <author>
+      <name>Junru Zhu</name>
+    </author>
+    <summary type="text">When a tool-using LLM agent team violates policy, aggregate outcomes do not reveal whether an upstream message changed the executor's action. We introduce SwarmSafe-Delta, a paired executable protocol that freezes upstream computation, varies real, hidden, and format-matched placebo delivery, and scores a single committed action against deterministic benign and risky policy states under preassigned budgets.   Across four models and constructed optional tasks, real delivery at $N=4$ produces 21.4% risky-world violations, versus 5.0% with placebo and 1.0% with hidden delivery (paired differences +16.4 and +20.3 percentage points). Real delivery also improves benign task success, illustrating that suppressing communication sacrifices utility. In a second regime constructed to require an upstream lookup route, real delivery improves safe completion by 74.2 points relative to hidden delivery. These effects quantify message-delivery contrasts under specified information dependencies, not naturally occurring failure rates.   Exploratory action-level analyses show that the effect depends strongly on whether the upstream message recommends a prerequisite check or direct execution; model differences also largely track these message compositions. The contribution is a controlled, execution-grounded measurement protocol rather than a general claim that agent communication is harmful or protective.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 3 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>MULTILOOP: Evolving Multi-Agent Harnesses for Complex Information-Seeking Tasks</title>
+    <link href="http://arxiv.org/abs/2611.15754v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.15754v1</id>
+    <published>2026-11-11T00:00:00Z</published>
+    <updated>2026-11-11T00:00:00Z</updated>
+    <author>
+      <name>Daniela Gottesman</name>
+    </author>
+    <author>
+      <name>Gal Yona</name>
+    </author>
+    <author>
+      <name>Ori Ram</name>
+    </author>
+    <author>
+      <name>Zorik Gekhman</name>
+    </author>
+    <author>
+      <name>Jonathan Herzig</name>
+    </author>
+    <author>
+      <name>Mor Geva</name>
+    </author>
+    <author>
+      <name>Roee Aharoni</name>
+    </author>
+    <summary type="text">The performance of LLM-based agents depends not only on the underlying model but also on the harness: the prompts, tools, and orchestration logic around it. Recent works automate harness optimization with coding agents that analyze execution traces, diagnose failures, and edit the harness code; however, those focused on single-agent systems. Multi-agent harnesses are harder to optimize as fixing them requires changing how agents interact in addition to how each behaves. We study whether automated harness optimization can diagnose and repair failures in multi-agent systems through a case study on complex information-seeking tasks from DeepSearchQA [Gupta et al., 2026]. We apply MULTILOOP, a simple optimization loop in which a coding agent iteratively analyzes, evaluates and edits the harness. With only 10 training samples, the evolved harness improves accuracy by 4.6% over the base harness and by 3.2% over the best single-agent system. However, a taxonomy of failure modes before and after optimization shows that the orchestration failures that characterize multi-agent systems largely persist. Our findings motivate harness optimization methods that encourage structural changes to how agents delegate tasks and share information.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>DecArena: Evaluating Large-Scale Decentralized Multi-Agent Collaboration</title>
+    <link href="http://arxiv.org/abs/2611.15521v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.15521v1</id>
+    <published>2026-11-11T00:00:00Z</published>
+    <updated>2026-11-11T00:00:00Z</updated>
+    <author>
+      <name>Jiali Cheng</name>
+    </author>
+    <author>
+      <name>Oleg Rokhlenko</name>
+    </author>
+    <author>
+      <name>Joo-Kyung Kim</name>
+    </author>
+    <author>
+      <name>Hadi Amiri</name>
+    </author>
+    <author>
+      <name>Xingzhi Guo</name>
+    </author>
+    <summary type="text">Emerging personal AI agents raise fundamental scalability and privacy concerns for centralized multi-agent systems (MASs), which rely on a global orchestrator with broad access to agents, resources, and communication. In decentralized environments, global visibility is unavailable. Agents need to proactively discover non-local resources (e.g. tools, skills), and collaborate with other agents to solve tasks. We study decentralized multi-agent collaboration under graph-constrained communication, a natural reflection of human structures. Each agent observes only its local state and can interact only with neighboring agents. We introduce a benchmark with synthetic scalable distributed tool calling with 100K+ tools. Our experiments reveal that recent LLM agents struggle to discover non-local relevant resources and collaborate in decentralized setting. Moreover, standard reinforcement learning fails to reliably overcome this limitation, suggesting that decentralized MAS needs more explicit harness mechanisms for effective collaboration, even using SOTA LLMs. We then present a strong baseline \textbf{GraphHarness}, combining topology-aware warmup with self-improving LLM-based routing. Results show that GraphHarness substantially improves task success (+48.5) and produces higher quality collaboration (+30.6), while using fewer costs (+34.0) than baselines.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CL" />
+  </entry>
+  <entry>
+    <title>Beyond Named Mechanisms: Economic Institutions as a Design Space for Artificial Agents</title>
+    <link href="http://arxiv.org/abs/2611.15017v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.15017v1</id>
+    <published>2026-11-11T00:00:00Z</published>
+    <updated>2026-11-11T00:00:00Z</updated>
+    <author>
+      <name>Nikolos Gurney</name>
+    </author>
+    <author>
+      <name>Fred Morstatter</name>
+    </author>
+    <summary type="text">Multiagent research inherited its economic vocabulary of auctions, markets, prices, bargaining, and matching from a single observed case: human societies. Those institutions bundle identity, competence, execution, ownership, commitment, and settlement in ways that suit agents whose minds are private, who learn rather than copy skills, and who each persist as one person. Engineered agents need not share any of these constraints, making the list of familiar institutions look less like the entirety of economic organization and more like a sample from a larger, unmapped space. We sketch one way to make that space concrete: a provisional chart that records each institution, separately from the agents that run it, as a typed structure over positions, rights and duties, allocation, information, time, state, process, value, and external recognition. In this chart, named institutions become overlapping regions rather than fixed points, neighboring families separate along a few coordinates, and the gaps between them become places to search. We show what the shift in perspective buys with a simulation in which one technical act, copying an agent's competence, is institutionalized as a new independent supplier, as licensed capacity that creates no new participant, and as the splitting of one economic position into successors that inherit some obligations and not others. In a paired task, all three produce an identical technical trace despite differing in who exists, who owns the copy, who is obligated, and who gets paid. We close with a research program: building a principled chart of institution space, mapping how its implementable region shifts with agent capacities, and revising the chart wherever engineered agents expose distinctions it cannot express.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.GT; econ.GN" />
+  </entry>
   <entry>
     <title>PARLEY: Evaluating LLM Collaboration Through Cooperative Asymmetric Puzzles</title>
     <link href="http://arxiv.org/abs/2611.14242v1" rel="alternate" type="text/html" />
@@ -25,6 +178,46 @@
     <summary type="text">As large language models power autonomous agents, understanding how they collaborate and where they fail becomes critical. We introduce PARLEY, an extensible platform for studying LLM agent collaboration through four asymmetric puzzle tasks grounded in cognitive psychology (referential communication, joint coordination, perspective-taking, and spatial reasoning). GPT-4o agent pairs succeeded in 60.5% of conversations (N=400, 100 per task), with task-level variation (34-80%) reflecting distinct collaborative demands. From these conversations, we derived the data-driven PAC taxonomy: six failure types organized into Perception (visual interpretation and spatial reasoning), Adaptation (progress tracking and feedback integration), and Coordination (verification and grounding). Failure to incorporate external feedback was a critical indicator of unsuccessful collaboration, with agents repeatedly applying unsuccessful strategies. We also show that a taxonomy-guided intervention (N=200) improved average task success to 70.5%. These results demonstrate how PARLEY can be used to derive meaningful, data-driven insights that can in turn lead to improved agentic collaboration.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 8 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>RE-PRESENT: Evidence Triangulation across Alternative Candidate-Space Views for Efficient LLM Ensemble Inference</title>
+    <link href="http://arxiv.org/abs/2611.14780v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.14780v1</id>
+    <published>2026-11-10T00:00:00Z</published>
+    <updated>2026-11-10T00:00:00Z</updated>
+    <author>
+      <name>Juming Xiong</name>
+    </author>
+    <author>
+      <name>Weixin Liu</name>
+    </author>
+    <author>
+      <name>Kevin Guo</name>
+    </author>
+    <author>
+      <name>Congning Ni</name>
+    </author>
+    <author>
+      <name>Chongyu Qu</name>
+    </author>
+    <author>
+      <name>Junchao Zhu</name>
+    </author>
+    <author>
+      <name>Katherine Brown</name>
+    </author>
+    <author>
+      <name>Chao Yan</name>
+    </author>
+    <author>
+      <name>Bradley Malin</name>
+    </author>
+    <author>
+      <name>Zhijun Yin</name>
+    </author>
+    <summary type="text">Heterogeneous large language models (LLMs) exhibit complementary strengths, motivating routing and multi-model inference methods that seek to identify reliable predictions for each input. However, exploiting this complementarity remains challenging even when a correct prediction is available within the ensemble. We investigate this challenge across heterogeneous LLM ensembles and find that a simple single-round aggregation rule is highly competitive with learned routing methods, yet substantial oracle headroom remains. Further analysis shows that the evaluated single-round response signals provide limited discriminative power for identifying reliable predictions. In contrast, controlled re-presentations of the same question elicit complementary evidence about prediction reliability. Motivated by these findings, we introduce RE-PRESENT, a training-free framework that selectively re-presents disputed questions and directly aggregates candidate-level evidence across alternative views. Across seven multiple-choice benchmarks and two heterogeneous model ensembles, RE-PRESENT improves over strong single-round aggregation while offering a favorable accuracy--cost trade-off compared with self-consistency and multi-model debate.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
   <entry>
@@ -123,6 +316,24 @@
     <category term="Artificial Intelligence; cs.GT; cs.SI" />
   </entry>
   <entry>
+    <title>Steering Emergent Behavior in Multi-Agent LLM Systems via Information Networks</title>
+    <link href="http://arxiv.org/abs/2611.11714v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.11714v2</id>
+    <published>2026-11-09T00:00:00Z</published>
+    <updated>2026-11-09T00:00:00Z</updated>
+    <author>
+      <name>Sepehr Ilami</name>
+    </author>
+    <author>
+      <name>Babak Heydari</name>
+    </author>
+    <summary type="text">Large language model (LLM) agents increasingly operate in groups, each pursuing an individual objective while jointly determining system performance. If an operator controls which agent observes which other agent, but not their payoffs or messages, how should observations be structured to raise collective welfare? We make the information network (who observes whom) a design object, decoupled from the fixed interaction network over which agents act. Ten identical LLM agents play repeated group-decision games; by default each observes only an anonymous summary of the group's previous-round outcome, and a manager with a fixed budget adds directed observation links that reveal peers' past actions. Across 1,080 episodes and six games spanning coordination, anti-coordination, social dilemmas, and discovery, we ask how much information to share and, at a fixed budget, who should observe whom. Disclosure creates behavioral coupling: observation acts as a contagion channel whose welfare effect depends on the alignment between individually attractive behavior and the collective objective. First, the value of information is alignment-contingent: more peer information tends to help or be neutral when individual behavior is aligned with the collective goal, but under free-riding or congestion externalities it amplifies collectively harmful behavior; in a public-goods game the group does best with no information at all. We read this sign separation as a cross-game regularity within one controlled LLM population, not a model-invariant law. Second, at a fixed budget, who observes whom matters primarily when coupling is harmful: a modular "barbell" that lets sub-populations entrench harmful behavior is reliably the worst wiring, reversing the network-reciprocity intuition from human evolutionary game theory. These results argue against a default of full transparency for agent collectives.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; It is preliminary and is not suitable for public release yet&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.GT; cs.SI" />
+  </entry>
+  <entry>
     <title>Deterministic Narrative Gravity: Bridging Theory of Mind and Historical Simulation through ABM-LLM Architectures</title>
     <link href="http://arxiv.org/abs/2611.11212v1" rel="alternate" type="text/html" />
     <id>http://arxiv.org/abs/2611.11212v1</id>
@@ -172,213 +383,6 @@
     </author>
     <summary type="text">Cryptocurrency perpetual futures form a large-scale online financial market in which automated agents manage interacting asset positions under changing conditions. Policies relying solely on micro-level numerical states may overlook cross-asset relationships and become vulnerable to regime shifts, while macro-level linguistic judgments alone cannot ensure precise measurement or optimize positions under trading costs and risk constraints. Connecting market interpretation to coordinated multi-asset decisions remains challenging. We propose M3FT, a micro-macro-micro framework for multi-agent perpetual futures trading. The first micro stage constructs time-aligned numerical states from exchange and account observations through deterministic processing. The macro stage transforms these measured states into explicit market interpretations without adding external market information. Four asset-specific teams, each comprising a Market Interpreter, an Asset Communicator, and a Risk Reviewer, refine these interpretations through experience retrieval, cross-asset communication, and review of joint-position risks. The final micro stage combines encoded linguistic representations with the original numerical states to learn continuous target positions. We implement this framework with a language-conditioned multi-agent policy: asset actors use global and private numerical states together with linguistic context, while centralized critics evaluate joint actions using portfolio-wide information and shared-account rewards. Experiments on real cryptocurrency perpetual futures data, including comparisons across language models and policy-learning algorithms and component ablations, show that the best-performing M3FT configuration achieves a higher mean test return than the evaluated direct LLM, numerical RL, and rule-based baselines.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>A Separation Principle for Cooperative Multi-Agent Reinforcement Learning</title>
-    <link href="http://arxiv.org/abs/2611.09644v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.09644v1</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Lucia Pezzetti</name>
-    </author>
-    <author>
-      <name>Nicolas Lanzetti</name>
-    </author>
-    <author>
-      <name>Antonio Terpin</name>
-    </author>
-    <author>
-      <name>Florian Dörfler</name>
-    </author>
-    <author>
-      <name>Giorgia Ramponi</name>
-    </author>
-    <summary type="text">We study cooperative multi-agent reinforcement learning (MARL) problems in which agents evolve under decoupled noisy dynamics but share a population objective. A canonical example is a mobility operator that orchestrates a fleet of vehicles to meet customer demand. The stochastic and time-varying nature of these problems calls for learning approaches, yet existing MARL algorithms do not scale: learning assignment and routing jointly over the full state-action space becomes prohibitive as the number of agents grows. Formulating the problem over the space of probability measures, we prove a separation principle: the population cost-to-go function is upper bounded by an optimal transport problem whose transportation cost is the target-conditioned single-agent cost-to-go function. This simplifies the multi-agent problem to learning a single-agent policy and coordinating the agents via optimal transport. Building on this principle, we introduce SALT (Separation-based Assignment and Learning via optimal Transport), a family of algorithms that learn a target-conditioned single-agent policy using any standard reinforcement learning algorithm, and then coordinate the agents via optimal transport. Since learning occurs at the single-agent level, SALT scales to fleet sizes where MARL baselines become intractable and transfers without retraining to fleet sizes unseen during training. In a vehicle-delivery experiment on the southern Manhattan road network, where MARL baselines are computationally prohibitive, SALT improves travel time by 15-21% over a shortest-path routing heuristic. In stochastic grid worlds, SALT reduces average travel times by 23-61% relative to MARL baselines and scales to population sizes where these methods fail.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Incentive Pathologies in a Live LLM Agent Arena: An Empirical Study of Concentration, Reward-Rule Implementation Discrepancy, and Network Dilution</title>
-    <link href="http://arxiv.org/abs/2611.09445v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.09445v1</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Lei Zhenbing</name>
-    </author>
-    <author>
-      <name>Lei Chang</name>
-    </author>
-    <summary type="text">We audit one live LLM agent arena (AITRAP; 22 autonomous agent seats, ~96,000 reasoning nodes) over nine days (Oct 16-25, 2026), during which the platform deployed two bundled incentive changes: a progressive tax reform (V2.9.3, Oct 19) and a seed-inversion with explorer-side action update (V3.0, Oct 21). These serve as before-and-after markers, not cleanly isolated interventions. Four exploratory predictions are tested against ten data frames (F1-F10) using the Gini coefficient, Top-K concentration share, code-level reconstruction of the continuation-bonus mechanism, and the Mann-Kendall trend test. The Gini analysis is inconclusive at 95% confidence (bootstrap intervals straddle 0.7). The Top-4 node-activity-score share falls from 97.2% (Oct 19, pre-V2.9.3) to 49.4% (Oct 25, post-V3.0; 56.7% under a merge-seat assumption). The continuation bonus, announced as depth-based x10, resolves at code level to a four-condition anti-abuse gate paying x2.85 in the typical case and permanently blocking the self-continuation it superficially rewards; the gate was active ~40 hours before the V3.0 announcement. The events-per-node ratio declines significantly (Mann-Kendall S=-45, z=-3.94, p=8.3e-5) from 7.36 to 7.069. We discuss implications for incentive designers, the announcement-implementation gap, and public peer review as an event record.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 29 pages, 2 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="physics.soc-ph" />
-  </entry>
-  <entry>
-    <title>ReSUM: Reasoning-Driven Multi-Agent Framework for Query-Focused Summarization</title>
-    <link href="http://arxiv.org/abs/2611.09349v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.09349v1</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Sonali</name>
-    </author>
-    <author>
-      <name>Deeksha Varshney</name>
-    </author>
-    <author>
-      <name>Asif Ekbal</name>
-    </author>
-    <summary type="text">LLMs excel at language tasks, but long-meeting QFS remains difficult due to complex speaker dynamics, sparse key information, and limited data. Meetings involve disfluencies, long transcripts and complex discourse. QFS have high risk of information omission, hallucination, even for advanced models such as GPT-4-mini and Gemini. Existing end-to-end methods compress retrieval, evidence extraction, and summary generation into a single pass, failing to handle the complex reasoning required for targeted meeting summaries. We propose ReSUM, a modular multi-LLM framework coordinated by a planner that orchestrates retrieval and summarization agents. By distilling teacher reasoning into query- and plan-conditioned retrievers and summarizers, ReSUM enhances long-context robustness, minimizes irrelevant exploration, and generates more faithful and comprehensive query-focused summaries. Experiments show consistent gains on query-focused meeting summarization benchmarks.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 4 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Recursively Self-Improving Electromagnetic Spectrum Agents: Architecture and Operation</title>
-    <link href="http://arxiv.org/abs/2611.09318v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.09318v1</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Baolin Chong</name>
-    </author>
-    <author>
-      <name>Dongfang Xu</name>
-    </author>
-    <author>
-      <name>Qiaosi Wang</name>
-    </author>
-    <author>
-      <name>Fuhui Zhou</name>
-    </author>
-    <author>
-      <name>Qihui Wu</name>
-    </author>
-    <summary type="text">Electromagnetic spectrum agents (ESAs) must contend with changing environments and task requirements during sustained autonomous operation, yet their existing capabilities may not remain suitable for new operating conditions. This article proposes recursively self-improving electromagnetic spectrum agents (RSI-ESAs) that use operational feedback to update their capabilities and build on prior improvements. We present their architecture and editable components, and describe a self-improvement process encompassing problem diagnosis, candidate generation, validation, and inheritance. By retaining effective task versions and using modification records and diagnostic knowledge to guide subsequent updates, RSI-ESAs can accumulate task capabilities and improvement experience across successive rounds. A shared-spectrum scheduling case study illustrates improved task performance and capability accumulation over multiple improvement rounds under the tested conditions. Finally, we discuss open challenges for broader tasks and long-term operation, outlining research directions for the continued capability development of ESAs.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>From Emergence to Reversibility: Toward Reversible Multi-Agent Systems</title>
-    <link href="http://arxiv.org/abs/2611.09054v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.09054v1</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Zhengye Han</name>
-    </author>
-    <author>
-      <name>Linda Ng Boyle</name>
-    </author>
-    <summary type="text">Multi-agent systems become capable through institutional mechanisms, such as rules that route information to agents that act on it. These mechanisms are also natural places to restrict the system. Yet as agents learn, share memory, delegate, and repair failures, the collective can find other paths to the same effects: a restriction on the original mechanism still operates but no longer stops them, while routine performance and compliance checks pass. We propose \textbf{Reversible Multi-agent Systems} as a research agenda: collectives that grow while an authorized supervisor can still restrict specified effects, keep them restricted as agents adapt, and reconstitute useful cooperation under renewed authority. What is reversed is the ability to produce a specified effect; restrictions must hold even if learned knowledge persists. The goal is to preserve effective intervention, not a particular mechanism: at every step of growth, some authorized intervention must keep a specified prohibited effect rare while maintaining required service. We identify three research problems: tracking what capabilities depend on, handing off control before an old mechanism loses its effect, and separating legitimate repair from unauthorized reconstruction. We outline how to evaluate control across growth paths, back control claims with evidence, and allocate the rights to restrict and restore.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Sharing the Road: LLM-Based Bargaining in Mixed-Autonomy Traffic</title>
-    <link href="http://arxiv.org/abs/2611.09004v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.09004v1</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Lingxiao Zhou</name>
-    </author>
-    <author>
-      <name>Di Chen</name>
-    </author>
-    <author>
-      <name>Jia Li</name>
-    </author>
-    <summary type="text">Mixed-autonomy traffic involves heterogeneous driving populations competing for shared road space. Previous studies have shown the existence and emergence of collective rationality using game-theoretic and reinforcement learning approaches, which rely on explicitly specified behavioral assumptions or reward functions for driving agents. However, how bargaining behaviors between driving agents evolve and lead to collective outcomes based on richer agent characteristics and language-based reasoning remains less understood. To fill this gap, we develop a bargaining framework based on large language models (LLMs) in which population-level autonomous vehicle (AV) and human-driven vehicle (HV) agents negotiate road-space allocations under heterogeneous objectives and private information. Through controlled experiments varying traffic composition, agent objectives, and traffic-domain knowledge, we examine bargaining behavior, coordination, and resource utilization. Results show that negotiated allocations respond to relative traffic density without strictly following proportional sharing, while density-balanced states exhibit greater coordination difficulty. Fairness-oriented objectives substantially improve agreement rates but do not necessarily yield equally high road-space utilization. Furthermore, domain knowledge affects bargaining outcomes differently across objective configurations, shaping both coordination and the role-dependent effects of fairness. These findings demonstrate the potential of LLM-based bargaining for modeling and designing interactions among driving agents in mixed-autonomy traffic.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Phantom Consensus: Measuring Social Reasoning in Multi-Agent LLM Decision-Making</title>
-    <link href="http://arxiv.org/abs/2611.08971v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.08971v1</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Disha Sheshanarayana</name>
-    </author>
-    <author>
-      <name>Rajat Subhra Pal</name>
-    </author>
-    <author>
-      <name>Manjira Sinha</name>
-    </author>
-    <author>
-      <name>Tirthankar Dasgupta</name>
-    </author>
-    <summary type="text">Multi-agent LLM systems increasingly aggregate judgments across model instances, but reasoning about other agents can itself introduce failure. We study a setting in which LLMs shift their public decisions after observing ambiguous social signals while reporting inaccurate estimates of what other agents privately judged, even when the group's recorded private judgments do not support the apparent consensus. We call this failure phantom consensus and study it as a pluralistic-ignorance-style pattern in controlled LLM collectives. To measure this phenomenon, we introduce PHANTOM-Bench, a benchmark that separates isolated private judgments, public decisions after ambiguous social signals, elicited estimates of the group's private judgment, transparency-based recovery, and controls for neutral public text and explicit vote-following. Across nine closed- and open-weight models, ambiguous public signals consistently degrade decision quality and can turn correct private group judgments into incorrect public collective outcomes. Public accuracy drops by as much as 47.8 percentage points, and collective rationality failures reach 47.3% in the most susceptible setting. We observe substantial errors in reported group-private beliefs alongside public-stage failures, while control conditions reveal model-dependent differences in susceptibility to ambiguous and explicit peer signals. Revealing the agents' recorded private decisions repairs many failures without revealing the gold label, although recovery varies across models. Our results show that evaluating multi-agent LLM systems requires measuring not only final agreement, but whether that agreement reflects independently measured private judgments or an apparent consensus.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.CL" />
-  </entry>
-  <entry>
-    <title>AIM: Adaptive Interaction in Multi-Agent Debate for Multimodal LLM Inference</title>
-    <link href="http://arxiv.org/abs/2611.08950v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.08950v1</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Wei Fan</name>
-    </author>
-    <author>
-      <name>JinYi Yoon</name>
-    </author>
-    <author>
-      <name>Bo Ji</name>
-    </author>
-    <summary type="text">Multi-Agent Debate (MAD) improves reasoning on multimodal tasks, but its accuracy and token efficiency depend on how agents interact during debate. A largely overlooked design choice is which interaction modalities agents use to exchange evidence. Existing methods rely on fixed text- or graph-based interaction, which fails to convey fine-grained multimodal evidence and thus degrades accuracy while inflating token cost due to verbose descriptions. To address this, we propose Adaptive Interaction in Multi-Agent Debate (AIM), an adaptive routing framework that dynamically selects the optimal modality combination for inter-agent interaction in multimodal MAD. Beyond text and graph, AIM introduces task-dependent modality interaction, where agents exchange targeted regions of interest from the task-specific multimodal input, such as image regions, audio segments, or spatio-temporal video clips. To determine the best combination for each instance, AIM first generates a structured baseline response and extracts interpretable routing features that capture which evidence the instance requires, how confident the baseline agent is, and how much new evidence each modality would add beyond the baseline response. A lightweight router then uses these routing features to select a modality combination that avoids both under-fusion (i.e., agents miss decisive evidence) and over-fusion (i.e., redundant modalities inflate token cost) risks. Across eight benchmarks spanning three multimodal task families, \name achieves the highest accuracy. Combining modalities improves accuracy by up to 6.4\% over the best single-modality baseline, and adapting the combination per instance adds up to 4.2\% over the most accurate fixed combination of each benchmark with up to 53.4\% fewer tokens.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>ODD+LLM: Specifying LLM-Agent Behavior for Reproducible Social Simulation</title>
-    <link href="http://arxiv.org/abs/2611.08932v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.08932v1</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Justin Downes</name>
-    </author>
-    <author>
-      <name>Robby Milletich</name>
-    </author>
-    <author>
-      <name>Newel Hirst</name>
-    </author>
-    <summary type="text">The ODD protocol is the de facto standard for describing agent-based models, but it lacks vocabulary for the components that determine LLM-agent behavior: prompt assembly, memory serialization, parsing, and retry logic. We propose ODD+LLM, a backward-compatible extension adding five documentation blocks grounded in the CoALA cognitive-architecture framework. To show that the gap matters, we conduct a multiverse analysis [Steegen et al., 2016] of a published LLM naming-game simulation, varying six specification choices a reimplementer must make. Variants that are defensible readings of the paper stay within statistical noise of our baseline reconstruction. Missing one instruction that the paper states but is easy to overlook (that the model answers as an outside observer rather than as a player) raises the share of runs settling on the convention agents individually favor from 0.35 to 1.00 and makes convergence three times faster, in a reimplementation that uses a different model from the original. We complement the demonstration with a reconstruction-sufficiency review of 28 published LLM-agent simulations, finding that the details of how prompts are built and how model outputs are parsed are undetermined in 77% of cases, and that no paper fully specifies its main LLM call. ODD+LLM gives the field a standard home for information it already produces but currently scatters across code repositories, supplementary files, and undocumented defaults.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>AIM: Adaptive Interaction in Multi-Agent Debate for Multimodal LLM Inference</title>
-    <link href="http://arxiv.org/abs/2611.08950v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.08950v2</id>
-    <published>2026-11-06T00:00:00Z</published>
-    <updated>2026-11-06T00:00:00Z</updated>
-    <author>
-      <name>Wei Fan</name>
-    </author>
-    <author>
-      <name>JinYi Yoon</name>
-    </author>
-    <author>
-      <name>Bo Ji</name>
-    </author>
-    <summary type="text">Multi-Agent Debate (MAD) improves reasoning on multimodal tasks, but its accuracy and token efficiency depend on how agents interact during debate. A largely overlooked design choice is which interaction modalities agents use to exchange evidence. Existing methods rely on fixed text- or graph-based interaction, which fails to convey fine-grained multimodal evidence and thus degrades accuracy while inflating token cost due to verbose descriptions. To address this, we propose Adaptive Interaction in Multi-Agent Debate (AIM), an adaptive routing framework that dynamically selects the optimal modality combination for inter-agent interaction in multimodal MAD. Beyond text and graph, AIM introduces task-dependent modality interaction, where agents exchange targeted regions of interest from the task-specific multimodal input, such as image regions, audio segments, or spatio-temporal video clips. To determine the best combination for each instance, AIM first generates a structured baseline response and extracts interpretable routing features that capture which evidence the instance requires, how confident the baseline agent is, and how much new evidence each modality would add beyond the baseline response. A lightweight router then uses these routing features to select a modality combination that avoids both under-fusion (i.e., agents miss decisive evidence) and over-fusion (i.e., redundant modalities inflate token cost) risks. Across eight benchmarks spanning three multimodal task families, AIM achieves the highest accuracy. Combining modalities improves accuracy by up to 6.4% over the best single-modality baseline, and adapting the combination per instance adds up to 4.2% over the most accurate fixed combination of each benchmark with up to 53.4% fewer tokens.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS 2026)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
