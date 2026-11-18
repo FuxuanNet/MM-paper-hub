@@ -4,12 +4,150 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-17T08:47:01Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 19 entries</subtitle>
+  <updated>2026-11-18T08:15:09Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 23 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Groups of AI agents underuse resources despite shared evidence of increased capacity</title>
+    <link href="http://arxiv.org/abs/2611.22632v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.22632v1</id>
+    <published>2026-11-17T00:00:00Z</published>
+    <updated>2026-11-17T00:00:00Z</updated>
+    <author>
+      <name>Takahiro Ezaki</name>
+    </author>
+    <author>
+      <name>Naoto Imura</name>
+    </author>
+    <author>
+      <name>Katsuhiro Nishinari</name>
+    </author>
+    <summary type="text">When AI agents share limited resources, such as computing services or public infrastructure, their individual choices affect how much work they complete as a group. Can sharing evidence of what is available let a group make full use of its resources after capacity changes? We tested this with language-model agents choosing between two simulated servers. One server recovered while its status report still listed it as unavailable. Each server had limited capacity per round, so rejected jobs required another attempt before the deadline. Telling agents that recovery was possible reduced missed deadlines. In controlled tests with Anthropic's Claude Haiku 5.5, no agent tried the recovered server after a rule reminder, yet all chose it when shown a successful request record. After sharing, all five models tested left capacity unused. Keeping the success record fixed, we gave agents numbers without instructions, using each value equally often but giving group members either identical or distinct numbers. With OpenAI's GPT-6.1 Sol or Google's Gemini 3.5 Flash-Lite, distinct numbers spread simultaneous requests across servers and increased job completions even though overall choice frequencies barely changed. Telling AI agents which resources are available leaves a second design challenge: helping them spread demand across those resources.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 47 pages including Supplementary Information; 7 main figures and 4 supplementary figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Surfacing Disagreement Beats Resolving It: A Gated Ablation Study of Provenance-Weighted Memory for Multi-Agent Debate</title>
+    <link href="http://arxiv.org/abs/2611.22461v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.22461v1</id>
+    <published>2026-11-17T00:00:00Z</published>
+    <updated>2026-11-17T00:00:00Z</updated>
+    <author>
+      <name>Ziaullah Khan</name>
+    </author>
+    <author>
+      <name>Abdul Rehman Khalid</name>
+    </author>
+    <author>
+      <name>Shrestha Nischal Lal</name>
+    </author>
+    <author>
+      <name>Nheng Vanchhay</name>
+    </author>
+    <author>
+      <name>Md Ariful Islam Mozumder</name>
+    </author>
+    <author>
+      <name>Hee-Cheol Kim</name>
+    </author>
+    <summary type="text">Shared memory for multi-agent debate is usually built to resolve inconsistency: retrieval returns one winning fact and the disagreement disappears before any agent sees it. We ask whether that is correct. In DebateGraph, four backends share one contract (read/write/snapshot), so five mechanisms from the agent-memory literature can be removed independently under a fixed budget, each gated on a pre-declared threshold. Across 39 runs one survives: preserving contradictions and passing the ranked conflict set to the debate, rather than collapsing it to a winner, improves F1 by +0.340 (95% CI [+0.267, +0.414]) and cuts attack success from 22 to 7 of 122 poisoned items (McNemar exact p=0.0003), at equal cost. Reaching it meant fixing a bottleneck in our harness: conflict sets are built only over retrieved edges, and our pre-declared cap left three quarters of planted contradictions unretrievable, first measuring the mechanism at +0.084. The effect replicates on two retrieval substrates and directionally on HotpotQA documents. No other mechanism survives, and two are worse than inert: once contradictions reach the prompt, a write trust-gate and the router's provenance features each cost accuracy (-0.075 and -0.096 F1). The gate fails structurally: poisoned objects are always entities the graph already contains, against 53% of gold, so groundedness scores the lie above a truthful first mention. We release the harness, attack set, and logs, and argue that silently reconciling memory is the assumption worth abandoning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.CL" />
+  </entry>
+  <entry>
+    <title>OAK-Mind: Zero-Training Mental Health Change Inference from Passive Sensing via Knowledge-Grounded Multi-Agent LLMs</title>
+    <link href="http://arxiv.org/abs/2611.22248v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.22248v1</id>
+    <published>2026-11-17T00:00:00Z</published>
+    <updated>2026-11-17T00:00:00Z</updated>
+    <author>
+      <name>Yishu Ji</name>
+    </author>
+    <author>
+      <name>Zhihan Jiang</name>
+    </author>
+    <author>
+      <name>Will Ke Wang</name>
+    </author>
+    <author>
+      <name>Yuang Fan</name>
+    </author>
+    <author>
+      <name>Anind K. Dey</name>
+    </author>
+    <author>
+      <name>Xuhai "Orson" Xu</name>
+    </author>
+    <summary type="text">Wearable and smartphone sensors capture behavioral signals associated with mental health, yet inferring mental health outcomes from these signals has traditionally relied on supervised models requiring labeled data and offering limited insight into their predictions. Large language models (LLMs) offer new opportunities to reason over behavioral evidence, but existing LLM-based approaches to passive sensing have largely continued to rely on task-specific fine-tuning or sensor-specific pretraining. In this paper, we introduce \textbf{OAK-Mind}, a zer\textbf{O}-training, multi-\textbf{A}gent, \textbf{K}nowledge-grounded LLM pipeline for inferring mental health changes from passive sensing data. The pipeline organizes sensing data into behavioral dimensions including sleep, physical activity, location mobility, and smartphone use, and orchestrates specialized agents grounded in mental health literature to interpret longitudinal behavioral changes. It synthesizes their assessments and applies questionnaire-based symptom rating to infer changes relative to an individual's baseline assessment with human-readable rationale grounded in observed behavioral patterns and domain knowledge. Across datasets and prediction tasks, while without task-specific training, OAK-Mind achieves comparable or better performance than the most predictive supervised baselines trained on additional labeled samples. It also demonstrate consistent improvement upon direct prompting across four tested LLM backbones. Ablation analyses support the benefits of combining behavioral interpretation with symptom rating, distributing analysis across domain-specific agents, and incorporating domain knowledge. Our findings highlight the potential of knowledge-grounded, multi-agent LLMs for training-free inference of mental health changes from passive sensing data.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 30 pages, 4 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.HC; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Emergence and Collapse of Leader-Follower Flocks through Phantom Targets: Surprise Nullification in Bayesian and Inverse Bayesian Inference</title>
+    <link href="http://arxiv.org/abs/2611.22190v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.22190v1</id>
+    <published>2026-11-17T00:00:00Z</published>
+    <updated>2026-11-17T00:00:00Z</updated>
+    <author>
+      <name>Shuji Shinohara</name>
+    </author>
+    <author>
+      <name>Daiki Morita</name>
+    </author>
+    <author>
+      <name>Yoshihiro Nakajima</name>
+    </author>
+    <author>
+      <name>Takeshi Takano</name>
+    </author>
+    <author>
+      <name>Masakazu Higuchi</name>
+    </author>
+    <author>
+      <name>Ung-il Chung</name>
+    </author>
+    <author>
+      <name>Yukio-Pegio Gunji</name>
+    </author>
+    <summary type="text">In Bayesian and inverse Bayesian (BIB) inference, a large prediction error can trigger surprise nullification, which expands belief and likelihood variances by a common factor, leaving the updated variance ratio the same as in standard Bayesian updating. This can increase belief uncertainty while keeping the learning rate low. In the simulations, three agents used BIB inference to predict one another's positions and moved toward those predictions, repeatedly forming leader-follower flocks that subsequently collapsed despite having no alignment rules or designated leaders. Three leadership criteria (front position, heading stability, and flock initiation) identified the same agent in 89% of eligible flocks, with different agents serving as leaders across flocks. Flocks formed when an agent nearly stopped incorporating another's observations (link cut) and moved straight toward a predicted position detached from reality (phantom target), thereby attracting followers. Link cuts arose when two successive resets assigned a very small and then an ordinary likelihood variance, sharply increasing the likelihood-to-belief variance ratio. Flocks collapsed upon link recovery or when returning phantom targets balanced the leader's forward and backward attractions. Without nullification, cuts persisted throughout the analysis period; expanding only belief variance caused recovery within a few steps. Expanding likelihood variance as well allowed cuts to persist while belief uncertainty grew, enabling later resets and recovery. Thus, nullification preserves relative precision, allowing cuts and flocks to persist, while reducing absolute precision to enable recovery and collapse, reconciling these seemingly opposing processes through a single operation. These results suggest that, in this model, individually inaccurate predictions can give rise to collective order.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="nlin.AO" />
+  </entry>
+  <entry>
+    <title>Addressing Exogenous Variability in Cooperative Multi-Agent Reinforcement Learning</title>
+    <link href="http://arxiv.org/abs/2611.22067v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.22067v1</id>
+    <published>2026-11-17T00:00:00Z</published>
+    <updated>2026-11-17T00:00:00Z</updated>
+    <author>
+      <name>Seongmin Kim</name>
+    </author>
+    <author>
+      <name>Woohyeon Byeon</name>
+    </author>
+    <author>
+      <name>Jiwon Jeon</name>
+    </author>
+    <author>
+      <name>Seungyul Han</name>
+    </author>
+    <author>
+      <name>Youngchul Sung</name>
+    </author>
+    <summary type="text">Cooperative multi-agent reinforcement learning (MARL) often fails under exogenous variability such as shifts in opponents or environment regimes that cannot be controlled by the team but alter the transition dynamics. We formalize this challenge as Exogenous Dec-POMDP (ED-POMDP), in which an episode-level exogenous regime, selected independently of the team, indexes the dynamics, and the global state is partitioned into components that are directly responsive to the current team action and components that are not directly action-responsive at the current step. This formulation exposes mediated influence: while team actions do not directly update the latter at the current step, they can shape their later evolution through induced changes in the former. Based on this, we propose LEICA, a CTDE-compatible algorithm that learns history-conditioned context representations for both components and shapes policy updates using agent-wise, influence-weighted counterfactual intrinsic rewards. Across SMAX benchmarks with opponent strategy shifts, LEICA consistently improves both training performance and generalization to unseen opponents' strategies over existing baselines, supporting the usefulness of influence-weighted shaping under exogenous train-test regime shifts.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Machine Learning" />
+  </entry>
   <entry>
     <title>Even Loose Proximity Constraints Make Makespan-optimal Unlabeled Multi-agent Pathfinding Hard</title>
     <link href="http://arxiv.org/abs/2611.21277v1" rel="alternate" type="text/html" />
@@ -177,6 +315,39 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="cs.HC" />
+  </entry>
+  <entry>
+    <title>Coordination of Heterogeneous Teams with Uncertain Task Requirements</title>
+    <link href="http://arxiv.org/abs/2611.21828v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.21828v1</id>
+    <published>2026-11-16T00:00:00Z</published>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <author>
+      <name>Jongann Lee</name>
+    </author>
+    <author>
+      <name>Melkior Ornik</name>
+    </author>
+    <summary type="text">Coordinating a team of heterogeneous agents to complete tasks with unknown requirements is a challenging multi-agent planning problem. Agents differ in their ability to discover task requirements and in their ability to engage tasks, so the planner must coordinate task discovery, execution, and staging. This paper introduces a hierarchical planner that uses a graph neural network policy to assign actions to agents, then finds a path to the action's location using a shortest-path algorithm. The central part of our approach is the CAAT graph, which is a graph representation of the planning context consisting of the agents, tasks, capabilities, and actions. We demonstrate that our learned planner can jointly coordinate a heterogeneous team to simultaneously discover task requirements and complete tasks in a shorter time compared to baselines that optimize task discovery and task engagement independently. Furthermore, we show that our policy can zero-shot plan on out-of-distribution settings by training only on an outdoor map then transferring without finetuning to an indoor map with more agents, tasks, and capabilities than seen during training.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Even Loose Proximity Constraints Make Makespan-optimal Unlabeled Multi-agent Pathfinding Hard</title>
+    <link href="http://arxiv.org/abs/2611.21277v2" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.21277v2</id>
+    <published>2026-11-16T00:00:00Z</published>
+    <updated>2026-11-16T00:00:00Z</updated>
+    <author>
+      <name>Takahiro Suzuki</name>
+    </author>
+    <author>
+      <name>Keisuke Okumura</name>
+    </author>
+    <summary type="text">We study $r$-Connected Unlabeled Multi-agent Pathfinding ($r$CUMAPF), a variant of MAPF where interchangeable agents have a proximity range $r\in \mathbb{N}$, and agents must form a single group in a given graph $G$ through limited-range communication at all times. The problem arises in fundamental applications such as self-reconfiguration and platooning, while standard MAPF does not capture proximity constraints. For the problem of finding a makespan-optimal solution, prior work shows NP-hardness for $r=1$ and polynomial-time solvability when $r$ is sufficiently large; the complexity for the intermediate case $2\le r$ is largely unknown. To narrow this gap, we show that finding a solution to $r$CUMAPF with makespan at most $2$ is NP-hard for $2\le r= O(|V|^{1-\varepsilon})$, where $0&lt;\varepsilon\le 1$ is a fixed constant and $|V|$ is the number of vertices. As a consequence, we show that the labeled analogue of $r$CUMAPF is also NP-hard under the same condition.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
   </entry>
   <entry>
     <title>World-Model-Guided Plan Search for Cooperative Mixed-Traffic Control at Bottlenecks</title>
@@ -405,80 +576,5 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>MULTILOOP: Evolving Multi-Agent Harnesses for Complex Information-Seeking Tasks</title>
-    <link href="http://arxiv.org/abs/2611.15754v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.15754v1</id>
-    <published>2026-11-11T00:00:00Z</published>
-    <updated>2026-11-11T00:00:00Z</updated>
-    <author>
-      <name>Daniela Gottesman</name>
-    </author>
-    <author>
-      <name>Gal Yona</name>
-    </author>
-    <author>
-      <name>Ori Ram</name>
-    </author>
-    <author>
-      <name>Zorik Gekhman</name>
-    </author>
-    <author>
-      <name>Jonathan Herzig</name>
-    </author>
-    <author>
-      <name>Mor Geva</name>
-    </author>
-    <author>
-      <name>Roee Aharoni</name>
-    </author>
-    <summary type="text">The performance of LLM-based agents depends not only on the underlying model but also on the harness: the prompts, tools, and orchestration logic around it. Recent works automate harness optimization with coding agents that analyze execution traces, diagnose failures, and edit the harness code; however, those focused on single-agent systems. Multi-agent harnesses are harder to optimize as fixing them requires changing how agents interact in addition to how each behaves. We study whether automated harness optimization can diagnose and repair failures in multi-agent systems through a case study on complex information-seeking tasks from DeepSearchQA [Gupta et al., 2026]. We apply MULTILOOP, a simple optimization loop in which a coding agent iteratively analyzes, evaluates and edits the harness. With only 10 training samples, the evolved harness improves accuracy by 4.6% over the base harness and by 3.2% over the best single-agent system. However, a taxonomy of failure modes before and after optimization shows that the orchestration failures that characterize multi-agent systems largely persist. Our findings motivate harness optimization methods that encourage structural changes to how agents delegate tasks and share information.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>DecArena: Evaluating Large-Scale Decentralized Multi-Agent Collaboration</title>
-    <link href="http://arxiv.org/abs/2611.15521v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.15521v1</id>
-    <published>2026-11-11T00:00:00Z</published>
-    <updated>2026-11-11T00:00:00Z</updated>
-    <author>
-      <name>Jiali Cheng</name>
-    </author>
-    <author>
-      <name>Oleg Rokhlenko</name>
-    </author>
-    <author>
-      <name>Joo-Kyung Kim</name>
-    </author>
-    <author>
-      <name>Hadi Amiri</name>
-    </author>
-    <author>
-      <name>Xingzhi Guo</name>
-    </author>
-    <summary type="text">Emerging personal AI agents raise fundamental scalability and privacy concerns for centralized multi-agent systems (MASs), which rely on a global orchestrator with broad access to agents, resources, and communication. In decentralized environments, global visibility is unavailable. Agents need to proactively discover non-local resources (e.g. tools, skills), and collaborate with other agents to solve tasks. We study decentralized multi-agent collaboration under graph-constrained communication, a natural reflection of human structures. Each agent observes only its local state and can interact only with neighboring agents. We introduce a benchmark with synthetic scalable distributed tool calling with 100K+ tools. Our experiments reveal that recent LLM agents struggle to discover non-local relevant resources and collaborate in decentralized setting. Moreover, standard reinforcement learning fails to reliably overcome this limitation, suggesting that decentralized MAS needs more explicit harness mechanisms for effective collaboration, even using SOTA LLMs. We then present a strong baseline \textbf{GraphHarness}, combining topology-aware warmup with self-improving LLM-based routing. Results show that GraphHarness substantially improves task success (+48.5) and produces higher quality collaboration (+30.6), while using fewer costs (+34.0) than baselines.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.CL" />
-  </entry>
-  <entry>
-    <title>Beyond Named Mechanisms: Economic Institutions as a Design Space for Artificial Agents</title>
-    <link href="http://arxiv.org/abs/2611.15017v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.15017v1</id>
-    <published>2026-11-11T00:00:00Z</published>
-    <updated>2026-11-11T00:00:00Z</updated>
-    <author>
-      <name>Nikolos Gurney</name>
-    </author>
-    <author>
-      <name>Fred Morstatter</name>
-    </author>
-    <summary type="text">Multiagent research inherited its economic vocabulary of auctions, markets, prices, bargaining, and matching from a single observed case: human societies. Those institutions bundle identity, competence, execution, ownership, commitment, and settlement in ways that suit agents whose minds are private, who learn rather than copy skills, and who each persist as one person. Engineered agents need not share any of these constraints, making the list of familiar institutions look less like the entirety of economic organization and more like a sample from a larger, unmapped space. We sketch one way to make that space concrete: a provisional chart that records each institution, separately from the agents that run it, as a typed structure over positions, rights and duties, allocation, information, time, state, process, value, and external recognition. In this chart, named institutions become overlapping regions rather than fixed points, neighboring families separate along a few coordinates, and the gaps between them become places to search. We show what the shift in perspective buys with a simulation in which one technical act, copying an agent's competence, is institutionalized as a new independent supplier, as licensed capacity that creates no new participant, and as the splitting of one economic position into successors that inherit some obligations and not others. In a paired task, all three produce an identical technical trace despite differing in who exists, who owns the copy, who is obligated, and who gets paid. We close with a research program: building a principled chart of institution space, mapping how its implementable region shifts with agent capacities, and revising the chart wherever engineered agents expose distinctions it cannot express.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; cs.GT; econ.GN" />
   </entry>
 </feed>
