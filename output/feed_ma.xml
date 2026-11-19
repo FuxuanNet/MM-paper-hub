@@ -4,12 +4,104 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-18T08:15:09Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 23 entries</subtitle>
+  <updated>2026-11-19T08:20:48Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 26 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>Kaer: Security-Aware Replanning for Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2611.24839v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.24839v1</id>
+    <published>2026-11-18T00:00:00Z</published>
+    <updated>2026-11-18T00:00:00Z</updated>
+    <author>
+      <name>Tushin Mallick</name>
+    </author>
+    <author>
+      <name>Evan Rose</name>
+    </author>
+    <author>
+      <name>Matthew Laws</name>
+    </author>
+    <author>
+      <name>Alina Oprea</name>
+    </author>
+    <author>
+      <name>Cristina Nita-Rotaru</name>
+    </author>
+    <summary type="text">One popular architecture for multi-agent systems (MAS) relies on an orchestrator that generates an initial plan, coordinates its execution, and dynamically revises the plan based on agent feedback when tasks cannot be fully specified in advance. This dynamic replanning introduces a critical vulnerability: malicious agents can embed instructions within their feedback to hijack the replanning process. Existing defenses focus exclusively on per-tool access control or static, pre-execution policy enforcement, leaving the replanning phase unsecured.   We introduce Kaer, a multi-agent framework featuring security-aware replanning. Kaer shields the planner from untrusted agent feedback by conveying diagnostics to the replanning procedure strictly through abstract templates. Plan revisions are restricted to a set of deterministic repair operators, and all modified plans must satisfy preset policies. We create Cintra, a benchmark of simulated user tasks requiring replanning paired with adversarial objectives targeting the replanning phase. Using Cintra, we evaluate both task completion rates and system vulnerability to replanning exploits by malicious agents. Evaluating Kaer on Cintra against Magentic-One (an undefended MAS) and ControlValve (the state-of-the-art defense) demonstrates that Kaer achieves higher robustness than both systems while maintaining comparable utility to ControlValve. Although abstract failure templates slightly constrain utility on select tasks, Kaer enables MAS to perform secure, dynamic plan revisions without exposing the orchestrator to untrusted agent feedback.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>FormalFixer: Intent-Aligned Automated Hardware Repair via Joint Refinement of Specifications, Assertions, and RTL Implementations</title>
+    <link href="http://arxiv.org/abs/2611.24037v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.24037v1</id>
+    <published>2026-11-18T00:00:00Z</published>
+    <updated>2026-11-18T00:00:00Z</updated>
+    <author>
+      <name>Changyuan Yu</name>
+    </author>
+    <author>
+      <name>Hongce Zhang</name>
+    </author>
+    <summary type="text">Functional errors in hardware designs can compromise correctness and security, and must be fixed before tape-out. Formal property verification (FPV) provides strong guarantees by proving or refuting assertions, but a failed assertion is not always evidence of an RTL defect: the failure may also come from a buggy assertion or from a specification that is semantically correct but too ambiguous or incomplete for direct formalization. This creates a practical repair problem that existing RTL-centric methods do not directly address: the repair loop must align specification intent, verification intent, and RTL behavior before deciding which artifact to change.   \textsc{FormalFixer} addresses this problem with a multi-stage, intent-aligned repair workflow for Verilog designs with assertions. It preserves the original specification as authoritative ground truth and appends confidence-filtered refinements to clarify implicit constraints. \textsc{FormalFixer} uses both intent mismatch and verifier-generated counterexample cone graphs to guide iterative RTL patching. This workflow explicitly checks specification--assertion--RTL correspondence. Results support intent alignment for FPV-based hardware repair.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Resilient Federated LQR over Noisy and Lossy Uplinks via Scalar Communication</title>
+    <link href="http://arxiv.org/abs/2611.23913v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.23913v1</id>
+    <published>2026-11-18T00:00:00Z</published>
+    <updated>2026-11-18T00:00:00Z</updated>
+    <author>
+      <name>Mohammadreza Rostami</name>
+    </author>
+    <author>
+      <name>Shahriar Talebi</name>
+    </author>
+    <author>
+      <name>Solmaz S. Kia</name>
+    </author>
+    <summary type="text">This paper studies model-free federated learning of a common LQR controller for a fleet of similar systems that communicate with a server over an uplink subject to limited bandwidth, packet dropout, and additive noise. We propose \textsc{ResiFedLQR}, a scalar communication scheme in which each agent sends one real number per packet, with redundancy, instead of full gradient estimates. The scalars can be gradient coordinates, projections of the gradient onto random directions reproduced at the server from a shared seed, or the rollout costs themselves. For the projection encoding, we prove that, with high probability, every iterate stabilizes all agents and the fleet-average cost converges linearly to a neighborhood of the optimum whose radius separates heterogeneity, sampling, and communication effects, and we derive a rule for choosing the number of transmissions from the channel parameters and the fleet size. We then compare the encodings with full-gradient transmission under the same uplink budget and identify the signal-to-noise regime and power constraint under which each is preferable. Numerical experiments on a heterogeneous fleet evaluate stability and convergence under varying noise levels and dropout probabilities.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>A Comparison of Heuristic, Human-Sensitive, and Self-Play DRL Policies in Human-Agent Teaming</title>
+    <link href="http://arxiv.org/abs/2611.23747v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.23747v1</id>
+    <published>2026-11-18T00:00:00Z</published>
+    <updated>2026-11-18T00:00:00Z</updated>
+    <author>
+      <name>Ayman bin Kamruddin</name>
+    </author>
+    <author>
+      <name>Christopher Lam</name>
+    </author>
+    <author>
+      <name>Gaurav Patil</name>
+    </author>
+    <author>
+      <name>Mirco Musolesi</name>
+    </author>
+    <author>
+      <name>Mario di Bernardo</name>
+    </author>
+    <author>
+      <name>Michael J. Richardson</name>
+    </author>
+    <summary type="text">Dynamical Perceptual-Motor Primitives (DPMPs) offer a tractable framework for generating human-like movement dynamics in artificial agents (AAs) and have been used to support coordination in human-AI teaming tasks. Traditionally, DPMP controllers rely on heuristic (rule-based) decision policies derived from human behavior to guide goal selection and action sequencing. Although effective in structured tasks, such heuristics can be difficult to generalize to more complex settings, motivating interest in deep reinforcement learning (DRL) approaches for learning decision policies for human-AI interaction. A key challenge, however, is ensuring that DRL policies remain aligned with human strategies, particularly when agents are trained through self-play. To examine this issue, we compared three target-selection policies governing DPMP-based AAs in a first-person herding task: (1) a human-derived heuristic policy, (2) a self-play DRL policy (SP-DRL), and (3) a human-sensitive DRL policy (HS-DRL) trained alongside a heuristic agent. Results showed that heuristic agents most closely matched typical human-human coordination patterns, followed by HS-DRL agents, whereas SP-DRL agents deviated most. These findings highlight the importance of human-informed training when developing DRL-based teammates and suggest that simple heuristic policies may remain an effective approach for designing human-aligned AAs capable of human-AI collaboration.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 9 pages, 5 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.HC" />
+  </entry>
   <entry>
     <title>Groups of AI agents underuse resources despite shared evidence of increased capacity</title>
     <link href="http://arxiv.org/abs/2611.22632v1" rel="alternate" type="text/html" />
@@ -147,6 +239,64 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Machine Learning" />
+  </entry>
+  <entry>
+    <title>Two is better than one: optimizing binary rating scales for online platforms</title>
+    <link href="http://arxiv.org/abs/2611.23626v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.23626v1</id>
+    <published>2026-11-17T00:00:00Z</published>
+    <updated>2026-11-17T00:00:00Z</updated>
+    <author>
+      <name>Liren Shan</name>
+    </author>
+    <author>
+      <name>Alec Sun</name>
+    </author>
+    <author>
+      <name>Jingyan Wang</name>
+    </author>
+    <summary type="text">Online platforms often struggle with inflated, uninformative user ratings. This issue can be mitigated by better design of the data collection mechanism, for example through changing the phrasing of user questions. Previous work optimizes a single rating scale to best distinguish the inherent qualities of items under binary feedback. In this paper, we demonstrate the power of utilizing different rating scales for different users. First, we show that a designer can always split a single rating scale into two to improve item rankings. Next, we formally characterize the optimal design of multiple scales as a series of 0-1 step functions whose threshold values are evenly spaced. Finally, we consider an adaptive model where subsequent rating scales can depend on the responses from previous users and items are ranked by their full sequence of responses, and show that adaptivity leads to exponentially greater distinguishing power. All in all, our theoretical results show that using multiple rating scales significantly improves item rankings on platforms.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 32 pages&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.GT; Machine Learning" />
+  </entry>
+  <entry>
+    <title>MANGO Arena: Same Seeds, Different Chains Evaluating LLM Agents in a Disrupted Supply Chain</title>
+    <link href="http://arxiv.org/abs/2611.23613v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.23613v1</id>
+    <published>2026-11-17T00:00:00Z</published>
+    <updated>2026-11-17T00:00:00Z</updated>
+    <author>
+      <name>Sara Amar</name>
+    </author>
+    <summary type="text">We introduce MANGO Arena, an open-source testbed in which four LLM agents each run one company in a serial supply chain adapted from MANGO, a classroom factory-management game. The environment enforces hard rules (a truck limit, a no-credit cash constraint and production capacity), logs every blocked attempt to break them, and gives agents a public message board on which side payments are explicitly forbidden. This lets one environment measure three things at once: an economic outcome (the bullwhip effect), rule adherence under pressure, and proposals to collude. In a pilot with three small reasoning models, two scripted reference policies, two conditions (with and without a supplier fire) and three demand seeds, all LLM agents amplified demand variability as it moved upstream, by 7 to 25 times at the Retailer and 13 to 179 times at the Supplier, often more than a textbook order-up-to policy. They did so largely by ordering in batches (zero orders in up to 60% of decisions). Real rule violations were rare (at most 7 of 288 decisions per model) and no agent proposed a money side deal. The pilot's main lesson concerns evaluation method. API failures (rate limits and runaway hidden reasoning) entered the metrics silently as "no order" decisions. And when we reran games with the same seeds and no failed calls, upstream bullwhip changed by up to 17 times between runs. With three seeds, conclusions about how a disruption affects a given model did not survive a rerun. We report these failures in full and propose reporting practices for multi-agent evaluations of this kind. Code, prompts and every logged decision are public.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages, 2 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Encapsulating Reactive Behaviour in Goal-based Plans for Programming BDI Agents</title>
+    <link href="http://arxiv.org/abs/2611.23496v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.23496v1</id>
+    <published>2026-11-17T00:00:00Z</published>
+    <updated>2026-11-17T00:00:00Z</updated>
+    <author>
+      <name>Rafael H. Bordini</name>
+    </author>
+    <author>
+      <name>Rem Collier</name>
+    </author>
+    <author>
+      <name>Jomi F. Hübner</name>
+    </author>
+    <author>
+      <name>Alessandro Ricci</name>
+    </author>
+    <summary type="text">Reactive behaviour in BDI-based models and architectures adopted in agent programming is typically specified in terms of reactive plans not bound to any specific goal. In this paper, we present and discuss an extension of the plan model used in BDI programming languages in which goal-based plans encapsulate both proactive and reactive behaviour. This brings important benefits both to the practice of agent programming and in supporting agent reasoning at runtime. The paper first introduces the model formally, abstracting away from particular programming languages. The approach is then evaluated through concrete implementations based on two existing agent programming platforms, namely Jason and ASTRA. The paper reports on experiments showing that the approach provides for elegant programming and can also be efficient.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
   </entry>
   <entry>
     <title>Even Loose Proximity Constraints Make Makespan-optimal Unlabeled Multi-agent Pathfinding Hard</title>
@@ -480,101 +630,5 @@
     <summary type="text">Virtual patient (VP) systems support nursing communication training by providing simulated encounters in which learners practise explaining care and responding to patient concerns. Although large language models (LLMs) support flexible dialogue, current approaches give less explicit attention to how patients' information needs develop and guide the content and timing of their questions. We draw on the Risk Information Seeking and Processing (RISP) model, which relates information seeking to perceived risk and the gap between perceived knowledge and desired understanding. Guided by this perspective, we propose the RISP Multi-Agent System (RISP-MAS), a VP system for patient-initiated information seeking. The system links ongoing assessment of the patient's perceptions and information needs to coordinated decisions about whether to seek information, when to ask and which uncertainty to address. Evaluation of nursing student-VP interactions suggested that RISP-MAS exhibited plausible patient information-seeking behaviour, as indicated by expert assessments, while student feedback reflected positive interaction experiences. This work extends patient simulation by connecting a psychological account of information needs to explicit decisions about question initiation. The approach offers nursing students opportunities to practise recognising unresolved patient concerns and tailoring explanations to patients' information needs.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>From Delegation to Coordination: Learning Efficient Multi-Agent Deep Research</title>
-    <link href="http://arxiv.org/abs/2611.17041v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.17041v1</id>
-    <published>2026-11-12T00:00:00Z</published>
-    <updated>2026-11-12T00:00:00Z</updated>
-    <author>
-      <name>Yuyang Wu</name>
-    </author>
-    <author>
-      <name>Yang Liu</name>
-    </author>
-    <author>
-      <name>Zequn Xie</name>
-    </author>
-    <author>
-      <name>Junjie Wang</name>
-    </author>
-    <author>
-      <name>Dan Yang</name>
-    </author>
-    <author>
-      <name>Zehao Tan</name>
-    </author>
-    <author>
-      <name>Ding-Chu Zhang</name>
-    </author>
-    <author>
-      <name>Junming Yang</name>
-    </author>
-    <author>
-      <name>Yue Shen</name>
-    </author>
-    <author>
-      <name>Jian Wang</name>
-    </author>
-    <author>
-      <name>Jinjie Gu</name>
-    </author>
-    <summary type="text">Multi-agent deep-research systems use delegation to parallelize search and keep long tool traces out of the main agent's context. Yet delegation helps only when task allocation and subtask execution are coordinated: the main agent must issue useful subtasks, while subagents must return reliable evidence. Existing training either optimizes only the main agent or broadcasts the same team advantage to all agents, which can reward misleading subagent reports and penalize useful ones. We introduce LEAD-RL (Learning Effective Agent Delegation with Reinforcement Learning), a joint main-agent-subagent training framework with contribution-aware credit assignment. A training-time rubric evaluates the research utility of each subagent report and gates its inherited team advantage, while final-answer correctness remains the only team reward; no token, step, or speedup reward is used. Across five benchmarks and two model families, LEAD-RL improves answer quality. On BrowseComp, it improves accuracy by 2.49 percentage points and reduces critical-path cost by 24.5% over joint training with shared team credit. During validation, accuracy increases by 6.78 points at approximately constant critical-path cost. These results show that contribution-aware credit assignment improves the quality-efficiency trade-off of multi-agent deep research.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 16 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Shared Item-Level Error Limits the Aggregation of Small Language Models in Fermi Estimation</title>
-    <link href="http://arxiv.org/abs/2611.16315v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.16315v1</id>
-    <published>2026-11-12T00:00:00Z</published>
-    <updated>2026-11-12T00:00:00Z</updated>
-    <author>
-      <name>Carolina Fortuna</name>
-    </author>
-    <author>
-      <name>Blaz Bertalanic</name>
-    </author>
-    <summary type="text">Multi-agent systems of language models are often motivated by an averaging argument: if the agents' errors are unbiased and independent, the error of an aggregate of N answers falls as 1/sqrt(N). Fermi estimation, whose continuous answers are aggregated on the logarithmic scale, permits a direct test. We decompose the log10 error of each answer into the mean error of its model on the item, common to all its draws on the item, and a residual, and estimate both from 2.51M answers given before any communication by 15 open-weight models (3B-72B) on realFP, with replication under a single prompt pair on realFP, Science Olympiad Fermi questions and a guesstimation set. Given the item, teammates' errors are uncorrelated and teams behave as independent draws, but the item-level component accounts for a median 0.906 of the error variance over items. Teams of thirty therefore reduce a single agent's error by a median 1.7% (at most 5.4%), whereas draws that were also unbiased on each item would reduce it by 74-79%. All models compress their estimates toward about 10^6; this trend explains a median 17% of the item-level component, and a cross-validated linear recalibration on labelled items removes the overall bias but not that component. Three rounds of debate reduce within-team dispersion by 93% and leave the item-level component unchanged; revision without peers attains the same small gain. Mixing five models of similar accuracy reduces error by 6.6% relative to their own homogeneous teams, but no mixture improves on the most accurate model. Higher sampling temperature changes team error by about 1% at most, and contrastive activation steering not detectably; per-agent scaffold prompts (not significant after multiplicity correction) and skipping one layer in a single-model screen improve it. The results are conditional on the models, benchmarks, prompts and settings tested.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 21 pages, 2 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>SwarmSafe-Delta: Isolating Message Effects on LLM Agent Safety</title>
-    <link href="http://arxiv.org/abs/2611.16123v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.16123v1</id>
-    <published>2026-11-12T00:00:00Z</published>
-    <updated>2026-11-12T00:00:00Z</updated>
-    <author>
-      <name>Junru Zhu</name>
-    </author>
-    <summary type="text">When a tool-using LLM agent team violates policy, aggregate outcomes do not reveal whether an upstream message changed the executor's action. We introduce SwarmSafe-Delta, a paired executable protocol that freezes upstream computation, varies real, hidden, and format-matched placebo delivery, and scores a single committed action against deterministic benign and risky policy states under preassigned budgets.   Across four models and constructed optional tasks, real delivery at $N=4$ produces 21.4% risky-world violations, versus 5.0% with placebo and 1.0% with hidden delivery (paired differences +16.4 and +20.3 percentage points). Real delivery also improves benign task success, illustrating that suppressing communication sacrifices utility. In a second regime constructed to require an upstream lookup route, real delivery improves safe completion by 74.2 points relative to hidden delivery. These effects quantify message-delivery contrasts under specified information dependencies, not naturally occurring failure rates.   Exploratory action-level analyses show that the effect depends strongly on whether the upstream message recommends a prerequisite check or direct execution; model differences also largely track these message compositions. The contribution is a controlled, execution-grounded measurement protocol rather than a general claim that agent communication is harmful or protective.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 10 pages, 3 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
-  </entry>
-  <entry>
-    <title>Only as Safe as the Weakest Agent: A Break That Appears Only When the System Is Multi-Agent</title>
-    <link href="http://arxiv.org/abs/2611.17520v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.17520v1</id>
-    <published>2026-11-12T00:00:00Z</published>
-    <updated>2026-11-12T00:00:00Z</updated>
-    <author>
-      <name>Keegan Wang</name>
-    </author>
-    <author>
-      <name>Anantika Mannby</name>
-    </author>
-    <summary type="text">Major industry multi-agent systems like Codex and Claude Code can be broken by attacks that have long been unsuccessful against modern frontier models. AI Safety as a discipline has largely focused on finding the bounds and vulnerabilities of AI models used in isolation. Yet as humans increasingly deploy these models as agents and multi-agent systems, the same attacks that had been thought to be patched when using a model in isolation can break these same models under specific circumstances. We show that these system breaks are not purely theoretical, but can break Claude Code, Codex, and a reference harness, all unmodified and used with their own sub-agent mechanisms. We show the attack by asking agents to answer questions from a store of files on disk in which we have planted a forged record. Searching the store themselves, the strong model orchestrators commit almost zero harmful revisions in over 1,000 trials. However, if that same orchestrator model delegates to a cheaper sub-agent, which is what these harnesses are built to do, the same models on the same facts fail on 20/180, 44/180, 75/180 and 553/900. Thus, even when the system is driven by a strong model, the system's safety lands near the weak reader's, not the orchestrator's. Simulations over 18 models show the same effect in the delivery channel where five aggregators, who on their own were almost never unsafe, repeat a corrupted sub-agent's error in 751/757 trials. The safety of real-world agentic systems that use strong orchestrator agents and weaker sub-agents, and multi-agent systems in general, is defined not by the safety of the strong agent but by the safety of the weakest agent.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence" />
   </entry>
 </feed>
