@@ -4,12 +4,215 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-20T08:10:51Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 28 entries</subtitle>
+  <updated>2026-11-23T08:34:44Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 25 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>LesionAgent: Training-Free Agentic Tumor Tracking and Response Assessment in Longitudinal CT</title>
+    <link href="http://arxiv.org/abs/2611.27876v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27876v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Maximilian Rokuss</name>
+    </author>
+    <author>
+      <name>Jeya Maria Jose Valanarasu</name>
+    </author>
+    <author>
+      <name>Alejandro Lozano</name>
+    </author>
+    <author>
+      <name>Benjamin Hamm</name>
+    </author>
+    <author>
+      <name>Yannick Kirchhoff</name>
+    </author>
+    <author>
+      <name>Fabian Isensee</name>
+    </author>
+    <author>
+      <name>Klaus Maier-Hein</name>
+    </author>
+    <summary type="text">Every few months, a cancer patient's CT scans decide whether treatment continues. 3D foundation models can now detect, segment, register and track lesions, yet none of them reads the scans as a radiologist does. A radiologist decides which findings are lesions, which are the same lesion months later and whether a new spot means progression, and checks each decision against the extensive rules of a clinical guideline. We introduce LesionAgent, an LLM agent that performs this read end to end without task-specific training. It operates frozen 3D models as tools, acts in 3D through coordinate-labelled views, remembers every lesion across visits in a registry, verifies every model output it relies on, and leaves every number to a deterministic guideline engine. On four public longitudinal CT datasets, LesionAgent tracks more lesions and measures them more accurately than every automatic baseline, and where the same 3D models chained by fixed rules call progression falsely at 33 of 56 follow-ups, it does so twice. On clinical follow-up CTs, it agrees with the radiologists' response at 20 of 23 follow-ups, including every change in response, and without training on DeepLesion, it retrieves more of its lesions than every tracker trained on it (89.0% vs. 87.4%). Its harness, not its LLM, makes the difference: given the same LLM and 3D models but not the harness, Claude Code reaches a detection F1 of 41% and LesionAgent 78%, and an open-weight LLM that can run inside the hospital rises from 6% to 73%. LesionAgent and a napari reading app for any LLM are available at https://github.com/MIC-DKFZ/LesionAgent.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/MIC-DKFZ/LesionAgent"&gt;https://github.com/MIC-DKFZ/LesionAgent&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>A Cognitive Agentic AI Framework for Interactive Process Analysis and Optimization</title>
+    <link href="http://arxiv.org/abs/2611.27725v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27725v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Trung Ngoc Trinha</name>
+    </author>
+    <author>
+      <name>Roman Tschentscher</name>
+    </author>
+    <author>
+      <name>Trong Dong Nguyen</name>
+    </author>
+    <author>
+      <name>Trung Thanh Nguyen</name>
+    </author>
+    <author>
+      <name>Anna Trubetskaya</name>
+    </author>
+    <summary type="text">Complex multivariable process analysis and optimization require coordinated access to simulation, structured data, machine learning (ML), optimization, and scientific literature, often across disconnected software tools. We present a Cognitive Agentic AI Framework (CAAF) that enables interactive, iterative process investigation through natural-language prompts within an established flowsheet. Following harness-engineering principles, CAAF assigns task interpretation, planning, knowledge synthesis, and context management to a large language model while delegating numerical calculations to specialized tools. Dedicated providers connect databases, scientific-document retrieval, ML-assisted Bayesian optimization (BO), and COCO process simulation. The framework is demonstrated on methyl acetate production. Guided by successive prompts, an engineer explored multivariable relationships, conducted 4,000 BO iterations to maximize carbon conversion yield (C-Yield) and minimize specific energy cost (C-SEC), refined operating bounds, and verified selected candidates through process simulation. Re-simulation of 16 candidates within the restricted domain showed close agreement with ML predictions, with a mean absolute C-Yield error of 0.0085 (0.85 percentage points). The highest BO-derived C-Yield, verified by COCO, was 0.921 versus approximately 0.81 in the initial dataset, an improvement of about 11 percentage points. CAAF also detects and reports non-converged simulations, excludes invalid outputs, and continues subsequent evaluations. The results demonstrate how human-guided agentic coordination can combine engineering tools for iterative analysis and optimization with rigorous simulation-based verification under a fixed process topology.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Bringing AI Assistance to the Beznau Nuclear Power Plant: A Hierarchical System of LLM Agents for Reactor Monitoring</title>
+    <link href="http://arxiv.org/abs/2611.27556v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27556v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Wenqi Zhou</name>
+    </author>
+    <author>
+      <name>Leonardo Baldo</name>
+    </author>
+    <author>
+      <name>Edwin Kolbe</name>
+    </author>
+    <author>
+      <name>Manuel Arias Chao</name>
+    </author>
+    <summary type="text">Beznau Unit 1 in Switzerland, in operation since 1969, is the most experienced nuclear reactor still running worldwide. Five decades of incremental modernization have left its monitoring systems, alarm logs, variable catalogs, technical specifications and investigation reports in separate silos that were never designed to be queried together. As a result, investigating a core instrumentation anomaly means slow, manual gathering of knowledge scattered across databases, documents, and experienced colleagues. We present a hierarchical multi-agent assistant built on large language models (LLMs) to support these investigations and reduce the need for tedious manual searches in SAP systems. An orchestrating agent breaks down an engineer's question and hands the parts to specialized sub-agents, each with read-only access to one source. Domain expertise is written as natural-language procedures that plant engineers can read, review and revise. The system is strictly advisory, with every answer traced back to its sources. We also report organizational lessons from introducing agentic AI into a culture built on safety, traceability and conservative change. Beyond the technical architecture, the Beznau case study examines how an assistant can be introduced into a setting where evidence must be traceable, changes carefully reviewed, and operational decisions retained by plant personnel, paving the way for the responsible use of agentic AI in industrial plant monitoring.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Epistemic Social Learning: Latent Behavioral Structure under Endogenous Multi-Agent Interaction</title>
+    <link href="http://arxiv.org/abs/2611.27545v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27545v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Jainendra Shukla</name>
+    </author>
+    <author>
+      <name>Dhruv Jaiswal</name>
+    </author>
+    <author>
+      <name>Divyanshi Beniwal</name>
+    </author>
+    <author>
+      <name>Kiriti Kanjilal</name>
+    </author>
+    <summary type="text">In multi-agent interaction, a learner's actions shape the observations from which it infers other agents' behavior. A behavioral model may predict these observations well yet support poor adaptation when opponents change. We introduce Epistemic Social Learning (ESL), which couples fast, interaction-specific Bayesian beliefs with slower online learning of population-shared behavioral prototypes. Belief-conditioned decisions influence subsequent observations and, in turn, the representations learned from them. Under explicit regularity and averaging assumptions, we provide a conditional stochastic-approximation characterization of these coupled dynamics. Across twelve synthetic $3\times3$ cooperative, coordination, and adversarial games, ESL achieves the lowest aggregate post-switch regret among the evaluated online latent-adaptation methods, including a switch-aware Bayesian filter. Additional experiments examine observation loss, noise, and asymmetric incentives. These findings illustrate how predictive fit can differ from decision-relevant adaptation under policy-dependent interaction.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; NeurIPS 2026&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.GT" />
+  </entry>
+  <entry>
+    <title>Fix Where It Fails: Root-Cause-Guided Agentic Harness Optimization for Scene Graph Generation</title>
+    <link href="http://arxiv.org/abs/2611.27529v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27529v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Jee Eun Kim</name>
+    </author>
+    <author>
+      <name>Donghyeon Choi</name>
+    </author>
+    <author>
+      <name>Sangjune An</name>
+    </author>
+    <author>
+      <name>Hae Beom Lee</name>
+    </author>
+    <author>
+      <name>Kyong Hwan Jin</name>
+    </author>
+    <summary type="text">Scene graph generation (SGG) aims to detect objects in an image and predict the relationships between them. The standard PredCls, SGCls, and SGDet settings show how much performance drops without ground-truth boxes and labels, but not where or why a model fails. Knowing this would allow fixing a model where it fails, without retraining. We propose RoHa-SGG (Root-cause-guided Harness optimization for SGG), which extends agentic harness optimization to SGG. It optimizes the harness, the inference code around a frozen SGG model. RoHa-SGG has two main LLM agents. A root-cause analysis (RCA) agent finds the components where the model fails and diagnoses why, and a proposer agent searches for a harness that fixes these causes. We evaluate RoHa-SGG on Visual Genome and PSG with representative two-stage, one-stage, and multimodal-LLM SGG models. The analysis shows that the components where ground-truth triplets are lost differ across models and datasets. RoHa-SGG improves every metric on all five model-dataset combinations. Graph-constrained R@100 and mR@100 rise by up to 15.8 and 26.4 points for the multimodal LLM and by up to 3.6 and 10.1 points for the two-stage and one-stage models. With root-cause guidance, the harness search reaches the final score of an unguided search up to three times faster.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Communication-constrained multiagent risk estimation: a simulation benchmark for adult sore throat</title>
+    <link href="http://arxiv.org/abs/2611.27468v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27468v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Anas H. Alzahrani</name>
+    </author>
+    <summary type="text">Distributed predictive agents may need to approach a shared estimate under limited, unreliable communication. We evaluated classical symmetric pairwise gossip among five agents initialized from frozen calibrated predictions in a synthetic adult sore-throat benchmark. Ninety runs across three fixed generator families supplied 270,000 underlying test encounters, each observed through four missingness views. Complete, ring and star graphs were compared at eight interaction budgets and transaction failure probabilities of 0, 0.2 and 0.5. The coordination extension was designed after inspection of the predictive benchmark and is exploratory. Outcomes were disagreement around the conserved arithmetic mean and its exact decomposition of mean-agent Brier error. In the base view at eight attempted pairs and 0.2 failure, disagreement variance was 0.000109 for the complete graph, 0.000134 for the ring and 0.000175 for the star. The paired complete-minus-ring difference was -0.000024 (95% Monte Carlo interval -0.000030 to -0.000019). The centralized mean had base Brier 0.069781, compared with 0.069368 for Kumo alone. Agreement therefore does not establish superiority to the strongest individual predictor. Code, fixed probability inputs and results support replay without model refitting. The study quantifies finite-budget coordination under specified simulation assumptions; it proposes no new gossip algorithm and establishes no clinical accuracy or utility.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 31 pages, 3 main figures, 2 main tables; includes supplementary methods, 7 supplementary tables and 4 supplementary figures. Simulated data; code and fixed inputs included&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Testing for Coordination Failures in Cooperative Multi-Agent Reinforcement Learning</title>
+    <link href="http://arxiv.org/abs/2611.27368v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.27368v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Dennis Gross</name>
+    </author>
+    <author>
+      <name>Jørn Eirik Betten</name>
+    </author>
+    <author>
+      <name>Helge Spieker</name>
+    </author>
+    <summary type="text">Deep parallel cooperative multi-agent reinforcement learning (CMARL)} trains multiple agents that all act at every time step to optimize a common objective. Like single-agent RL, CMARL can produce unsafe behaviors that violate implicit safety requirements not captured by the reward, and these behaviors are hard to explain. However, testing CMARL policies for safety has received less attention than the safety testing of single-agent RL policies. In this paper, we propose DisQ, a test case selection method that identifies failure-revealing states in value-based CMARL by exploiting a signal specific to trained Q-learning agents. The signal is the Q-value gap, an explainable metric that flags a state when the agents' estimates of the achievable return diverge by more than a calibrated threshold. DisQ selects such states for execution and skips those without a gap. Our experiments in four CMARL benchmark environments show that, in most of the evaluated configurations, DisQ improves failure detection over single-agent RL testing methods applied to CMARL, namely random testing and search-based testing with genetic algorithms. Our main contributions are the Q-value gap, an indicator of potential miscoordination computable from a single state without executing the system, and DisQ, a test case selection method that adapts existing single-agent testing methods to CMARL.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; STVR&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.SE" />
+  </entry>
+  <entry>
+    <title>Tracking and Limiting Unsupported Claim Propagation in Multi-Agent LLM Systems: A Provenance-Aware Framework</title>
+    <link href="http://arxiv.org/abs/2611.26957v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.26957v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Zijia Cao</name>
+    </author>
+    <author>
+      <name>Hanqing Dou</name>
+    </author>
+    <summary type="text">This research examines how unsupported claims change as they move through multi-agent pipelines. It also examines whether preserving provenance can reduce these changes. We test both homogeneous and heterogeneous pipelines. Homogeneous pipelines use the same model across agents, while heterogeneous pipelines use different models. We compare the baseline with a provenance-aware framework. The framework passes each claim with its support status, source, evidence and transmission history. No new evidence is introduced during transmission. We measure changes in claim meaning, unsupported detail accretion, semantic drift, and provenance preservation. These metrics show whether the framework limits unsupported changes as claims pass between agents.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>SecretAgent: A Multi-Agent Framework for Privacy Protection against Vision Language Models</title>
+    <link href="http://arxiv.org/abs/2611.26936v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.26936v1</id>
+    <published>2026-11-20T00:00:00Z</published>
+    <updated>2026-11-20T00:00:00Z</updated>
+    <author>
+      <name>Minda Zhao</name>
+    </author>
+    <author>
+      <name>Yue Zhang</name>
+    </author>
+    <author>
+      <name>Mengyu Wang</name>
+    </author>
+    <summary type="text">Vision-language models (VLMs) can infer private information from shared images, including locations, personally identifiable information (PII), and personal attributes such as age and sex, even from medical images. Adversarial perturbations can protect such information against black-box VLMs, but existing methods overlook image quality and introduce visible artifacts into the images they protect. We present SecretAgent, the first general multi-agent framework that protects image privacy against VLMs while preserving visual fidelity. LLM agents iteratively locate the visual evidence that reveals private information and adapt an invisible perturbation to the target VLM's answers and to an appearance reviewer agent, which rejects any candidate with visible artifacts. We instantiate SecretAgent with two complementary variants: SecretAgent-Gradient optimizes the perturbation through six surrogate encoders for cross-model transferability, and the gradient-free SecretAgent-Tool composes procedural noise and achieves the best perceptual fidelity on three of the five datasets. Experiments on four privacy applications (geolocation, PII, facial, and medical) across five datasets and six VLMs show that SecretAgent preserves image quality substantially better than existing methods while achieving state-of-the-art privacy protection in every application, and that its protection transfers to other VLMs.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; cs.CR; Machine Learning" />
+  </entry>
   <entry>
     <title>Public-Private Cooperation in the Port of Rotterdam: An Agent-Based Toy Model of Cooperative Efforts Against Cocaine Trafficking</title>
     <link href="http://arxiv.org/abs/2611.26154v1" rel="alternate" type="text/html" />
@@ -372,281 +575,6 @@
     </author>
     <summary type="text">Reactive behaviour in BDI-based models and architectures adopted in agent programming is typically specified in terms of reactive plans not bound to any specific goal. In this paper, we present and discuss an extension of the plan model used in BDI programming languages in which goal-based plans encapsulate both proactive and reactive behaviour. This brings important benefits both to the practice of agent programming and in supporting agent reasoning at runtime. The paper first introduces the model formally, abstracting away from particular programming languages. The approach is then evaluated through concrete implementations based on two existing agent programming platforms, namely Jason and ASTRA. The paper reports on experiments showing that the approach provides for elegant programming and can also be efficient.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Even Loose Proximity Constraints Make Makespan-optimal Unlabeled Multi-agent Pathfinding Hard</title>
-    <link href="http://arxiv.org/abs/2611.21277v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.21277v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Takahiro Suzuki</name>
-    </author>
-    <author>
-      <name>Keisuke Okumura</name>
-    </author>
-    <summary type="text">We study \textsc{$r$-Connected Unlabeled Multi-agent Pathfinding} ($r$CUMAPF), a variant of MAPF where interchangeable agents have a proximity range $r\in \mathbb{N}$, and agents must form a single group in a given graph $G$ through limited-range communication at all times. The problem arises in fundamental applications such as self-reconfiguration and platooning, while standard MAPF does not capture proximity constraints. For the problem of finding a makespan-optimal solution, prior work shows \NP-hardness for $r=1$ and polynomial-time solvability when $r$ is sufficiently large; the complexity for the intermediate case $2\le r$ is largely unknown. To narrow this gap, we show that finding a solution to $r$CUMAPF with makespan at most $2$ is \NP-hard for $2\le r= O(|V|^{1-\varepsilon})$, where $0&lt;\varepsilon\le 1$ is a fixed constant and $|V|$ is the number of vertices. As a consequence, we show that the labeled analogue of $r$CUMAPF is also \NP-hard under the same condition.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Evaluating Authorization and Trust Boundaries in Agentic Orchestration Frameworks</title>
-    <link href="http://arxiv.org/abs/2611.21259v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.21259v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Sahaya Jestus Lazer</name>
-    </author>
-    <author>
-      <name>Kshitiz Aryal</name>
-    </author>
-    <author>
-      <name>Maanak Gupta</name>
-    </author>
-    <author>
-      <name>Elisa Bertino</name>
-    </author>
-    <summary type="text">Agentic AI systems extend large language models with tools, memory, and multi-agent collaboration, introducing security risks at orchestration boundaries. These risks depend on how identities are represented, operations are authorized, and instructions or information propagate between components. We evaluate LangChain, LangGraph, AutoGen, and OpenClaw through twelve experiments mapped to the OWASP Top 10 for Agentic Applications using a common LLM (gpt-4o-mini). The experiments cover prompt injection, unauthorized resource access and command execution, memory poisoning, and inter-agent trust and identity attacks. Adversarial inputs induced unauthorized tool invocation, while tool chaining, stale filesystem validation, encoded instructions, and inter-agent delegation exposed weaknesses in authorization across component boundaries. Memory poisoning showed that untrusted state can influence responses, a risk distinct from conventional access-control violations. In the evaluated protected configurations, explicit authorization, controlled capability assignment, filesystem containment, and execution safeguards prevented specific unauthorized operations. The findings emphasize preserving authorization and information-trust boundaries throughout agentic workflows rather than treating framework capabilities or model-level instructions as sufficient security guarantees.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>OpenMAS-GApp: A Comprehensive Benchmark for Domain-Adaptive Multi-Agent Application Construction</title>
-    <link href="http://arxiv.org/abs/2611.20997v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.20997v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Xunkai Li</name>
-    </author>
-    <author>
-      <name>Kairui Yang</name>
-    </author>
-    <author>
-      <name>Jiaxi Li</name>
-    </author>
-    <author>
-      <name>Yuecong Mao</name>
-    </author>
-    <author>
-      <name>Zekai Chen</name>
-    </author>
-    <author>
-      <name>Xinle Zhang</name>
-    </author>
-    <author>
-      <name>Rong-Hua Li</name>
-    </author>
-    <author>
-      <name>Guoren Wang</name>
-    </author>
-    <summary type="text">Constructing multi-agent system (MAS) applications across domains requires translating diverse requirements into executable systems, involving task decomposition, agent and tool selection, and execution organization. Existing studies have explored individual aspects of MAS construction, including agent generation, architecture design, workflow generation, and component selection. However, these methods are often developed and evaluated independently, using different task specifications, component resources, and execution settings. This makes it difficult to compare their construction capabilities or determine how they can be applied to different domains. To address this problem, we propose OpenMAS-GApp, a One-for-All benchmark for MAS application construction across diverse domains. It standardizes task inputs, component resources, construction interfaces, and execution environments to support MAS construction under consistent conditions. Within OpenMAS-GApp, we provide Graph Harness as a reference construction method that derives task dependencies, selects compatible agents and tools, and organizes their interactions into executable graphs. We evaluate construction methods across 19 benchmark datasets under 20 evaluation settings spanning four application types and four professional domains.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Dataset&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>From Vision to Interaction: Evaluating Dynamic Social Intelligence of VLM Agents in ALIVE-World</title>
-    <link href="http://arxiv.org/abs/2611.20956v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.20956v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Yue Xu</name>
-    </author>
-    <author>
-      <name>Xiaoyu Qin</name>
-    </author>
-    <author>
-      <name>Sihan Zhao</name>
-    </author>
-    <author>
-      <name>Ze-en Xiong</name>
-    </author>
-    <author>
-      <name>Jia Jia</name>
-    </author>
-    <summary type="text">As AI agents are increasingly deployed in real-world applications and take on social roles, dynamic social intelligence, the ability to continuously perceive multimodal cues, infer latent cognitive states, intervene through embodied actions, and ultimately achieve social goals, has become essential. However, existing evaluations largely fragment social intelligence into text-based abstractions, static reasoning tasks, or embodied simulators that lack social dynamics. These approaches fail to capture the multimodal, continuous, and interpersonal complexity of authentic human interactions. To bridge this gap, we introduce ALIVE-World, an embodied simulation environment supporting dynamic multimodal interactions encompassing egocentric vision, language, and non-verbal action. To provide socially grounded interactive feedback, we populate this environment with counterpart agents driven by a profile-conditioned, dual-system (intuitive-affective and logical-cognitive) architecture. Building upon this platform, we propose ALIVE-Bench to transform the assessment of social intelligence into a trackable quantitative framework. By deeply leveraging underlying environmental states and agents' internal variables, ALIVE-Bench systematically evaluates Vision-Language Model (VLM) agents across four critical dimensions: perception, understanding, influence, and outcome. Extensive evaluations reveal that dynamic social intelligence is fundamentally multi-dimensional and scenario-dependent. We identify a critical bottleneck between upstream perception and downstream social intervention, exposing VLM vulnerabilities in fine-grained proxemic awareness, adaptive intervention, and multi-party coordination. By uncovering these limitations and the diverse interaction strategies they produce, this benchmark provides actionable insights for the future behavioral alignment of multimodal agents.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; ACM Multimedia 2026 (MM '26), Oral Presentation, Outstanding Paper Award&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; MAG&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>LEDGER: Auditable Agent Memory Under Change</title>
-    <link href="http://arxiv.org/abs/2611.20927v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.20927v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Md Aidul Islam</name>
-    </author>
-    <author>
-      <name>Md Nasir Uddin Shuvo</name>
-    </author>
-    <author>
-      <name>Muhammad Waseem</name>
-    </author>
-    <author>
-      <name>Pekka Abrahamsson</name>
-    </author>
-    <summary type="text">Agent memory systems are mostly evaluated on fixed histories, and only their final answers are scored. In real use, facts change, sources differ in reliability, and users ask the agent to forget things. We present LEDGER, a memory layer in which a language model proposes facts and explicit rules decide which value is current, which source to trust, and what to delete. Each fact keeps its source and the period in which it held. LEDGER+EP adds a search over raw conversation turns for questions the ledger does not cover, and scrubs these turns on deletion. We compare both against no memory, full-history replay, retrieval over raw transcripts, and Mem0, with the same answering model and prompt, on a synthetic multi-session coding-agent workload and a 210-question subset of LongMemEval, and we score both the evidence each memory sends to the model and the answer. On the coding workload, LEDGER+EP in fallback mode answers 94.3% of questions correctly on five development seeds and 91.1% on five held-out seeds, against 82.1% and 83.3% for full replay, the strongest baseline. When a deletion request only describes the fact, no deleted value reached our systems' evidence in any evaluated probe. On LongMemEval, LEDGER+EP in augment mode has the same observed accuracy as full replay (74.8%) with 1% of its context. The main limitation is that the coding workload is synthetic and built by us; on LongMemEval, the differences between the strongest systems are within the confidence intervals.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.PF; cs.SE" />
-  </entry>
-  <entry>
-    <title>When Does Interaction Help? Toward a Reynolds Number for Collective Intelligence</title>
-    <link href="http://arxiv.org/abs/2611.20773v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.20773v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Xuening Wu</name>
-    </author>
-    <author>
-      <name>Haode Yang</name>
-    </author>
-    <author>
-      <name>Yanlan Kang</name>
-    </author>
-    <author>
-      <name>Shenqin Yin</name>
-    </author>
-    <summary type="text">Multi-agent systems combine distributed information through interaction, which can improve performance but also spread errors or suppress useful differences. Predicting when interaction helps is central to understanding and designing collective intelligence. We investigate whether a few dimensionless parameters can predict gains over explicitly defined non-communicating baselines across group sizes, network structures, and tasks, toward a Reynolds-number-like description of collective intelligence. Using distributed classification tasks, stochastic tracking networks, and neural cellular automata, we combine analytical and empirical evidence to examine information sufficiency, dynamical applicability, and finite-sample prediction. We construct inference systems with bounded random variables and matching specified joint moments up to total degree three, yet opposite interaction gains under a fixed readout. These moments alone cannot generally determine the gain sign. Tracking networks likewise exhibit gain reversals despite matched candidate parameters when task power occupies different spectral modes. Under concentrated task spectra and aligned observation noise, however, we derive a low-dimensional similarity relation with an explicit zero-delay error bound and test it across network sizes and topologies under frozen protocols. The relation does not directly apply to the neural cellular systems, where a separate moment-based predictor underperforms direct gain measurement at matched calibration sample budgets. These results establish conditions and limits for low-dimensional gain prediction, providing a restricted similarity law while leaving a general Reynolds-number-like description of collective intelligence open.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Learning Design Taste through Verifiable Synthetic Environments and Agentic Reinforcement Learning</title>
-    <link href="http://arxiv.org/abs/2611.20612v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.20612v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Sujay choubey</name>
-    </author>
-    <author>
-      <name>Siddhant Saxena</name>
-    </author>
-    <author>
-      <name>Sarthak Kapil</name>
-    </author>
-    <author>
-      <name>Suhas Motwani</name>
-    </author>
-    <summary type="text">Code-generating language models produce user interfaces that build and run, but the pages are often weak in hierarchy, spacing, typography and composition. We study whether a small code model can learn design taste through reinforcement learning in verifiable synthetic environments. The method has three components. First, a layered verification framework splits design quality into hard gates, render-grounded metrics, rubric judges, within-group relative preference and a blinded expert panel. A signal enters the reward only if it passes an admission protocol that tests agreement with experts, causal sensitivity, resistance to hack traps and stability. Second, following SCALER [1], synthetic design environments are parameterised generators with measured difficulty ladders: base pages are written once by an agentic coder, and instances are produced by syntax-tree perturbation operators and constraint samplers, scheduled by an adaptive curriculum with a quarantine rule against reward over-optimisation. Third, a 4B code model is trained with agentic reinforcement learning over multi-turn episodes in which it edits and builds a repository and reads a textual report of its own render, while hidden graders compute the reward. The admission protocol admits 7 of 16 render signals and 6 of 10 rubric dimensions. On TD-Bench, agentic training raises the Taste Index from 0.630 to 0.795 in-family and from 0.598 to 0.700 on held-out families, and wins 0.600 of blinded expert comparisons against the base model and 0.569 against a single-turn control. Most of the advantage depends on the inference-time loop, and cross-brief distinctiveness falls slightly below that of the base model, the only success criterion not met.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 15 pages, 9 figures&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="cs.HC" />
-  </entry>
-  <entry>
-    <title>Coordination of Heterogeneous Teams with Uncertain Task Requirements</title>
-    <link href="http://arxiv.org/abs/2611.21828v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.21828v1</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Jongann Lee</name>
-    </author>
-    <author>
-      <name>Melkior Ornik</name>
-    </author>
-    <summary type="text">Coordinating a team of heterogeneous agents to complete tasks with unknown requirements is a challenging multi-agent planning problem. Agents differ in their ability to discover task requirements and in their ability to engage tasks, so the planner must coordinate task discovery, execution, and staging. This paper introduces a hierarchical planner that uses a graph neural network policy to assign actions to agents, then finds a path to the action's location using a shortest-path algorithm. The central part of our approach is the CAAT graph, which is a graph representation of the planning context consisting of the agents, tasks, capabilities, and actions. We demonstrate that our learned planner can jointly coordinate a heterogeneous team to simultaneously discover task requirements and complete tasks in a shorter time compared to baselines that optimize task discovery and task engagement independently. Furthermore, we show that our policy can zero-shot plan on out-of-distribution settings by training only on an outdoor map then transferring without finetuning to an indoor map with more agents, tasks, and capabilities than seen during training.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Artificial Intelligence; Machine Learning" />
-  </entry>
-  <entry>
-    <title>Even Loose Proximity Constraints Make Makespan-optimal Unlabeled Multi-agent Pathfinding Hard</title>
-    <link href="http://arxiv.org/abs/2611.21277v2" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.21277v2</id>
-    <published>2026-11-16T00:00:00Z</published>
-    <updated>2026-11-16T00:00:00Z</updated>
-    <author>
-      <name>Takahiro Suzuki</name>
-    </author>
-    <author>
-      <name>Keisuke Okumura</name>
-    </author>
-    <summary type="text">We study $r$-Connected Unlabeled Multi-agent Pathfinding ($r$CUMAPF), a variant of MAPF where interchangeable agents have a proximity range $r\in \mathbb{N}$, and agents must form a single group in a given graph $G$ through limited-range communication at all times. The problem arises in fundamental applications such as self-reconfiguration and platooning, while standard MAPF does not capture proximity constraints. For the problem of finding a makespan-optimal solution, prior work shows NP-hardness for $r=1$ and polynomial-time solvability when $r$ is sufficiently large; the complexity for the intermediate case $2\le r$ is largely unknown. To narrow this gap, we show that finding a solution to $r$CUMAPF with makespan at most $2$ is NP-hard for $2\le r= O(|V|^{1-\varepsilon})$, where $0&lt;\varepsilon\le 1$ is a fixed constant and $|V|$ is the number of vertices. As a consequence, we show that the labeled analogue of $r$CUMAPF is also NP-hard under the same condition.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>World-Model-Guided Plan Search for Cooperative Mixed-Traffic Control at Bottlenecks</title>
-    <link href="http://arxiv.org/abs/2611.20067v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.20067v1</id>
-    <published>2026-11-15T00:00:00Z</published>
-    <updated>2026-11-15T00:00:00Z</updated>
-    <author>
-      <name>Jinghan Peng</name>
-    </author>
-    <author>
-      <name>Ning Liu</name>
-    </author>
-    <author>
-      <name>Xiangrui Kong</name>
-    </author>
-    <author>
-      <name>Sen Shen</name>
-    </author>
-    <author>
-      <name>Dongkun Han</name>
-    </author>
-    <summary type="text">Cooperative speed control by connected and automated vehicles can reduce congestion at lane drop bottlenecks. However, effective coordination depends on vehicle roles and execution timing, while initial holding costs may be offset by later traffic benefits. This paper proposes an offline plan search framework that combines world model guidance with simulator verification. A traffic world model incorporating physical dynamics guides evolutionary search over vehicle roles, target speeds, holding durations, and start times. Paired SUMO simulations screen candidates for total delay reduction and limits on additional mean delay across vehicle groups. Accepted plans form a reusable library whose actions temporarily override a frozen MAPPO policy. Across 192 paired test scenarios at 60% penetration and a demand of 2,800 vehicles per hour, the searched library reduces mean total delay by 14.3% relative to MAPPO and by 3.8% relative to a handwritten plan library. The largest increase in group mean delay is 6.2 s, below the prescribed 10 s limit. In a separate screening experiment, the guided search achieves a 30.0% pass rate compared with 2.6% for random sampling. These results support the use of predictive search and independent verification for discovering cooperative plans under group delay constraints.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 8 pages&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Delay-Aware Reinforcement Learning for O-RAN Control under Stochastic Reward Feedback</title>
-    <link href="http://arxiv.org/abs/2611.19344v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.19344v1</id>
-    <published>2026-11-14T00:00:00Z</published>
-    <updated>2026-11-14T00:00:00Z</updated>
-    <author>
-      <name>Xingqi Wu</name>
-    </author>
-    <author>
-      <name>Junaid Farooq</name>
-    </author>
-    <author>
-      <name>Tao Li</name>
-    </author>
-    <author>
-      <name>Juntao Chen</name>
-    </author>
-    <author>
-      <name>Ying Wang</name>
-    </author>
-    <summary type="text">Reinforcement learning (RL) is increasingly employed for real-time control in Open Radio Access Networks (O-RANs). However, the asynchronous nature of O-RAN feedback introduces stochastic delays between actions and their observable rewards, leading to misaligned credit assignment and unstable training. This letter formulates the O-RAN control problem as a Markov decision process (MDP) with delayed and stochastic rewards, where the true reward corresponding to an action is received after an unknown delay. To address this, we propose a delay-aware deep RL framework that integrates a long short-term memory (LSTM)-based delay predictor and a temporal reward realignment module within an off-policy learning pipeline. Using empirical delay traces collected from the Open AI Cellular (OAIC) testbed, we demonstrate that the proposed framework achieves faster convergence and significantly reduces latency violations and packet drops compared to conventional RL methods that ignore feedback delay. The results confirm that reward-delay compensation is critical for reliable AI-driven O-RAN control.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-    <category term="Machine Learning" />
-  </entry>
-  <entry>
-    <title>When Reviews Gate Access: Collusion, Sabotage and the Scale of Peer Review in the AI Submission Surge</title>
-    <link href="http://arxiv.org/abs/2611.19054v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.19054v1</id>
-    <published>2026-11-14T00:00:00Z</published>
-    <updated>2026-11-14T00:00:00Z</updated>
-    <author>
-      <name>Yuchen Li</name>
-    </author>
-    <author>
-      <name>Xintong Li</name>
-    </author>
-    <author>
-      <name>Ken-Tye Yong</name>
-    </author>
-    <author>
-      <name>Nguyen H. Tran</name>
-    </author>
-    <summary type="text">AI tools have helped push submissions to the largest machine-learning venues to tens of thousands per cycle. Venues have answered with rules that tie access to review: per-author caps, mandatory reciprocal reviewing, reviewer eligibility earned through accepted papers, and assignment based on reviewer bids. Under these rules a reviewer is also a competitor of the authors. We study two deviations that the rules make attractive. Sabotage lowers a competitor's score. Collusion raises an ally's score. We build an agent-based conference calibrated to public statistics of NeurIPS and ICLR and run 6,220 simulated conferences. Four results stand out. First, the two deviations do different harm and amplify each other. Collusion changes who is accepted, sabotage erodes what scores say about quality, and rings that may also sabotage gain more than rings that only collude. Second, under random assignment the chance that collusion changes a decision is set by one exposure index, $E = Rm/A$, the expected number of allies among a paper's reviewers. Growth therefore protects random assignment, but bidding removes the protection. In a pool of 3,000 reviewers a 20-member ring turns 0.8% of its papers into acceptances under random assignment and 71% when 30% of allies' bids are granted. Third, when agents choose their allies every cycle, caps at the inner layers of the social brain keep collusion nearly harmless. Without a cap agents ally with half of their area and accepted value falls by 35%. Fourth, reviewer eligibility tied to acceptances turns sabotage into a weapon of incumbents, and a longer eligibility window widens the gap between incumbents and newcomers only when sabotage is possible.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Survey&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
 </feed>
