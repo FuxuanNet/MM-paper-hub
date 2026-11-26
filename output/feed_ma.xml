@@ -4,12 +4,162 @@
   <id>https://rspaper.top/output/feed_ma.xml</id>
   <link href="https://rspaper.top/output/feed_ma.xml" rel="self" type="application/atom+xml" />
   <link href="https://rspaper.top" rel="alternate" type="text/html" />
-  <updated>2026-11-25T09:33:05Z</updated>
-  <subtitle>Latest multimodal papers (last 7 days) — 36 entries</subtitle>
+  <updated>2026-11-26T09:15:59Z</updated>
+  <subtitle>Latest multimodal papers (last 7 days) — 41 entries</subtitle>
   <author>
     <name>RS-Paper-Hub</name>
     <uri>https://rspaper.top</uri>
   </author>
+  <entry>
+    <title>VisualMontage: Manipulating the Beliefs of Vision-Language Agents with Authentic Image Sequences</title>
+    <link href="http://arxiv.org/abs/2611.34603v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.34603v1</id>
+    <published>2026-11-25T00:00:00Z</published>
+    <updated>2026-11-25T00:00:00Z</updated>
+    <author>
+      <name>Jinwei Hu</name>
+    </author>
+    <author>
+      <name>Lai Wei</name>
+    </author>
+    <author>
+      <name>Zhuoyun Li</name>
+    </author>
+    <author>
+      <name>Youcheng Sun</name>
+    </author>
+    <author>
+      <name>Yi Dong</name>
+    </author>
+    <author>
+      <name>Xiaowei Huang</name>
+    </author>
+    <summary type="text">As agents based on vision-language models (VLMs) increasingly interpret social-media content, errors in their analysis may lend credibility to rumors and amplify their spread. In this paper, we study the problem of visual cognitive collusion, in which coordinated posts combine authentic images and locally faithful captions to induce VLM agents to infer and accept attacker-chosen target claims through their own reasoning. To enable systematic evaluation of this cognitive threat, we introduce a new benchmark comprising 544 target cases and 33.2K candidate images across eight application domains. We further propose VisualMontage, a multi-agent framework for simulating such attacks through narrative planning, image selection and ordering, and caption assignment under iterative review. We evaluate this threat through extensive experiments across 12 vision-language models, examining modality effects, production-team components, and downstream defenses. Using identical attack feeds across models without victim-specific optimization, we demonstrate cross-model transferability, achieving mean attack success rates of 61.93% for proprietary models and 68.71% for open-weight models. Moreover, 92.65% of generated feeds pass independent model-based validity auditing. Even after downstream review, residual attack success rates range from 35.3% to 76.7% across the evaluated configurations. Our additional controlled comparisons further reveal that captions can improve model-rated posting naturalness while reducing attack success. Together, these findings reveal a novel cognitive threat in social-media interpretation and motivate safeguards that assess how authentic posts jointly shape agents' reasoning and conclusions.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; Under Review&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; MAG&lt;/p&gt;</content>
+    <category term="Computer Vision" />
+    <category term="Artificial Intelligence; Multiagent Systems; cs.SI" />
+  </entry>
+  <entry>
+    <title>Energy-Aware Distributed Task Allocation via Local Submodular Maximization</title>
+    <link href="http://arxiv.org/abs/2611.34293v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.34293v1</id>
+    <published>2026-11-25T00:00:00Z</published>
+    <updated>2026-11-25T00:00:00Z</updated>
+    <author>
+      <name>Jing Liu</name>
+    </author>
+    <author>
+      <name>Fangfei Li</name>
+    </author>
+    <author>
+      <name>Xin Jin</name>
+    </author>
+    <author>
+      <name>Yang Tang</name>
+    </author>
+    <author>
+      <name>Ruggero Carli</name>
+    </author>
+    <author>
+      <name>Luca Ballotta</name>
+    </author>
+    <summary type="text">This paper studies distributed task allocation under time-varying agent sets, task sets, and communication graphs. At each decision epoch, the stage allocation problem is formulated as monotone submodular maximization over a time-varying, energy-filtered admissible ground set subject to a partition-matroid constraint. We develop a Distributed Adaptive Greedy Bidding Algorithm (DAGBA) that combines local admissible-set construction, conditional marginal bidding, and neighbor-based conflict resolution under limited communication. We prove that DAGBA guarantees per-epoch feasibility, finite-round convergence, and residual-energy safety. Theoretically, we identify a sequential-greedy regime where DAGBA recovers the classical $1/2$-approximation guarantee. For general executions with partial information, we derive a local-information-factor approximation bound and conservative bounds computable from the execution trace that quantify the degradation caused by local estimates and parallel fixing. Simulations on cooperative observation missions demonstrate that DAGBA achieves task-completion progress and utility close to centralized and complete-communication references, while improving communication efficiency and maintaining strict energy feasibility.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+  </entry>
+  <entry>
+    <title>Strategic and Robust Task Allocation for Combat Objectives in Adversarial Multi-Agent Environments</title>
+    <link href="http://arxiv.org/abs/2611.34158v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.34158v1</id>
+    <published>2026-11-25T00:00:00Z</published>
+    <updated>2026-11-25T00:00:00Z</updated>
+    <author>
+      <name>Jonas Peché</name>
+    </author>
+    <author>
+      <name>Dmitry Matveev</name>
+    </author>
+    <author>
+      <name>Vladimir Ciric</name>
+    </author>
+    <author>
+      <name>Lizaveta Sakalova</name>
+    </author>
+    <author>
+      <name>Günter Wallner</name>
+    </author>
+    <summary type="text">Task allocation in contested-objective team games requires coordinated decisions under uncertainty, spatial constraints, and changing tactical conditions. In such settings, multiple agents must anticipate both teammate behavior and opponent actions. We study a hybrid predict-then-optimize approach for assigning controllable agents to objectives in real time. A masked multi-head model predicts tactical signals for each agent, including survival chance, local superiority, combat interaction, travel time, and objective contribution. These signals are combined with rule-based terms in a score matrix, and a minimum-cost flow solver computes coordinated global assignments constrained by capacity, occupancy, stability, and defensive strategies. Learning is limited to tactical scoring, while explicit rules and solver structure preserve controllability and interpretability. We evaluate the system using predictive metrics, offline assignment diagnostics, online A/B evaluation, and latency measurements. The system is an R\&amp;D research prototype built on a commercial game and is not deployed in the shipped game. The results indicate that learned tactical estimates can support stable, feasible, and inspectable objective allocation under strict real-time constraints.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>Post-Training Policy Replication for Strategy-Following Multi-Agent Deep Reinforcement Learning across Team Sizes</title>
+    <link href="http://arxiv.org/abs/2611.34035v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.34035v1</id>
+    <published>2026-11-25T00:00:00Z</published>
+    <updated>2026-11-25T00:00:00Z</updated>
+    <author>
+      <name>Yamato Takahagi</name>
+    </author>
+    <author>
+      <name>Yoshinari Motokawa</name>
+    </author>
+    <author>
+      <name>Toshiharu Sugawara</name>
+    </author>
+    <summary type="text">Although multi-agent deep reinforcement learning enables coordinated behavior, aligning it with managerial intent remains difficult due to complex agent interactions. Although the strategy-following distributed attentional actor architecture (sfDA7-X) improves controllability via regional instructions, instruction combinations scale exponentially with team and instruction sizes, leading to prohibitive training costs and poor transferability. To reduce this computational cost, we introduce a team-size-independent observation architecture and reconstruct collective behavior by replicating a single trained policy across agents in teams of different sizes, thereby eliminating the need to train from scratch. Additionally, we evaluate warm-start retraining by initializing policy networks with a pre-trained policy to significantly lower computational overhead. In an object collection game, a policy trained in a four-agent team is deployed to teams of three to eight agents. Experiments demonstrate that training with the proposed aggregated observation matrix achieves performance comparable to that of the baseline method, sfDA7-X. Furthermore, policy replication preserves performance without substantial degradation in three- and five-agent teams, and warm-start retraining outperforms training from scratch while reducing required training episodes by up to 90%. Deployments to six- and eight-agent teams further confirm effective spatial region allocation following given instructions. These results demonstrate that the proposed method enables zero-shot collective behavior reconstruction via policy replication.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 12 pages, 12 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>When Are Parallel Subagents Effective for Coding? An Empirical Study on Repository Construction</title>
+    <link href="http://arxiv.org/abs/2611.33893v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.33893v1</id>
+    <published>2026-11-25T00:00:00Z</published>
+    <updated>2026-11-25T00:00:00Z</updated>
+    <author>
+      <name>Zhiheng Lyu</name>
+    </author>
+    <author>
+      <name>Chengyu Yin</name>
+    </author>
+    <author>
+      <name>Lingming Zhang</name>
+    </author>
+    <summary type="text">LLM-based coding agents are increasingly used for long-horizon tasks such as building an entire program from a specification. Products like Codex and Claude Code let an agent delegate work to parallel subagents, multiplying run cost, yet it remains unclear whether and when delegation produces a better program. We compare a single agent with a main agent delegating to subagents on repository-construction tasks from NL2Repo and ProgramBench (which also provides an executable reference program). We compare scores at equal time and equal cost, run intervention experiments, and analyze fine-grained behavior. On randomly drawn tasks, parallel subagents raise hidden-test pass rates by only about 1 to 5 percentage points at up to 3.8x the cost of a single agent. Their gain is larger on hard tasks, where we find evidence of three mechanisms. Self-checking: with GPT-5.6 Sol, one sentence telling a single agent to probe the reference program first recovers most of this gain at a fraction of the cost; from GPT-5.6 Sol to GPT-6.1 Sol, the gain shrinks as single agents check their own work more. Fresh context: in extended runs, a single agent that periodically starts a new session with an empty conversation makes faster early progress in every comparison than one that resumes its conversation. Modularity: multi-agent runs produce more modular code (more files and shorter functions), closer to the upstream source. We observe similar patterns in a smaller replication with Opus 5.5 on Claude Code. Overall, subagents help when (i) a single agent stops checking too early, (ii) a long session keeps editing with little improvement, or (iii) modular code helps on the task; otherwise, they mainly add cost.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 50 pages (18 pages main text, plus references and appendices), 10 figures. Code: https://github.com/cogito233/subagent-study ; Dataset: https://huggingface.co/datasets/cogito233/subagent-study-data&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence" />
+  </entry>
+  <entry>
+    <title>Welfare-Enhancing Mechanism Design for Agent Ecosystems</title>
+    <link href="http://arxiv.org/abs/2611.33627v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.33627v1</id>
+    <published>2026-11-25T00:00:00Z</published>
+    <updated>2026-11-25T00:00:00Z</updated>
+    <author>
+      <name>Zitian Guo</name>
+    </author>
+    <author>
+      <name>Chen Xu</name>
+    </author>
+    <author>
+      <name>Beibei Li</name>
+    </author>
+    <author>
+      <name>Chenyan Xiong</name>
+    </author>
+    <summary type="text">The emerging Agentic Web forms a multi-agent ecosystem: a decentralized service market where the user agent selects which content agents to query from their submitted profiles, before seeing any documents. Profiles therefore become a new target of optimization. Existing Generative Engine Optimization studies how a single supplier rewrites documents the engine can already retrieve, to improve their citation. In the Agentic Web, multiple content agents optimize profiles to compete for limited opportunities to deliver documents. To study this repeated interaction, we build WildRegistry, a simulation framework and benchmark based on a real agentic-search request stream, and model it as a dynamic game under private monitoring. Long-horizon experiments show that this competition lowers website-selection quality and settles at a harmful stable point, which our empirical criterion identifies as an approximate rewriting equilibrium. We therefore design a welfare-enhancing mechanism, DEC (Delivery-Evidence Credit), a platform-side policy that uses recorded delivery outcomes to reallocate later opportunities and reduce information asymmetry. DEC improves this endpoint, raising website-selection quality while preserving most of providers' exposure gains, for a Welfare Gain of +2.01 points and a healthier long-horizon outcome. More broadly, our findings highlight the importance of mechanism design in agent ecosystems: turning recorded delivery outcomes into evidence that endogenously shapes later user-agent selection and content-agent adaptation can steer long-horizon adaptation toward delivered capabilities.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.GT; Information Retrieval" />
+  </entry>
   <entry>
     <title>Multi-Agent Coordination Through Stigmergy for Canal Network Formation on Real Terrain</title>
     <link href="http://arxiv.org/abs/2611.32966v1" rel="alternate" type="text/html" />
@@ -105,6 +255,69 @@
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
     <category term="Artificial Intelligence; Machine Learning" />
+  </entry>
+  <entry>
+    <title>What Must LLM Agents Communicate? From Information Loss to Communication Failures</title>
+    <link href="http://arxiv.org/abs/2611.33318v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.33318v1</id>
+    <published>2026-11-24T00:00:00Z</published>
+    <updated>2026-11-24T00:00:00Z</updated>
+    <author>
+      <name>Yi-Yun Chu</name>
+    </author>
+    <author>
+      <name>Xiaobin Shen</name>
+    </author>
+    <summary type="text">When evidence is distributed across LLM agents, a team may collectively possess all the information needed for a decision yet fail to use it effectively. What must agents communicate for accurate joint predictions, and when does interaction help? We study three requirements for effective communication: sufficiency of the information conveyed, selection of relevant evidence, and utilization of received information. Drawing on information theory and communication complexity, we develop a framework that combines theoretical benchmarks with controlled experiments and message-level analyses. We find that local probability reports can discard essential information, with theoretical information loss closely matching observed performance penalties. Query-first interaction improves predictions when relevant evidence depends on a private query, but compact one-shot representations can eliminate this advantage. Even when sufficient information is communicated, agents may fail to select or use it correctly. Together, these findings distinguish fundamental communication limits from failures in how LLM agents communicate and use information.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="cs.IT; Machine Learning" />
+  </entry>
+  <entry>
+    <title>CypherMAS: Benchmarking Routing Reliability in LLM-Based Multi-Agent Systems</title>
+    <link href="http://arxiv.org/abs/2611.33242v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.33242v1</id>
+    <published>2026-11-24T00:00:00Z</published>
+    <updated>2026-11-24T00:00:00Z</updated>
+    <author>
+      <name>Danil Kostromin</name>
+    </author>
+    <author>
+      <name>Andrey Sakhovskiy</name>
+    </author>
+    <author>
+      <name>Semen Budennyy</name>
+    </author>
+    <summary type="text">Multi-agent systems (MAS) built on large language models (LLMs) distribute reasoning across specialized agents that must exchange messages and invoke tools reliably. Existing evaluations typically couple communication with open domain tasks, making it difficult to determine whether a failure arises from reasoning, malformed tool use, lost messages, or forgotten requests. Prior benchmarks do not isolate communication execution or measure routing redundancy against a known optimal path. We introduce CypherMAS, a synthetic benchmark that isolates communication and routing in fixed multi-agent graphs. Agents in chain, star, bipartite, or ring graphs route cyphered messages to remote peers holding the matching decoders; since the optimal route is known, redundant LLM calls can be measured and routing failures may be easily tracked. Across eleven open-weight models from 4B to 753B, small models fail at routing and tool use, dense models above 27B degrade with diameter, and successful runs exceed minimum LLM calls. These findings identify communication reliability as a distinct scaling bottleneck for multi-agent systems and provide a controlled diagnostic for complex multi-agent systems. The source code is freely available: https://github.com/Andoree/CypherMAS.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/Andoree/CypherMAS"&gt;https://github.com/Andoree/CypherMAS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 26 pages, 13 tables, 9 figures&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tasks:&lt;/strong&gt; TAP&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Artificial Intelligence; cs.CL" />
+  </entry>
+  <entry>
+    <title>Soft Decentralized Expected SARSA: Equilibrium Selection via Gradual Adaptation</title>
+    <link href="http://arxiv.org/abs/2611.33228v1" rel="alternate" type="text/html" />
+    <id>http://arxiv.org/abs/2611.33228v1</id>
+    <published>2026-11-24T00:00:00Z</published>
+    <updated>2026-11-24T00:00:00Z</updated>
+    <author>
+      <name>Giuseppe Martucci</name>
+    </author>
+    <author>
+      <name>Janusz M. Meylahn</name>
+    </author>
+    <author>
+      <name>Gurdal Arslan</name>
+    </author>
+    <author>
+      <name>Serdar Yuksel</name>
+    </author>
+    <summary type="text">We introduce Soft Decentralized Expected SARSA (SDES), a modification of Decentralized Q-learning in which agents maintain persistent exploration and update their acting Q-values gradually rather than switching directly to newly learned best responses when updating. We prove convergence to $ε$-greedy Nash equilibria in weakly acyclic stochastic games for sufficiently large batch sizes. We then show, in the repeated Prisoner's Dilemma with memory, that soft updating can reshape basins of attraction without changing the equilibrium set. In the deterministic limit, we derive analytical basin bounds governed by the Q-value differences between actions in the target policies and show that reducing the policy learning rate can favor either cooperative or competitive equilibria. These results suggest that soft updating is not merely a stabilization device but also a mechanism of equilibrium selection in decentralized learning.</summary>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
+    <category term="Multiagent Systems" />
+    <category term="Machine Learning" />
   </entry>
   <entry>
     <title>From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems</title>
@@ -768,81 +981,6 @@
     </author>
     <summary type="text">In competitive multi-agent economic games, agents continuously interact, strategize, and make decisions within a shared market. Consequently, every message produced by a language agent changes both the current economic state of the market and the opponent's subsequent behavior. Although terminal rewards can indicate whether a decision was effective and broad behavioral labels can provide a coarse interpretation of the interaction, neither specifies the concrete response that should be taken next. We therefore ask whether explicitly providing an opponent's operational structure to a focal agent changes the value of its task-specific executable response strategies and the resulting game outcome. Using Games in Language-based Economic Environments (GLEE) as a controlled environment, we investigate this question across bargaining, negotiation, and persuasion games. We analyze 298,357 trajectories using seven relational profiles and decompose each task's dominant profile into ten Act$\cdot$onomy structures, finding that dominant profiles have task-specific operational compositions. We then compare structure-blind and structure-aware policies in matched offline simulation and prospective online play. In fixed 334-game online cohorts for each task, the aware-minus-blind official-percentile point estimates of the profile-gated eligible samples are +2.52, +1.90, and +5.91 points in bargaining, negotiation, and persuasion, respectively (corresponding 95% confidence intervals include zero). Taken together, the results distinguish strategy selection from response realization: structure re-ranks strategies, while in persuasion the online point estimate becomes positive only when the policy also changes the submitted message or purchase action.</summary>
     <content type="html">&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; the NeurIPS 2026 Workshop on Interpreting Agent Behavior (IAB)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Public-Private Cooperation in the Port of Rotterdam: An Agent-Based Toy Model of Cooperative Efforts Against Cocaine Trafficking</title>
-    <link href="http://arxiv.org/abs/2611.26154v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.26154v1</id>
-    <published>2026-11-19T00:00:00Z</published>
-    <updated>2026-11-19T00:00:00Z</updated>
-    <author>
-      <name>Frederike Oetker</name>
-    </author>
-    <author>
-      <name>Charlotte Geertman</name>
-    </author>
-    <summary type="text">Cocaine trafficking poses a persistent governance challenge in the Port of Rotterdam (PoR), requiring cooperation between public and private actors. This paper develops an Agent-Based toy Model (ABM) coupled with a Causal Loop Diagram (CLD) to explore interactions between trust, cooperation, competition, pressure, enforcement, and actor skills in public-private cooperation (PPC). Based on empirical data of PPC in the PoR, we explore responses to parameter shocks across different initial configurations. In this model, effectiveness of PPC is strongly state-dependent and measures institutional, relational, behavioral, and resource readiness. The toy model demonstrates that isolated, single-track measures yield limited long-term gains modelled over 5 years due to structural system inertia, whereas coordinated multi-parameter strategies produce substantial improvements. Specifically, combining trust-building, cooperation, and moderate pressure with reduced regulatory enforcement friction raises effectiveness by 25% from a baseline effectiveness, compared to just 13% for an isolated increase in cooperation. Acknowledging the exploratory nature of the model, these findings offer exploratory hypotheses on port security governance. Future work should validate the model against test cases and additional expert input.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>Interlacing Committees with Edge-Expansion</title>
-    <link href="http://arxiv.org/abs/2611.25852v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.25852v1</id>
-    <published>2026-11-19T00:00:00Z</published>
-    <updated>2026-11-19T00:00:00Z</updated>
-    <author>
-      <name>Gili Bielous</name>
-    </author>
-    <author>
-      <name>Reshef Meir</name>
-    </author>
-    <summary type="text">Approval-based committee selection has recently been studied through the lens of \emph{interlacing}, a framework for studying polarization in approval elections, in which committees induce a similarity graph over voters. The quality of committees is then evaluated through the connectivity of the resulting graph. We revisit the connectivity measures used in this framework and propose \emph{edge-expansion}, a classical graph-theoretic measure with well-established connections to polarization in networks, as the optimization objective. We provide a theoretical foundation for this proposal by relating interlacing to classical models of information diffusion and by comparing edge-expansion with previously proposed connectivity objectives, identifying qualitative differences in the structural properties they capture. Finally, we study the computational complexity of optimizing edge-expansion, showing that hardness persists even for voter-interval preferences, while the problem is polynomial-time solvable for every fixed committee size, with an improved dependence on the committee size for voter-candidate-interval preferences.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>DS2Agent: Holistic Device Agents for Accelerated Embedded Board-Level Design</title>
-    <link href="http://arxiv.org/abs/2611.25774v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.25774v1</id>
-    <published>2026-11-19T00:00:00Z</published>
-    <updated>2026-11-19T00:00:00Z</updated>
-    <author>
-      <name>Hongbin Yang</name>
-    </author>
-    <author>
-      <name>Chi Zhang</name>
-    </author>
-    <author>
-      <name>Yinhao Xiao</name>
-    </author>
-    <author>
-      <name>Runyu Pan</name>
-    </author>
-    <author>
-      <name>Yanni Yang</name>
-    </author>
-    <author>
-      <name>Xiuzhen Cheng</name>
-    </author>
-    <summary type="text">Embedded board-level development demands extensive expertise, from component selection and device characteristics to interface configuration, driver writing, and system composition. Recently, LLM-based agents have shown strong capabilities, raising the prospect of automating board-level design tasks. However, existing agents either target chip-level design or treat datasheets as static text, offering little guidance on whether a specific component should---or even could---be used for a given board-level design. Moreover, without touching real hardware, they hallucinate incorrect details.   To fill this gap, we present {\setlength{\fboxsep}{1pt}\href{https://anonymous.4open.science/r/DS2Agent-9FE8/}{\fcolorbox{blue}{white}{DS2Agent}}}, an open-source framework that constructs interactive agents from device datasheets. Each agent comprises three models: a knowledge model supporting retrieval and question answering; a digital-twin model capturing the physical functionality of the device; and an interface model supporting driver development and system integration. To suppress hallucinations, we also allow optional connections to real devices, so that the agent can calibrate its internalized knowledge against the device. We evaluate DS2Agent on ten devices spanning seven functional categories. Compared with the baseline, the DS2Agent-augmented agent improves the question-answering score from 87 to 97 out of 100 while using 44.8\% fewer tokens. For driver generation, it reduces average token usage per device by 72.9\%. For system integration, it reduces total token usage across three FreeRTOS applications by 29.7\%.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
-    <category term="Multiagent Systems" />
-  </entry>
-  <entry>
-    <title>SYLVA: Self-Correcting Multi-Agent Markets over Frozen LLMs via Escrow Settlement, Step-Level Fault Isolation, and Contextual Routing</title>
-    <link href="http://arxiv.org/abs/2611.28148v1" rel="alternate" type="text/html" />
-    <id>http://arxiv.org/abs/2611.28148v1</id>
-    <published>2026-11-19T00:00:00Z</published>
-    <updated>2026-11-19T00:00:00Z</updated>
-    <author>
-      <name>Hui Zhao</name>
-    </author>
-    <summary type="text">Open agent standards like the Model Context Protocol (MCP) and Agent2Agent (A2A) connect independent AI tools, yet open multi-agent markets fail under three real-world hazards: local rules shift silently outside pretraining, copycat wrappers and confident hallucinators game ratings, and uniform chain scoring punishes accurate specialists whenever another stage fails (blame collapse). We present SYLVA, a market protocol turning frozen foundation models (no weight updates, $ΔW = 0$) and human-maintained services into a self-correcting ecosystem. SYLVA combines an on-chain clearinghouse for escrow settlement and configurable creator royalties (85%/15% in our experiments), a boundary verifier for penalty-free out-of-domain (OOD) abstention and 3-peer step replay, a verifiable context-aware router compiling proven chains into 1-call skills with drift circuit breakers, and plain-English rule updates. We prove sufficient conditions for honest abstention, specialist protection against blame collapse, and wrapper elimination, and validate SYLVA across a 64-agent simulation, 6,543 live deepseek-flash API calls, and a Rust MCP SDK (rmcp) + Cairo clearinghouse deployed on Starknet Sepolia (19 live transactions). Without updating weights, SYLVA reaches 82.1% completion in 64-agent simulations and 98.3% on live LLM workflows (vs. 0.0% single frozen LLM and 45.6% static MCP/A2A), cuts false specialist penalties by 6.79x-10.8x, retains 86.2% creator revenue under wrapper/Sybil floods, and recovers rapidly after rule drift. Furthermore, 1-call skill compilation saves 78.3% of real LLM tokens, while our Starknet contracts verify zero-oracle quorum slashing and 32.32-bit fixed-point (Q32.32) routing on-chain. Code and contracts are at https://github.com/heurion-org/sylva.</summary>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Code:&lt;/strong&gt; &lt;a href="https://github.com/heurion-org/sylva"&gt;https://github.com/heurion-org/sylva&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Publication:&lt;/strong&gt; 24 pages, 3 figures&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Category:&lt;/strong&gt; Method&lt;/p&gt;</content>
     <category term="Multiagent Systems" />
   </entry>
